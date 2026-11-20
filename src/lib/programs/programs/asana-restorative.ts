@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const ASANA_RESTORATIVE: SessionProgramV3 = {
+  id: "asana-restorative",
+  title: "Asana · Restorative",
+  subtitle: "The practice of surrender — doing nothing as the deepest practice",
+  description:
+    "A 5-session arc through restorative asanas: savasana, balasana, supta baddha konasana — the practice of surrender.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["asana", "restorative", "surrender", "relaxation"],
+  icon: "Moon",
+  coverGradient: "from-violet-500 to-purple-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The art of surrender" },
+    { phase: "Practice", sessions: 1, focus: "The restorative family" },
+    { phase: "Integration", sessions: 1, focus: "Rest in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The surrendered self" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Doing nothing as the deepest practice",
+      required: ["ritual.opening-bow", "teach.asana.restorative", "asana.savasana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare to receive",
+      required: ["wisdom.hatha.asana-chapter", "somatic.jaw-release", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Corpse, child's pose, reclined bound angle",
+      required: ["asana.savasana", "asana.balasana", "asana.supta-baddha-konasana"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Rest in the day",
+      required: ["asana.savasana", "micro-act.no-phone-meal", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The surrendered self",
+      required: ["ritual.opening-bow", "asana.savasana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

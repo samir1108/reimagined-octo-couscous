@@ -1,0 +1,36 @@
+import type { SessionProgramV3 } from "../types";
+
+export const DREAM_WORK: SessionProgramV3 = {
+  id: "dream-work",
+  title: "Dream Work",
+  subtitle: "Let the night teach you what the day hides",
+  description: "A 7-session arc to remember, record, and read your dreams as messages from the deeper self.",
+  difficulty: "intermediate",
+  category: "shadow",
+  tags: ["dreams", "shadow", "jung"],
+  icon: "MoonStar",
+  coverGradient: "from-indigo-800 to-purple-950",
+  totalSessions: 7,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Remember & record" },
+    { phase: "Practice", sessions: 3, focus: "Read the symbols" },
+    { phase: "Integration", sessions: 1, focus: "Bring it to day" },
+    { phase: "Mastery", sessions: 1, focus: "Dream awake" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation", intent: "Set intent before sleep",
+      required: ["ritual.opening-bow", "voice-journal.future-self", "breath.coherent-5-5"], targetMinutes: 15 },
+    { index: 2, phase: "Foundation", intent: "Capture on waking",
+      required: ["journal.morning-pages-3", "body.micro-scan-60s", "voice-journal.speak-it-out"], targetMinutes: 18 },
+    { index: 3, phase: "Practice", intent: "What part is each character?",
+      required: ["ifs.meet-a-part", "shadow.gold-projection", "contemplation.sit-with-question"], targetMinutes: 22 },
+    { index: 4, phase: "Practice", intent: "Feel the dream in body",
+      required: ["body.tension-map", "emotion.label-to-tame", "somatic.tense-release"], targetMinutes: 22 },
+    { index: 5, phase: "Practice", intent: "Re-enter the dream",
+      required: ["meditation.open-awareness", "inquiry.where-is-the-i", "voice-journal.speak-it-out"], targetMinutes: 22 },
+    { index: 6, phase: "Integration", intent: "Bring it to the day",
+      required: ["micro-act.tidy-one-thing", "journal.loop-of-the-day", "ritual.dedicate-merit"], targetMinutes: 18 },
+    { index: 7, phase: "Mastery", intent: "Dream awake",
+      required: ["ritual.opening-bow", "meditation.open-awareness", "witness.who-is-watching", "ritual.dedicate-merit"], targetMinutes: 25 },
+  ],
+};

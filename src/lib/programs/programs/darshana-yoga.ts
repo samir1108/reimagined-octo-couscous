@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const DARSHANA_YOGA: SessionProgramV3 = {
+  id: "darshana-yoga",
+  title: "Yoga Darshana",
+  subtitle: "The eight-limbed path — stilling the mind to free the self",
+  description:
+    "A 5-session arc through Yoga Darshana: Patanjali's practical system applying Samkhya metaphysics through the 8 limbs to kaivalya.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["darshana", "yoga", "patanjali", "eight-limbs"],
+  icon: "BookOpen",
+  coverGradient: "from-amber-600 to-orange-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The system of Patanjali" },
+    { phase: "Practice", sessions: 1, focus: "The eight limbs in action" },
+    { phase: "Integration", sessions: 1, focus: "Ishvara pranidhana" },
+    { phase: "Mastery", sessions: 1, focus: "The mind stilled" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The practical Samkhya",
+      required: ["ritual.opening-bow", "teach.darshana.yoga", "wisdom.darshana.yoga"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The eight limbs",
+      required: ["wisdom.darshana.yoga", "breath.box-4-4-4-4", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The limbs in sequence",
+      required: ["wisdom.darshana.yoga", "concentration.count-breath-21", "witness.gap-between-thoughts"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Surrender to the supreme",
+      required: ["wisdom.darshana.yoga", "mantra.so-hum", "meditation.loving-kindness"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The mind stilled, the seer rests",
+      required: ["ritual.opening-bow", "wisdom.darshana.yoga", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

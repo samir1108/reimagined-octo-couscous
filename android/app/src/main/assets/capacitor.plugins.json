@@ -1,0 +1,6 @@
+[
+	{
+		"pkg": "capacitor-health",
+		"classpath": "com.fit_up.health.capacitor.HealthPlugin"
+	}
+]

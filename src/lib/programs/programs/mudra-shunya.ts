@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_SHUNYA: SessionProgramV3 = {
+  id: "mudra-shunya",
+  title: "Mudra · Shunya",
+  subtitle: "Emptiness seal — the void that holds",
+  description:
+    "A 5-session arc through Shunya Mudra: the seal of emptiness — relief for vertigo, ears, and the restless mind.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "shunya", "emptiness", "void"],
+  icon: "Circle",
+  coverGradient: "from-slate-500 to-slate-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & the void" },
+    { phase: "Practice", sessions: 1, focus: "The emptiness seal" },
+    { phase: "Integration", sessions: 1, focus: "The empty mind" },
+    { phase: "Mastery", sessions: 1, focus: "The void that holds" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seal of emptiness",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The void as teacher",
+      required: ["wisdom.gheranda.1", "contemplation.sit-with-question", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Shunya Mudra",
+      required: ["mudra.shunya", "breath.coherent-5-5", "meditation.body-as-anchor"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "The empty mind",
+      required: ["mudra.shunya", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The void that holds",
+      required: ["ritual.opening-bow", "mudra.shunya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

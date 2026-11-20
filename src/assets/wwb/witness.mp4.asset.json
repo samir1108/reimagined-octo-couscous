@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "54629ccf-6059-47ab-8819-5fa9ce030e40",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/witness.mp4",
+  "original_filename": "witness.mp4",
+  "size": 1544938,
+  "created_at": "2026-07-17T07:59:00Z",
+  "storage_path": "src/assets/wwb/witness.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:42:52.645Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/54629ccf-6059-47ab-8819-5fa9ce030e40/witness.mp4"
+}

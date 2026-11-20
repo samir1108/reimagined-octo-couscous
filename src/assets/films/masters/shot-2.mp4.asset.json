@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "689c531a-b7b2-42ec-845d-1f7b2a110e13",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters/shot-2.mp4",
+  "original_filename": "shot-2.mp4",
+  "size": 13494799,
+  "created_at": "2026-07-12T02:17:48Z",
+  "bucket": "media",
+  "storage_path": "src/assets/films/masters/shot-2.mp4",
+  "migrated_at": "2026-10-20T11:07:20.975Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/689c531a-b7b2-42ec-845d-1f7b2a110e13/shot-2.mp4"
+}

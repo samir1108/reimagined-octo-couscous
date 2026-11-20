@@ -1,0 +1,465 @@
+/**
+ * ConsciousOS Programs
+ * ────────────────
+ * Programs are structured training journeys that span multiple days.
+ * Each program has:
+ *   - id, slug, label, description, duration, icon, color
+ *   - phases (each with days, capabilities trained, sessions)
+ *   - entry requirement (what level/capability is needed to start)
+ *
+ * Programs connect capabilities → sessions → games → practices → experiments.
+ */
+
+import type { CapabilityDomain } from "./capabilityMap";
+
+export type ProgramPhaseId = "notice" | "stabilize" | "resist" | "deepen" | "integrate";
+
+export interface ProgramPhase {
+  id: ProgramPhaseId;
+  label: string;
+  description: string;
+  days: [number, number];       // inclusive [start, end]
+  capabilities: string[];        // capability slugs trained in this phase
+  sessionIds: string[];          // session template IDs
+  gameIds: string[];             // games introduced in this phase
+  practiceIds: string[];         // daily practices
+  experimentIds: string[];       // real-world experiments
+}
+
+export interface ProgramDefinition {
+  id: string;
+  slug: string;
+  label: string;
+  description: string;
+  longDescription: string;
+  icon: string;
+  color: string;
+  durationDays: number;
+  domain: CapabilityDomain;
+  prerequisites: string[];       // capability slugs required before starting
+  phases: ProgramPhase[];
+  tagline: string;
+  difficulty: "beginner" | "intermediate" | "advanced";
+}
+
+// ─── Focus Program — 30 days ─────────────────────────────────────────────────
+
+export const FOCUS_PROGRAM: ProgramDefinition = {
+  id: "prog_focus_30",
+  slug: "focus_30",
+  label: "Focus Forge",
+  description: "30-day deep focus training. From scattered attention to unbroken concentration.",
+  longDescription: `A systematic 30-day program to transform your relationship with attention.
+
+Starting with awareness of where your mind goes, moving through sustained concentration,
+resisting digital distractions, and ending with deep work capability.
+
+No prior experience needed. Just the willingness to train.`,
+  icon: "🎯",
+  color: "amber",
+  durationDays: 30,
+  domain: "attention",
+  prerequisites: [],
+  tagline: "From scattered to unbreakable",
+  difficulty: "beginner",
+  phases: [
+    {
+      id: "notice",
+      label: "Phase 1 — Notice",
+      description: "Become aware of where attention goes.",
+      days: [1, 5],
+      capabilities: ["sustained_attention", "distraction_resistance"],
+      sessionIds: ["sess_focus_notice_01", "sess_focus_notice_02"],
+      gameIds: ["game_signal"],
+      practiceIds: ["prac_single_task"],
+      experimentIds: ["exp_no_phone_30"],
+    },
+    {
+      id: "stabilize",
+      label: "Phase 2 — Stabilize",
+      description: "Build the capacity to hold attention.",
+      days: [6, 12],
+      capabilities: ["sustained_attention", "selective_attention", "visual_attention"],
+      sessionIds: ["sess_focus_stabilize_01", "sess_focus_stabilize_02"],
+      gameIds: ["game_signal", "game_deep_focus"],
+      practiceIds: ["prac_single_task", "prac_breath_focus"],
+      experimentIds: ["exp_cafe_work", "exp_no_phone_30"],
+    },
+    {
+      id: "resist",
+      label: "Phase 3 — Resist",
+      description: "Train resistance to internal and external pulls.",
+      days: [13, 20],
+      capabilities: ["distraction_resistance", "attention_switching", "impulse_control"],
+      sessionIds: ["sess_focus_resist_01", "sess_focus_resist_02"],
+      gameIds: ["game_distraction", "game_impulse_stop"],
+      practiceIds: ["prac_single_task", "prac_phone_fasting"],
+      experimentIds: ["exp_boredom_tolerance", "exp_delay_challenge"],
+    },
+    {
+      id: "deepen",
+      label: "Phase 4 — Deepen",
+      description: "Extend the duration and depth of focus.",
+      days: [21, 27],
+      capabilities: ["sustained_attention", "distraction_resistance", "task_completion"],
+      sessionIds: ["sess_focus_deepen_01", "sess_focus_deepen_02"],
+      gameIds: ["game_deep_focus", "game_task_finish"],
+      practiceIds: ["prac_single_task", "prac_deep_work"],
+      experimentIds: ["exp_deep_work_block"],
+    },
+    {
+      id: "integrate",
+      label: "Phase 5 — Integrate",
+      description: "Apply deep focus to real-world work and life.",
+      days: [28, 30],
+      capabilities: ["sustained_attention", "distraction_resistance", "task_completion"],
+      sessionIds: ["sess_focus_integrate_01"],
+      gameIds: ["game_deep_focus"],
+      practiceIds: ["prac_single_task"],
+      experimentIds: ["exp_personal_protocol"],
+    },
+  ],
+};
+
+// ─── Awareness Program — 45 days ─────────────────────────────────────────────
+
+export const AWARENESS_PROGRAM: ProgramDefinition = {
+  id: "prog_awareness_45",
+  slug: "awareness_45",
+  label: "Awareness Mirror",
+  description: "45-day journey from body to witness. Layer by layer, from sensation to thought.",
+  longDescription: `A progressive 45-day program that moves your awareness inward step by step.
+
+Starting with the most tangible — the body — and moving toward the most subtle — thought and attention itself.
+
+Each week adds a new layer of observation. By the end, you'll be able to witness
+your own mental processes with the same ease as watching clouds pass.`,
+  icon: "👁",
+  color: "indigo",
+  durationDays: 45,
+  domain: "awareness",
+  prerequisites: [],
+  tagline: "From body to witness, layer by layer",
+  difficulty: "beginner",
+  phases: [
+    {
+      id: "notice",
+      label: "Phase 1 — Body",
+      description: "Establish foundation in physical sensation.",
+      days: [1, 9],
+      capabilities: ["body_awareness", "posture_awareness", "tension_release"],
+      sessionIds: ["sess_awareness_body_01", "sess_awareness_body_02"],
+      gameIds: ["game_body_scan", "game_sensation_map"],
+      practiceIds: ["prac_body_scan", "prac_breath_awareness"],
+      experimentIds: ["exp_embodiment_day"],
+    },
+    {
+      id: "stabilize",
+      label: "Phase 2 — Breath",
+      description: "Use breath as the bridge between body and mind.",
+      days: [10, 18],
+      capabilities: ["breath_awareness", "body_awareness", "stillness"],
+      sessionIds: ["sess_awareness_breath_01", "sess_awareness_breath_02"],
+      gameIds: ["game_breath_sync", "game_breath_hold"],
+      practiceIds: ["prac_breath_awareness", "prac_stillness_practice"],
+      experimentIds: ["exp_breath_challenge"],
+    },
+    {
+      id: "resist",
+      label: "Phase 3 — Sensation & Emotion",
+      description: "Feel what's actually happening inside.",
+      days: [19, 27],
+      capabilities: ["emotional_awareness", "tension_release", "body_awareness"],
+      sessionIds: ["sess_awareness_emotion_01", "sess_awareness_emotion_02"],
+      gameIds: ["game_emotion_tracker", "game_tension_find"],
+      practiceIds: ["prac_body_scan", "prac_emotion_labeling"],
+      experimentIds: ["exp_emotion_log", "exp_tension_log"],
+    },
+    {
+      id: "deepen",
+      label: "Phase 4 — Thought",
+      description: "Witness the mind thinking itself.",
+      days: [28, 36],
+      capabilities: ["thought_awareness", "self_awareness", "witnessing_thoughts"],
+      sessionIds: ["sess_awareness_thought_01", "sess_awareness_thought_02"],
+      gameIds: ["game_thought_watch", "game_thought_label"],
+      practiceIds: ["prac_witnessing", "prac_meditation"],
+      experimentIds: ["exp_thought_log", "exp_mental_notetaking"],
+    },
+    {
+      id: "integrate",
+      label: "Phase 5 — Witness",
+      description: "Rest as the witness of all phenomena.",
+      days: [37, 45],
+      capabilities: ["witnessing_thoughts", "self_awareness", "observation", "meta_awareness"],
+      sessionIds: ["sess_awareness_witness_01"],
+      gameIds: ["game_observation_walk"],
+      practiceIds: ["prac_witnessing", "prac_observation"],
+      experimentIds: ["exp_observation_day"],
+    },
+  ],
+};
+
+// ─── Will Program — 30 days ──────────────────────────────────────────────────
+
+export const WILL_PROGRAM: ProgramDefinition = {
+  id: "prog_will_30",
+  slug: "will_30",
+  label: "Will Forge",
+  description: "30-day willpower training. From reactive to deliberate.",
+  longDescription: `A 30-day program to transform raw impulse into disciplined choice.
+
+Starting with noticing impulses, building pause capacity, and ending with
+effortless self-control that feels like freedom, not restriction.`,
+  icon: "🔥",
+  color: "red",
+  durationDays: 30,
+  domain: "will",
+  prerequisites: [],
+  tagline: "From reactive to deliberate",
+  difficulty: "intermediate",
+  phases: [
+    {
+      id: "notice",
+      label: "Phase 1 — Notice",
+      description: "Become aware of impulses and automatic reactions.",
+      days: [1, 6],
+      capabilities: ["impulse_awareness", "impulse_control"],
+      sessionIds: ["sess_will_notice_01", "sess_will_notice_02"],
+      gameIds: ["game_impulse_stop"],
+      practiceIds: ["prac_pause_practice"],
+      experimentIds: ["exp_impulse_log"],
+    },
+    {
+      id: "stabilize",
+      label: "Phase 2 — Pause",
+      description: "Build the gap between impulse and action.",
+      days: [7, 12],
+      capabilities: ["impulse_control", "response_inhibition", "delayed_gratification"],
+      sessionIds: ["sess_will_pause_01", "sess_will_pause_02"],
+      gameIds: ["game_impulse_stop", "game_delayed_gratification"],
+      practiceIds: ["prac_pause_practice", "prac_delay_practice"],
+      experimentIds: ["exp_delay_challenge"],
+    },
+    {
+      id: "resist",
+      label: "Phase 3 — Choose",
+      description: "Exercise choice even when uncomfortable.",
+      days: [13, 19],
+      capabilities: ["discomfort_tolerance", "delayed_gratification", "discipline"],
+      sessionIds: ["sess_will_choose_01", "sess_will_choose_02"],
+      gameIds: ["game_delayed_gratification", "game_discomfort_hold"],
+      practiceIds: ["prac_discomfort_practice", "prac_phone_fasting"],
+      experimentIds: ["exp_cold_exposure", "exp_boredom_tolerance"],
+    },
+    {
+      id: "deepen",
+      label: "Phase 4 — Commit",
+      description: "Sustain will under prolonged pressure.",
+      days: [20, 26],
+      capabilities: ["consistency", "commitment", "discipline", "frustration_tolerance"],
+      sessionIds: ["sess_will_commit_01", "sess_will_commit_02"],
+      gameIds: ["game_streak_builder", "game_frustration_tolerance"],
+      practiceIds: ["prac_daily_practice"],
+      experimentIds: ["exp_challenge_day", "exp_habit_stack"],
+    },
+    {
+      id: "integrate",
+      label: "Phase 5 — Integrate",
+      description: "Will as identity, not effort.",
+      days: [27, 30],
+      capabilities: ["discipline", "task_completion", "consistency"],
+      sessionIds: ["sess_will_integrate_01"],
+      gameIds: ["game_task_finish"],
+      practiceIds: ["prac_daily_practice"],
+      experimentIds: ["exp_commitment_contract"],
+    },
+  ],
+};
+
+// ─── Thinking Program — 30 days ──────────────────────────────────────────────
+
+export const THINKING_PROGRAM: ProgramDefinition = {
+  id: "prog_thinking_30",
+  slug: "thinking_30",
+  label: "Mind Forge",
+  description: "30-day thinking training. From reactive thought to clear reasoning.",
+  longDescription: `A 30-day program to upgrade the quality of your thinking.
+
+From noticing thought patterns, through logical reasoning and abstraction,
+to decision-making under uncertainty and problem-solving.`,
+  icon: "🧩",
+  color: "cyan",
+  durationDays: 30,
+  domain: "thinking",
+  prerequisites: [],
+  tagline: "From reactive thought to clear reasoning",
+  difficulty: "intermediate",
+  phases: [
+    {
+      id: "notice",
+      label: "Phase 1 — Observe",
+      description: "Notice the quality of your own thinking.",
+      days: [1, 6],
+      capabilities: ["thought_awareness", "self_awareness", "observation"],
+      sessionIds: ["sess_think_observe_01", "sess_think_observe_02"],
+      gameIds: ["game_thought_watch", "game_pattern_hunt"],
+      practiceIds: ["prac_witnessing", "prac_journaling"],
+      experimentIds: ["exp_thought_log"],
+    },
+    {
+      id: "stabilize",
+      label: "Phase 2 — Pattern",
+      description: "See the structures in your thinking.",
+      days: [7, 12],
+      capabilities: ["pattern_recognition", "critical_thinking", "mental_flexibility"],
+      sessionIds: ["sess_think_pattern_01", "sess_think_pattern_02"],
+      gameIds: ["game_pattern_hunt", "game_sequence_find"],
+      practiceIds: ["prac_pattern_journal"],
+      experimentIds: ["exp_pattern_week"],
+    },
+    {
+      id: "resist",
+      label: "Phase 3 — Logic",
+      description: "Apply structured reasoning to problems.",
+      days: [13, 19],
+      capabilities: ["logical_reasoning", "abstraction", "critical_thinking"],
+      sessionIds: ["sess_think_logic_01", "sess_think_logic_02"],
+      gameIds: ["game_logic_grid", "game_argument_map"],
+      practiceIds: ["prac_logic_practice"],
+      experimentIds: ["exp_logic_journal"],
+    },
+    {
+      id: "deepen",
+      label: "Phase 4 — Decide",
+      description: "Make better decisions under uncertainty.",
+      days: [20, 26],
+      capabilities: ["decision_making", "probabilistic_thinking", "mental_flexibility"],
+      sessionIds: ["sess_think_decide_01", "sess_think_decide_02"],
+      gameIds: ["game_decision_tree", "game_prob_calc"],
+      practiceIds: ["prac_decision_journal"],
+      experimentIds: ["exp_decision_log"],
+    },
+    {
+      id: "integrate",
+      label: "Phase 5 — Solve",
+      description: "Apply thinking to real problems.",
+      days: [27, 30],
+      capabilities: ["decision_making", "pattern_recognition", "critical_thinking"],
+      sessionIds: ["sess_think_solve_01"],
+      gameIds: ["game_problem_solve"],
+      practiceIds: ["prac_decision_journal"],
+      experimentIds: ["exp_real_world_problem"],
+    },
+  ],
+};
+
+// ─── Emotion Program — 30 days ───────────────────────────────────────────────
+
+export const EMOTION_PROGRAM: ProgramDefinition = {
+  id: "prog_emotion_30",
+  slug: "emotion_30",
+  label: "Emotion Forge",
+  description: "30-day emotional mastery. From reaction to regulation.",
+  longDescription: `A 30-day program to develop emotional intelligence and regulation.
+
+Starting with recognizing emotions, building regulation capacity,
+and ending with emotional mastery that serves rather than hinders.`,
+  icon: "❤️",
+  color: "pink",
+  durationDays: 30,
+  domain: "emotion",
+  prerequisites: [],
+  tagline: "From reaction to regulation",
+  difficulty: "beginner",
+  phases: [
+    {
+      id: "notice",
+      label: "Phase 1 — Name",
+      description: "Learn to accurately identify emotions.",
+      days: [1, 7],
+      capabilities: ["emotional_recognition", "emotional_awareness"],
+      sessionIds: ["sess_emotion_name_01", "sess_emotion_name_02"],
+      gameIds: ["game_emotion_granularity", "game_emotion_tracker"],
+      practiceIds: ["prac_emotion_labeling", "prac_journaling"],
+      experimentIds: ["exp_emotion_log"],
+    },
+    {
+      id: "stabilize",
+      label: "Phase 2 — Feel",
+      description: "Sit with emotions without being overwhelmed.",
+      days: [8, 14],
+      capabilities: ["emotional_regulation", "discomfort_tolerance", "frustration_tolerance"],
+      sessionIds: ["sess_emotion_feel_01", "sess_emotion_feel_02"],
+      gameIds: ["game_emotion_regulate", "game_stress_sim"],
+      practiceIds: ["prac_breath_regulation", "prac_pause_practice"],
+      experimentIds: ["exp_trigger_awareness"],
+    },
+    {
+      id: "resist",
+      label: "Phase 3 — Regulate",
+      description: "Choose responses instead of reactions.",
+      days: [15, 21],
+      capabilities: ["emotional_regulation", "response_inhibition", "impulse_control"],
+      sessionIds: ["sess_emotion_regulate_01", "sess_emotion_regulate_02"],
+      gameIds: ["game_emotion_regulate", "game_impulse_stop"],
+      practiceIds: ["prac_pause_practice", "prac_emotion_labeling"],
+      experimentIds: ["exp_reaction_log"],
+    },
+    {
+      id: "deepen",
+      label: "Phase 4 — Understand",
+      description: "See the deeper patterns beneath emotions.",
+      days: [22, 27],
+      capabilities: ["emotional_regulation", "patience", "empathy"],
+      sessionIds: ["sess_emotion_understand_01", "sess_emotion_understand_02"],
+      gameIds: ["game_emotion_read", "game_empathy_map"],
+      practiceIds: ["prac_compassion_practice", "prac_journaling"],
+      experimentIds: ["exp_compassion_day"],
+    },
+    {
+      id: "integrate",
+      label: "Phase 5 — Master",
+      description: "Emotions as information, not commands.",
+      days: [28, 30],
+      capabilities: ["emotional_regulation", "empathy", "response_inhibition"],
+      sessionIds: ["sess_emotion_master_01"],
+      gameIds: ["game_emotion_regulate"],
+      practiceIds: ["prac_emotion_labeling"],
+      experimentIds: ["exp_emotion_mastery"],
+    },
+  ],
+};
+
+// ─── All programs registry ───────────────────────────────────────────────────
+
+export const ALL_PROGRAMS: ProgramDefinition[] = [
+  FOCUS_PROGRAM,
+  AWARENESS_PROGRAM,
+  WILL_PROGRAM,
+  THINKING_PROGRAM,
+  EMOTION_PROGRAM,
+];
+
+export function getProgramBySlug(slug: string): ProgramDefinition | undefined {
+  return ALL_PROGRAMS.find((p) => p.slug === slug);
+}
+
+export function getProgramById(id: string): ProgramDefinition | undefined {
+  return ALL_PROGRAMS.find((p) => p.id === id);
+}
+
+export function getProgramsByDomain(domain: string): ProgramDefinition[] {
+  return ALL_PROGRAMS.filter((p) => p.domain === domain);
+}
+
+export function getProgramPhase(
+  program: ProgramDefinition,
+  day: number
+): ProgramPhase | undefined {
+  return program.phases.find((phase) => day >= phase.days[0] && day <= phase.days[1]);
+}
+
+export const TOTAL_PROGRAMS = ALL_PROGRAMS.length;
+
+console.log(`[programs] Loaded ${TOTAL_PROGRAMS} programs`);

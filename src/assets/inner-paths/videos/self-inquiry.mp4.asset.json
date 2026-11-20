@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "4cee4b3c-4c0d-4d39-a556-34f6608469d6",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/inner-paths/videos/self-inquiry.mp4",
+  "original_filename": "self-inquiry.mp4",
+  "size": 12571303,
+  "created_at": "2026-07-18T09:56:23Z",
+  "storage_path": "src/assets/inner-paths/videos/self-inquiry.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:26:43.774Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/4cee4b3c-4c0d-4d39-a556-34f6608469d6/self-inquiry.mp4"
+}

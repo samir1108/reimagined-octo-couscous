@@ -1,0 +1,1092 @@
+{
+  "hist": {
+    "100-149": 91,
+    "60-99": 86,
+    "150-199": 29,
+    "<60": 10,
+    "200-299": 27,
+    "300+": 27
+  },
+  "files": [
+    {
+      "f": "AbhyasaVairagyaDial",
+      "lines": 129
+    },
+    {
+      "f": "AhamkaraNap",
+      "lines": 107
+    },
+    {
+      "f": "AhimsaSweep",
+      "lines": 117
+    },
+    {
+      "f": "AloneWithYou",
+      "lines": 92
+    },
+    {
+      "f": "AnandaTrace",
+      "lines": 113
+    },
+    {
+      "f": "AnasaktiTest",
+      "lines": 138
+    },
+    {
+      "f": "AncestorLetter",
+      "lines": 160
+    },
+    {
+      "f": "AncestorThanks",
+      "lines": 76
+    },
+    {
+      "f": "AngerBellow",
+      "lines": 58
+    },
+    {
+      "f": "AngerCool",
+      "lines": 103
+    },
+    {
+      "f": "AntahkaranaSplit",
+      "lines": 137
+    },
+    {
+      "f": "AnugrahaWindow",
+      "lines": 110
+    },
+    {
+      "f": "AparigrahaRelease",
+      "lines": 108
+    },
+    {
+      "f": "AshramaCompass",
+      "lines": 128
+    },
+    {
+      "f": "AsteyaLedger",
+      "lines": 118
+    },
+    {
+      "f": "AttachmentInventory",
+      "lines": 193
+    },
+    {
+      "f": "AttachmentThread",
+      "lines": 99
+    },
+    {
+      "f": "AttentionSnap",
+      "lines": 94
+    },
+    {
+      "f": "AweWindow",
+      "lines": 80
+    },
+    {
+      "f": "BardoRoom",
+      "lines": 295
+    },
+    {
+      "f": "BathRitual",
+      "lines": 83
+    },
+    {
+      "f": "BeginnerDevotion",
+      "lines": 92
+    },
+    {
+      "f": "BeginnerEye",
+      "lines": 93
+    },
+    {
+      "f": "BellInTheWind",
+      "lines": 330
+    },
+    {
+      "f": "BhaktiFlame",
+      "lines": 141
+    },
+    {
+      "f": "BhavaPortrait",
+      "lines": 129
+    },
+    {
+      "f": "BodyScanner",
+      "lines": 251
+    },
+    {
+      "f": "BodyScannerCanvas",
+      "lines": 173
+    },
+    {
+      "f": "BoundaryNo",
+      "lines": 56
+    },
+    {
+      "f": "BrahmacharyaChannel",
+      "lines": 117
+    },
+    {
+      "f": "BrainOverride",
+      "lines": 68
+    },
+    {
+      "f": "BreathLadder",
+      "lines": 158
+    },
+    {
+      "f": "BreathTemple",
+      "lines": 472
+    },
+    {
+      "f": "CandleInTheStorm",
+      "lines": 112
+    },
+    {
+      "f": "ChakraWeather",
+      "lines": 127
+    },
+    {
+      "f": "ChildLetter",
+      "lines": 76
+    },
+    {
+      "f": "CoherentThree",
+      "lines": 323
+    },
+    {
+      "f": "ColdWater",
+      "lines": 447
+    },
+    {
+      "f": "ColdWaterCanvas",
+      "lines": 228
+    },
+    {
+      "f": "ComparisonCut",
+      "lines": 78
+    },
+    {
+      "f": "ComparisonScroll",
+      "lines": 94
+    },
+    {
+      "f": "ComplimentTrapCanvas",
+      "lines": 115
+    },
+    {
+      "f": "ConsentCheck",
+      "lines": 84
+    },
+    {
+      "f": "CouncilOfThree",
+      "lines": 285
+    },
+    {
+      "f": "CouncilOfThreeCanvas",
+      "lines": 165
+    },
+    {
+      "f": "CourageStep",
+      "lines": 96
+    },
+    {
+      "f": "CravingWave",
+      "lines": 81
+    },
+    {
+      "f": "CreativeBlock",
+      "lines": 83
+    },
+    {
+      "f": "DarshanSit",
+      "lines": 141
+    },
+    {
+      "f": "DeathPractice",
+      "lines": 70
+    },
+    {
+      "f": "DharanaPoint",
+      "lines": 124
+    },
+    {
+      "f": "DharmaYuddha",
+      "lines": 238
+    },
+    {
+      "f": "DhyanaFlow",
+      "lines": 125
+    },
+    {
+      "f": "DistractionCost",
+      "lines": 94
+    },
+    {
+      "f": "DoubtSit",
+      "lines": 92
+    },
+    {
+      "f": "DreamCapture",
+      "lines": 77
+    },
+    {
+      "f": "DreamLetter",
+      "lines": 256
+    },
+    {
+      "f": "DreamLetterCanvas",
+      "lines": 56
+    },
+    {
+      "f": "DreamSeed",
+      "lines": 90
+    },
+    {
+      "f": "EgoAutopsy",
+      "lines": 172
+    },
+    {
+      "f": "ElderLetter",
+      "lines": 66
+    },
+    {
+      "f": "EmotionalResonance",
+      "lines": 379
+    },
+    {
+      "f": "EmotionalResonanceCanvas",
+      "lines": 111
+    },
+    {
+      "f": "EmptyRoom",
+      "lines": 292
+    },
+    {
+      "f": "EnvyCompass",
+      "lines": 153
+    },
+    {
+      "f": "EnvyMirror",
+      "lines": 51
+    },
+    {
+      "f": "EveningReview",
+      "lines": 81
+    },
+    {
+      "f": "FearLadder",
+      "lines": 159
+    },
+    {
+      "f": "FinishLine",
+      "lines": 100
+    },
+    {
+      "f": "FloorBeneathTheFloor",
+      "lines": 128
+    },
+    {
+      "f": "FocusFunnel",
+      "lines": 101
+    },
+    {
+      "f": "FoodPause",
+      "lines": 97
+    },
+    {
+      "f": "ForgiveYourself",
+      "lines": 92
+    },
+    {
+      "f": "ForgivenessBridge",
+      "lines": 171
+    },
+    {
+      "f": "ForgivenessDoor",
+      "lines": 103
+    },
+    {
+      "f": "ForgivenessLedger",
+      "lines": 57
+    },
+    {
+      "f": "FutureSelfVoice",
+      "lines": 84
+    },
+    {
+      "f": "GentleEyes",
+      "lines": 92
+    },
+    {
+      "f": "GratitudeReal",
+      "lines": 86
+    },
+    {
+      "f": "GratitudeStorm",
+      "lines": 176
+    },
+    {
+      "f": "GratitudeThree",
+      "lines": 46
+    },
+    {
+      "f": "GratitudeWalk",
+      "lines": 71
+    },
+    {
+      "f": "GreedLedger",
+      "lines": 97
+    },
+    {
+      "f": "GriefWave",
+      "lines": 81
+    },
+    {
+      "f": "GrievingRoom",
+      "lines": 474
+    },
+    {
+      "f": "GrievingRoomCanvas",
+      "lines": 132
+    },
+    {
+      "f": "GunaDial",
+      "lines": 119
+    },
+    {
+      "f": "GunaSnapshot",
+      "lines": 193
+    },
+    {
+      "f": "GuruDakshina",
+      "lines": 143
+    },
+    {
+      "f": "GuruSmarana",
+      "lines": 118
+    },
+    {
+      "f": "HandDoesntMove",
+      "lines": 252
+    },
+    {
+      "f": "HaraDrop",
+      "lines": 147
+    },
+    {
+      "f": "HardConversation",
+      "lines": 85
+    },
+    {
+      "f": "HeartCoherenceBridge",
+      "lines": 424
+    },
+    {
+      "f": "HeartCoherenceBridgeCanvas",
+      "lines": 284
+    },
+    {
+      "f": "HopeSeed",
+      "lines": 87
+    },
+    {
+      "f": "HumilityBow",
+      "lines": 90
+    },
+    {
+      "f": "ImpermanenceWalk",
+      "lines": 172
+    },
+    {
+      "f": "InnerWeather",
+      "lines": 241
+    },
+    {
+      "f": "InnerWeatherCanvas",
+      "lines": 60
+    },
+    {
+      "f": "IshvaraDial",
+      "lines": 182
+    },
+    {
+      "f": "IshvaraPranidhana",
+      "lines": 106
+    },
+    {
+      "f": "IstaDevataChoose",
+      "lines": 148
+    },
+    {
+      "f": "Japa108",
+      "lines": 137
+    },
+    {
+      "f": "JealousyMirror",
+      "lines": 86
+    },
+    {
+      "f": "JnanaCut",
+      "lines": 123
+    },
+    {
+      "f": "KaivalyaDrop",
+      "lines": 117
+    },
+    {
+      "f": "KarmaCoin",
+      "lines": 65
+    },
+    {
+      "f": "KarmaLedger",
+      "lines": 204
+    },
+    {
+      "f": "KarmaOffering",
+      "lines": 123
+    },
+    {
+      "f": "KirtanPulse",
+      "lines": 127
+    },
+    {
+      "f": "KleshasMirror",
+      "lines": 124
+    },
+    {
+      "f": "LakshmiLedger",
+      "lines": 63
+    },
+    {
+      "f": "LastBreath",
+      "lines": 87
+    },
+    {
+      "f": "LegacyLine",
+      "lines": 77
+    },
+    {
+      "f": "LifeSimulator",
+      "lines": 263
+    },
+    {
+      "f": "LineageThread",
+      "lines": 97
+    },
+    {
+      "f": "ListenForTheBird",
+      "lines": 144
+    },
+    {
+      "f": "ListeningTree",
+      "lines": 50
+    },
+    {
+      "f": "LoopMirror",
+      "lines": 195
+    },
+    {
+      "f": "MahavakyaSit",
+      "lines": 133
+    },
+    {
+      "f": "Maranasati",
+      "lines": 72
+    },
+    {
+      "f": "MaunaWindow",
+      "lines": 123
+    },
+    {
+      "f": "MayaUnmask",
+      "lines": 135
+    },
+    {
+      "f": "MiddleWay",
+      "lines": 112
+    },
+    {
+      "f": "MirrorDuel",
+      "lines": 197
+    },
+    {
+      "f": "MirrorRealm",
+      "lines": 539
+    },
+    {
+      "f": "MirrorRealmCanvas",
+      "lines": 216
+    },
+    {
+      "f": "MoneyLoop",
+      "lines": 110
+    },
+    {
+      "f": "MorningThreshold",
+      "lines": 97
+    },
+    {
+      "f": "MortalityGlance",
+      "lines": 78
+    },
+    {
+      "f": "NadaListen",
+      "lines": 111
+    },
+    {
+      "f": "NameTheEmotion",
+      "lines": 165
+    },
+    {
+      "f": "NetiNeti",
+      "lines": 115
+    },
+    {
+      "f": "NidraThreshold",
+      "lines": 99
+    },
+    {
+      "f": "NinthDharana",
+      "lines": 227
+    },
+    {
+      "f": "NinthDharanaCanvas",
+      "lines": 86
+    },
+    {
+      "f": "NiyamaAudit",
+      "lines": 121
+    },
+    {
+      "f": "NobleFriendship",
+      "lines": 90
+    },
+    {
+      "f": "NonDualDoor",
+      "lines": 251
+    },
+    {
+      "f": "NonDualDoorCanvas",
+      "lines": 77
+    },
+    {
+      "f": "OneRegretRehearsal",
+      "lines": 76
+    },
+    {
+      "f": "PanchakoshaPeel",
+      "lines": 125
+    },
+    {
+      "f": "PatienceGate",
+      "lines": 105
+    },
+    {
+      "f": "PerfectionCut",
+      "lines": 89
+    },
+    {
+      "f": "PhoneOffRitual",
+      "lines": 100
+    },
+    {
+      "f": "PranaMeter",
+      "lines": 114
+    },
+    {
+      "f": "PrapattiNote",
+      "lines": 115
+    },
+    {
+      "f": "PrasadEat",
+      "lines": 114
+    },
+    {
+      "f": "PratyaharaGate",
+      "lines": 125
+    },
+    {
+      "f": "ProcrastinationSit",
+      "lines": 93
+    },
+    {
+      "f": "PurusharthaBalance",
+      "lines": 199
+    },
+    {
+      "f": "QuestionBehindQuestion",
+      "lines": 522
+    },
+    {
+      "f": "QuestionBehindQuestionCanvas",
+      "lines": 110
+    },
+    {
+      "f": "QuestionNoAnswer",
+      "lines": 488
+    },
+    {
+      "f": "QuestionNoAnswerCanvas",
+      "lines": 127
+    },
+    {
+      "f": "RasaPalette",
+      "lines": 121
+    },
+    {
+      "f": "RealWorldQuest",
+      "lines": 44
+    },
+    {
+      "f": "RedDoor",
+      "lines": 242
+    },
+    {
+      "f": "RedDoorCanvas",
+      "lines": 86
+    },
+    {
+      "f": "RefusalEngine",
+      "lines": 191
+    },
+    {
+      "f": "RepairAfterHarm",
+      "lines": 88
+    },
+    {
+      "f": "RepairDraft",
+      "lines": 100
+    },
+    {
+      "f": "ResentmentFire",
+      "lines": 84
+    },
+    {
+      "f": "RestPermission",
+      "lines": 94
+    },
+    {
+      "f": "RestraintBell",
+      "lines": 82
+    },
+    {
+      "f": "ReverenceBow",
+      "lines": 89
+    },
+    {
+      "f": "RinaLedger",
+      "lines": 112
+    },
+    {
+      "f": "RitaAlignment",
+      "lines": 131
+    },
+    {
+      "f": "SacredSpeech",
+      "lines": 88
+    },
+    {
+      "f": "SakshiAnchor",
+      "lines": 113
+    },
+    {
+      "f": "SamadhiTaste",
+      "lines": 107
+    },
+    {
+      "f": "SamskaraHunt",
+      "lines": 251
+    },
+    {
+      "f": "SankalpaForge",
+      "lines": 73
+    },
+    {
+      "f": "SannyasaRehearsal",
+      "lines": 127
+    },
+    {
+      "f": "SantoshaSnapshot",
+      "lines": 106
+    },
+    {
+      "f": "SatChitAnanda",
+      "lines": 121
+    },
+    {
+      "f": "SatyaMirror",
+      "lines": 106
+    },
+    {
+      "f": "SauchaSweep",
+      "lines": 106
+    },
+    {
+      "f": "SayingNo",
+      "lines": 101
+    },
+    {
+      "f": "ScreenFast",
+      "lines": 58
+    },
+    {
+      "f": "ScrollFast",
+      "lines": 92
+    },
+    {
+      "f": "SeasonsOfSelf",
+      "lines": 108
+    },
+    {
+      "f": "SelfEnvy",
+      "lines": 84
+    },
+    {
+      "f": "SevaTurn",
+      "lines": 100
+    },
+    {
+      "f": "SevenDayVow",
+      "lines": 248
+    },
+    {
+      "f": "ShadowInterview",
+      "lines": 158
+    },
+    {
+      "f": "ShameFire",
+      "lines": 84
+    },
+    {
+      "f": "SharanagatiFall",
+      "lines": 131
+    },
+    {
+      "f": "ShraddhaVessel",
+      "lines": 134
+    },
+    {
+      "f": "SilenceKeeper",
+      "lines": 89
+    },
+    {
+      "f": "SilenceSprint",
+      "lines": 217
+    },
+    {
+      "f": "SilentMountain",
+      "lines": 107
+    },
+    {
+      "f": "SleepSurrender",
+      "lines": 98
+    },
+    {
+      "f": "SlowTap",
+      "lines": 398
+    },
+    {
+      "f": "SlowTapCanvas",
+      "lines": 193
+    },
+    {
+      "f": "SolitudeHour",
+      "lines": 79
+    },
+    {
+      "f": "SoundMicroscope",
+      "lines": 398
+    },
+    {
+      "f": "SoundMicroscopeFieldCanvas",
+      "lines": 105
+    },
+    {
+      "f": "SourceCouncil",
+      "lines": 82
+    },
+    {
+      "f": "SpeechFast",
+      "lines": 189
+    },
+    {
+      "f": "StopTheSpinning",
+      "lines": 74
+    },
+    {
+      "f": "StrangerSong",
+      "lines": 468
+    },
+    {
+      "f": "StrangerSongCanvas",
+      "lines": 98
+    },
+    {
+      "f": "SubtractYourself",
+      "lines": 410
+    },
+    {
+      "f": "SubtractYourselfCanvas",
+      "lines": 98
+    },
+    {
+      "f": "SunSalute",
+      "lines": 98
+    },
+    {
+      "f": "SurrenderHand",
+      "lines": 91
+    },
+    {
+      "f": "SvadharmaPick",
+      "lines": 109
+    },
+    {
+      "f": "SvadhyayaPage",
+      "lines": 106
+    },
+    {
+      "f": "TapasFire",
+      "lines": 106
+    },
+    {
+      "f": "The30SecondMind",
+      "lines": 411
+    },
+    {
+      "f": "TheApology",
+      "lines": 552
+    },
+    {
+      "f": "TheApologyCanvas",
+      "lines": 91
+    },
+    {
+      "f": "TheComplimentTrap",
+      "lines": 466
+    },
+    {
+      "f": "TheName",
+      "lines": 284
+    },
+    {
+      "f": "TheNameCanvas",
+      "lines": 74
+    },
+    {
+      "f": "TheOtherSide",
+      "lines": 495
+    },
+    {
+      "f": "TheOtherSideCanvas",
+      "lines": 111
+    },
+    {
+      "f": "ThePause",
+      "lines": 531
+    },
+    {
+      "f": "ThePauseCanvas",
+      "lines": 186
+    },
+    {
+      "f": "TheScroll",
+      "lines": 442
+    },
+    {
+      "f": "TheScrollFieldCanvas",
+      "lines": 97
+    },
+    {
+      "f": "TheSigh",
+      "lines": 466
+    },
+    {
+      "f": "TheSighWave",
+      "lines": 246
+    },
+    {
+      "f": "TheYawnLoop",
+      "lines": 291
+    },
+    {
+      "f": "ThirtySecondMindCanvas",
+      "lines": 70
+    },
+    {
+      "f": "ThoughtWatcher",
+      "lines": 450
+    },
+    {
+      "f": "ThoughtWatcherFieldCanvas",
+      "lines": 167
+    },
+    {
+      "f": "ThreeBrainsCanvas",
+      "lines": 184
+    },
+    {
+      "f": "ThreeBrainsSpeak",
+      "lines": 484
+    },
+    {
+      "f": "TimeGreed",
+      "lines": 93
+    },
+    {
+      "f": "TirthaSit",
+      "lines": 118
+    },
+    {
+      "f": "TitikshaSit",
+      "lines": 142
+    },
+    {
+      "f": "Tonglen",
+      "lines": 107
+    },
+    {
+      "f": "TriggerLab",
+      "lines": 218
+    },
+    {
+      "f": "TrikalaWitness",
+      "lines": 109
+    },
+    {
+      "f": "TrustFall",
+      "lines": 87
+    },
+    {
+      "f": "TuriyaGate",
+      "lines": 124
+    },
+    {
+      "f": "TwoChairs",
+      "lines": 257
+    },
+    {
+      "f": "TwoChairsCanvas",
+      "lines": 69
+    },
+    {
+      "f": "TwoHands",
+      "lines": 252
+    },
+    {
+      "f": "TwoMinuteStart",
+      "lines": 87
+    },
+    {
+      "f": "TwoMirrors",
+      "lines": 364
+    },
+    {
+      "f": "TwoMirrorsCanvas",
+      "lines": 159
+    },
+    {
+      "f": "TwoPersonMirror",
+      "lines": 186
+    },
+    {
+      "f": "VairagyaTest",
+      "lines": 161
+    },
+    {
+      "f": "VatsalyaLook",
+      "lines": 122
+    },
+    {
+      "f": "VicharaLadder",
+      "lines": 112
+    },
+    {
+      "f": "VirahaLetter",
+      "lines": 87
+    },
+    {
+      "f": "VivekaBlade",
+      "lines": 113
+    },
+    {
+      "f": "VowRenewal",
+      "lines": 86
+    },
+    {
+      "f": "WalkingMeditation",
+      "lines": 94
+    },
+    {
+      "f": "WhatsEnough",
+      "lines": 83
+    },
+    {
+      "f": "WhoIsThinking",
+      "lines": 410
+    },
+    {
+      "f": "WhoIsThinkingCanvas",
+      "lines": 74
+    },
+    {
+      "f": "WhoseVoice",
+      "lines": 529
+    },
+    {
+      "f": "WhoseVoiceCanvas",
+      "lines": 130
+    },
+    {
+      "f": "WillForge",
+      "lines": 353
+    },
+    {
+      "f": "WillForgeCanvas",
+      "lines": 113
+    },
+    {
+      "f": "WitnessMarathon",
+      "lines": 174
+    },
+    {
+      "f": "WitnessRest",
+      "lines": 87
+    },
+    {
+      "f": "WitnessRoom",
+      "lines": 269
+    },
+    {
+      "f": "WitnessRoomCanvas",
+      "lines": 176
+    },
+    {
+      "f": "WitnessWall",
+      "lines": 222
+    },
+    {
+      "f": "WonderPause",
+      "lines": 76
+    },
+    {
+      "f": "WoundMap",
+      "lines": 133
+    },
+    {
+      "f": "YamaAudit",
+      "lines": 111
+    },
+    {
+      "f": "YawnFieldCanvas",
+      "lines": 101
+    },
+    {
+      "f": "YogaNidraDrop",
+      "lines": 51
+    }
+  ]
+}

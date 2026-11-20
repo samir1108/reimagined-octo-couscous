@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "60b602a8-dd7b-4d6d-8048-6197cfce1643",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/witness.jpg",
+  "r2_key": "a/v1/b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f/60b602a8-dd7b-4d6d-8048-6197cfce1643/witness.jpg",
+  "original_filename": "witness.jpg",
+  "size": 120226,
+  "content_type": "image/jpeg",
+  "created_at": "2026-06-18T14:25:24Z",
+  "bucket": "media",
+  "storage_path": "src/assets/games/witness.jpg",
+  "migrated_at": "2026-10-20T11:25:24.916Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/60b602a8-dd7b-4d6d-8048-6197cfce1643/witness.jpg"
+}

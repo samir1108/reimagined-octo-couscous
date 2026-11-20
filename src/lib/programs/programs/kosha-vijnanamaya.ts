@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KOSHA_VIJNANAMAYA: SessionProgramV3 = {
+  id: "kosha-vijnanamaya",
+  title: "Kosha · Vijnanamaya",
+  subtitle: "The wisdom sheath — discriminating intellect",
+  description:
+    "A 5-session arc through the Vijnanamaya Kosha: the intellect that discerns, decides, and witnesses.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["kosha", "vijnanamaya", "wisdom", "discernment"],
+  icon: "Eye",
+  coverGradient: "from-indigo-500 to-blue-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The discriminating intellect" },
+    { phase: "Practice", sessions: 1, focus: "Discern the real" },
+    { phase: "Integration", sessions: 1, focus: "Wisdom in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The witness of wisdom" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The intellect that discerns",
+      required: ["ritual.opening-bow", "teach.kosha.overview", "wisdom.kosha.vijnanamaya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Discern the seer from the seen",
+      required: ["wisdom.kosha.vijnanamaya", "inquiry.who-am-i", "meditation.anchor-breath"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Discern the real from the unreal",
+      required: ["wisdom.kosha.vijnanamaya", "contemplation.sit-with-question", "witness.who-is-watching"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Wisdom in the day",
+      required: ["wisdom.kosha.vijnanamaya", "micro-act.stretch-once", "journal.what-am-i-avoiding"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The witness of wisdom",
+      required: ["ritual.opening-bow", "wisdom.kosha.vijnanamaya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHIVA_SUTRAS_RECOGNITION: SessionProgramV3 = {
+  id: "shiva-sutras-recognition",
+  title: "Shiva Sutras · Recognition Path",
+  subtitle: "Consciousness is the self — direct recognition",
+  description:
+    "A 5-session arc through the Shiva Sutras' first section (Shambhavopaya): the direct path of recognizing consciousness as the self, without intermediary practices.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["shiva-sutras", "kashmir-shaivism", "recognition", "shambhavopaya"],
+  icon: "Eye",
+  coverGradient: "from-violet-700 to-purple-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Consciousness is the self" },
+    { phase: "Practice", sessions: 1, focus: "Knowledge is bondage" },
+    { phase: "Integration", sessions: 1, focus: "The universe as play" },
+    { phase: "Mastery", sessions: 1, focus: "Rest as consciousness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Caitanyam atma — consciousness is the self",
+      required: ["ritual.opening-bow", "teach.shivasutra.overview", "wisdom.shivasutra.1"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Jnanam bandhah — knowledge is bondage",
+      required: ["wisdom.shivasutra.2", "inquiry.what-is-aware", "witness.who-is-watching"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Yonih sarvam — the womb of all is consciousness",
+      required: ["wisdom.shivasutra.3", "meditation.choiceless-awareness", "witness.thought-as-object"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "The heart is the center",
+      required: ["wisdom.shivasutra.4", "meditation.body-as-anchor", "contemplation.sit-with-question"],
+      targetMinutes: 22 },
+    { index: 5, phase: "Mastery",
+      intent: "Rest as consciousness itself",
+      required: ["ritual.opening-bow", "wisdom.shivasutra.1", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

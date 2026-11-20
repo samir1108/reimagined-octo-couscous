@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "fec3a185-22ce-47d2-8996-57964a84c00e",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/silent-mountain.mp4",
+  "original_filename": "silent-mountain.mp4",
+  "size": 8912413,
+  "created_at": "2026-07-17T11:12:17Z",
+  "storage_path": "src/assets/games/videos/silent-mountain.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:24:45.252Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/fec3a185-22ce-47d2-8996-57964a84c00e/silent-mountain.mp4"
+}

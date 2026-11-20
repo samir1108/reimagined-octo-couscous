@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "00e1dd6c-0b6b-4f88-8fb3-f1eea583b9bf",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film/scene5-instrument.mp4",
+  "original_filename": "scene5-instrument.mp4",
+  "size": 16172778,
+  "created_at": "2026-05-01T12:20:07Z",
+  "bucket": "media",
+  "storage_path": "src/assets/film/scene5-instrument.mp4",
+  "migrated_at": "2026-10-20T10:58:49.096Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/00e1dd6c-0b6b-4f88-8fb3-f1eea583b9bf/scene5-instrument.mp4"
+}

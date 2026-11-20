@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KLESHA_DVESHA: SessionProgramV3 = {
+  id: "klesha-dvesha",
+  title: "Klesha · Dvesha",
+  subtitle: "Aversion — the push away from pain and the feared",
+  description:
+    "A 5-session arc through Dvesha: the violent push away from anything that has caused pain. The memory of suffering creates compulsive avoidance.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["klesha", "dvesha", "aversion", "fear"],
+  icon: "Shield",
+  coverGradient: "from-red-600 to-red-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The push of memory" },
+    { phase: "Practice", sessions: 1, focus: "See the pushing" },
+    { phase: "Integration", sessions: 1, focus: "Meet the avoided" },
+    { phase: "Mastery", sessions: 1, focus: "The steady presence" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The recoil from pain",
+      required: ["ritual.opening-bow", "teach.klesha.overview", "wisdom.klesha.dvesha"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Map your aversions",
+      required: ["wisdom.klesha.dvesha", "journal.what-am-i-avoiding", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "See the compulsive pushing",
+      required: ["wisdom.klesha.dvesha", "witness.thought-as-object", "emotion.rain"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Meet what you avoid",
+      required: ["wisdom.klesha.dvesha", "teach.klesha.dissolve", "contemplation.sit-with-question"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The steady presence",
+      required: ["ritual.opening-bow", "wisdom.klesha.dvesha", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

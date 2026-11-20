@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "97db6c82-a1c1-495f-ab59-800f502ce7bb",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/reel-001/clip-6-brand-signature.mp4",
+  "original_filename": "clip-6-brand-signature.mp4",
+  "size": 21851854,
+  "created_at": "2026-05-10T15:35:57Z",
+  "bucket": "media",
+  "storage_path": "src/assets/reel-001/clip-6-brand-signature.mp4",
+  "migrated_at": "2026-10-20T11:38:01.259Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/97db6c82-a1c1-495f-ab59-800f502ce7bb/clip-6-brand-signature.mp4"
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "ced1b291-c1db-4330-a52f-745be68c96ad",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film/scene2b-crowd.mp4",
+  "original_filename": "scene2b-crowd.mp4",
+  "size": 16951584,
+  "created_at": "2026-05-01T12:19:55Z",
+  "bucket": "media",
+  "storage_path": "src/assets/film/scene2b-crowd.mp4",
+  "migrated_at": "2026-10-20T10:58:27.976Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/ced1b291-c1db-4330-a52f-745be68c96ad/scene2b-crowd.mp4"
+}

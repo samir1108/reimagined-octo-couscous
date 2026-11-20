@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "e83dc2b9-8098-4387-8144-684b6d3dc7ab",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth/shot-3.mp4",
+  "original_filename": "shot-3.mp4",
+  "size": 24124230,
+  "created_at": "2026-07-12T02:32:00Z",
+  "bucket": "media",
+  "storage_path": "src/assets/films/rare-birth/shot-3.mp4",
+  "migrated_at": "2026-10-20T11:15:19.752Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/e83dc2b9-8098-4387-8144-684b6d3dc7ab/shot-3.mp4"
+}

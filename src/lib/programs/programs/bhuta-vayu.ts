@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const BHUTA_VAYU: SessionProgramV3 = {
+  id: "bhuta-vayu",
+  title: "Bhuta · Vayu",
+  subtitle: "Air element — movement, breath, the wind of the mind",
+  description:
+    "A 5-session arc through Vayu (Air): the gaseous principle of movement, touch, breath, and the movement of thoughts.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["bhuta", "vayu", "air", "movement"],
+  icon: "Wind",
+  coverGradient: "from-teal-500 to-cyan-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The moving principle" },
+    { phase: "Practice", sessions: 1, focus: "Ride the wind" },
+    { phase: "Integration", sessions: 1, focus: "Move with the day" },
+    { phase: "Mastery", sessions: 1, focus: "The spacious witness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The principle of movement",
+      required: ["ritual.opening-bow", "teach.bhuta.overview", "wisdom.bhuta.vayu"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the breath as wind",
+      required: ["wisdom.bhuta.vayu", "breath.nadi-shodhana", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Ride the movement of the mind",
+      required: ["wisdom.bhuta.vayu", "witness.thought-counter", "observe.three-sounds"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Move with the day",
+      required: ["wisdom.bhuta.vayu", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The spacious witness",
+      required: ["ritual.opening-bow", "wisdom.bhuta.vayu", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

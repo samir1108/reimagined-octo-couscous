@@ -1,0 +1,58 @@
+/**
+ * PROGRAM: Grief Companion — sit with loss.
+ */
+import type { SessionProgramV3 } from "../types";
+
+export const GRIEF_COMPANION: SessionProgramV3 = {
+  id: "grief-companion",
+  title: "Grief Companion",
+  subtitle: "Let grief teach you what love built",
+  description:
+    "An 8-session arc to be with grief somatically and reverently — neither bypassing nor drowning. A slow walk through loss.",
+  difficulty: "intermediate",
+  category: "heart",
+  tags: ["grief", "loss", "heart"],
+  icon: "CloudRain",
+  coverGradient: "from-slate-600 to-indigo-900",
+  totalSessions: 8,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Safety & permission" },
+    { phase: "Practice", sessions: 4, focus: "Body, story, ritual" },
+    { phase: "Integration", sessions: 1, focus: "Continuing bonds" },
+    { phase: "Mastery", sessions: 1, focus: "Love that remains" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Permission to grieve",
+      required: ["ritual.opening-bow", "wisdom.rumi.guest-house", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 2, phase: "Foundation",
+      intent: "Where it lives in the body",
+      required: ["body.tension-map", "neuro.vagus-nerve", "journal.head-heart-gut-check"],
+      targetMinutes: 22 },
+    { index: 3, phase: "Practice",
+      intent: "Feel the wave",
+      required: ["emotion.rain", "body.head-to-toe", "voice-journal.speak-it-out"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Practice",
+      intent: "The unsent letter",
+      required: ["journal.unsent-letter", "ifs.meet-a-part", "contemplation.sit-with-question"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Practice",
+      intent: "Death contemplation",
+      required: ["contemplation.death-meditation", "wisdom.gita.2.47", "mantra.om"],
+      targetMinutes: 25 },
+    { index: 6, phase: "Practice",
+      intent: "Soften the protector",
+      required: ["ifs.unburden-protector", "body.tension-map", "mudra.anjali"],
+      targetMinutes: 22 },
+    { index: 7, phase: "Integration",
+      intent: "Continuing bonds",
+      required: ["micro-act.thank-someone", "ritual.dedicate-merit", "journal.unsent-letter"],
+      targetMinutes: 20 },
+    { index: 8, phase: "Mastery",
+      intent: "Love that remains",
+      required: ["ritual.opening-bow", "meditation.open-awareness", "mantra.aham-brahmasmi", "ritual.dedicate-merit"],
+      targetMinutes: 28 },
+  ],
+};

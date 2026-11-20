@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHATKARMA_NAULI: SessionProgramV3 = {
+  id: "shatkarma-nauli",
+  title: "Shatkarma · Nauli",
+  subtitle: "Abdominal churning — stoke the fire",
+  description:
+    "A 5-session arc through Nauli: the abdominal churning that ignites the digestive fire and strengthens the core.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["shatkarma", "nauli", "cleansing", "core"],
+  icon: "Activity",
+  coverGradient: "from-amber-600 to-orange-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The abdomen & the fire" },
+    { phase: "Practice", sessions: 1, focus: "The churn" },
+    { phase: "Integration", sessions: 1, focus: "Core strength" },
+    { phase: "Mastery", sessions: 1, focus: "The risen fire" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The fire in the belly",
+      required: ["ritual.opening-bow", "teach.shatkarma", "wisdom.gheranda.shatkarma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the abdomen",
+      required: ["wisdom.gheranda.1", "breath.kapalbhati", "movement.standup-stretch"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Nauli churn",
+      required: ["shatkarma.nauli", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Core strength in life",
+      required: ["shatkarma.nauli", "micro-act.stretch-once", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The risen fire",
+      required: ["ritual.opening-bow", "shatkarma.nauli", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

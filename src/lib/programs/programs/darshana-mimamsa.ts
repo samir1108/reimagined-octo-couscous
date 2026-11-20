@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const DARSHANA_MIMAMSA: SessionProgramV3 = {
+  id: "darshana-mimamsa",
+  title: "Mimamsa Darshana",
+  subtitle: "Vedic exegesis — duty, ritual, and the path of action",
+  description:
+    "A 5-session arc through Mimamsa: the science of Vedic interpretation, dharma as ritual duty, and the discipline of correct action.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["darshana", "mimamsa", "veda", "dharma", "ritual"],
+  icon: "Scroll",
+  coverGradient: "from-red-600 to-orange-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Dharma and the Veda" },
+    { phase: "Practice", sessions: 1, focus: "The science of interpretation" },
+    { phase: "Integration", sessions: 1, focus: "Ritual as discipline" },
+    { phase: "Mastery", sessions: 1, focus: "Action purifies the mind" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Dharma known through Veda",
+      required: ["ritual.opening-bow", "teach.darshana.mimamsa", "wisdom.darshana.mimamsa"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The rules of interpretation",
+      required: ["wisdom.darshana.mimamsa", "contemplation.sit-with-question", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Action as purification",
+      required: ["wisdom.darshana.mimamsa", "micro-act.tidy-one-thing", "speech-vow.one-honest-thing"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Correct action in daily life",
+      required: ["wisdom.darshana.mimamsa", "micro-act.thank-someone", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "Action purifies the mind for knowledge",
+      required: ["ritual.opening-bow", "wisdom.darshana.mimamsa", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

@@ -1,0 +1,1160 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-18T07:37:30.960Z",
+  "targetNodesPerBatch": 300,
+  "totals": {
+    "batches": 57,
+    "nodes": 17412,
+    "edges": 44916,
+    "passages": 10428
+  },
+  "batches": [
+    {
+      "id": "batch-0001",
+      "file": "batch-0001.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 586,
+      "passageCount": 116,
+      "domainCounts": {
+        "consciousness": 83,
+        "spirituality": 38,
+        "psychology": 12,
+        "behaviour": 159,
+        "body": 1,
+        "life": 2,
+        "mind": 2,
+        "neuroscience": 3,
+        "transformation": 2,
+        "yoga": 1
+      },
+      "bytes": 529088,
+      "hash": "39c4f78804cf6298a294ea45f770626236ca312f"
+    },
+    {
+      "id": "batch-0002",
+      "file": "batch-0002.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 638,
+      "passageCount": 61,
+      "domainCounts": {
+        "behaviour": 244,
+        "psychology": 49,
+        "body": 1,
+        "consciousness": 2,
+        "life": 2,
+        "mind": 3,
+        "transformation": 2
+      },
+      "bytes": 345658,
+      "hash": "e3b5d9e5eee195fef5500433f1a560b4c384abe1"
+    },
+    {
+      "id": "batch-0003",
+      "file": "batch-0003.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 595,
+      "passageCount": 52,
+      "domainCounts": {
+        "behaviour": 281,
+        "body": 3,
+        "consciousness": 4,
+        "life": 2,
+        "mind": 3,
+        "psychology": 5,
+        "transformation": 4,
+        "yoga": 1
+      },
+      "bytes": 329564,
+      "hash": "4ba855f879ab0d07ef64fb25b10b6f412c86c5f5"
+    },
+    {
+      "id": "batch-0004",
+      "file": "batch-0004.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 591,
+      "passageCount": 52,
+      "domainCounts": {
+        "psychology": 31,
+        "behaviour": 257,
+        "consciousness": 2,
+        "life": 3,
+        "mind": 3,
+        "transformation": 4
+      },
+      "bytes": 327457,
+      "hash": "ec32ead16b1bee5fe2f4831cf538ff448866d7e3"
+    },
+    {
+      "id": "batch-0005",
+      "file": "batch-0005.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 612,
+      "passageCount": 50,
+      "domainCounts": {
+        "psychology": 56,
+        "behaviour": 232,
+        "body": 1,
+        "consciousness": 2,
+        "life": 3,
+        "mind": 3,
+        "transformation": 5
+      },
+      "bytes": 336296,
+      "hash": "116e85d8a69bdd836707abf9711d907dbda363e3"
+    },
+    {
+      "id": "batch-0006",
+      "file": "batch-0006.json",
+      "source": "curated",
+      "nodeCount": 304,
+      "edgeCount": 583,
+      "passageCount": 51,
+      "domainCounts": {
+        "psychology": 33,
+        "mind": 27,
+        "behaviour": 236,
+        "consciousness": 2,
+        "life": 3,
+        "transformation": 3
+      },
+      "bytes": 327912,
+      "hash": "0ea05d3507e00c29d55fd60cfdef0f2f96a5e470"
+    },
+    {
+      "id": "batch-0007",
+      "file": "batch-0007.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 515,
+      "passageCount": 43,
+      "domainCounts": {
+        "mind": 28,
+        "psychology": 24,
+        "behaviour": 245,
+        "consciousness": 5,
+        "life": 1
+      },
+      "bytes": 303523,
+      "hash": "39772c9294461217bdd755713043a07b63b4dede"
+    },
+    {
+      "id": "batch-0008",
+      "file": "batch-0008.json",
+      "source": "curated",
+      "nodeCount": 301,
+      "edgeCount": 582,
+      "passageCount": 48,
+      "domainCounts": {
+        "body": 23,
+        "psychology": 38,
+        "behaviour": 222,
+        "consciousness": 5,
+        "life": 3,
+        "mind": 3,
+        "neuroscience": 1,
+        "transformation": 6
+      },
+      "bytes": 323875,
+      "hash": "a8ca27b37c3a9611d6463e845527f63543afa40e"
+    },
+    {
+      "id": "batch-0009",
+      "file": "batch-0009.json",
+      "source": "curated",
+      "nodeCount": 304,
+      "edgeCount": 586,
+      "passageCount": 49,
+      "domainCounts": {
+        "behaviour": 240,
+        "psychology": 21,
+        "body": 16,
+        "mind": 20,
+        "consciousness": 4,
+        "transformation": 2,
+        "yoga": 1
+      },
+      "bytes": 326596,
+      "hash": "6e95c8ec6b79d3062a6a751b526929e3325dee27"
+    },
+    {
+      "id": "batch-0010",
+      "file": "batch-0010.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 527,
+      "passageCount": 43,
+      "domainCounts": {
+        "behaviour": 267,
+        "life": 20,
+        "body": 3,
+        "consciousness": 3,
+        "mind": 1,
+        "psychology": 5,
+        "transformation": 1
+      },
+      "bytes": 306026,
+      "hash": "1652e4fc977dae12830d0efba783bd1190669a34"
+    },
+    {
+      "id": "batch-0011",
+      "file": "batch-0011.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 534,
+      "passageCount": 43,
+      "domainCounts": {
+        "mind": 19,
+        "consciousness": 18,
+        "life": 15,
+        "behaviour": 243,
+        "body": 2,
+        "psychology": 5,
+        "transformation": 1
+      },
+      "bytes": 310358,
+      "hash": "2271b7013134909e67a3e60d38ee14f690056c24"
+    },
+    {
+      "id": "batch-0012",
+      "file": "batch-0012.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 573,
+      "passageCount": 45,
+      "domainCounts": {
+        "consciousness": 18,
+        "mind": 33,
+        "transformation": 1,
+        "behaviour": 241,
+        "body": 1,
+        "life": 3,
+        "psychology": 5
+      },
+      "bytes": 322819,
+      "hash": "300193012f61db3ff861b49391b8002cab4d5cb6"
+    },
+    {
+      "id": "batch-0013",
+      "file": "batch-0013.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 591,
+      "passageCount": 45,
+      "domainCounts": {
+        "behaviour": 257,
+        "mind": 16,
+        "transformation": 17,
+        "body": 1,
+        "consciousness": 4,
+        "life": 3,
+        "psychology": 5
+      },
+      "bytes": 329974,
+      "hash": "f29de71c91acd72eee98245df48042f47ca21180"
+    },
+    {
+      "id": "batch-0014",
+      "file": "batch-0014.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 609,
+      "passageCount": 45,
+      "domainCounts": {
+        "transformation": 19,
+        "behaviour": 250,
+        "life": 20,
+        "spirituality": 1,
+        "body": 2,
+        "consciousness": 2,
+        "mind": 2,
+        "psychology": 4
+      },
+      "bytes": 334171,
+      "hash": "238d02cd3ad8e6e8667a4c9dd6026f0a1eeba1d2"
+    },
+    {
+      "id": "batch-0015",
+      "file": "batch-0015.json",
+      "source": "curated",
+      "nodeCount": 307,
+      "edgeCount": 604,
+      "passageCount": 173,
+      "domainCounts": {
+        "transformation": 42,
+        "spirituality": 21,
+        "behaviour": 190,
+        "body": 6,
+        "consciousness": 11,
+        "life": 6,
+        "mind": 3,
+        "neuroscience": 7,
+        "psychology": 4,
+        "yoga": 17
+      },
+      "bytes": 465425,
+      "hash": "2b6f83143b9f57bdbc59d41329b4371e15db66af"
+    },
+    {
+      "id": "batch-0016",
+      "file": "batch-0016.json",
+      "source": "curated",
+      "nodeCount": 301,
+      "edgeCount": 1560,
+      "passageCount": 404,
+      "domainCounts": {
+        "transformation": 21,
+        "neuroscience": 18,
+        "behaviour": 218,
+        "spirituality": 16,
+        "body": 3,
+        "consciousness": 11,
+        "life": 3,
+        "mind": 3,
+        "psychology": 6,
+        "yoga": 2
+      },
+      "bytes": 1354405,
+      "hash": "1bb8a580a84352d4c858e07e40dbc12e859c002a"
+    },
+    {
+      "id": "batch-0017",
+      "file": "batch-0017.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 1277,
+      "passageCount": 324,
+      "domainCounts": {
+        "transformation": 34,
+        "spirituality": 19,
+        "behaviour": 210,
+        "body": 3,
+        "consciousness": 8,
+        "life": 3,
+        "mind": 2,
+        "neuroscience": 7,
+        "psychology": 6,
+        "yoga": 10
+      },
+      "bytes": 1113220,
+      "hash": "426a76fa76bd925f6faea38433def00631dadfc2"
+    },
+    {
+      "id": "batch-0018",
+      "file": "batch-0018.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 1336,
+      "passageCount": 325,
+      "domainCounts": {
+        "transformation": 35,
+        "neuroscience": 11,
+        "spirituality": 13,
+        "behaviour": 217,
+        "body": 4,
+        "consciousness": 8,
+        "life": 2,
+        "mind": 4,
+        "psychology": 5,
+        "yoga": 4
+      },
+      "bytes": 1166108,
+      "hash": "2617eb5b384bbcce9424a4302c89dbc1b57e30bf"
+    },
+    {
+      "id": "batch-0019",
+      "file": "batch-0019.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 1526,
+      "passageCount": 332,
+      "domainCounts": {
+        "transformation": 35,
+        "behaviour": 217,
+        "spirituality": 10,
+        "neuroscience": 12,
+        "body": 5,
+        "consciousness": 9,
+        "mind": 3,
+        "psychology": 6,
+        "yoga": 5
+      },
+      "bytes": 1331018,
+      "hash": "fa431aebce1ed8fb06d0f2992f552fbf7c37cd6a"
+    },
+    {
+      "id": "batch-0020",
+      "file": "batch-0020.json",
+      "source": "curated",
+      "nodeCount": 307,
+      "edgeCount": 1403,
+      "passageCount": 313,
+      "domainCounts": {
+        "neuroscience": 16,
+        "transformation": 32,
+        "spirituality": 9,
+        "behaviour": 211,
+        "body": 7,
+        "consciousness": 12,
+        "life": 2,
+        "mind": 4,
+        "psychology": 7,
+        "yoga": 7
+      },
+      "bytes": 1235551,
+      "hash": "a9adb19d939a3c728b3d0d9952c5c9d49c7cfd46"
+    },
+    {
+      "id": "batch-0021",
+      "file": "batch-0021.json",
+      "source": "curated",
+      "nodeCount": 301,
+      "edgeCount": 1426,
+      "passageCount": 311,
+      "domainCounts": {
+        "neuroscience": 10,
+        "spirituality": 14,
+        "transformation": 32,
+        "behaviour": 217,
+        "body": 6,
+        "consciousness": 8,
+        "life": 2,
+        "mind": 3,
+        "psychology": 6,
+        "yoga": 3
+      },
+      "bytes": 1242508,
+      "hash": "c1431b8cd2aeb6034ec8e37aa9520a476621cb6d"
+    },
+    {
+      "id": "batch-0022",
+      "file": "batch-0022.json",
+      "source": "curated",
+      "nodeCount": 306,
+      "edgeCount": 1336,
+      "passageCount": 294,
+      "domainCounts": {
+        "transformation": 31,
+        "behaviour": 219,
+        "neuroscience": 14,
+        "spirituality": 9,
+        "body": 5,
+        "consciousness": 9,
+        "life": 3,
+        "mind": 3,
+        "psychology": 7,
+        "yoga": 6
+      },
+      "bytes": 1169125,
+      "hash": "9402ee43c0c91328ce47ce02d14835326acc7351"
+    },
+    {
+      "id": "batch-0023",
+      "file": "batch-0023.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 1021,
+      "passageCount": 199,
+      "domainCounts": {
+        "transformation": 33,
+        "body": 14,
+        "yoga": 19,
+        "neuroscience": 7,
+        "behaviour": 202,
+        "consciousness": 8,
+        "life": 3,
+        "mind": 3,
+        "psychology": 6,
+        "spirituality": 7
+      },
+      "bytes": 933512,
+      "hash": "1e4c57fc51fa457374ce082ddb6d6c7711791ec9"
+    },
+    {
+      "id": "batch-0024",
+      "file": "batch-0024.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 1075,
+      "passageCount": 219,
+      "domainCounts": {
+        "spirituality": 66,
+        "transformation": 8,
+        "yoga": 13,
+        "behaviour": 184,
+        "body": 4,
+        "consciousness": 10,
+        "life": 2,
+        "mind": 4,
+        "neuroscience": 5,
+        "psychology": 7
+      },
+      "bytes": 968563,
+      "hash": "5cd03d508619fb911fe2e5ec2096a578df963d7b"
+    },
+    {
+      "id": "batch-0025",
+      "file": "batch-0025.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 514,
+      "passageCount": 78,
+      "domainCounts": {
+        "psychology": 14,
+        "neuroscience": 20,
+        "transformation": 16,
+        "spirituality": 36,
+        "behaviour": 187,
+        "yoga": 16,
+        "body": 2,
+        "consciousness": 6,
+        "life": 2,
+        "mind": 3
+      },
+      "bytes": 315703,
+      "hash": "eaa91730e35af88819dc1622d05995a7148ff138"
+    },
+    {
+      "id": "batch-0026",
+      "file": "batch-0026.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 650,
+      "passageCount": 95,
+      "domainCounts": {
+        "consciousness": 15,
+        "neuroscience": 14,
+        "psychology": 14,
+        "transformation": 19,
+        "spirituality": 9,
+        "yoga": 13,
+        "behaviour": 206,
+        "body": 6,
+        "life": 1,
+        "mind": 3
+      },
+      "bytes": 369260,
+      "hash": "d8bad82735049a541764c9e859db47b52a8f34f2"
+    },
+    {
+      "id": "batch-0027",
+      "file": "batch-0027.json",
+      "source": "curated",
+      "nodeCount": 306,
+      "edgeCount": 474,
+      "passageCount": 77,
+      "domainCounts": {
+        "neuroscience": 11,
+        "transformation": 28,
+        "consciousness": 18,
+        "psychology": 11,
+        "spirituality": 66,
+        "behaviour": 158,
+        "body": 10,
+        "life": 1,
+        "mind": 2,
+        "yoga": 1
+      },
+      "bytes": 355580,
+      "hash": "4f68de892f482d1132ce4cd6765002a24160c0d2"
+    },
+    {
+      "id": "batch-0028",
+      "file": "batch-0028.json",
+      "source": "curated",
+      "nodeCount": 306,
+      "edgeCount": 630,
+      "passageCount": 210,
+      "domainCounts": {
+        "body": 20,
+        "behaviour": 186,
+        "transformation": 10,
+        "life": 25,
+        "consciousness": 45,
+        "psychology": 11,
+        "mind": 2,
+        "neuroscience": 1,
+        "spirituality": 4,
+        "yoga": 2
+      },
+      "bytes": 560535,
+      "hash": "4f04071ff688fd1d3bac26716584f164eda60449"
+    },
+    {
+      "id": "batch-0029",
+      "file": "batch-0029.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 588,
+      "passageCount": 196,
+      "domainCounts": {
+        "behaviour": 211,
+        "life": 34,
+        "psychology": 12,
+        "consciousness": 26,
+        "body": 17,
+        "spirituality": 1,
+        "transformation": 2
+      },
+      "bytes": 475838,
+      "hash": "535eb1a17791b40b43a365c19ea6321f97c31aee"
+    },
+    {
+      "id": "batch-0030",
+      "file": "batch-0030.json",
+      "source": "curated",
+      "nodeCount": 301,
+      "edgeCount": 840,
+      "passageCount": 280,
+      "domainCounts": {
+        "body": 108,
+        "life": 26,
+        "consciousness": 17,
+        "transformation": 9,
+        "psychology": 12,
+        "behaviour": 127,
+        "mind": 2
+      },
+      "bytes": 597649,
+      "hash": "0bb5ad69cb6d9aa7e81c83634efcc2d1e134d3d7"
+    },
+    {
+      "id": "batch-0031",
+      "file": "batch-0031.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 1176,
+      "passageCount": 392,
+      "domainCounts": {
+        "consciousness": 129,
+        "body": 100,
+        "behaviour": 70,
+        "psychology": 2,
+        "transformation": 1
+      },
+      "bytes": 777381,
+      "hash": "f5e0a22d0848a5df0680800883ebe34220559b2a"
+    },
+    {
+      "id": "batch-0032",
+      "file": "batch-0032.json",
+      "source": "curated",
+      "nodeCount": 304,
+      "edgeCount": 1050,
+      "passageCount": 350,
+      "domainCounts": {
+        "consciousness": 81,
+        "life": 113,
+        "psychology": 14,
+        "behaviour": 92,
+        "body": 2,
+        "mind": 1,
+        "transformation": 1
+      },
+      "bytes": 702459,
+      "hash": "e7f34705b96f40036e3518564fc5dd5fb50d6dfa"
+    },
+    {
+      "id": "batch-0033",
+      "file": "batch-0033.json",
+      "source": "curated",
+      "nodeCount": 305,
+      "edgeCount": 1050,
+      "passageCount": 350,
+      "domainCounts": {
+        "life": 153,
+        "psychology": 29,
+        "body": 18,
+        "behaviour": 104,
+        "transformation": 1
+      },
+      "bytes": 696959,
+      "hash": "fdffb44b81f18bb3d34564c2b3f1c0507f4896c3"
+    },
+    {
+      "id": "batch-0034",
+      "file": "batch-0034.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 1050,
+      "passageCount": 350,
+      "domainCounts": {
+        "body": 74,
+        "psychology": 30,
+        "life": 90,
+        "behaviour": 105,
+        "consciousness": 1,
+        "mind": 1,
+        "spirituality": 1,
+        "transformation": 1
+      },
+      "bytes": 711722,
+      "hash": "480a32bb700bd7446b24c023402a5409e56bf4ff"
+    },
+    {
+      "id": "batch-0035",
+      "file": "batch-0035.json",
+      "source": "curated",
+      "nodeCount": 304,
+      "edgeCount": 1008,
+      "passageCount": 336,
+      "domainCounts": {
+        "behaviour": 176,
+        "consciousness": 26,
+        "body": 77,
+        "psychology": 22,
+        "mind": 1,
+        "transformation": 2
+      },
+      "bytes": 673194,
+      "hash": "9af2ba525cfdc822c923dd52c5769b975dd55a00"
+    },
+    {
+      "id": "batch-0036",
+      "file": "batch-0036.json",
+      "source": "curated",
+      "nodeCount": 308,
+      "edgeCount": 924,
+      "passageCount": 308,
+      "domainCounts": {
+        "life": 73,
+        "behaviour": 128,
+        "consciousness": 66,
+        "body": 19,
+        "psychology": 13,
+        "mind": 2,
+        "transformation": 5,
+        "yoga": 2
+      },
+      "bytes": 629958,
+      "hash": "0fe835373e11141dd766811315d52b6c976d431c"
+    },
+    {
+      "id": "batch-0037",
+      "file": "batch-0037.json",
+      "source": "curated",
+      "nodeCount": 308,
+      "edgeCount": 1008,
+      "passageCount": 336,
+      "domainCounts": {
+        "life": 73,
+        "psychology": 37,
+        "consciousness": 73,
+        "behaviour": 116,
+        "body": 1,
+        "mind": 2,
+        "spirituality": 1,
+        "transformation": 3,
+        "yoga": 2
+      },
+      "bytes": 676255,
+      "hash": "66b366a4adce4ef3c8d83344e4fcbfe727b29c49"
+    },
+    {
+      "id": "batch-0038",
+      "file": "batch-0038.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 1008,
+      "passageCount": 336,
+      "domainCounts": {
+        "transformation": 9,
+        "behaviour": 205,
+        "life": 41,
+        "consciousness": 42,
+        "body": 2,
+        "mind": 1,
+        "psychology": 1,
+        "spirituality": 1,
+        "yoga": 1
+      },
+      "bytes": 671120,
+      "hash": "5e086650526a1a758e004ab941761964cad93083"
+    },
+    {
+      "id": "batch-0039",
+      "file": "batch-0039.json",
+      "source": "curated",
+      "nodeCount": 315,
+      "edgeCount": 1134,
+      "passageCount": 378,
+      "domainCounts": {
+        "psychology": 166,
+        "transformation": 33,
+        "consciousness": 9,
+        "body": 19,
+        "behaviour": 88
+      },
+      "bytes": 740478,
+      "hash": "6f3aba8ab54782de2a653d075cf9038ca0b860fa"
+    },
+    {
+      "id": "batch-0040",
+      "file": "batch-0040.json",
+      "source": "curated",
+      "nodeCount": 306,
+      "edgeCount": 1092,
+      "passageCount": 364,
+      "domainCounts": {
+        "transformation": 65,
+        "body": 26,
+        "consciousness": 113,
+        "life": 9,
+        "behaviour": 86,
+        "mind": 2,
+        "psychology": 2,
+        "spirituality": 3
+      },
+      "bytes": 713867,
+      "hash": "d5d88732c0b1661f0d3bf628a185cd2ac7bb89cd"
+    },
+    {
+      "id": "batch-0041",
+      "file": "batch-0041.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 966,
+      "passageCount": 322,
+      "domainCounts": {
+        "life": 57,
+        "behaviour": 123,
+        "body": 83,
+        "transformation": 9,
+        "consciousness": 17,
+        "psychology": 13
+      },
+      "bytes": 657173,
+      "hash": "661af2da54340904890971d9a9073f0be16a4d49"
+    },
+    {
+      "id": "batch-0042",
+      "file": "batch-0042.json",
+      "source": "curated",
+      "nodeCount": 303,
+      "edgeCount": 804,
+      "passageCount": 213,
+      "domainCounts": {
+        "consciousness": 67,
+        "mind": 5,
+        "psychology": 22,
+        "behaviour": 188,
+        "life": 17,
+        "body": 1,
+        "transformation": 3
+      },
+      "bytes": 522193,
+      "hash": "5fcbdc312292be0aff5cccb37e58009d05526ccb"
+    },
+    {
+      "id": "batch-0043",
+      "file": "batch-0043.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 792,
+      "passageCount": 120,
+      "domainCounts": {
+        "mind": 20,
+        "psychology": 20,
+        "body": 14,
+        "behaviour": 233,
+        "consciousness": 4,
+        "life": 1,
+        "neuroscience": 2,
+        "transformation": 5,
+        "yoga": 1
+      },
+      "bytes": 442053,
+      "hash": "9152842af79aa422046f1e69e1ce8e6d9b6b0491"
+    },
+    {
+      "id": "batch-0044",
+      "file": "batch-0044.json",
+      "source": "curated",
+      "nodeCount": 301,
+      "edgeCount": 739,
+      "passageCount": 111,
+      "domainCounts": {
+        "body": 12,
+        "behaviour": 242,
+        "consciousness": 20,
+        "life": 1,
+        "mind": 2,
+        "neuroscience": 1,
+        "psychology": 5,
+        "spirituality": 14,
+        "transformation": 3,
+        "yoga": 1
+      },
+      "bytes": 433536,
+      "hash": "379de7b0f4a2444214a23ec6621250956b0ad1a2"
+    },
+    {
+      "id": "batch-0045",
+      "file": "batch-0045.json",
+      "source": "curated",
+      "nodeCount": 301,
+      "edgeCount": 639,
+      "passageCount": 121,
+      "domainCounts": {
+        "body": 17,
+        "transformation": 33,
+        "consciousness": 40,
+        "behaviour": 182,
+        "mind": 2,
+        "psychology": 6,
+        "spirituality": 6,
+        "yoga": 15
+      },
+      "bytes": 399372,
+      "hash": "61d9698774b4e06f4f7a0f46983e170194376de7"
+    },
+    {
+      "id": "batch-0046",
+      "file": "batch-0046.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 538,
+      "passageCount": 144,
+      "domainCounts": {
+        "transformation": 64,
+        "psychology": 17,
+        "behaviour": 121,
+        "consciousness": 20,
+        "body": 31,
+        "life": 18,
+        "yoga": 13,
+        "spirituality": 15,
+        "mind": 2,
+        "neuroscience": 1
+      },
+      "bytes": 354331,
+      "hash": "3c183fe7f0c1f9074dd55f1a6e9b84b4d1a0ff0b"
+    },
+    {
+      "id": "batch-0047",
+      "file": "batch-0047.json",
+      "source": "curated",
+      "nodeCount": 301,
+      "edgeCount": 586,
+      "passageCount": 134,
+      "domainCounts": {
+        "transformation": 76,
+        "consciousness": 32,
+        "behaviour": 166,
+        "body": 8,
+        "life": 4,
+        "mind": 1,
+        "neuroscience": 6,
+        "psychology": 5,
+        "spirituality": 1,
+        "yoga": 2
+      },
+      "bytes": 363081,
+      "hash": "1ea5f4fc24cf12112e37458b5f84f9935836ae4b"
+    },
+    {
+      "id": "batch-0048",
+      "file": "batch-0048.json",
+      "source": "curated",
+      "nodeCount": 302,
+      "edgeCount": 834,
+      "passageCount": 326,
+      "domainCounts": {
+        "transformation": 7,
+        "neuroscience": 4,
+        "body": 16,
+        "consciousness": 88,
+        "mind": 8,
+        "behaviour": 171,
+        "psychology": 7,
+        "life": 1
+      },
+      "bytes": 496596,
+      "hash": "e1916425fa5d2a7d914b008b75c870aa9392df17"
+    },
+    {
+      "id": "batch-0049",
+      "file": "batch-0049.json",
+      "source": "curated",
+      "nodeCount": 405,
+      "edgeCount": 522,
+      "passageCount": 319,
+      "domainCounts": {
+        "consciousness": 43,
+        "body": 20,
+        "mind": 9,
+        "transformation": 166,
+        "spirituality": 44,
+        "behaviour": 117,
+        "life": 4,
+        "psychology": 2
+      },
+      "bytes": 677041,
+      "hash": "4a905441b31d116ea38ab6e71b6f7ca6aafb93c4"
+    },
+    {
+      "id": "batch-0050",
+      "file": "batch-0050.json",
+      "source": "curated",
+      "nodeCount": 470,
+      "edgeCount": 561,
+      "passageCount": 383,
+      "domainCounts": {
+        "transformation": 390,
+        "behaviour": 70,
+        "body": 1,
+        "consciousness": 5,
+        "life": 1,
+        "mind": 1,
+        "psychology": 2
+      },
+      "bytes": 1149361,
+      "hash": "c1a3e34b0925b76a7180f88e7e6b0b5ae52583b8"
+    },
+    {
+      "id": "batch-0051",
+      "file": "batch-0051.json",
+      "source": "curated",
+      "nodeCount": 301,
+      "edgeCount": 357,
+      "passageCount": 162,
+      "domainCounts": {
+        "transformation": 178,
+        "behaviour": 102,
+        "body": 4,
+        "consciousness": 7,
+        "mind": 2,
+        "psychology": 3,
+        "spirituality": 2,
+        "yoga": 3
+      },
+      "bytes": 658673,
+      "hash": "5ad48c34e4949802b804317e82413a549c3b0412"
+    },
+    {
+      "id": "batch-0052",
+      "file": "batch-0052.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 476,
+      "passageCount": 0,
+      "domainCounts": {
+        "transformation": 153,
+        "behaviour": 125,
+        "body": 3,
+        "consciousness": 4,
+        "life": 2,
+        "mind": 4,
+        "psychology": 6,
+        "spirituality": 1,
+        "yoga": 2
+      },
+      "bytes": 284097,
+      "hash": "0d5ee800f6a6049b8f912137f9f273f1d3230d1f"
+    },
+    {
+      "id": "batch-0053",
+      "file": "batch-0053.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 488,
+      "passageCount": 0,
+      "domainCounts": {
+        "transformation": 198,
+        "behaviour": 84,
+        "body": 3,
+        "consciousness": 3,
+        "life": 4,
+        "mind": 2,
+        "psychology": 4,
+        "yoga": 2
+      },
+      "bytes": 286579,
+      "hash": "6bd9a51751e880c990d570f57e143bcd42ba4146"
+    },
+    {
+      "id": "batch-0054",
+      "file": "batch-0054.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 495,
+      "passageCount": 0,
+      "domainCounts": {
+        "transformation": 202,
+        "behaviour": 81,
+        "body": 2,
+        "consciousness": 3,
+        "life": 3,
+        "mind": 3,
+        "psychology": 4,
+        "yoga": 2
+      },
+      "bytes": 288786,
+      "hash": "fc0b41c35ebe4ebf76f994ad59a14869d8378d60"
+    },
+    {
+      "id": "batch-0055",
+      "file": "batch-0055.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 473,
+      "passageCount": 0,
+      "domainCounts": {
+        "transformation": 194,
+        "behaviour": 86,
+        "body": 3,
+        "consciousness": 3,
+        "life": 4,
+        "mind": 2,
+        "psychology": 6,
+        "yoga": 2
+      },
+      "bytes": 281287,
+      "hash": "c7d31eaf735c8c4c49bc65f248d1c54ee88e61fc"
+    },
+    {
+      "id": "batch-0056",
+      "file": "batch-0056.json",
+      "source": "curated",
+      "nodeCount": 300,
+      "edgeCount": 495,
+      "passageCount": 0,
+      "domainCounts": {
+        "transformation": 195,
+        "behaviour": 86,
+        "body": 3,
+        "consciousness": 4,
+        "life": 2,
+        "mind": 3,
+        "psychology": 5,
+        "yoga": 2
+      },
+      "bytes": 288989,
+      "hash": "5612fe7cf1fb8749e96667b167fa23b3e7ac1062"
+    },
+    {
+      "id": "batch-0057",
+      "file": "batch-0057.json",
+      "source": "curated",
+      "nodeCount": 183,
+      "edgeCount": 269,
+      "passageCount": 0,
+      "domainCounts": {
+        "transformation": 104,
+        "behaviour": 65,
+        "body": 4,
+        "consciousness": 3,
+        "life": 2,
+        "mind": 1,
+        "psychology": 2,
+        "yoga": 2
+      },
+      "bytes": 164863,
+      "hash": "a616363866d07c21371411f0bebd834b40eefd0e"
+    }
+  ]
+}

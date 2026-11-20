@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const AYURVEDA_KAPHA: SessionProgramV3 = {
+  id: "ayurveda-kapha",
+  title: "Ayurveda · Kapha",
+  subtitle: "Earth + water — lighten the heaviness, awaken the strength",
+  description:
+    "A 5-session arc through Kapha dosha: understand the earth principle, recognize stagnation, and cultivate stimulating lightness.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["ayurveda", "kapha", "dosha", "stimulation"],
+  icon: "Mountain",
+  coverGradient: "from-green-600 to-emerald-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The earth principle" },
+    { phase: "Practice", sessions: 1, focus: "Lighten the heaviness" },
+    { phase: "Integration", sessions: 1, focus: "Kapha in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The strong light" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The earth that sustains",
+      required: ["ritual.opening-bow", "teach.ayurveda.constitution", "wisdom.ayurveda.kapha"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Recognize kapha in body and mind",
+      required: ["wisdom.ayurveda.kapha", "body.head-to-toe", "witness.thought-counter"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Lighten the heaviness",
+      required: ["wisdom.ayurveda.kapha", "kriya.shaking-meditation", "breath.kapalbhati", "asana.surya-namaskar-flow"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Kapha in the day",
+      required: ["wisdom.ayurveda.kapha", "teach.ayurveda.dinacharya", "micro-act.stretch-once"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The strong light",
+      required: ["ritual.opening-bow", "wisdom.ayurveda.kapha", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

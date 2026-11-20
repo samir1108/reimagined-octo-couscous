@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANA_VAYU_SAMANA: SessionProgramV3 = {
+  id: "prana-vayu-samana",
+  title: "Prana Vayu · Samana",
+  subtitle: "The equalizing digestive fire — navel center",
+  description:
+    "A 5-session arc through Samana Vayu: the spiral energy at the navel that digests, assimilates, and balances.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["prana", "samana", "digestion", "balance"],
+  icon: "Circle",
+  coverGradient: "from-amber-500 to-orange-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The spiral at the navel" },
+    { phase: "Practice", sessions: 1, focus: "Ignite the digestive fire" },
+    { phase: "Integration", sessions: 1, focus: "Assimilate in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The balanced center" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The fire that equalizes",
+      required: ["ritual.opening-bow", "teach.prana.overview", "wisdom.prana.samana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the navel center",
+      required: ["wisdom.prana.samana", "body.micro-scan-60s", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Ignite the digestive spiral",
+      required: ["wisdom.prana.samana", "breath.kapalbhati", "mudra.apana"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Assimilate in the day",
+      required: ["wisdom.prana.samana", "micro-act.no-phone-meal", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The balanced center",
+      required: ["ritual.opening-bow", "wisdom.prana.samana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

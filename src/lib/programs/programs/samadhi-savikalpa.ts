@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SAMADHI_SAVIKALPA: SessionProgramV3 = {
+  id: "samadhi-savikalpa",
+  title: "Savikalpa Samadhi",
+  subtitle: "Absorption with seed — the first deep absorption",
+  description:
+    "A 5-session arc through Savikalpa Samadhi: one-pointed absorption on an object, where duality of subject/object remains but the mind is perfectly still.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["samadhi", "savikalpa", "absorption", "dhyana"],
+  icon: "Target",
+  coverGradient: "from-indigo-600 to-purple-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "One-pointed focus" },
+    { phase: "Practice", sessions: 1, focus: "Absorption with seed" },
+    { phase: "Integration", sessions: 1, focus: "The seer and the seen" },
+    { phase: "Mastery", sessions: 1, focus: "The gateway to nirvikalpa" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The object of absorption",
+      required: ["ritual.opening-bow", "teach.samadhi.stages", "wisdom.samadhi.savikalpa"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Train the single point",
+      required: ["wisdom.samadhi.savikalpa", "concentration.candle-trataka", "meditation.anchor-breath"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Absorb into the object",
+      required: ["wisdom.samadhi.savikalpa", "meditation.choiceless-awareness", "witness.gap-between-thoughts"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "The seer and the seen",
+      required: ["wisdom.samadhi.savikalpa", "inquiry.who-am-i", "witness.who-is-watching"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Mastery",
+      intent: "The gateway opens",
+      required: ["ritual.opening-bow", "wisdom.samadhi.savikalpa", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

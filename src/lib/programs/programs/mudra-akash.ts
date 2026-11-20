@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_AKASH: SessionProgramV3 = {
+  id: "mudra-akash",
+  title: "Mudra · Akash",
+  subtitle: "Ether seal — open space",
+  description:
+    "A 5-session arc through Akash Mudra: the seal that opens the ether element — space, hearing, expansion.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "akash", "ether", "space"],
+  icon: "Maximize",
+  coverGradient: "from-indigo-500 to-purple-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & the ether" },
+    { phase: "Practice", sessions: 1, focus: "The ether seal" },
+    { phase: "Integration", sessions: 1, focus: "Open space" },
+    { phase: "Mastery", sessions: 1, focus: "The vast ether" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seal that opens space",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The ether element",
+      required: ["wisdom.gheranda.1", "observe.three-sounds", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Akash Mudra",
+      required: ["mudra.akash", "breath.coherent-5-5", "meditation.body-as-anchor"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Open space",
+      required: ["mudra.akash", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The vast ether",
+      required: ["ritual.opening-bow", "mudra.akash", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

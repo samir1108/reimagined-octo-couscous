@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_PRANA: SessionProgramV3 = {
+  id: "mudra-prana",
+  title: "Mudra · Prana",
+  subtitle: "Life-force seal — awaken vitality",
+  description:
+    "A 5-session arc through Prana Mudra: the seal that awakens vital energy and strengthens the body.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "prana", "vitality", "seal"],
+  icon: "Sun",
+  coverGradient: "from-amber-500 to-orange-700",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & the elements" },
+    { phase: "Practice", sessions: 1, focus: "The life-force seal" },
+    { phase: "Integration", sessions: 1, focus: "Vitality in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The awakened prana" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seals that redirect energy",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The five elements in the hand",
+      required: ["wisdom.gheranda.1", "mudra.gyan", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Prana Mudra",
+      required: ["mudra.prana", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Vitality in the day",
+      required: ["mudra.prana", "micro-act.stretch-once", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The awakened prana",
+      required: ["ritual.opening-bow", "mudra.prana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

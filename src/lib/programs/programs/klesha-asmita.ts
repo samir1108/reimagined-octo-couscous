@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KLESHA_ASMITA: SessionProgramV3 = {
+  id: "klesha-asmita",
+  title: "Klesha · Asmita",
+  subtitle: "Egoism — the false 'I am the body/mind'",
+  description:
+    "A 5-session arc through Asmita: the false identification of the pure seer with the body-mind complex, the sense of 'I am the doer.'",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["klesha", "asmita", "ego", "identity"],
+  icon: "User",
+  coverGradient: "from-indigo-700 to-purple-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The false 'I'" },
+    { phase: "Practice", sessions: 1, focus: "Separate seer from seen" },
+    { phase: "Integration", sessions: 1, focus: "Identity in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The true seer" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The false identification",
+      required: ["ritual.opening-bow", "teach.klesha.overview", "wisdom.klesha.asmita"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the 'I am the body'",
+      required: ["wisdom.klesha.asmita", "inquiry.who-am-i", "body.head-to-toe"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Separate seer from seen",
+      required: ["wisdom.klesha.asmita", "witness.who-is-watching", "inquiry.before-this-thought"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Identity in the day",
+      required: ["wisdom.klesha.asmita", "teach.klesha.dissolve", "journal.what-am-i-avoiding"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The true seer",
+      required: ["ritual.opening-bow", "wisdom.klesha.asmita", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

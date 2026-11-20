@@ -1,0 +1,1 @@
+- Render the shared interactive consciousness orb with React Three Fiber and keep session activation in its surrounding DOM control, so the GPU visual stays replaceable and interaction remains consistent across screens.

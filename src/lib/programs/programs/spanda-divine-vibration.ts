@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SPANDA_DIVINE_VIBRATION: SessionProgramV3 = {
+  id: "spanda-divine-vibration",
+  title: "Spanda · Divine Vibration",
+  subtitle: "Rest in the creative pulsation of consciousness",
+  description:
+    "A 5-session arc through Spanda: the subtle creative vibration of consciousness that manifests the universe. Resting in spanda is the meditation of Kashmir Shaivism.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["spanda", "kashmir-shaivism", "vibration", "pulsation"],
+  icon: "Radio",
+  coverGradient: "from-cyan-600 to-blue-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The divine throb" },
+    { phase: "Practice", sessions: 1, focus: "Feel the vibration" },
+    { phase: "Integration", sessions: 1, focus: "Spanda in the day" },
+    { phase: "Mastery", sessions: 1, focus: "Rest in spanda" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The creative pulsation",
+      required: ["ritual.opening-bow", "teach.spanda", "wisdom.spanda.1"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the subtle throb",
+      required: ["wisdom.spanda.1", "breath.coherent-5-5", "witness.gap-between-thoughts"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Rest in the vibration between breaths",
+      required: ["wisdom.spanda.1", "meditation.choiceless-awareness", "witness.gap-between-thoughts"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "Spanda in daily life",
+      required: ["wisdom.spanda.1", "teach.spanda", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "Rest in spanda — the vibration itself is Shiva",
+      required: ["ritual.opening-bow", "wisdom.spanda.1", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 35 },
+  ],
+};

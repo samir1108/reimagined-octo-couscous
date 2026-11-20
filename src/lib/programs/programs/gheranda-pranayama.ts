@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GHERANDA_PRANAYAMA: SessionProgramV3 = {
+  id: "gheranda-pranayama",
+  title: "Gheranda · Pranayama",
+  subtitle: "The 8 kumbhakas — master the breath retentions",
+  description:
+    "A 5-session arc through Gheranda's Pranayama: the 8 kumbhakas (sahita, suryabhedana, ujjayi, sheetali, bhastrika, bhramari, moorchha, kevala) that master the vital breath.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["gheranda", "pranayama", "kumbhaka", "breath"],
+  icon: "Wind",
+  coverGradient: "from-amber-600 to-orange-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The 8 retentions" },
+    { phase: "Practice", sessions: 1, focus: "Practice the kumbhakas" },
+    { phase: "Integration", sessions: 1, focus: "Breath in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The mastered breath" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The 8 breath retentions",
+      required: ["ritual.opening-bow", "teach.gheranda.overview", "wisdom.gheranda.pranayama"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare for retention",
+      required: ["wisdom.gheranda.pranayama", "breath.box-4-4-4-4", "breath.nadi-shodhana"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Practice the kumbhakas",
+      required: ["wisdom.gheranda.pranayama", "pranayama.surya-bhedana", "pranayama.bhramari", "breath.coherent-5-5"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "Breath in the day",
+      required: ["wisdom.gheranda.pranayama", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The mastered breath",
+      required: ["ritual.opening-bow", "wisdom.gheranda.pranayama", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

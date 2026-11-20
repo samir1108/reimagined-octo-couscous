@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const AYURVEDA_RITUCHARYA: SessionProgramV3 = {
+  id: "ayurveda-ritucharya",
+  title: "Ayurveda · Ritucharya",
+  subtitle: "Seasonal routine — flow with the year's dosha cycle",
+  description:
+    "A 5-session arc through Ritucharya: the six seasons and their dosha dominances, with diet, lifestyle, and practice adjustments for each.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["ayurveda", "ritucharya", "seasons", "rhythm"],
+  icon: "Calendar",
+  coverGradient: "from-emerald-500 to-green-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seasonal cycle" },
+    { phase: "Practice", sessions: 1, focus: "Spring and summer" },
+    { phase: "Integration", sessions: 1, focus: "Autumn and winter" },
+    { phase: "Mastery", sessions: 1, focus: "The seasonal yogi" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The year as a dosha cycle",
+      required: ["ritual.opening-bow", "teach.ayurveda.seasons", "wisdom.ayurveda.ritucharya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The six seasons and their doshas",
+      required: ["wisdom.ayurveda.ritucharya", "teach.ayurveda.seasons", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Spring (kapha) and summer (pitta)",
+      required: ["wisdom.ayurveda.ritucharya", "asana.surya-namaskar-flow", "pranayama.sitali", "breath.coherent-5-5"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Autumn (pitta) and winter (kapha/vata)",
+      required: ["wisdom.ayurveda.ritucharya", "teach.ayurveda.seasons", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The seasonal yogi",
+      required: ["ritual.opening-bow", "wisdom.ayurveda.ritucharya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

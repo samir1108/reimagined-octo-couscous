@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "ea4e278f-66cf-48f2-9d21-2e65cdaa76bb",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/science-meets-yoga.mp4",
+  "original_filename": "science-meets-yoga.mp4",
+  "size": 9749681,
+  "created_at": "2026-07-17T09:44:01Z",
+  "storage_path": "src/assets/handbooks/videos/science-meets-yoga.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:25:32.035Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/ea4e278f-66cf-48f2-9d21-2e65cdaa76bb/science-meets-yoga.mp4"
+}

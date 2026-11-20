@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_PLAVINI: SessionProgramV3 = {
+  id: "pranayama-plavini",
+  title: "Pranayama · Plavini",
+  subtitle: "Floating breath — swallow air, hold effortlessly",
+  description:
+    "A 5-session arc through Plavini: the floating breath that swallows air into the stomach and holds it effortlessly. Advanced — under guidance.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["pranayama", "plavini", "floating", "advanced"],
+  icon: "Wind",
+  coverGradient: "from-teal-500 to-cyan-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The swallowed breath" },
+    { phase: "Practice", sessions: 1, focus: "The float" },
+    { phase: "Integration", sessions: 1, focus: "Effortless hold" },
+    { phase: "Mastery", sessions: 1, focus: "The floating prana" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The breath that floats",
+      required: ["ritual.opening-bow", "teach.pranayama.kumbhaka", "breath.coherent-5-5"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the stomach",
+      required: ["wisdom.hatha.pranayama-chapter", "micro-act.no-phone-meal", "somatic.jaw-release"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Plavini swallow",
+      required: ["pranayama.plavini", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Effortless hold",
+      required: ["pranayama.plavini", "micro-act.stretch-once", "contemplation.sit-with-question"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The floating prana",
+      required: ["ritual.opening-bow", "pranayama.plavini", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

@@ -1,0 +1,2 @@
+ALTER TABLE guru_memory ADD COLUMN IF NOT EXISTS memory_layer text NOT NULL DEFAULT 'surface';
+COMMENT ON COLUMN guru_memory.memory_layer IS 'Memory depth layer: surface, karmic, ancestral, evolutionary, somatic';

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "6bdadd82-808b-44b4-a138-3fd35abb0e32",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/sam-talking.mp4",
+  "original_filename": "sam-talking.mp4",
+  "size": 15341686,
+  "created_at": "2026-06-14T15:19:04Z",
+  "bucket": "media",
+  "storage_path": "src/assets/showroom/sam-talking.mp4",
+  "migrated_at": "2026-10-20T11:39:51.391Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/6bdadd82-808b-44b4-a138-3fd35abb0e32/sam-talking.mp4"
+}

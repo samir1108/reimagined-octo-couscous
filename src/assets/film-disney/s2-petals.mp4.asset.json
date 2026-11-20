@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "7e2e553b-5708-45ed-b05d-534d3e9b0a63",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-disney/s2-petals.mp4",
+  "original_filename": "s2-petals.mp4",
+  "size": 19381830,
+  "created_at": "2026-05-10T16:26:04Z",
+  "bucket": "media",
+  "storage_path": "src/assets/film-disney/s2-petals.mp4",
+  "migrated_at": "2026-10-20T10:59:20.371Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/7e2e553b-5708-45ed-b05d-534d3e9b0a63/s2-petals.mp4"
+}

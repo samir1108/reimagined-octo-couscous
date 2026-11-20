@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "48fdb3fe-3c6c-429a-9e94-8d36aee73bf3",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-disney/s5-tear.mp4",
+  "original_filename": "s5-tear.mp4",
+  "size": 18013173,
+  "created_at": "2026-05-10T16:26:21Z",
+  "bucket": "media",
+  "storage_path": "src/assets/film-disney/s5-tear.mp4",
+  "migrated_at": "2026-10-20T11:00:01.425Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/48fdb3fe-3c6c-429a-9e94-8d36aee73bf3/s5-tear.mp4"
+}

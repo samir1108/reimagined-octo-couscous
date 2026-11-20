@@ -1,0 +1,1 @@
+ALTER TABLE public.pre_journey_progress ADD COLUMN IF NOT EXISTS paused_at TIMESTAMPTZ;

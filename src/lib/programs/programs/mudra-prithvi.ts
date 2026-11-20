@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_PRITHVI: SessionProgramV3 = {
+  id: "mudra-prithvi",
+  title: "Mudra · Prithvi",
+  subtitle: "Earth seal — ground and strengthen",
+  description:
+    "A 5-session arc through Prithvi Mudra: the seal that grounds and strengthens the body through the earth element.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "prithvi", "earth", "grounding"],
+  icon: "Mountain",
+  coverGradient: "from-green-600 to-emerald-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & the earth" },
+    { phase: "Practice", sessions: 1, focus: "The earth seal" },
+    { phase: "Integration", sessions: 1, focus: "Grounded strength" },
+    { phase: "Mastery", sessions: 1, focus: "The solid earth" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seal that grounds",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The earth element",
+      required: ["wisdom.gheranda.1", "bandha.mula", "body.head-to-toe"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Prithvi Mudra",
+      required: ["mudra.prithvi", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Grounded strength",
+      required: ["mudra.prithvi", "micro-act.stretch-once", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The solid earth",
+      required: ["ritual.opening-bow", "mudra.prithvi", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

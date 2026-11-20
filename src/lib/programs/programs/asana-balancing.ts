@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const ASANA_BALANCING: SessionProgramV3 = {
+  id: "asana-balancing",
+  title: "Asana · Balancing",
+  subtitle: "One point, one breath — focus in motion",
+  description:
+    "A 5-session arc through balancing asanas: vrksasana, bakasana, mayurasana — dharana in motion.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["asana", "balancing", "focus", "arm-balance"],
+  icon: "Target",
+  coverGradient: "from-cyan-600 to-blue-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The one point" },
+    { phase: "Practice", sessions: 1, focus: "Arm balances" },
+    { phase: "Integration", sessions: 1, focus: "Focus in the storm" },
+    { phase: "Mastery", sessions: 1, focus: "The balanced seer" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "One point, one breath",
+      required: ["ritual.opening-bow", "teach.asana.balancing", "asana.vrksasana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Find the drishti",
+      required: ["wisdom.hatha.asana-chapter", "concentration.counting-breaths-10", "asana.tadasana"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Crow and peacock",
+      required: ["asana.bakasana", "asana.mayurasana", "breath.coherent-5-5"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Focus in the storm",
+      required: ["asana.bakasana", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The balanced seer",
+      required: ["ritual.opening-bow", "asana.vrksasana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

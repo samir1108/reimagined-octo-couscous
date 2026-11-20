@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "83fe0d61-9621-4adc-9722-653b22dd80d3",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/stillness-with-dogen.mp4",
+  "original_filename": "stillness-with-dogen.mp4",
+  "size": 6096810,
+  "created_at": "2026-07-16T18:40:55Z",
+  "bucket": "media",
+  "storage_path": "src/assets/programs/videos/stillness-with-dogen.mp4",
+  "migrated_at": "2026-10-20T11:36:23.408Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/83fe0d61-9621-4adc-9722-653b22dd80d3/stillness-with-dogen.mp4"
+}

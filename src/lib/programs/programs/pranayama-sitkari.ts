@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_SITKARI: SessionProgramV3 = {
+  id: "pranayama-sitkari",
+  title: "Pranayama · Sitkari",
+  subtitle: "Hissing breath — pressed teeth, cooling sound",
+  description:
+    "A 5-session arc through Sitkari: the hissing breath for those who cannot curl the tongue — cooling and calming.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["pranayama", "sitkari", "hissing", "cooling"],
+  icon: "Smile",
+  coverGradient: "from-teal-400 to-cyan-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The hissing breath" },
+    { phase: "Practice", sessions: 1, focus: "The pressed teeth" },
+    { phase: "Integration", sessions: 1, focus: "Cool in the storm" },
+    { phase: "Mastery", sessions: 1, focus: "The still heat" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The breath that hisses",
+      required: ["ritual.opening-bow", "teach.pranayama.what-is", "breath.box-4-4-4-4"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the jaw",
+      required: ["shatkarma.neti", "somatic.jaw-release", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Sitkari rounds",
+      required: ["pranayama.sitkari", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Cool in the storm",
+      required: ["pranayama.sitkari", "micro-act.drink-water", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The still heat",
+      required: ["ritual.opening-bow", "pranayama.sitkari", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

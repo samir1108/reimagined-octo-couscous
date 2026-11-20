@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const BANDHA_UDDIYANA: SessionProgramV3 = {
+  id: "bandha-uddiyana",
+  title: "Bandha · Uddiyana",
+  subtitle: "Abdominal lock — stoke the fire",
+  description:
+    "A 5-session arc through Uddiyana Bandha: the abdominal lock that stokes the digestive fire and lifts the energy.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["bandha", "uddiyana", "abdomen", "fire"],
+  icon: "Flame",
+  coverGradient: "from-orange-600 to-red-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The fire & the lock" },
+    { phase: "Practice", sessions: 1, focus: "The upward draw" },
+    { phase: "Integration", sessions: 1, focus: "The risen energy" },
+    { phase: "Mastery", sessions: 1, focus: "The stoked fire" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The lock that stokes the fire",
+      required: ["ritual.opening-bow", "teach.bandha", "wisdom.gheranda.bandha"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the abdomen",
+      required: ["wisdom.gheranda.1", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The upward draw",
+      required: ["bandha.uddiyana", "breath.coherent-5-5", "somatic.jaw-release"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "The risen energy",
+      required: ["bandha.uddiyana", "micro-act.stretch-once", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The stoked fire",
+      required: ["ritual.opening-bow", "bandha.uddiyana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

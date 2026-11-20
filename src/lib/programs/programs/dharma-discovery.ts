@@ -1,0 +1,58 @@
+/**
+ * PROGRAM: Dharma Discovery — find what's yours to do.
+ */
+import type { SessionProgramV3 } from "../types";
+
+export const DHARMA_DISCOVERY: SessionProgramV3 = {
+  id: "dharma-discovery",
+  title: "Dharma Discovery",
+  subtitle: "Find what's yours to do in this lifetime",
+  description:
+    "An 8-session arc combining contemplation, three-brain inquiry, and death-meditation to clarify your unique calling.",
+  difficulty: "intermediate",
+  category: "wisdom",
+  tags: ["dharma", "purpose", "calling"],
+  icon: "Compass",
+  coverGradient: "from-amber-600 to-emerald-800",
+  totalSessions: 8,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "What calls you" },
+    { phase: "Practice", sessions: 4, focus: "Listen across centers" },
+    { phase: "Integration", sessions: 1, focus: "One small step" },
+    { phase: "Mastery", sessions: 1, focus: "Live the answer" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The question of dharma",
+      required: ["ritual.opening-bow", "wisdom.gita.2.47", "contemplation.sit-with-question"],
+      targetMinutes: 18 },
+    { index: 2, phase: "Foundation",
+      intent: "Listen to all three centers",
+      required: ["journal.head-heart-gut-check", "voice-journal.speak-it-out", "framework.loop-anatomy"],
+      targetMinutes: 22 },
+    { index: 3, phase: "Practice",
+      intent: "What did you love as a child?",
+      required: ["ifs.meet-a-part", "journal.unsent-letter", "contemplation.sit-with-question"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Practice",
+      intent: "Death clarifies",
+      required: ["contemplation.death-meditation", "wisdom.gita.2.47", "voice-journal.speak-it-out"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Practice",
+      intent: "Council of perspectives",
+      required: ["council.three-perspectives", "shadow.gold-projection", "contemplation.sit-with-question"],
+      targetMinutes: 25 },
+    { index: 6, phase: "Practice",
+      intent: "Where fear blocks you",
+      required: ["ifs.unburden-protector", "emotion.rain", "body.tension-map"],
+      targetMinutes: 22 },
+    { index: 7, phase: "Integration",
+      intent: "One small step",
+      required: ["micro-act.tidy-one-thing", "speech-vow.one-honest-thing", "ritual.dedicate-merit"],
+      targetMinutes: 20 },
+    { index: 8, phase: "Mastery",
+      intent: "Live the answer",
+      required: ["ritual.opening-bow", "meditation.open-awareness", "mantra.aham-brahmasmi", "ritual.dedicate-merit"],
+      targetMinutes: 28 },
+  ],
+};

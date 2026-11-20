@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "fd537682-912d-4df1-8ca6-c02acac487fa",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-lotus-bloom.mp4",
+  "original_filename": "hero-lotus-bloom.mp4",
+  "size": 20137514,
+  "created_at": "2026-03-28T12:30:26Z",
+  "bucket": "media",
+  "storage_path": "src/assets/videos/hero-lotus-bloom.mp4",
+  "migrated_at": "2026-10-20T10:56:10.541Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/fd537682-912d-4df1-8ca6-c02acac487fa/hero-lotus-bloom.mp4"
+}

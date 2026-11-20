@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KLESHA_AVIDYA: SessionProgramV3 = {
+  id: "klesha-avidya",
+  title: "Klesha · Avidya",
+  subtitle: "Ignorance — the root that mistakes unreal for real",
+  description:
+    "A 5-session arc through Avidya: the fundamental ignorance that mistakes the non-self for the self, impermanent for permanent. The root of all suffering.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["klesha", "avidya", "ignorance", "root"],
+  icon: "EyeOff",
+  coverGradient: "from-gray-700 to-black",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The root ignorance" },
+    { phase: "Practice", sessions: 1, focus: "Discriminate real from unreal" },
+    { phase: "Integration", sessions: 1, focus: "Knowledge in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The light of viveka" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The root of all afflictions",
+      required: ["ritual.opening-bow", "teach.klesha.overview", "wisdom.klesha.avidya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The fourfold mistake",
+      required: ["wisdom.klesha.avidya", "inquiry.who-am-i", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Discriminate the real from the unreal",
+      required: ["wisdom.klesha.avidya", "inquiry.what-is-aware", "witness.who-is-watching"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Viveka in the day",
+      required: ["wisdom.klesha.avidya", "teach.klesha.dissolve", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The light of discriminative knowledge",
+      required: ["ritual.opening-bow", "wisdom.klesha.avidya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

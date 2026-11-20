@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "10f5e146-0670-4a92-a51b-15d252dbd79a",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/the-pause.jpg",
+  "r2_key": "a/v1/b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f/10f5e146-0670-4a92-a51b-15d252dbd79a/the-pause.jpg",
+  "original_filename": "the-pause.jpg",
+  "size": 105057,
+  "content_type": "image/jpeg",
+  "created_at": "2026-06-18T14:25:24Z",
+  "bucket": "media",
+  "storage_path": "src/assets/games/the-pause.jpg",
+  "migrated_at": "2026-10-20T11:23:33.049Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/10f5e146-0670-4a92-a51b-15d252dbd79a/the-pause.jpg"
+}

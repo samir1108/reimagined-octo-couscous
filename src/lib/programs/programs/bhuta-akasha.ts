@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const BHUTA_AKASHA: SessionProgramV3 = {
+  id: "bhuta-akasha",
+  title: "Bhuta · Akasha",
+  subtitle: "Ether element — space, sound, the container of all",
+  description:
+    "A 5-session arc through Akasha (Ether): the spatial principle of space, sound, and the all-pervading field of consciousness.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["bhuta", "akasha", "ether", "space"],
+  icon: "Maximize",
+  coverGradient: "from-indigo-700 to-purple-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The spatial principle" },
+    { phase: "Practice", sessions: 1, focus: "Expand into space" },
+    { phase: "Integration", sessions: 1, focus: "Space in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The all-pervading witness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The principle of space",
+      required: ["ritual.opening-bow", "teach.bhuta.overview", "wisdom.bhuta.akasha"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the space within",
+      required: ["wisdom.bhuta.akasha", "meditation.sky-mind", "observe.three-sounds"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Expand into the all-pervading",
+      required: ["wisdom.bhuta.akasha", "meditation.choiceless-awareness", "witness.name-the-watcher"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Space in the day",
+      required: ["wisdom.bhuta.akasha", "detox.single-tab", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The all-pervading witness",
+      required: ["ritual.opening-bow", "wisdom.bhuta.akasha", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

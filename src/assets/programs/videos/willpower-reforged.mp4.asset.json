@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "85d5d4fd-2a07-4023-b57c-2e2b83045c5d",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/willpower-reforged.mp4",
+  "original_filename": "willpower-reforged.mp4",
+  "size": 9276871,
+  "created_at": "2026-07-16T18:40:36Z",
+  "bucket": "media",
+  "storage_path": "src/assets/programs/videos/willpower-reforged.mp4",
+  "migrated_at": "2026-10-20T11:37:02.429Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/85d5d4fd-2a07-4023-b57c-2e2b83045c5d/willpower-reforged.mp4"
+}

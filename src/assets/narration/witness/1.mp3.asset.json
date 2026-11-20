@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "62731764-0c73-4971-8ae6-9a819ec77e08",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/witness/1.mp3",
+  "r2_key": "a/v1/b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5/62731764-0c73-4971-8ae6-9a819ec77e08/witness-1.mp3",
+  "original_filename": "witness-1.mp3",
+  "size": 104448,
+  "content_type": "audio/mpeg",
+  "created_at": "2026-07-12T01:38:58Z",
+  "bucket": "media",
+  "storage_path": "src/assets/narration/witness/1.mp3",
+  "migrated_at": "2026-10-20T11:29:19.563Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/62731764-0c73-4971-8ae6-9a819ec77e08/witness-1.mp3"
+}

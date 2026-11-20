@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "a3d67bd6-1703-49d1-8983-ea302f197e31",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/healers-therapist-hygiene.mp4",
+  "original_filename": "healers-therapist-hygiene.mp4",
+  "size": 10191530,
+  "created_at": "2026-07-16T18:48:47Z",
+  "bucket": "media",
+  "storage_path": "src/assets/programs/videos/healers-therapist-hygiene.mp4",
+  "migrated_at": "2026-10-20T11:35:27.818Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/a3d67bd6-1703-49d1-8983-ea302f197e31/healers-therapist-hygiene.mp4"
+}

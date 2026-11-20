@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KRIYA_TAPAS: SessionProgramV3 = {
+  id: "kriya-tapas",
+  title: "Kriya Yoga · Tapas",
+  subtitle: "Discipline — the fire that burns impurities",
+  description:
+    "A 5-session arc through Tapas: the discipline that purifies body and mind through focused, sustained effort.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["kriya-yoga", "tapas", "discipline", "fire"],
+  icon: "Flame",
+  coverGradient: "from-red-600 to-orange-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The fire of discipline" },
+    { phase: "Practice", sessions: 1, focus: "Apply the heat" },
+    { phase: "Integration", sessions: 1, focus: "Discipline in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The purified vessel" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The fire that purifies",
+      required: ["ritual.opening-bow", "teach.kriya.tapas", "wisdom.kriya.tapas"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Choose your tapas",
+      required: ["wisdom.kriya.tapas", "breath.box-4-4-4-4", "body.head-to-toe"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Sustain the heat",
+      required: ["wisdom.kriya.tapas", "breath.kapalbhati", "asana.standing"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Discipline in the day",
+      required: ["wisdom.kriya.tapas", "micro-act.tidy-one-thing", "speech-vow.say-it-shorter"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The purified vessel",
+      required: ["ritual.opening-bow", "wisdom.kriya.tapas", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

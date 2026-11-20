@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "75a76788-6d61-48f1-b68f-7f6ec6f251dc",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/founder/samir/portraits/samir-portrait-01.jpg",
+  "r2_key": "a/v1/b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5/75a76788-6d61-48f1-b68f-7f6ec6f251dc/samir-portrait-01.jpg",
+  "original_filename": "samir-portrait-01.jpg",
+  "size": 61025,
+  "content_type": "image/jpeg",
+  "created_at": "2026-07-16T16:28:07Z",
+  "bucket": "media",
+  "storage_path": "src/assets/founder/samir/portraits/samir-portrait-01.jpg",
+  "migrated_at": "2026-10-20T11:23:20.279Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/75a76788-6d61-48f1-b68f-7f6ec6f251dc/samir-portrait-01.jpg"
+}

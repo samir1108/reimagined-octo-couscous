@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const DARSHANA_VEDANTA: SessionProgramV3 = {
+  id: "darshana-vedanta",
+  title: "Vedanta Darshana",
+  subtitle: "The culmination — Brahman alone is real, you are that",
+  description:
+    "A 5-session arc through Vedanta: the non-dual teaching of the Upanishads, Brahma Sutras, and Gita — Brahman alone is real, the world is maya, the self is Brahman.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["darshana", "vedanta", "advaita", "brahman", "tat-tvam-asi"],
+  icon: "Infinity",
+  coverGradient: "from-gold-500 to-amber-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The three texts" },
+    { phase: "Practice", sessions: 1, focus: "Hear, reflect, meditate" },
+    { phase: "Integration", sessions: 1, focus: "The world as appearance" },
+    { phase: "Mastery", sessions: 1, focus: "Tat tvam asi — you are that" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The end of the Vedas",
+      required: ["ritual.opening-bow", "teach.darshana.vedanta", "wisdom.darshana.vedanta"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Shravana, manana, nididhyasana",
+      required: ["wisdom.darshana.vedanta", "wisdom.upanishad.tat-tvam-asi", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Reflect and meditate on the self",
+      required: ["wisdom.darshana.vedanta", "inquiry.who-am-i", "witness.who-is-watching"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "The world as maya",
+      required: ["wisdom.darshana.vedanta", "meditation.sky-mind", "witness.thought-as-object"],
+      targetMinutes: 22 },
+    { index: 5, phase: "Mastery",
+      intent: "Tat tvam asi — you are that",
+      required: ["ritual.opening-bow", "wisdom.darshana.vedanta", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

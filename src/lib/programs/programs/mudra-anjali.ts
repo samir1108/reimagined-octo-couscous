@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_ANJALI: SessionProgramV3 = {
+  id: "mudra-anjali",
+  title: "Mudra · Anjali",
+  subtitle: "Salutation seal — palms together",
+  description:
+    "A 5-session arc through Anjali Mudra: the seal of salutation that unites the two hemispheres and honors the self.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "anjali", "salutation", "union"],
+  icon: "Heart",
+  coverGradient: "from-rose-500 to-pink-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & salutation" },
+    { phase: "Practice", sessions: 1, focus: "The salutation seal" },
+    { phase: "Integration", sessions: 1, focus: "Honor in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The united self" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seal of salutation",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The two halves, one",
+      required: ["wisdom.gheranda.1", "breath.nadi-shodhana", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Anjali Mudra",
+      required: ["mudra.anjali", "breath.coherent-5-5", "meditation.loving-kindness"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Honor in the day",
+      required: ["mudra.anjali", "micro-act.thank-someone", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The united self",
+      required: ["ritual.opening-bow", "mudra.anjali", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

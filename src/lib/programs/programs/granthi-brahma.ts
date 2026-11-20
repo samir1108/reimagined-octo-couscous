@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GRANTHI_BRAHMA: SessionProgramV3 = {
+  id: "granthi-brahma",
+  title: "Granthi · Brahma",
+  subtitle: "The knot of Brahma — untie survival and sensuality",
+  description:
+    "A 5-session arc through Brahma Granthi: the knot at muladhara/svadhisthana that binds consciousness to physical survival and sensual pleasure.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["granthi", "brahma", "muladhara", "svadhisthana", "survival"],
+  icon: "Anchor",
+  coverGradient: "from-red-700 to-orange-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The knot of survival" },
+    { phase: "Practice", sessions: 1, focus: "Feel the root" },
+    { phase: "Integration", sessions: 1, focus: "Loosen the grip" },
+    { phase: "Mastery", sessions: 1, focus: "The freed foundation" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The knot that binds to the physical",
+      required: ["ritual.opening-bow", "teach.granthi.overview", "wisdom.granthi.brahma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the lower chakras",
+      required: ["wisdom.granthi.brahma", "bandha.mula", "body.head-to-toe"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Loosen the knot of survival",
+      required: ["wisdom.granthi.brahma", "asana.muladhara", "breath.coherent-5-5"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Loosen the grip of sensuality",
+      required: ["wisdom.granthi.brahma", "detox.single-tab", "micro-act.tidy-one-thing"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The freed foundation",
+      required: ["ritual.opening-bow", "wisdom.granthi.brahma", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

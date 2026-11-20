@@ -1,0 +1,1 @@
+const c=typeof navigator<"u"&&typeof navigator.vibrate=="function";function t(a){if(c)try{navigator.vibrate(a)}catch{}}const n=()=>t(8),i=()=>t([0,30,90,30]),o=()=>t([0,18,60,35]),e=()=>t([0,25,50,25,50,60]),r=()=>t([0,20,120,20]),s=()=>t([0,60]);export{r as a,e as b,o as c,i as d,n as e,s as h};

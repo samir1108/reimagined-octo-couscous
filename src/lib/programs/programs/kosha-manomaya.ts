@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KOSHA_MANOMAYA: SessionProgramV3 = {
+  id: "kosha-manomaya",
+  title: "Kosha · Manomaya",
+  subtitle: "The mental sheath — thoughts, feelings, stories",
+  description:
+    "A 5-session arc through the Manomaya Kosha: the mental body of thoughts, emotions, and sensory impressions.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["kosha", "manomaya", "mind", "emotions"],
+  icon: "Brain",
+  coverGradient: "from-violet-500 to-purple-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The mental sheath" },
+    { phase: "Practice", sessions: 1, focus: "Watch the mind" },
+    { phase: "Integration", sessions: 1, focus: "Emotions as weather" },
+    { phase: "Mastery", sessions: 1, focus: "The witness of the mind" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The mind that creates stories",
+      required: ["ritual.opening-bow", "teach.kosha.overview", "wisdom.kosha.manomaya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the mental weather",
+      required: ["wisdom.kosha.manomaya", "witness.thought-counter", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Watch thoughts as objects",
+      required: ["wisdom.kosha.manomaya", "witness.thought-as-object", "observe.thought-count"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Emotions as weather",
+      required: ["wisdom.kosha.manomaya", "emotion.rain", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The witness of the mind",
+      required: ["ritual.opening-bow", "wisdom.kosha.manomaya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

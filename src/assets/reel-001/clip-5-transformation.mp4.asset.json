@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "61d57325-07b3-4726-b290-4b825275097e",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/reel-001/clip-5-transformation.mp4",
+  "original_filename": "clip-5-transformation.mp4",
+  "size": 15563193,
+  "created_at": "2026-05-10T15:35:07Z",
+  "bucket": "media",
+  "storage_path": "src/assets/reel-001/clip-5-transformation.mp4",
+  "migrated_at": "2026-10-20T11:37:49.392Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/61d57325-07b3-4726-b290-4b825275097e/clip-5-transformation.mp4"
+}

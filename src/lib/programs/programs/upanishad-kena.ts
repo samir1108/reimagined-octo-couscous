@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const UPANISHAD_KENA: SessionProgramV3 = {
+  id: "upanishad-kena",
+  title: "Kena Upanishad",
+  subtitle: "By whom? — the self is not an object",
+  description:
+    "A 5-session arc through the Kena Upanishad: who is the knower? The self is beyond the mind, the senses, the words.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["kena", "upanishad", "knower", "silence"],
+  icon: "BookOpen",
+  coverGradient: "from-blue-700 to-indigo-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The knower" },
+    { phase: "Practice", sessions: 1, focus: "Silence as teacher" },
+    { phase: "Integration", sessions: 1, focus: "The self knows itself" },
+    { phase: "Mastery", sessions: 1, focus: "The eye of the eye" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Who is the knower?",
+      required: ["ritual.opening-bow", "teach.kena", "wisdom.kena.1"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The self taught by silence",
+      required: ["wisdom.kena.2", "contemplation.sit-with-question", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Beyond the senses",
+      required: ["wisdom.kena.12", "witness.who-is-watching", "witness.thought-as-object"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "The self knows itself",
+      required: ["wisdom.kena.2", "inquiry.who-am-i", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The eye of the eye",
+      required: ["ritual.opening-bow", "wisdom.kena.12", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

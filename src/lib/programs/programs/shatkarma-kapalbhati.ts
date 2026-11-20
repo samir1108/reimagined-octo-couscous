@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHATKARMA_KAPALBHATI: SessionProgramV3 = {
+  id: "shatkarma-kapalbhati",
+  title: "Shatkarma · Kapalbhati",
+  subtitle: "Skull-shining breath — cleanse the lungs",
+  description:
+    "A 5-session arc through Kapalbhati: the rapid exhalations that cleanse the lungs and sharpen the mind.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["shatkarma", "kapalbhati", "cleansing", "breath"],
+  icon: "Wind",
+  coverGradient: "from-amber-500 to-yellow-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The breath & the skull" },
+    { phase: "Practice", sessions: 1, focus: "The rapid exhale" },
+    { phase: "Integration", sessions: 1, focus: "Clarity in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The shining skull" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The breath that shines",
+      required: ["ritual.opening-bow", "teach.shatkarma", "wisdom.gheranda.shatkarma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the lungs",
+      required: ["wisdom.gheranda.1", "breath.box-4-4-4-4", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Kapalbhati rounds",
+      required: ["shatkarma.kapalbhati", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Clarity in the day",
+      required: ["shatkarma.kapalbhati", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The shining skull",
+      required: ["ritual.opening-bow", "shatkarma.kapalbhati", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

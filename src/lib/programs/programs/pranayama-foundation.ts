@@ -1,0 +1,36 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_FOUNDATION: SessionProgramV3 = {
+  id: "pranayama-foundation",
+  title: "Pranayama Foundation",
+  subtitle: "Master the breath, master the mind",
+  description: "A 7-session arc through classical pranayama: from simple coherence to nadi shodhana, kapalbhati, and breath of fire.",
+  difficulty: "intermediate",
+  category: "embodiment",
+  tags: ["pranayama", "breath", "prana"],
+  icon: "Wind",
+  coverGradient: "from-sky-600 to-indigo-900",
+  totalSessions: 7,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Breath as anchor" },
+    { phase: "Practice", sessions: 3, focus: "Classical techniques" },
+    { phase: "Integration", sessions: 1, focus: "Daily pranayama" },
+    { phase: "Mastery", sessions: 1, focus: "Prana as awareness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation", intent: "Find the natural breath",
+      required: ["ritual.opening-bow", "body.head-to-toe", "breath.coherent-5-5"], targetMinutes: 16 },
+    { index: 2, phase: "Foundation", intent: "Box breath",
+      required: ["breath.box-4-4-4-4", "witness.thought-counter", "journal.head-heart-gut-check"], targetMinutes: 18 },
+    { index: 3, phase: "Practice", intent: "Nadi shodhana — balance",
+      required: ["breath.nadi-shodhana", "mudra.gyan", "meditation.anchor-breath"], targetMinutes: 22 },
+    { index: 4, phase: "Practice", intent: "Kapalbhati — cleanse",
+      required: ["breath.kapalbhati", "kriya.spinal-flex", "body.tension-map"], targetMinutes: 22 },
+    { index: 5, phase: "Practice", intent: "Breath of fire",
+      required: ["kriya.breath-of-fire", "movement.shake-it-off", "witness.who-is-watching"], targetMinutes: 22 },
+    { index: 6, phase: "Integration", intent: "A daily 5-min protocol",
+      required: ["breath.physiological-sigh", "breath.coherent-5-5", "ritual.dedicate-merit"], targetMinutes: 15 },
+    { index: 7, phase: "Mastery", intent: "Prana as awareness",
+      required: ["ritual.opening-bow", "breath.nadi-shodhana", "meditation.open-awareness", "ritual.dedicate-merit"], targetMinutes: 25 },
+  ],
+};

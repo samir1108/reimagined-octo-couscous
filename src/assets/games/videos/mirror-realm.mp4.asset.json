@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "1c4df3ea-30d1-4d11-8f60-fb9826ce93f0",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/mirror-realm.mp4",
+  "original_filename": "mirror-realm.mp4",
+  "size": 8135508,
+  "created_at": "2026-07-17T11:12:16Z",
+  "storage_path": "src/assets/games/videos/mirror-realm.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:24:18.931Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/1c4df3ea-30d1-4d11-8f60-fb9826ce93f0/mirror-realm.mp4"
+}

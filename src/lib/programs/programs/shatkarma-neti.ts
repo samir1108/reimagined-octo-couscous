@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHATKARMA_NETI: SessionProgramV3 = {
+  id: "shatkarma-neti",
+  title: "Shatkarma · Neti",
+  subtitle: "Nasal cleansing — breathe free",
+  description:
+    "A 5-session arc through Neti: the gentle nasal cleansing that opens the breath and clears the mind.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["shatkarma", "neti", "cleansing", "breath"],
+  icon: "Droplets",
+  coverGradient: "from-cyan-600 to-blue-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Why cleanse" },
+    { phase: "Practice", sessions: 1, focus: "The pour" },
+    { phase: "Integration", sessions: 1, focus: "Daily breath" },
+    { phase: "Mastery", sessions: 1, focus: "The open nose" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Why cleanse the vessel",
+      required: ["ritual.opening-bow", "teach.shatkarma", "wisdom.gheranda.shatkarma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The seven limbs of Hatha",
+      required: ["wisdom.gheranda.1", "breath.box-4-4-4-4", "body.head-to-toe"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Neti pour",
+      required: ["shatkarma.neti", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Breath in daily life",
+      required: ["shatkarma.neti", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The open nose, the free mind",
+      required: ["ritual.opening-bow", "shatkarma.neti", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

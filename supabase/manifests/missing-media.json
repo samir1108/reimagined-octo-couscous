@@ -1,0 +1,3897 @@
+{
+  "note": "These CDN objects return HTTP 404 (uploaded by other ConsciousOS projects). Not recoverable; regenerate or replace, then drop the binary at expected_file and repoint the pointer.",
+  "checked_at": "2026-08-03",
+  "count": 426,
+  "by_group": {
+    "content/instagram-v2/02-REELS/_render/r006": 5,
+    "content/wave0/clips": 4,
+    "content/wave1/R001/clips": 6,
+    "content/wave1/R001v2/clips": 6,
+    "content/wave1/R001v3/clips": 6,
+    "content/wave1/R002/clips": 5,
+    "content/wave1/R003/clips": 5,
+    "content/wave1/R004/clips": 5,
+    "content/wave2/R005/clips": 5,
+    "content/wave2/R007/clips": 5,
+    "src/assets": 1,
+    "src/assets/film": 6,
+    "src/assets/film-disney": 6,
+    "src/assets/film-fc": 7,
+    "src/assets/films": 7,
+    "src/assets/films/flow": 8,
+    "src/assets/films/loops": 8,
+    "src/assets/films/masters": 8,
+    "src/assets/films/overture": 8,
+    "src/assets/films/rare-birth": 8,
+    "src/assets/films/session": 8,
+    "src/assets/films/tenx": 8,
+    "src/assets/films/voice": 7,
+    "src/assets/founder/samir/portraits": 5,
+    "src/assets/games": 3,
+    "src/assets/narration/body-scan": 8,
+    "src/assets/narration/box-breath": 8,
+    "src/assets/narration/coherent-breath": 8,
+    "src/assets/narration/death-contemplation": 8,
+    "src/assets/narration/gratitude-pulse": 8,
+    "src/assets/narration/kumbhaka": 8,
+    "src/assets/narration/loving-kindness": 8,
+    "src/assets/narration/self-inquiry": 8,
+    "src/assets/narration/so-hum": 8,
+    "src/assets/narration/the-sigh": 8,
+    "src/assets/narration/three-brain-checkin": 7,
+    "src/assets/narration/trataka": 8,
+    "src/assets/narration/walking-meditation": 8,
+    "src/assets/narration/witness": 8,
+    "src/assets/narration/yoga-nidra": 8,
+    "src/assets/paths/videos": 6,
+    "src/assets/practices": 15,
+    "src/assets/programs/videos": 27,
+    "src/assets/reel-001": 6,
+    "src/assets/sensorial/buddha": 1,
+    "src/assets/sensorial/krishnamurti": 1,
+    "src/assets/sensorial/osho": 1,
+    "src/assets/sensorial/ramana": 1,
+    "src/assets/sensorial/sadhguru": 1,
+    "src/assets/sensorial/yogananda": 1,
+    "src/assets/showroom": 8,
+    "src/assets/v000": 6,
+    "src/assets/videos": 25,
+    "src/games/assets/videos": 58
+  },
+  "objects": [
+    {
+      "pointer": "content/instagram-v2/02-REELS/_render/r006/clip1.mp4.asset.json",
+      "expected_file": "content/instagram-v2/02-REELS/_render/r006/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/84d9fc74-d1fc-42ef-82db-13cdb80c1418/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 13983183,
+      "content_type": null,
+      "group": "content/instagram-v2/02-REELS/_render/r006"
+    },
+    {
+      "pointer": "content/instagram-v2/02-REELS/_render/r006/clip2.mp4.asset.json",
+      "expected_file": "content/instagram-v2/02-REELS/_render/r006/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/45e7e58e-864d-4afd-aa30-f32d1ab3fddb/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 15085740,
+      "content_type": null,
+      "group": "content/instagram-v2/02-REELS/_render/r006"
+    },
+    {
+      "pointer": "content/instagram-v2/02-REELS/_render/r006/clip3.mp4.asset.json",
+      "expected_file": "content/instagram-v2/02-REELS/_render/r006/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/adee0266-d3d6-4a87-b6ad-39ee02c9f820/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 15290325,
+      "content_type": null,
+      "group": "content/instagram-v2/02-REELS/_render/r006"
+    },
+    {
+      "pointer": "content/instagram-v2/02-REELS/_render/r006/clip4.mp4.asset.json",
+      "expected_file": "content/instagram-v2/02-REELS/_render/r006/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/b827bc04-5955-4dc9-8313-84db9b64101f/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 13914514,
+      "content_type": null,
+      "group": "content/instagram-v2/02-REELS/_render/r006"
+    },
+    {
+      "pointer": "content/instagram-v2/02-REELS/_render/r006/clip5.mp4.asset.json",
+      "expected_file": "content/instagram-v2/02-REELS/_render/r006/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/7628082a-0a40-4fcb-b94d-8d496974d6e5/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 15242085,
+      "content_type": null,
+      "group": "content/instagram-v2/02-REELS/_render/r006"
+    },
+    {
+      "pointer": "content/wave0/clips/R001-clip1-office.mp4.asset.json",
+      "expected_file": "content/wave0/clips/R001-clip1-office.mp4",
+      "cdn_url": "/__l5e/assets-v1/0a9e6679-cec8-4590-a35d-2b5bce08ffd7/R001-clip1-office.mp4",
+      "original_filename": "R001-clip1-office.mp4",
+      "size": 16065893,
+      "content_type": null,
+      "group": "content/wave0/clips"
+    },
+    {
+      "pointer": "content/wave0/clips/R001-clip2-hallway.mp4.asset.json",
+      "expected_file": "content/wave0/clips/R001-clip2-hallway.mp4",
+      "cdn_url": "/__l5e/assets-v1/1eda4085-e609-4e3c-9c96-e75381d8663a/R001-clip2-hallway.mp4",
+      "original_filename": "R001-clip2-hallway.mp4",
+      "size": 26117781,
+      "content_type": null,
+      "group": "content/wave0/clips"
+    },
+    {
+      "pointer": "content/wave0/clips/R001-clip3-1bhk.mp4.asset.json",
+      "expected_file": "content/wave0/clips/R001-clip3-1bhk.mp4",
+      "cdn_url": "/__l5e/assets-v1/c9e5498b-2898-475e-820f-dac727614fd7/R001-clip3-1bhk.mp4",
+      "original_filename": "R001-clip3-1bhk.mp4",
+      "size": 19488500,
+      "content_type": null,
+      "group": "content/wave0/clips"
+    },
+    {
+      "pointer": "content/wave0/clips/R001-clip4-hero.mp4.asset.json",
+      "expected_file": "content/wave0/clips/R001-clip4-hero.mp4",
+      "cdn_url": "/__l5e/assets-v1/60631d6f-8b05-41f4-bbba-9e05c2eadd6f/R001-clip4-hero.mp4",
+      "original_filename": "R001-clip4-hero.mp4",
+      "size": 26984110,
+      "content_type": null,
+      "group": "content/wave0/clips"
+    },
+    {
+      "pointer": "content/wave1/R001/clips/clip1.mp4.asset.json",
+      "expected_file": "content/wave1/R001/clips/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/9272654b-a5ba-4829-8fe1-1a6e0826221b/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 15745794,
+      "content_type": null,
+      "group": "content/wave1/R001/clips"
+    },
+    {
+      "pointer": "content/wave1/R001/clips/clip2.mp4.asset.json",
+      "expected_file": "content/wave1/R001/clips/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/66646c86-fa8b-4eb0-b4cc-d71f3b709f5b/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 10881225,
+      "content_type": null,
+      "group": "content/wave1/R001/clips"
+    },
+    {
+      "pointer": "content/wave1/R001/clips/clip3.mp4.asset.json",
+      "expected_file": "content/wave1/R001/clips/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/a50a2b82-641c-430b-a268-74cbde6c7f96/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 10925187,
+      "content_type": null,
+      "group": "content/wave1/R001/clips"
+    },
+    {
+      "pointer": "content/wave1/R001/clips/clip4.mp4.asset.json",
+      "expected_file": "content/wave1/R001/clips/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/104737d7-d20e-499e-8c94-f217e730d58b/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 11471963,
+      "content_type": null,
+      "group": "content/wave1/R001/clips"
+    },
+    {
+      "pointer": "content/wave1/R001/clips/clip5.mp4.asset.json",
+      "expected_file": "content/wave1/R001/clips/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/a0f47631-6da7-4d8b-8d4f-a8eba7ee0463/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 13058771,
+      "content_type": null,
+      "group": "content/wave1/R001/clips"
+    },
+    {
+      "pointer": "content/wave1/R001/clips/clip6.mp4.asset.json",
+      "expected_file": "content/wave1/R001/clips/clip6.mp4",
+      "cdn_url": "/__l5e/assets-v1/94f0c0c2-7b71-42a3-b0af-6729b76011ef/clip6.mp4",
+      "original_filename": "clip6.mp4",
+      "size": 17278714,
+      "content_type": null,
+      "group": "content/wave1/R001/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v2/clips/clip1.mp4.asset.json",
+      "expected_file": "content/wave1/R001v2/clips/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/f1cb3075-180c-4396-b14e-6622f03079f5/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 17034915,
+      "content_type": null,
+      "group": "content/wave1/R001v2/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v2/clips/clip2.mp4.asset.json",
+      "expected_file": "content/wave1/R001v2/clips/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/1fd06c1d-f1e3-43a6-a490-983e7b032866/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 14154876,
+      "content_type": null,
+      "group": "content/wave1/R001v2/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v2/clips/clip3.mp4.asset.json",
+      "expected_file": "content/wave1/R001v2/clips/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/507ea23d-55e4-49d3-8aae-18bec5ed7878/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 12401644,
+      "content_type": null,
+      "group": "content/wave1/R001v2/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v2/clips/clip4.mp4.asset.json",
+      "expected_file": "content/wave1/R001v2/clips/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/8af980be-58e7-4c27-98b3-03cfaefd10f8/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 11895385,
+      "content_type": null,
+      "group": "content/wave1/R001v2/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v2/clips/clip5.mp4.asset.json",
+      "expected_file": "content/wave1/R001v2/clips/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/a1070682-1bed-4caf-81eb-f408727bb044/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 11583119,
+      "content_type": null,
+      "group": "content/wave1/R001v2/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v2/clips/clip6.mp4.asset.json",
+      "expected_file": "content/wave1/R001v2/clips/clip6.mp4",
+      "cdn_url": "/__l5e/assets-v1/c34ef164-0d83-49ea-a330-7c824c485c5d/clip6.mp4",
+      "original_filename": "clip6.mp4",
+      "size": 18145674,
+      "content_type": null,
+      "group": "content/wave1/R001v2/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v3/clips/clip1.mp4.asset.json",
+      "expected_file": "content/wave1/R001v3/clips/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/00035773-898b-4111-a580-bdbd69f61f6a/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 14569343,
+      "content_type": null,
+      "group": "content/wave1/R001v3/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v3/clips/clip2.mp4.asset.json",
+      "expected_file": "content/wave1/R001v3/clips/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/d413b851-fbc7-4e14-b379-397ae42e4516/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 11576817,
+      "content_type": null,
+      "group": "content/wave1/R001v3/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v3/clips/clip3.mp4.asset.json",
+      "expected_file": "content/wave1/R001v3/clips/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/98258f30-b657-4011-b2c9-e4fe5e92c8aa/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 12136882,
+      "content_type": null,
+      "group": "content/wave1/R001v3/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v3/clips/clip4.mp4.asset.json",
+      "expected_file": "content/wave1/R001v3/clips/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/bb47ce3d-e020-4f85-9f7f-473ced92b6ad/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 14646519,
+      "content_type": null,
+      "group": "content/wave1/R001v3/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v3/clips/clip5.mp4.asset.json",
+      "expected_file": "content/wave1/R001v3/clips/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/7d317f91-720c-4803-aebb-14c18628c430/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 12919481,
+      "content_type": null,
+      "group": "content/wave1/R001v3/clips"
+    },
+    {
+      "pointer": "content/wave1/R001v3/clips/clip6.mp4.asset.json",
+      "expected_file": "content/wave1/R001v3/clips/clip6.mp4",
+      "cdn_url": "/__l5e/assets-v1/198a0a93-f441-4155-a8cd-d3206be6b516/clip6.mp4",
+      "original_filename": "clip6.mp4",
+      "size": 19852486,
+      "content_type": null,
+      "group": "content/wave1/R001v3/clips"
+    },
+    {
+      "pointer": "content/wave1/R002/clips/clip1.mp4.asset.json",
+      "expected_file": "content/wave1/R002/clips/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/318f9443-bfda-4ae7-b6ad-b2fb52cfded4/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 12632051,
+      "content_type": null,
+      "group": "content/wave1/R002/clips"
+    },
+    {
+      "pointer": "content/wave1/R002/clips/clip2.mp4.asset.json",
+      "expected_file": "content/wave1/R002/clips/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/d6569162-1960-49ad-b956-fe69c9bf1797/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 10811552,
+      "content_type": null,
+      "group": "content/wave1/R002/clips"
+    },
+    {
+      "pointer": "content/wave1/R002/clips/clip3.mp4.asset.json",
+      "expected_file": "content/wave1/R002/clips/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/179c0b2f-e1aa-4671-bd31-7cd2c39c090f/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 19407738,
+      "content_type": null,
+      "group": "content/wave1/R002/clips"
+    },
+    {
+      "pointer": "content/wave1/R002/clips/clip4.mp4.asset.json",
+      "expected_file": "content/wave1/R002/clips/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/fdcbb3f7-12cd-4683-8f2f-ff016c14daab/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 12638969,
+      "content_type": null,
+      "group": "content/wave1/R002/clips"
+    },
+    {
+      "pointer": "content/wave1/R002/clips/clip5.mp4.asset.json",
+      "expected_file": "content/wave1/R002/clips/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/12d002b3-f0db-42da-bd50-cecc40202009/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 14420885,
+      "content_type": null,
+      "group": "content/wave1/R002/clips"
+    },
+    {
+      "pointer": "content/wave1/R003/clips/clip1.mp4.asset.json",
+      "expected_file": "content/wave1/R003/clips/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/01f424b7-12f2-4627-915e-ebae948cbeec/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 14137915,
+      "content_type": null,
+      "group": "content/wave1/R003/clips"
+    },
+    {
+      "pointer": "content/wave1/R003/clips/clip2.mp4.asset.json",
+      "expected_file": "content/wave1/R003/clips/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/8f7b14af-529a-439c-be5f-b060c37f9ce6/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 10224650,
+      "content_type": null,
+      "group": "content/wave1/R003/clips"
+    },
+    {
+      "pointer": "content/wave1/R003/clips/clip3.mp4.asset.json",
+      "expected_file": "content/wave1/R003/clips/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/b1bbca46-a95b-4bd4-96b2-352acee91123/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 16002193,
+      "content_type": null,
+      "group": "content/wave1/R003/clips"
+    },
+    {
+      "pointer": "content/wave1/R003/clips/clip4.mp4.asset.json",
+      "expected_file": "content/wave1/R003/clips/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/25656e4f-3d6b-42a5-9806-54851b1f2cd2/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 9984881,
+      "content_type": null,
+      "group": "content/wave1/R003/clips"
+    },
+    {
+      "pointer": "content/wave1/R003/clips/clip5.mp4.asset.json",
+      "expected_file": "content/wave1/R003/clips/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/050e488f-3601-42cb-972f-2aa2de5db050/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 15486160,
+      "content_type": null,
+      "group": "content/wave1/R003/clips"
+    },
+    {
+      "pointer": "content/wave1/R004/clips/clip1.mp4.asset.json",
+      "expected_file": "content/wave1/R004/clips/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/58c48834-f216-4e86-ad79-2e12dcbe897b/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 14483796,
+      "content_type": null,
+      "group": "content/wave1/R004/clips"
+    },
+    {
+      "pointer": "content/wave1/R004/clips/clip2.mp4.asset.json",
+      "expected_file": "content/wave1/R004/clips/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/88ea77e8-f47c-45d3-8cc8-dffb1d11f3ff/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 12382875,
+      "content_type": null,
+      "group": "content/wave1/R004/clips"
+    },
+    {
+      "pointer": "content/wave1/R004/clips/clip3.mp4.asset.json",
+      "expected_file": "content/wave1/R004/clips/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/5922a3ce-8904-4439-84e9-dc06f70aa878/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 22844248,
+      "content_type": null,
+      "group": "content/wave1/R004/clips"
+    },
+    {
+      "pointer": "content/wave1/R004/clips/clip4.mp4.asset.json",
+      "expected_file": "content/wave1/R004/clips/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/728b8a78-4715-43c3-9363-e651557bba7c/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 10810797,
+      "content_type": null,
+      "group": "content/wave1/R004/clips"
+    },
+    {
+      "pointer": "content/wave1/R004/clips/clip5.mp4.asset.json",
+      "expected_file": "content/wave1/R004/clips/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/0179ca76-3df8-4660-8321-701b11b9a30e/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 12522593,
+      "content_type": null,
+      "group": "content/wave1/R004/clips"
+    },
+    {
+      "pointer": "content/wave2/R005/clips/clip1.mp4.asset.json",
+      "expected_file": "content/wave2/R005/clips/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/578d6f5c-8938-46dd-9e7b-65641cdaeedd/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 11649996,
+      "content_type": null,
+      "group": "content/wave2/R005/clips"
+    },
+    {
+      "pointer": "content/wave2/R005/clips/clip2.mp4.asset.json",
+      "expected_file": "content/wave2/R005/clips/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/66f2d8e9-e8da-46ca-a9f7-d09ff7a3f5a0/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 12766451,
+      "content_type": null,
+      "group": "content/wave2/R005/clips"
+    },
+    {
+      "pointer": "content/wave2/R005/clips/clip3.mp4.asset.json",
+      "expected_file": "content/wave2/R005/clips/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/6009b616-8f6a-4736-bc79-703cf86111f1/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 11910925,
+      "content_type": null,
+      "group": "content/wave2/R005/clips"
+    },
+    {
+      "pointer": "content/wave2/R005/clips/clip4.mp4.asset.json",
+      "expected_file": "content/wave2/R005/clips/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/41a76da0-fbe0-4d9a-abd3-07a065a93cb7/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 14010202,
+      "content_type": null,
+      "group": "content/wave2/R005/clips"
+    },
+    {
+      "pointer": "content/wave2/R005/clips/clip5.mp4.asset.json",
+      "expected_file": "content/wave2/R005/clips/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/0ed6f192-6dc6-45fa-a733-89af7423a6a0/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 13396843,
+      "content_type": null,
+      "group": "content/wave2/R005/clips"
+    },
+    {
+      "pointer": "content/wave2/R007/clips/clip1.mp4.asset.json",
+      "expected_file": "content/wave2/R007/clips/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/de12a947-24b7-438a-a838-4934643a17ac/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 19476372,
+      "content_type": null,
+      "group": "content/wave2/R007/clips"
+    },
+    {
+      "pointer": "content/wave2/R007/clips/clip2.mp4.asset.json",
+      "expected_file": "content/wave2/R007/clips/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/b8c0758f-087a-46d7-a940-0f423df50d6f/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 11835535,
+      "content_type": null,
+      "group": "content/wave2/R007/clips"
+    },
+    {
+      "pointer": "content/wave2/R007/clips/clip3.mp4.asset.json",
+      "expected_file": "content/wave2/R007/clips/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/e27854d3-a247-41d9-96fe-9f23ed84d2c7/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 15755285,
+      "content_type": null,
+      "group": "content/wave2/R007/clips"
+    },
+    {
+      "pointer": "content/wave2/R007/clips/clip4.mp4.asset.json",
+      "expected_file": "content/wave2/R007/clips/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/322bf57c-7a9d-40ed-8f2d-ce6da2a28da6/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 13204816,
+      "content_type": null,
+      "group": "content/wave2/R007/clips"
+    },
+    {
+      "pointer": "content/wave2/R007/clips/clip5.mp4.asset.json",
+      "expected_file": "content/wave2/R007/clips/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/90abf583-dd21-4fb7-b9f1-8d00cffe65f7/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 18889219,
+      "content_type": null,
+      "group": "content/wave2/R007/clips"
+    },
+    {
+      "pointer": "src/assets/film-disney/s1-alone.mp4.asset.json",
+      "expected_file": "src/assets/film-disney/s1-alone.mp4",
+      "cdn_url": "/__l5e/assets-v1/776164ce-f003-44ee-8886-70c57d90a717/s1-alone.mp4",
+      "original_filename": "s1-alone.mp4",
+      "size": 14921155,
+      "content_type": null,
+      "group": "src/assets/film-disney"
+    },
+    {
+      "pointer": "src/assets/film-disney/s2-petals.mp4.asset.json",
+      "expected_file": "src/assets/film-disney/s2-petals.mp4",
+      "cdn_url": "/__l5e/assets-v1/7e2e553b-5708-45ed-b05d-534d3e9b0a63/s2-petals.mp4",
+      "original_filename": "s2-petals.mp4",
+      "size": 19381830,
+      "content_type": null,
+      "group": "src/assets/film-disney"
+    },
+    {
+      "pointer": "src/assets/film-disney/s3-emerge.mp4.asset.json",
+      "expected_file": "src/assets/film-disney/s3-emerge.mp4",
+      "cdn_url": "/__l5e/assets-v1/05275ec5-afe0-4ddc-ab7b-f85a54e6f08d/s3-emerge.mp4",
+      "original_filename": "s3-emerge.mp4",
+      "size": 20134370,
+      "content_type": null,
+      "group": "src/assets/film-disney"
+    },
+    {
+      "pointer": "src/assets/film-disney/s4-council.mp4.asset.json",
+      "expected_file": "src/assets/film-disney/s4-council.mp4",
+      "cdn_url": "/__l5e/assets-v1/ed0c5f15-6e9f-453a-bbbe-8f6f774f542d/s4-council.mp4",
+      "original_filename": "s4-council.mp4",
+      "size": 25761445,
+      "content_type": null,
+      "group": "src/assets/film-disney"
+    },
+    {
+      "pointer": "src/assets/film-disney/s5-tear.mp4.asset.json",
+      "expected_file": "src/assets/film-disney/s5-tear.mp4",
+      "cdn_url": "/__l5e/assets-v1/48fdb3fe-3c6c-429a-9e94-8d36aee73bf3/s5-tear.mp4",
+      "original_filename": "s5-tear.mp4",
+      "size": 18013173,
+      "content_type": null,
+      "group": "src/assets/film-disney"
+    },
+    {
+      "pointer": "src/assets/film-disney/s6-temple.mp4.asset.json",
+      "expected_file": "src/assets/film-disney/s6-temple.mp4",
+      "cdn_url": "/__l5e/assets-v1/f1bb02e8-555f-4562-952c-54caa351abb3/s6-temple.mp4",
+      "original_filename": "s6-temple.mp4",
+      "size": 20646623,
+      "content_type": null,
+      "group": "src/assets/film-disney"
+    },
+    {
+      "pointer": "src/assets/film-fc/shot1-bindu.mp4.asset.json",
+      "expected_file": "src/assets/film-fc/shot1-bindu.mp4",
+      "cdn_url": "/__l5e/assets-v1/0929b286-a865-40d8-bde7-aec6c0a2d6a2/shot1-bindu.mp4",
+      "original_filename": "shot1-bindu.mp4",
+      "size": 14228075,
+      "content_type": null,
+      "group": "src/assets/film-fc"
+    },
+    {
+      "pointer": "src/assets/film-fc/shot2-iris-flame.mp4.asset.json",
+      "expected_file": "src/assets/film-fc/shot2-iris-flame.mp4",
+      "cdn_url": "/__l5e/assets-v1/c53f240f-15d9-4e4c-b543-04e6ed7d6b54/shot2-iris-flame.mp4",
+      "original_filename": "shot2-iris-flame.mp4",
+      "size": 14475924,
+      "content_type": null,
+      "group": "src/assets/film-fc"
+    },
+    {
+      "pointer": "src/assets/film-fc/shot3-mandala-cosmos.mp4.asset.json",
+      "expected_file": "src/assets/film-fc/shot3-mandala-cosmos.mp4",
+      "cdn_url": "/__l5e/assets-v1/b9ae69ea-2ea7-4ecd-9eb0-06382451cbce/shot3-mandala-cosmos.mp4",
+      "original_filename": "shot3-mandala-cosmos.mp4",
+      "size": 25202111,
+      "content_type": null,
+      "group": "src/assets/film-fc"
+    },
+    {
+      "pointer": "src/assets/film-fc/shot4-iphone-temple.mp4.asset.json",
+      "expected_file": "src/assets/film-fc/shot4-iphone-temple.mp4",
+      "cdn_url": "/__l5e/assets-v1/12fdc97f-62da-402c-b7e6-91ed7d7db36b/shot4-iphone-temple.mp4",
+      "original_filename": "shot4-iphone-temple.mp4",
+      "size": 15733341,
+      "content_type": null,
+      "group": "src/assets/film-fc"
+    },
+    {
+      "pointer": "src/assets/film-fc/shot5-four-souls-v2.mp4.asset.json",
+      "expected_file": "src/assets/film-fc/shot5-four-souls-v2.mp4",
+      "cdn_url": "/__l5e/assets-v1/702313d6-b494-461a-96af-6be8771cf0a4/shot5-four-souls-v2.mp4",
+      "original_filename": "shot5-four-souls-v2.mp4",
+      "size": 15769832,
+      "content_type": null,
+      "group": "src/assets/film-fc"
+    },
+    {
+      "pointer": "src/assets/film-fc/shot5-four-souls.mp4.asset.json",
+      "expected_file": "src/assets/film-fc/shot5-four-souls.mp4",
+      "cdn_url": "/__l5e/assets-v1/87e9e403-c50d-4b90-ade3-f3bbd2899e62/shot5-four-souls.mp4",
+      "original_filename": "shot5-four-souls.mp4",
+      "size": 15982508,
+      "content_type": null,
+      "group": "src/assets/film-fc"
+    },
+    {
+      "pointer": "src/assets/film-fc/shot6-cosmic-self.mp4.asset.json",
+      "expected_file": "src/assets/film-fc/shot6-cosmic-self.mp4",
+      "cdn_url": "/__l5e/assets-v1/b16364f3-f595-4adc-b661-6595d76ea8f5/shot6-cosmic-self.mp4",
+      "original_filename": "shot6-cosmic-self.mp4",
+      "size": 22095719,
+      "content_type": null,
+      "group": "src/assets/film-fc"
+    },
+    {
+      "pointer": "src/assets/film/scene1-eye-opening.mp4.asset.json",
+      "expected_file": "src/assets/film/scene1-eye-opening.mp4",
+      "cdn_url": "/__l5e/assets-v1/627a709a-aabd-4d95-9494-01b1d226951c/scene1-eye-opening.mp4",
+      "original_filename": "scene1-eye-opening.mp4",
+      "size": 8037662,
+      "content_type": null,
+      "group": "src/assets/film"
+    },
+    {
+      "pointer": "src/assets/film/scene2-scrolling.mp4.asset.json",
+      "expected_file": "src/assets/film/scene2-scrolling.mp4",
+      "cdn_url": "/__l5e/assets-v1/fb8eded1-88eb-4398-acdd-70486ce278b7/scene2-scrolling.mp4",
+      "original_filename": "scene2-scrolling.mp4",
+      "size": 6776455,
+      "content_type": null,
+      "group": "src/assets/film"
+    },
+    {
+      "pointer": "src/assets/film/scene2b-crowd.mp4.asset.json",
+      "expected_file": "src/assets/film/scene2b-crowd.mp4",
+      "cdn_url": "/__l5e/assets-v1/ced1b291-c1db-4330-a52f-745be68c96ad/scene2b-crowd.mp4",
+      "original_filename": "scene2b-crowd.mp4",
+      "size": 16951584,
+      "content_type": null,
+      "group": "src/assets/film"
+    },
+    {
+      "pointer": "src/assets/film/scene4-sage.mp4.asset.json",
+      "expected_file": "src/assets/film/scene4-sage.mp4",
+      "cdn_url": "/__l5e/assets-v1/32dea120-fcfe-4474-9de0-c33a032667b0/scene4-sage.mp4",
+      "original_filename": "scene4-sage.mp4",
+      "size": 18846954,
+      "content_type": null,
+      "group": "src/assets/film"
+    },
+    {
+      "pointer": "src/assets/film/scene5-instrument.mp4.asset.json",
+      "expected_file": "src/assets/film/scene5-instrument.mp4",
+      "cdn_url": "/__l5e/assets-v1/00e1dd6c-0b6b-4f88-8fb3-f1eea583b9bf/scene5-instrument.mp4",
+      "original_filename": "scene5-instrument.mp4",
+      "size": 16172778,
+      "content_type": null,
+      "group": "src/assets/film"
+    },
+    {
+      "pointer": "src/assets/film/scene7-meditation.mp4.asset.json",
+      "expected_file": "src/assets/film/scene7-meditation.mp4",
+      "cdn_url": "/__l5e/assets-v1/66a866f5-3aaa-45ba-80be-683c52e4cb4b/scene7-meditation.mp4",
+      "original_filename": "scene7-meditation.mp4",
+      "size": 8478047,
+      "content_type": null,
+      "group": "src/assets/film"
+    },
+    {
+      "pointer": "src/assets/films/flow.mp4.asset.json",
+      "expected_file": "src/assets/films/flow.mp4",
+      "cdn_url": "/__l5e/assets-v1/d01732a6-ad7b-4d23-8a5d-ed7ac44c7d9a/flow.mp4",
+      "original_filename": "flow.mp4",
+      "size": 63249217,
+      "content_type": "video/mp4",
+      "group": "src/assets/films"
+    },
+    {
+      "pointer": "src/assets/films/flow/shot-1.mp4.asset.json",
+      "expected_file": "src/assets/films/flow/shot-1.mp4",
+      "cdn_url": "/__l5e/assets-v1/2ee5d4c3-daf5-4b84-aeda-bec790ebc819/shot-1.mp4",
+      "original_filename": "shot-1.mp4",
+      "size": 17123228,
+      "content_type": null,
+      "group": "src/assets/films/flow"
+    },
+    {
+      "pointer": "src/assets/films/flow/shot-2.mp4.asset.json",
+      "expected_file": "src/assets/films/flow/shot-2.mp4",
+      "cdn_url": "/__l5e/assets-v1/bccb52f5-e384-4642-8acd-8efd0d9a6478/shot-2.mp4",
+      "original_filename": "shot-2.mp4",
+      "size": 25754931,
+      "content_type": null,
+      "group": "src/assets/films/flow"
+    },
+    {
+      "pointer": "src/assets/films/flow/shot-3.mp4.asset.json",
+      "expected_file": "src/assets/films/flow/shot-3.mp4",
+      "cdn_url": "/__l5e/assets-v1/3a38208b-e9a8-4851-9d29-d5b58d0943ae/shot-3.mp4",
+      "original_filename": "shot-3.mp4",
+      "size": 12578657,
+      "content_type": null,
+      "group": "src/assets/films/flow"
+    },
+    {
+      "pointer": "src/assets/films/flow/shot-4.mp4.asset.json",
+      "expected_file": "src/assets/films/flow/shot-4.mp4",
+      "cdn_url": "/__l5e/assets-v1/ddc96fe4-d045-4fa7-af77-573ba2db0a43/shot-4.mp4",
+      "original_filename": "shot-4.mp4",
+      "size": 16161399,
+      "content_type": null,
+      "group": "src/assets/films/flow"
+    },
+    {
+      "pointer": "src/assets/films/flow/shot-5.mp4.asset.json",
+      "expected_file": "src/assets/films/flow/shot-5.mp4",
+      "cdn_url": "/__l5e/assets-v1/d494fe7b-dc7f-4d77-b887-0937dd21eecf/shot-5.mp4",
+      "original_filename": "shot-5.mp4",
+      "size": 26207541,
+      "content_type": null,
+      "group": "src/assets/films/flow"
+    },
+    {
+      "pointer": "src/assets/films/flow/shot-6.mp4.asset.json",
+      "expected_file": "src/assets/films/flow/shot-6.mp4",
+      "cdn_url": "/__l5e/assets-v1/d7ee0431-0578-425a-8b75-c72b2ec2380b/shot-6.mp4",
+      "original_filename": "shot-6.mp4",
+      "size": 11869968,
+      "content_type": null,
+      "group": "src/assets/films/flow"
+    },
+    {
+      "pointer": "src/assets/films/flow/shot-7.mp4.asset.json",
+      "expected_file": "src/assets/films/flow/shot-7.mp4",
+      "cdn_url": "/__l5e/assets-v1/a593b86a-f799-48e7-b476-63b8975744b0/shot-7.mp4",
+      "original_filename": "shot-7.mp4",
+      "size": 21494458,
+      "content_type": null,
+      "group": "src/assets/films/flow"
+    },
+    {
+      "pointer": "src/assets/films/flow/shot-8.mp4.asset.json",
+      "expected_file": "src/assets/films/flow/shot-8.mp4",
+      "cdn_url": "/__l5e/assets-v1/b7fe28a0-eb0e-438f-9530-2b5aa5743b7a/shot-8.mp4",
+      "original_filename": "shot-8.mp4",
+      "size": 8331617,
+      "content_type": null,
+      "group": "src/assets/films/flow"
+    },
+    {
+      "pointer": "src/assets/films/loops.mp4.asset.json",
+      "expected_file": "src/assets/films/loops.mp4",
+      "cdn_url": "/__l5e/assets-v1/8c59f174-ab52-44cb-a53b-791f236d3bba/loops.mp4",
+      "original_filename": "loops.mp4",
+      "size": 44980322,
+      "content_type": "video/mp4",
+      "group": "src/assets/films"
+    },
+    {
+      "pointer": "src/assets/films/loops/shot-1.mp4.asset.json",
+      "expected_file": "src/assets/films/loops/shot-1.mp4",
+      "cdn_url": "/__l5e/assets-v1/7c2f232e-d858-4225-ad18-2d693bbe661c/shot-1.mp4",
+      "original_filename": "shot-1.mp4",
+      "size": 8897320,
+      "content_type": null,
+      "group": "src/assets/films/loops"
+    },
+    {
+      "pointer": "src/assets/films/loops/shot-2.mp4.asset.json",
+      "expected_file": "src/assets/films/loops/shot-2.mp4",
+      "cdn_url": "/__l5e/assets-v1/25c9585c-d57b-4d09-9327-4c31be9c788a/shot-2.mp4",
+      "original_filename": "shot-2.mp4",
+      "size": 8502132,
+      "content_type": null,
+      "group": "src/assets/films/loops"
+    },
+    {
+      "pointer": "src/assets/films/loops/shot-3.mp4.asset.json",
+      "expected_file": "src/assets/films/loops/shot-3.mp4",
+      "cdn_url": "/__l5e/assets-v1/23873cf3-09f2-4ebb-ae5d-dca587fabc8a/shot-3.mp4",
+      "original_filename": "shot-3.mp4",
+      "size": 14728105,
+      "content_type": null,
+      "group": "src/assets/films/loops"
+    },
+    {
+      "pointer": "src/assets/films/loops/shot-4.mp4.asset.json",
+      "expected_file": "src/assets/films/loops/shot-4.mp4",
+      "cdn_url": "/__l5e/assets-v1/9e6fe96e-0190-4fd7-be5d-85729a41086d/shot-4.mp4",
+      "original_filename": "shot-4.mp4",
+      "size": 16728859,
+      "content_type": null,
+      "group": "src/assets/films/loops"
+    },
+    {
+      "pointer": "src/assets/films/loops/shot-5.mp4.asset.json",
+      "expected_file": "src/assets/films/loops/shot-5.mp4",
+      "cdn_url": "/__l5e/assets-v1/84ec638b-05f8-439c-927f-4f9a832ba835/shot-5.mp4",
+      "original_filename": "shot-5.mp4",
+      "size": 12122578,
+      "content_type": null,
+      "group": "src/assets/films/loops"
+    },
+    {
+      "pointer": "src/assets/films/loops/shot-6.mp4.asset.json",
+      "expected_file": "src/assets/films/loops/shot-6.mp4",
+      "cdn_url": "/__l5e/assets-v1/31af11e2-4fad-4f4e-9774-55cd3b2add35/shot-6.mp4",
+      "original_filename": "shot-6.mp4",
+      "size": 15671483,
+      "content_type": null,
+      "group": "src/assets/films/loops"
+    },
+    {
+      "pointer": "src/assets/films/loops/shot-7.mp4.asset.json",
+      "expected_file": "src/assets/films/loops/shot-7.mp4",
+      "cdn_url": "/__l5e/assets-v1/caa6441f-1ff5-496f-a91f-e8d9fe381159/shot-7.mp4",
+      "original_filename": "shot-7.mp4",
+      "size": 11241523,
+      "content_type": null,
+      "group": "src/assets/films/loops"
+    },
+    {
+      "pointer": "src/assets/films/loops/shot-8.mp4.asset.json",
+      "expected_file": "src/assets/films/loops/shot-8.mp4",
+      "cdn_url": "/__l5e/assets-v1/2b94d3e8-8c43-47ef-9e24-d6d01c3ebb91/shot-8.mp4",
+      "original_filename": "shot-8.mp4",
+      "size": 16975040,
+      "content_type": null,
+      "group": "src/assets/films/loops"
+    },
+    {
+      "pointer": "src/assets/films/masters.mp4.asset.json",
+      "expected_file": "src/assets/films/masters.mp4",
+      "cdn_url": "/__l5e/assets-v1/2ea5507a-576b-4a5f-82d7-919a77b680f7/masters.mp4",
+      "original_filename": "masters.mp4",
+      "size": 49808466,
+      "content_type": "video/mp4",
+      "group": "src/assets/films"
+    },
+    {
+      "pointer": "src/assets/films/masters/shot-1.mp4.asset.json",
+      "expected_file": "src/assets/films/masters/shot-1.mp4",
+      "cdn_url": "/__l5e/assets-v1/4ada7186-8830-4b0c-8f96-4f6ccf449c07/shot-1.mp4",
+      "original_filename": "shot-1.mp4",
+      "size": 11686099,
+      "content_type": null,
+      "group": "src/assets/films/masters"
+    },
+    {
+      "pointer": "src/assets/films/masters/shot-2.mp4.asset.json",
+      "expected_file": "src/assets/films/masters/shot-2.mp4",
+      "cdn_url": "/__l5e/assets-v1/689c531a-b7b2-42ec-845d-1f7b2a110e13/shot-2.mp4",
+      "original_filename": "shot-2.mp4",
+      "size": 13494799,
+      "content_type": null,
+      "group": "src/assets/films/masters"
+    },
+    {
+      "pointer": "src/assets/films/masters/shot-3.mp4.asset.json",
+      "expected_file": "src/assets/films/masters/shot-3.mp4",
+      "cdn_url": "/__l5e/assets-v1/23e26dbd-8d7f-439f-ae70-c097bae23ab2/shot-3.mp4",
+      "original_filename": "shot-3.mp4",
+      "size": 14243822,
+      "content_type": null,
+      "group": "src/assets/films/masters"
+    },
+    {
+      "pointer": "src/assets/films/masters/shot-4.mp4.asset.json",
+      "expected_file": "src/assets/films/masters/shot-4.mp4",
+      "cdn_url": "/__l5e/assets-v1/30722c37-191e-4bd6-a0ea-d89a68b3debc/shot-4.mp4",
+      "original_filename": "shot-4.mp4",
+      "size": 10478632,
+      "content_type": null,
+      "group": "src/assets/films/masters"
+    },
+    {
+      "pointer": "src/assets/films/masters/shot-5.mp4.asset.json",
+      "expected_file": "src/assets/films/masters/shot-5.mp4",
+      "cdn_url": "/__l5e/assets-v1/aea68eb7-bb11-443f-a377-82fa9b60abe0/shot-5.mp4",
+      "original_filename": "shot-5.mp4",
+      "size": 23445108,
+      "content_type": null,
+      "group": "src/assets/films/masters"
+    },
+    {
+      "pointer": "src/assets/films/masters/shot-6.mp4.asset.json",
+      "expected_file": "src/assets/films/masters/shot-6.mp4",
+      "cdn_url": "/__l5e/assets-v1/cedefb9b-9213-4705-bb4b-a3cefe451a7a/shot-6.mp4",
+      "original_filename": "shot-6.mp4",
+      "size": 14914768,
+      "content_type": null,
+      "group": "src/assets/films/masters"
+    },
+    {
+      "pointer": "src/assets/films/masters/shot-7.mp4.asset.json",
+      "expected_file": "src/assets/films/masters/shot-7.mp4",
+      "cdn_url": "/__l5e/assets-v1/bb0a0377-efab-4dea-80de-bda67726b932/shot-7.mp4",
+      "original_filename": "shot-7.mp4",
+      "size": 22125466,
+      "content_type": null,
+      "group": "src/assets/films/masters"
+    },
+    {
+      "pointer": "src/assets/films/masters/shot-8.mp4.asset.json",
+      "expected_file": "src/assets/films/masters/shot-8.mp4",
+      "cdn_url": "/__l5e/assets-v1/23d9bf23-85f7-42fb-93c3-76b47caaa88b/shot-8.mp4",
+      "original_filename": "shot-8.mp4",
+      "size": 10911251,
+      "content_type": null,
+      "group": "src/assets/films/masters"
+    },
+    {
+      "pointer": "src/assets/films/overture.mp4.asset.json",
+      "expected_file": "src/assets/films/overture.mp4",
+      "cdn_url": "/__l5e/assets-v1/129848a2-6fb1-4fcd-886e-5f21e90c6a05/overture.mp4",
+      "original_filename": "overture.mp4",
+      "size": 45708055,
+      "content_type": "video/mp4",
+      "group": "src/assets/films"
+    },
+    {
+      "pointer": "src/assets/films/overture/shot-1.mp4.asset.json",
+      "expected_file": "src/assets/films/overture/shot-1.mp4",
+      "cdn_url": "/__l5e/assets-v1/abe90bdb-9525-4a78-88b7-1ce36221d8a1/shot-1.mp4",
+      "original_filename": "shot-1.mp4",
+      "size": 9010859,
+      "content_type": null,
+      "group": "src/assets/films/overture"
+    },
+    {
+      "pointer": "src/assets/films/overture/shot-2.mp4.asset.json",
+      "expected_file": "src/assets/films/overture/shot-2.mp4",
+      "cdn_url": "/__l5e/assets-v1/77d01863-ae36-4e23-a52c-f835825d846e/shot-2.mp4",
+      "original_filename": "shot-2.mp4",
+      "size": 13172521,
+      "content_type": null,
+      "group": "src/assets/films/overture"
+    },
+    {
+      "pointer": "src/assets/films/overture/shot-3.mp4.asset.json",
+      "expected_file": "src/assets/films/overture/shot-3.mp4",
+      "cdn_url": "/__l5e/assets-v1/05904de1-da31-4b01-9ee1-7355e8e86e5b/shot-3.mp4",
+      "original_filename": "shot-3.mp4",
+      "size": 16917190,
+      "content_type": null,
+      "group": "src/assets/films/overture"
+    },
+    {
+      "pointer": "src/assets/films/overture/shot-4.mp4.asset.json",
+      "expected_file": "src/assets/films/overture/shot-4.mp4",
+      "cdn_url": "/__l5e/assets-v1/d28740a7-45e9-4751-beff-e4a5fb7d9d23/shot-4.mp4",
+      "original_filename": "shot-4.mp4",
+      "size": 21102927,
+      "content_type": null,
+      "group": "src/assets/films/overture"
+    },
+    {
+      "pointer": "src/assets/films/overture/shot-5.mp4.asset.json",
+      "expected_file": "src/assets/films/overture/shot-5.mp4",
+      "cdn_url": "/__l5e/assets-v1/f797f1a4-29c7-40f1-83d6-ac43f4c9895c/shot-5.mp4",
+      "original_filename": "shot-5.mp4",
+      "size": 16766612,
+      "content_type": null,
+      "group": "src/assets/films/overture"
+    },
+    {
+      "pointer": "src/assets/films/overture/shot-6.mp4.asset.json",
+      "expected_file": "src/assets/films/overture/shot-6.mp4",
+      "cdn_url": "/__l5e/assets-v1/cfdcfc04-973c-4265-bfde-2da72543c3d5/shot-6.mp4",
+      "original_filename": "shot-6.mp4",
+      "size": 12569719,
+      "content_type": null,
+      "group": "src/assets/films/overture"
+    },
+    {
+      "pointer": "src/assets/films/overture/shot-7.mp4.asset.json",
+      "expected_file": "src/assets/films/overture/shot-7.mp4",
+      "cdn_url": "/__l5e/assets-v1/f50984df-04d6-4021-a78a-c0c2fc204b6c/shot-7.mp4",
+      "original_filename": "shot-7.mp4",
+      "size": 10333244,
+      "content_type": null,
+      "group": "src/assets/films/overture"
+    },
+    {
+      "pointer": "src/assets/films/overture/shot-8.mp4.asset.json",
+      "expected_file": "src/assets/films/overture/shot-8.mp4",
+      "cdn_url": "/__l5e/assets-v1/7353a22f-d323-4bfc-80c5-a3dfdb5105d3/shot-8.mp4",
+      "original_filename": "shot-8.mp4",
+      "size": 7780217,
+      "content_type": null,
+      "group": "src/assets/films/overture"
+    },
+    {
+      "pointer": "src/assets/films/rare-birth.mp4.asset.json",
+      "expected_file": "src/assets/films/rare-birth.mp4",
+      "cdn_url": "/__l5e/assets-v1/746964b6-c774-4352-beee-c9e88abce571/rare-birth.mp4",
+      "original_filename": "rare-birth.mp4",
+      "size": 49927243,
+      "content_type": "video/mp4",
+      "group": "src/assets/films"
+    },
+    {
+      "pointer": "src/assets/films/rare-birth/shot-1.mp4.asset.json",
+      "expected_file": "src/assets/films/rare-birth/shot-1.mp4",
+      "cdn_url": "/__l5e/assets-v1/92f8678c-cff0-4e11-b0d3-d5f8ede4878c/shot-1.mp4",
+      "original_filename": "shot-1.mp4",
+      "size": 17958564,
+      "content_type": null,
+      "group": "src/assets/films/rare-birth"
+    },
+    {
+      "pointer": "src/assets/films/rare-birth/shot-2.mp4.asset.json",
+      "expected_file": "src/assets/films/rare-birth/shot-2.mp4",
+      "cdn_url": "/__l5e/assets-v1/3b61f3d7-e4fa-4cd1-87e3-30334b0ec5a4/shot-2.mp4",
+      "original_filename": "shot-2.mp4",
+      "size": 16180231,
+      "content_type": null,
+      "group": "src/assets/films/rare-birth"
+    },
+    {
+      "pointer": "src/assets/films/rare-birth/shot-3.mp4.asset.json",
+      "expected_file": "src/assets/films/rare-birth/shot-3.mp4",
+      "cdn_url": "/__l5e/assets-v1/e83dc2b9-8098-4387-8144-684b6d3dc7ab/shot-3.mp4",
+      "original_filename": "shot-3.mp4",
+      "size": 24124230,
+      "content_type": null,
+      "group": "src/assets/films/rare-birth"
+    },
+    {
+      "pointer": "src/assets/films/rare-birth/shot-4.mp4.asset.json",
+      "expected_file": "src/assets/films/rare-birth/shot-4.mp4",
+      "cdn_url": "/__l5e/assets-v1/8cf2d98e-69c2-413b-b489-06ea0ace4115/shot-4.mp4",
+      "original_filename": "shot-4.mp4",
+      "size": 10775019,
+      "content_type": null,
+      "group": "src/assets/films/rare-birth"
+    },
+    {
+      "pointer": "src/assets/films/rare-birth/shot-5.mp4.asset.json",
+      "expected_file": "src/assets/films/rare-birth/shot-5.mp4",
+      "cdn_url": "/__l5e/assets-v1/6e0dea23-3201-4f18-b0c0-56c4d2747f0b/shot-5.mp4",
+      "original_filename": "shot-5.mp4",
+      "size": 12027285,
+      "content_type": null,
+      "group": "src/assets/films/rare-birth"
+    },
+    {
+      "pointer": "src/assets/films/rare-birth/shot-6.mp4.asset.json",
+      "expected_file": "src/assets/films/rare-birth/shot-6.mp4",
+      "cdn_url": "/__l5e/assets-v1/29819acf-5072-41bf-9252-5310a8eb423e/shot-6.mp4",
+      "original_filename": "shot-6.mp4",
+      "size": 10207403,
+      "content_type": null,
+      "group": "src/assets/films/rare-birth"
+    },
+    {
+      "pointer": "src/assets/films/rare-birth/shot-7.mp4.asset.json",
+      "expected_file": "src/assets/films/rare-birth/shot-7.mp4",
+      "cdn_url": "/__l5e/assets-v1/ed7ee215-fe7f-4195-8036-24c3fe65234e/shot-7.mp4",
+      "original_filename": "shot-7.mp4",
+      "size": 14772460,
+      "content_type": null,
+      "group": "src/assets/films/rare-birth"
+    },
+    {
+      "pointer": "src/assets/films/rare-birth/shot-8.mp4.asset.json",
+      "expected_file": "src/assets/films/rare-birth/shot-8.mp4",
+      "cdn_url": "/__l5e/assets-v1/ab85833b-818b-43f9-abdc-0e2ce8e21d35/shot-8.mp4",
+      "original_filename": "shot-8.mp4",
+      "size": 11234034,
+      "content_type": null,
+      "group": "src/assets/films/rare-birth"
+    },
+    {
+      "pointer": "src/assets/films/session.mp4.asset.json",
+      "expected_file": "src/assets/films/session.mp4",
+      "cdn_url": "/__l5e/assets-v1/462eddad-726a-49e4-bdc9-250794760105/session.mp4",
+      "original_filename": "session.mp4",
+      "size": 36821977,
+      "content_type": "video/mp4",
+      "group": "src/assets/films"
+    },
+    {
+      "pointer": "src/assets/films/session/shot-1.mp4.asset.json",
+      "expected_file": "src/assets/films/session/shot-1.mp4",
+      "cdn_url": "/__l5e/assets-v1/f46d8bb9-8270-444e-ae8d-8403fad4ab7a/shot-1.mp4",
+      "original_filename": "shot-1.mp4",
+      "size": 12501888,
+      "content_type": null,
+      "group": "src/assets/films/session"
+    },
+    {
+      "pointer": "src/assets/films/session/shot-2.mp4.asset.json",
+      "expected_file": "src/assets/films/session/shot-2.mp4",
+      "cdn_url": "/__l5e/assets-v1/37fc7e3d-217c-417b-84ac-f5a381f7012d/shot-2.mp4",
+      "original_filename": "shot-2.mp4",
+      "size": 11661951,
+      "content_type": null,
+      "group": "src/assets/films/session"
+    },
+    {
+      "pointer": "src/assets/films/session/shot-3.mp4.asset.json",
+      "expected_file": "src/assets/films/session/shot-3.mp4",
+      "cdn_url": "/__l5e/assets-v1/1b87180f-330b-4599-ad5f-543c15f214a1/shot-3.mp4",
+      "original_filename": "shot-3.mp4",
+      "size": 8437381,
+      "content_type": null,
+      "group": "src/assets/films/session"
+    },
+    {
+      "pointer": "src/assets/films/session/shot-4.mp4.asset.json",
+      "expected_file": "src/assets/films/session/shot-4.mp4",
+      "cdn_url": "/__l5e/assets-v1/8f039c60-d09c-463d-b032-f207527c522a/shot-4.mp4",
+      "original_filename": "shot-4.mp4",
+      "size": 9759254,
+      "content_type": null,
+      "group": "src/assets/films/session"
+    },
+    {
+      "pointer": "src/assets/films/session/shot-5.mp4.asset.json",
+      "expected_file": "src/assets/films/session/shot-5.mp4",
+      "cdn_url": "/__l5e/assets-v1/9a47d731-7e19-478d-ac49-07c7770f4c8e/shot-5.mp4",
+      "original_filename": "shot-5.mp4",
+      "size": 10585686,
+      "content_type": null,
+      "group": "src/assets/films/session"
+    },
+    {
+      "pointer": "src/assets/films/session/shot-6.mp4.asset.json",
+      "expected_file": "src/assets/films/session/shot-6.mp4",
+      "cdn_url": "/__l5e/assets-v1/3b44b5f7-d2dc-441b-b838-bdfa42c35849/shot-6.mp4",
+      "original_filename": "shot-6.mp4",
+      "size": 14513112,
+      "content_type": null,
+      "group": "src/assets/films/session"
+    },
+    {
+      "pointer": "src/assets/films/session/shot-7.mp4.asset.json",
+      "expected_file": "src/assets/films/session/shot-7.mp4",
+      "cdn_url": "/__l5e/assets-v1/9735e673-0a7b-4624-b2f0-92bd131c204a/shot-7.mp4",
+      "original_filename": "shot-7.mp4",
+      "size": 12585210,
+      "content_type": null,
+      "group": "src/assets/films/session"
+    },
+    {
+      "pointer": "src/assets/films/session/shot-8.mp4.asset.json",
+      "expected_file": "src/assets/films/session/shot-8.mp4",
+      "cdn_url": "/__l5e/assets-v1/3785cd30-624c-4b8a-a104-eafb4e82ba83/shot-8.mp4",
+      "original_filename": "shot-8.mp4",
+      "size": 2830649,
+      "content_type": null,
+      "group": "src/assets/films/session"
+    },
+    {
+      "pointer": "src/assets/films/tenx.mp4.asset.json",
+      "expected_file": "src/assets/films/tenx.mp4",
+      "cdn_url": "/__l5e/assets-v1/b19ff736-7cd8-40e2-8ba1-6396eda0ab57/tenx.mp4",
+      "original_filename": "tenx.mp4",
+      "size": 42667466,
+      "content_type": "video/mp4",
+      "group": "src/assets/films"
+    },
+    {
+      "pointer": "src/assets/films/tenx/shot-1.mp4.asset.json",
+      "expected_file": "src/assets/films/tenx/shot-1.mp4",
+      "cdn_url": "/__l5e/assets-v1/893e7c67-338e-4d35-8cd8-9dfdd93a8997/shot-1.mp4",
+      "original_filename": "shot-1.mp4",
+      "size": 11634095,
+      "content_type": null,
+      "group": "src/assets/films/tenx"
+    },
+    {
+      "pointer": "src/assets/films/tenx/shot-2.mp4.asset.json",
+      "expected_file": "src/assets/films/tenx/shot-2.mp4",
+      "cdn_url": "/__l5e/assets-v1/edf5122f-620a-4ca9-ae0e-abe7236b79bd/shot-2.mp4",
+      "original_filename": "shot-2.mp4",
+      "size": 18723207,
+      "content_type": null,
+      "group": "src/assets/films/tenx"
+    },
+    {
+      "pointer": "src/assets/films/tenx/shot-3.mp4.asset.json",
+      "expected_file": "src/assets/films/tenx/shot-3.mp4",
+      "cdn_url": "/__l5e/assets-v1/a3288da2-09a7-4c2c-95a6-761401478f5a/shot-3.mp4",
+      "original_filename": "shot-3.mp4",
+      "size": 14815698,
+      "content_type": null,
+      "group": "src/assets/films/tenx"
+    },
+    {
+      "pointer": "src/assets/films/tenx/shot-4.mp4.asset.json",
+      "expected_file": "src/assets/films/tenx/shot-4.mp4",
+      "cdn_url": "/__l5e/assets-v1/f3deb0e2-6b76-4848-84c2-e5cdfca0bd29/shot-4.mp4",
+      "original_filename": "shot-4.mp4",
+      "size": 17492185,
+      "content_type": null,
+      "group": "src/assets/films/tenx"
+    },
+    {
+      "pointer": "src/assets/films/tenx/shot-5.mp4.asset.json",
+      "expected_file": "src/assets/films/tenx/shot-5.mp4",
+      "cdn_url": "/__l5e/assets-v1/d0791d8a-143e-4b47-a57b-86ac710b37cf/shot-5.mp4",
+      "original_filename": "shot-5.mp4",
+      "size": 6891193,
+      "content_type": null,
+      "group": "src/assets/films/tenx"
+    },
+    {
+      "pointer": "src/assets/films/tenx/shot-6.mp4.asset.json",
+      "expected_file": "src/assets/films/tenx/shot-6.mp4",
+      "cdn_url": "/__l5e/assets-v1/8a1ba4ef-ce95-4e58-96f4-466742dc0bea/shot-6.mp4",
+      "original_filename": "shot-6.mp4",
+      "size": 10538759,
+      "content_type": null,
+      "group": "src/assets/films/tenx"
+    },
+    {
+      "pointer": "src/assets/films/tenx/shot-7.mp4.asset.json",
+      "expected_file": "src/assets/films/tenx/shot-7.mp4",
+      "cdn_url": "/__l5e/assets-v1/3dbdbf42-2c5c-49bc-bd07-51ca92c13c6f/shot-7.mp4",
+      "original_filename": "shot-7.mp4",
+      "size": 14168256,
+      "content_type": null,
+      "group": "src/assets/films/tenx"
+    },
+    {
+      "pointer": "src/assets/films/tenx/shot-8.mp4.asset.json",
+      "expected_file": "src/assets/films/tenx/shot-8.mp4",
+      "cdn_url": "/__l5e/assets-v1/03e1380e-8843-42fe-b96b-004412e09661/shot-8.mp4",
+      "original_filename": "shot-8.mp4",
+      "size": 9043860,
+      "content_type": null,
+      "group": "src/assets/films/tenx"
+    },
+    {
+      "pointer": "src/assets/films/voice/flow.mp3.asset.json",
+      "expected_file": "src/assets/films/voice/flow.mp3",
+      "cdn_url": "/__l5e/assets-v1/e0bfcd4f-e3e0-4763-985b-d8a73d0dc935/flow-vo.mp3",
+      "original_filename": "flow-vo.mp3",
+      "size": 1035791,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/films/voice"
+    },
+    {
+      "pointer": "src/assets/films/voice/loops.mp3.asset.json",
+      "expected_file": "src/assets/films/voice/loops.mp3",
+      "cdn_url": "/__l5e/assets-v1/0c401b37-183d-4d5e-b95a-a432ab6cbeb2/loops-vo.mp3",
+      "original_filename": "loops-vo.mp3",
+      "size": 1054223,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/films/voice"
+    },
+    {
+      "pointer": "src/assets/films/voice/masters.mp3.asset.json",
+      "expected_file": "src/assets/films/voice/masters.mp3",
+      "cdn_url": "/__l5e/assets-v1/b5cc483c-ee17-4271-b13d-4d913cd1d2b5/masters-vo.mp3",
+      "original_filename": "masters-vo.mp3",
+      "size": 892175,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/films/voice"
+    },
+    {
+      "pointer": "src/assets/films/voice/overture.mp3.asset.json",
+      "expected_file": "src/assets/films/voice/overture.mp3",
+      "cdn_url": "/__l5e/assets-v1/5e9034b8-e2f9-431a-8885-d44958a10ba3/overture-vo.mp3",
+      "original_filename": "overture-vo.mp3",
+      "size": 1033487,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/films/voice"
+    },
+    {
+      "pointer": "src/assets/films/voice/rare-birth.mp3.asset.json",
+      "expected_file": "src/assets/films/voice/rare-birth.mp3",
+      "cdn_url": "/__l5e/assets-v1/458320c6-5cdb-4aa9-b1ef-23ed6e7a4993/rare-birth-vo.mp3",
+      "original_filename": "rare-birth-vo.mp3",
+      "size": 1041935,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/films/voice"
+    },
+    {
+      "pointer": "src/assets/films/voice/session.mp3.asset.json",
+      "expected_file": "src/assets/films/voice/session.mp3",
+      "cdn_url": "/__l5e/assets-v1/58913104-7ff6-4536-a4fb-8e37a1d68770/session-vo.mp3",
+      "original_filename": "session-vo.mp3",
+      "size": 1021967,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/films/voice"
+    },
+    {
+      "pointer": "src/assets/films/voice/tenx.mp3.asset.json",
+      "expected_file": "src/assets/films/voice/tenx.mp3",
+      "cdn_url": "/__l5e/assets-v1/ba69ce2f-b0a2-46f2-b535-55c6cef297cb/tenx-vo.mp3",
+      "original_filename": "tenx-vo.mp3",
+      "size": 1096463,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/films/voice"
+    },
+    {
+      "pointer": "src/assets/founder/samir/portraits/samir-portrait-01.jpg.asset.json",
+      "expected_file": "src/assets/founder/samir/portraits/samir-portrait-01.jpg",
+      "cdn_url": "/__l5e/assets-v1/75a76788-6d61-48f1-b68f-7f6ec6f251dc/samir-portrait-01.jpg",
+      "original_filename": "samir-portrait-01.jpg",
+      "size": 61025,
+      "content_type": "image/jpeg",
+      "group": "src/assets/founder/samir/portraits"
+    },
+    {
+      "pointer": "src/assets/founder/samir/portraits/samir-portrait-02.jpg.asset.json",
+      "expected_file": "src/assets/founder/samir/portraits/samir-portrait-02.jpg",
+      "cdn_url": "/__l5e/assets-v1/89a72d9a-4469-47f5-a87b-73754640c5ad/samir-portrait-02.jpg",
+      "original_filename": "samir-portrait-02.jpg",
+      "size": 70107,
+      "content_type": "image/jpeg",
+      "group": "src/assets/founder/samir/portraits"
+    },
+    {
+      "pointer": "src/assets/founder/samir/portraits/samir-portrait-03.jpg.asset.json",
+      "expected_file": "src/assets/founder/samir/portraits/samir-portrait-03.jpg",
+      "cdn_url": "/__l5e/assets-v1/1e0fb783-d6fd-4d3a-9a5d-0d9082f7cabf/samir-portrait-03.jpg",
+      "original_filename": "samir-portrait-03.jpg",
+      "size": 104469,
+      "content_type": "image/jpeg",
+      "group": "src/assets/founder/samir/portraits"
+    },
+    {
+      "pointer": "src/assets/founder/samir/portraits/samir-portrait-04.jpg.asset.json",
+      "expected_file": "src/assets/founder/samir/portraits/samir-portrait-04.jpg",
+      "cdn_url": "/__l5e/assets-v1/7e78b83b-2687-4c07-a9b5-602aeca659a9/samir-portrait-04.jpg",
+      "original_filename": "samir-portrait-04.jpg",
+      "size": 112041,
+      "content_type": "image/jpeg",
+      "group": "src/assets/founder/samir/portraits"
+    },
+    {
+      "pointer": "src/assets/founder/samir/portraits/samir-portrait-05.jpg.asset.json",
+      "expected_file": "src/assets/founder/samir/portraits/samir-portrait-05.jpg",
+      "cdn_url": "/__l5e/assets-v1/2eb42fed-7afb-4a4f-9bd5-6dd41e5ecb72/samir-portrait-05.jpg",
+      "original_filename": "samir-portrait-05.jpg",
+      "size": 108611,
+      "content_type": "image/jpeg",
+      "group": "src/assets/founder/samir/portraits"
+    },
+    {
+      "pointer": "src/assets/games/breath-temple.jpg.asset.json",
+      "expected_file": "src/assets/games/breath-temple.jpg",
+      "cdn_url": "/__l5e/assets-v1/72417a10-aa74-4c4a-bccb-ede77f66b4c7/breath-temple.jpg",
+      "original_filename": "breath-temple.jpg",
+      "size": 104128,
+      "content_type": "image/jpeg",
+      "group": "src/assets/games"
+    },
+    {
+      "pointer": "src/assets/games/the-pause.jpg.asset.json",
+      "expected_file": "src/assets/games/the-pause.jpg",
+      "cdn_url": "/__l5e/assets-v1/10f5e146-0670-4a92-a51b-15d252dbd79a/the-pause.jpg",
+      "original_filename": "the-pause.jpg",
+      "size": 105057,
+      "content_type": "image/jpeg",
+      "group": "src/assets/games"
+    },
+    {
+      "pointer": "src/assets/games/witness.jpg.asset.json",
+      "expected_file": "src/assets/games/witness.jpg",
+      "cdn_url": "/__l5e/assets-v1/60b602a8-dd7b-4d6d-8048-6197cfce1643/witness.jpg",
+      "original_filename": "witness.jpg",
+      "size": 120226,
+      "content_type": "image/jpeg",
+      "group": "src/assets/games"
+    },
+    {
+      "pointer": "src/assets/hope-flame-void.mp4.asset.json",
+      "expected_file": "src/assets/hope-flame-void.mp4",
+      "cdn_url": "/__l5e/assets-v1/6cb950f7-dc02-49fa-a515-7f77fb996ef8/hope-flame-void.mp4",
+      "original_filename": "hope-flame-void.mp4",
+      "size": 13672582,
+      "content_type": null,
+      "group": "src/assets"
+    },
+    {
+      "pointer": "src/assets/narration/body-scan/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/body-scan/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/9c9d4b3f-dd28-45d2-afe0-3002cc86206b/body-scan-0.mp3",
+      "original_filename": "body-scan-0.mp3",
+      "size": 114432,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/body-scan"
+    },
+    {
+      "pointer": "src/assets/narration/body-scan/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/body-scan/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/0827661f-07f3-424a-b847-9afc573ca899/body-scan-1.mp3",
+      "original_filename": "body-scan-1.mp3",
+      "size": 86016,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/body-scan"
+    },
+    {
+      "pointer": "src/assets/narration/body-scan/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/body-scan/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/18e11883-b06b-4fe8-9ea9-6f703f7f0732/body-scan-2.mp3",
+      "original_filename": "body-scan-2.mp3",
+      "size": 119424,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/body-scan"
+    },
+    {
+      "pointer": "src/assets/narration/body-scan/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/body-scan/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/2993fac9-2224-436b-93da-1426729e6e40/body-scan-3.mp3",
+      "original_filename": "body-scan-3.mp3",
+      "size": 223872,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/body-scan"
+    },
+    {
+      "pointer": "src/assets/narration/body-scan/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/body-scan/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/1afc7ac8-c96e-4977-bdb4-e95e00e462b7/body-scan-4.mp3",
+      "original_filename": "body-scan-4.mp3",
+      "size": 124800,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/body-scan"
+    },
+    {
+      "pointer": "src/assets/narration/body-scan/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/body-scan/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/1e13083c-3e09-4b38-baa4-e26355f4a508/body-scan-5.mp3",
+      "original_filename": "body-scan-5.mp3",
+      "size": 139008,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/body-scan"
+    },
+    {
+      "pointer": "src/assets/narration/body-scan/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/body-scan/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/7d329f90-4717-44e7-8db5-ae6c5e2e496d/body-scan-6.mp3",
+      "original_filename": "body-scan-6.mp3",
+      "size": 100224,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/body-scan"
+    },
+    {
+      "pointer": "src/assets/narration/body-scan/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/body-scan/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/dc57a9d8-c2f5-4534-bcd3-375633fa75bc/body-scan-7.mp3",
+      "original_filename": "body-scan-7.mp3",
+      "size": 128640,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/body-scan"
+    },
+    {
+      "pointer": "src/assets/narration/box-breath/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/box-breath/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/a6fe2913-2143-4b14-8627-172e7fe39749/box-breath-0.mp3",
+      "original_filename": "box-breath-0.mp3",
+      "size": 145536,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/box-breath"
+    },
+    {
+      "pointer": "src/assets/narration/box-breath/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/box-breath/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/edcc42d1-96b1-4407-9a65-8b8845d1017f/box-breath-1.mp3",
+      "original_filename": "box-breath-1.mp3",
+      "size": 74112,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/box-breath"
+    },
+    {
+      "pointer": "src/assets/narration/box-breath/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/box-breath/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/840b7e54-7706-44ec-86e8-08d0147ced41/box-breath-2.mp3",
+      "original_filename": "box-breath-2.mp3",
+      "size": 67584,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/box-breath"
+    },
+    {
+      "pointer": "src/assets/narration/box-breath/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/box-breath/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/80dc479d-ed87-4d60-a2d4-759b587fa13a/box-breath-3.mp3",
+      "original_filename": "box-breath-3.mp3",
+      "size": 85248,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/box-breath"
+    },
+    {
+      "pointer": "src/assets/narration/box-breath/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/box-breath/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/210adf5c-29fb-46c4-9f90-34052cda3abd/box-breath-4.mp3",
+      "original_filename": "box-breath-4.mp3",
+      "size": 62976,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/box-breath"
+    },
+    {
+      "pointer": "src/assets/narration/box-breath/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/box-breath/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/f30e4483-9fdc-45c1-b9fc-ba093dc6cd1b/box-breath-5.mp3",
+      "original_filename": "box-breath-5.mp3",
+      "size": 60672,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/box-breath"
+    },
+    {
+      "pointer": "src/assets/narration/box-breath/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/box-breath/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/2f7c1325-3356-4cf2-922b-210a5d701475/box-breath-6.mp3",
+      "original_filename": "box-breath-6.mp3",
+      "size": 86016,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/box-breath"
+    },
+    {
+      "pointer": "src/assets/narration/box-breath/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/box-breath/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/9f9ba3af-7853-46ef-90d5-e5161aeb9425/box-breath-7.mp3",
+      "original_filename": "box-breath-7.mp3",
+      "size": 127104,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/box-breath"
+    },
+    {
+      "pointer": "src/assets/narration/coherent-breath/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/coherent-breath/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/c2db6794-5501-4676-aca0-1e499f997420/coherent-breath-0.mp3",
+      "original_filename": "coherent-breath-0.mp3",
+      "size": 135552,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/coherent-breath"
+    },
+    {
+      "pointer": "src/assets/narration/coherent-breath/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/coherent-breath/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/db5086f3-d5c1-4850-b5cc-1b9b3d760bd1/coherent-breath-1.mp3",
+      "original_filename": "coherent-breath-1.mp3",
+      "size": 67584,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/coherent-breath"
+    },
+    {
+      "pointer": "src/assets/narration/coherent-breath/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/coherent-breath/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/4af4d55f-610e-4de5-b2f8-1648d38fdd2d/coherent-breath-2.mp3",
+      "original_filename": "coherent-breath-2.mp3",
+      "size": 83328,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/coherent-breath"
+    },
+    {
+      "pointer": "src/assets/narration/coherent-breath/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/coherent-breath/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/0b1bcf85-566e-4b73-8745-8b1f38a83d65/coherent-breath-3.mp3",
+      "original_filename": "coherent-breath-3.mp3",
+      "size": 81792,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/coherent-breath"
+    },
+    {
+      "pointer": "src/assets/narration/coherent-breath/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/coherent-breath/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/1a942bd9-1b75-4e22-ad47-25f4f7d3e553/coherent-breath-4.mp3",
+      "original_filename": "coherent-breath-4.mp3",
+      "size": 85248,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/coherent-breath"
+    },
+    {
+      "pointer": "src/assets/narration/coherent-breath/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/coherent-breath/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/bb4bc190-89e9-4a36-9891-a513ca8be6b5/coherent-breath-5.mp3",
+      "original_filename": "coherent-breath-5.mp3",
+      "size": 100224,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/coherent-breath"
+    },
+    {
+      "pointer": "src/assets/narration/coherent-breath/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/coherent-breath/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/a0905f24-d180-4722-bf36-39dd71e130c9/coherent-breath-6.mp3",
+      "original_filename": "coherent-breath-6.mp3",
+      "size": 98688,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/coherent-breath"
+    },
+    {
+      "pointer": "src/assets/narration/coherent-breath/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/coherent-breath/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/1f7c930a-a757-47f3-875e-aab4a991dc19/coherent-breath-7.mp3",
+      "original_filename": "coherent-breath-7.mp3",
+      "size": 128640,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/coherent-breath"
+    },
+    {
+      "pointer": "src/assets/narration/death-contemplation/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/death-contemplation/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/c619e58e-0a48-4f28-b5f6-c75d5a6711df/death-contemplation-0.mp3",
+      "original_filename": "death-contemplation-0.mp3",
+      "size": 144768,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/death-contemplation"
+    },
+    {
+      "pointer": "src/assets/narration/death-contemplation/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/death-contemplation/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/64a02727-c8cf-46f7-9907-afe806a05d3f/death-contemplation-1.mp3",
+      "original_filename": "death-contemplation-1.mp3",
+      "size": 52224,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/death-contemplation"
+    },
+    {
+      "pointer": "src/assets/narration/death-contemplation/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/death-contemplation/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/d098076d-9323-4919-a07c-2331f3ac3d9c/death-contemplation-2.mp3",
+      "original_filename": "death-contemplation-2.mp3",
+      "size": 125568,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/death-contemplation"
+    },
+    {
+      "pointer": "src/assets/narration/death-contemplation/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/death-contemplation/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/f00d4ef1-0feb-49b3-a62a-206364a012f3/death-contemplation-3.mp3",
+      "original_filename": "death-contemplation-3.mp3",
+      "size": 96000,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/death-contemplation"
+    },
+    {
+      "pointer": "src/assets/narration/death-contemplation/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/death-contemplation/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/ebeca96b-f542-454f-8170-49a914585462/death-contemplation-4.mp3",
+      "original_filename": "death-contemplation-4.mp3",
+      "size": 86016,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/death-contemplation"
+    },
+    {
+      "pointer": "src/assets/narration/death-contemplation/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/death-contemplation/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/8ef033e2-6c5d-4676-b341-e6b413cba5f0/death-contemplation-5.mp3",
+      "original_filename": "death-contemplation-5.mp3",
+      "size": 85248,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/death-contemplation"
+    },
+    {
+      "pointer": "src/assets/narration/death-contemplation/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/death-contemplation/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/89605cde-567c-4bf6-88af-43f522fd80c7/death-contemplation-6.mp3",
+      "original_filename": "death-contemplation-6.mp3",
+      "size": 115968,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/death-contemplation"
+    },
+    {
+      "pointer": "src/assets/narration/death-contemplation/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/death-contemplation/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/adb430ed-cdb9-436c-b4e0-6811195291b3/death-contemplation-7.mp3",
+      "original_filename": "death-contemplation-7.mp3",
+      "size": 117120,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/death-contemplation"
+    },
+    {
+      "pointer": "src/assets/narration/gratitude-pulse/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/gratitude-pulse/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/107618a2-ab2d-4d74-af58-a90bbcc4a910/gratitude-pulse-0.mp3",
+      "original_filename": "gratitude-pulse-0.mp3",
+      "size": 146304,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/gratitude-pulse"
+    },
+    {
+      "pointer": "src/assets/narration/gratitude-pulse/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/gratitude-pulse/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/25637fb0-00e2-4daa-8f1c-1ba31dc8ff16/gratitude-pulse-1.mp3",
+      "original_filename": "gratitude-pulse-1.mp3",
+      "size": 46464,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/gratitude-pulse"
+    },
+    {
+      "pointer": "src/assets/narration/gratitude-pulse/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/gratitude-pulse/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/223e0338-e5a5-4e4b-bde6-6e1319d5f906/gratitude-pulse-2.mp3",
+      "original_filename": "gratitude-pulse-2.mp3",
+      "size": 99456,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/gratitude-pulse"
+    },
+    {
+      "pointer": "src/assets/narration/gratitude-pulse/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/gratitude-pulse/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/f5d97c8b-f7bb-4143-af59-a1c43763f7af/gratitude-pulse-3.mp3",
+      "original_filename": "gratitude-pulse-3.mp3",
+      "size": 137472,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/gratitude-pulse"
+    },
+    {
+      "pointer": "src/assets/narration/gratitude-pulse/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/gratitude-pulse/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/05179e6c-c14e-4d1b-8bf6-7612151edbe2/gratitude-pulse-4.mp3",
+      "original_filename": "gratitude-pulse-4.mp3",
+      "size": 62976,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/gratitude-pulse"
+    },
+    {
+      "pointer": "src/assets/narration/gratitude-pulse/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/gratitude-pulse/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/6c30545c-675e-40e7-a935-fd39f7b2f641/gratitude-pulse-5.mp3",
+      "original_filename": "gratitude-pulse-5.mp3",
+      "size": 62976,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/gratitude-pulse"
+    },
+    {
+      "pointer": "src/assets/narration/gratitude-pulse/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/gratitude-pulse/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/19cc1f3f-531a-4469-bded-0ec8e6477747/gratitude-pulse-6.mp3",
+      "original_filename": "gratitude-pulse-6.mp3",
+      "size": 77568,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/gratitude-pulse"
+    },
+    {
+      "pointer": "src/assets/narration/gratitude-pulse/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/gratitude-pulse/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/abda2196-3122-47bb-ac0e-af5d90c91023/gratitude-pulse-7.mp3",
+      "original_filename": "gratitude-pulse-7.mp3",
+      "size": 130560,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/gratitude-pulse"
+    },
+    {
+      "pointer": "src/assets/narration/kumbhaka/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/kumbhaka/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/1508c764-1343-4d4a-b492-f5409fffa42a/kumbhaka-0.mp3",
+      "original_filename": "kumbhaka-0.mp3",
+      "size": 128640,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/kumbhaka"
+    },
+    {
+      "pointer": "src/assets/narration/kumbhaka/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/kumbhaka/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/790e2ab8-9f20-45ec-a157-99cf0924d6ba/kumbhaka-1.mp3",
+      "original_filename": "kumbhaka-1.mp3",
+      "size": 77568,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/kumbhaka"
+    },
+    {
+      "pointer": "src/assets/narration/kumbhaka/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/kumbhaka/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/1e038097-bd04-44ac-a841-ce88d6e936e1/kumbhaka-2.mp3",
+      "original_filename": "kumbhaka-2.mp3",
+      "size": 88320,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/kumbhaka"
+    },
+    {
+      "pointer": "src/assets/narration/kumbhaka/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/kumbhaka/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/fee2f8b1-fef3-491d-8d6c-86a9278b6a0e/kumbhaka-3.mp3",
+      "original_filename": "kumbhaka-3.mp3",
+      "size": 144768,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/kumbhaka"
+    },
+    {
+      "pointer": "src/assets/narration/kumbhaka/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/kumbhaka/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/ccab84e6-c941-4a2b-bd07-8b6e0b8b0361/kumbhaka-4.mp3",
+      "original_filename": "kumbhaka-4.mp3",
+      "size": 107136,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/kumbhaka"
+    },
+    {
+      "pointer": "src/assets/narration/kumbhaka/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/kumbhaka/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/e4c0225d-d18a-4436-99f9-53ccc6cbdd63/kumbhaka-5.mp3",
+      "original_filename": "kumbhaka-5.mp3",
+      "size": 112128,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/kumbhaka"
+    },
+    {
+      "pointer": "src/assets/narration/kumbhaka/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/kumbhaka/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/2c9f5530-bce6-407a-83f3-1c5b9780a4a2/kumbhaka-6.mp3",
+      "original_filename": "kumbhaka-6.mp3",
+      "size": 102912,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/kumbhaka"
+    },
+    {
+      "pointer": "src/assets/narration/kumbhaka/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/kumbhaka/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/7a64c6ee-2981-41da-b205-1ac84b6c3d40/kumbhaka-7.mp3",
+      "original_filename": "kumbhaka-7.mp3",
+      "size": 132096,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/kumbhaka"
+    },
+    {
+      "pointer": "src/assets/narration/loving-kindness/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/loving-kindness/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/5ee03cf8-aff3-465a-bf14-32387bbe9001/loving-kindness-0.mp3",
+      "original_filename": "loving-kindness-0.mp3",
+      "size": 125568,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/loving-kindness"
+    },
+    {
+      "pointer": "src/assets/narration/loving-kindness/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/loving-kindness/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/c15faa69-4eb1-44bc-882d-a78099b2306e/loving-kindness-1.mp3",
+      "original_filename": "loving-kindness-1.mp3",
+      "size": 57216,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/loving-kindness"
+    },
+    {
+      "pointer": "src/assets/narration/loving-kindness/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/loving-kindness/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/8cc8ba90-0396-43aa-b22b-f9e075ad7524/loving-kindness-2.mp3",
+      "original_filename": "loving-kindness-2.mp3",
+      "size": 158208,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/loving-kindness"
+    },
+    {
+      "pointer": "src/assets/narration/loving-kindness/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/loving-kindness/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/2e5c416f-74f6-4e33-98b4-47eeead72486/loving-kindness-3.mp3",
+      "original_filename": "loving-kindness-3.mp3",
+      "size": 98688,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/loving-kindness"
+    },
+    {
+      "pointer": "src/assets/narration/loving-kindness/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/loving-kindness/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/542bce10-99d0-4009-b949-a5c3f5c4fb61/loving-kindness-4.mp3",
+      "original_filename": "loving-kindness-4.mp3",
+      "size": 93312,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/loving-kindness"
+    },
+    {
+      "pointer": "src/assets/narration/loving-kindness/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/loving-kindness/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/3a694373-f1b0-4503-8d6e-92114211ac25/loving-kindness-5.mp3",
+      "original_filename": "loving-kindness-5.mp3",
+      "size": 145536,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/loving-kindness"
+    },
+    {
+      "pointer": "src/assets/narration/loving-kindness/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/loving-kindness/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/e6c6c022-c729-4c65-9199-af8c6df97df0/loving-kindness-6.mp3",
+      "original_filename": "loving-kindness-6.mp3",
+      "size": 120192,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/loving-kindness"
+    },
+    {
+      "pointer": "src/assets/narration/loving-kindness/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/loving-kindness/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/c6f651d0-33b4-4bd2-a3cb-d42d67548782/loving-kindness-7.mp3",
+      "original_filename": "loving-kindness-7.mp3",
+      "size": 106368,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/loving-kindness"
+    },
+    {
+      "pointer": "src/assets/narration/self-inquiry/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/self-inquiry/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/5e716c4e-6379-4367-8156-7fbeae0784a0/self-inquiry-0.mp3",
+      "original_filename": "self-inquiry-0.mp3",
+      "size": 127872,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/self-inquiry"
+    },
+    {
+      "pointer": "src/assets/narration/self-inquiry/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/self-inquiry/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/eb4dcb41-6de6-4e66-add0-2f044fabc223/self-inquiry-1.mp3",
+      "original_filename": "self-inquiry-1.mp3",
+      "size": 65664,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/self-inquiry"
+    },
+    {
+      "pointer": "src/assets/narration/self-inquiry/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/self-inquiry/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/dd0aab36-86fb-40d1-b745-c50202c64f4e/self-inquiry-2.mp3",
+      "original_filename": "self-inquiry-2.mp3",
+      "size": 105216,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/self-inquiry"
+    },
+    {
+      "pointer": "src/assets/narration/self-inquiry/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/self-inquiry/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/4873efee-3079-435c-9bf9-d091607c01aa/self-inquiry-3.mp3",
+      "original_filename": "self-inquiry-3.mp3",
+      "size": 96768,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/self-inquiry"
+    },
+    {
+      "pointer": "src/assets/narration/self-inquiry/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/self-inquiry/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/4e5ec399-34cd-4e4b-b465-2cf3b1f1fd3d/self-inquiry-4.mp3",
+      "original_filename": "self-inquiry-4.mp3",
+      "size": 124800,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/self-inquiry"
+    },
+    {
+      "pointer": "src/assets/narration/self-inquiry/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/self-inquiry/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/53563ab9-8076-4ad4-9f8a-175777440df6/self-inquiry-5.mp3",
+      "original_filename": "self-inquiry-5.mp3",
+      "size": 89856,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/self-inquiry"
+    },
+    {
+      "pointer": "src/assets/narration/self-inquiry/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/self-inquiry/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/b700e827-cae4-4c93-9814-9104d8a93476/self-inquiry-6.mp3",
+      "original_filename": "self-inquiry-6.mp3",
+      "size": 95232,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/self-inquiry"
+    },
+    {
+      "pointer": "src/assets/narration/self-inquiry/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/self-inquiry/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/82d864cd-64c6-4b3d-b390-90dd8d017b93/self-inquiry-7.mp3",
+      "original_filename": "self-inquiry-7.mp3",
+      "size": 124800,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/self-inquiry"
+    },
+    {
+      "pointer": "src/assets/narration/so-hum/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/so-hum/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/ed9b4922-7ed3-4e1e-9b62-b696cc35d1c0/so-hum-0.mp3",
+      "original_filename": "so-hum-0.mp3",
+      "size": 124800,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/so-hum"
+    },
+    {
+      "pointer": "src/assets/narration/so-hum/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/so-hum/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/f1e71cc3-9758-415c-9a20-801595cfcb13/so-hum-1.mp3",
+      "original_filename": "so-hum-1.mp3",
+      "size": 67584,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/so-hum"
+    },
+    {
+      "pointer": "src/assets/narration/so-hum/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/so-hum/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/ce5bc54e-31de-42fc-9f5a-bebd3f9ec163/so-hum-2.mp3",
+      "original_filename": "so-hum-2.mp3",
+      "size": 140928,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/so-hum"
+    },
+    {
+      "pointer": "src/assets/narration/so-hum/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/so-hum/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/41bbcef8-6d9c-4ed8-9687-57baa6700fff/so-hum-3.mp3",
+      "original_filename": "so-hum-3.mp3",
+      "size": 100992,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/so-hum"
+    },
+    {
+      "pointer": "src/assets/narration/so-hum/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/so-hum/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/d4390964-fca9-4774-b140-51a3b32bfbb4/so-hum-4.mp3",
+      "original_filename": "so-hum-4.mp3",
+      "size": 102912,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/so-hum"
+    },
+    {
+      "pointer": "src/assets/narration/so-hum/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/so-hum/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/909f5d36-963b-4916-a13a-747140490ea8/so-hum-5.mp3",
+      "original_filename": "so-hum-5.mp3",
+      "size": 83328,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/so-hum"
+    },
+    {
+      "pointer": "src/assets/narration/so-hum/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/so-hum/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/1e072f9d-6cbe-4476-b55c-d3797447a9bb/so-hum-6.mp3",
+      "original_filename": "so-hum-6.mp3",
+      "size": 78336,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/so-hum"
+    },
+    {
+      "pointer": "src/assets/narration/so-hum/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/so-hum/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/4673e3ba-d4c4-4e46-a68b-18cd5bfb7845/so-hum-7.mp3",
+      "original_filename": "so-hum-7.mp3",
+      "size": 136704,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/so-hum"
+    },
+    {
+      "pointer": "src/assets/narration/the-sigh/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/the-sigh/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/73591118-e22d-45c3-bd9e-7ce8d5fe4b07/the-sigh-0.mp3",
+      "original_filename": "the-sigh-0.mp3",
+      "size": 127104,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/the-sigh"
+    },
+    {
+      "pointer": "src/assets/narration/the-sigh/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/the-sigh/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/e38585bb-0691-44a2-a545-3c21bab043cd/the-sigh-1.mp3",
+      "original_filename": "the-sigh-1.mp3",
+      "size": 73344,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/the-sigh"
+    },
+    {
+      "pointer": "src/assets/narration/the-sigh/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/the-sigh/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/ef58d5e4-b3f4-4969-8ffc-aca9d4793dc9/the-sigh-2.mp3",
+      "original_filename": "the-sigh-2.mp3",
+      "size": 83328,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/the-sigh"
+    },
+    {
+      "pointer": "src/assets/narration/the-sigh/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/the-sigh/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/016f8ef8-e37e-477f-ba42-b4dde5807d31/the-sigh-3.mp3",
+      "original_filename": "the-sigh-3.mp3",
+      "size": 96768,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/the-sigh"
+    },
+    {
+      "pointer": "src/assets/narration/the-sigh/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/the-sigh/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/a27c03ba-5bcb-46c2-8f6a-58b8f1750f90/the-sigh-4.mp3",
+      "original_filename": "the-sigh-4.mp3",
+      "size": 112896,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/the-sigh"
+    },
+    {
+      "pointer": "src/assets/narration/the-sigh/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/the-sigh/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/928b9451-6a87-4403-b766-dc592a83ce4c/the-sigh-5.mp3",
+      "original_filename": "the-sigh-5.mp3",
+      "size": 61440,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/the-sigh"
+    },
+    {
+      "pointer": "src/assets/narration/the-sigh/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/the-sigh/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/aa8177ba-2628-4974-808d-89eb0537a57d/the-sigh-6.mp3",
+      "original_filename": "the-sigh-6.mp3",
+      "size": 105216,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/the-sigh"
+    },
+    {
+      "pointer": "src/assets/narration/the-sigh/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/the-sigh/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/caa510b6-af9d-41c4-ae9d-6a92c8f2499b/the-sigh-7.mp3",
+      "original_filename": "the-sigh-7.mp3",
+      "size": 122880,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/the-sigh"
+    },
+    {
+      "pointer": "src/assets/narration/three-brain-checkin/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/three-brain-checkin/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/4d0dde18-712d-46ce-b1fe-6efcabda9144/three-brain-checkin-0.mp3",
+      "original_filename": "three-brain-checkin-0.mp3",
+      "size": 141696,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/three-brain-checkin"
+    },
+    {
+      "pointer": "src/assets/narration/three-brain-checkin/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/three-brain-checkin/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/eaae2506-9df0-4d2a-9404-bc4a715e9017/three-brain-checkin-1.mp3",
+      "original_filename": "three-brain-checkin-1.mp3",
+      "size": 103680,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/three-brain-checkin"
+    },
+    {
+      "pointer": "src/assets/narration/three-brain-checkin/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/three-brain-checkin/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/4b27c779-e4cd-4c40-8dcd-f1e15f3c8887/three-brain-checkin-2.mp3",
+      "original_filename": "three-brain-checkin-2.mp3",
+      "size": 132096,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/three-brain-checkin"
+    },
+    {
+      "pointer": "src/assets/narration/three-brain-checkin/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/three-brain-checkin/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/a6004c11-1ae3-418d-8268-d37ca4838ec8/three-brain-checkin-3.mp3",
+      "original_filename": "three-brain-checkin-3.mp3",
+      "size": 112128,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/three-brain-checkin"
+    },
+    {
+      "pointer": "src/assets/narration/three-brain-checkin/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/three-brain-checkin/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/9ba48155-7915-4de7-8203-c12d629b77ca/three-brain-checkin-4.mp3",
+      "original_filename": "three-brain-checkin-4.mp3",
+      "size": 95232,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/three-brain-checkin"
+    },
+    {
+      "pointer": "src/assets/narration/three-brain-checkin/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/three-brain-checkin/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/cde7571a-6edd-4cb9-a57e-d4f3db493c2b/three-brain-checkin-5.mp3",
+      "original_filename": "three-brain-checkin-5.mp3",
+      "size": 68352,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/three-brain-checkin"
+    },
+    {
+      "pointer": "src/assets/narration/three-brain-checkin/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/three-brain-checkin/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/db52cfde-32a0-4777-a61e-13ca779ad709/three-brain-checkin-6.mp3",
+      "original_filename": "three-brain-checkin-6.mp3",
+      "size": 134784,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/three-brain-checkin"
+    },
+    {
+      "pointer": "src/assets/narration/trataka/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/trataka/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/38cd2bbf-2600-4341-82fb-3e1251bbea71/trataka-0.mp3",
+      "original_filename": "trataka-0.mp3",
+      "size": 115200,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/trataka"
+    },
+    {
+      "pointer": "src/assets/narration/trataka/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/trataka/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/e17ed11b-83d4-4eab-938e-da17cb296927/trataka-1.mp3",
+      "original_filename": "trataka-1.mp3",
+      "size": 114432,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/trataka"
+    },
+    {
+      "pointer": "src/assets/narration/trataka/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/trataka/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/0e9b3bed-7aa5-451f-a9f7-2a29c1ed83cd/trataka-2.mp3",
+      "original_filename": "trataka-2.mp3",
+      "size": 75648,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/trataka"
+    },
+    {
+      "pointer": "src/assets/narration/trataka/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/trataka/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/e53ca098-1e89-43b1-8a02-baa34a4b6e58/trataka-3.mp3",
+      "original_filename": "trataka-3.mp3",
+      "size": 81792,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/trataka"
+    },
+    {
+      "pointer": "src/assets/narration/trataka/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/trataka/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/80d4b437-9c3a-49e4-b131-df1deda0a86e/trataka-4.mp3",
+      "original_filename": "trataka-4.mp3",
+      "size": 115968,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/trataka"
+    },
+    {
+      "pointer": "src/assets/narration/trataka/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/trataka/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/aa748a76-3fba-4e3e-90c9-c9c922669faf/trataka-5.mp3",
+      "original_filename": "trataka-5.mp3",
+      "size": 92544,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/trataka"
+    },
+    {
+      "pointer": "src/assets/narration/trataka/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/trataka/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/34bba9c7-3f02-4dcd-8fd2-336f1bda06c5/trataka-6.mp3",
+      "original_filename": "trataka-6.mp3",
+      "size": 151680,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/trataka"
+    },
+    {
+      "pointer": "src/assets/narration/trataka/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/trataka/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/d8289241-1c13-476e-8395-fa031bc8d001/trataka-7.mp3",
+      "original_filename": "trataka-7.mp3",
+      "size": 125568,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/trataka"
+    },
+    {
+      "pointer": "src/assets/narration/walking-meditation/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/walking-meditation/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/7d09d2aa-1983-4378-a04e-ff886bf5e2dd/walking-meditation-0.mp3",
+      "original_filename": "walking-meditation-0.mp3",
+      "size": 135552,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/walking-meditation"
+    },
+    {
+      "pointer": "src/assets/narration/walking-meditation/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/walking-meditation/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/f0be4985-cebd-4d5c-bea4-9c5b479cc408/walking-meditation-1.mp3",
+      "original_filename": "walking-meditation-1.mp3",
+      "size": 89088,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/walking-meditation"
+    },
+    {
+      "pointer": "src/assets/narration/walking-meditation/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/walking-meditation/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/541bf4e6-27cd-4c12-b680-21ba1b5843e7/walking-meditation-2.mp3",
+      "original_filename": "walking-meditation-2.mp3",
+      "size": 93312,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/walking-meditation"
+    },
+    {
+      "pointer": "src/assets/narration/walking-meditation/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/walking-meditation/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/0deefee5-65ca-475c-8a3b-baef33631f4d/walking-meditation-3.mp3",
+      "original_filename": "walking-meditation-3.mp3",
+      "size": 104448,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/walking-meditation"
+    },
+    {
+      "pointer": "src/assets/narration/walking-meditation/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/walking-meditation/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/2a5784a3-5bac-4bd1-be97-1730492de867/walking-meditation-4.mp3",
+      "original_filename": "walking-meditation-4.mp3",
+      "size": 88320,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/walking-meditation"
+    },
+    {
+      "pointer": "src/assets/narration/walking-meditation/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/walking-meditation/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/b4fcde68-21d5-4e6e-bbf6-65c6857b9dad/walking-meditation-5.mp3",
+      "original_filename": "walking-meditation-5.mp3",
+      "size": 106368,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/walking-meditation"
+    },
+    {
+      "pointer": "src/assets/narration/walking-meditation/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/walking-meditation/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/5305d95f-31ba-4765-9fe3-a7bf62f8c4b9/walking-meditation-6.mp3",
+      "original_filename": "walking-meditation-6.mp3",
+      "size": 123648,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/walking-meditation"
+    },
+    {
+      "pointer": "src/assets/narration/walking-meditation/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/walking-meditation/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/94b9f56f-ca1b-4d96-8957-2dcf795c204c/walking-meditation-7.mp3",
+      "original_filename": "walking-meditation-7.mp3",
+      "size": 115968,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/walking-meditation"
+    },
+    {
+      "pointer": "src/assets/narration/witness/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/witness/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/9f4119b5-a7c5-44fe-b124-a3bbd1945fb4/witness-0.mp3",
+      "original_filename": "witness-0.mp3",
+      "size": 115200,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/witness"
+    },
+    {
+      "pointer": "src/assets/narration/witness/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/witness/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/62731764-0c73-4971-8ae6-9a819ec77e08/witness-1.mp3",
+      "original_filename": "witness-1.mp3",
+      "size": 104448,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/witness"
+    },
+    {
+      "pointer": "src/assets/narration/witness/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/witness/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/ae820446-1e7f-429a-bfc5-e88935fb75d1/witness-2.mp3",
+      "original_filename": "witness-2.mp3",
+      "size": 79104,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/witness"
+    },
+    {
+      "pointer": "src/assets/narration/witness/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/witness/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/d58c41e1-52bd-4647-8e75-5d7370970de3/witness-3.mp3",
+      "original_filename": "witness-3.mp3",
+      "size": 96768,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/witness"
+    },
+    {
+      "pointer": "src/assets/narration/witness/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/witness/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/bbe1fef7-70d9-46d0-acd3-71dfdb9079cf/witness-4.mp3",
+      "original_filename": "witness-4.mp3",
+      "size": 107904,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/witness"
+    },
+    {
+      "pointer": "src/assets/narration/witness/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/witness/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/41e4c4b5-cf60-4dc0-8f40-95fb6378c8b3/witness-5.mp3",
+      "original_filename": "witness-5.mp3",
+      "size": 84096,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/witness"
+    },
+    {
+      "pointer": "src/assets/narration/witness/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/witness/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/ed8e3e4c-ebc4-4419-9504-323a8f00a03e/witness-6.mp3",
+      "original_filename": "witness-6.mp3",
+      "size": 134784,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/witness"
+    },
+    {
+      "pointer": "src/assets/narration/witness/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/witness/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/19d91005-4a78-43ae-a0c3-3109cf3c1d51/witness-7.mp3",
+      "original_filename": "witness-7.mp3",
+      "size": 121344,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/witness"
+    },
+    {
+      "pointer": "src/assets/narration/yoga-nidra/0.mp3.asset.json",
+      "expected_file": "src/assets/narration/yoga-nidra/0.mp3",
+      "cdn_url": "/__l5e/assets-v1/92d50e47-73f1-43d8-99eb-8692af2c6b3f/yoga-nidra-0.mp3",
+      "original_filename": "yoga-nidra-0.mp3",
+      "size": 114432,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/yoga-nidra"
+    },
+    {
+      "pointer": "src/assets/narration/yoga-nidra/1.mp3.asset.json",
+      "expected_file": "src/assets/narration/yoga-nidra/1.mp3",
+      "cdn_url": "/__l5e/assets-v1/27f5cb98-c422-46f7-a498-fdc8fdf3057b/yoga-nidra-1.mp3",
+      "original_filename": "yoga-nidra-1.mp3",
+      "size": 84096,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/yoga-nidra"
+    },
+    {
+      "pointer": "src/assets/narration/yoga-nidra/2.mp3.asset.json",
+      "expected_file": "src/assets/narration/yoga-nidra/2.mp3",
+      "cdn_url": "/__l5e/assets-v1/e55768e6-a52c-4c37-b5fb-a1b0a840adb0/yoga-nidra-2.mp3",
+      "original_filename": "yoga-nidra-2.mp3",
+      "size": 115200,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/yoga-nidra"
+    },
+    {
+      "pointer": "src/assets/narration/yoga-nidra/3.mp3.asset.json",
+      "expected_file": "src/assets/narration/yoga-nidra/3.mp3",
+      "cdn_url": "/__l5e/assets-v1/66c4ee8e-2956-4963-9b7a-39432fe809e6/yoga-nidra-3.mp3",
+      "original_filename": "yoga-nidra-3.mp3",
+      "size": 205440,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/yoga-nidra"
+    },
+    {
+      "pointer": "src/assets/narration/yoga-nidra/4.mp3.asset.json",
+      "expected_file": "src/assets/narration/yoga-nidra/4.mp3",
+      "cdn_url": "/__l5e/assets-v1/38d05952-18a8-4268-b964-7d244877132f/yoga-nidra-4.mp3",
+      "original_filename": "yoga-nidra-4.mp3",
+      "size": 56448,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/yoga-nidra"
+    },
+    {
+      "pointer": "src/assets/narration/yoga-nidra/5.mp3.asset.json",
+      "expected_file": "src/assets/narration/yoga-nidra/5.mp3",
+      "cdn_url": "/__l5e/assets-v1/753d14a1-7a70-49d5-b77a-3246d0f7a2e5/yoga-nidra-5.mp3",
+      "original_filename": "yoga-nidra-5.mp3",
+      "size": 119424,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/yoga-nidra"
+    },
+    {
+      "pointer": "src/assets/narration/yoga-nidra/6.mp3.asset.json",
+      "expected_file": "src/assets/narration/yoga-nidra/6.mp3",
+      "cdn_url": "/__l5e/assets-v1/0741a6f2-ac02-4972-866c-9b7718e0e47c/yoga-nidra-6.mp3",
+      "original_filename": "yoga-nidra-6.mp3",
+      "size": 83328,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/yoga-nidra"
+    },
+    {
+      "pointer": "src/assets/narration/yoga-nidra/7.mp3.asset.json",
+      "expected_file": "src/assets/narration/yoga-nidra/7.mp3",
+      "cdn_url": "/__l5e/assets-v1/7a1571e2-da5a-4f79-91a0-45e88a7c4644/yoga-nidra-7.mp3",
+      "original_filename": "yoga-nidra-7.mp3",
+      "size": 114432,
+      "content_type": "audio/mpeg",
+      "group": "src/assets/narration/yoga-nidra"
+    },
+    {
+      "pointer": "src/assets/paths/videos/bhakti.mp4.asset.json",
+      "expected_file": "src/assets/paths/videos/bhakti.mp4",
+      "cdn_url": "/__l5e/assets-v1/6d9b193a-34b1-4a33-9ba3-5826d710647c/bhakti.mp4",
+      "original_filename": "bhakti.mp4",
+      "size": 11565213,
+      "content_type": null,
+      "group": "src/assets/paths/videos"
+    },
+    {
+      "pointer": "src/assets/paths/videos/jnana.mp4.asset.json",
+      "expected_file": "src/assets/paths/videos/jnana.mp4",
+      "cdn_url": "/__l5e/assets-v1/0b4faac3-ea4d-4824-99bc-7fdcd7e1cb12/jnana.mp4",
+      "original_filename": "jnana.mp4",
+      "size": 10162877,
+      "content_type": null,
+      "group": "src/assets/paths/videos"
+    },
+    {
+      "pointer": "src/assets/paths/videos/karma.mp4.asset.json",
+      "expected_file": "src/assets/paths/videos/karma.mp4",
+      "cdn_url": "/__l5e/assets-v1/5cc0d11c-2943-4a5f-b257-76d3b351cf14/karma.mp4",
+      "original_filename": "karma.mp4",
+      "size": 7857118,
+      "content_type": null,
+      "group": "src/assets/paths/videos"
+    },
+    {
+      "pointer": "src/assets/paths/videos/raja.mp4.asset.json",
+      "expected_file": "src/assets/paths/videos/raja.mp4",
+      "cdn_url": "/__l5e/assets-v1/7d3f0350-00ee-4f8b-97f7-acb3c3e4267b/raja.mp4",
+      "original_filename": "raja.mp4",
+      "size": 9450696,
+      "content_type": null,
+      "group": "src/assets/paths/videos"
+    },
+    {
+      "pointer": "src/assets/paths/videos/shakti.mp4.asset.json",
+      "expected_file": "src/assets/paths/videos/shakti.mp4",
+      "cdn_url": "/__l5e/assets-v1/6f136444-65ec-4dcc-a15d-a173b75e6587/shakti.mp4",
+      "original_filename": "shakti.mp4",
+      "size": 11856724,
+      "content_type": null,
+      "group": "src/assets/paths/videos"
+    },
+    {
+      "pointer": "src/assets/paths/videos/tantra.mp4.asset.json",
+      "expected_file": "src/assets/paths/videos/tantra.mp4",
+      "cdn_url": "/__l5e/assets-v1/0afe48d6-26ec-4108-adea-d433ba03f202/tantra.mp4",
+      "original_filename": "tantra.mp4",
+      "size": 9239952,
+      "content_type": null,
+      "group": "src/assets/paths/videos"
+    },
+    {
+      "pointer": "src/assets/practices/body-scan-light.mp4.asset.json",
+      "expected_file": "src/assets/practices/body-scan-light.mp4",
+      "cdn_url": "/__l5e/assets-v1/2dafe0d9-d073-4251-b361-2cf97f7e7d07/body-scan-light.mp4",
+      "original_filename": "body-scan-light.mp4",
+      "size": 19011501,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/box-breath-square.mp4.asset.json",
+      "expected_file": "src/assets/practices/box-breath-square.mp4",
+      "cdn_url": "/__l5e/assets-v1/1e89eae8-f2d2-4287-b7ff-e70fc413b1ef/box-breath-square.mp4",
+      "original_filename": "box-breath-square.mp4",
+      "size": 17649964,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/coherent-breath-ocean.mp4.asset.json",
+      "expected_file": "src/assets/practices/coherent-breath-ocean.mp4",
+      "cdn_url": "/__l5e/assets-v1/249abed9-c803-4a00-b5e5-66414b44d495/coherent-breath-ocean.mp4",
+      "original_filename": "coherent-breath-ocean.mp4",
+      "size": 25812014,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/death-contemplation-petal.mp4.asset.json",
+      "expected_file": "src/assets/practices/death-contemplation-petal.mp4",
+      "cdn_url": "/__l5e/assets-v1/d54c56a0-35ec-430d-a133-d391350148b5/death-contemplation-petal.mp4",
+      "original_filename": "death-contemplation-petal.mp4",
+      "size": 13615410,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/gratitude-pulse-heart.mp4.asset.json",
+      "expected_file": "src/assets/practices/gratitude-pulse-heart.mp4",
+      "cdn_url": "/__l5e/assets-v1/d43d5115-f1d9-4cbb-962a-264cb2b33be9/gratitude-pulse-heart.mp4",
+      "original_filename": "gratitude-pulse-heart.mp4",
+      "size": 17936004,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/kumbhaka-void.mp4.asset.json",
+      "expected_file": "src/assets/practices/kumbhaka-void.mp4",
+      "cdn_url": "/__l5e/assets-v1/f487fc55-8883-439f-a6a3-fe99d1928ab3/kumbhaka-void.mp4",
+      "original_filename": "kumbhaka-void.mp4",
+      "size": 20217108,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/loving-kindness-radiance.mp4.asset.json",
+      "expected_file": "src/assets/practices/loving-kindness-radiance.mp4",
+      "cdn_url": "/__l5e/assets-v1/a80648db-a50a-4d89-b041-c2abb218ce18/loving-kindness-radiance.mp4",
+      "original_filename": "loving-kindness-radiance.mp4",
+      "size": 21167760,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/self-inquiry-source.mp4.asset.json",
+      "expected_file": "src/assets/practices/self-inquiry-source.mp4",
+      "cdn_url": "/__l5e/assets-v1/91699889-6585-4aef-9543-e1300824eee7/self-inquiry-source.mp4",
+      "original_filename": "self-inquiry-source.mp4",
+      "size": 17377557,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/so-hum-lotus.mp4.asset.json",
+      "expected_file": "src/assets/practices/so-hum-lotus.mp4",
+      "cdn_url": "/__l5e/assets-v1/48cec58a-78f5-415b-8083-548b8a61bec4/so-hum-lotus.mp4",
+      "original_filename": "so-hum-lotus.mp4",
+      "size": 18071779,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/the-sigh-sky.mp4.asset.json",
+      "expected_file": "src/assets/practices/the-sigh-sky.mp4",
+      "cdn_url": "/__l5e/assets-v1/a03881a9-764d-43c5-a834-3c306dbcb78a/the-sigh-sky.mp4",
+      "original_filename": "the-sigh-sky.mp4",
+      "size": 16340619,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/three-brain-spheres.mp4.asset.json",
+      "expected_file": "src/assets/practices/three-brain-spheres.mp4",
+      "cdn_url": "/__l5e/assets-v1/6ae5fd99-778f-4460-b1a7-3042643615a0/three-brain-spheres.mp4",
+      "original_filename": "three-brain-spheres.mp4",
+      "size": 18933242,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/trataka-flame.mp4.asset.json",
+      "expected_file": "src/assets/practices/trataka-flame.mp4",
+      "cdn_url": "/__l5e/assets-v1/eb32ac6e-b69c-46d0-887e-0b5afaadea85/trataka-flame.mp4",
+      "original_filename": "trataka-flame.mp4",
+      "size": 12337841,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/walking-meditation-forest.mp4.asset.json",
+      "expected_file": "src/assets/practices/walking-meditation-forest.mp4",
+      "cdn_url": "/__l5e/assets-v1/a6414ac3-07d6-4778-98a0-86010d94dc47/walking-meditation-forest.mp4",
+      "original_filename": "walking-meditation-forest.mp4",
+      "size": 26057517,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/witness-lake.mp4.asset.json",
+      "expected_file": "src/assets/practices/witness-lake.mp4",
+      "cdn_url": "/__l5e/assets-v1/4dd9aa87-e8b0-4587-8a5d-39b7db098e48/witness-lake.mp4",
+      "original_filename": "witness-lake.mp4",
+      "size": 21727039,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/practices/yoga-nidra-cosmos.mp4.asset.json",
+      "expected_file": "src/assets/practices/yoga-nidra-cosmos.mp4",
+      "cdn_url": "/__l5e/assets-v1/27217823-0a3b-47de-b21d-8b5b562c6b55/yoga-nidra-cosmos.mp4",
+      "original_filename": "yoga-nidra-cosmos.mp4",
+      "size": 20402941,
+      "content_type": null,
+      "group": "src/assets/practices"
+    },
+    {
+      "pointer": "src/assets/programs/videos/athlete-mind-in-motion.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/athlete-mind-in-motion.mp4",
+      "cdn_url": "/__l5e/assets-v1/0ac98b7e-0445-4737-a204-bf7705ddd3e0/athlete-mind-in-motion.mp4",
+      "original_filename": "athlete-mind-in-motion.mp4",
+      "size": 7939495,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/burnout-reset-with-patanjali.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/burnout-reset-with-patanjali.mp4",
+      "cdn_url": "/__l5e/assets-v1/ef1814ec-730e-49b5-ba1f-1adc98eb8418/burnout-reset-with-patanjali.mp4",
+      "original_filename": "burnout-reset-with-patanjali.mp4",
+      "size": 10209175,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/corporate-leadership-under-fire.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/corporate-leadership-under-fire.mp4",
+      "cdn_url": "/__l5e/assets-v1/7d2d824a-78bd-49f5-8271-192267975a04/corporate-leadership-under-fire.mp4",
+      "original_filename": "corporate-leadership-under-fire.mp4",
+      "size": 13055808,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/corporate-team-repair.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/corporate-team-repair.mp4",
+      "cdn_url": "/__l5e/assets-v1/f670bdd3-5a68-4238-9d38-f0db0ad0657c/corporate-team-repair.mp4",
+      "original_filename": "corporate-team-repair.mp4",
+      "size": 7848484,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/creator-flow-and-block.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/creator-flow-and-block.mp4",
+      "cdn_url": "/__l5e/assets-v1/832a8e2e-e250-49e3-b171-05523fcb69b5/creator-flow-and-block.mp4",
+      "original_filename": "creator-flow-and-block.mp4",
+      "size": 6557445,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/decision-making-with-krishna.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/decision-making-with-krishna.mp4",
+      "cdn_url": "/__l5e/assets-v1/670bf8f9-d8c1-40db-84fa-f0e963ba3b0b/decision-making-with-krishna.mp4",
+      "original_filename": "decision-making-with-krishna.mp4",
+      "size": 9960617,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/duty-without-damage.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/duty-without-damage.mp4",
+      "cdn_url": "/__l5e/assets-v1/5882f0ba-9420-4aff-a001-52908b4209bb/duty-without-damage.mp4",
+      "original_filename": "duty-without-damage.mp4",
+      "size": 10668100,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/founder-decision-loneliness.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/founder-decision-loneliness.mp4",
+      "cdn_url": "/__l5e/assets-v1/fa2dfa1b-1e47-4b4a-837f-304ec91de3a8/founder-decision-loneliness.mp4",
+      "original_filename": "founder-decision-loneliness.mp4",
+      "size": 10803346,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/government-bureaucrat-integrity.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/government-bureaucrat-integrity.mp4",
+      "cdn_url": "/__l5e/assets-v1/9e59feab-67c0-451e-99ea-6fa188c630ee/government-bureaucrat-integrity.mp4",
+      "original_filename": "government-bureaucrat-integrity.mp4",
+      "size": 9823035,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/grief-and-loss.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/grief-and-loss.mp4",
+      "cdn_url": "/__l5e/assets-v1/24955088-1bd4-4b00-b84f-ee85c87de1e3/grief-and-loss.mp4",
+      "original_filename": "grief-and-loss.mp4",
+      "size": 7502637,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/healers-therapist-hygiene.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/healers-therapist-hygiene.mp4",
+      "cdn_url": "/__l5e/assets-v1/a3d67bd6-1703-49d1-8983-ea302f197e31/healers-therapist-hygiene.mp4",
+      "original_filename": "healers-therapist-hygiene.mp4",
+      "size": 10191530,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/healthcare-compassion-fatigue.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/healthcare-compassion-fatigue.mp4",
+      "cdn_url": "/__l5e/assets-v1/f9306ba4-6ccd-4231-92be-a98cfd891983/healthcare-compassion-fatigue.mp4",
+      "original_filename": "healthcare-compassion-fatigue.mp4",
+      "size": 7996823,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/heart-open-with-meera.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/heart-open-with-meera.mp4",
+      "cdn_url": "/__l5e/assets-v1/dacf5025-8974-4860-9ee2-c902c4089b9c/heart-open-with-meera.mp4",
+      "original_filename": "heart-open-with-meera.mp4",
+      "size": 9093325,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/inner-witness-with-ramana.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/inner-witness-with-ramana.mp4",
+      "cdn_url": "/__l5e/assets-v1/23e3cb1a-5168-4503-80af-f4804ca64b4f/inner-witness-with-ramana.mp4",
+      "original_filename": "inner-witness-with-ramana.mp4",
+      "size": 7867046,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/letting-go-with-lao-tzu.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/letting-go-with-lao-tzu.mp4",
+      "cdn_url": "/__l5e/assets-v1/206c16fb-99ff-4c93-90e4-79e3b010fe52/letting-go-with-lao-tzu.mp4",
+      "original_filename": "letting-go-with-lao-tzu.mp4",
+      "size": 16722969,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/loops-trauma-and-the-nervous-system.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/loops-trauma-and-the-nervous-system.mp4",
+      "cdn_url": "/__l5e/assets-v1/222f83ba-3884-4595-9832-8d7cac474ac5/loops-trauma-and-the-nervous-system.mp4",
+      "original_filename": "loops-trauma-and-the-nervous-system.mp4",
+      "size": 12344466,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/parent-patience-presence.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/parent-patience-presence.mp4",
+      "cdn_url": "/__l5e/assets-v1/6ad6237a-3bde-4cf1-ba75-7ccca1589191/parent-patience-presence.mp4",
+      "original_filename": "parent-patience-presence.mp4",
+      "size": 8152040,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/ritual-daily-devotional.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/ritual-daily-devotional.mp4",
+      "cdn_url": "/__l5e/assets-v1/35735fca-fdc7-4743-be62-4718631600a6/ritual-daily-devotional.mp4",
+      "original_filename": "ritual-daily-devotional.mp4",
+      "size": 6792510,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/shakti-and-the-ethics-of-power.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/shakti-and-the-ethics-of-power.mp4",
+      "cdn_url": "/__l5e/assets-v1/85368957-c010-4818-89ee-5110248bd3f2/shakti-and-the-ethics-of-power.mp4",
+      "original_filename": "shakti-and-the-ethics-of-power.mp4",
+      "size": 7782484,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/stillness-with-dogen.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/stillness-with-dogen.mp4",
+      "cdn_url": "/__l5e/assets-v1/83fe0d61-9621-4adc-9722-653b22dd80d3/stillness-with-dogen.mp4",
+      "original_filename": "stillness-with-dogen.mp4",
+      "size": 6096810,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/stop-the-reactor.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/stop-the-reactor.mp4",
+      "cdn_url": "/__l5e/assets-v1/1d5e51ef-69f6-4d55-9506-6347ecb1403c/stop-the-reactor.mp4",
+      "original_filename": "stop-the-reactor.mp4",
+      "size": 8896531,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/student-focus-under-pressure.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/student-focus-under-pressure.mp4",
+      "cdn_url": "/__l5e/assets-v1/501ac4a3-6a2e-471c-a543-0487f2998037/student-focus-under-pressure.mp4",
+      "original_filename": "student-focus-under-pressure.mp4",
+      "size": 6482692,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/teacher-classroom-presence.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/teacher-classroom-presence.mp4",
+      "cdn_url": "/__l5e/assets-v1/d57ac111-c867-4832-8b75-2716c55e4041/teacher-classroom-presence.mp4",
+      "original_filename": "teacher-classroom-presence.mp4",
+      "size": 9074713,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/the-onion-who-am-i.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/the-onion-who-am-i.mp4",
+      "cdn_url": "/__l5e/assets-v1/6e5b9860-bb85-45b2-a6f5-d35a727e9f3c/the-onion-who-am-i.mp4",
+      "original_filename": "the-onion-who-am-i.mp4",
+      "size": 7199129,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/three-brains-protocol.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/three-brains-protocol.mp4",
+      "cdn_url": "/__l5e/assets-v1/118a60c2-ea24-48b1-95b7-6287d8fe81da/three-brains-protocol.mp4",
+      "original_filename": "three-brains-protocol.mp4",
+      "size": 10147179,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/watch-your-thoughts.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/watch-your-thoughts.mp4",
+      "cdn_url": "/__l5e/assets-v1/4b7598e1-2df1-4f52-bab4-39de3045059c/watch-your-thoughts.mp4",
+      "original_filename": "watch-your-thoughts.mp4",
+      "size": 9028263,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/programs/videos/willpower-reforged.mp4.asset.json",
+      "expected_file": "src/assets/programs/videos/willpower-reforged.mp4",
+      "cdn_url": "/__l5e/assets-v1/85d5d4fd-2a07-4023-b57c-2e2b83045c5d/willpower-reforged.mp4",
+      "original_filename": "willpower-reforged.mp4",
+      "size": 9276871,
+      "content_type": null,
+      "group": "src/assets/programs/videos"
+    },
+    {
+      "pointer": "src/assets/reel-001/clip-1-cosmic-open.mp4.asset.json",
+      "expected_file": "src/assets/reel-001/clip-1-cosmic-open.mp4",
+      "cdn_url": "/__l5e/assets-v1/36575842-76c9-4456-acc0-aec09551f400/clip-1-cosmic-open.mp4",
+      "original_filename": "clip-1-cosmic-open.mp4",
+      "size": 15297875,
+      "content_type": null,
+      "group": "src/assets/reel-001"
+    },
+    {
+      "pointer": "src/assets/reel-001/clip-2-cultural-collapse.mp4.asset.json",
+      "expected_file": "src/assets/reel-001/clip-2-cultural-collapse.mp4",
+      "cdn_url": "/__l5e/assets-v1/8ffd00bb-6b96-40f1-8174-985bcc23b5db/clip-2-cultural-collapse.mp4",
+      "original_filename": "clip-2-cultural-collapse.mp4",
+      "size": 13532849,
+      "content_type": null,
+      "group": "src/assets/reel-001"
+    },
+    {
+      "pointer": "src/assets/reel-001/clip-3-pivot.mp4.asset.json",
+      "expected_file": "src/assets/reel-001/clip-3-pivot.mp4",
+      "cdn_url": "/__l5e/assets-v1/ca7f2d01-c4d7-44e7-a7db-c78c8c5844a1/clip-3-pivot.mp4",
+      "original_filename": "clip-3-pivot.mp4",
+      "size": 13398917,
+      "content_type": null,
+      "group": "src/assets/reel-001"
+    },
+    {
+      "pointer": "src/assets/reel-001/clip-4-product-reveal.mp4.asset.json",
+      "expected_file": "src/assets/reel-001/clip-4-product-reveal.mp4",
+      "cdn_url": "/__l5e/assets-v1/3d9df7ce-460f-476a-a8ea-40761058abb8/clip-4-product-reveal.mp4",
+      "original_filename": "clip-4-product-reveal.mp4",
+      "size": 19983774,
+      "content_type": null,
+      "group": "src/assets/reel-001"
+    },
+    {
+      "pointer": "src/assets/reel-001/clip-5-transformation.mp4.asset.json",
+      "expected_file": "src/assets/reel-001/clip-5-transformation.mp4",
+      "cdn_url": "/__l5e/assets-v1/61d57325-07b3-4726-b290-4b825275097e/clip-5-transformation.mp4",
+      "original_filename": "clip-5-transformation.mp4",
+      "size": 15563193,
+      "content_type": null,
+      "group": "src/assets/reel-001"
+    },
+    {
+      "pointer": "src/assets/reel-001/clip-6-brand-signature.mp4.asset.json",
+      "expected_file": "src/assets/reel-001/clip-6-brand-signature.mp4",
+      "cdn_url": "/__l5e/assets-v1/97db6c82-a1c1-495f-ab59-800f502ce7bb/clip-6-brand-signature.mp4",
+      "original_filename": "clip-6-brand-signature.mp4",
+      "size": 21851854,
+      "content_type": null,
+      "group": "src/assets/reel-001"
+    },
+    {
+      "pointer": "src/assets/sensorial/buddha/ambient-bodhi.mp4.asset.json",
+      "expected_file": "src/assets/sensorial/buddha/ambient-bodhi.mp4",
+      "cdn_url": "/__l5e/assets-v1/e50c38ed-568c-41c9-8078-3214258a446f/ambient-bodhi.mp4",
+      "original_filename": "ambient-bodhi.mp4",
+      "size": 20226095,
+      "content_type": null,
+      "group": "src/assets/sensorial/buddha"
+    },
+    {
+      "pointer": "src/assets/sensorial/krishnamurti/ambient-sky.mp4.asset.json",
+      "expected_file": "src/assets/sensorial/krishnamurti/ambient-sky.mp4",
+      "cdn_url": "/__l5e/assets-v1/e55ede2a-9714-40a8-99e8-6f5d33978787/ambient-sky.mp4",
+      "original_filename": "ambient-sky.mp4",
+      "size": 12136019,
+      "content_type": null,
+      "group": "src/assets/sensorial/krishnamurti"
+    },
+    {
+      "pointer": "src/assets/sensorial/osho/ambient-embers.mp4.asset.json",
+      "expected_file": "src/assets/sensorial/osho/ambient-embers.mp4",
+      "cdn_url": "/__l5e/assets-v1/fca58a86-e466-44c8-83b6-5aad901a1beb/ambient-embers.mp4",
+      "original_filename": "ambient-embers.mp4",
+      "size": 23344893,
+      "content_type": null,
+      "group": "src/assets/sensorial/osho"
+    },
+    {
+      "pointer": "src/assets/sensorial/ramana/ambient-flame.mp4.asset.json",
+      "expected_file": "src/assets/sensorial/ramana/ambient-flame.mp4",
+      "cdn_url": "/__l5e/assets-v1/f57f30aa-d097-426b-a76c-fb9d0152dd2b/ambient-flame.mp4",
+      "original_filename": "ambient-flame.mp4",
+      "size": 10448893,
+      "content_type": null,
+      "group": "src/assets/sensorial/ramana"
+    },
+    {
+      "pointer": "src/assets/sensorial/sadhguru/ambient-cosmic.mp4.asset.json",
+      "expected_file": "src/assets/sensorial/sadhguru/ambient-cosmic.mp4",
+      "cdn_url": "/__l5e/assets-v1/319a5798-71f8-4ff8-afb8-62badd1e56b6/ambient-cosmic.mp4",
+      "original_filename": "ambient-cosmic.mp4",
+      "size": 18969896,
+      "content_type": null,
+      "group": "src/assets/sensorial/sadhguru"
+    },
+    {
+      "pointer": "src/assets/sensorial/yogananda/ambient-spiritual-eye.mp4.asset.json",
+      "expected_file": "src/assets/sensorial/yogananda/ambient-spiritual-eye.mp4",
+      "cdn_url": "/__l5e/assets-v1/7ee05de4-ac41-476c-99d2-e5d9085d0254/ambient-spiritual-eye.mp4",
+      "original_filename": "ambient-spiritual-eye.mp4",
+      "size": 20192991,
+      "content_type": null,
+      "group": "src/assets/sensorial/yogananda"
+    },
+    {
+      "pointer": "src/assets/showroom/sam-idle.mp4.asset.json",
+      "expected_file": "src/assets/showroom/sam-idle.mp4",
+      "cdn_url": "/__l5e/assets-v1/e91213e4-319b-4a2a-9066-308f304e0b5e/sam-idle.mp4",
+      "original_filename": "sam-idle.mp4",
+      "size": 14815140,
+      "content_type": null,
+      "group": "src/assets/showroom"
+    },
+    {
+      "pointer": "src/assets/showroom/sam-portrait.mp4.asset.json",
+      "expected_file": "src/assets/showroom/sam-portrait.mp4",
+      "cdn_url": "/__l5e/assets-v1/566ce4b3-bddf-46c2-be96-9152d916c268/sam-portrait.mp4",
+      "original_filename": "sam-portrait.mp4",
+      "size": 15745738,
+      "content_type": null,
+      "group": "src/assets/showroom"
+    },
+    {
+      "pointer": "src/assets/showroom/sam-talking.mp4.asset.json",
+      "expected_file": "src/assets/showroom/sam-talking.mp4",
+      "cdn_url": "/__l5e/assets-v1/6bdadd82-808b-44b4-a138-3fd35abb0e32/sam-talking.mp4",
+      "original_filename": "sam-talking.mp4",
+      "size": 15341686,
+      "content_type": null,
+      "group": "src/assets/showroom"
+    },
+    {
+      "pointer": "src/assets/showroom/vision-hero.mp4.asset.json",
+      "expected_file": "src/assets/showroom/vision-hero.mp4",
+      "cdn_url": "/__l5e/assets-v1/3e50a932-129e-440b-961b-8d86aa1a0da6/vision-hero.mp4",
+      "original_filename": "vision-hero.mp4",
+      "size": 38348850,
+      "content_type": null,
+      "group": "src/assets/showroom"
+    },
+    {
+      "pointer": "src/assets/showroom/world-anxious.mp4.asset.json",
+      "expected_file": "src/assets/showroom/world-anxious.mp4",
+      "cdn_url": "/__l5e/assets-v1/5fb757c5-c49d-4110-ac70-3dc7ef9bc942/world-anxious.mp4",
+      "original_filename": "world-anxious.mp4",
+      "size": 6887942,
+      "content_type": null,
+      "group": "src/assets/showroom"
+    },
+    {
+      "pointer": "src/assets/showroom/world-corporate.mp4.asset.json",
+      "expected_file": "src/assets/showroom/world-corporate.mp4",
+      "cdn_url": "/__l5e/assets-v1/fd8dc80f-b4fb-4e73-b68f-5dc7d79fb775/world-corporate.mp4",
+      "original_filename": "world-corporate.mp4",
+      "size": 17755234,
+      "content_type": null,
+      "group": "src/assets/showroom"
+    },
+    {
+      "pointer": "src/assets/showroom/world-creator.mp4.asset.json",
+      "expected_file": "src/assets/showroom/world-creator.mp4",
+      "cdn_url": "/__l5e/assets-v1/8d68ac05-b614-4bc8-bc42-ad801e781de9/world-creator.mp4",
+      "original_filename": "world-creator.mp4",
+      "size": 12713641,
+      "content_type": null,
+      "group": "src/assets/showroom"
+    },
+    {
+      "pointer": "src/assets/showroom/world-seeker.mp4.asset.json",
+      "expected_file": "src/assets/showroom/world-seeker.mp4",
+      "cdn_url": "/__l5e/assets-v1/70192cdf-2c65-4631-9d95-97f8cb6e4f2f/world-seeker.mp4",
+      "original_filename": "world-seeker.mp4",
+      "size": 10177370,
+      "content_type": null,
+      "group": "src/assets/showroom"
+    },
+    {
+      "pointer": "src/assets/v000/clip1.mp4.asset.json",
+      "expected_file": "src/assets/v000/clip1.mp4",
+      "cdn_url": "/__l5e/assets-v1/ee6d0c41-6edc-4de5-a2e5-38ade2377859/clip1.mp4",
+      "original_filename": "clip1.mp4",
+      "size": 9995336,
+      "content_type": null,
+      "group": "src/assets/v000"
+    },
+    {
+      "pointer": "src/assets/v000/clip2.mp4.asset.json",
+      "expected_file": "src/assets/v000/clip2.mp4",
+      "cdn_url": "/__l5e/assets-v1/726107e4-221d-42b2-ad86-b3b6e82bd630/clip2.mp4",
+      "original_filename": "clip2.mp4",
+      "size": 19518898,
+      "content_type": null,
+      "group": "src/assets/v000"
+    },
+    {
+      "pointer": "src/assets/v000/clip3.mp4.asset.json",
+      "expected_file": "src/assets/v000/clip3.mp4",
+      "cdn_url": "/__l5e/assets-v1/3d04905b-1665-46fc-80bd-be98abb693af/clip3.mp4",
+      "original_filename": "clip3.mp4",
+      "size": 11182368,
+      "content_type": null,
+      "group": "src/assets/v000"
+    },
+    {
+      "pointer": "src/assets/v000/clip4.mp4.asset.json",
+      "expected_file": "src/assets/v000/clip4.mp4",
+      "cdn_url": "/__l5e/assets-v1/3ac2c42b-b1de-45f8-a495-83b41baa3764/clip4.mp4",
+      "original_filename": "clip4.mp4",
+      "size": 12118840,
+      "content_type": null,
+      "group": "src/assets/v000"
+    },
+    {
+      "pointer": "src/assets/v000/clip5.mp4.asset.json",
+      "expected_file": "src/assets/v000/clip5.mp4",
+      "cdn_url": "/__l5e/assets-v1/bf9a71e5-7d9a-4c8e-bf36-66280b0fc589/clip5.mp4",
+      "original_filename": "clip5.mp4",
+      "size": 8085339,
+      "content_type": null,
+      "group": "src/assets/v000"
+    },
+    {
+      "pointer": "src/assets/v000/clip6.mp4.asset.json",
+      "expected_file": "src/assets/v000/clip6.mp4",
+      "cdn_url": "/__l5e/assets-v1/510d0ea1-8daa-4ced-b2e9-eecfbe04954e/clip6.mp4",
+      "original_filename": "clip6.mp4",
+      "size": 11988320,
+      "content_type": null,
+      "group": "src/assets/v000"
+    },
+    {
+      "pointer": "src/assets/videos/hero-ancient-modern.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-ancient-modern.mp4",
+      "cdn_url": "/__l5e/assets-v1/ab2f291c-ab28-4618-977f-2ef764dd23d8/hero-ancient-modern.mp4",
+      "original_filename": "hero-ancient-modern.mp4",
+      "size": 28722310,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-awakening.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-awakening.mp4",
+      "cdn_url": "/__l5e/assets-v1/5690f047-3e0f-4b5a-886e-8890970878c3/hero-awakening.mp4",
+      "original_filename": "hero-awakening.mp4",
+      "size": 26505720,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-banyan-tree.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-banyan-tree.mp4",
+      "cdn_url": "/__l5e/assets-v1/17f9c15d-76ff-43b3-bc9a-47787cdff9f8/hero-banyan-tree.mp4",
+      "original_filename": "hero-banyan-tree.mp4",
+      "size": 42943027,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-cliff-dawn.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-cliff-dawn.mp4",
+      "cdn_url": "/__l5e/assets-v1/ca8e6ab9-81e9-4c5c-8993-22264bbd52a5/hero-cliff-dawn.mp4",
+      "original_filename": "hero-cliff-dawn.mp4",
+      "size": 14236392,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-cosmic.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-cosmic.mp4",
+      "cdn_url": "/__l5e/assets-v1/1fe76089-c66e-4a03-bc5f-92d3d62a6dce/hero-cosmic.mp4",
+      "original_filename": "hero-cosmic.mp4",
+      "size": 26074043,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-creation-touch.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-creation-touch.mp4",
+      "cdn_url": "/__l5e/assets-v1/6c48a073-ab91-4da7-a141-2d038d72a6d5/hero-creation-touch.mp4",
+      "original_filename": "hero-creation-touch.mp4",
+      "size": 21347686,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-forest-awakening.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-forest-awakening.mp4",
+      "cdn_url": "/__l5e/assets-v1/d0dc6fcf-7caf-480e-8ec2-84ad6dadccec/hero-forest-awakening.mp4",
+      "original_filename": "hero-forest-awakening.mp4",
+      "size": 40860958,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-lotus-bloom.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-lotus-bloom.mp4",
+      "cdn_url": "/__l5e/assets-v1/fd537682-912d-4df1-8ca6-c02acac487fa/hero-lotus-bloom.mp4",
+      "original_filename": "hero-lotus-bloom.mp4",
+      "size": 20137514,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-mandala-weave.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-mandala-weave.mp4",
+      "cdn_url": "/__l5e/assets-v1/68c68807-863f-47da-a5cc-ab68c80b0dba/hero-mandala-weave.mp4",
+      "original_filename": "hero-mandala-weave.mp4",
+      "size": 29606486,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-child.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-child.mp4",
+      "cdn_url": "/__l5e/assets-v1/479b1e74-7826-414a-9740-972e31f5b0ce/hero-meditate-child.mp4",
+      "original_filename": "hero-meditate-child.mp4",
+      "size": 14977485,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-desert.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-desert.mp4",
+      "cdn_url": "/__l5e/assets-v1/eb4254a0-c56e-4927-aacb-57c74e9fe349/hero-meditate-desert.mp4",
+      "original_filename": "hero-meditate-desert.mp4",
+      "size": 10858482,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-ganges.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-ganges.mp4",
+      "cdn_url": "/__l5e/assets-v1/ab775496-baec-459f-b1fd-eeee6c958c2e/hero-meditate-ganges.mp4",
+      "original_filename": "hero-meditate-ganges.mp4",
+      "size": 20048344,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-himalaya.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-himalaya.mp4",
+      "cdn_url": "/__l5e/assets-v1/79d1278c-0ae2-430a-a01c-fe13a6ce74e9/hero-meditate-himalaya.mp4",
+      "original_filename": "hero-meditate-himalaya.mp4",
+      "size": 23464034,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-monk.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-monk.mp4",
+      "cdn_url": "/__l5e/assets-v1/94c891b5-5407-4b69-bddc-de94727cbcb2/hero-meditate-monk.mp4",
+      "original_filename": "hero-meditate-monk.mp4",
+      "size": 12400790,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-rooftop.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-rooftop.mp4",
+      "cdn_url": "/__l5e/assets-v1/31744eac-19ba-43ee-8f0f-6e90cb6dda4c/hero-meditate-rooftop.mp4",
+      "original_filename": "hero-meditate-rooftop.mp4",
+      "size": 17876199,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-sage.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-sage.mp4",
+      "cdn_url": "/__l5e/assets-v1/05a17b51-a477-4975-948d-93cb571594d8/hero-meditate-sage.mp4",
+      "original_filename": "hero-meditate-sage.mp4",
+      "size": 14352550,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-tech.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-tech.mp4",
+      "cdn_url": "/__l5e/assets-v1/aac4f6b7-8a7a-4343-a3a8-b65534fcfe99/hero-meditate-tech.mp4",
+      "original_filename": "hero-meditate-tech.mp4",
+      "size": 14403706,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-teen.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-teen.mp4",
+      "cdn_url": "/__l5e/assets-v1/e2251cc0-ccef-4a11-92cf-89e39651ded7/hero-meditate-teen.mp4",
+      "original_filename": "hero-meditate-teen.mp4",
+      "size": 17233999,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-woman-young.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-woman-young.mp4",
+      "cdn_url": "/__l5e/assets-v1/7485f4de-28ef-444c-95b0-b848878208ca/hero-meditate-woman-young.mp4",
+      "original_filename": "hero-meditate-woman-young.mp4",
+      "size": 18587843,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-meditate-zen.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-meditate-zen.mp4",
+      "cdn_url": "/__l5e/assets-v1/3edfa5fb-9478-4793-a41f-09a5e03d113e/hero-meditate-zen.mp4",
+      "original_filename": "hero-meditate-zen.mp4",
+      "size": 16883855,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-mirror.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-mirror.mp4",
+      "cdn_url": "/__l5e/assets-v1/ebeb6305-359d-456d-8913-66be71112c29/hero-mirror.mp4",
+      "original_filename": "hero-mirror.mp4",
+      "size": 17742303,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-neural-light.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-neural-light.mp4",
+      "cdn_url": "/__l5e/assets-v1/ea3cfe37-3063-4455-9a82-9bace879946d/hero-neural-light.mp4",
+      "original_filename": "hero-neural-light.mp4",
+      "size": 24501353,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-shadow-self.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-shadow-self.mp4",
+      "cdn_url": "/__l5e/assets-v1/af244957-cf9b-4cf8-91d9-8467439a6eeb/hero-shadow-self.mp4",
+      "original_filename": "hero-shadow-self.mp4",
+      "size": 14277807,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-temple-sunrise.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-temple-sunrise.mp4",
+      "cdn_url": "/__l5e/assets-v1/48115e40-480d-4f30-a351-277d4b2c00de/hero-temple-sunrise.mp4",
+      "original_filename": "hero-temple-sunrise.mp4",
+      "size": 27703255,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/assets/videos/hero-water-reflection.mp4.asset.json",
+      "expected_file": "src/assets/videos/hero-water-reflection.mp4",
+      "cdn_url": "/__l5e/assets-v1/f2f3877f-55ab-46d4-9676-fb0b0d008245/hero-water-reflection.mp4",
+      "original_filename": "hero-water-reflection.mp4",
+      "size": 15871779,
+      "content_type": null,
+      "group": "src/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/bell-in-the-wind.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/bell-in-the-wind.mp4",
+      "cdn_url": "/__l5e/assets-v1/baeccdef-b96a-4720-bfcf-0fe9e674375d/bell-in-the-wind.mp4",
+      "original_filename": "bell-in-the-wind.mp4",
+      "size": 8284430,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/body-scanner.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/body-scanner.mp4",
+      "cdn_url": "/__l5e/assets-v1/39b2b92e-4f85-41b5-8f86-abfc64017131/body-scanner.mp4",
+      "original_filename": "body-scanner.mp4",
+      "size": 6012471,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/brain-override.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/brain-override.mp4",
+      "cdn_url": "/__l5e/assets-v1/2df244a3-8f9f-4fca-a607-9afdb9b20468/brain-override.mp4",
+      "original_filename": "brain-override.mp4",
+      "size": 12361372,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/breath-ladder.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/breath-ladder.mp4",
+      "cdn_url": "/__l5e/assets-v1/2e7461ca-c960-4794-a6c3-3cb219594f20/breath-ladder.mp4",
+      "original_filename": "breath-ladder.mp4",
+      "size": 8918497,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/breath-temple.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/breath-temple.mp4",
+      "cdn_url": "/__l5e/assets-v1/bd35b8fe-5736-462c-a3ac-0b260ff3bdd0/breath-temple.mp4",
+      "original_filename": "breath-temple.mp4",
+      "size": 9251475,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/candle-in-the-storm.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/candle-in-the-storm.mp4",
+      "cdn_url": "/__l5e/assets-v1/186f7bff-ba63-40a8-aaf5-98c8b5f4fac9/candle-in-the-storm.mp4",
+      "original_filename": "candle-in-the-storm.mp4",
+      "size": 4587933,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/coherent-three.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/coherent-three.mp4",
+      "cdn_url": "/__l5e/assets-v1/41f25535-af7c-42c0-8ffe-5c6a7f2b848d/coherent-three.mp4",
+      "original_filename": "coherent-three.mp4",
+      "size": 7808316,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/cold-water.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/cold-water.mp4",
+      "cdn_url": "/__l5e/assets-v1/997f902d-fb9e-445a-a0dc-35f08891cb24/cold-water.mp4",
+      "original_filename": "cold-water.mp4",
+      "size": 7939163,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/council-of-three.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/council-of-three.mp4",
+      "cdn_url": "/__l5e/assets-v1/17c2b338-84f1-43a9-8100-853c0d670bb6/council-of-three.mp4",
+      "original_filename": "council-of-three.mp4",
+      "size": 6863148,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/death-practice.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/death-practice.mp4",
+      "cdn_url": "/__l5e/assets-v1/86cb2c1b-40cd-4f26-a483-cf8689b1b406/death-practice.mp4",
+      "original_filename": "death-practice.mp4",
+      "size": 3890013,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/dream-letter.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/dream-letter.mp4",
+      "cdn_url": "/__l5e/assets-v1/fa5685fd-5e20-41b8-8a3b-2acece723321/dream-letter.mp4",
+      "original_filename": "dream-letter.mp4",
+      "size": 7008420,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/emotional-resonance.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/emotional-resonance.mp4",
+      "cdn_url": "/__l5e/assets-v1/cc277721-4a3f-4c1a-aee3-f5d6e4936fba/emotional-resonance.mp4",
+      "original_filename": "emotional-resonance.mp4",
+      "size": 10233932,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/empty-room.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/empty-room.mp4",
+      "cdn_url": "/__l5e/assets-v1/9846fd2f-cbb5-478d-b975-ddc46dc2a91d/empty-room.mp4",
+      "original_filename": "empty-room.mp4",
+      "size": 4803225,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/floor-beneath-the-floor.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/floor-beneath-the-floor.mp4",
+      "cdn_url": "/__l5e/assets-v1/cbee74db-8f81-48f8-9c50-d3340edaf16f/floor-beneath-the-floor.mp4",
+      "original_filename": "floor-beneath-the-floor.mp4",
+      "size": 10403059,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/grieving-room.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/grieving-room.mp4",
+      "cdn_url": "/__l5e/assets-v1/141e28ad-99b7-4983-8bab-a0535640c099/grieving-room.mp4",
+      "original_filename": "grieving-room.mp4",
+      "size": 8013735,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/hand-doesnt-move.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/hand-doesnt-move.mp4",
+      "cdn_url": "/__l5e/assets-v1/fc498ed3-7270-407b-8dde-163f06ba8460/hand-doesnt-move.mp4",
+      "original_filename": "hand-doesnt-move.mp4",
+      "size": 9519334,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/hara-drop.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/hara-drop.mp4",
+      "cdn_url": "/__l5e/assets-v1/89d3c2f5-6155-4aef-8df9-79f04648d294/hara-drop.mp4",
+      "original_filename": "hara-drop.mp4",
+      "size": 10832191,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/heart-coherence-bridge.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/heart-coherence-bridge.mp4",
+      "cdn_url": "/__l5e/assets-v1/791e88a7-cace-45d0-bcf1-c17eed5bd46d/heart-coherence-bridge.mp4",
+      "original_filename": "heart-coherence-bridge.mp4",
+      "size": 11147692,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/inner-weather.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/inner-weather.mp4",
+      "cdn_url": "/__l5e/assets-v1/25600d5f-bfb0-4f53-a5d9-a4cc0447132b/inner-weather.mp4",
+      "original_filename": "inner-weather.mp4",
+      "size": 9318564,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/karma-coin.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/karma-coin.mp4",
+      "cdn_url": "/__l5e/assets-v1/d18c55ee-6d48-4e34-86cd-ef1e6467d8cd/karma-coin.mp4",
+      "original_filename": "karma-coin.mp4",
+      "size": 7636877,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/last-breath.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/last-breath.mp4",
+      "cdn_url": "/__l5e/assets-v1/d91b49f3-6889-4bbf-8add-d722c8d42ba6/last-breath.mp4",
+      "original_filename": "last-breath.mp4",
+      "size": 6525003,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/listen-for-the-bird.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/listen-for-the-bird.mp4",
+      "cdn_url": "/__l5e/assets-v1/2e6a3d85-c520-4639-a882-709a745e779c/listen-for-the-bird.mp4",
+      "original_filename": "listen-for-the-bird.mp4",
+      "size": 11375711,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/listening-tree.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/listening-tree.mp4",
+      "cdn_url": "/__l5e/assets-v1/c875767e-b445-4a8b-a208-2542ec04ea83/listening-tree.mp4",
+      "original_filename": "listening-tree.mp4",
+      "size": 18588052,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/loop-mirror.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/loop-mirror.mp4",
+      "cdn_url": "/__l5e/assets-v1/c765d1db-4f17-4940-b8bc-7b6ddded1d0a/loop-mirror.mp4",
+      "original_filename": "loop-mirror.mp4",
+      "size": 9093626,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/mirror-realm.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/mirror-realm.mp4",
+      "cdn_url": "/__l5e/assets-v1/4a6f44d7-9871-4bfa-b0c1-c3e97b110a14/mirror-realm.mp4",
+      "original_filename": "mirror-realm.mp4",
+      "size": 9043272,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/ninth-dharana.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/ninth-dharana.mp4",
+      "cdn_url": "/__l5e/assets-v1/a82b0cfa-35b3-4e7a-89a1-c75a1a8f590f/ninth-dharana.mp4",
+      "original_filename": "ninth-dharana.mp4",
+      "size": 8610935,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/non-dual-door.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/non-dual-door.mp4",
+      "cdn_url": "/__l5e/assets-v1/bb93cccd-ec00-4f97-82fa-fddc73ed9d65/non-dual-door.mp4",
+      "original_filename": "non-dual-door.mp4",
+      "size": 5770164,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/question-behind-question.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/question-behind-question.mp4",
+      "cdn_url": "/__l5e/assets-v1/25bbc7db-a577-4a06-b8eb-d5ee032cc29d/question-behind-question.mp4",
+      "original_filename": "question-behind-question.mp4",
+      "size": 9460038,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/question-no-answer.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/question-no-answer.mp4",
+      "cdn_url": "/__l5e/assets-v1/89bfdd10-9998-4aca-9f36-f51685a0fe67/question-no-answer.mp4",
+      "original_filename": "question-no-answer.mp4",
+      "size": 4724707,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/real-world-quest.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/real-world-quest.mp4",
+      "cdn_url": "/__l5e/assets-v1/45c0046e-b8cd-457a-9a33-1da7b1058d1c/real-world-quest.mp4",
+      "original_filename": "real-world-quest.mp4",
+      "size": 16458128,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/red-door.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/red-door.mp4",
+      "cdn_url": "/__l5e/assets-v1/99682e50-5e93-4ab6-89ca-69f7120b1c9b/red-door.mp4",
+      "original_filename": "red-door.mp4",
+      "size": 6497255,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/silent-mountain.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/silent-mountain.mp4",
+      "cdn_url": "/__l5e/assets-v1/c3b4765e-127c-4add-9555-72575ecc0baa/silent-mountain.mp4",
+      "original_filename": "silent-mountain.mp4",
+      "size": 8850371,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/slow-tap.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/slow-tap.mp4",
+      "cdn_url": "/__l5e/assets-v1/dc391c70-a1f3-4659-b2e4-ab9116c5b9a3/slow-tap.mp4",
+      "original_filename": "slow-tap.mp4",
+      "size": 7578659,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/sound-microscope.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/sound-microscope.mp4",
+      "cdn_url": "/__l5e/assets-v1/cb9668e1-f1fd-44af-bb09-6e64bdaa2ca4/sound-microscope.mp4",
+      "original_filename": "sound-microscope.mp4",
+      "size": 9075196,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/stop-spinning.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/stop-spinning.mp4",
+      "cdn_url": "/__l5e/assets-v1/e1b5fc16-9a33-40af-ad28-5140834664bb/stop-spinning.mp4",
+      "original_filename": "stop-spinning.mp4",
+      "size": 18463455,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/stranger-song.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/stranger-song.mp4",
+      "cdn_url": "/__l5e/assets-v1/0fc7cd6c-e63d-4763-b8ac-fe00b06e9b85/stranger-song.mp4",
+      "original_filename": "stranger-song.mp4",
+      "size": 14406880,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/subtract-yourself.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/subtract-yourself.mp4",
+      "cdn_url": "/__l5e/assets-v1/9e9f53f5-5637-456f-8226-5b819f9a599d/subtract-yourself.mp4",
+      "original_filename": "subtract-yourself.mp4",
+      "size": 10669511,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/the-30-second-mind.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/the-30-second-mind.mp4",
+      "cdn_url": "/__l5e/assets-v1/9af18e65-4fbd-455e-89a6-2ee816b9627a/the-30-second-mind.mp4",
+      "original_filename": "the-30-second-mind.mp4",
+      "size": 12072268,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/the-apology.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/the-apology.mp4",
+      "cdn_url": "/__l5e/assets-v1/eb5c7c6c-25a5-4d31-a29f-d931a2865d4f/the-apology.mp4",
+      "original_filename": "the-apology.mp4",
+      "size": 6060187,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/the-compliment-trap.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/the-compliment-trap.mp4",
+      "cdn_url": "/__l5e/assets-v1/b43c64d2-f0d4-4be6-8b3b-7c8bb675c062/the-compliment-trap.mp4",
+      "original_filename": "the-compliment-trap.mp4",
+      "size": 8693063,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/the-name.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/the-name.mp4",
+      "cdn_url": "/__l5e/assets-v1/ecb8f3a1-c413-4829-852a-5bf7cdcccd6b/the-name.mp4",
+      "original_filename": "the-name.mp4",
+      "size": 10581528,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/the-other-side.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/the-other-side.mp4",
+      "cdn_url": "/__l5e/assets-v1/bb997014-4062-4743-9b6a-6effeadcb6fb/the-other-side.mp4",
+      "original_filename": "the-other-side.mp4",
+      "size": 9183731,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/the-pause.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/the-pause.mp4",
+      "cdn_url": "/__l5e/assets-v1/b18a6008-0ad2-4420-b629-3d988493372f/the-pause.mp4",
+      "original_filename": "the-pause.mp4",
+      "size": 9458498,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/the-scroll.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/the-scroll.mp4",
+      "cdn_url": "/__l5e/assets-v1/a4250d72-048f-4a10-8c72-a3220eb1e6ef/the-scroll.mp4",
+      "original_filename": "the-scroll.mp4",
+      "size": 6543534,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/the-sigh.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/the-sigh.mp4",
+      "cdn_url": "/__l5e/assets-v1/33502de3-dcfe-478d-8f7f-b87a79e45586/the-sigh.mp4",
+      "original_filename": "the-sigh.mp4",
+      "size": 7349351,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/the-yawn-loop.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/the-yawn-loop.mp4",
+      "cdn_url": "/__l5e/assets-v1/d46e02ba-24c1-495b-99c1-cb525c5105dc/the-yawn-loop.mp4",
+      "original_filename": "the-yawn-loop.mp4",
+      "size": 8492774,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/thought-watcher.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/thought-watcher.mp4",
+      "cdn_url": "/__l5e/assets-v1/af23ed3e-dbe0-42b4-8efb-7287befbb90a/thought-watcher.mp4",
+      "original_filename": "thought-watcher.mp4",
+      "size": 11162623,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/three-brains-speak.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/three-brains-speak.mp4",
+      "cdn_url": "/__l5e/assets-v1/ea6ff551-abb8-4466-ba7f-d8726871034f/three-brains-speak.mp4",
+      "original_filename": "three-brains-speak.mp4",
+      "size": 9662089,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/tonglen.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/tonglen.mp4",
+      "cdn_url": "/__l5e/assets-v1/de11433f-21c8-429d-a2ad-53f0de78d521/tonglen.mp4",
+      "original_filename": "tonglen.mp4",
+      "size": 8295951,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/two-chairs.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/two-chairs.mp4",
+      "cdn_url": "/__l5e/assets-v1/1df04cc6-61f7-4d01-ac92-9f6d834bc473/two-chairs.mp4",
+      "original_filename": "two-chairs.mp4",
+      "size": 5585291,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/two-hands.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/two-hands.mp4",
+      "cdn_url": "/__l5e/assets-v1/f3847cc5-aff5-4b0a-9062-ef896c1fa0d4/two-hands.mp4",
+      "original_filename": "two-hands.mp4",
+      "size": 9828277,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/two-mirrors.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/two-mirrors.mp4",
+      "cdn_url": "/__l5e/assets-v1/aec18588-d331-4cb7-878d-b3c49cf25b95/two-mirrors.mp4",
+      "original_filename": "two-mirrors.mp4",
+      "size": 9309909,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/who-is-thinking.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/who-is-thinking.mp4",
+      "cdn_url": "/__l5e/assets-v1/acf35584-2b03-4a42-9852-39e0b49ebfef/who-is-thinking.mp4",
+      "original_filename": "who-is-thinking.mp4",
+      "size": 12165578,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/whose-voice.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/whose-voice.mp4",
+      "cdn_url": "/__l5e/assets-v1/a94465c7-498e-41d8-871d-8e3b2519e3eb/whose-voice.mp4",
+      "original_filename": "whose-voice.mp4",
+      "size": 5253207,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/will-forge.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/will-forge.mp4",
+      "cdn_url": "/__l5e/assets-v1/12e81e34-efd2-418e-a2ad-ed346d681d81/will-forge.mp4",
+      "original_filename": "will-forge.mp4",
+      "size": 7951705,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/witness-room.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/witness-room.mp4",
+      "cdn_url": "/__l5e/assets-v1/89432d6d-46f2-4f97-9bdc-9f328ccb9c9e/witness-room.mp4",
+      "original_filename": "witness-room.mp4",
+      "size": 8778825,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/witness-wall.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/witness-wall.mp4",
+      "cdn_url": "/__l5e/assets-v1/9615fbcb-a93b-41ff-a570-bc8e869417d1/witness-wall.mp4",
+      "original_filename": "witness-wall.mp4",
+      "size": 7844329,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    },
+    {
+      "pointer": "src/games/assets/videos/yoga-nidra-drop.mp4.asset.json",
+      "expected_file": "src/games/assets/videos/yoga-nidra-drop.mp4",
+      "cdn_url": "/__l5e/assets-v1/8b93fb76-09e0-4f49-a65d-443b00228519/yoga-nidra-drop.mp4",
+      "original_filename": "yoga-nidra-drop.mp4",
+      "size": 8109225,
+      "content_type": null,
+      "group": "src/games/assets/videos"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const ASANA_TWIST: SessionProgramV3 = {
+  id: "asana-twist",
+  title: "Asana · Twist",
+  subtitle: "Wring out the spine — squeeze and refresh",
+  description:
+    "A 5-session arc through twists: matsyendrasana — wringing the spine to squeeze out stale energy and refresh the organs.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["asana", "twist", "spine", "detox"],
+  icon: "RefreshCw",
+  coverGradient: "from-amber-600 to-orange-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The wring" },
+    { phase: "Practice", sessions: 1, focus: "The deep twist" },
+    { phase: "Integration", sessions: 1, focus: "Wring in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The fresh spine" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Wring the cloth",
+      required: ["ritual.opening-bow", "teach.asana.twist", "asana.tadasana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the spine",
+      required: ["wisdom.hatha.asana-chapter", "movement.spinal-twist", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The deep seated twist",
+      required: ["asana.matsyendrasana", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Wring in the day",
+      required: ["asana.matsyendrasana", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The fresh spine",
+      required: ["ritual.opening-bow", "asana.matsyendrasana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

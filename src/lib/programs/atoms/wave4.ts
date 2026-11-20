@@ -1,0 +1,132 @@
+/**
+ * Wave 4 atoms — asana families.
+ * Practice + teaching atoms for the 8 classical asana families.
+ */
+import type { Atom } from "../types";
+
+const practice = (
+  id: string,
+  label: string,
+  intent: string,
+  script: string[],
+  level = 1,
+  intensity: Atom["intensity"] = "balanced",
+  gates: Atom["gates"] = ["any"],
+): Atom => ({
+  id,
+  category: "movement",
+  label,
+  intent,
+  durationSec: { min: 120, typical: 300, max: 600 },
+  level,
+  modality: "move",
+  intensity,
+  gates,
+  energy: ["low", "medium", "high"],
+  script,
+});
+
+const read = (
+  id: string,
+  label: string,
+  intent: string,
+  body: string,
+  tags: string[] = [],
+): Atom => ({
+  id,
+  category: "wisdom-read",
+  label,
+  intent,
+  durationSec: { min: 60, typical: 120, max: 240 },
+  level: 0,
+  modality: "read",
+  intensity: "gentle",
+  gates: ["any"],
+  energy: ["low", "medium", "high"],
+  body,
+  tags,
+});
+
+const teach = (
+  id: string,
+  label: string,
+  intent: string,
+  body: string,
+  level = 0,
+): Atom => ({
+  id,
+  category: "teaching",
+  label,
+  intent,
+  durationSec: { min: 90, typical: 150, max: 300 },
+  level,
+  modality: "read",
+  intensity: "balanced",
+  gates: ["any"],
+  energy: ["low", "medium", "high"],
+  body,
+});
+
+export const WAVE4_ATOMS: Atom[] = [
+  // ─── Asana family practice atoms ───
+  practice("asana.tadasana", "Tadasana", "Mountain pose — steady, grounded",
+    ["Stand tall, feet together or hip-width.", "Arms at sides, shoulders soft.", "Distribute weight evenly through both feet.", "Breathe steadily, feel the earth beneath.", "Hold 30–60 seconds."], 0, "gentle"),
+  practice("asana.vrksasana", "Vrksasana", "Tree pose — balance on one leg",
+    ["Stand on one leg, foot against inner thigh.", "Hands at heart or overhead.", "Gaze at one point (drishti).", "Breathe steadily, find the balance.", "Hold 20–40 seconds each side."], 1, "balanced"),
+  practice("asana.trikonasana", "Trikonasana", "Triangle pose — side stretch",
+    ["Step wide, turn right foot out 90°.", "Reach right hand toward shin, left arm overhead.", "Look up at the left hand.", "Breathe into the side body.", "Hold 30 seconds each side."], 1, "balanced"),
+  practice("asana.paschimottanasana", "Paschimottanasana", "Seated forward fold — hamstring stretch",
+    ["Sit tall, legs extended.", "Inhale, reach arms overhead.", "Exhale, fold forward from the hips.", "Hold feet or shins.", "Breathe into the back body, hold 30–60 seconds."], 1, "gentle"),
+  practice("asana.janu-sirsasana", "Janu Sirsasana", "Head-to-knee pose — deep forward bend",
+    ["Sit, extend right leg, bend left knee.", "Reach toward the right foot.", "Fold from the hips, keep the spine long.", "Breathe into the right hamstring.", "Hold 30 seconds each side."], 1, "gentle"),
+  practice("asana.bhujangasana", "Bhujangasana", "Cobra pose — gentle backbend",
+    ["Lie on belly, hands under shoulders.", "Inhale, lift chest, keep elbows bent.", "Press tops of feet, engage legs.", "Breathe into the front body.", "Hold 20–30 seconds, repeat 2–3 times."], 0, "gentle"),
+  practice("asana.dhanurasana", "Dhanurasana", "Bow pose — deep backbend",
+    ["Lie on belly, bend knees.", "Reach back, hold ankles.", "Inhale, lift chest and thighs.", "Breathe steadily, feel the front body open.", "Hold 20–30 seconds, release slowly."], 2, "fierce"),
+  practice("asana.ustrasana", "Ustrasana", "Camel pose — kneeling backbend",
+    ["Kneel, knees hip-width.", "Inhale, reach back, hold heels.", "Lift the chest, let the head drop back gently.", "Breathe into the front body.", "Hold 20–30 seconds, release slowly."], 2, "fierce"),
+  practice("asana.matsyendrasana", "Matsyendrasana", "Spinal twist — seated",
+    ["Sit, bend right knee, foot outside left hip.", "Bend left knee, foot outside right hip.", "Inhale, lengthen, exhale twist right.", "Hands behind for support.", "Breathe, hold 30 seconds each side."], 1, "balanced"),
+  practice("asana.sirsasana", "Sirsasana", "Headstand — king of asanas",
+    ["Interlace fingers, cradle head.", "Lift hips, walk feet toward face.", "Lift one leg, then the other.", "Engage core, straighten body.", "Hold 20–60 seconds. Advanced — wall support first."], 4, "fierce"),
+  practice("asana.sarvangasana", "Sarvangasana", "Shoulderstand — mother of asanas",
+    ["Lay on back, lift legs overhead.", "Support lower back with hands.", "Straighten legs toward ceiling.", "Breathe steadily, feel the throat open.", "Hold 30–60 seconds. Blanket under shoulders."], 3, "fierce"),
+  practice("asana.halasana", "Halasana", "Plough pose — legs overhead",
+    ["From shoulderstand, lower legs overhead.", "Reach toward the floor behind.", "Breathe into the back body.", "Hold 30 seconds. Exit slowly."], 2, "fierce"),
+  practice("asana.bakasana", "Bakasana", "Crow pose — arm balance",
+    ["Squat, hands shoulder-width.", "Knees on upper arms, shift forward.", "Lift one foot, then the other.", "Gaze forward, engage core.", "Hold 10–30 seconds. Advanced."], 4, "fierce"),
+  practice("asana.mayurasana", "Mayurasana", "Peacock pose — forearm balance",
+    ["Kneel, hands together in front.", "Rotate hands outward, elbows at belly.", "Extend legs straight behind.", "Lift body parallel to floor.", "Hold 10–20 seconds. Advanced."], 5, "fierce"),
+  practice("asana.savasana", "Savasana", "Corpse pose — total relaxation",
+    ["Lie on back, legs apart, arms at sides.", "Close eyes, release every muscle.", "Breathe naturally, don't control.", "Stay 5–10 minutes.", "The most important asana — never skip it."], 0, "gentle"),
+  practice("asana.surya-namaskar-flow", "Surya Namaskar Flow", "12-pose sun salutation — one breath per movement",
+    ["Mountain — inhale.", "Upward salute — inhale.", "Standing forward fold — exhale.", "Halfway lift — inhale.", "Plank — exhale.", "Low push-up — inhale.", "Upward dog — exhale.", "Downward dog — inhale.", "Halfway lift — exhale.", "Standing forward fold — inhale.", "Upward salute — exhale.", "Mountain — inhale.", "Repeat 5–10 rounds, smooth and continuous."], 1, "balanced", ["morning"]),
+  practice("asana.balasana", "Balasana", "Child's pose — restorative fold",
+    ["Kneel, sit back on heels.", "Fold forward, forehead to mat.", "Arms extended or at sides.", "Breathe into the back body.", "Hold 1–3 minutes. Rest whenever needed."], 0, "gentle"),
+  practice("asana.supta-baddha-konasana", "Supta Baddha Konasana", "Reclined bound angle — heart opener",
+    ["Lie on back, soles of feet together.", "Knees open to sides, hands on belly.", "Close eyes, breathe into the heart.", "Hold 2–5 minutes. Restorative."], 0, "gentle"),
+
+  // ─── Wisdom-read atoms ───
+  read("wisdom.hatha.asana-chapter", "Hatha · Asana Chapter", "The steady seat",
+    "Asana means seat — a steady, easeful posture. Master the seat, and the body becomes still enough for the mind to rest. The Hatha Pradipika names a few key asanas: svastikasana, padmasana, bhadrasana, mayurasana, and savasana — the essential ones for the still mind.", ["hatha", "asana"]),
+  read("wisdom.asana.what-is", "What Is Asana?", "Posture as meditation",
+    "Asana is not exercise — it is a steady, easeful posture. When the body is still, the mind can be still. Every asana is a preparation for the still mind. Master the posture, and the posture becomes meditation.", ["asana"]),
+  read("wisdom.asana.surya-namaskar", "Surya Namaskar", "Salutation to the sun — the flow",
+    "Surya Namaskar is the complete practice in motion: 12 poses, one breath per movement. It stretches, strengthens, balances, and prepares the body for the still sits. Practice 5 rounds every morning.", ["asana", "surya"]),
+
+  // ─── Teaching atoms ───
+  teach("teach.asana.standing", "Standing Asanas — grounded strength", "Root to rise",
+    "Standing asanas build strength, stability, and balance. Tadasana (mountain) teaches stillness. Vrksasana (tree) teaches balance on one point. Trikonasana (triangle) teaches side-body opening. All standing asanas teach rooting into the earth before rising.", 0),
+  teach("teach.asana.forward-bend", "Forward Bends — surrender", "Fold into the self",
+    "Forward bends teach surrender: folding from the hips, lengthening the spine, releasing into the back body. Paschimottanasana (seated forward fold) calms the nervous system. Janu Sirsasana (head-to-knee) targets the deep hamstrings and teaches one-sided surrender.", 0),
+  teach("teach.asana.back-bend", "Back Bends — opening the heart", "Bend into vulnerability",
+    "Backbends teach courage and vulnerability. Bhujangasana (cobra) is the gentle first step. Dhanurasana (bow) is the deep stretch. Ustrasana (camel) is the kneeling heart-opener. All backbends open the front body and counter the forward-bending modern life.", 1),
+  teach("teach.asana.twist", "Twists — wring out the spine", "Wring the cloth",
+    "Twists wring the spine like a cloth, squeezing out stale energy and bringing fresh blood to the organs. Matsyendrasana (seated twist) is the king of twists. Practice twists after forward bends to balance the spine.", 0),
+  teach("teach.asana.inversion", "Inversions — reverse the pull", "Gravity as teacher",
+    "Inversions reverse the pull of gravity: the heart is above the head, blood flows to the brain, the perspective flips. Sirsasana (headstand) is the king. Sarvangasana (shoulderstand) is the mother. Halasana (plough) is the deep forward-bend inversion. All teach fearlessness.", 2),
+  teach("teach.asana.balancing", "Balancing — focus in motion", "One point, one breath",
+    "Balancing asanas teach single-pointed focus: vrksasana (tree) on one leg, bakasana (crow) on the arms, mayurasana (peacock) on the forearms. The moment the mind wanders, balance is lost. Balancing asanas are dharana in motion.", 1),
+  teach("teach.asana.restorative", "Restorative — the practice of surrender", "Doing nothing as the deepest practice",
+    "Restorative asanas teach that sometimes the deepest practice is no practice at all. Savasana (corpse) is total surrender. Balasana (child's pose) is the safe fold. Supta Baddha Konasana (reclined bound angle) is the heart-opening rest. Never skip savasana — it is where the practice lands.", 0),
+];

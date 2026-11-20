@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_CHIN: SessionProgramV3 = {
+  id: "mudra-chin",
+  title: "Mudra · Chin",
+  subtitle: "Consciousness seal — palms down, grounded",
+  description:
+    "A 5-session arc through Chin Mudra: the seal of consciousness that grounds and opens awareness.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "chin", "consciousness", "grounding"],
+  icon: "Hand",
+  coverGradient: "from-teal-500 to-cyan-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & consciousness" },
+    { phase: "Practice", sessions: 1, focus: "The consciousness seal" },
+    { phase: "Integration", sessions: 1, focus: "Awareness in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The conscious self" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seal of consciousness",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Grounded awareness",
+      required: ["wisdom.gheranda.1", "meditation.body-as-anchor", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Chin Mudra",
+      required: ["mudra.chin", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Awareness in the day",
+      required: ["mudra.chin", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The conscious self",
+      required: ["ritual.opening-bow", "mudra.chin", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "479b1e74-7826-414a-9740-972e31f5b0ce",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-child.mp4",
+  "original_filename": "hero-meditate-child.mp4",
+  "size": 14977485,
+  "created_at": "2026-03-28T12:40:28Z",
+  "bucket": "media",
+  "storage_path": "src/assets/videos/hero-meditate-child.mp4",
+  "migrated_at": "2026-10-20T10:56:21.666Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/479b1e74-7826-414a-9740-972e31f5b0ce/hero-meditate-child.mp4"
+}

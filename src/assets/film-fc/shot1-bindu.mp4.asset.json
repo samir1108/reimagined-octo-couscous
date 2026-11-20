@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "0929b286-a865-40d8-bde7-aec6c0a2d6a2",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot1-bindu.mp4",
+  "original_filename": "shot1-bindu.mp4",
+  "size": 14228075,
+  "created_at": "2026-05-10T16:05:08Z",
+  "bucket": "media",
+  "storage_path": "src/assets/film-fc/shot1-bindu.mp4",
+  "migrated_at": "2026-10-20T11:00:23.505Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/0929b286-a865-40d8-bde7-aec6c0a2d6a2/shot1-bindu.mp4"
+}

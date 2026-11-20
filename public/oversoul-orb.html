@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oversoul</title>
+<style>
+:root{color-scheme:dark;--bg:#080705;--gold:#e8bd70;--gold-soft:#9e7440;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{height:100%;margin:0;background:transparent;overflow:hidden}
+.brand{position:fixed;z-index:2;top:calc(25px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;font:600 15px/1 system-ui,sans-serif;letter-spacing:.42em;text-transform:uppercase;white-space:nowrap;
+ background:linear-gradient(105deg,#f7dfa4 0%,#e8bd70 38%,#fff3d0 50%,#e8bd70 62%,#c89b4e 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+ filter:drop-shadow(0 2px 14px rgba(220,166,78,.35));opacity:.95}
+.brand-mark{width:20px;height:20px;border:1px solid rgba(226,184,112,.65);border-radius:50%;display:grid;place-items:center;color:#f4d69b;font-size:11px;box-shadow:0 0 18px rgba(220,166,78,.16)}
+.hint{position:fixed;z-index:2;left:50%;bottom:calc(94px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);color:rgba(226,202,161,.7);font:500 9px/1.5 system-ui,sans-serif;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap;pointer-events:none}
+.hint:before,.hint:after{content:"";display:inline-block;width:22px;height:1px;vertical-align:middle;background:linear-gradient(90deg,transparent,rgba(218,174,103,.6));margin:0 12px}
+.hint:after{transform:scaleX(-1)}
+canvas{position:fixed;z-index:0;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+#gc{position:fixed;z-index:2;inset:0;width:100%;height:100%;pointer-events:none}
+canvas:active{cursor:grabbing}
+h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.dock{position:fixed;z-index:3;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);display:flex;gap:5px;padding:7px;border-radius:999px;background:linear-gradient(145deg,rgba(47,35,19,.72),rgba(14,12,9,.78));border:1px solid rgba(220,177,105,.2);box-shadow:0 12px 40px rgba(0,0,0,.38),inset 0 1px rgba(255,230,183,.08);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.ib{width:40px;height:40px;border-radius:50%;border:1px solid transparent;background:none;color:#b9a17b;cursor:pointer;display:grid;place-items:center;padding:0;transition:background .2s,color .2s,border-color .2s}
+.ib:hover{color:#ffe2a8;background:rgba(224,177,98,.12)}
+.ib:focus-visible,.chip:focus-visible,.pop .dot:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.ib[aria-pressed=true],.ib[aria-expanded=true]{color:#ffe5b2;background:rgba(220,169,83,.18);border-color:rgba(231,190,119,.38);box-shadow:0 0 18px rgba(219,167,79,.12)}
+.ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ib .on{display:none}.ib[aria-pressed=true] .on{display:block}.ib[aria-pressed=true] .off{display:none}
+.pop{z-index:4;position:fixed;left:50%;bottom:calc(80px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(8px);display:flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;background:rgba(25,19,11,.88);border:1px solid rgba(220,177,105,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;max-width:calc(100vw - 20px);overflow-x:auto}
+.pop.show{opacity:1;pointer-events:auto;transform:translateX(-50%)}
+.pop .dot{flex:none;width:26px;height:26px;border-radius:50%;border:2px solid rgba(255,255,255,.35);cursor:pointer;padding:0}
+.chip{flex:none;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.07);color:#f0d8ad;font:400 14px system-ui,sans-serif;cursor:pointer;white-space:nowrap}
+.chip:hover{background:rgba(255,255,255,.16)}
+.hud{z-index:2;position:fixed;left:0;right:0;top:calc(72px + env(safe-area-inset-top,0px));text-align:center;color:#f1dfbd;font-family:system-ui,sans-serif;pointer-events:none;opacity:0;transition:opacity .4s}
+.hud.show{opacity:1}
+.hud b{display:block;font-weight:200;font-size:clamp(24px,4vw,38px);letter-spacing:.05em}
+.hud span{font-size:12px;color:#b99a68;letter-spacing:.08em}
+.pop.timeask{bottom:calc(50% - 24px);left:50%;transform:translate(-50%,50%);flex-wrap:wrap;justify-content:center;border-radius:22px;padding:18px;min-width:min(300px,calc(100vw - 40px));}.pop.timeask.show{transform:translate(-50%,50%)}.pop .ask-title{width:100%;text-align:center;color:#f3d69e;font:500 11px system-ui;letter-spacing:.2em;text-transform:uppercase;padding:4px 8px 8px}.err{position:fixed;inset:0;display:none;place-items:center;color:#eee;font-family:Georgia,serif;text-align:center;padding:24px}
+.xbtn{position:fixed;z-index:6;top:calc(64px + env(safe-area-inset-top,0px));right:calc(16px + env(safe-area-inset-right,0px));width:46px;height:46px;border-radius:50%;border:1px solid rgba(231,190,119,.45);background:rgba(25,19,11,.85);color:#ffe5b2;font:300 20px/1 system-ui;display:none;place-items:center;cursor:pointer;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(0,0,0,.4);transition:transform .15s}
+.xbtn.show{display:grid}.xbtn:hover{transform:scale(1.08);color:#fff}
+</style>
+<base target="_blank">
+</head>
+<body>
+<h1>Oversoul</h1>
+<canvas id="c" aria-label="A living orb of particles that breathes, changes color, sings, and reacts to touch like fluid."></canvas>
+<canvas id="gc" aria-hidden="true"></canvas>
+<div class="hud" id="hud"><b id="hw"></b><span id="hs"></span></div>
+<div class="pop" id="pop"></div>
+<div class="hint" id="hint">Hold for time · Triple tap for I Am · Five taps for fireflies</div>
+<div class="dock" role="toolbar" aria-label="Orb controls" style="display:none">
+<button class="ib" id="snd" type="button" aria-label="Sound" aria-pressed="false">
+<svg class="off" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17 9l5 6M22 9l-5 6"/></svg>
+<svg class="on" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 9a4 4 0 010 6M19 6.5a8 8 0 010 11"/></svg>
+</button>
+<button class="ib" id="mic" type="button" aria-label="Voice reactive" aria-pressed="false"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg></button>
+<button class="ib" id="tilt" type="button" aria-label="Phone tilt" aria-pressed="false"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg></button>
+<button class="ib" id="chk" type="button" aria-label="Chakras" aria-expanded="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="3" r="1.3"/><circle cx="12" cy="6.5" r="1.3"/><circle cx="12" cy="10" r="1.3"/><circle cx="12" cy="13.5" r="1.3"/><circle cx="12" cy="17" r="1.3"/><circle cx="12" cy="20.5" r="1.3"/></svg></button>
+<button class="ib" id="ses" type="button" aria-label="Guided session" aria-expanded="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></svg></button>
+<button class="ib" id="col" type="button" aria-label="Spectrum colours" aria-pressed="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></button>
+<button class="ib" id="ink" type="button" aria-label="Draw cosmic ink" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M4 20c4-1 3-6 7-7s6-2 8-6"/><circle cx="19" cy="6" r="1.2"/></svg></button>
+<button class="ib" id="star" type="button" aria-label="Constellation" aria-expanded="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.4"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></button>
+</div>
+<button class="xbtn" id="stopX" type="button" aria-label="Stop session">&#10005;</button>
+<div class="err" id="err">WebGL isn't available in this browser.</div>
+<script>
+const NOISE=`float h(vec3 p){p=fract(p*.3183099+.1);p*=17.;return fract(p.x*p.y*p.z*(p.x+p.y+p.z));}
+float n3(vec3 x){vec3 i=floor(x),f=fract(x);f=f*f*(3.-2.*f);
+return mix(mix(mix(h(i),h(i+vec3(1,0,0)),f.x),mix(h(i+vec3(0,1,0)),h(i+vec3(1,1,0)),f.x),f.y),
+mix(mix(h(i+vec3(0,0,1)),h(i+vec3(1,0,1)),f.x),mix(h(i+vec3(0,1,1)),h(i+vec3(1,1,1)),f.x),f.y),f.z);}
+float fbm(vec3 p){float a=.5,s=0.;for(int i=0;i<3;i++){s+=a*n3(p);p=p*2.03+vec3(1.7,9.2,3.1);a*=.5;}return s;}
+float rg(vec3 x){return pow(1.-abs(2.*n3(x)-1.),8.);}
+vec3 hue(vec3 c,float a){vec3 k=vec3(.57735);float ca=cos(a),sa=sin(a);return c*ca+cross(k,c)*sa+k*dot(k,c)*(1.-ca);}`;
+const PVS=`precision highp float;attribute vec4 aSeed;
+uniform float uT,uAsp,uPulse,uPx,uS,uB,uPS,uWT,uWA,uBloom,uAud,uIn,uCh,uScan,uHue,uSpec,uGold,uSq,uGal,uFw,uMT;uniform vec2 uM,uPtr,uG,uT1,uT2;uniform vec3 uHit,uC0,uC1,uC2,uC3;varying vec3 vC;
+${NOISE}
+vec3 grad(float x){x=abs(fract(x)*2.-1.)*3.;return x<1.?mix(uC0,uC1,x):(x<2.?mix(uC1,uC2,x-1.):mix(uC2,uC3,x-2.));}
+mat3 ry(float a){float c=cos(a),s=sin(a);return mat3(c,0.,-s,0.,1.,0.,s,0.,c);}
+mat3 rx(float a){float c=cos(a),s=sin(a);return mat3(1.,0.,0.,0.,c,s,0.,-s,c);}
+void main(){
+ vec3 d=aSeed.xyz;float k=aSeed.w;
+ float r2=fract(k*17.13),r3=fract(k*91.7),t=uT;
+ float R=(.52+.105*uB+uPulse*.04+uAud*.03)*uIn*(1.-uCh*.12);
+ vec3 q=d*1.5+vec3(0.,0.,t*.12);
+ float n=fbm(q+fbm(q*1.3-t*.1));
+ mat3 M=rx(uM.y)*ry(uM.x);
+ vec3 p,col;float I,sz=1.+1.6*r3,br=.8+.5*uB;
+ if(k<.34){
+  float rad=R*.66*pow(r2,.4)*(.55+.9*n);
+  float rd=rg(d*3.+t*.2);
+  p=ry(t*1.1/(.3+rad*3.)+n*1.2)*(d*rad);
+  col=grad(fbm(d*2.+t*.1+n)*1.5+t*.03);
+  col+=pow(max(1.-rad/(R*.66),0.),3.)*.08;
+  I=.17*br*(1.+rd*4.);
+ }else if(k<.88){
+  float tend=step(.93,r3);
+  float rd=rg(d*2.8+vec3(0.,0.,t*.15)+n*.8);
+  float rad=R*(1.+.03*(n-.5))+tend*(.02+.12*n*r2)+rd*.025+uPulse*.02*sin(d.y*6.-t*5.);
+  p=d*rad;
+  float rim=pow(1.-abs((M*d).z),2.5);
+  col=mix(grad(n*1.4+d.y*.3+t*.04),uC3,rim);
+  col=mix(col,grad(n*3.+t*.08),tend*.8);
+  col=mix(col,mix(vec3(.8,.95,1.),vec3(1.,.92,.66),uGold),rd*.5); // veins turn gold in Vaikuntha
+  col=mix(col,.5+.5*cos(6.2832*(rim*1.1+n*.6+t*.03+vec3(0.,.33,.67))),.35*rim*min(1.,uSpec*3.)); // thin-film iridescence (almost off in gold)
+  I=.22*(.45+rim*1.6)*(1.-tend*.4)*br*(1.+rd*5.);
+ }else if(k<.95){
+  float life=fract(t*.12*(1.+uPulse)+r2);
+  vec3 dn=normalize(d+(vec3(n,fbm(q+3.),fbm(q+7.))-.5)*.8);
+  p=dn*R*(.25+life*1.6);p.xy+=uG*life*life*.18;
+  col=grad(life*.8+t*.04);
+  I=.5*(1.-life)*(1.-life)*br;sz=.7+r3*.8;
+ }else{
+  float id=floor(r2*6.);
+  float a=t*(.5+id*.13)*(1.+uPulse)+id*1.047-r3*.9;
+  float orb=R*(1.15+.12*sin(t*.7+id));
+  vec3 o=rx(id*.55+.3*sin(t*.2+id))*(ry(id*1.3)*vec3(cos(a)*orb,0.,sin(a)*orb));
+  p=o+(vec3(n,fbm(q+3.),fbm(q+7.))-.5)*.04*r3;
+  col=mix(grad(id*.17+t*.05),vec3(1.),pow(1.-r3,6.)*.6);
+  I=.9*pow(1.-r3,2.5)*br;sz=.8+(1.-r3)*2.2;
+ }
+ if(uGal>0.){float rr=pow(fract(k*7.31),.55);float an=rr*4.2+mod(floor(k*23.7),3.)*2.094+n*.4+t*.05;vec3 gp=vec3(cos(an)*rr,sin(an)*rr*.35,(fract(k*3.7)-.5)*.3)*R*1.9;p=mix(p,gp,uGal);}
+ if(uMT>.5){vec2 mid=(uT1+uT2)*.5;vec2 ax2=normalize(uT2-uT1+vec2(1e-4));float al=dot(p.xy,ax2),pe=dot(p.xy,vec2(-ax2.y,ax2.x));p.xy=mix(p.xy,mid+ax2*al*1.25+vec2(-ax2.y,ax2.x)*pe*.75,uMT);}
+ p*=(1.-uSq*.22);
+ if(uFw>0.){p*=1.+uFw*1.5;I*=1.+uFw;col=mix(col,vec3(1.,.9,.6),uFw*.7);}
+ vec3 pv=M*p;
+ vec3 nv=normalize(pv+vec3(1e-4));
+ vec3 dv=pv-vec3(uPtr,.45);
+ float dl=length(dv);
+ float f=exp(-dl*dl*7.)*uPS;
+ pv+=dv/(dl+.001)*f*.12+vec3(-dv.y,dv.x,0.)*f*.5;
+ float w=0.;
+ if(uWT<6.){float ang=acos(clamp(dot(nv,uHit),-1.,1.));w=exp(-pow((ang-uWT*2.2)*4.5,2.))*exp(-uWT*.7)*uWA;}
+ pv*=1.+w*.16;
+ col=mix(col,vec3(1.),w*.35);
+ I*=1.+w*2.5;
+ I*=1.+pow(.5+.5*sin(t*2.5+k*631.),24.)*3.;
+ I*=.65+.55*smoothstep(-.6,.6,pv.z);
+ float sw=exp(-pow((pv.y/max(R,.05)-uScan)*7.,2.)); // holographic scan plane
+ I*=1.+sw*2.5+uCh*.45;col=mix(col,mix(vec3(.75,.95,1.),vec3(1.,.9,.6),uGold),sw*.55);
+ if(uBloom>.5){sz*=6.;I*=.06;}
+ col=hue(col,uHue+uSpec*(n*4.+d.y*1.5)+uSpec*k*.6); // every particle gets its own hue: smooth regions + fine variation
+ vC=col*I*uIn*(1.+uPulse*1.5+uAud*1.2);
+ gl_Position=vec4(pv.x*uS/uAsp,pv.y*uS,pv.z*.3,1.-pv.z*.12);
+ gl_PointSize=uPx*sz*(1.+pv.z*.25);
+}`;
+const PFS=`precision mediump float;varying vec3 vC;
+void main(){float d=length(gl_PointCoord-.5);float a=smoothstep(.5,.02,d)*.82+smoothstep(.13,0.,d)*.55;vec3 c=vC*a;gl_FragColor=vec4(c,max(c.r,max(c.g,c.b)));}`;
+const HVS=`attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+// halo + smooth plasma body (fills the gaps between particles so the orb reads as a luminous volume)
+const HFS=`precision highp float;uniform vec2 uRes,uM;uniform float uS,uB,uPulse,uAud,uT,uR,uCh,uHue,uSpec,uRing;uniform vec3 uC0,uC1,uC2,uC3;
+${NOISE}
+vec3 grad(float x){x=abs(fract(x)*2.-1.)*3.;return x<1.?mix(uC0,uC1,x):(x<2.?mix(uC1,uC2,x-1.):mix(uC2,uC3,x-2.));}
+mat3 ry(float a){float c=cos(a),s=sin(a);return mat3(c,0.,-s,0.,1.,0.,s,0.,c);}
+mat3 rx(float a){float c=cos(a),s=sin(a);return mat3(1.,0.,0.,0.,c,s,0.,-s,c);}
+void main(){
+ vec2 uv=(gl_FragCoord.xy*2.-uRes)/uRes.y/uS;
+ float r=length(uv);
+ float g=exp(-max(r-.4,0.)*2.4);
+ vec3 c=hue(mix(uC2,uC3,.45),uHue)*g*g*.22*(.8+.5*uB+uPulse+uAud);
+ float ring=smoothstep(.014,0.,abs(r-uRing*1.45))*(1.-uRing);
+ c+=(uC3*.9+uC1*.35)*ring*(.55+.45*uB+uPulse*.5);
+ float ang=fract(atan(uv.x,uv.y)/6.2831853),on=smoothstep(0.,.1,uCh); // charge ring appears only while you hold
+ c+=uC3*smoothstep(.006,0.,abs(r-.84))*on*(.12+1.1*step(ang,uCh)+exp(-pow((ang-uCh)*40.,2.)))*.55;
+ c+=uC2*smoothstep(.005,0.,abs(r-.9))*on*step(.5,fract(ang*72.))*.18;
+ if(r<uR){
+  float z=sqrt(uR*uR-r*r)/uR;
+  vec3 s=ry(-uM.x)*(rx(-uM.y)*vec3(uv/uR,z));
+  vec3 p=s*1.8,q=vec3(fbm(p+uT*.1),fbm(p+vec3(5.2,1.3,2.8)-uT*.08),fbm(p+vec3(2.1,7.7,4.4)));
+  float f=fbm(p+2.2*q);
+  float fr=pow(1.-z,2.2);
+  vec3 body=hue(grad(f*1.5+uT*.03)*(.014+.1*f*f)+uC3*fr*.14+uC1*pow(z,4.)*.03,uHue+uSpec*(f*4.+s.y*1.5));
+  c+=body*smoothstep(uR,uR-.02,r)*(.8+.6*uB+uAud);
+ }
+ gl_FragColor=vec4(c,max(c.r,max(c.g,c.b)));
+}`;
+// neural lattice: nodes joined by great-circle links; data packets race along the links
+const LVS=`precision highp float;attribute vec3 aD;attribute vec2 aS;
+uniform float uT,uAsp,uS,uB,uPulse,uAud,uIn,uWT,uWA,uCh,uScan,uPx,uPS,uHue,uSpec,uGal,uFw,uSq,uMT;uniform vec2 uM,uPtr,uT1,uT2;uniform vec3 uHit,uC1,uC3;
+varying vec3 vC,vP;varying float vS,vPh;
+vec3 hue(vec3 c,float a){vec3 k=vec3(.57735);float ca=cos(a),sa=sin(a);return c*ca+cross(k,c)*sa+k*dot(k,c)*(1.-ca);}
+mat3 ry(float a){float c=cos(a),s=sin(a);return mat3(c,0.,-s,0.,1.,0.,s,0.,c);}
+mat3 rx(float a){float c=cos(a),s=sin(a);return mat3(1.,0.,0.,0.,c,s,0.,-s,c);}
+void main(){
+ float R=(.52+.105*uB+uPulse*.04+uAud*.03)*uIn*(1.-uCh*.12);
+ mat3 M=rx(uM.y)*ry(uM.x);
+ vec3 bp=aD*R*1.04;
+ if(uGal>0.){float kk=fract(dot(aD,vec3(12.9,78.2,37.7))*43758.5);float rr=pow(fract(kk*7.31),.55);float an=rr*4.2+mod(floor(kk*23.7),3.)*2.094;vec3 gp=vec3(cos(an)*rr,sin(an)*rr*.35,(fract(kk*3.7)-.5)*.3)*R*1.9;bp=mix(bp,gp,uGal);}
+ if(uMT>.5){vec2 mid=(uT1+uT2)*.5;vec2 ax2=normalize(uT2-uT1+vec2(1e-4));float al=dot(bp.xy,ax2),pe=dot(bp.xy,vec2(-ax2.y,ax2.x));bp.xy=mix(bp.xy,mid+ax2*al*1.25+vec2(-ax2.y,ax2.x)*pe*.75,uMT);}
+ bp*=(1.-uSq*.22);
+ vec3 pv=M*bp;pv*=1.+uFw*1.5;vec3 nv=M*aD;
+ vec3 dv=pv-vec3(uPtr,.45);float dl=length(dv);float f=exp(-dl*dl*7.)*uPS;
+ pv+=dv/(dl+.001)*f*.12+vec3(-dv.y,dv.x,0.)*f*.5;
+ float w=0.;
+ if(uWT<6.){float ang=acos(clamp(dot(nv,uHit),-1.,1.));w=exp(-pow((ang-uWT*2.2)*4.5,2.))*exp(-uWT*.7)*uWA;}
+ pv*=1.+w*.16;
+ float sw=exp(-pow((pv.y/max(R,.05)-uScan)*7.,2.));
+ float k=aS.y;vS=aS.x;vPh=fract(uT*(.18+.12*fract(k*7.31))+fract(k*3.17));
+ vec3 base=hue(mix(uC1,uC3,fract(k*5.3)),uHue+uSpec*(fract(k)*3.+aD.y*1.5));
+ vC=base*(.34+.1*sin(uT*.8+k*9.)+w*1.3+sw*.9+uCh*.25)*uIn*(.65+.55*smoothstep(-.6,.6,pv.z))*(1.+uAud);
+ vP=base*1.2+.35;
+ gl_Position=vec4(pv.x*uS/uAsp,pv.y*uS,pv.z*.3,1.-pv.z*.12);
+ gl_PointSize=uPx*(3.5+1.5*sin(uT*2.+k*3.)+w*4.)*(1.+pv.z*.25);
+}`;
+const LFS=`precision mediump float;uniform float uPts;varying vec3 vC,vP;varying float vS,vPh;
+void main(){vec3 c;
+ if(uPts>.5){float d=length(gl_PointCoord-.5);c=(vC*3.+vec3(.3))*smoothstep(.5,0.,d);}
+ else{float pk=exp(-pow((vS-vPh)*9.,2.));c=vC+vP*pk*.9;}
+ gl_FragColor=vec4(c,max(c.r,max(c.g,c.b)));}`;
+const QVS=`attribute vec2 p;varying vec2 vUv;void main(){vUv=p*.5+.5;gl_Position=vec4(p,0.,1.);}`;
+const BFS=`precision mediump float;uniform sampler2D uTex;uniform vec2 uDir;varying vec2 vUv;
+void main(){vec4 s=texture2D(uTex,vUv)*.227027;
+ s+=(texture2D(uTex,vUv+uDir*1.3846)+texture2D(uTex,vUv-uDir*1.3846))*.316216;
+ s+=(texture2D(uTex,vUv+uDir*3.2308)+texture2D(uTex,vUv-uDir*3.2308))*.070270;
+ gl_FragColor=s;}`;
+// final grade: bloom (screen blend), color-split toward the edges, richer saturation, light grain
+const CFS=`precision highp float;uniform sampler2D uS,uBl;uniform float uT,uAud,uBloomK,uGl;varying vec2 vUv;
+float hh(vec2 p){return fract(sin(dot(p,vec2(12.9898,78.233)))*43758.5453);}
+void main(){
+ vec2 c0=vUv-.5;float ab=.005*(1.+uAud*2.+uGl*8.)*dot(c0,c0);
+ vec4 a=vec4(texture2D(uS,vUv+c0*ab).r,texture2D(uS,vUv).g,texture2D(uS,vUv-c0*ab).b,texture2D(uS,vUv).a);
+ vec4 b=texture2D(uBl,vUv);
+ vec3 c=1.-(1.-a.rgb)*(1.-b.rgb*uBloomK);c+=(a.rgb-b.rgb)*.35*step(.01,a.a); // local-contrast clarity
+ float l=dot(c,vec3(.3,.59,.11));c=mix(vec3(l),c,1.3);
+ c+=(hh(gl_FragCoord.xy+uT)-.5)*.02*step(.02,c.r+c.g+c.b);
+ c=clamp(c,0.,1.);
+ gl_FragColor=vec4(c,max(max(c.r,max(c.g,c.b)),max(a.a,b.a*uBloomK)));
+}`;
+const TVS=`attribute vec2 aP;attribute float aA;uniform float uAsp,uS;varying float vA;void main(){vA=aA;gl_Position=vec4(aP.x*uS/uAsp,aP.y*uS,0.,1.);gl_PointSize=(10.+26.*aA)*uS;}`;
+const TFS=`precision mediump float;varying float vA;uniform vec3 uC;void main(){float d=length(gl_PointCoord-.5);float a=smoothstep(.5,.0,d)*vA;vec3 c=uC*1.6*a;gl_FragColor=vec4(c,max(c.r,max(c.g,c.b)));}`;
+const hex=s=>[1,3,5].map(i=>parseInt(s.slice(i,i+2),16)/255);
+const tri=r=>[r,r*1.5,r*2,r*2.5];
+// each mode = palette + breath pattern [in,hold,out,rest] + spin speed + chord (Hz) for the sound
+const MODES=[
+ {n:'Calm',  c:['#6f63ff','#45b4ff','#b05cff','#ff5ec4'],b:[4,2,6,0],sp:1,  ch:[146.83,220,293.66,369.99]},
+ {n:'Focus', c:['#ff9d2e','#ff5a3c','#ffd27a','#fff2cf'],b:[4,4,4,4],sp:1.1,ch:[98,146.83,196,246.94]},
+ {n:'Heal',  c:['#22e6a0','#18b4d0','#7dff9b','#e2ff72'],b:[5,0,5,0],sp:.9, ch:[174.61,261.63,349.23,440]},
+ {n:'Awaken',c:['#ff3ea5','#9150ff','#3dd2ff','#ffd166'],b:[3,0,3,0],sp:1.7,ch:[164.81,246.94,329.63,415.3]},
+ {n:'Sleep', c:['#3426b8','#7b3fd6','#2a62ff','#b894ff'],b:[4,7,8,0],sp:.5, ch:[65.41,98,130.81,155.56]},
+ {n:'Aurora',c:['#19e6c2','#3aa0ff','#8a63ff','#ff7ad9'],b:[4,4,6,0],sp:1,  ch:[130.81,196,261.63,329.63]},
+ {n:'Ember', c:['#ff4d5e','#ff8a3d','#ffc14d','#ff6fb1'],b:[4,2,6,0],sp:1.2,ch:[110,164.81,220,277.18]},
+ {n:'Root',      c:['#7a0f1d','#e8213a','#ff6b4a','#ffb199'],b:[5,2,7,0],sp:.6, ch:tri(65.41),chakra:1},
+ {n:'Sacral',    c:['#a8420a','#ff7a1a','#ffb347','#ffe0b0'],b:[4,2,6,0],sp:.8, ch:tri(73.42),chakra:1},
+ {n:'Solar',     c:['#b8860b','#ffd23a','#fff08a','#fffbe0'],b:[4,4,4,4],sp:1.1,ch:tri(82.41),chakra:1},
+ {n:'Heart',     c:['#0b7a45','#2fd06a','#8dffb0','#ff7ad9'],b:[5,0,5,0],sp:.9, ch:tri(87.31),chakra:1},
+ {n:'Throat',    c:['#0a6f9e','#2fb8ff','#8ae6ff','#e0f8ff'],b:[4,2,6,0],sp:1,  ch:tri(98),chakra:1},
+ {n:'Third Eye', c:['#2a1a9e','#5a4bff','#9a8bff','#e0d4ff'],b:[4,7,8,0],sp:.7, ch:tri(110),chakra:1},
+ {n:'Crown',     c:['#6a1fb0','#c77dff','#f0d4ff','#ffffff'],b:[6,0,6,0],sp:.5, ch:tri(123.47),chakra:1},
+ {n:'Vaikuntha',c:['#6b390b','#bd812d','#f3c66f','#fff0c4'],b:[6,2,8,0],sp:.6,ch:[65.41,98,130.81,196],gold:1}, // divine gold: the default core
+ {n:'Flow',  c:null,b:[5,0,5,0],sp:1,ch:null}
+].map(m=>({...m,rgb:m.c&&m.c.map(hex)}));
+const FL=MODES.filter(m=>m.c&&!m.chakra&&!m.gold),CHK=MODES.filter(m=>m.chakra),DEF=MODES.findIndex(m=>m.gold);
+let mode=DEF,flowI=0,clock=0,pulse=0,wt=99,wa=1,hit=[0,0,1],asp=1,sc=.9,aud=0;
+const cv=document.getElementById('c');
+const gl=cv.getContext('webgl',{antialias:false,alpha:true,premultipliedAlpha:true});
+const chord=()=>MODES[mode].ch||FL[flowI].ch;
+// ---------- sound: generative, no audio files ----------
+const A={ctx:null,on:false,touched:false};
+const snd=document.getElementById('snd');
+function tune(ch,tc){if(!A.ctx||!ch)return;A.osc.forEach(([o,i])=>o.frequency.setTargetAtTime(ch[i],A.ctx.currentTime,tc||1.2));
+ if(A.bL){const BEATS={Sleep:2.5,Focus:6,Calm:4,Heal:8,Awaken:14,Aurora:6,Ember:10,Vaikuntha:3,Flow:6};const b=BEATS[MODES[mode].n]||6;const base=MODES[mode].n==='Sleep'?82:110;
+  A.bL.frequency.setTargetAtTime(base,A.ctx.currentTime,1.5);A.bR.frequency.setTargetAtTime(base+b,A.ctx.currentTime,1.5)}
+ if(A.rain){const nm=MODES[mode].n;let rv=0,oc=0,ck=0;
+  if(nm==='Sleep')ck=.06;else if(nm==='Heal'||nm==='Aurora')oc=.07;else if(nm==='Calm'||nm==='Vaikuntha')oc=.04;
+  else if(nm==='Ember'||nm==='Awaken')rv=.05;else rv=.03;
+  const t2=A.ctx.currentTime;A.rain.gain.setTargetAtTime(rv,t2,3);A.ocean.gain.setTargetAtTime(oc,t2,3);A.crickets.gain.setTargetAtTime(ck,t2,3)}}
+function initAudio(){
+ if(A.ctx){A.ctx.resume&&A.ctx.resume();return}
+ const C=window.AudioContext||window.webkitAudioContext;if(!C)return;
+ const c=A.ctx=new C(),master=A.master=c.createGain();master.gain.value=0;master.connect(c.destination);
+ A.an=c.createAnalyser();A.an.fftSize=256;A.buf=new Uint8Array(256);master.connect(A.an);
+ const len=c.sampleRate*3,ir=c.createBuffer(2,len,c.sampleRate);
+ for(let ch=0;ch<2;ch++){const d=ir.getChannelData(ch);for(let i=0;i<len;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/len,2.5)}
+ const rev=c.createConvolver();rev.buffer=ir;const rg=c.createGain();rg.gain.value=.55;rev.connect(rg);rg.connect(master);
+ const bus=A.bus=c.createGain();bus.connect(master);bus.connect(rev);
+ const f=A.f=c.createBiquadFilter();f.type='lowpass';f.frequency.value=400;f.Q.value=.6;
+ const dg=A.dg=c.createGain();dg.gain.value=.1;f.connect(dg);dg.connect(bus);
+ A.osc=[];
+ for(let i=0;i<4;i++)for(const dt of[-5,5]){const o=c.createOscillator(),g=c.createGain();o.type=i<2?'sine':'triangle';o.detune.value=dt;g.gain.value=.2;o.connect(g);g.connect(f);o.start();A.osc.push([o,i])}
+ const nb=c.createBuffer(1,c.sampleRate*2,c.sampleRate),nd=nb.getChannelData(0);for(let i=0;i<nd.length;i++)nd[i]=Math.random()*2-1;
+ const ns=c.createBufferSource();ns.buffer=nb;ns.loop=true;const bp=c.createBiquadFilter();bp.type='bandpass';bp.frequency.value=900;bp.Q.value=.7;
+ const ng=A.ng=c.createGain();ng.gain.value=0;ns.connect(bp);bp.connect(ng);ng.connect(bus);ns.start();
+ const co=A.co=c.createOscillator(),cg=A.cg=c.createGain();co.type='triangle';cg.gain.value=0;co.connect(cg);cg.connect(bus);co.start(); // charge tone
+ const ho=c.createOscillator(),hg=c.createGain();ho.type='sine';ho.frequency.value=55;hg.gain.value=0;ho.connect(hg);hg.connect(bus);ho.start();A.hg=hg;A.ho=ho; // hold drone
+ A.bL=c.createOscillator();A.bR=c.createOscillator();A.bL.type='sine';A.bR.type='sine';A.bL.frequency.value=110;A.bR.frequency.value=116;
+ const bg2=c.createGain();bg2.gain.value=.045;
+ if(c.createStereoPanner){const pl=c.createStereoPanner();pl.pan.value=-1;A.bL.connect(pl);pl.connect(bg2);const pr=c.createStereoPanner();pr.pan.value=1;A.bR.connect(pr);pr.connect(bg2)}
+ else{A.bL.connect(bg2);A.bR.connect(bg2)}
+ bg2.connect(master);A.bL.start();A.bR.start(); // binaural beat (headphones): Sleep delta 2.5Hz, Focus theta 6Hz, Heal alpha 8Hz
+ const rn=c.createBufferSource();rn.buffer=nb;rn.loop=true; // rain
+ const rbp=c.createBiquadFilter();rbp.type='bandpass';rbp.frequency.value=2800;rbp.Q.value=.4;
+ A.rain=c.createGain();A.rain.gain.value=0;rn.connect(rbp);rbp.connect(A.rain);A.rain.connect(master);rn.start();
+ const ocN=c.createBufferSource();ocN.buffer=nb;ocN.loop=true; // ocean
+ const olp=c.createBiquadFilter();olp.type='lowpass';olp.frequency.value=320;
+ const olfo=c.createOscillator();olfo.frequency.value=.09;const olg=c.createGain();olg.gain.value=140;olfo.connect(olg);olg.connect(olp.frequency);olfo.start();
+ A.ocean=c.createGain();A.ocean.gain.value=0;ocN.connect(olp);olp.connect(A.ocean);A.ocean.connect(master);ocN.start();
+ const cr=c.createOscillator();cr.type='sine';cr.frequency.value=4300; // night crickets
+ const crg=c.createGain();crg.gain.value=0;A.crickets=c.createGain();A.crickets.gain.value=0;
+ const clfo=c.createOscillator();clfo.frequency.value=11;const clg=c.createGain();clg.gain.value=.5;clfo.connect(clg);clg.connect(crg.gain);clfo.start();
+ cr.connect(crg);crg.connect(A.crickets);A.crickets.connect(master);cr.start();
+ tune(chord(),.01);
+}
+function setSound(on){
+ A.on=on;snd.setAttribute('aria-pressed',on);
+ if(on){initAudio()}
+ if(A.ctx)A.master.gain.setTargetAtTime(on?.8:0,A.ctx.currentTime,.4);
+}
+function chime(f,v){ // singing-bowl strike: inharmonic partials, each with its own decay
+ if(!A.ctx||!A.on)return;const c=A.ctx,t0=c.currentTime;
+ [[1,1,3.6],[2.76,.45,2.2],[5.4,.22,1.3],[8.93,.1,.8]].forEach(([r,g,d])=>{
+  const o=c.createOscillator(),e=c.createGain();o.type='sine';o.frequency.value=f*r;
+  e.gain.setValueAtTime(0,t0);e.gain.linearRampToValueAtTime(.16*g*v,t0+.01);e.gain.exponentialRampToValueAtTime(.0001,t0+d);
+  o.connect(e);e.connect(A.bus);o.start(t0);o.stop(t0+d+.1)})}
+function pluck(f,v){ // soft mallet tap
+ if(!A.ctx||!A.on)return;const c=A.ctx,t0=c.currentTime;
+ const o=c.createOscillator(),e=c.createGain();o.type='sine';o.frequency.value=f;
+ e.gain.setValueAtTime(0,t0);e.gain.linearRampToValueAtTime(.14*(v||1),t0+.006);e.gain.exponentialRampToValueAtTime(.0001,t0+.5);
+ o.connect(e);e.connect(A.bus);o.start(t0);o.stop(t0+.6)}
+function sweep(){ // session start: rising harmonic shimmer
+ if(!A.ctx||!A.on)return;const c=A.ctx,t0=c.currentTime;
+ chord().forEach((f,i)=>{const o=c.createOscillator(),e=c.createGain();o.type='sine';o.frequency.setValueAtTime(f*.5,t0);
+  o.frequency.exponentialRampToValueAtTime(f*2,t0+1.1+i*.14);e.gain.setValueAtTime(0,t0);
+  e.gain.linearRampToValueAtTime(.09,t0+.15+i*.1);e.gain.exponentialRampToValueAtTime(.0001,t0+2.4+i*.15);
+  o.connect(e);e.connect(A.bus);o.start(t0);o.stop(t0+2.8)})
+ chime(chord()[0]*4,.9)}
+snd.addEventListener('click',()=>{A.touched=true;setSound(true)});
+function ensureAmbient(){if(!A.on){A.touched=true;setSound(true)}else if(A.ctx&&A.ctx.state==='suspended')A.ctx.resume();}
+document.addEventListener('visibilitychange',()=>{if(A.ctx&&A.on)document.hidden?A.ctx.suspend():A.ctx.resume()});
+function setModeIdx(i){mode=i;clock=0;tune(chord());chime(chord()[0]*4,.7);pulse=.6;const cb=document.getElementById('col');if(cb)cb.setAttribute('aria-pressed',MODES[i].n==='Flow'?'true':'false')}
+// ---------- chakra stages, voice, tilt, guided sessions ----------
+const $=id=>document.getElementById(id);
+const mic=$('mic'),tiltB=$('tilt'),chkB=$('chk'),sesB=$('ses'),pop=$('pop'),hud=$('hud'),hw=$('hw'),hs=$('hs');
+let voice=0,tiltOn=false,tiltV=[0,0],hudW='',hudS='',popOpen='',drawOn=false,gameOn=false,gameScore=0,gameT=0,gameOverT=0;
+const V={on:false,an:null,buf:null,prev:0,stream:null,ctx:null};
+const TL={on:false,steps:[],i:0,t:0,el:0,total:0,title:''};
+const clamp1=v=>Math.max(-1,Math.min(1,v));
+async function setMic(on){ // the orb swells and ripples with your voice; audio never leaves the device
+ if(!on){V.on=false;mic.setAttribute('aria-pressed','false');if(V.stream){V.stream.getTracks().forEach(t=>t.stop());V.stream=null}return}
+ try{const st=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true}});
+  const C=window.AudioContext||window.webkitAudioContext;V.ctx=V.ctx||new C();await V.ctx.resume();
+  const an=V.ctx.createAnalyser();an.fftSize=512;V.ctx.createMediaStreamSource(st).connect(an);
+  V.an=an;V.buf=new Uint8Array(512);V.fbuf=new Uint8Array(256);V.beatP=0;V.refr=0;V.stream=st;V.on=true;mic.setAttribute('aria-pressed','true')}
+ catch(e){V.on=false;mic.setAttribute('aria-pressed','false')}}
+function onTilt(e){if(e.gamma==null)return;tiltV=[clamp1(e.gamma/30),clamp1(-((e.beta==null?50:e.beta)-50)/30)]}
+function onShake(e){const a=e.accelerationIncludingGravity;if(!a)return;
+ if(Math.hypot(a.x||0,a.y||0,a.z||0)>26&&wt>.8){impact(Math.random()*2-1,Math.random()*2-1,.8);chime(chord()[1]*4,.8)}}
+async function setTilt(on){ // phone tilt steers the orb and pulls the sparks like gravity; a shake sends a shockwave
+ if(on&&window.DeviceOrientationEvent&&DeviceOrientationEvent.requestPermission){try{if(await DeviceOrientationEvent.requestPermission()!=='granted')on=false}catch(e){on=false}}
+ tiltOn=on;tiltB.setAttribute('aria-pressed',on?'true':'false');
+ if(on){addEventListener('deviceorientation',onTilt);addEventListener('devicemotion',onShake)}
+ else{removeEventListener('deviceorientation',onTilt);removeEventListener('devicemotion',onShake);tiltV=[0,0]}}
+const fmt=s=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+const SK=['Muladhara','Svadhisthana','Manipura','Anahata','Vishuddha','Ajna','Sahasrara'];
+// session = the app's own structure: teaching 30% / practice 50% / reflection 20% / integration
+function sessionPlan(min){const T=min*60;return[{label:'Teaching',dur:T*.3,mode:'Calm'},{label:'Practice',dur:T*.5,mode:min<5?'Heal':'Focus'},{label:'Reflection',dur:T*.2,mode:'Aurora'},{label:'Integration',dur:Math.min(8,2+T*.05),mode:'Calm'}]}
+function ascendPlan(){return CHK.map((m,i)=>({label:m.n+' · '+SK[i],dur:60,mode:m.n}))}
+function speakLine(line){if(!line||!('speechSynthesis' in window))return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(line);u.rate=.78;u.pitch=.82;u.volume=.82;speechSynthesis.speak(u)}catch(e){}}
+function applyStep(){const s=TL.steps[TL.i],i=MODES.findIndex(m=>m.n===s.mode);if(i>=0)setModeIdx(i);speakLine(s.say);
+ window.dispatchEvent(new CustomEvent('oversoul:phase',{detail:{label:s.label,index:TL.i,count:TL.steps.length,type:TL.title}}))}
+function startTimeline(steps,title){gameOn=false;gameOverT=0;sweep();soulLoop=false;try{speechSynthesis.cancel()}catch(e){};$('stopX').classList.remove('show');ensureAmbient();TL.on=true;TL.steps=steps;TL.i=0;TL.t=0;TL.el=0;TL.total=steps.reduce((a,s)=>a+s.dur,0);TL.title=title;
+ applyStep();closePop();$('hint').textContent=title+' · '+fmt(TL.total)+' · breathe with the orb'}
+function observationPlan(min){const T=min*60;return[{label:'Arrive · settle',dur:T*.18,mode:'Calm',say:'Become still. Let the body settle. There is nothing to fix.'},{label:'Observe the body',dur:T*.22,mode:'Heal',say:'Notice the body as sensation. Feel it. Observe it. You are the awareness noticing the body.'},{label:'Observe the mind',dur:T*.25,mode:'Focus',say:'Thoughts may come and go. Do not follow them. You are not your mind. You are the one who notices the mind.'},{label:'Rest as the witness',dur:T*.25,mode:'Aurora',say:'Rest as the witness. Let every sound, thought and sensation arise and pass.'},{label:'Integrate',dur:T*.10,mode:'Calm',say:'Carry this quiet attention into your next action. Slowly return.'}]}
+function omPlan(min){const T=min*60;return[{label:'Prepare',dur:T*.15,mode:'Calm',say:'Sit comfortably. Soften your face. Take a gentle breath.'},{label:'Om · first resonance',dur:T*.25,mode:'Heal',say:'Inhale gently. As you exhale, chant Om. Aaa... Uuu... Mmm... feel the vibration.'},{label:'Om · deep resonance',dur:T*.35,mode:'Aurora',say:'Om. Let the sound arise from within. Feel the vibration through the chest, throat and head. Om.'},{label:'Silence after Om',dur:T*.15,mode:'Sleep',say:'Now remain silent. Listen to the stillness after the sound.'},{label:'Return',dur:T*.10,mode:'Calm',say:'Take a soft breath. Feel the ground beneath you. Slowly open your eyes.'}]}
+const SOUL=[
+ 'I am not my body.',
+ 'I am not my mind.',
+ 'I am the soul. The pure, infinite consciousness.',
+ 'I am not my thoughts. I am the one who witnesses the thoughts.',
+ 'I am not my feelings. I am the silence in which feelings arise.',
+ 'Meditation is not something I do. It is a state of being. My natural state.',
+ 'I am pure awareness. I am eternal. I am whole.',
+ 'I rest in the silence behind all sound. I am that.'
+];
+let soulLoop=false;
+function speakLoop(i){
+ if(!soulLoop||!('speechSynthesis' in window))return;
+ try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(SOUL[i%SOUL.length]);
+ u.rate=.74;u.pitch=.8;u.volume=.85;
+ u.onend=()=>{if(soulLoop)setTimeout(()=>speakLoop(i+1),500)};
+ speechSynthesis.speak(u)}catch(e){soulLoop=false;$('stopX').classList.remove('show')}}
+function startSoulSession(){
+ ensureAmbient();gameOn=false;gameOverT=0;sweep();TL.on=false;closePop();
+ const mi=MODES.findIndex(m=>m.n==='Aurora');if(mi>=0)setModeIdx(mi);
+ soulLoop=true;
+ hudW='I am the soul';hw.textContent=hudW;hudS='pure infinite consciousness';hs.textContent=hudS;
+ speakLoop(0);$('stopX').classList.add('show');
+ $('hint').textContent='Infinite consciousness · tap the cross to stop'}
+function stopSoulSession(){
+ soulLoop=false;try{speechSynthesis.cancel()}catch(e){}
+ TL.on=false;$('stopX').classList.remove('show');
+ $('hint').textContent='Hold for time · Double tap for the I Am session · Triple tap for Om';
+ wt=0;wa=1;hit=[0,0,1];pulse=1;glitch=1}
+$('stopX').onclick=stopSoulSession;
+function startGame(min){
+ ensureAmbient();sweep();TL.on=false;soulLoop=false;try{speechSynthesis.cancel()}catch(e){};$('stopX').classList.remove('show');
+ const mi=MODES.findIndex(m=>m.n==='Calm');if(mi>=0)setModeIdx(mi);
+ gameOn=true;gameOverT=0;gameT=(min||2)*60;gameScore=0;flies.length=0;
+ for(let i=0;i<7;i++)flies.push({a:Math.random()*6.283,r:.28+Math.random()*.3,s:(.3+Math.random()*.5)*(i%2?1:-1),ph:Math.random()*9,fx:0,fy:0});
+ closePop();pulse=1;$('hint').textContent='Catch the fireflies — tap them before time runs out'}
+function endGame(){gameOn=false;gameOverT=5;fw=1;sweep();chime(chord()[0]*4,1);
+ $('hint').textContent='Hold for time · Triple tap for I Am · Five taps for fireflies'}
+function askGameTime(){closePop();popOpen='time';pop.innerHTML='<div class="ask-title">Catch fireflies · choose duration</div>';
+ [1,2,3,5].forEach(n=>chip(n+' min',()=>startGame(n)));pop.classList.add('show','timeask');$('hint').textContent='How long do you want to play?'}
+function drawGame(dt,tn){
+ if(!gctx)return;const w=gc2.width,h=gc2.height;if(!w||!h)return;
+ const cx=w/2,cy=h/2,ory=.52*sc*h/2,orx=ory*asp;
+ gctx.clearRect(0,0,w,h);
+ for(const f of flies){f.a+=f.s*dt*(1+pulse*.6);
+  const wob=Math.sin(tn*2.3+f.ph)*.05;
+  f.fx=cx+Math.cos(f.a)*orx*(f.r+wob);f.fy=cy+Math.sin(f.a)*ory*(f.r+wob);
+  const tw=.65+.35*Math.sin(tn*7+f.ph*9),R=7+3*tw;
+  const g=gctx.createRadialGradient(f.fx,f.fy,0,f.fx,f.fy,R*4);
+  g.addColorStop(0,'rgba(255,240,200,'+(.9*tw)+')');g.addColorStop(.3,'rgba(255,210,120,'+(.45*tw)+')');g.addColorStop(1,'rgba(255,190,80,0)');
+  gctx.fillStyle=g;gctx.beginPath();gctx.arc(f.fx,f.fy,R*4,0,7);gctx.fill();
+  gctx.fillStyle='rgba(255,250,230,'+tw+')';gctx.beginPath();gctx.arc(f.fx,f.fy,2.2,0,7);gctx.fill()}}
+function askTime(kind){closePop();popOpen='time';pop.innerHTML='<div class="ask-title">Choose session duration · '+(kind==='observe'?'Observation':'Om meditation')+'</div>';[1,3,5,10,15,20].forEach(n=>chip(n+' min',()=>startTimeline(kind==='observe'?observationPlan(n):omPlan(n),kind==='observe'?'Observation':'Om meditation')));pop.classList.add('show','timeask');$('hint').textContent='Choose how long you want to sit'}
+function closePop(){popOpen='';pop.classList.remove('show','timeask');chkB.setAttribute('aria-expanded','false');sesB.setAttribute('aria-expanded','false')}
+function chip(t,f){const b=document.createElement('button');b.className='chip';b.type='button';b.textContent=t;b.onclick=f;pop.appendChild(b)}
+function showPop(k){if(popOpen===k)return closePop();closePop();popOpen=k;pop.innerHTML='';
+ if(k==='chk'){CHK.forEach(m=>{const b=document.createElement('button');b.className='dot';b.type='button';b.style.background=m.c[1];b.title=m.n;b.setAttribute('aria-label',m.n);
+   b.onclick=()=>{TL.on=false;setModeIdx(MODES.indexOf(m))};pop.appendChild(b)});
+  chip('Ascend · 7 min',()=>startTimeline(ascendPlan(),'Ascend'))}
+ else{if(TL.on)chip('End session',()=>{TL.on=false;closePop()});else[3,5,10].forEach(n=>chip(n+' min',()=>startTimeline(sessionPlan(n),'Session')))}
+ pop.classList.add('show');(k==='chk'?chkB:sesB).setAttribute('aria-expanded','true')}
+chkB.onclick=()=>showPop('chk');sesB.onclick=()=>showPop('ses');mic.onclick=()=>setMic(!V.on);tiltB.onclick=()=>setTilt(!tiltOn);
+$('col').onclick=()=>window.OversoulOrb.setMode(MODES[mode].n==='Flow'?'Vaikuntha':'Flow'); // gold <-> full spectrum
+$('ink').onclick=()=>{drawOn=!drawOn;$('ink').setAttribute('aria-pressed',drawOn?'true':'false')}; // cosmic ink
+$('star').onclick=()=>{galT=0}; // constellation bloom
+const NM=s=>String(s).toLowerCase().replace(/[^a-z]/g,'');
+const GATE={morning:'Awaken',midday:'Focus',evening:'Heal',night:'Sleep'};
+window.OversoulOrb={pulse:()=>{wt=0;wa=1;pulse=1;chime(chord()[2]*2,.8)},sound:setSound,listen:setMic,tilt:setTilt,
+ setMode:n=>{const i=MODES.findIndex(m=>NM(m.n)===NM(n));if(i>=0){TL.on=false;setModeIdx(i)}},
+ setChakra:n=>{const i=typeof n==='number'?MODES.indexOf(CHK[n-1]):MODES.findIndex(m=>m.chakra&&NM(m.n)===NM(n));if(i>=0){TL.on=false;setModeIdx(i)}},
+ setGate:g=>{const n=GATE[NM(g)];if(n)window.OversoulOrb.setMode(n)},
+ startSession:(min,type)=>startTimeline(sessionPlan(min||5),'Session'),ascend:()=>startTimeline(ascendPlan(),'Ascend'),stop:()=>{TL.on=false},soul:startSoulSession,stopSoul:stopSoulSession,constellation:()=>{galT=0},draw:v=>{drawOn=!!v;$('ink').setAttribute('aria-pressed',drawOn?'true':'false')},game:startGame};
+function impact(x,y,amp){const Rv=.58,hx=x*asp/sc/Rv,hy=y/sc/Rv,l=hx*hx+hy*hy;
+ hit=l>1?[hx/Math.sqrt(l),hy/Math.sqrt(l),0]:[hx,hy,Math.sqrt(1-l)];wt=0;wa=amp;if(amp>.9)pulse=1}
+if(!gl){document.getElementById('err').style.display='grid'}
+else{
+ const prog=(v,f)=>{const P=gl.createProgram();
+  for(const [t,s] of [[gl.VERTEX_SHADER,v],[gl.FRAGMENT_SHADER,f]]){
+   const S=gl.createShader(t);gl.shaderSource(S,s);gl.compileShader(S);
+   if(!gl.getShaderParameter(S,gl.COMPILE_STATUS))console.error(gl.getShaderInfoLog(S));gl.attachShader(P,S)}
+  gl.linkProgram(P);return P};
+ const PP=prog(PVS,PFS),HP=prog(HVS,HFS),BP=prog(QVS,BFS),CP=prog(QVS,CFS),LP=prog(LVS,LFS),TP=prog(TVS,TFS);
+ const N=240000,seed=new Float32Array(N*4);
+ for(let i=0;i<N;i++){const z=Math.random()*2-1,ph=Math.random()*6.2831853,s=Math.sqrt(1-z*z);
+  seed.set([s*Math.cos(ph),z,s*Math.sin(ph),Math.random()],i*4)}
+ const sb=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,sb);gl.bufferData(gl.ARRAY_BUFFER,seed,gl.STATIC_DRAW);
+ const qb=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,qb);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+ const U=(p,n)=>gl.getUniformLocation(p,n),pu={},hu={};
+ ['uT','uAsp','uPulse','uPx','uS','uB','uPS','uWT','uWA','uBloom','uAud','uIn','uCh','uScan','uG','uHue','uSpec','uGold','uSq','uGal','uFw','uMT','uM','uPtr','uG','uT1','uT2','uHit','uC0','uC1','uC2','uC3'].forEach(n=>pu[n]=U(PP,n));
+ ['uRes','uM','uS','uB','uPulse','uAud','uT','uR','uCh','uHue','uSpec','uRing','uC0','uC1','uC2','uC3'].forEach(n=>hu[n]=U(HP,n));
+ const bu={uTex:U(BP,'uTex'),uDir:U(BP,'uDir')},cu={uS:U(CP,'uS'),uBl:U(CP,'uBl'),uT:U(CP,'uT'),uAud:U(CP,'uAud'),uBloomK:U(CP,'uBloomK'),uGl:U(CP,'uGl')};
+ // lattice geometry: 72 nodes (Fibonacci sphere), links between neighbours, each link slerped into 10 segments
+ const NN=72,nd=[];
+ for(let i=0;i<NN;i++){const y=1-2*(i+.5)/NN,r=Math.sqrt(1-y*y),a=i*2.399963;nd.push([Math.cos(a)*r,y,Math.sin(a)*r])}
+ const lv=[];let eid=0;
+ for(let i=0;i<NN;i++)for(let j=i+1;j<NN;j++){const a=nd[i],b=nd[j];
+  if(Math.hypot(a[0]-b[0],a[1]-b[1],a[2]-b[2])<.56){eid++;const id=eid*.137,SG=10;
+   const om=Math.acos(Math.max(-1,Math.min(1,a[0]*b[0]+a[1]*b[1]+a[2]*b[2])));
+   for(let q=0;q<SG;q++)for(const u of[q/SG,(q+1)/SG]){const A1=Math.sin((1-u)*om)/Math.sin(om),B1=Math.sin(u*om)/Math.sin(om);
+    lv.push(A1*a[0]+B1*b[0],A1*a[1]+B1*b[1],A1*a[2]+B1*b[2],u,id)}}}
+ const lines=new Float32Array(lv),lcount=lines.length/5,npts=new Float32Array(NN*5);
+ nd.forEach((p,i)=>npts.set([p[0],p[1],p[2],.5,i*.31+.05],i*5));
+ const lb=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,lb);gl.bufferData(gl.ARRAY_BUFFER,lines,gl.STATIC_DRAW);
+ const nb2=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,nb2);gl.bufferData(gl.ARRAY_BUFFER,npts,gl.STATIC_DRAW);
+const tb=gl.createBuffer();const TB=48;const tdata=new Float32Array(TB*3);
+const tu={aP:gl.getAttribLocation(TP,'aP'),aA:gl.getAttribLocation(TP,'aA'),uAsp:U(TP,'uAsp'),uS:U(TP,'uS'),uC:U(TP,'uC')};
+ const lD=gl.getAttribLocation(LP,'aD'),lS=gl.getAttribLocation(LP,'aS'),lu={};
+ ['uT','uAsp','uS','uB','uPulse','uAud','uIn','uWT','uWA','uCh','uScan','uPts','uPx','uPS','uHue','uSpec','uGal','uFw','uSq','uMT','uM','uPtr','uT1','uT2','uHit','uC1','uC3'].forEach(n=>lu[n]=U(LP,n));
+ const gc2=document.getElementById('gc'),gctx=gc2?gc2.getContext('2d'):null;
+ const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const dpr0=Math.min(devicePixelRatio||1,2);let rs=2.0; // render 2x then downsample = crisp HD edges
+ const T={};
+ const mkTex=()=>{const t=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,t);
+  for(const [k,v] of [[gl.TEXTURE_MIN_FILTER,gl.LINEAR],[gl.TEXTURE_MAG_FILTER,gl.LINEAR],[gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE],[gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE]])gl.texParameteri(gl.TEXTURE_2D,k,v);return t};
+ function target(name,w,h){const o=T[name]||(T[name]={t:mkTex(),f:gl.createFramebuffer()});o.w=w;o.h=h;
+  gl.bindTexture(gl.TEXTURE_2D,o.t);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,w,h,0,gl.RGBA,gl.UNSIGNED_BYTE,null);
+  gl.bindFramebuffer(gl.FRAMEBUFFER,o.f);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,o.t,0);gl.bindFramebuffer(gl.FRAMEBUFFER,null)}
+ function resize(){const k=Math.min(dpr0*rs,4096/Math.max(cv.clientWidth,cv.clientHeight,1)),w=Math.floor(cv.clientWidth*k),h=Math.floor(cv.clientHeight*k);
+  if(w&&h&&(cv.width!==w||cv.height!==h)){cv.width=w;cv.height=h;if(gc2){gc2.width=cv.clientWidth;gc2.height=cv.clientHeight}gl.viewport(0,0,w,h);
+   const bw=Math.max(2,w>>2),bh=Math.max(2,h>>2);target('s',w,h);target('a',bw,bh);target('b',bw,bh)}}
+ new ResizeObserver(resize).observe(cv);resize();addEventListener('load',resize);
+ const toNdc=e=>{const r=cv.getBoundingClientRect();return[(e.clientX-r.left)/r.width*2-1,-((e.clientY-r.top)/r.height*2-1)]};
+ let hover=[0,0],ptr=[0,0],inside=0,ps=0,down=false,lx=0,ly=0,ay=0,ax=0,vy=0,vx=0;
+ const cl=(v,m)=>Math.max(-m,Math.min(m,v));
+ addEventListener('pointermove',e=>{const p=toNdc(e);if(pts.has(e.pointerId))pts.set(e.pointerId,p);hover=p;inside=Math.abs(p[0])<1.05&&Math.abs(p[1])<1.05?1:0;
+  if(down){vy=cl(vy+(e.clientX-lx)*.012,7);vx=cl(vx+(e.clientY-ly)*.012,7)}lx=e.clientX;ly=e.clientY});
+ const trail=[];const pts=new Map();let pinchD0=1,wasPinch=false;
+const flies=[];
+let tapCount=0,tapTimer=null,longPress=false,pressStarted=0;
+ cv.addEventListener('pointerdown',e=>{down=true;hold=0;pressStarted=performance.now();longPress=false;lx=e.clientX;ly=e.clientY;const p=toNdc(e);pts.set(e.pointerId,p);
+ if(pts.size===2){const a=[...pts.values()];pinchD0=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1])||1;wasPinch=true;tapCount=0;clearTimeout(tapTimer)}
+ if(pts.size===1){ensureAmbient();chime(chord()[Math.max(0,Math.min(3,Math.floor((p[0]+1)/2*4)))]*(p[1]>0?4:2),.65);pluck(220+ (p[0]+1)*220,.5);impact(p[0],p[1],.8);
+  if(gameOn){let hf=null;for(const f of flies){if(Math.hypot(e.clientX-f.fx,e.clientY-f.fy)<52){hf=f;break}}
+   if(hf){gameScore++;chime(660+gameScore*70,.9);pluck(520+gameScore*40,.8);impact(p[0],p[1],.7);pulse=Math.max(pulse,.5);
+    hf.a=Math.random()*6.283;hf.r=.28+Math.random()*.3;hf.s=(.3+Math.random()*.5)*(Math.random()<.5?1:-1)}}}});
+ cv.addEventListener('pointerup',e=>{
+  const held=(performance.now()-pressStarted)/1000;
+  const wasP=wasPinch;pts.delete(e.pointerId);if(pts.size<2)wasPinch=false;
+  if(wasP&&pts.size===1){impact(0,0,1.2);pulse=1;glitch=1;chime(chord()[3]*4,1)} // pinch release = explosion
+  if(down&&held>.65&&pts.size===0){longPress=true;clearTimeout(tapTimer);tapCount=0;askTime('observe');}
+  else if(down){tapCount++;clearTimeout(tapTimer);tapTimer=setTimeout(()=>{if(tapCount>=5)askGameTime();else if(tapCount>=3)startSoulSession();tapCount=0},430)}
+  if(down&&held>.3){wt=0;wa=.7;hit=[0,0,1];pulse=1;glitch=.6}
+  down=false;hold=0});
+ cv.addEventListener('pointercancel',e=>{pts.delete(e.pointerId);if(pts.size<2)wasPinch=false;down=false;hold=0;clearTimeout(tapTimer);tapCount=0});
+ const pal=MODES[mode].rgb.map(c=>c.slice());
+ const ease=x=>x*x*x*(x*(x*6.-15.)+10.);
+ let last=performance.now(),time=0,slow=0,count=N,B=0,spd=1,lastPh=0,intro=still?1:0,charge=0,glitch=0,hold=0,scan=9,scanC=0,hueC=0,specC=.03,goldC=1,mtS=0,sqS=0,fw=0,gal=0,galT=-1,ringT=9,drumT=0,resV=0,omCool=0;
+ function frame(now){
+  const dt=Math.max(0,Math.min((now-last)/1000,.1));last=now;requestAnimationFrame(frame);
+  slow=slow*.95+dt*.05;
+  if(slow>.03){if(rs>1.01){rs=Math.max(1,rs-.1);resize();slow=.02}else if(count>40000)count=Math.floor(count*.92)} // slow device: drop supersampling first, then particles
+  const m=MODES[mode];
+  spd+=(m.sp-spd)*Math.min(dt*2,1);
+  time+=dt*spd*(still?.2:1);clock+=dt;wt+=dt;
+  vy*=Math.exp(-dt*1.1);ay+=(vy+.1*spd)*dt;
+  vx+=((hover[1]*.35*inside-ax)*6-vx*2.5)*dt;ax+=vx*dt;
+  ps+=(inside-ps)*Math.min(dt*4,1);
+  asp=cv.width/cv.height;sc=Math.min(.95,asp*.8);
+  const tp=[hover[0]*asp/sc,hover[1]/sc];
+  ptr[0]+=(tp[0]-ptr[0])*Math.min(dt*10,1);ptr[1]+=(tp[1]-ptr[1])*Math.min(dt*10,1);
+  let mtT=0,sqT=0;const tA=[0,0],tB=[0,0];
+  if(pts.size===2){const a=[...pts.values()];const d=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1])||1;
+   tA[0]=a[0][0]*asp/sc;tA[1]=a[0][1]/sc;tB[0]=a[1][0]*asp/sc;tB[1]=a[1][1]/sc;
+   mtT=1;sqT=Math.max(0,Math.min(1,(pinchD0-d)/pinchD0*1.8));}
+  mtS+=(mtT-mtS)*Math.min(dt*8,1);sqS+=(sqT-sqS)*Math.min(dt*8,1);
+  for(let i=trail.length-1;i>=0;i--){trail[i].a-=dt*.75;if(trail[i].a<=0)trail.splice(i,1)}
+  if(down&&drawOn&&pts.size===1){const lt=trail[trail.length-1];if(!lt||Math.hypot(tp[0]-lt.x,tp[1]-lt.y)>.015){if(trail.length>=TB)trail.shift();trail.push({x:tp[0],y:tp[1],a:1})}}
+  pulse=Math.max(0,pulse-dt*.7);
+  if(down){hold+=dt;charge=Math.min(1,Math.max(0,(hold-.25)/2))}else charge=Math.max(0,charge-dt*1.6);
+  glitch=Math.max(0,glitch-dt*3);
+  if(galT>=0){galT+=dt;gal=galT<1?galT:galT<5?1:galT<7?1-(galT-5)/2:0;if(galT>=7){gal=0;galT=-1}}
+  fw=Math.max(0,fw-dt*.7);
+  if(down&&hold>.3){drumT+=dt;if(drumT>1.15){drumT=0;chime(chord()[Math.floor(hold+.5)%4]*(hold>3?4:2),Math.min(1,.5+hold*.1));pulse=Math.max(pulse,.35)}}else drumT=0;
+  scanC+=dt;{const sp=(scanC%9)/2.4;scan=sp<1?-1.2+2.4*sp:9} // a scan plane sweeps the orb every 9 s
+  if(tiltOn){hover=tiltV;inside=1}
+  if(TL.on){TL.t+=dt;TL.el+=dt;
+   if(TL.t>=TL.steps[TL.i].dur){TL.i++;TL.t=0;
+    if(TL.i>=TL.steps.length){TL.on=false;wt=0;wa=1.4;hit=[0,0,1];pulse=1;glitch=1;fw=1; // session complete: gold firework shower: final shockwave + arpeggio
+     chord().forEach((f,i)=>setTimeout(()=>chime(f*(i%2?4:2),1.1),i*120));
+     window.dispatchEvent(new CustomEvent('oversoul:session-complete',{detail:{seconds:Math.round(TL.el),type:TL.title}}));
+     setTimeout(()=>{if(!TL.on)setModeIdx(DEF)},5000)}
+    else applyStep()}}
+  // palette: Flow slides through every palette (and re-tunes the chord); other modes blend to their own colors
+  let tgt=m.rgb;
+  if(!tgt){const f=clock/9,i=((Math.floor(f)%FL.length)+FL.length)%FL.length,j=(i+1)%FL.length,e=ease(f%1);
+   if(i!==flowI){flowI=i;tune(FL[i].ch)}
+   tgt=FL[i].rgb.map((c,k)=>c.map((v,x)=>v+(FL[j].rgb[k][x]-v)*e))}
+  const kc=Math.min(dt*2.2,1);
+  for(let k=0;k<4;k++)for(let x=0;x<3;x++)pal[k][x]+=(tgt[k][x]-pal[k][x])*kc;
+  // breath: [inhale, hold, exhale, rest]
+  const cyc=m.b.reduce((a,b)=>a+b,0),tc=clock%cyc;let acc=0,ph=0;
+  while(ph<3&&tc>=acc+m.b[ph]){acc+=m.b[ph];ph++}
+  while(m.b[ph]===0&&ph<3)ph++;
+  const pd=m.b[ph],pt=Math.min(tc-acc,pd),p=pd?pt/pd:0;
+  const bt=ph===0?ease(p):ph===1?1:ph===2?1-ease(p):0;
+  B+=(bt-B)*(1-Math.exp(-dt*3.2));
+  if(lastPh===0&&ph!==0){impact(0,0,.45)} // top of the inhale: a soft ripple rolls across the orb
+  if(ph===2&&lastPh!==2)ringT=0; // exhale begins: mandala bloom
+  lastPh=ph;ringT+=dt;
+  if(TL.on){const st=TL.steps[TL.i],w2=['Inhale','Hold','Exhale','Rest'][ph]+' '+Math.ceil(pd-pt),s2=st.label+' · '+fmt(Math.max(0,TL.total-TL.el));
+   if(w2!==hudW){hudW=w2;hw.textContent=w2}if(s2!==hudS){hudS=s2;hs.textContent=s2}hud.classList.add('show')}else if(gameOn){gameT-=dt;if(gameT<=0){endGame();hud.classList.remove('show')}else{hw.textContent='Fireflies '+gameScore;hs.textContent=fmt(gameT)+' left';hud.classList.add('show')}drawGame(dt,time)}
+  else if(gameOverT>0){gameOverT-=dt;hw.textContent='Well done';hs.textContent=gameScore+' fireflies caught';hud.classList.add('show')}
+  else if(soulLoop)hud.classList.add('show');
+  else if(V.on){hw.textContent='Om resonance '+Math.round(resV*100)+'%';hs.textContent='chant Om — or play music, the orb dances to the beat';hud.classList.add('show')}
+  else hud.classList.remove('show');
+  // sound follows the breath: inhale opens the filter and the airy noise, exhale closes them
+  if(A.ctx&&A.on){const t=A.ctx.currentTime;
+   A.co.frequency.setTargetAtTime(chord()[0]*2*(1+charge*1.2),t,.05);A.cg.gain.setTargetAtTime(charge*.05,t,.05);
+   A.hg.gain.setTargetAtTime(down?Math.min(.06,hold*.025):0,t,.12);
+   A.f.frequency.setTargetAtTime(260+B*1800,t,.2);A.dg.gain.setTargetAtTime(.09+B*.09,t,.2);A.ng.gain.setTargetAtTime(.004+B*.035,t,.3);
+   A.an.getByteTimeDomainData(A.buf);let s=0;for(let i=0;i<256;i++){const v=(A.buf[i]-128)/128;s+=v*v}
+   aud+=(Math.min(Math.sqrt(s/256)*5,1)-aud)*Math.min(dt*10,1)}else aud*=.92;
+  if(V.on&&V.an){V.an.getByteTimeDomainData(V.buf);let qq=0;for(let i=0;i<512;i++){const v=(V.buf[i]-128)/128;qq+=v*v}
+   const lv=Math.min(1,Math.sqrt(qq/512)*7);
+   if(lv>.35&&V.prev<.2&&wt>.5)impact((Math.random()-.5)*.6,(Math.random()-.5)*.6,.3); // each spoken onset sends a small ripple
+   V.prev=lv;voice+=(lv-voice)*Math.min(dt*14,1);
+   V.an.getByteFrequencyData(V.fbuf);let low=0,tot=0,band=0;
+   for(let i=0;i<128;i++){const v=V.fbuf[i]/255;tot+=v;if(i<8)low+=v;if(i>0&&i<7)band+=v}
+   const raw=tot>.04?band/tot:0;resV=resV*.75+raw*.25;
+   const bl2=low/8;
+   if(bl2>.22&&bl2>V.beatP*1.35&&V.refr<=0&&wt>.6){impact((Math.random()-.5)*.7,(Math.random()-.5)*.7,.35);glitch=Math.max(glitch,.35);pulse=Math.max(pulse,.3);V.refr=.26} // music beat
+   V.refr=Math.max(0,V.refr-dt);V.beatP+=(bl2-V.beatP)*Math.min(dt*8,1);
+   if(resV>.62){omCool-=dt;if(omCool<=0){omCool=2.5;pulse=Math.max(pulse,.7);impact(0,0,.5);chime(chord()[1]*2,.5)}} // sustained Om resonates
+  }else voice*=.9;
+  const ad=Math.min(1,aud+voice*1.2);
+  // spectrum: Flow sweeps the whole hue wheel; named modes only shimmer around their own palette; chakras barely move
+  const specT=TL.on||soulLoop?(.9+.1*Math.sin(time*.4)):(m.rgb?(m.gold?.04:m.chakra?.14:.55):1);specC+=(specT-specC)*Math.min(dt*1.5,1);goldC+=((m.gold?1:0)-goldC)*Math.min(dt*2,1);
+  const hT=m.rgb?Math.sin(time*.3)*.5*specC:(time*.25)%6.2831853;
+  {const dh=((hT-hueC+Math.PI)%6.2831853+6.2831853)%6.2831853-Math.PI;hueC+=dh*Math.min(dt*2,1)}
+  const pl=pulse*pulse;
+  if(!T.s)return;
+  intro=Math.min(1,intro+dt/2.4);const inn=1-Math.pow(1-intro,3); // the orb blooms into existence
+  const Rr=(.52+.105*B+pl*.04+ad*.03)*inn*(1-charge*.12);
+  gl.bindFramebuffer(gl.FRAMEBUFFER,T.s.f);gl.viewport(0,0,T.s.w,T.s.h);
+  gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);
+  gl.enable(gl.BLEND);gl.blendFuncSeparate(gl.ONE,gl.ONE_MINUS_SRC_COLOR,gl.ONE,gl.ONE_MINUS_SRC_ALPHA);
+  gl.useProgram(HP);gl.bindBuffer(gl.ARRAY_BUFFER,qb);
+  const hl=gl.getAttribLocation(HP,'p');gl.enableVertexAttribArray(hl);gl.vertexAttribPointer(hl,2,gl.FLOAT,false,0,0);
+  gl.uniform2f(hu.uRes,T.s.w,T.s.h);gl.uniform1f(hu.uS,sc);gl.uniform1f(hu.uB,B);gl.uniform1f(hu.uPulse,pl);gl.uniform1f(hu.uAud,ad);
+  gl.uniform1f(hu.uT,time);gl.uniform1f(hu.uR,Rr);gl.uniform1f(hu.uCh,charge);gl.uniform1f(hu.uHue,hueC);gl.uniform1f(hu.uSpec,specC);gl.uniform1f(hu.uRing,Math.min(1,ringT/2.5));gl.uniform2f(hu.uM,ay,ax);
+  gl.uniform3fv(hu.uC0,pal[0]);gl.uniform3fv(hu.uC1,pal[1]);gl.uniform3fv(hu.uC2,pal[2]);gl.uniform3fv(hu.uC3,pal[3]);
+  gl.drawArrays(gl.TRIANGLES,0,3);gl.disableVertexAttribArray(hl);
+  gl.useProgram(PP);gl.bindBuffer(gl.ARRAY_BUFFER,sb);
+  const sl=gl.getAttribLocation(PP,'aSeed');gl.enableVertexAttribArray(sl);gl.vertexAttribPointer(sl,4,gl.FLOAT,false,0,0);
+  gl.uniform1f(pu.uIn,inn);gl.uniform1f(pu.uGold,goldC);gl.uniform1f(pu.uHue,hueC);gl.uniform1f(pu.uSpec,specC);gl.uniform1f(pu.uCh,charge);gl.uniform1f(pu.uScan,scan);gl.uniform1f(pu.uSq,sqS);gl.uniform1f(pu.uGal,gal);gl.uniform1f(pu.uFw,fw);gl.uniform1f(pu.uMT,mtS);gl.uniform2f(pu.uT1,tA[0],tA[1]);gl.uniform2f(pu.uT2,tB[0],tB[1]);gl.uniform2f(pu.uG,tiltOn?tiltV[0]*1.2:0,tiltOn?-1+tiltV[1]*.5:-1);gl.uniform1f(pu.uT,time);gl.uniform1f(pu.uAsp,asp);gl.uniform1f(pu.uPulse,pl);gl.uniform1f(pu.uS,sc);gl.uniform1f(pu.uB,B);gl.uniform1f(pu.uAud,ad);
+  gl.uniform1f(pu.uPS,ps*(still?0:1));gl.uniform1f(pu.uWT,wt);gl.uniform1f(pu.uWA,wa);gl.uniform2f(pu.uM,ay,ax);gl.uniform2f(pu.uPtr,ptr[0],ptr[1]);
+  gl.uniform3fv(pu.uHit,hit);
+  gl.uniform3fv(pu.uC0,pal[0]);gl.uniform3fv(pu.uC1,pal[1]);gl.uniform3fv(pu.uC2,pal[2]);gl.uniform3fv(pu.uC3,pal[3]);
+  const px=(1.2*cv.height/1080)*Math.max(.8,Math.sqrt(N/count));
+  gl.uniform1f(pu.uPx,px);gl.uniform1f(pu.uBloom,0);gl.drawArrays(gl.POINTS,0,count);
+  gl.disableVertexAttribArray(sl);
+  // neural lattice: great-circle links with data packets racing along them, glowing nodes at the joints
+  gl.useProgram(LP);
+  gl.uniform1f(lu.uT,time);gl.uniform1f(lu.uAsp,asp);gl.uniform1f(lu.uS,sc);gl.uniform1f(lu.uB,B);gl.uniform1f(lu.uPulse,pl);gl.uniform1f(lu.uAud,ad);
+  gl.uniform1f(lu.uIn,inn);gl.uniform1f(lu.uWT,wt);gl.uniform1f(lu.uWA,wa);gl.uniform1f(lu.uCh,charge);gl.uniform1f(lu.uScan,scan);gl.uniform1f(lu.uHue,hueC);gl.uniform1f(lu.uSpec,specC);gl.uniform1f(lu.uGal,gal);gl.uniform1f(lu.uFw,fw);gl.uniform1f(lu.uSq,sqS);gl.uniform1f(lu.uMT,mtS);gl.uniform1f(lu.uPx,px);gl.uniform1f(lu.uPS,ps*(still?0:1));
+  gl.uniform2f(lu.uT1,tA[0],tA[1]);gl.uniform2f(lu.uT2,tB[0],tB[1]);gl.uniform2f(lu.uM,ay,ax);gl.uniform2f(lu.uPtr,ptr[0],ptr[1]);gl.uniform3fv(lu.uHit,hit);gl.uniform3fv(lu.uC1,pal[1]);gl.uniform3fv(lu.uC3,pal[3]);
+  for(const [buf,cnt,mode,pts] of [[lb,lcount,gl.LINES,0],[nb2,NN,gl.POINTS,1]]){
+   gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.enableVertexAttribArray(lD);gl.enableVertexAttribArray(lS);
+   gl.vertexAttribPointer(lD,3,gl.FLOAT,false,20,0);gl.vertexAttribPointer(lS,2,gl.FLOAT,false,20,12);
+   gl.uniform1f(lu.uPts,pts);gl.drawArrays(mode,0,cnt);gl.disableVertexAttribArray(lD);gl.disableVertexAttribArray(lS)}
+  if(trail.length){ // cosmic ink trail
+   gl.enable(gl.BLEND);gl.blendFuncSeparate(gl.ONE,gl.ONE_MINUS_SRC_COLOR,gl.ONE,gl.ONE_MINUS_SRC_ALPHA);
+   gl.useProgram(TP);gl.bindBuffer(gl.ARRAY_BUFFER,tb);
+   for(let i=0;i<trail.length;i++){tdata[i*3]=trail[i].x;tdata[i*3+1]=trail[i].y;tdata[i*3+2]=trail[i].a}
+   gl.bufferData(gl.ARRAY_BUFFER,tdata,gl.DYNAMIC_DRAW);
+   gl.enableVertexAttribArray(tu.aP);gl.vertexAttribPointer(tu.aP,2,gl.FLOAT,false,12,0);
+   gl.enableVertexAttribArray(tu.aA);gl.vertexAttribPointer(tu.aA,1,gl.FLOAT,false,12,8);
+   gl.uniform1f(tu.uAsp,asp);gl.uniform1f(tu.uS,sc);gl.uniform3fv(tu.uC,pal[3]);
+   gl.drawArrays(gl.POINTS,0,trail.length);
+   gl.disableVertexAttribArray(tu.aP);gl.disableVertexAttribArray(tu.aA);gl.disable(gl.BLEND)}
+  // post: blur twice at quarter-res for a real glow, then composite with the color grade
+  gl.disable(gl.BLEND);gl.bindBuffer(gl.ARRAY_BUFFER,qb);
+  const quad=(P,src,dst,setup)=>{gl.useProgram(P);const l=gl.getAttribLocation(P,'p');gl.enableVertexAttribArray(l);gl.vertexAttribPointer(l,2,gl.FLOAT,false,0,0);
+   gl.bindFramebuffer(gl.FRAMEBUFFER,dst?dst.f:null);gl.viewport(0,0,dst?dst.w:cv.width,dst?dst.h:cv.height);
+   gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,src.t);setup();gl.drawArrays(gl.TRIANGLES,0,3);gl.disableVertexAttribArray(l)};
+  const blur=(src,dst,dx,dy)=>quad(BP,src,dst,()=>{gl.uniform1i(bu.uTex,0);gl.uniform2f(bu.uDir,dx*1.6/dst.w,dy*1.6/dst.h)});
+  blur(T.s,T.a,1,0);blur(T.a,T.b,0,1);blur(T.b,T.a,1.8,0);blur(T.a,T.b,0,1.8);
+  gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,T.b.t);gl.activeTexture(gl.TEXTURE_0);
+  quad(CP,T.s,null,()=>{gl.uniform1i(cu.uS,0);gl.uniform1i(cu.uBl,1);gl.uniform1f(cu.uT,time);gl.uniform1f(cu.uAud,ad);gl.uniform1f(cu.uBloomK,.62);gl.uniform1f(cu.uGl,glitch)});
+ }
+ requestAnimationFrame(frame);
+}
+</script>
+</body>
+</html>

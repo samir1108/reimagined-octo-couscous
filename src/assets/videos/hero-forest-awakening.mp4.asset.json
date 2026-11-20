@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "d0dc6fcf-7caf-480e-8ec2-84ad6dadccec",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-forest-awakening.mp4",
+  "original_filename": "hero-forest-awakening.mp4",
+  "size": 40860958,
+  "created_at": "2026-03-28T12:28:58Z",
+  "bucket": "media",
+  "storage_path": "src/assets/videos/hero-forest-awakening.mp4",
+  "migrated_at": "2026-10-20T10:56:05.506Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/d0dc6fcf-7caf-480e-8ec2-84ad6dadccec/hero-forest-awakening.mp4"
+}

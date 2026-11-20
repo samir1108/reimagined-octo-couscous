@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SAMADHI_ASAMPRAJNATA: SessionProgramV3 = {
+  id: "samadhi-asamprajnata",
+  title: "Asamprajnata Samadhi",
+  subtitle: "Non-cognitive absorption — the mind fully stilled",
+  description:
+    "A 5-session arc through Asamprajnata Samadhi: the final stage of Patanjali's eight limbs, where all fluctuations cease and only pure awareness remains.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["samadhi", "asamprajnata", "non-cognitive", "final"],
+  icon: "Circle",
+  coverGradient: "from-slate-700 to-gray-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Beyond cognition" },
+    { phase: "Practice", sessions: 1, focus: "The still point" },
+    { phase: "Integration", sessions: 1, focus: "The unconditioned" },
+    { phase: "Mastery", sessions: 1, focus: "The unchanging witness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Beyond all knowing",
+      required: ["ritual.opening-bow", "teach.samadhi.stages", "wisdom.samadhi.asamprajnata"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Cease all fluctuations",
+      required: ["wisdom.samadhi.asamprajnata", "witness.gap-between-thoughts", "meditation.choiceless-awareness"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "The mind fully stilled",
+      required: ["wisdom.samadhi.asamprajnata", "meditation.open-awareness", "witness.name-the-watcher"],
+      targetMinutes: 40 },
+    { index: 4, phase: "Integration",
+      intent: "The unconditioned",
+      required: ["wisdom.samadhi.asamprajnata", "inquiry.what-is-aware", "contemplation.sit-with-question"],
+      targetMinutes: 30 },
+    { index: 5, phase: "Mastery",
+      intent: "The unchanging witness",
+      required: ["ritual.opening-bow", "wisdom.samadhi.asamprajnata", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 40 },
+  ],
+};

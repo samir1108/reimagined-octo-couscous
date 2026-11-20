@@ -1,0 +1,1 @@
+const s="/assets/hero-breath-temple-D2T1C2k4.jpg",r="/assets/hero-mirror-realm-Dpks-YSo.jpg",t="/assets/hero-three-brains-uiM2o8pz.jpg",a="/assets/hero-witness-wall-Bw4QRju2.jpg",o={"breath-temple":s,"mirror-realm":r,"three-brains-speak":t,"witness-wall":a};function n(e){return o[e]}export{n as g};

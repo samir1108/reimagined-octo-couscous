@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "c53f240f-15d9-4e4c-b543-04e6ed7d6b54",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot2-iris-flame.mp4",
+  "original_filename": "shot2-iris-flame.mp4",
+  "size": 14475924,
+  "created_at": "2026-05-10T16:05:24Z",
+  "bucket": "media",
+  "storage_path": "src/assets/film-fc/shot2-iris-flame.mp4",
+  "migrated_at": "2026-10-20T11:00:31.938Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/c53f240f-15d9-4e4c-b543-04e6ed7d6b54/shot2-iris-flame.mp4"
+}

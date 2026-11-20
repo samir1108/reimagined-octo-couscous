@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "fa2dfa1b-1e47-4b4a-837f-304ec91de3a8",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/founder-decision-loneliness.mp4",
+  "original_filename": "founder-decision-loneliness.mp4",
+  "size": 10803346,
+  "created_at": "2026-07-16T18:48:36Z",
+  "bucket": "media",
+  "storage_path": "src/assets/programs/videos/founder-decision-loneliness.mp4",
+  "migrated_at": "2026-10-20T11:35:01.223Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/fa2dfa1b-1e47-4b4a-837f-304ec91de3a8/founder-decision-loneliness.mp4"
+}

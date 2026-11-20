@@ -1,0 +1,298 @@
+import { useCallback, useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+
+import { supabase } from "@/lib/supabase";
+import { useMachine } from "@xstate/react";
+import { appEntryMachine } from "@/machines/appEntryMachine";
+import FoundationOnboarding, { type FoundationResult } from "@/components/onboarding/foundation/FoundationOnboarding";
+import WhySatYugScreen from "@/components/onboarding/WhySatYugScreen";
+import ConditioningSwipe from "@/components/onboarding/ConditioningSwipe";
+import CinematicIntro from "@/components/CinematicIntro";
+import FirstSessionWithGuru from "@/components/onboarding/FirstSessionWithGuru";
+import AppLayout from "@/components/AppLayout";
+import { useAuthReady } from "@/hooks/useAuthReady";
+import { useAwardKarmaEvent } from "@/hooks/useKarma";
+import Seo from "@/components/seo/Seo";
+import AppPreloader from "@/components/AppPreloader";
+import { resolveScreenPlaceholder } from "@/lib/ui/screenPlaceholder";
+import { prefetchCinematicImages } from "@/lib/prefetchImages";
+import { track } from "@/lib/observability";
+
+// Warm cinematic image cache as soon as AppEntry module loads (before auth resolves)
+if (typeof window !== "undefined") prefetchCinematicImages();
+
+interface FirstSessionContext {
+  guruId: string;
+  guruName: string;
+  userName: string;
+  band: number;
+  bandName: string;
+}
+
+type OnboardingStage = "why" | "light_six" | "foundation";
+
+function readFirstSessionDone(userId: string): boolean {
+  try { return localStorage.getItem(`first_session_done_${userId}`) === "1"; }
+  catch { return false; }
+}
+
+export default function AppEntry() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const entryFallback = resolveScreenPlaceholder(location.pathname);
+  const [state, send] = useMachine(appEntryMachine);
+  const { user, isReady } = useAuthReady();
+  const [firstSessionCtx, setFirstSessionCtx] = useState<FirstSessionContext | null>(null);
+  const [firstSessionDone, setFirstSessionDone] = useState<boolean>(false);
+  const [introDone, setIntroDone] = useState<boolean>(false);
+  // Gate 0 (Why SatYug) → Gate 1 (The Light Six) → Foundation → First Eleven
+  const [onboardingStage, setOnboardingStage] = useState<OnboardingStage>("why");
+  const awardKarmaEvent = useAwardKarmaEvent();
+
+  // Award karma for opening the app — throttled server-side (once / 6h).
+  useEffect(() => {
+    if (!isReady || !user) return;
+    awardKarmaEvent.mutate({ event: "app_open" });
+    track("app_open");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isReady, user?.id]);
+
+  const handleIntroComplete = useCallback(() => {
+    try { localStorage.setItem("cinematic_intro_done", "1"); } catch { /* ignore */ }
+    setIntroDone(true);
+  }, []);
+
+  const fetchProfile = useCallback(async (userId: string): Promise<boolean> => {
+    try {
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("onboarded")
+        .eq("user_id", userId)
+        .maybeSingle();
+
+      return profile?.onboarded ?? false;
+    } catch (e) {
+      console.error("AppEntry: profile fetch failed", e);
+      return false;
+    }
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    if (!isReady) return;
+
+    if (!user) {
+      send({ type: "AUTH_NOT_FOUND" });
+      return;
+    }
+
+    const syncProfile = async () => {
+      const onboarded = await fetchProfile(user.id);
+      if (cancelled) return;
+      setFirstSessionDone(readFirstSessionDone(user.id));
+      send({ type: "AUTH_FOUND", userId: user.id, onboarded });
+    };
+
+    void syncProfile();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [fetchProfile, isReady, send, user]);
+
+  /**
+   * Fetch the user's assigned core guru + name + band from the
+   * consciousness profile so we can hand them to FirstSessionWithGuru.
+   *
+   * Runs whenever we land in `ready` (post-onboarding) AND the first
+   * session has not yet been completed.
+   */
+  useEffect(() => {
+    if (!state.matches("ready")) return;
+    if (!state.context.userId) return;
+    if (firstSessionDone) return;
+    if (firstSessionCtx) return; // already loaded
+
+    let cancelled = false;
+    (async () => {
+      try {
+        const userId = state.context.userId!;
+        const [{ data: profile }, { data: cp }] = await Promise.all([
+          supabase
+            .from("profiles")
+            .select("display_name")
+            .eq("user_id", userId)
+            .maybeSingle(),
+          (supabase as any)
+            .from("user_consciousness_profile")
+            .select("overall_band, assessment_data")
+            .eq("user_id", userId)
+            .maybeSingle(),
+        ]);
+        if (cancelled) return;
+
+        const assess = (cp?.assessment_data || {}) as Record<string, any>;
+        const answers = Array.isArray(assess.answers) ? assess.answers : [];
+        const guruId = assess.assigned_guru_id || "aarav";
+        const guruName = assess.assigned_guru_name || "Aarav";
+        const band = Number(cp?.overall_band ?? assess.starting_band ?? 1.0);
+        const bandName = assess.archetype_hint || assess.primary_pattern || answers.find(Boolean) || "The Questioner";
+        const userName = profile?.display_name || assess.user_name || "Friend";
+
+        setFirstSessionCtx({ guruId, guruName, userName, band, bandName });
+      } catch (e) {
+        console.error("AppEntry: failed to load first-session context", e);
+        // Fallback so user is never stuck — skip first session
+        setFirstSessionDone(true);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [state, firstSessionDone, firstSessionCtx]);
+
+
+  // Safety timeout: if stuck in checking for >6s, force resolve
+  useEffect(() => {
+    if (!state.matches("checking")) return;
+    const timer = setTimeout(() => {
+      if (state.matches("checking")) {
+        console.warn("AppEntry: stuck in checking, forcing auth check");
+        // Try one more time
+        supabase.auth.getSession().then(({ data: { session } }) => {
+          if (session?.user) {
+            supabase.from("profiles").select("onboarded").eq("user_id", session.user.id).maybeSingle().then(({ data }) => {
+              send({ type: "AUTH_FOUND", userId: session.user.id, onboarded: data?.onboarded ?? false });
+            });
+          } else {
+            send({ type: "AUTH_NOT_FOUND" });
+          }
+        }).catch(() => {
+          send({ type: "AUTH_NOT_FOUND" });
+        });
+      }
+    }, 6000);
+    return () => clearTimeout(timer);
+  }, [state, send]);
+
+  // Navigate to auth when unauthenticated
+  useEffect(() => {
+    if (state.matches("unauthenticated")) {
+      navigate("/auth");
+    }
+  }, [state, navigate]);
+
+  if (!isReady || state.matches("checking")) {
+    return (
+      <>
+        <Seo title="ConsciousOS" description="Your yogic companion for consciousness development." noindex />
+        <AppPreloader
+          screen={entryFallback.screen}
+          width={entryFallback.width}
+          label={`Preparing ${entryFallback.label}…`}
+          className="min-h-[100dvh]"
+        />
+      </>
+    );
+  }
+
+  if (state.matches("onboarding") && state.context.userId) {
+    const uid = state.context.userId;
+
+    if (onboardingStage === "why") {
+      return <WhySatYugScreen onComplete={() => setOnboardingStage("light_six")} />;
+    }
+
+    if (onboardingStage === "light_six") {
+      return (
+        <ConditioningSwipe
+          onComplete={(result) => {
+            try {
+              localStorage.setItem(`conditioning_result_${uid}`, JSON.stringify({ ...result, at: Date.now() }));
+            } catch { /* ignore */ }
+            setOnboardingStage("foundation");
+          }}
+          onSkip={() => setOnboardingStage("foundation")}
+        />
+      );
+    }
+
+    const persistFoundation = async (result: FoundationResult) => {
+      try {
+        localStorage.setItem(
+          `foundation_result_${uid}`,
+          JSON.stringify({ ...result, at: Date.now() })
+        );
+        localStorage.setItem(`first_session_done_${uid}`, "1");
+      } catch { /* ignore */ }
+      try {
+        await supabase.from("profiles").upsert(
+          {
+            user_id: uid,
+            onboarded: true,
+            onboarding_path: "foundation_v2",
+          },
+          { onConflict: "user_id" }
+        );
+        await supabase.from("user_consciousness_profile").upsert(
+          {
+            user_id: uid,
+            overall_band: result.analysis.band,
+            assessment_data: {
+              answers: result.answers,
+              analysis: result.analysis,
+              paths: result.paths,
+              starting_band: result.analysis.band,
+              band_label: result.analysis.bandLabel,
+              archetype_hint: result.analysis.bandLabel,
+              archetype_primary: result.analysis.archetypePrimary,
+              archetype_shadow: result.analysis.archetypeShadow,
+              primary_pattern: result.analysis.loops?.[0] ?? null,
+              re_think_theme: result.analysis.reThinkTheme,
+              active_loop_families: result.analysis.loops,
+              suggested_paths: result.paths.secondary,
+            },
+          },
+          { onConflict: "user_id" }
+        );
+      } catch (e) {
+        console.warn("AppEntry: failed to persist foundation result", e);
+      }
+    };
+
+    return (
+      <FoundationOnboarding
+        userId={uid}
+        onComplete={async (result: FoundationResult) => {
+          await persistFoundation(result);
+          send({ type: "ONBOARDING_COMPLETE" });
+          navigate("/app", { replace: true });
+        }}
+      />
+    );
+  }
+
+
+  if (state.matches("ready")) {
+    // Go straight to app home — the 11-session first journey is no longer
+    // launched as part of onboarding.
+    return (
+      <>
+        <Seo title="ConsciousOS" description="Your yogic companion for consciousness development." noindex />
+        <AppLayout />
+      </>
+    );
+  }
+
+  // Fallback (e.g. transitioning to /auth) — keep showing the loader
+  // instead of a blank black screen.
+  return (
+    <>
+      <Seo title="ConsciousOS" description="Your yogic companion for consciousness development." noindex />
+      <AppPreloader
+        screen={entryFallback.screen}
+        width={entryFallback.width}
+        className="min-h-[100dvh]"
+      />
+    </>
+  );
+}

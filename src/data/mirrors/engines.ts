@@ -1,0 +1,1255 @@
+/**
+ * MODULE 2 · ENGINES (mirrors 11–20)
+ *
+ * The machinery underneath a life. These mirrors read the automatic systems —
+ * what switches the nervous system on, what it does at night, where the breath
+ * sits, what the body calls hunger, how much the world reaches you, and how
+ * much life-force is actually on hand today.
+ *
+ * Nothing here is a character assessment. A nervous system is a set of
+ * preparations older than language, and every reading here is an invitation to
+ * look at which preparation is running, not a verdict on who is running it.
+ *
+ * Surface tier stays entirely situational. Core tier names the mechanism and
+ * turns the lens back on the one asking.
+ */
+
+import { q3, likert5, pickOne, o, type MirrorBank } from './types';
+
+export const ENGINES_BANKS: MirrorBank[] = [
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: 'nervous-system-tone',
+    title: 'Nervous system tone',
+    subtitle: 'Fight, flight, freeze, or rest',
+    module: 'Engines',
+    tradition: 'yogic',
+    dimensionCategory: 'vitality',
+    coverEmoji: '🫀',
+    estimatedMinutes: 7,
+    version: 1,
+    intro:
+      'A nervous system is not a personality. It is a set of preparations, older than language, that decides what happens next before you have voted on it.\n\nThe first three moves — fight, flight, freeze — are not flaws. They are a body solving an emergency as fast as it can. There is a fourth, less discussed, and it is the one that is hardest to reach without a real opening. This looks at which one your system reaches for, how long it stays, and what actually brings it back down.',
+    dimensions: ['fight', 'flight', 'freeze', 'tend-befriend'],
+    engineHooks: {
+      loopsToCheck: ['hypervigilance', 'numbness'],
+      practiceAffinity: ['breath', 'body'],
+    },
+    questions: [
+      q3(
+        'nervous-first',
+        'activation',
+        'When something suddenly demands a response, what happens in your body first?',
+        'Before any thought has formed a plan, what does the system do?',
+        'The body has already chosen by the time you have decided anything. Which choice did it make?',
+        pickOne(
+          [
+            'Jaw sets, shoulders come up, I meet it head-on',
+            'A rush of heat and an urge to be somewhere else',
+            'Everything goes still and my mind goes blank',
+            'I open towards whoever or whatever is there',
+          ],
+          ['fight', 'flight', 'freeze', 'tend-befriend'],
+        ),
+      ),
+      q3(
+        'nervous-breath',
+        'breath',
+        'When you are under pressure, what does your breathing do?',
+        'Breathing is the one function you cannot easily switch off. Where does it go when stress arrives?',
+        'Breath is the bridge between the automatic and the chosen. What does yours do before you have chosen anything?',
+        [
+          o('It goes fast and high in the chest', { flight: 1 }),
+          o('It gets noticeably shallower', { flight: 0.75, freeze: 0.25 }),
+          o('It catches in my throat, or stops for a moment', { freeze: 1 }),
+          o('It drops low and slows on its own', { 'tend-befriend': 0.75, freeze: 0.25 }),
+          o('It stays the same whatever is happening', { 'tend-befriend': 1 }),
+        ],
+      ),
+      q3(
+        'nervous-downshift',
+        'recovery',
+        'How easily does the day let go of you in the evening?',
+        'What actually has to happen for the day to leave your body?',
+        'A system that cannot be brought down at night is still running a day that has already finished. How quickly does yours stop?',
+        [
+          o('It will not come down at all', { flight: 1 }),
+          o('It takes hours to unwind', { flight: 0.75, freeze: 0.25 }),
+          o('It settles eventually', { freeze: 0.75, fight: 0.25 }),
+          o('It comes down fairly easily', { freeze: 0.25, 'tend-befriend': 0.75 }),
+          o('It is down almost as soon as I stop', { 'tend-befriend': 1 }),
+        ],
+      ),
+      q3(
+        'nervous-company',
+        'contact',
+        'When something has gone badly, who do you go to?',
+        'After a hard moment, is the first instinct towards people or away from them?',
+        'Toward and away are both protective, and each one is defending something. Which is the default here, and what is it defending?',
+        pickOne(
+          [
+            'Straight to someone, because I settle when I am held',
+            'Away from everyone, alone until it passes',
+            'Very still, waiting for it to move over me',
+            'Through it — I stay in the room and keep going',
+          ],
+          ['tend-befriend', 'flight', 'freeze', 'fight'],
+        ),
+      ),
+      q3(
+        'nervous-appetite',
+        'regulation',
+        'When you are stressed, does your appetite change?',
+        'Stress and appetite run on the same wiring. Which way does yours move?',
+        'The body reaches for what it believes it needs in a moment of alarm. What does yours reach for when it is afraid?',
+        pickOne(
+          [
+            'I eat far more than usual',
+            'I want very little at all',
+            'I eat without noticing that I am eating',
+            'It is almost unchanged',
+          ],
+          ['fight', 'flight', 'freeze', 'tend-befriend'],
+        ),
+      ),
+      q3(
+        'nervous-length',
+        'recovery',
+        'After a stressful morning, how long does it stay with you?',
+        'How long does one episode actually take to clear?',
+        'A charge that lasts hours has stopped being an event and become a climate. How long does yours last?',
+        likert5('fight', [
+          'The rest of the day',
+          'Most of the day',
+          'A few hours',
+          'An hour or two',
+          'It clears within minutes',
+        ]),
+      ),
+      q3(
+        'nervous-turndown',
+        'regulation',
+        'What actually brings you down when you are wound up?',
+        'Which of these reliably lowers the level, rather than only distracting you?',
+        'Most things soothe by taking your mind elsewhere. Which of these actually lowers the level, and how often is it available to you?',
+        pickOne(
+          [
+            'Walking, lifting, moving the body hard',
+            'A long breath, or feeling my feet on the ground',
+            'Music, a shower, being in water',
+            'Someone to talk it through with',
+          ],
+          ['fight', 'freeze', 'flight', 'tend-befriend'],
+        ),
+      ),
+      q3(
+        'nervous-now',
+        'history',
+        'Compared to a year ago, is your body more or less switched on?',
+        'Has the baseline moved in a year?',
+        'Whatever the current level, it was not always the level. Where has yours come from, and where is it heading?',
+        pickOne(
+          [
+            'I am switched on much more of the time',
+            'I react more sharply than I used to',
+            'I have gone quieter and further shut down',
+            'I am steadier, and easier in my own company',
+          ],
+          ['flight', 'fight', 'freeze', 'tend-befriend'],
+        ),
+      ),
+    ],
+    resultTypes: [
+      {
+        id: 'fight',
+        label: 'Fight-forward',
+        short: 'The system meets it head-on',
+        description:
+          'Pressure brings engagement rather than retreat — jaw set, shoulders up, still in the room. There is real energy here, and it is energy that was built for something difficult. The cost is that the body stays braced long after the situation has finished.',
+        shadow: 'Mistaking the tension for commitment.',
+        color: 'orange',
+        masters: ['raja', 'body'],
+        calibration: {
+          dimensions: { action: 0.3, body: 0.3, emotion: 0.2 },
+          practiceLevels: { body: 1, raja: 1 },
+          domainStress: { pressure: 'work-career' },
+          tags: ['braced', 'over-committed'],
+        },
+      },
+      {
+        id: 'flight',
+        label: 'Flight-forward',
+        short: 'It leaves early, and it stays left',
+        description:
+          'The system is oriented to distance itself, and it does so quickly and early. Breath rises, sleep lightens, attention starts scanning for the exit. This is an efficient system for genuine danger, and an expensive one for a life with no danger in it.',
+        shadow: 'Calling constant readiness a reasonable caution.',
+        color: 'rose',
+        masters: ['breath', 'kriya'],
+        calibration: {
+          dimensions: { body: 0.3, thought: 0.25, spirit: 0.15 },
+          practiceLevels: { breath: 2 },
+          domainStress: { safety: 'health' },
+          tags: ['hypervigilant', 'restless'],
+        },
+      },
+      {
+        id: 'freeze',
+        label: 'Freeze-dominant',
+        short: 'The system goes still rather than moves',
+        description:
+          'When the pressure arrives, movement stops. Attention goes flat, the body waits, and the moment passes over without being met. Freeze is often mistaken for calm from the outside; from the inside it is usually a wide stillness with a great deal held in it.',
+        shadow: 'Reading stillness as peace because nothing is moving.',
+        color: 'sky',
+        masters: ['witnessing', 'observation'],
+        calibration: {
+          dimensions: { body: 0.3, emotion: 0.3, connection: 0.15 },
+          practiceLevels: { witnessing: 1, observation: 1 },
+          domainStress: { contact: 'relationship' },
+          tags: ['dissociating', 'held-still'],
+        },
+      },
+      {
+        id: 'tend-befriend',
+        label: 'Tending-forward',
+        short: 'The system reaches for connection and holds it',
+        description:
+          'Under pressure, the first move is towards rather than away. This is the least defended of the four, and also the one that costs the most to hold consistently, because staying open needs a body that is not still braced from the morning before.',
+        shadow: 'Staying open as a way of never being alone with the hard part.',
+        color: 'emerald',
+        masters: ['bhakti', 'relationship'],
+        calibration: {
+          dimensions: { connection: 0.35, emotion: 0.25, body: 0.2 },
+          practiceLevels: { bhakti: 1 },
+          domainStress: { relation: 'relationship' },
+          tags: ['open', 'held'],
+        },
+      },
+    ],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: 'sleep-signature',
+    title: 'Sleep signature',
+    subtitle: 'The quality and rhythm of your rest',
+    module: 'Engines',
+    tradition: 'yogic',
+    dimensionCategory: 'vitality',
+    coverEmoji: '🌙',
+    estimatedMinutes: 6,
+    version: 1,
+    intro:
+      'Hours in bed and rest restored are two different measurements, and the distance between them is where a lot of a life is spent.\n\nThis reads the shape of the night: the descent, the middle, the waking, and what is actually left on the other side. It is not a request to fix your sleep. It is a reading of what your nights are currently made of.',
+    dimensions: ['restless', 'shallow', 'broken', 'restorative'],
+    engineHooks: {
+      practiceAffinity: ['breath', 'body'],
+      deepensWith: ['energy-baseline'],
+    },
+    questions: [
+      q3(
+        'sleep-falling',
+        'onset',
+        'Once you get into bed, how long before you are asleep?',
+        'What is the descent into sleep actually like?',
+        'Sleep has an on-ramp, and the on-ramp is a system doing one particular thing: letting go. How willing is yours to let go?',
+        [
+          o('A long time — I am usually awake well past it', { restless: 1 }),
+          o('Longer than I would like', { restless: 0.75, shallow: 0.25 }),
+          o('Eventually', { shallow: 1 }),
+          o('Fairly quickly', { shallow: 0.25, restorative: 0.75 }),
+          o('Before I have finished putting the day down', { restorative: 1 }),
+        ],
+      ),
+      q3(
+        'sleep-staying',
+        'continuity',
+        'If you wake in the night, what happens next?',
+        'What does the middle of the night do to you?',
+        'The middle of the night is the system with nothing left to do for. What does yours do with that?',
+        pickOne(
+          [
+            'I am awake for hours and the day is ruined',
+            'I lie there for a while, awake',
+            'I wake at close to the same hour most nights',
+            'I am back asleep almost at once',
+          ],
+          ['broken', 'restless', 'shallow', 'restorative'],
+        ),
+      ),
+      q3(
+        'sleep-waking',
+        'morning',
+        'How do you feel in the first few minutes of the day?',
+        'What does the first few minutes after waking actually give you?',
+        'The morning tells you what the night was for. Not how long you were down, but what came back up. What came back?',
+        [
+          o('Worse than when I went to sleep', { shallow: 1 }),
+          o('As tired as I was before', { shallow: 0.75, broken: 0.25 }),
+          o('About the same, no real change', { broken: 1 }),
+          o('Noticeably better than when I went down', { broken: 0.25, restorative: 0.75 }),
+          o('As if I had been given something', { restorative: 1 }),
+        ],
+      ),
+      q3(
+        'sleep-dreams',
+        'content',
+        'How often do you remember dreaming?',
+        'What is actually happening in your head overnight?',
+        'The night unloads whatever the day could not finish. What is it unloading here?',
+        pickOne(
+          [
+            'I rarely remember any of it',
+            'Only fragments, usually when something is unfinished',
+            'Vivid, story-like dreams most nights',
+            'I dream, and I wake up rested',
+          ],
+          ['shallow', 'restless', 'broken', 'restorative'],
+        ),
+      ),
+      q3(
+        'sleep-time',
+        'rhythm',
+        'What time do you usually end up going to bed?',
+        'What decides the hour you finally stop?',
+        'The hour is rarely a free choice. What is it actually decided by — the day that happened, or something older?',
+        [
+          o('Whenever I finally stop', { restless: 1 }),
+          o('Very late, well past one', { restless: 0.75, broken: 0.25 }),
+          o('Around midnight', { broken: 1 }),
+          o('Around eleven', { broken: 0.25, restorative: 0.75 }),
+          o('By ten or earlier', { restorative: 1 }),
+        ],
+      ),
+      q3(
+        'sleep-body',
+        'night',
+        'What does your body do at night?',
+        'While the mind is not in charge, what is the body up to?',
+        'At night the body reports whatever was not dealt with in the day. What is yours reporting?',
+        pickOne(
+          [
+            'Still going through the day in my head',
+            'Clenching, and I only find the tension in the morning',
+            'Restless limbs, a body that will not settle',
+            'Still, and genuinely at rest',
+          ],
+          ['shallow', 'broken', 'restless', 'restorative'],
+        ),
+      ),
+      q3(
+        'sleep-restores',
+        'restoration',
+        'Does a normal night actually restore anything?',
+        'After an ordinary night, are you better off than before?',
+        'Restoration is a transaction. Look at the account: what did the night pay back?',
+        [
+          o('Not at all — I go down as tired as I get up', { shallow: 1 }),
+          o('Barely, if anything', { shallow: 0.75, broken: 0.25 }),
+          o('Enough to function, nothing more', { shallow: 0.5, restorative: 0.5 }),
+          o('A real amount', { shallow: 0.25, restorative: 0.75 }),
+          o('A great deal — I come up with something', { restorative: 1 }),
+        ],
+      ),
+      q3(
+        'sleep-good-night',
+        'frequency',
+        'How often do you have a genuinely good night?',
+        'How often does the night actually work?',
+        'A good night is rare enough that people are surprised by one. How rare is it here?',
+        [
+          o('Almost never', { shallow: 1 }),
+          o('Rarely', { shallow: 0.75, broken: 0.25 }),
+          o('About half the time', { shallow: 0.5, restorative: 0.5 }),
+          o('Most nights', { broken: 0.25, restorative: 0.75 }),
+          o('Nearly every night, and I know why', { restorative: 1 }),
+        ],
+      ),
+    ],
+    resultTypes: [
+      {
+        id: 'restless',
+        label: 'Restless nights',
+        short: 'Down, but not asleep',
+        description:
+          'The body agrees to lie down and the mind does not agree to be left. Time is spent in bed without being spent asleep, and the gap gets read as insomnia rather than as restlessness — which is a different situation with a different answer.',
+        shadow: 'Counting hours in bed as the measure of rest.',
+        color: 'rose',
+        masters: ['witnessing', 'breath'],
+        calibration: {
+          dimensions: { thought: 0.3, body: 0.3, spirit: 0.2 },
+          practiceLevels: { witnessing: 1, breath: 1 },
+          domainStress: { rest: 'observation' },
+          tags: ['restless', 'mind-not-switching-off'],
+        },
+      },
+      {
+        id: 'shallow',
+        label: 'Shallow sleep',
+        short: 'Present, but nothing gets finished',
+        description:
+          'The hours are slept and the hours do not do their work. Nothing is properly processed overnight, and the morning arrives without a clear deposit. This is often the reading when the day has not been digested rather than the night itself.',
+        shadow: 'Mistaking low quality for a short night.',
+        color: 'slate',
+        masters: ['observation', 'body'],
+        calibration: {
+          dimensions: { body: 0.3, thought: 0.25, emotion: 0.15 },
+          practiceLevels: { observation: 1, body: 1 },
+          tags: ['unrestored', 'undigested'],
+        },
+      },
+      {
+        id: 'broken',
+        label: 'Interrupted sleep',
+        short: 'The night keeps being cut short',
+        description:
+          'Sleep is repeatedly cut and restarted, often on a schedule regular enough that the body has begun to expect it. Because the hours still add up, it is often only noticed when something else in the day stops working.',
+        shadow: 'Assuming the interruption is identical on every night when it is not.',
+        color: 'orange',
+        masters: ['health', 'breath'],
+        calibration: {
+          dimensions: { body: 0.35, emotion: 0.25 },
+          practiceLevels: { health: 1, breath: 1 },
+          domainStress: { rest: 'health' },
+          tags: ['fragmented', 'interrupted'],
+        },
+      },
+      {
+        id: 'restorative',
+        label: 'Restorative sleep',
+        short: 'The night actually pays something back',
+        description:
+          'Sleep does its work and the morning has something in it. The night is also regular enough that the body can rely on it, which means it is doing more than restoring — it is holding part of the structure of the week together.',
+        shadow: 'A night so good it stops being looked at.',
+        color: 'emerald',
+        masters: ['breath', 'raja'],
+        calibration: {
+          dimensions: { body: 0.25, spirit: 0.25, emotion: 0.2 },
+          practiceLevels: { breath: 1 },
+          tags: ['restored', 'rhythmic'],
+        },
+      },
+    ],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: 'breath-pattern',
+    title: 'Breath pattern',
+    subtitle: 'The depth and pace of your prāṇa',
+    module: 'Engines',
+    tradition: 'yogic',
+    dimensionCategory: 'vitality',
+    coverEmoji: '🫁',
+    estimatedMinutes: 6,
+    version: 1,
+    intro:
+      'The breath is the only part of the autonomic system that is both automatic and voluntary. Everything else about the body decides for itself. This one can be listened to.\n\nTraditions use prāṇa here to mean more than air — the movement that moves everything else. What this reads is where your breath sits, how it behaves under load, and how much of it is actually available to you as a working instrument.',
+    dimensions: ['shallow', 'irregular', 'deep', 'still'],
+    engineHooks: {
+      practiceAffinity: ['breath', 'body'],
+    },
+    questions: [
+      q3(
+        'breath-where',
+        'location',
+        'Where in your body does most of the breathing actually happen?',
+        'Which part of you is doing the breathing?',
+        'Breath has a seat. Where yours sits was decided by years of use, and it was not decided by you.',
+        pickOne(
+          [
+            'High in the chest',
+            'All over — I could not say where',
+            'Low, in the belly',
+            'Quiet and unobtrusive, wherever it is',
+          ],
+          ['shallow', 'irregular', 'deep', 'still'],
+        ),
+      ),
+      q3(
+        'breath-audible',
+        'habit',
+        'Can other people hear you breathing from across the room?',
+        'How loud is your breathing to you, day to day?',
+        'Breath that is present without being noticed is a sign of how much of the day runs without you in it. How present is yours?',
+        [
+          o('I can hear it from across the room', { shallow: 1 }),
+          o('Loud enough that people mention it', { shallow: 0.75, irregular: 0.25 }),
+          o('I notice it when I think about it', { irregular: 1 }),
+          o('Almost silent', { irregular: 0.25, deep: 0.75 }),
+          o('I genuinely do not know it is there', { still: 1 }),
+        ],
+      ),
+      q3(
+        'breath-emotion',
+        'emotion',
+        'What happens to your breathing when a feeling arrives?',
+        'Emotion moves the breath before the mind decides anything. How does yours move?',
+        'Every state you enter has a signature in the breath. The signature tells you who is running the state.',
+        pickOne(
+          [
+            'It stops, or catches in my throat',
+            'It goes fast and high',
+            'It becomes heavy and drops low',
+            'It changes a little, and I stay in charge of it',
+          ],
+          ['irregular', 'shallow', 'deep', 'still'],
+        ),
+      ),
+      q3(
+        'breath-exhale',
+        'capacity',
+        'How much longer can your out-breath be than your in-breath?',
+        'What is the actual length of your out-breath?',
+        'The long exhale is where a system is told, in a language it cannot argue with, that the emergency is over. How much range do you have?',
+        [
+          o('I cannot lengthen it at all', { shallow: 1 }),
+          o('A few extra seconds, and it feels like effort', { shallow: 0.75, irregular: 0.25 }),
+          o('About twice the length of the in-breath', { irregular: 0.5, deep: 0.5 }),
+          o('Much longer than the in-breath', { deep: 1 }),
+          o('It can go on for as long as I want it to', { deep: 0.75, still: 0.25 }),
+        ],
+      ),
+      q3(
+        'breath-slowing',
+        'effort',
+        'What happens when you try to slow your breathing down?',
+        'Can you hold a slower rhythm once you have started one?',
+        'The question is not whether you can slow it. It is whether the slower rhythm survives your own attention. Which is it?',
+        pickOne(
+          [
+            'Nothing happens — I cannot change it',
+            'It fights me and I give up',
+            'It slows for a while, then drifts back',
+            'It settles and stays slower',
+          ],
+          ['irregular', 'shallow', 'deep', 'still'],
+        ),
+      ),
+      q3(
+        'breath-sigh',
+        'reflex',
+        'How often do you yawn, sigh, or take one big unplanned breath?',
+        'How often does the body take a breath entirely on its own account?',
+        'A sigh is a pressure gauge being reset. How much resetting is the day asking for?',
+        [
+          o('Several times an hour', { shallow: 1 }),
+          o('A few times a day, constantly', { shallow: 0.75, irregular: 0.25 }),
+          o('Now and then', { irregular: 1 }),
+          o('Rarely', { irregular: 0.25, deep: 0.75 }),
+          o('Almost never, even when I am tired', { deep: 0.75, still: 0.25 }),
+        ],
+      ),
+      q3(
+        'breath-rest',
+        'rest',
+        'When you sit down with nothing to do, what does your breathing do?',
+        'What happens to the breath the moment you stop being busy?',
+        'The moment you stop is the only honest test of the breath, because nothing is holding it in place. What does it do?',
+        pickOne(
+          [
+            'Nothing — it stays exactly as it was',
+            'It gets shallower, oddly',
+            'It slows and drops lower',
+            'It becomes slow, deep and steady',
+          ],
+          ['irregular', 'shallow', 'deep', 'still'],
+        ),
+      ),
+      q3(
+        'breath-load',
+        'load',
+        'Under pressure, what happens to your breath?',
+        'Does the breath hold its shape when the pressure is on?',
+        'The breath under load tells you what your body believes it is for. What does yours believe?',
+        pickOne(
+          [
+            'It stops, or catches',
+            'It goes fast and high',
+            'It stays steady, whatever happens',
+            'It becomes slow and deliberate on purpose',
+          ],
+          ['irregular', 'shallow', 'still', 'deep'],
+        ),
+      ),
+      q3(
+        'breath-noticed',
+        'attention',
+        'How much of the day do you actually notice yourself breathing?',
+        'How present is the breath in an ordinary day?',
+        'There is a difference between breathing and being with the breath. How often are the two the same thing?',
+        [
+          o('Only when something has gone wrong with it', { shallow: 1 }),
+          o('When I remember to', { shallow: 0.75, irregular: 0.25 }),
+          o('Often enough to notice it going on', { irregular: 1 }),
+          o('Most of the time', { irregular: 0.25, deep: 0.75 }),
+          o('It is continuous, whether I am attending to it or not', { deep: 0.5, still: 0.5 }),
+        ],
+      ),
+    ],
+    resultTypes: [
+      {
+        id: 'shallow',
+        label: 'Shallow prāṇa',
+        short: 'High, fast, and out of sight',
+        description:
+          'The breath sits high and the body gets the minimum it needs and no more. This reads less as a problem than as a habit that has never been questioned — most people have never once checked what their breathing actually does.',
+        shadow: 'Believing shallow breathing is simply how you breathe.',
+        color: 'slate',
+        masters: ['breath', 'kriya'],
+        calibration: {
+          dimensions: { body: 0.35, spirit: 0.2, thought: 0.15 },
+          practiceLevels: { breath: 2 },
+          domainStress: { rest: 'health' },
+          tags: ['shallow', 'unexamined'],
+        },
+      },
+      {
+        id: 'irregular',
+        label: 'Irregular prāṇa',
+        short: 'Arrhythmic, and not under your hand',
+        description:
+          'The breath has no dependable shape and does not respond cleanly to intention. This is common wherever the system is running hot, and it makes the early stages of breath work harder than they otherwise need to be.',
+        shadow: 'Reading the unsteadiness as a lack of discipline.',
+        color: 'orange',
+        masters: ['breath', 'body'],
+        calibration: {
+          dimensions: { body: 0.3, emotion: 0.3, thought: 0.15 },
+          practiceLevels: { breath: 1, body: 1 },
+          tags: ['arrhythmic', 'hot'],
+        },
+      },
+      {
+        id: 'deep',
+        label: 'Deep prāṇa',
+        short: 'Low, long, and responsive',
+        description:
+          'The breath has depth and responds to what is asked of it. There is real range here, which means real material to work with — the practice at this level is refinement rather than repair.',
+        shadow: 'Depth mistaken for completion.',
+        color: 'teal',
+        masters: ['breath', 'raja'],
+        calibration: {
+          dimensions: { body: 0.3, spirit: 0.25, action: 0.15 },
+          practiceLevels: { breath: 2, raja: 1 },
+          tags: ['deep', 'responsive'],
+        },
+      },
+      {
+        id: 'still',
+        label: 'Still prāṇa',
+        short: 'It has become the background it should be',
+        description:
+          'The breath is quiet, unremarkable and available, and it holds its shape under load. This is the condition most of the breath practices are actually aiming at, and it is easy to mistake for a person with no inner weather.',
+        shadow: 'Stillness that is no longer being looked at.',
+        color: 'indigo',
+        masters: ['raja', 'witnessing'],
+        calibration: {
+          dimensions: { spirit: 0.3, body: 0.25, thought: 0.2 },
+          practiceLevels: { raja: 1, witnessing: 1 },
+          tags: ['still', 'integrated'],
+        },
+      },
+    ],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: 'hunger-cues',
+    title: 'Hunger cues',
+    subtitle: 'True hunger against emotional hunger',
+    module: 'Engines',
+    tradition: 'yogic',
+    dimensionCategory: 'body',
+    coverEmoji: '🍽️',
+    estimatedMinutes: 6,
+    version: 1,
+    intro:
+      'Hunger is not a single signal. There is a signal from the body, and there are several from everything else — the hour, the boredom, the argument, the advertisement, the plain sense that a break is due.\n\nThis is not about what to eat. It is about which signal is actually doing the talking, because the two kinds of hunger are received in completely different places, and only one of them is ever satisfied by food.',
+    dimensions: ['physiological', 'emotional', 'habitual', 'attentional'],
+    engineHooks: {
+      practiceAffinity: ['body', 'observation'],
+      deepensWith: ['ground-state'],
+    },
+    questions: [
+      q3(
+        'hunger-tell',
+        'distinction',
+        'Can you tell the difference between real hunger and eating for some other reason?',
+        'How clearly can you read the signal before you answer it?',
+        'The body sends one signal, quietly. Everything else sends louder ones. How much of what you hear is the body?',
+        [
+          o('Not at all — I eat whenever I notice I could', { habitual: 1 }),
+          o('Rarely, and usually afterwards', { habitual: 0.75, attentional: 0.25 }),
+          o('Sometimes, once it has started', { attentional: 1 }),
+          o('Usually, before I begin', { attentional: 0.25, physiological: 0.75 }),
+          o('Almost always, from the first small signal', { physiological: 1 }),
+        ],
+      ),
+      q3(
+        'hunger-speed',
+        'pace',
+        'How fast do you normally eat?',
+        'What is the pace of a meal around here, and how present are you for it?',
+        'Pace is a decision, and it is made long before the food arrives. What is the pace here deciding?',
+        pickOne(
+          [
+            'Fast, and afterwards I would not know what I ate',
+            'Quickly, though I do taste it',
+            'At an ordinary pace, tasting what I eat',
+            'Slowly, with my attention on the food itself',
+          ],
+          ['habitual', 'emotional', 'physiological', 'attentional'],
+        ),
+      ),
+      q3(
+        'hunger-screens',
+        'context',
+        'How often do you eat with a screen on, or in a car?',
+        'How much of your eating happens alongside something else?',
+        'Whatever shares the meal shares the attention. What is at the table that is not food?',
+        [
+          o('At almost every meal', { habitual: 1 }),
+          o('Most meals', { habitual: 0.75, attentional: 0.25 }),
+          o('Often', { habitual: 0.5, attentional: 0.5 }),
+          o('Sometimes', { habitual: 0.25, attentional: 0.75 }),
+          o('Rarely — I am usually just eating', { attentional: 1 }),
+        ],
+      ),
+      q3(
+        'hunger-full',
+        'limits',
+        'Do you ever eat when you already know you are full?',
+        'How often is the stop signal overridden?',
+        'There is a stop signal, and like every other stop signal it can be overridden. How often?',
+        [
+          o('Most of the time', { emotional: 1 }),
+          o('Often', { emotional: 0.75, habitual: 0.25 }),
+          o('Sometimes', { habitual: 1 }),
+          o('Rarely', { habitual: 0.25, physiological: 0.75 }),
+          o('Almost never — when I am full, I stop', { physiological: 1 }),
+        ],
+      ),
+      q3(
+        'hunger-after',
+        'aftermath',
+        'How do you feel an hour after eating for a reason other than hunger?',
+        'What does an hour of not-being-hungry eating leave behind?',
+        'Whatever the eating was for, it either worked or it did not. How did it go?',
+        [
+          o('Worse than before I started', { emotional: 1 }),
+          o('Unsettled, and still thinking about it', { emotional: 0.75, habitual: 0.25 }),
+          o('About the same as before', { habitual: 0.5, attentional: 0.5 }),
+          o('A little better', { habitual: 0.25, attentional: 0.75 }),
+          o('Genuinely soothed', { attentional: 1 }),
+        ],
+      ),
+      q3(
+        'hunger-regular',
+        'rhythm',
+        'What decides when you eat?',
+        'What actually calls you to the meal?',
+        'There are four things that can call a person to a meal. Which one is calling here?',
+        pickOne(
+          [
+            'Nothing much — I go long, then eat a great deal',
+            'Whatever is in front of me at the time',
+            'The clock, mostly',
+            'How I am feeling, more than the hour',
+          ],
+          ['habitual', 'attentional', 'physiological', 'emotional'],
+        ),
+      ),
+      q3(
+        'hunger-noticed',
+        'signal',
+        'How early do you notice that you are getting hungry?',
+        'At what point does the signal actually reach you?',
+        'There is a signal long before there is hunger. How much of the warning is actually being read?',
+        [
+          o('Only once it is already urgent', { habitual: 1 }),
+          o('Quite late in the process', { habitual: 0.75, attentional: 0.25 }),
+          o('A little before it is urgent', { attentional: 1 }),
+          o('Well before', { attentional: 0.25, physiological: 0.75 }),
+          o('At the first small sign, easily', { physiological: 1 }),
+        ],
+      ),
+      q3(
+        'hunger-sought',
+        'motive',
+        'What is the eating actually doing for you?',
+        'What does the food settle, apart from hunger?',
+        'The food arrives. What is it being asked to fix?',
+        pickOne(
+          [
+            'It settles something that is switched on',
+            'It gives me a break from what I am feeling',
+            'It happens without my having decided anything',
+            'It feeds me, and that is genuinely all it is',
+          ],
+          ['emotional', 'attentional', 'habitual', 'physiological'],
+        ),
+      ),
+    ],
+    resultTypes: [
+      {
+        id: 'physiological',
+        label: 'Bodily hunger',
+        short: 'The signal and the meal agree',
+        description:
+          'Hunger arrives, you eat, and it settles. The body and the appetite are in conversation and the answer works. The value here is that the signal is available as information — and it is usually more accurate about the whole day than the mind is.',
+        shadow: 'A reliable signal that never gets questioned.',
+        color: 'emerald',
+        masters: ['body', 'observation'],
+        calibration: {
+          dimensions: { body: 0.3, emotion: 0.2, action: 0.15 },
+          practiceLevels: { body: 1, observation: 1 },
+          tags: ['listening', 'regular'],
+        },
+      },
+      {
+        id: 'emotional',
+        label: 'Emotional hunger',
+        short: 'The appetite is doing other work',
+        description:
+          'A large share of the eating is aimed at a state rather than at nourishment. It works in the moment, which is exactly why it is easy to miss — the relief arrives before the question gets asked.',
+        shadow: 'Confusing what settles with what is fed.',
+        color: 'rose',
+        masters: ['emotional-healing', 'body'],
+        calibration: {
+          dimensions: { emotion: 0.4, body: 0.2, thought: 0.15 },
+          practiceLevels: { 'emotional-healing': 1 },
+          domainStress: { state: 'emotional-healing' },
+          tags: ['emotional-eating', 'seeking-settlement'],
+        },
+      },
+      {
+        id: 'habitual',
+        label: 'Habitual eating',
+        short: 'It happens because it is time',
+        description:
+          'The eating runs on schedule and circumstance rather than on signal. Nothing is wrong with it, and it is also the shape most easily changed — because a habit is the one thing here that does not need your attention in order to keep going.',
+        shadow: 'Mistaking a habit for a preference.',
+        color: 'amber',
+        masters: ['observation', 'raja'],
+        calibration: {
+          dimensions: { body: 0.25, action: 0.2, thought: 0.2 },
+          practiceLevels: { observation: 1, raja: 1 },
+          tags: ['routed', 'automatic'],
+        },
+      },
+      {
+        id: 'attentional',
+        label: 'Unattended eating',
+        short: 'The meal is a gap, filled in',
+        description:
+          'The eating is not primarily about the body or the mood — it is what the attention is doing while it happens. Often the most changeable of the four, and the least about discipline.',
+        shadow: 'Calling it a lack of willpower rather than a lack of attention.',
+        color: 'sky',
+        masters: ['observation', 'witnessing'],
+        calibration: {
+          dimensions: { thought: 0.35, body: 0.2, emotion: 0.15 },
+          practiceLevels: { observation: 2, witnessing: 1 },
+          tags: ['unattended', 'numb'],
+        },
+      },
+    ],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: 'sensory-sensitivity',
+    title: 'Sensory sensitivity',
+    subtitle: 'How much the world reaches you',
+    module: 'Engines',
+    tradition: 'yogic',
+    dimensionCategory: 'attention',
+    coverEmoji: '🎚️',
+    estimatedMinutes: 6,
+    version: 1,
+    intro:
+      'The world is constantly putting things in. Most of the time it is not noticed, and the noticing is what turns a life into an experience rather than a sequence of tasks.\n\nSensitivity runs on a scale that is easy to get wrong from the inside. Both the numb end and the overwhelmed end are positions on the same dial, and the useful work is finding out where the dial actually sits and what is doing the turning.',
+    dimensions: ['numb', 'selective', 'sensitive', 'overloaded'],
+    engineHooks: {
+      practiceAffinity: ['body', 'observation'],
+    },
+    questions: [
+      q3(
+        'sensory-noise',
+        'sound',
+        'How does noise affect you?',
+        'What does a room full of sound actually do to you?',
+        'Sound is the most continuous input there is. How much of the day is it making decisions for you?',
+        [
+          o('I avoid places with people in them', { overloaded: 1 }),
+          o('I find busy places genuinely hard to be in', { sensitive: 0.75, overloaded: 0.25 }),
+          o('I am aware of background noise most of the time', { selective: 1 }),
+          o('Only when it is really loud', { selective: 0.75, numb: 0.25 }),
+          o('Noise does not bother me at all', { numb: 1 }),
+        ],
+      ),
+      q3(
+        'sensory-light',
+        'light',
+        'How do bright light, flickering screens and glare land on you?',
+        'What is the effect of a bad light on a whole day?',
+        'Light is the input that writes the mood of a room. Who exactly is being addressed by it?',
+        pickOne(
+          [
+            'I barely register it',
+            'It tires me after a while',
+            'I notice it at once and it grates',
+            'It can be genuinely painful',
+          ],
+          ['numb', 'selective', 'sensitive', 'overloaded'],
+        ),
+      ),
+      q3(
+        'sensory-texture',
+        'touch',
+        'How much do fabrics, textures and materials register on you?',
+        'How much of the physical world do you actually feel?',
+        'Touch is the sense that most often goes unregistered, and the one that carries the most information when it comes back online.',
+        [
+          o('Some textures I genuinely cannot stand', { overloaded: 1 }),
+          o('I notice textures constantly', { sensitive: 0.75, overloaded: 0.25 }),
+          o('I notice them a fair amount', { selective: 1 }),
+          o('Only if it is extreme', { selective: 0.75, numb: 0.25 }),
+          o('I barely feel what things are made of', { numb: 1 }),
+        ],
+      ),
+      q3(
+        'sensory-crowds',
+        'space',
+        'How do crowded spaces affect you?',
+        'What happens to you in a room with too many people in it?',
+        'Crowding is a physical fact and a nervous one. Which of the two is doing the work here?',
+        pickOne(
+          [
+            'I get out as soon as I can',
+            'I find somewhere to stand, at the edge',
+            'It takes a moment to settle into',
+            'I am comfortable in them',
+          ],
+          ['overloaded', 'sensitive', 'selective', 'numb'],
+        ),
+      ),
+      q3(
+        'sensory-enjoyment',
+        'dose',
+        'How much of what comes at you in a normal day do you enjoy, as against simply tolerate?',
+        'How much of the input is a pleasure rather than a tax?',
+        'There is a difference between input you register and input you enjoy, and the two do not move together. Which is more available here?',
+        [
+          o('Almost none of it — it all registers as a tax', { overloaded: 1 }),
+          o('Very little of it', { sensitive: 0.75, overloaded: 0.25 }),
+          o('A fair amount', { sensitive: 0.5, selective: 0.5 }),
+          o('A good amount, and I go looking for more of it', { selective: 1 }),
+        ],
+      ),
+      q3(
+        'sensory-change',
+        'history',
+        'Compared to a few years ago, has any of this changed?',
+        'Has the sensitivity moved, over the years you can remember?',
+        'Whatever this dial is set to now, it was set to something before. What happened to it?',
+        [
+          o('It has become far more intense', { overloaded: 1 }),
+          o('I have become more reactive to things', { sensitive: 0.75, overloaded: 0.25 }),
+          o('About the same as it was', { selective: 0.5, sensitive: 0.5 }),
+          o('I have become less reactive', { selective: 1 }),
+          o('A good deal of it has gone numb', { numb: 1 }),
+        ],
+      ),
+      q3(
+        'sensory-overload',
+        'cause',
+        'What most often takes you over the edge?',
+        'Which of these is the actual trigger?',
+        'Overload has specific causes, and they are not the same for everyone. What is the mechanism here?',
+        pickOne(
+          [
+            'Many small things at once',
+            'One thing that will not stop — a sound, a light, an ache',
+            'Being tired or unwell beforehand',
+            'Rarely anything specific',
+          ],
+          ['sensitive', 'overloaded', 'selective', 'numb'],
+        ),
+      ),
+      q3(
+        'sensory-downshift',
+        'control',
+        'When there is too much coming in, how well can you turn it down?',
+        'How much control do you actually have over the input?',
+        'The dial is one setting. Which settings can you reach deliberately, and which only arrive on their own?',
+        [
+          o('I cannot — once it is up, it stays up', { overloaded: 1 }),
+          o('Only by leaving the situation', { sensitive: 0.75, overloaded: 0.25 }),
+          o('By narrowing it deliberately, one thing at a time', { selective: 1 }),
+          o('I can bring it down in the moment, fairly reliably', { selective: 0.5, numb: 0.5 }),
+          o('I can turn it down and it actually goes down', { numb: 1 }),
+        ],
+      ),
+    ],
+    resultTypes: [
+      {
+        id: 'numb',
+        label: 'Low registration',
+        short: 'The world is arriving, unheard',
+        description:
+          'Input is arriving and not being received. Read from the outside this looks like steadiness; from the inside there is a great deal of not-knowing. Numbness is a real capacity to be turned back on, and the dial underneath it usually reads more sensitive than it currently does.',
+        shadow: 'Mistaking not registering for not happening.',
+        color: 'slate',
+        masters: ['observation', 'body'],
+        calibration: {
+          dimensions: { body: 0.3, thought: 0.2, emotion: 0.2 },
+          practiceLevels: { observation: 1, body: 1 },
+          tags: ['dulled', 'under-received'],
+        },
+      },
+      {
+        id: 'selective',
+        label: 'Selective registration',
+        short: 'Some things land, most do not',
+        description:
+          'The filtering works, and it works well — most of the day passes without registering, and what does register was chosen by something. This is the most workable position of the four, and also the easiest to be complacent about.',
+        shadow: 'A filter that is never asked what it is filtering.',
+        color: 'teal',
+        masters: ['observation', 'raja'],
+        calibration: {
+          dimensions: { thought: 0.25, body: 0.2, spirit: 0.2 },
+          practiceLevels: { observation: 1 },
+          tags: ['filtered', 'partly-aware'],
+        },
+      },
+      {
+        id: 'sensitive',
+        label: 'High registration',
+        short: 'Everything arrives, in detail',
+        description:
+          'The channels are wide open and detail is coming in continuously. There is a great deal of life in this, and a real cost to it, because there is no background level that lets a small thing stay small.',
+        shadow: 'Calling the sensitivity a difficulty rather than a dial setting.',
+        color: 'sky',
+        masters: ['body', 'breath'],
+        calibration: {
+          dimensions: { body: 0.3, emotion: 0.25, spirit: 0.2 },
+          practiceLevels: { body: 1, breath: 1 },
+          domainStress: { senses: 'health' },
+          tags: ['sensitive', 'wide-open'],
+        },
+      },
+      {
+        id: 'overloaded',
+        label: 'Overload-prone',
+        short: 'The input outruns the processing',
+        description:
+          'There is capacity here, but not enough of it for what is coming in, and the overflow is felt in the body before it is noticed at all. The work here is not to feel less — it is to find the downstream valve that is currently missing.',
+        shadow: 'Pushing through a full system and calling the cost a personality.',
+        color: 'rose',
+        masters: ['breath', 'witnessing'],
+        calibration: {
+          dimensions: { body: 0.35, emotion: 0.3, thought: 0.15 },
+          practiceLevels: { breath: 1, witnessing: 1 },
+          domainStress: { senses: 'health' },
+          tags: ['overloaded', 'flooded'],
+        },
+      },
+    ],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    slug: 'vitality-index',
+    title: 'Vitality index',
+    subtitle: 'Your available life-force today',
+    module: 'Engines',
+    tradition: 'yogic',
+    dimensionCategory: 'vitality',
+    coverEmoji: '⚡',
+    estimatedMinutes: 6,
+    version: 1,
+    intro:
+      'Vitality is not the same as strength, and not the same as mood. It is the amount actually available — how much is in the tank, how quickly it comes back, and how much of it is yours rather than borrowed from tomorrow.\n\nThis is a reading of today. Vitality moves daily, and a low reading on a bad week is information about the week rather than a measurement of the person.',
+    dimensions: ['drained', 'functional', 'strong', 'vital'],
+    engineHooks: {
+      practiceAffinity: ['body', 'breath'],
+      deepensWith: ['energy-baseline', 'sleep-signature'],
+    },
+    questions: [
+      q3(
+        'vital-strength',
+        'strength',
+        'How strong do you actually feel, physically?',
+        'What is the honest state of the body right now?',
+        'Strength is what the body can do on demand. What can yours do on demand today?',
+        [
+          o('I could barely lift anything', { drained: 1 }),
+          o('I can manage the basics', { drained: 0.5, functional: 0.5 }),
+          o('I can carry and move things easily', { functional: 1 }),
+          o('I am genuinely strong', { strong: 1 }),
+          o('I am stronger than I have been for years', { vital: 1 }),
+        ],
+      ),
+      q3(
+        'vital-stamina',
+        'stamina',
+        'How long can you keep going before you have to stop?',
+        'What is the actual length of the reserve?',
+        'Stamina is reserve expressed as duration. How much duration is left in the day?',
+        [
+          o('I cannot last more than a short while', { drained: 1 }),
+          o('I run out well before the day is over', { drained: 0.75, functional: 0.25 }),
+          o('I last the working day', { functional: 1 }),
+          o('I could go on considerably longer', { functional: 0.25, strong: 0.75 }),
+          o('I honestly do not know where I would stop', { strong: 0.25, vital: 0.75 }),
+        ],
+      ),
+      q3(
+        'vital-recovery',
+        'recovery',
+        'How quickly do you get back after something has taken it out of you?',
+        'What is the turnaround time once you are depleted?',
+        'Recovery speed is the most useful number here, because it decides whether the next cost is affordable. How fast is the return?',
+        [
+          o('It takes days, if it comes at all', { drained: 1 }),
+          o('It takes a day or two', { drained: 0.75, functional: 0.25 }),
+          o('A good night puts it right', { functional: 1 }),
+          o('An hour or two', { functional: 0.25, strong: 0.75 }),
+          o('Almost immediately', { strong: 0.25, vital: 0.75 }),
+        ],
+      ),
+      q3(
+        'vital-drive',
+        'drive',
+        'How much do you want to do things?',
+        'How much of the wanting comes from you, and how much from momentum?',
+        'Drive is what moves without being pushed. Where is the line between wanting something and being in the habit of wanting it?',
+        [
+          o('Nothing in me is going anywhere', { drained: 1 }),
+          o('Only when something forces it', { drained: 0.5, functional: 0.5 }),
+          o('On and off, depending on the day', { functional: 1 }),
+          o('There is a fairly steady push', { strong: 1 }),
+          o('I want to do things before anything asks me to', { vital: 1 }),
+        ],
+      ),
+      q3(
+        'vital-morning-evening',
+        'rhythm',
+        'How much do you change between the morning and the evening?',
+        'What does a full day actually cost, end to end?',
+        'The distance between the first hour and the last is the running cost of the day. What is yours?',
+        [
+          o('I am a different person by the evening', { drained: 1 }),
+          o('I am markedly emptier', { drained: 0.75, functional: 0.25 }),
+          o('A little better in the morning than the evening', { functional: 1 }),
+          o('Not much difference either way', { functional: 0.25, strong: 0.75 }),
+          o('Better in the evening than in the morning', { strong: 0.25, vital: 0.75 }),
+        ],
+      ),
+      q3(
+        'vital-illness',
+        'illness',
+        'When you are unwell, how much does it take out of you?',
+        'What does an illness do to the reserve, and how do you meet it?',
+        'Illness is the clearest available reading of reserve, because nothing else measures it so honestly. When it arrives, what does it find?',
+        [
+          o('Everything — it takes a long time to come back from', { drained: 1 }),
+          o('A great deal, and slowly', { drained: 0.75, functional: 0.25 }),
+          o('A fair amount, but I am back within a week or so', { functional: 1 }),
+          o('Not much — I rest properly and carry on', { strong: 1 }),
+          o('Very little; I take it in hand and keep going', { vital: 1 }),
+        ],
+      ),
+      q3(
+        'vital-borrowed',
+        'source',
+        'Are you running on your own energy, or on borrowed momentum?',
+        'How much of what is carrying you was actually generated by you?',
+        'Momentum, other people’s belief and crisis all spend tomorrow in order to pay for today. How much of yours is on loan?',
+        [
+          o('Nearly all of it is borrowed', { drained: 1 }),
+          o('A good deal of it is', { drained: 0.75, functional: 0.25 }),
+          o('Some of it', { functional: 1 }),
+          o('Mostly my own', { functional: 0.25, strong: 0.75 }),
+          o('Entirely my own', { strong: 0.25, vital: 0.75 }),
+        ],
+      ),
+      q3(
+        'vital-direct',
+        'awareness',
+        'How much of your vitality do you actually feel in the body?',
+        'How directly is energy felt, or only inferred?',
+        'There is a difference between having energy and feeling that you have it. How much of yours is felt rather than assumed?',
+        [
+          o('I never feel any, whatever I have', { drained: 1 }),
+          o('Only when I have used it all', { drained: 0.75, functional: 0.25 }),
+          o('In the morning, faintly', { functional: 1 }),
+          o('Most of the time, in the body', { functional: 0.25, strong: 0.75 }),
+          o('It is the first thing I am aware of', { strong: 0.25, vital: 0.75 }),
+        ],
+      ),
+    ],
+    resultTypes: [
+      {
+        id: 'drained',
+        label: 'Drained',
+        short: 'The tank is under the water line',
+        description:
+          'There is not much available at the moment, and asking for more from this state tends to make the hole deeper. This reading is about today and this week; it is not a measurement of what becomes available once things are rested.',
+        shadow: 'Reading depletion as a lack of will.',
+        color: 'rose',
+        masters: ['body', 'breath'],
+        calibration: {
+          dimensions: { body: 0.4, spirit: 0.15, action: 0.15 },
+          practiceLevels: { body: 1, breath: 1 },
+          domainStress: { energy: 'health' },
+          tags: ['depleted', 'needs-recovery'],
+        },
+      },
+      {
+        id: 'functional',
+        label: 'Functional',
+        short: 'Enough to do what is in front of you',
+        description:
+          'The reserve covers an ordinary day without either abundance or strain. Nothing dramatic is happening here, which makes it a good place to build from — most sustainable capacity is grown out of a functioning base rather than out of abundance.',
+        shadow: 'Mistaking enough for a ceiling.',
+        color: 'amber',
+        masters: ['body', 'raja'],
+        calibration: {
+          dimensions: { body: 0.25, action: 0.25, spirit: 0.15 },
+          practiceLevels: { body: 1, raja: 1 },
+          tags: ['adequate', 'working'],
+        },
+      },
+      {
+        id: 'strong',
+        label: 'Strong',
+        short: 'Real capacity, and it comes back quickly',
+        description:
+          'There is depth here and the return is fast, so the system can take a great deal and put it down again. The question at this level is less about the reserve and more about what is being asked of it.',
+        shadow: 'Strong enough to keep going, and so never stopping.',
+        color: 'teal',
+        masters: ['raja', 'karma'],
+        calibration: {
+          dimensions: { body: 0.3, action: 0.25, connection: 0.15 },
+          practiceLevels: { raja: 1, karma: 1 },
+          tags: ['resourced', 'recovering'],
+        },
+      },
+      {
+        id: 'vital',
+        label: 'Vital',
+        short: 'The energy is there, and it is felt',
+        description:
+          'Capacity is high, it returns quickly, and it is directly felt in the body rather than inferred. Reserve of this kind tends to be spent as much as used, and is worth noticing as a resource rather than as a permanent condition.',
+        shadow: 'Reserve spent as though it were unlimited.',
+        color: 'emerald',
+        masters: ['raja', 'kriya'],
+        calibration: {
+          dimensions: { body: 0.3, action: 0.2, spirit: 0.25 },
+          practiceLevels: { raja: 1 },
+          tags: ['vital', 'well-stocked'],
+        },
+      },
+    ],
+  },
+];

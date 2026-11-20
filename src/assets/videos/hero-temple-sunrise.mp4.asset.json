@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "48115e40-480d-4f30-a351-277d4b2c00de",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-temple-sunrise.mp4",
+  "original_filename": "hero-temple-sunrise.mp4",
+  "size": 27703255,
+  "created_at": "2026-03-28T12:30:43Z",
+  "bucket": "media",
+  "storage_path": "src/assets/videos/hero-temple-sunrise.mp4",
+  "migrated_at": "2026-10-20T10:57:26.086Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/48115e40-480d-4f30-a351-277d4b2c00de/hero-temple-sunrise.mp4"
+}

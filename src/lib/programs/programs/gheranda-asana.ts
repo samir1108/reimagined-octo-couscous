@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GHERANDA_ASANA: SessionProgramV3 = {
+  id: "gheranda-asana",
+  title: "Gheranda · Asana",
+  subtitle: "The steady seat — 32 postures for the temple",
+  description:
+    "A 5-session arc through Gheranda's Asana: the 32 postures that make the body a steady, easeful temple for the rising energy.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["gheranda", "asana", "posture", "seat"],
+  icon: "Lotus",
+  coverGradient: "from-green-600 to-emerald-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The steady seat" },
+    { phase: "Practice", sessions: 1, focus: "The key asanas" },
+    { phase: "Integration", sessions: 1, focus: "Asana in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The steady temple" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Steady and easeful",
+      required: ["ritual.opening-bow", "teach.gheranda.overview", "wisdom.gheranda.asana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The 32 seats",
+      required: ["wisdom.gheranda.asana", "asana.surya-namaskar-flow", "body.head-to-toe"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Master the key seats",
+      required: ["wisdom.gheranda.asana", "asana.siddhasana", "asana.padmasana", "breath.coherent-5-5"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Asana in the day",
+      required: ["wisdom.gheranda.asana", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The steady temple",
+      required: ["ritual.opening-bow", "wisdom.gheranda.asana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "38cd2bbf-2600-4341-82fb-3e1251bbea71",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/trataka/0.mp3",
+  "r2_key": "a/v1/b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5/38cd2bbf-2600-4341-82fb-3e1251bbea71/trataka-0.mp3",
+  "original_filename": "trataka-0.mp3",
+  "size": 115200,
+  "content_type": "audio/mpeg",
+  "created_at": "2026-07-12T01:42:16Z",
+  "bucket": "media",
+  "storage_path": "src/assets/narration/trataka/0.mp3",
+  "migrated_at": "2026-10-20T11:28:50.718Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/38cd2bbf-2600-4341-82fb-3e1251bbea71/trataka-0.mp3"
+}

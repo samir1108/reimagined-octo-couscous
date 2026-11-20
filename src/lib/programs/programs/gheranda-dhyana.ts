@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GHERANDA_DHYANA: SessionProgramV3 = {
+  id: "gheranda-dhyana",
+  title: "Gheranda · Dhyana",
+  subtitle: "Meditation — the three types: gross, light, subtle",
+  description:
+    "A 5-session arc through Gheranda's Dhyana: the three meditation types — sthula (form), jyotir (light), sukshma (subtle self) — progressing from gross to formless.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["gheranda", "dhyana", "meditation", "absorption"],
+  icon: "Target",
+  coverGradient: "from-purple-600 to-pink-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The three meditations" },
+    { phase: "Practice", sessions: 1, focus: "Progress through the types" },
+    { phase: "Integration", sessions: 1, focus: "Meditation in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The unbroken flow" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The three types of meditation",
+      required: ["ritual.opening-bow", "teach.gheranda.overview", "wisdom.gheranda.dhyana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Gross, light, subtle",
+      required: ["wisdom.gheranda.dhyana", "concentration.candle-trataka", "meditation.body-as-anchor"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Progress from form to formless",
+      required: ["wisdom.gheranda.dhyana", "meditation.choiceless-awareness", "witness.gap-between-thoughts"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "Meditation in the day",
+      required: ["wisdom.gheranda.dhyana", "detox.single-tab", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The unbroken flow",
+      required: ["ritual.opening-bow", "wisdom.gheranda.dhyana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 35 },
+  ],
+};

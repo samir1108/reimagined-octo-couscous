@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SAMADHI_NIRVIKALPA: SessionProgramV3 = {
+  id: "samadhi-nirvikalpa",
+  title: "Nirvikalpa Samadhi",
+  subtitle: "Absorption without seed — beyond subject and object",
+  description:
+    "A 5-session arc through Nirvikalpa Samadhi: the absorption where even the object dissolves, leaving only pure awareness without duality.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["samadhi", "nirvikalpa", "non-dual", "absorption"],
+  icon: "CircleDot",
+  coverGradient: "from-purple-700 to-violet-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Beyond the object" },
+    { phase: "Practice", sessions: 1, focus: "Dissolve the seed" },
+    { phase: "Integration", sessions: 1, focus: "The non-dual taste" },
+    { phase: "Mastery", sessions: 1, focus: "The seedless absorption" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Beyond subject and object",
+      required: ["ritual.opening-bow", "teach.samadhi.stages", "wisdom.samadhi.nirvikalpa"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Release the subtle object",
+      required: ["wisdom.samadhi.nirvikalpa", "meditation.choiceless-awareness", "witness.name-the-watcher"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Dissolve the last seed",
+      required: ["wisdom.samadhi.nirvikalpa", "meditation.open-awareness", "witness.thought-as-object"],
+      targetMinutes: 35 },
+    { index: 4, phase: "Integration",
+      intent: "The non-dual taste",
+      required: ["wisdom.samadhi.nirvikalpa", "inquiry.what-is-aware", "contemplation.sit-with-question"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Mastery",
+      intent: "The seedless absorption",
+      required: ["ritual.opening-bow", "wisdom.samadhi.nirvikalpa", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 35 },
+  ],
+};

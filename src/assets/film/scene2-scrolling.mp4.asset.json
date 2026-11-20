@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "fb8eded1-88eb-4398-acdd-70486ce278b7",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film/scene2-scrolling.mp4",
+  "original_filename": "scene2-scrolling.mp4",
+  "size": 6776455,
+  "created_at": "2026-05-01T12:19:51Z",
+  "bucket": "media",
+  "storage_path": "src/assets/film/scene2-scrolling.mp4",
+  "migrated_at": "2026-10-20T10:58:17.373Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/fb8eded1-88eb-4398-acdd-70486ce278b7/scene2-scrolling.mp4"
+}

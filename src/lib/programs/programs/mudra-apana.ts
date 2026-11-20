@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_APANA: SessionProgramV3 = {
+  id: "mudra-apana",
+  title: "Mudra · Apana",
+  subtitle: "Downward seal — support elimination",
+  description:
+    "A 5-session arc through Apana Mudra: the seal that supports elimination and grounding.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "apana", "elimination", "grounding"],
+  icon: "ArrowDown",
+  coverGradient: "from-red-600 to-brown-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & the downward flow" },
+    { phase: "Practice", sessions: 1, focus: "The apana seal" },
+    { phase: "Integration", sessions: 1, focus: "Letting go" },
+    { phase: "Mastery", sessions: 1, focus: "The grounded self" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seal that grounds",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The downward energy",
+      required: ["wisdom.gheranda.1", "bandha.mula", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Apana Mudra",
+      required: ["mudra.apana", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Letting go",
+      required: ["mudra.apana", "micro-act.tidy-one-thing", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The grounded self",
+      required: ["ritual.opening-bow", "mudra.apana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

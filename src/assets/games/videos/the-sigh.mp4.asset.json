@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "5a229f58-983a-4c8b-8e37-f1457bc21493",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/the-sigh.mp4",
+  "original_filename": "the-sigh.mp4",
+  "size": 7821993,
+  "created_at": "2026-07-17T11:11:21Z",
+  "storage_path": "src/assets/games/videos/the-sigh.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:24:55.068Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/5a229f58-983a-4c8b-8e37-f1457bc21493/the-sigh.mp4"
+}

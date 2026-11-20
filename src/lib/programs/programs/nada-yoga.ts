@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const NADA_YOGA: SessionProgramV3 = {
+  id: "nada-yoga",
+  title: "Nada Yoga",
+  subtitle: "The inner sound — listen to the unstruck melody",
+  description:
+    "A 5-session arc through Nada Yoga: from external sounds to the subtle inner sound (anahata nada) that dissolves the mind.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["nada", "inner-sound", "anahata", "dissolution"],
+  icon: "Music",
+  coverGradient: "from-indigo-500 to-purple-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The outer sounds" },
+    { phase: "Practice", sessions: 1, focus: "The inner sound" },
+    { phase: "Integration", sessions: 1, focus: "Merge with the sound" },
+    { phase: "Mastery", sessions: 1, focus: "The sound of the self" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Listen to the world",
+      required: ["ritual.opening-bow", "teach.nada", "observe.three-sounds"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Close the ears, hear within",
+      required: ["wisdom.nada.upanishad", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The anahata nada",
+      required: ["mantra.nada", "breath.coherent-5-5", "witness.gap-between-thoughts"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Merge with the melody",
+      required: ["mantra.nada", "micro-act.stretch-once", "contemplation.sit-with-question"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The sound of the self",
+      required: ["ritual.opening-bow", "mantra.nada", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

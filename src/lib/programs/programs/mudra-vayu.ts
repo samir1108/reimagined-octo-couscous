@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_VAYU: SessionProgramV3 = {
+  id: "mudra-vayu",
+  title: "Mudra · Vayu",
+  subtitle: "Air seal — calm excess air",
+  description:
+    "A 5-session arc through Vayu Mudra: the seal that calms excess air — anxiety, restlessness, gas.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "vayu", "air", "calm"],
+  icon: "Wind",
+  coverGradient: "from-cyan-500 to-blue-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & the air element" },
+    { phase: "Practice", sessions: 1, focus: "The air seal" },
+    { phase: "Integration", sessions: 1, focus: "Calm in the storm" },
+    { phase: "Mastery", sessions: 1, focus: "The still air" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seal that calms the air",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The air element",
+      required: ["wisdom.gheranda.1", "breath.coherent-5-5", "somatic.jaw-release"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Vayu Mudra",
+      required: ["mudra.vayu", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Calm in the storm",
+      required: ["mudra.vayu", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The still air",
+      required: ["ritual.opening-bow", "mudra.vayu", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

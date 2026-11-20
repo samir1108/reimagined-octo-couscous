@@ -1,0 +1,80 @@
+/**
+ * Journal atoms — structured writing prompts.
+ */
+import type { Atom } from "../types";
+
+export const JOURNAL_ATOMS: Atom[] = [
+  {
+    id: "journal.head-heart-gut-check",
+    category: "journal",
+    label: "Head / Heart / Gut Check",
+    intent: "Write what each of the 3 inner intelligences is saying",
+    durationSec: { min: 180, typical: 300, max: 600 },
+    level: 0,
+    modality: "write",
+    intensity: "gentle",
+    gates: ["morning", "evening"],
+    energy: ["low", "medium", "high"],
+    script: [
+      "Write 2 lines: what is my HEAD saying right now?",
+      "Write 2 lines: what is my HEART saying?",
+      "Write 2 lines: what is my GUT saying?",
+      "Notice — do they agree, or fight?",
+    ],
+    tags: ["three-brains", "foundational"],
+  },
+  {
+    id: "journal.loop-of-the-day",
+    category: "journal",
+    label: "Loop of the Day",
+    intent: "Name one loop you noticed today",
+    durationSec: { min: 120, typical: 240, max: 600 },
+    level: 1,
+    modality: "write",
+    intensity: "balanced",
+    gates: ["evening", "night"],
+    energy: ["low", "medium"],
+    script: [
+      "One loop I saw today was…",
+      "It started when…",
+      "It ended (or didn't) when…",
+      "Next time, I want to try…",
+    ],
+    tags: ["loops"],
+  },
+  {
+    id: "journal.unsent-letter",
+    category: "journal",
+    label: "Unsent Letter",
+    intent: "Write a letter you will never send",
+    durationSec: { min: 300, typical: 600, max: 1200 },
+    level: 1,
+    modality: "write",
+    intensity: "fierce",
+    gates: ["evening", "night"],
+    energy: ["low", "medium"],
+    script: [
+      "Pick someone you have unfinished feelings with.",
+      "Write the letter you would write if there were no consequences.",
+      "Don't edit. Don't send.",
+    ],
+    tags: ["shadow", "emotional"],
+  },
+  {
+    id: "journal.morning-pages-3",
+    category: "journal",
+    label: "Morning Pages (3 minutes)",
+    intent: "Stream-of-consciousness brain dump",
+    durationSec: { min: 180, typical: 300, max: 600 },
+    level: 0,
+    modality: "write",
+    intensity: "gentle",
+    gates: ["morning"],
+    energy: ["low", "medium", "high"],
+    script: [
+      "Write whatever comes — no editing, no stopping.",
+      "If stuck, write 'I don't know what to write' until something comes.",
+    ],
+    tags: ["foundational"],
+  },
+];

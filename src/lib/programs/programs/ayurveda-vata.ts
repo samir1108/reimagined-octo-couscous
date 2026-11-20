@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const AYURVEDA_VATA: SessionProgramV3 = {
+  id: "ayurveda-vata",
+  title: "Ayurveda · Vata",
+  subtitle: "Air + ether — calm the wind, ground the creativity",
+  description:
+    "A 5-session arc through Vata dosha: understand the wind principle, recognize imbalance, and cultivate grounding warmth.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["ayurveda", "vata", "dosha", "grounding"],
+  icon: "Wind",
+  coverGradient: "from-cyan-500 to-blue-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The wind principle" },
+    { phase: "Practice", sessions: 1, focus: "Ground the wind" },
+    { phase: "Integration", sessions: 1, focus: "Vata in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The creative grounded" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The wind that moves all",
+      required: ["ritual.opening-bow", "teach.ayurveda.constitution", "wisdom.ayurveda.vata"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Recognize vata in body and mind",
+      required: ["wisdom.ayurveda.vata", "body.head-to-toe", "witness.thought-counter"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Ground the wind",
+      required: ["wisdom.ayurveda.vata", "asana.tadasana", "bandha.mula", "breath.coherent-5-5"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Vata in the day",
+      required: ["wisdom.ayurveda.vata", "teach.ayurveda.dinacharya", "micro-act.stretch-once"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The creative grounded",
+      required: ["ritual.opening-bow", "wisdom.ayurveda.vata", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

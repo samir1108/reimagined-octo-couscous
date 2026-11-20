@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_SITALI: SessionProgramV3 = {
+  id: "pranayama-sitali",
+  title: "Pranayama · Sitali",
+  subtitle: "Cooling breath — rolled tongue, heat to calm",
+  description:
+    "A 5-session arc through Sitali: the cooling breath that lowers heat and soothes the nervous system.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["pranayama", "sitali", "cooling", "heat"],
+  icon: "Snowflake",
+  coverGradient: "from-cyan-400 to-blue-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The cooling breath" },
+    { phase: "Practice", sessions: 1, focus: "The rolled tongue" },
+    { phase: "Integration", sessions: 1, focus: "Cool in the heat" },
+    { phase: "Mastery", sessions: 1, focus: "The cooled mind" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The breath that cools",
+      required: ["ritual.opening-bow", "teach.pranayama.what-is", "breath.box-4-4-4-4"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the tongue",
+      required: ["shatkarma.neti", "somatic.jaw-release", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Sitali rounds",
+      required: ["pranayama.sitali", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Cool in the heat",
+      required: ["pranayama.sitali", "micro-act.drink-water", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The cooled mind",
+      required: ["ritual.opening-bow", "pranayama.sitali", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

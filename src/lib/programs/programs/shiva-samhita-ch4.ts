@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHIVA_SAMHITA_CH4: SessionProgramV3 = {
+  id: "shiva-samhita-ch4",
+  title: "Shiva Samhita · Chapter 4",
+  subtitle: "Samadhi — the four types and the signs of perfection",
+  description:
+    "A 5-session arc through Chapter 4: the four samadhis (savikalpa, nirvikalpa, sahaja, and the indescribable) and the signs of the perfected yogi.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["shiva-samhita", "samadhi", "perfection", "jivanmukti"],
+  icon: "Target",
+  coverGradient: "from-indigo-700 to-violet-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The four samadhis" },
+    { phase: "Practice", sessions: 1, focus: "Taste the absorptions" },
+    { phase: "Integration", sessions: 1, focus: "The signs of perfection" },
+    { phase: "Mastery", sessions: 1, focus: "The perfected yogi" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The four samadhis",
+      required: ["ritual.opening-bow", "teach.shiva.overview", "wisdom.shiva.4"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "From savikalpa to the indescribable",
+      required: ["wisdom.shiva.4", "wisdom.samadhi.savikalpa", "wisdom.samadhi.nirvikalpa"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Taste each samadhi",
+      required: ["wisdom.shiva.4", "wisdom.samadhi.sahaja", "meditation.choiceless-awareness"],
+      targetMinutes: 35 },
+    { index: 4, phase: "Integration",
+      intent: "The signs of the perfected yogi",
+      required: ["wisdom.shiva.4", "teach.shiva.overview", "journal.day-in-one-sentence"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Mastery",
+      intent: "The perfected yogi",
+      required: ["ritual.opening-bow", "wisdom.shiva.4", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 40 },
+  ],
+};

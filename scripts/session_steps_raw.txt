@@ -1,0 +1,174 @@
+# Session Steps Catalog — raw source (172 steps)
+# Format: CATEGORY|NUMBER|key|description
+A|1|welcome|The guide welcomes the user into the session.
+A|2|intention_setting|User identifies what they want from the session.
+A|3|context_recall|AI recalls relevant information from past sessions.
+A|4|state_check|User reports their current mental or emotional state.
+A|5|energy_check|User identifies their perceived energy level.
+A|6|readiness_check|Determines whether the user is ready to begin.
+A|7|environment_setup|Helps the user settle into their surroundings.
+A|8|posture_setup|Guides sitting, standing, walking, or lying down.
+A|9|sensory_settling|Directs attention to sounds, sensations, and surroundings.
+A|10|session_preview|Briefly explains what the session will involve.
+A|11|personalized_invocation|Opens with a personalized contemplative prompt.
+A|12|silence_entry|Transitions into silence without additional instructions.
+B|13|attention_anchoring|Establishes a chosen focus.
+B|14|single_point_focus|Sustains attention on one object.
+B|15|breath_attention|Observes the natural breath.
+B|16|sound_attention|Focuses on sounds as they arise and fade.
+B|17|visual_attention|Observes a visual object or the orb.
+B|18|body_point_focus|Focuses on a particular bodily sensation.
+B|19|attention_counting|Counts breaths or attention cycles.
+B|20|distraction_detection|Notices when attention wanders.
+B|21|attention_return|Gently returns attention to its anchor.
+B|22|sustained_attention|Practices maintaining attention over time.
+B|23|attention_switching|Deliberately switches between attention targets.
+B|24|open_attention|Broadens attention to include multiple experiences.
+C|25|thought_observation|Notices thoughts without following them.
+C|26|emotion_observation|Observes emotions as present experiences.
+C|27|sensation_observation|Notices bodily sensations.
+C|28|impulse_observation|Observes urges before acting on them.
+C|29|inner_dialogue_observation|Notices internal speech.
+C|30|mental_image_observation|Observes memories and mental imagery.
+C|31|reaction_observation|Examines how reactions arise.
+C|32|pattern_observation|Identifies recurring patterns.
+C|33|witness_perspective|Invites the user to observe experience rather than immediately identify with it.
+C|34|observer_observed_inquiry|Investigates the relationship between the observer and the observed.
+C|35|spacious_awareness|Explores awareness of multiple experiences without selecting one.
+C|36|silence_observation|Notices quietness and the changing presence of mental activity.
+D|37|identity_inquiry|Investigates assumptions about personal identity.
+D|38|who_am_i_inquiry|Explores the question, "Who am I?"
+D|39|thought_owner_inquiry|Investigates the experience of having a thought.
+D|40|emotion_owner_inquiry|Explores how emotions relate to one's sense of self.
+D|41|desire_inquiry|Examines a desire and what drives it.
+D|42|fear_inquiry|Investigates a fear with appropriate emotional pacing.
+D|43|belief_inquiry|Examines a belief and its supporting assumptions.
+D|44|assumption_inquiry|Identifies an assumption behind a reaction.
+D|45|control_inquiry|Investigates the wish to control an experience or outcome.
+D|46|attachment_inquiry|Explores attachment to outcomes, identities, or expectations.
+D|47|impermanence_inquiry|Examines how an experience changes over time.
+D|48|awareness_inquiry|Explores what the user can notice about awareness itself.
+E|49|natural_breathing|Observes breathing without changing it.
+E|50|paced_breathing|Guides a comfortable breathing rhythm.
+E|51|extended_exhalation|Invites a gentle, longer exhalation when comfortable.
+E|52|breath_counting|Uses counting to stabilize attention.
+E|53|breath_body_sync|Connects breath awareness with bodily sensations.
+E|54|breath_transition|Uses breathing to transition between session phases.
+E|55|relaxation_scan|Moves attention through the body while releasing unnecessary tension.
+E|56|grounding|Directs attention to contact with the floor, seat, or surroundings.
+E|57|sensory_orientation|Reorients attention to the immediate environment.
+E|58|settling_pause|Provides a brief pause before continuing.
+F|59|physical_body_scan|Explores physical sensations throughout the body.
+F|60|posture_awareness|Notices alignment, movement, and muscular tension.
+F|61|interoception|Observes internal bodily sensations.
+F|62|energy_sensation_mapping|Maps the user's subjective sense of energy.
+F|63|emotion_body_mapping|Explores where emotions are felt physically.
+F|64|breath_body_mapping|Notices where breathing is experienced in the body.
+F|65|body_boundary_inquiry|Investigates the felt boundaries of the body.
+F|66|movement_awareness|Observes deliberate movement.
+F|67|stillness_awareness|Explores bodily stillness.
+F|68|body_mind_relationship|Examines relationships between bodily states and mental activity.
+F|69|pranic_body_reflection|Explores the yogic concept of the pranic body.
+F|70|mental_body_reflection|Examines thoughts and mental patterns through the yogic kosha framework.
+F|71|wisdom_body_reflection|Reflects on discernment and deeper understanding.
+F|72|bliss_body_reflection|Explores ease, contentment, and the traditional anandamaya kosha concept.
+G|73|emotion_naming|Names the current emotion.
+G|74|emotion_intensity_check|Checks perceived emotional intensity.
+G|75|emotion_allowing|Practices allowing an emotion to be present without forcing it away.
+G|76|emotion_trigger_mapping|Identifies a possible trigger.
+G|77|reaction_chain_review|Examines trigger to interpretation to emotion to action.
+G|78|shadow_pattern_reflection|Reflects on a recurring or avoided aspect of experience.
+G|79|projection_reflection|Examines possible projections onto other people.
+G|80|inner_conflict_mapping|Identifies competing needs or beliefs.
+G|81|self_compassion|Practices responding to difficulty with kindness.
+G|82|forgiveness_reflection|Explores forgiveness without requiring reconciliation.
+G|83|acceptance_reflection|Distinguishes acceptance from approval or resignation.
+G|84|emotional_integration|Identifies a constructive next step after emotional reflection.
+H|85|trigger_identification|Identifies the situation that activates a recurring pattern.
+H|86|habit_loop_mapping|Maps cue to routine to reward.
+H|87|karma_pattern_reflection|Reflects on actions and their consequences.
+H|88|intention_action_review|Compares intentions with actual behavior.
+H|89|consequence_visualization|Considers plausible consequences of a potential action.
+H|90|reaction_pause_practice|Practices inserting a pause before responding.
+H|91|alternative_response_design|Develops a different response to a familiar trigger.
+H|92|behavioral_commitment|Chooses one concrete behavior to practice.
+H|93|environment_design|Identifies environmental changes that support the intended behavior.
+H|94|habit_rehearsal|Mentally rehearses a constructive response.
+H|95|pattern_breaking|Selects a small interruption to a recurring habit.
+H|96|karma_integration|Connects the session's insight to a real-world action.
+I|97|wisdom_teaching|Presents a short teaching relevant to the session.
+I|98|sutra_reflection|Introduces and reflects on a yogic sutra.
+I|99|teaching_contemplation|Invites the user to contemplate one idea.
+I|100|paradox_inquiry|Explores a paradoxical question.
+I|101|metaphor_reflection|Uses a metaphor to illuminate experience.
+I|102|guided_imagination|Uses a structured imaginative exercise.
+I|103|perspective_reframing|Examines an alternative interpretation.
+I|104|discernment_practice|Distinguishes observation from interpretation.
+I|105|knowledge_to_experience|Connects a teaching to something the user can directly investigate.
+I|106|insight_verification|Asks what the user actually noticed, rather than assuming the teaching is true for them.
+J|107|mantra_introduction|Introduces a chosen mantra or phrase.
+J|108|mental_japa|Repeats a mantra mentally.
+J|109|spoken_japa|Repeats a mantra aloud.
+J|110|breath_synchronized_japa|Coordinates repetition with comfortable breathing.
+J|111|mantra_counting|Counts repetitions.
+J|112|mantra_listening|Attends to the sound of the mantra.
+J|113|mantra_silence_transition|Transitions from repetition into silence.
+J|114|meaning_contemplation|Reflects on the meaning of a mantra.
+J|115|devotional_reflection|Offers an optional devotional contemplation.
+J|116|repetition_completion|Ends the practice and reflects on the experience.
+K|117|goal_clarification|Clarifies what the user wants to accomplish.
+K|118|priority_selection|Selects the most important current priority.
+K|119|distraction_audit|Identifies likely distractions.
+K|120|urge_surfing|Observes an urge without immediately acting on it.
+K|121|delayed_response_practice|Practices waiting before responding.
+K|122|commitment_rehearsal|Mentally rehearses following through.
+K|123|obstacle_forecasting|Anticipates a likely obstacle.
+K|124|if_then_planning|Creates an implementation intention: if X happens, I will do Y.
+K|125|focus_sprint_setup|Defines a short period of focused work.
+K|126|willpower_reflection|Reflects on choices and self-regulation.
+L|127|relationship_reflection|Examines a relationship situation.
+L|128|perspective_taking|Considers another person's possible perspective.
+L|129|boundary_reflection|Identifies a personal boundary.
+L|130|communication_rehearsal|Practices communicating a thought or need.
+L|131|conflict_reflection|Examines a conflict and possible responses.
+L|132|gratitude_reflection|Reflects on something appreciated.
+L|133|work_purpose_reflection|Connects work with personal values.
+L|134|financial_behavior_reflection|Examines financial decisions and habits without judgment.
+L|135|health_routine_reflection|Reviews daily routines related to well-being.
+L|136|purpose_inquiry|Explores values, meaning, and direction.
+L|137|life_domain_priority|Selects one domain for attention.
+L|138|real_world_action_selection|Chooses a concrete action in that domain.
+M|139|future_self_reflection|Imagines a realistic future self.
+M|140|guided_visualization|Visualizes a chosen scenario.
+M|141|obstacle_visualization|Imagines how to respond to a foreseeable challenge.
+M|142|creative_observation|Observes an ordinary experience with fresh attention.
+M|143|possibility_generation|Generates alternative possibilities.
+M|144|perspective_shift|Examines the situation from a different perspective.
+M|145|mental_rehearsal|Rehearses a specific future action.
+M|146|values_alignment|Compares a potential action with personal values.
+N|147|guided_silence|Provides a period without verbal guidance.
+N|148|open_monitoring|Notices experiences as they arise and change.
+N|149|nonjudgmental_noticing|Practices noticing without immediately evaluating.
+N|150|sound_space_awareness|Observes sounds within the surrounding environment.
+N|151|thought_space_awareness|Observes thoughts appearing and disappearing.
+N|152|awareness_rest|Invites the user to rest attention without a narrow target.
+N|153|unstructured_sitting|Allows a period of self-directed contemplative practice.
+N|154|silence_duration_choice|Lets the user select the length of a silence interval.
+O|155|experience_recall|Recalls what happened during the session.
+O|156|insight_capture|Captures an important observation.
+O|157|journal_prompt|Presents a written reflection prompt.
+O|158|voice_reflection|Allows spoken reflection.
+O|159|learning_summary|Summarizes what the user learned.
+O|160|uncertainty_capture|Records something that remains unclear.
+O|161|pattern_update|Updates a candidate pattern based on the user's report.
+O|162|session_rating|Captures a simple subjective assessment.
+O|163|next_session_recommendation|Suggests a possible direction for a future session.
+O|164|integration_action|Defines one real-world application.
+P|165|session_recap|Recaps the session.
+P|166|intention_revisit|Revisits the initial intention.
+P|167|state_recheck|Checks how the user's experience has changed.
+P|168|gratitude_close|Ends with optional gratitude.
+P|169|grounding_close|Returns attention to the surroundings.
+P|170|transition_to_day|Prepares the user to resume their activities.
+P|171|micro_commitment|Sets a small commitment for the next few hours.
+P|172|session_complete|Marks the session as complete and saves its outcome.

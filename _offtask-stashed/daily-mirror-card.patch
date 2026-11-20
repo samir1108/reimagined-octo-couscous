@@ -1,0 +1,169 @@
+﻿diff --git a/src/components/guide/GuideSessionOverlay.tsx b/src/components/guide/GuideSessionOverlay.tsx
+index 77d168f..9eeb2df 100644
+--- a/src/components/guide/GuideSessionOverlay.tsx
++++ b/src/components/guide/GuideSessionOverlay.tsx
+@@ -54,6 +54,17 @@ interface GuideSessionOverlayProps {
+   open: boolean;
+   guru: Guru | null;
+   onClose: () => void;
++  /**
++   * Extra grounding context appended to the system prompt. Used by the
++   * Daily Mirror so the guide speaks about the user's exact loop/chakra.
++   */
++  seedContext?: string;
++  /**
++   * When set, the opening AI turn replies to this message instead of
++   * running the generic "daily" greeting. Lets the user tap straight
++   * into a specific check-in ("my gut is clenching — is this the loop?").
++   */
++  seedUserMessage?: string;
+ }
+ 
+ type Msg = {
+@@ -139,6 +150,8 @@ export default function GuideSessionOverlay({
+   open,
+   guru,
+   onClose,
++  seedContext,
++  seedUserMessage,
+ }: GuideSessionOverlayProps) {
+   const { streamChat } = useGuideChat();
+   const { data: themeData } = useThemeOfDay();
+@@ -341,8 +354,11 @@ export default function GuideSessionOverlay({
+     if (committedSankalpa) {
+       lines.push(`SANKALPA PLANTED: "${committedSankalpa}" — honour it in your closing.`);
+     }
++    if (seedContext?.trim()) {
++      lines.push(`\nDAILY MIRROR (today's field):\n${seedContext.trim()}`);
++    }
+     return lines.join("\n");
+-  }, [themeData, guru, sessionMinutes, chosenIntensity, committedSankalpa]);
++  }, [themeData, guru, sessionMinutes, chosenIntensity, committedSankalpa, seedContext]);
+ 
+   // Apply parsed signals to a buffered message — used in stream handlers.
+   const applySignalsToBuffer = (buf: string): Partial<Msg> => {
+@@ -409,11 +425,21 @@ export default function GuideSessionOverlay({
+     setStreaming(true);
+ 
+     let buf = "";
+-    setMessages([{ role: "assistant", content: "" }]);
+-    const assistantIdx = 0;
++    const seed = seedUserMessage?.trim() || "";
++    if (seed) {
++      // Mirror-chat entry: show the user's check-in as the opening turn so
++      // the guide responds to it directly instead of a generic greeting.
++      setMessages([
++        { role: "user", content: seed },
++        { role: "assistant", content: "" },
++      ]);
++    } else {
++      setMessages([{ role: "assistant", content: "" }]);
++    }
++    const assistantIdx = seed ? 1 : 0;
+ 
+     await streamChat({
+-      messages: [],
++      messages: seed ? [{ role: "user", content: seed }] : [],
+       timeSlot: "general",
+       themeName,
+       userName,
+@@ -452,6 +478,7 @@ export default function GuideSessionOverlay({
+     checkCredits,
+     handleInsufficientCredits,
+     onClose,
++    seedUserMessage,
+     streamChat,
+     themeName,
+     userLanguage,
+diff --git a/src/pages/Home.tsx b/src/pages/Home.tsx
+index ef908fc..49d508a 100644
+--- a/src/pages/Home.tsx
++++ b/src/pages/Home.tsx
+@@ -5,6 +5,7 @@
+ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+ import { useNavigate } from "react-router-dom";
+ import { useMachine } from "@xstate/react";
++import { useQueryClient } from "@tanstack/react-query";
+ import { motion, AnimatePresence } from "framer-motion";
+ import { 
+   Wind, 
+@@ -88,6 +89,7 @@ import CommitmentPingCard from "@/components/home/CommitmentPingCard";
+ import HomeProgramSuggestions from "@/components/home/HomeProgramSuggestions";
+ import PostOnboardingNudge from "@/components/home/PostOnboardingNudge";
+ import { useSuggestedPrograms } from "@/hooks/useSuggestedPrograms";
++import DailyMirrorCard from "@/components/home/DailyMirrorCard";
+ 
+ // ═══════════════════════════════════════════════════════════════════════════════
+ // DAILY ORB COMPONENT — The heart of the new Home
+@@ -449,6 +451,20 @@ export default function Home() {
+   // Full-screen cinematic Guide chat overlay (replaces navigate to /guide)
+   const [guideOverlayOpen, setGuideOverlayOpen] = useState(false);
+ 
++  // Daily Mirror → Guide handoff. When set, the overlay's opening AI turn
++  // replies to this check-in instead of running the generic daily greeting.
++  const [mirrorSeedMessage, setMirrorSeedMessage] = useState<string | undefined>(undefined);
++  const [mirrorSeedContext, setMirrorSeedContext] = useState<string | undefined>(undefined);
++
++  const closeGuide = useCallback(() => {
++    setGuideOverlayOpen(false);
++    setMirrorSeedMessage(undefined);
++    setMirrorSeedContext(undefined);
++  }, []);
++
++  // Daily Mirror refresh after a sitting completes.
++  const queryClient = useQueryClient();
++
+   // Sutra orchestrator — personalized session plan (mode + practice + theme + why).
+   // Loads in the background; shown when user activates the orb.
+   const { plan: sutraPlan, refresh: refreshSutra } = useNextSession();
+@@ -581,6 +597,9 @@ export default function Home() {
+     setSessionsToday(loadTodaysSessions());
+     setLastCompleted(plan);
+     saveLastSittingEssence(fb || plan.title);
++    // A completed sitting changes the field — drop the cached Daily Mirror so
++    // the next render re-reads it against the session that just landed.
++    queryClient.invalidateQueries({ queryKey: ["daily-briefing"] });
+     toast({ title: `Session ${plan.sessionNumber} complete`, description: fb ? `You noted: "${fb}"` : plan.closing.nextHint || "Well done." });
+   };
+ 
+@@ -711,6 +730,29 @@ export default function Home() {
+ 
+           {/* Pillar 3: Life event anniversary */}
+           {!orientation.inOrientation && <LifeAnniversaryCard />}
++
++          {/* Daily consciousness briefing — tappable to expand.
++              Signal chips open the guide in a seeded mirror-chat. */}
++          {!orientation.inOrientation && profile && (
++            <DailyMirrorCard
++              profile={profile}
++              onSignalTap={(question, seedContext) => {
++                setMirrorSeedMessage(
++                  `I'm checking in on something. ${question} I'm not sure if this is the pattern or just a hard day.`
++                );
++                setMirrorSeedContext(seedContext);
++                setGuideOverlayOpen(true);
++              }}
++              onReflect={(journalPrompt, seedContext) => {
++                setMirrorSeedMessage(
++                  `Evening reflection. ${journalPrompt} I want to look honestly at today rather than tidy it up.`
++                );
++                setMirrorSeedContext(seedContext);
++                setGuideOverlayOpen(true);
++              }}
++            />
++          )}
++
+           {/* While Foundation Course (60 sessions) is active, hide whisper/letter/ritual/theme/orb */}
+           {!hideDailyHomeUI && (
+             <>
+@@ -920,7 +962,9 @@ export default function Home() {
+       <GuideSessionOverlay
+         open={guideOverlayOpen}
+         guru={activeGuru}
+-        onClose={() => setGuideOverlayOpen(false)}
++        onClose={closeGuide}
++        seedContext={mirrorSeedContext}
++        seedUserMessage={mirrorSeedMessage}
+       />
+ 
+       {/* Sutra Orchestrator — personalized session intro card.

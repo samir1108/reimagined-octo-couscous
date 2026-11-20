@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "eb4254a0-c56e-4927-aacb-57c74e9fe349",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-desert.mp4",
+  "original_filename": "hero-meditate-desert.mp4",
+  "size": 10858482,
+  "created_at": "2026-03-28T12:39:03Z",
+  "bucket": "media",
+  "storage_path": "src/assets/videos/hero-meditate-desert.mp4",
+  "migrated_at": "2026-10-20T10:56:24.679Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/eb4254a0-c56e-4927-aacb-57c74e9fe349/hero-meditate-desert.mp4"
+}

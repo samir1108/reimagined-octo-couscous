@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "72417a10-aa74-4c4a-bccb-ede77f66b4c7",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/breath-temple.jpg",
+  "r2_key": "a/v1/b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f/72417a10-aa74-4c4a-bccb-ede77f66b4c7/breath-temple.jpg",
+  "original_filename": "breath-temple.jpg",
+  "size": 104128,
+  "content_type": "image/jpeg",
+  "created_at": "2026-06-18T14:25:24Z",
+  "bucket": "media",
+  "storage_path": "src/assets/games/breath-temple.jpg",
+  "migrated_at": "2026-10-20T11:23:31.562Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/72417a10-aa74-4c4a-bccb-ede77f66b4c7/breath-temple.jpg"
+}

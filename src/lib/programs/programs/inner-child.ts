@@ -1,0 +1,58 @@
+/**
+ * PROGRAM: Inner Child Reunion — meet, listen, parent.
+ */
+import type { SessionProgramV3 } from "../types";
+
+export const INNER_CHILD: SessionProgramV3 = {
+  id: "inner-child",
+  title: "Inner Child Reunion",
+  subtitle: "Meet the part of you that's been waiting",
+  description:
+    "An 8-session IFS-informed arc to meet, listen to, and re-parent the younger parts driving your present-day loops.",
+  difficulty: "intermediate",
+  category: "heart",
+  tags: ["inner-child", "ifs", "re-parenting"],
+  icon: "Baby",
+  coverGradient: "from-pink-400 to-purple-700",
+  totalSessions: 8,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Safety & frame" },
+    { phase: "Practice", sessions: 4, focus: "Meet & listen" },
+    { phase: "Integration", sessions: 1, focus: "Re-parent" },
+    { phase: "Mastery", sessions: 1, focus: "Adult Self lead" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Settle the system",
+      required: ["ritual.opening-bow", "body.head-to-toe", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 2, phase: "Foundation",
+      intent: "Parts language",
+      required: ["framework.loop-anatomy", "ifs.meet-a-part", "journal.head-heart-gut-check"],
+      targetMinutes: 22 },
+    { index: 3, phase: "Practice",
+      intent: "Find the young one",
+      required: ["ifs.meet-a-part", "contemplation.sit-with-question", "voice-journal.speak-it-out"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Practice",
+      intent: "Listen — don't fix",
+      required: ["emotion.rain", "journal.unsent-letter", "neuro.vagus-nerve"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Practice",
+      intent: "What did they need?",
+      required: ["ifs.unburden-protector", "shadow.gold-projection", "voice-journal.speak-it-out"],
+      targetMinutes: 25 },
+    { index: 6, phase: "Practice",
+      intent: "Body holding",
+      required: ["body.tension-map", "mudra.anjali", "mantra.so-hum"],
+      targetMinutes: 20 },
+    { index: 7, phase: "Integration",
+      intent: "Become the parent",
+      required: ["micro-act.thank-someone", "wisdom.rumi.guest-house", "ritual.dedicate-merit"],
+      targetMinutes: 20 },
+    { index: 8, phase: "Mastery",
+      intent: "Self-led, child welcomed",
+      required: ["ritual.opening-bow", "meditation.open-awareness", "inquiry.who-am-i", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

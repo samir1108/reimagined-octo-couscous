@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const BANDHA_JALANDHARA: SessionProgramV3 = {
+  id: "bandha-jalandhara",
+  title: "Bandha · Jalandhara",
+  subtitle: "Throat lock — calm the mind",
+  description:
+    "A 5-session arc through Jalandhara Bandha: the throat lock that seals the energy and calms the mind.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["bandha", "jalandhara", "throat", "calm"],
+  icon: "Shield",
+  coverGradient: "from-blue-600 to-indigo-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The throat & the lock" },
+    { phase: "Practice", sessions: 1, focus: "The chin to chest" },
+    { phase: "Integration", sessions: 1, focus: "Calm in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The sealed throat" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The lock that calms the mind",
+      required: ["ritual.opening-bow", "teach.bandha", "wisdom.gheranda.bandha"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the throat",
+      required: ["wisdom.gheranda.1", "somatic.jaw-release", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The chin to chest",
+      required: ["bandha.jalandhara", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Calm in the day",
+      required: ["bandha.jalandhara", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The sealed throat",
+      required: ["ritual.opening-bow", "bandha.jalandhara", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

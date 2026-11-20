@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "aac4f6b7-8a7a-4343-a3a8-b65534fcfe99",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-tech.mp4",
+  "original_filename": "hero-meditate-tech.mp4",
+  "size": 14403706,
+  "created_at": "2026-03-28T12:39:09Z",
+  "bucket": "media",
+  "storage_path": "src/assets/videos/hero-meditate-tech.mp4",
+  "migrated_at": "2026-10-20T10:56:50.917Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/aac4f6b7-8a7a-4343-a3a8-b65534fcfe99/hero-meditate-tech.mp4"
+}

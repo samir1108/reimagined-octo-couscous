@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const BHUTA_TEJAS: SessionProgramV3 = {
+  id: "bhuta-tejas",
+  title: "Bhuta · Tejas",
+  subtitle: "Fire element — transformation, clarity, digestion",
+  description:
+    "A 5-session arc through Tejas (Fire): the radiant principle of heat, light, transformation, and the power of discrimination.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["bhuta", "tejas", "fire", "transformation"],
+  icon: "Flame",
+  coverGradient: "from-orange-500 to-red-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The radiant principle" },
+    { phase: "Practice", sessions: 1, focus: "Ignite the inner fire" },
+    { phase: "Integration", sessions: 1, focus: "Transform in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The clear witness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The principle of transformation",
+      required: ["ritual.opening-bow", "teach.bhuta.overview", "wisdom.bhuta.tejas"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the digestive fire",
+      required: ["wisdom.bhuta.tejas", "bandha.uddiyana", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Ignite and transform",
+      required: ["wisdom.bhuta.tejas", "breath.kapalbhati", "concentration.candle-trataka"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Transform in the day",
+      required: ["wisdom.bhuta.tejas", "micro-act.tidy-one-thing", "journal.what-am-i-avoiding"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The clear witness",
+      required: ["ritual.opening-bow", "wisdom.bhuta.tejas", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

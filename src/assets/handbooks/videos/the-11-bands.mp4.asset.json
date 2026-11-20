@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "8b7472d7-42b6-4b5d-8130-c49a3cd0b358",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/the-11-bands.mp4",
+  "original_filename": "the-11-bands.mp4",
+  "size": 10401000,
+  "created_at": "2026-07-18T09:56:13Z",
+  "storage_path": "src/assets/handbooks/videos/the-11-bands.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:25:38.985Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/8b7472d7-42b6-4b5d-8130-c49a3cd0b358/the-11-bands.mp4"
+}

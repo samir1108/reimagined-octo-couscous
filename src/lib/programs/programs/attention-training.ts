@@ -1,0 +1,36 @@
+import type { SessionProgramV3 } from "../types";
+
+export const ATTENTION_TRAINING: SessionProgramV3 = {
+  id: "attention-training",
+  title: "Attention Training",
+  subtitle: "Reclaim the muscle the feed has stolen",
+  description: "A 7-session arc training pure attention through trataka, counting, and single-pointed focus.",
+  difficulty: "beginner",
+  category: "meditation",
+  tags: ["attention", "focus", "dharana"],
+  icon: "Crosshair",
+  coverGradient: "from-cyan-700 to-blue-950",
+  totalSessions: 7,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Notice the wander" },
+    { phase: "Practice", sessions: 3, focus: "Train the return" },
+    { phase: "Integration", sessions: 1, focus: "Attention in life" },
+    { phase: "Mastery", sessions: 1, focus: "Effortless focus" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation", intent: "Notice the wander",
+      required: ["ritual.opening-bow", "witness.thought-counter", "observe.thought-count"], targetMinutes: 16 },
+    { index: 2, phase: "Foundation", intent: "Anchor in breath",
+      required: ["meditation.anchor-breath", "concentration.count-breath-21", "body.micro-scan-60s"], targetMinutes: 18 },
+    { index: 3, phase: "Practice", intent: "Trataka — single point",
+      required: ["concentration.candle-trataka", "observe.one-object", "mudra.dhyana"], targetMinutes: 22 },
+    { index: 4, phase: "Practice", intent: "Detect the leak",
+      required: ["detox.no-phone-30min", "loop-confront.interrupt-now", "witness.gap-between-thoughts"], targetMinutes: 20 },
+    { index: 5, phase: "Practice", intent: "Extend the span",
+      required: ["concentration.count-breath-21", "meditation.anchor-breath", "mantra.so-hum"], targetMinutes: 22 },
+    { index: 6, phase: "Integration", intent: "Attention in life",
+      required: ["observe.5-senses", "micro-act.tidy-one-thing", "ritual.dedicate-merit"], targetMinutes: 18 },
+    { index: 7, phase: "Mastery", intent: "Effortless focus",
+      required: ["ritual.opening-bow", "concentration.candle-trataka", "meditation.open-awareness", "ritual.dedicate-merit"], targetMinutes: 25 },
+  ],
+};

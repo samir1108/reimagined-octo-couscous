@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_DHYANA: SessionProgramV3 = {
+  id: "mudra-dhyana",
+  title: "Mudra · Dhyana",
+  subtitle: "Meditation seal — hands in the lap",
+  description:
+    "A 5-session arc through Dhyana Mudra: the seal of meditation that deepens absorption and stills the mind.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "dhyana", "meditation", "absorption"],
+  icon: "Lotus",
+  coverGradient: "from-violet-500 to-purple-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & meditation" },
+    { phase: "Practice", sessions: 1, focus: "The meditation seal" },
+    { phase: "Integration", sessions: 1, focus: "Absorption in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The meditative self" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seal of meditation",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The still mind",
+      required: ["wisdom.gheranda.1", "meditation.anchor-breath", "witness.thought-counter"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Dhyana Mudra",
+      required: ["mudra.dhyana", "breath.coherent-5-5", "meditation.body-as-anchor"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Absorption in the day",
+      required: ["mudra.dhyana", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The meditative self",
+      required: ["ritual.opening-bow", "mudra.dhyana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

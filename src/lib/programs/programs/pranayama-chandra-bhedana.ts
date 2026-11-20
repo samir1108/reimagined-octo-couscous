@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_CHANDRA_BHEDANA: SessionProgramV3 = {
+  id: "pranayama-chandra-bhedana",
+  title: "Pranayama · Chandra Bhedana",
+  subtitle: "Left-nostril lunar breath — cool and calm",
+  description:
+    "A 5-session arc through Chandra Bhedana: the left-nostril breath that cools the body and opens the heart.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["pranayama", "chandra-bhedana", "lunar", "cool"],
+  icon: "Moon",
+  coverGradient: "from-blue-500 to-indigo-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The lunar channel" },
+    { phase: "Practice", sessions: 1, focus: "The left-nostril inhale" },
+    { phase: "Integration", sessions: 1, focus: "Cool in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The opened heart" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The lunar channel",
+      required: ["ritual.opening-bow", "teach.pranayama.nadis", "breath.box-4-4-4-4"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the left nostril",
+      required: ["shatkarma.neti", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Chandra Bhedana rounds",
+      required: ["pranayama.chandra-bhedana", "breath.coherent-5-5", "meditation.loving-kindness"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Cool in the day",
+      required: ["pranayama.chandra-bhedana", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The opened heart",
+      required: ["ritual.opening-bow", "pranayama.chandra-bhedana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

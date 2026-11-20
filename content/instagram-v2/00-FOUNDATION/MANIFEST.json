@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "updated": "2026-05-10",
+  "purpose": "Single source of truth for reusable reel assets. Every reel pulls from this manifest — never re-generate.",
+
+  "characters": {
+    "SAMIR":       { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/SAMIR-lock-sheet-v1.png",        "voice_id": "TX3LPaxmHKxFdv7VOQHJ", "voice_name": "Liam",    "domain": "Founder",  "city": "Bangalore", "age": 26 },
+    "VIKRAM":      { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/VIKRAM-lock-sheet-v1.png",       "voice_id": "onwK4e9ZLuTAKqWW03F9", "voice_name": "Daniel",  "domain": "Founder",  "city": "Mumbai",    "age": 38 },
+    "ANJALI":      { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/SAMIR-lock-sheet-v1.png",        "voice_id": "EXAVITQu4vr4xnSDxMaL", "voice_name": "Sarah",   "domain": "Student",  "city": "Bangalore", "age": 28, "note": "no dedicated lock sheet yet — uses R005 keyframes as ref" },
+    "ARJUN":       { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/ARJUN-lock-sheet-v1.png",        "voice_id": "TX3LPaxmHKxFdv7VOQHJ", "voice_name": "Liam",    "domain": "Engineer", "city": "Bangalore", "age": 28 },
+    "PRIYA":       { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/PRIYA-lock-sheet-v1.png",        "voice_id": "XrExE9yKIg1WjnnlVkGX", "voice_name": "Matilda", "domain": "Mother",   "city": "Mumbai",    "age": 34 },
+    "DIYA":        { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/DIYA-lock-sheet-v1.png",         "voice_id": "Xb7hH8MSUJpSbSDYk0k2", "voice_name": "Alice",   "domain": "Student",  "city": "Pune",      "age": 21 },
+    "AAJI":        { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/AAJI-lock-sheet-v1.png",         "voice_id": "cgSgspJ2msm6clMCkdW9", "voice_name": "Jessica", "domain": "Elder",    "city": "Pune",      "age": 68 },
+    "MODERN_GURU": { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/MODERN-GURU-lock-sheet-v1.png",  "voice_id": "JBFqnCBsd6RMkjVDRZzb", "voice_name": "George",  "domain": "Teacher",  "city": "Rishikesh", "age": 26 },
+    "SAGE":        { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/SAGE-lock-sheet-v1.png",         "voice_id": "N2lVS1w4EtoT3dr4eOWO", "voice_name": "Callum",  "domain": "Mythic",   "city": "Himalaya",  "age": null },
+    "MAYA":        { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/MAYA-lock-sheet-v1.png",         "voice_id": "FGY2WhTYpPnrIDTdsKH5", "voice_name": "Laura",   "domain": "Therapist","city": "London",    "age": 31 },
+    "DANIEL":      { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/DANIEL-lock-sheet-v1.png",       "voice_id": "bIHbv24MWmeRgasZH58o", "voice_name": "Will",    "domain": "Engineer", "city": "NYC",       "age": 35 },
+    "YUKI":        { "lock_sheet": "content/instagram-v2/00-FOUNDATION/portraits/YUKI-lock-sheet-v1.png",         "voice_id": "pFZP5JQG7iQjIQuC4Bku", "voice_name": "Lily",    "domain": "Designer", "city": "Tokyo",     "age": 24 }
+  },
+
+  "fonts": {
+    "anton_regular": "content/instagram-v2/00-FOUNDATION/fonts/Anton-Regular.ttf"
+  },
+
+  "caption_style": {
+    "font": "Anton",
+    "size_pt": 140,
+    "color_body": "#FFFFFF",
+    "color_highlight": "#FFB800",
+    "position_y_pct": 82,
+    "words_per_card": "2-3",
+    "anim": "scale 0.85->1.0 over 120ms"
+  },
+
+  "audio_library": {
+    "status": "BLOCKED — ElevenLabs account out of credits + Music API needs paid plan",
+    "sfx": {},
+    "music": {},
+    "fallback_plan": [
+      "Option A: Top up ElevenLabs account (recommended, ~$5 covers 100+ reels of SFX)",
+      "Option B: Use freesound.org public-domain library (curated list to be downloaded)",
+      "Option C: Per-reel music generated via Suno/Udio API (requires user API key)",
+      "Option D: Use only browser TTS + ambient YouTube creative-commons tracks (lowest quality)"
+    ]
+  },
+
+  "lut": {
+    "name": "warm-tungsten-cool-window",
+    "ffmpeg_filter": "eq=contrast=1.08:brightness=-0.02:saturation=1.05,colorbalance=rs=0.08:gs=0:bs=-0.05:rm=0.04:gm=0:bm=-0.03"
+  },
+
+  "video_spec": {
+    "aspect": "9:16",
+    "resolution": "1080x1920",
+    "fps": 24,
+    "duration_s": 60,
+    "clip_count": 12,
+    "clip_duration_s": 5
+  },
+
+  "audio_mix": {
+    "vo_db": -3,
+    "music_db": -18,
+    "ambience_db": -24,
+    "sfx_db_peak": -6,
+    "silence_min_s": 1.5
+  }
+}

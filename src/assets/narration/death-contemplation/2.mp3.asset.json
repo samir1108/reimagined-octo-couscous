@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "d098076d-9323-4919-a07c-2331f3ac3d9c",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/death-contemplation/2.mp3",
+  "r2_key": "a/v1/b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5/d098076d-9323-4919-a07c-2331f3ac3d9c/death-contemplation-2.mp3",
+  "original_filename": "death-contemplation-2.mp3",
+  "size": 125568,
+  "content_type": "audio/mpeg",
+  "created_at": "2026-07-12T01:45:08Z",
+  "bucket": "media",
+  "storage_path": "src/assets/narration/death-contemplation/2.mp3",
+  "migrated_at": "2026-10-20T11:27:20.054Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/d098076d-9323-4919-a07c-2331f3ac3d9c/death-contemplation-2.mp3"
+}

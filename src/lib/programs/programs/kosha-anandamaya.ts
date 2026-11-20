@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KOSHA_ANANDAMAYA: SessionProgramV3 = {
+  id: "kosha-anandamaya",
+  title: "Kosha · Anandamaya",
+  subtitle: "The bliss sheath — the causal body of joy",
+  description:
+    "A 5-session arc through the Anandamaya Kosha: the subtlest sheath, the joy of deep sleep, the threshold of the self.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["kosha", "anandamaya", "bliss", "causal"],
+  icon: "Sun",
+  coverGradient: "from-yellow-500 to-amber-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The bliss sheath" },
+    { phase: "Practice", sessions: 1, focus: "Taste the bliss" },
+    { phase: "Integration", sessions: 1, focus: "Joy in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The threshold of the self" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The sheath of joy",
+      required: ["ritual.opening-bow", "teach.kosha.overview", "wisdom.kosha.anandamaya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The joy of deep sleep",
+      required: ["wisdom.kosha.anandamaya", "meditation.sky-mind", "witness.gap-between-thoughts"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Taste the subtle joy",
+      required: ["wisdom.kosha.anandamaya", "meditation.loving-kindness", "observe.faces-of-people"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Joy in the day",
+      required: ["wisdom.kosha.anandamaya", "voice-journal.gratitude-3", "journal.three-wins"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The threshold of the self",
+      required: ["ritual.opening-bow", "wisdom.kosha.anandamaya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

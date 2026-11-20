@@ -1,0 +1,14 @@
+{
+	"appId": "app.consciousos.app",
+	"appName": "CONSCIOUSOS",
+	"webDir": "dist",
+	"server": {
+		"cleartext": true
+	},
+	"ios": {
+		"contentInset": "always"
+	},
+	"plugins": {
+		"Health": {}
+	}
+}

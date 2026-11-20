@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "0ac98b7e-0445-4737-a204-bf7705ddd3e0",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/athlete-mind-in-motion.mp4",
+  "original_filename": "athlete-mind-in-motion.mp4",
+  "size": 7939495,
+  "created_at": "2026-07-16T18:48:27Z",
+  "bucket": "media",
+  "storage_path": "src/assets/programs/videos/athlete-mind-in-motion.mp4",
+  "migrated_at": "2026-10-20T11:34:07.327Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/0ac98b7e-0445-4737-a204-bf7705ddd3e0/athlete-mind-in-motion.mp4"
+}

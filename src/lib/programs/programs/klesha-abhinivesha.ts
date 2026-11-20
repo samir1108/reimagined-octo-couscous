@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KLESHA_ABHINIVESHA: SessionProgramV3 = {
+  id: "klesha-abhinivesha",
+  title: "Klesha · Abhinivesha",
+  subtitle: "Fear of death — the deep clinging to life itself",
+  description:
+    "A 5-session arc through Abhinivesha: the instinctive, deep-seated clinging to bodily life. Even the wise are subject to it. The fear that 'I will cease to be.'",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["klesha", "abhinivesha", "death", "fear", "survival"],
+  icon: "Skull",
+  coverGradient: "from-slate-800 to-black",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The primal fear" },
+    { phase: "Practice", sessions: 1, focus: "Sit with mortality" },
+    { phase: "Integration", sessions: 1, focus: "Death as advisor" },
+    { phase: "Mastery", sessions: 1, focus: "Fearless witness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The instinct that binds even the wise",
+      required: ["ritual.opening-bow", "teach.klesha.overview", "wisdom.klesha.abhinivesha"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the clinging to life",
+      required: ["wisdom.klesha.abhinivesha", "contemplation.if-i-died-tomorrow", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Sit with mortality",
+      required: ["wisdom.klesha.abhinivesha", "contemplation.death-meditation", "witness.name-the-watcher"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Death as advisor",
+      required: ["wisdom.klesha.abhinivesha", "teach.klesha.dissolve", "voice-journal.speak-it-out"],
+      targetMinutes: 22 },
+    { index: 5, phase: "Mastery",
+      intent: "The fearless witness",
+      required: ["ritual.opening-bow", "wisdom.klesha.abhinivesha", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

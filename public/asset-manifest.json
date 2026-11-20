@@ -1,0 +1,3664 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-21T10:35:34.217Z",
+  "project_id": "vvnihmweqmbmytpggqcw",
+  "bucket": "media",
+  "base_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media",
+  "total_files": 364,
+  "total_size_mb": "3096.8",
+  "files": [
+    {
+      "key": "film/scene1-eye-opening.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film/scene1-eye-opening.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film/scene1-eye-opening.mp4",
+      "size": 8037662,
+      "type": "mp4"
+    },
+    {
+      "key": "film/scene2-scrolling.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film/scene2-scrolling.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film/scene2-scrolling.mp4",
+      "size": 6776455,
+      "type": "mp4"
+    },
+    {
+      "key": "film/scene2b-crowd.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film/scene2b-crowd.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film/scene2b-crowd.mp4",
+      "size": 16951584,
+      "type": "mp4"
+    },
+    {
+      "key": "film/scene4-sage.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film/scene4-sage.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film/scene4-sage.mp4",
+      "size": 18846954,
+      "type": "mp4"
+    },
+    {
+      "key": "film/scene5-instrument.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film/scene5-instrument.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film/scene5-instrument.mp4",
+      "size": 16172778,
+      "type": "mp4"
+    },
+    {
+      "key": "film/scene7-meditation.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film/scene7-meditation.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film/scene7-meditation.mp4",
+      "size": 8478047,
+      "type": "mp4"
+    },
+    {
+      "key": "film-disney/s1-alone.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-disney/s1-alone.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-disney/s1-alone.mp4",
+      "size": 14921155,
+      "type": "mp4"
+    },
+    {
+      "key": "film-disney/s2-petals.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-disney/s2-petals.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-disney/s2-petals.mp4",
+      "size": 19381830,
+      "type": "mp4"
+    },
+    {
+      "key": "film-disney/s3-emerge.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-disney/s3-emerge.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-disney/s3-emerge.mp4",
+      "size": 20134370,
+      "type": "mp4"
+    },
+    {
+      "key": "film-disney/s4-council.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-disney/s4-council.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-disney/s4-council.mp4",
+      "size": 25761445,
+      "type": "mp4"
+    },
+    {
+      "key": "film-disney/s5-tear.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-disney/s5-tear.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-disney/s5-tear.mp4",
+      "size": 18013173,
+      "type": "mp4"
+    },
+    {
+      "key": "film-disney/s6-temple.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-disney/s6-temple.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-disney/s6-temple.mp4",
+      "size": 20646623,
+      "type": "mp4"
+    },
+    {
+      "key": "film-fc/shot1-bindu.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-fc/shot1-bindu.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot1-bindu.mp4",
+      "size": 14228075,
+      "type": "mp4"
+    },
+    {
+      "key": "film-fc/shot2-iris-flame.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-fc/shot2-iris-flame.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot2-iris-flame.mp4",
+      "size": 14475924,
+      "type": "mp4"
+    },
+    {
+      "key": "film-fc/shot3-mandala-cosmos.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-fc/shot3-mandala-cosmos.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot3-mandala-cosmos.mp4",
+      "size": 25202111,
+      "type": "mp4"
+    },
+    {
+      "key": "film-fc/shot4-iphone-temple.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-fc/shot4-iphone-temple.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot4-iphone-temple.mp4",
+      "size": 15733341,
+      "type": "mp4"
+    },
+    {
+      "key": "film-fc/shot5-four-souls-v2.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-fc/shot5-four-souls-v2.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot5-four-souls-v2.mp4",
+      "size": 15769832,
+      "type": "mp4"
+    },
+    {
+      "key": "film-fc/shot5-four-souls.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-fc/shot5-four-souls.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot5-four-souls.mp4",
+      "size": 15982508,
+      "type": "mp4"
+    },
+    {
+      "key": "film-fc/shot6-cosmic-self.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/film-fc/shot6-cosmic-self.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot6-cosmic-self.mp4",
+      "size": 22095719,
+      "type": "mp4"
+    },
+    {
+      "key": "films/flow/shot-1.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/flow/shot-1.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/flow/shot-1.mp4",
+      "size": 17123228,
+      "type": "mp4"
+    },
+    {
+      "key": "films/flow/shot-2.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/flow/shot-2.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/flow/shot-2.mp4",
+      "size": 25754931,
+      "type": "mp4"
+    },
+    {
+      "key": "films/flow/shot-3.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/flow/shot-3.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/flow/shot-3.mp4",
+      "size": 12578657,
+      "type": "mp4"
+    },
+    {
+      "key": "films/flow/shot-4.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/flow/shot-4.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/flow/shot-4.mp4",
+      "size": 16161399,
+      "type": "mp4"
+    },
+    {
+      "key": "films/flow/shot-5.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/flow/shot-5.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/flow/shot-5.mp4",
+      "size": 26207541,
+      "type": "mp4"
+    },
+    {
+      "key": "films/flow/shot-6.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/flow/shot-6.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/flow/shot-6.mp4",
+      "size": 11869968,
+      "type": "mp4"
+    },
+    {
+      "key": "films/flow/shot-7.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/flow/shot-7.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/flow/shot-7.mp4",
+      "size": 21494458,
+      "type": "mp4"
+    },
+    {
+      "key": "films/flow/shot-8.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/flow/shot-8.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/flow/shot-8.mp4",
+      "size": 8331617,
+      "type": "mp4"
+    },
+    {
+      "key": "films/flow.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/flow.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/flow.mp4",
+      "size": 24631309,
+      "type": "mp4"
+    },
+    {
+      "key": "films/loops/shot-1.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/loops/shot-1.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/loops/shot-1.mp4",
+      "size": 8897320,
+      "type": "mp4"
+    },
+    {
+      "key": "films/loops/shot-2.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/loops/shot-2.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/loops/shot-2.mp4",
+      "size": 8502132,
+      "type": "mp4"
+    },
+    {
+      "key": "films/loops/shot-3.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/loops/shot-3.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/loops/shot-3.mp4",
+      "size": 14728105,
+      "type": "mp4"
+    },
+    {
+      "key": "films/loops/shot-4.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/loops/shot-4.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/loops/shot-4.mp4",
+      "size": 16728859,
+      "type": "mp4"
+    },
+    {
+      "key": "films/loops/shot-5.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/loops/shot-5.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/loops/shot-5.mp4",
+      "size": 12122578,
+      "type": "mp4"
+    },
+    {
+      "key": "films/loops/shot-6.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/loops/shot-6.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/loops/shot-6.mp4",
+      "size": 15671483,
+      "type": "mp4"
+    },
+    {
+      "key": "films/loops/shot-7.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/loops/shot-7.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/loops/shot-7.mp4",
+      "size": 11241523,
+      "type": "mp4"
+    },
+    {
+      "key": "films/loops/shot-8.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/loops/shot-8.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/loops/shot-8.mp4",
+      "size": 16975040,
+      "type": "mp4"
+    },
+    {
+      "key": "films/loops.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/loops.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/loops.mp4",
+      "size": 44980322,
+      "type": "mp4"
+    },
+    {
+      "key": "films/masters/shot-1.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/masters/shot-1.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters/shot-1.mp4",
+      "size": 11686099,
+      "type": "mp4"
+    },
+    {
+      "key": "films/masters/shot-2.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/masters/shot-2.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters/shot-2.mp4",
+      "size": 13494799,
+      "type": "mp4"
+    },
+    {
+      "key": "films/masters/shot-3.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/masters/shot-3.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters/shot-3.mp4",
+      "size": 14243822,
+      "type": "mp4"
+    },
+    {
+      "key": "films/masters/shot-4.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/masters/shot-4.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters/shot-4.mp4",
+      "size": 10478632,
+      "type": "mp4"
+    },
+    {
+      "key": "films/masters/shot-5.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/masters/shot-5.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters/shot-5.mp4",
+      "size": 23445108,
+      "type": "mp4"
+    },
+    {
+      "key": "films/masters/shot-6.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/masters/shot-6.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters/shot-6.mp4",
+      "size": 14914768,
+      "type": "mp4"
+    },
+    {
+      "key": "films/masters/shot-7.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/masters/shot-7.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters/shot-7.mp4",
+      "size": 22125466,
+      "type": "mp4"
+    },
+    {
+      "key": "films/masters/shot-8.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/masters/shot-8.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters/shot-8.mp4",
+      "size": 10911251,
+      "type": "mp4"
+    },
+    {
+      "key": "films/masters.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/masters.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/masters.mp4",
+      "size": 21353129,
+      "type": "mp4"
+    },
+    {
+      "key": "films/overture/shot-1.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/overture/shot-1.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/overture/shot-1.mp4",
+      "size": 9010859,
+      "type": "mp4"
+    },
+    {
+      "key": "films/overture/shot-2.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/overture/shot-2.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/overture/shot-2.mp4",
+      "size": 13172521,
+      "type": "mp4"
+    },
+    {
+      "key": "films/overture/shot-3.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/overture/shot-3.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/overture/shot-3.mp4",
+      "size": 16917190,
+      "type": "mp4"
+    },
+    {
+      "key": "films/overture/shot-4.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/overture/shot-4.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/overture/shot-4.mp4",
+      "size": 21102927,
+      "type": "mp4"
+    },
+    {
+      "key": "films/overture/shot-5.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/overture/shot-5.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/overture/shot-5.mp4",
+      "size": 16766612,
+      "type": "mp4"
+    },
+    {
+      "key": "films/overture/shot-6.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/overture/shot-6.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/overture/shot-6.mp4",
+      "size": 12569719,
+      "type": "mp4"
+    },
+    {
+      "key": "films/overture/shot-7.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/overture/shot-7.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/overture/shot-7.mp4",
+      "size": 10333244,
+      "type": "mp4"
+    },
+    {
+      "key": "films/overture/shot-8.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/overture/shot-8.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/overture/shot-8.mp4",
+      "size": 7780217,
+      "type": "mp4"
+    },
+    {
+      "key": "films/overture.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/overture.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/overture.mp4",
+      "size": 45708055,
+      "type": "mp4"
+    },
+    {
+      "key": "films/rare-birth/shot-1.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/rare-birth/shot-1.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth/shot-1.mp4",
+      "size": 17958564,
+      "type": "mp4"
+    },
+    {
+      "key": "films/rare-birth/shot-2.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/rare-birth/shot-2.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth/shot-2.mp4",
+      "size": 16180231,
+      "type": "mp4"
+    },
+    {
+      "key": "films/rare-birth/shot-3.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/rare-birth/shot-3.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth/shot-3.mp4",
+      "size": 24124230,
+      "type": "mp4"
+    },
+    {
+      "key": "films/rare-birth/shot-4.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/rare-birth/shot-4.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth/shot-4.mp4",
+      "size": 10775019,
+      "type": "mp4"
+    },
+    {
+      "key": "films/rare-birth/shot-5.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/rare-birth/shot-5.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth/shot-5.mp4",
+      "size": 12027285,
+      "type": "mp4"
+    },
+    {
+      "key": "films/rare-birth/shot-6.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/rare-birth/shot-6.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth/shot-6.mp4",
+      "size": 10207403,
+      "type": "mp4"
+    },
+    {
+      "key": "films/rare-birth/shot-7.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/rare-birth/shot-7.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth/shot-7.mp4",
+      "size": 14772460,
+      "type": "mp4"
+    },
+    {
+      "key": "films/rare-birth/shot-8.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/rare-birth/shot-8.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth/shot-8.mp4",
+      "size": 11234034,
+      "type": "mp4"
+    },
+    {
+      "key": "films/rare-birth.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/rare-birth.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth.mp4",
+      "size": 20138070,
+      "type": "mp4"
+    },
+    {
+      "key": "films/session/shot-1.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/session/shot-1.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/session/shot-1.mp4",
+      "size": 12501888,
+      "type": "mp4"
+    },
+    {
+      "key": "films/session/shot-2.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/session/shot-2.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/session/shot-2.mp4",
+      "size": 11661951,
+      "type": "mp4"
+    },
+    {
+      "key": "films/session/shot-3.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/session/shot-3.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/session/shot-3.mp4",
+      "size": 8437381,
+      "type": "mp4"
+    },
+    {
+      "key": "films/session/shot-4.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/session/shot-4.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/session/shot-4.mp4",
+      "size": 9759254,
+      "type": "mp4"
+    },
+    {
+      "key": "films/session/shot-5.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/session/shot-5.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/session/shot-5.mp4",
+      "size": 10585686,
+      "type": "mp4"
+    },
+    {
+      "key": "films/session/shot-6.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/session/shot-6.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/session/shot-6.mp4",
+      "size": 14513112,
+      "type": "mp4"
+    },
+    {
+      "key": "films/session/shot-7.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/session/shot-7.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/session/shot-7.mp4",
+      "size": 12585210,
+      "type": "mp4"
+    },
+    {
+      "key": "films/session/shot-8.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/session/shot-8.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/session/shot-8.mp4",
+      "size": 2830649,
+      "type": "mp4"
+    },
+    {
+      "key": "films/session.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/session.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/session.mp4",
+      "size": 36821977,
+      "type": "mp4"
+    },
+    {
+      "key": "films/tenx/shot-1.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/tenx/shot-1.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx/shot-1.mp4",
+      "size": 11634095,
+      "type": "mp4"
+    },
+    {
+      "key": "films/tenx/shot-2.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/tenx/shot-2.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx/shot-2.mp4",
+      "size": 18723207,
+      "type": "mp4"
+    },
+    {
+      "key": "films/tenx/shot-3.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/tenx/shot-3.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx/shot-3.mp4",
+      "size": 14815698,
+      "type": "mp4"
+    },
+    {
+      "key": "films/tenx/shot-4.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/tenx/shot-4.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx/shot-4.mp4",
+      "size": 17492185,
+      "type": "mp4"
+    },
+    {
+      "key": "films/tenx/shot-5.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/tenx/shot-5.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx/shot-5.mp4",
+      "size": 6891193,
+      "type": "mp4"
+    },
+    {
+      "key": "films/tenx/shot-6.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/tenx/shot-6.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx/shot-6.mp4",
+      "size": 10538759,
+      "type": "mp4"
+    },
+    {
+      "key": "films/tenx/shot-7.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/tenx/shot-7.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx/shot-7.mp4",
+      "size": 14168256,
+      "type": "mp4"
+    },
+    {
+      "key": "films/tenx/shot-8.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/tenx/shot-8.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx/shot-8.mp4",
+      "size": 9043860,
+      "type": "mp4"
+    },
+    {
+      "key": "films/tenx.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/films/tenx.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx.mp4",
+      "size": 42667466,
+      "type": "mp4"
+    },
+    {
+      "key": "films/voice/flow.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/films/voice/flow.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/voice/flow.mp3",
+      "size": 1035791,
+      "type": "mp3"
+    },
+    {
+      "key": "films/voice/loops.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/films/voice/loops.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/voice/loops.mp3",
+      "size": 1054223,
+      "type": "mp3"
+    },
+    {
+      "key": "films/voice/masters.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/films/voice/masters.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/voice/masters.mp3",
+      "size": 892175,
+      "type": "mp3"
+    },
+    {
+      "key": "films/voice/overture.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/films/voice/overture.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/voice/overture.mp3",
+      "size": 1033487,
+      "type": "mp3"
+    },
+    {
+      "key": "films/voice/rare-birth.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/films/voice/rare-birth.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/voice/rare-birth.mp3",
+      "size": 1041935,
+      "type": "mp3"
+    },
+    {
+      "key": "films/voice/session.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/films/voice/session.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/voice/session.mp3",
+      "size": 1021967,
+      "type": "mp3"
+    },
+    {
+      "key": "films/voice/tenx.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/films/voice/tenx.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/voice/tenx.mp3",
+      "size": 1096463,
+      "type": "mp3"
+    },
+    {
+      "key": "founder/samir/portraits/samir-portrait-01.jpg",
+      "source": "src/assets",
+      "remote": "src/assets/founder/samir/portraits/samir-portrait-01.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/founder/samir/portraits/samir-portrait-01.jpg",
+      "size": 61025,
+      "type": "jpg"
+    },
+    {
+      "key": "founder/samir/portraits/samir-portrait-02.jpg",
+      "source": "src/assets",
+      "remote": "src/assets/founder/samir/portraits/samir-portrait-02.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/founder/samir/portraits/samir-portrait-02.jpg",
+      "size": 70107,
+      "type": "jpg"
+    },
+    {
+      "key": "founder/samir/portraits/samir-portrait-03.jpg",
+      "source": "src/assets",
+      "remote": "src/assets/founder/samir/portraits/samir-portrait-03.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/founder/samir/portraits/samir-portrait-03.jpg",
+      "size": 104469,
+      "type": "jpg"
+    },
+    {
+      "key": "founder/samir/portraits/samir-portrait-04.jpg",
+      "source": "src/assets",
+      "remote": "src/assets/founder/samir/portraits/samir-portrait-04.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/founder/samir/portraits/samir-portrait-04.jpg",
+      "size": 112041,
+      "type": "jpg"
+    },
+    {
+      "key": "founder/samir/portraits/samir-portrait-05.jpg",
+      "source": "src/assets",
+      "remote": "src/assets/founder/samir/portraits/samir-portrait-05.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/founder/samir/portraits/samir-portrait-05.jpg",
+      "size": 108611,
+      "type": "jpg"
+    },
+    {
+      "key": "games/breath-temple.jpg",
+      "source": "src/assets",
+      "remote": "src/assets/games/breath-temple.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/breath-temple.jpg",
+      "size": 104128,
+      "type": "jpg"
+    },
+    {
+      "key": "games/the-pause.jpg",
+      "source": "src/assets",
+      "remote": "src/assets/games/the-pause.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/the-pause.jpg",
+      "size": 105057,
+      "type": "jpg"
+    },
+    {
+      "key": "games/videos/body-scanner.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/body-scanner.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/body-scanner.mp4",
+      "size": 6816864,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/breath-temple.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/breath-temple.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/breath-temple.mp4",
+      "size": 10442873,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/karma-coin.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/karma-coin.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/karma-coin.mp4",
+      "size": 9232202,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/last-breath.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/last-breath.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/last-breath.mp4",
+      "size": 5247989,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/mirror-realm.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/mirror-realm.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/mirror-realm.mp4",
+      "size": 8135508,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/name-the-storm.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/name-the-storm.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/name-the-storm.mp4",
+      "size": 9059362,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/neti-neti.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/neti-neti.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/neti-neti.mp4",
+      "size": 9683905,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/ninth-dharana.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/ninth-dharana.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/ninth-dharana.mp4",
+      "size": 6851571,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/silent-mountain.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/silent-mountain.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/silent-mountain.mp4",
+      "size": 8912413,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/the-pause.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/the-pause.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/the-pause.mp4",
+      "size": 5442916,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/the-sigh.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/the-sigh.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/the-sigh.mp4",
+      "size": 7821993,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/three-brains.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/three-brains.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/three-brains.mp4",
+      "size": 8130972,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/tonglen.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/tonglen.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/tonglen.mp4",
+      "size": 8829927,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/who-is-thinking.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/who-is-thinking.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/who-is-thinking.mp4",
+      "size": 13284005,
+      "type": "mp4"
+    },
+    {
+      "key": "games/videos/witness.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/games/videos/witness.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/witness.mp4",
+      "size": 10930472,
+      "type": "mp4"
+    },
+    {
+      "key": "games/witness.jpg",
+      "source": "src/assets",
+      "remote": "src/assets/games/witness.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/witness.jpg",
+      "size": 120226,
+      "type": "jpg"
+    },
+    {
+      "key": "handbooks/videos/science-meets-yoga.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/handbooks/videos/science-meets-yoga.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/science-meets-yoga.mp4",
+      "size": 9749681,
+      "type": "mp4"
+    },
+    {
+      "key": "handbooks/videos/the-11-bands.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/handbooks/videos/the-11-bands.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/the-11-bands.mp4",
+      "size": 10401000,
+      "type": "mp4"
+    },
+    {
+      "key": "handbooks/videos/the-four-paths-of-yoga.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/handbooks/videos/the-four-paths-of-yoga.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/the-four-paths-of-yoga.mp4",
+      "size": 6563494,
+      "type": "mp4"
+    },
+    {
+      "key": "handbooks/videos/the-nervous-system.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/handbooks/videos/the-nervous-system.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/the-nervous-system.mp4",
+      "size": 10271174,
+      "type": "mp4"
+    },
+    {
+      "key": "handbooks/videos/the-onion.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/handbooks/videos/the-onion.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/the-onion.mp4",
+      "size": 10416483,
+      "type": "mp4"
+    },
+    {
+      "key": "handbooks/videos/the-thought-world.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/handbooks/videos/the-thought-world.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/the-thought-world.mp4",
+      "size": 8394632,
+      "type": "mp4"
+    },
+    {
+      "key": "handbooks/videos/the-three-brains.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/handbooks/videos/the-three-brains.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/the-three-brains.mp4",
+      "size": 8247004,
+      "type": "mp4"
+    },
+    {
+      "key": "hope-flame-void.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/hope-flame-void.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/hope-flame-void.mp4",
+      "size": 13672582,
+      "type": "mp4"
+    },
+    {
+      "key": "inner-paths/videos/neti-neti.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/inner-paths/videos/neti-neti.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/inner-paths/videos/neti-neti.mp4",
+      "size": 9113562,
+      "type": "mp4"
+    },
+    {
+      "key": "inner-paths/videos/observation.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/inner-paths/videos/observation.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/inner-paths/videos/observation.mp4",
+      "size": 9207383,
+      "type": "mp4"
+    },
+    {
+      "key": "inner-paths/videos/pranayama.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/inner-paths/videos/pranayama.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/inner-paths/videos/pranayama.mp4",
+      "size": 8478253,
+      "type": "mp4"
+    },
+    {
+      "key": "inner-paths/videos/self-inquiry.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/inner-paths/videos/self-inquiry.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/inner-paths/videos/self-inquiry.mp4",
+      "size": 12571303,
+      "type": "mp4"
+    },
+    {
+      "key": "narration/body-scan/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/body-scan/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/body-scan/0.mp3",
+      "size": 114432,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/body-scan/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/body-scan/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/body-scan/1.mp3",
+      "size": 86016,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/body-scan/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/body-scan/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/body-scan/2.mp3",
+      "size": 119424,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/body-scan/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/body-scan/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/body-scan/3.mp3",
+      "size": 223872,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/body-scan/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/body-scan/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/body-scan/4.mp3",
+      "size": 124800,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/body-scan/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/body-scan/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/body-scan/5.mp3",
+      "size": 139008,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/body-scan/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/body-scan/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/body-scan/6.mp3",
+      "size": 100224,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/body-scan/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/body-scan/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/body-scan/7.mp3",
+      "size": 128640,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/box-breath/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/box-breath/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/box-breath/0.mp3",
+      "size": 145536,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/box-breath/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/box-breath/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/box-breath/1.mp3",
+      "size": 74112,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/box-breath/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/box-breath/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/box-breath/2.mp3",
+      "size": 67584,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/box-breath/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/box-breath/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/box-breath/3.mp3",
+      "size": 85248,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/box-breath/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/box-breath/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/box-breath/4.mp3",
+      "size": 62976,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/box-breath/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/box-breath/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/box-breath/5.mp3",
+      "size": 60672,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/box-breath/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/box-breath/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/box-breath/6.mp3",
+      "size": 86016,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/box-breath/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/box-breath/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/box-breath/7.mp3",
+      "size": 127104,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/coherent-breath/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/coherent-breath/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/coherent-breath/0.mp3",
+      "size": 135552,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/coherent-breath/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/coherent-breath/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/coherent-breath/1.mp3",
+      "size": 67584,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/coherent-breath/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/coherent-breath/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/coherent-breath/2.mp3",
+      "size": 83328,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/coherent-breath/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/coherent-breath/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/coherent-breath/3.mp3",
+      "size": 81792,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/coherent-breath/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/coherent-breath/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/coherent-breath/4.mp3",
+      "size": 85248,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/coherent-breath/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/coherent-breath/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/coherent-breath/5.mp3",
+      "size": 100224,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/coherent-breath/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/coherent-breath/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/coherent-breath/6.mp3",
+      "size": 98688,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/coherent-breath/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/coherent-breath/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/coherent-breath/7.mp3",
+      "size": 128640,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/death-contemplation/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/death-contemplation/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/death-contemplation/0.mp3",
+      "size": 144768,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/death-contemplation/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/death-contemplation/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/death-contemplation/1.mp3",
+      "size": 52224,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/death-contemplation/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/death-contemplation/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/death-contemplation/2.mp3",
+      "size": 125568,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/death-contemplation/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/death-contemplation/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/death-contemplation/3.mp3",
+      "size": 96000,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/death-contemplation/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/death-contemplation/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/death-contemplation/4.mp3",
+      "size": 86016,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/death-contemplation/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/death-contemplation/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/death-contemplation/5.mp3",
+      "size": 85248,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/death-contemplation/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/death-contemplation/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/death-contemplation/6.mp3",
+      "size": 115968,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/death-contemplation/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/death-contemplation/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/death-contemplation/7.mp3",
+      "size": 117120,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/gratitude-pulse/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/gratitude-pulse/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/gratitude-pulse/0.mp3",
+      "size": 146304,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/gratitude-pulse/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/gratitude-pulse/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/gratitude-pulse/1.mp3",
+      "size": 46464,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/gratitude-pulse/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/gratitude-pulse/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/gratitude-pulse/2.mp3",
+      "size": 99456,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/gratitude-pulse/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/gratitude-pulse/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/gratitude-pulse/3.mp3",
+      "size": 137472,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/gratitude-pulse/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/gratitude-pulse/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/gratitude-pulse/4.mp3",
+      "size": 62976,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/gratitude-pulse/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/gratitude-pulse/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/gratitude-pulse/5.mp3",
+      "size": 62976,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/gratitude-pulse/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/gratitude-pulse/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/gratitude-pulse/6.mp3",
+      "size": 77568,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/gratitude-pulse/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/gratitude-pulse/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/gratitude-pulse/7.mp3",
+      "size": 130560,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/kumbhaka/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/kumbhaka/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/kumbhaka/0.mp3",
+      "size": 128640,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/kumbhaka/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/kumbhaka/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/kumbhaka/1.mp3",
+      "size": 77568,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/kumbhaka/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/kumbhaka/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/kumbhaka/2.mp3",
+      "size": 88320,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/kumbhaka/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/kumbhaka/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/kumbhaka/3.mp3",
+      "size": 144768,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/kumbhaka/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/kumbhaka/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/kumbhaka/4.mp3",
+      "size": 107136,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/kumbhaka/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/kumbhaka/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/kumbhaka/5.mp3",
+      "size": 112128,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/kumbhaka/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/kumbhaka/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/kumbhaka/6.mp3",
+      "size": 102912,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/kumbhaka/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/kumbhaka/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/kumbhaka/7.mp3",
+      "size": 132096,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/loving-kindness/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/loving-kindness/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/loving-kindness/0.mp3",
+      "size": 125568,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/loving-kindness/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/loving-kindness/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/loving-kindness/1.mp3",
+      "size": 57216,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/loving-kindness/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/loving-kindness/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/loving-kindness/2.mp3",
+      "size": 158208,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/loving-kindness/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/loving-kindness/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/loving-kindness/3.mp3",
+      "size": 98688,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/loving-kindness/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/loving-kindness/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/loving-kindness/4.mp3",
+      "size": 93312,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/loving-kindness/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/loving-kindness/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/loving-kindness/5.mp3",
+      "size": 145536,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/loving-kindness/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/loving-kindness/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/loving-kindness/6.mp3",
+      "size": 120192,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/loving-kindness/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/loving-kindness/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/loving-kindness/7.mp3",
+      "size": 106368,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/self-inquiry/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/self-inquiry/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/self-inquiry/0.mp3",
+      "size": 127872,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/self-inquiry/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/self-inquiry/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/self-inquiry/1.mp3",
+      "size": 65664,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/self-inquiry/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/self-inquiry/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/self-inquiry/2.mp3",
+      "size": 105216,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/self-inquiry/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/self-inquiry/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/self-inquiry/3.mp3",
+      "size": 96768,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/self-inquiry/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/self-inquiry/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/self-inquiry/4.mp3",
+      "size": 124800,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/self-inquiry/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/self-inquiry/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/self-inquiry/5.mp3",
+      "size": 89856,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/self-inquiry/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/self-inquiry/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/self-inquiry/6.mp3",
+      "size": 95232,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/self-inquiry/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/self-inquiry/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/self-inquiry/7.mp3",
+      "size": 124800,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/so-hum/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/so-hum/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/so-hum/0.mp3",
+      "size": 124800,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/so-hum/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/so-hum/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/so-hum/1.mp3",
+      "size": 67584,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/so-hum/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/so-hum/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/so-hum/2.mp3",
+      "size": 140928,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/so-hum/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/so-hum/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/so-hum/3.mp3",
+      "size": 100992,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/so-hum/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/so-hum/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/so-hum/4.mp3",
+      "size": 102912,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/so-hum/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/so-hum/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/so-hum/5.mp3",
+      "size": 83328,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/so-hum/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/so-hum/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/so-hum/6.mp3",
+      "size": 78336,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/so-hum/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/so-hum/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/so-hum/7.mp3",
+      "size": 136704,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/the-sigh/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/the-sigh/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/the-sigh/0.mp3",
+      "size": 127104,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/the-sigh/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/the-sigh/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/the-sigh/1.mp3",
+      "size": 73344,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/the-sigh/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/the-sigh/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/the-sigh/2.mp3",
+      "size": 83328,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/the-sigh/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/the-sigh/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/the-sigh/3.mp3",
+      "size": 96768,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/the-sigh/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/the-sigh/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/the-sigh/4.mp3",
+      "size": 112896,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/the-sigh/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/the-sigh/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/the-sigh/5.mp3",
+      "size": 61440,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/the-sigh/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/the-sigh/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/the-sigh/6.mp3",
+      "size": 105216,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/the-sigh/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/the-sigh/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/the-sigh/7.mp3",
+      "size": 122880,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/three-brain-checkin/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/three-brain-checkin/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/three-brain-checkin/0.mp3",
+      "size": 141696,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/three-brain-checkin/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/three-brain-checkin/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/three-brain-checkin/1.mp3",
+      "size": 103680,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/three-brain-checkin/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/three-brain-checkin/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/three-brain-checkin/2.mp3",
+      "size": 132096,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/three-brain-checkin/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/three-brain-checkin/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/three-brain-checkin/3.mp3",
+      "size": 112128,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/three-brain-checkin/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/three-brain-checkin/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/three-brain-checkin/4.mp3",
+      "size": 95232,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/three-brain-checkin/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/three-brain-checkin/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/three-brain-checkin/5.mp3",
+      "size": 68352,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/three-brain-checkin/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/three-brain-checkin/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/three-brain-checkin/6.mp3",
+      "size": 134784,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/trataka/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/trataka/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/trataka/0.mp3",
+      "size": 115200,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/trataka/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/trataka/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/trataka/1.mp3",
+      "size": 114432,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/trataka/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/trataka/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/trataka/2.mp3",
+      "size": 75648,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/trataka/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/trataka/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/trataka/3.mp3",
+      "size": 81792,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/trataka/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/trataka/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/trataka/4.mp3",
+      "size": 115968,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/trataka/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/trataka/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/trataka/5.mp3",
+      "size": 92544,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/trataka/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/trataka/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/trataka/6.mp3",
+      "size": 151680,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/trataka/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/trataka/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/trataka/7.mp3",
+      "size": 125568,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/walking-meditation/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/walking-meditation/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/walking-meditation/0.mp3",
+      "size": 135552,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/walking-meditation/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/walking-meditation/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/walking-meditation/1.mp3",
+      "size": 89088,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/walking-meditation/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/walking-meditation/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/walking-meditation/2.mp3",
+      "size": 93312,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/walking-meditation/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/walking-meditation/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/walking-meditation/3.mp3",
+      "size": 104448,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/walking-meditation/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/walking-meditation/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/walking-meditation/4.mp3",
+      "size": 88320,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/walking-meditation/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/walking-meditation/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/walking-meditation/5.mp3",
+      "size": 106368,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/walking-meditation/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/walking-meditation/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/walking-meditation/6.mp3",
+      "size": 123648,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/walking-meditation/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/walking-meditation/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/walking-meditation/7.mp3",
+      "size": 115968,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/witness/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/witness/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/witness/0.mp3",
+      "size": 115200,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/witness/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/witness/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/witness/1.mp3",
+      "size": 104448,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/witness/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/witness/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/witness/2.mp3",
+      "size": 79104,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/witness/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/witness/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/witness/3.mp3",
+      "size": 96768,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/witness/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/witness/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/witness/4.mp3",
+      "size": 107904,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/witness/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/witness/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/witness/5.mp3",
+      "size": 84096,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/witness/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/witness/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/witness/6.mp3",
+      "size": 134784,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/witness/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/witness/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/witness/7.mp3",
+      "size": 121344,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/yoga-nidra/0.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/yoga-nidra/0.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/yoga-nidra/0.mp3",
+      "size": 114432,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/yoga-nidra/1.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/yoga-nidra/1.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/yoga-nidra/1.mp3",
+      "size": 84096,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/yoga-nidra/2.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/yoga-nidra/2.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/yoga-nidra/2.mp3",
+      "size": 115200,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/yoga-nidra/3.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/yoga-nidra/3.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/yoga-nidra/3.mp3",
+      "size": 205440,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/yoga-nidra/4.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/yoga-nidra/4.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/yoga-nidra/4.mp3",
+      "size": 56448,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/yoga-nidra/5.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/yoga-nidra/5.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/yoga-nidra/5.mp3",
+      "size": 119424,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/yoga-nidra/6.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/yoga-nidra/6.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/yoga-nidra/6.mp3",
+      "size": 83328,
+      "type": "mp3"
+    },
+    {
+      "key": "narration/yoga-nidra/7.mp3",
+      "source": "src/assets",
+      "remote": "src/assets/narration/yoga-nidra/7.mp3",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/yoga-nidra/7.mp3",
+      "size": 114432,
+      "type": "mp3"
+    },
+    {
+      "key": "paths/videos/bhakti.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/paths/videos/bhakti.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/paths/videos/bhakti.mp4",
+      "size": 11565213,
+      "type": "mp4"
+    },
+    {
+      "key": "paths/videos/jnana.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/paths/videos/jnana.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/paths/videos/jnana.mp4",
+      "size": 10162877,
+      "type": "mp4"
+    },
+    {
+      "key": "paths/videos/karma.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/paths/videos/karma.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/paths/videos/karma.mp4",
+      "size": 7857118,
+      "type": "mp4"
+    },
+    {
+      "key": "paths/videos/raja.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/paths/videos/raja.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/paths/videos/raja.mp4",
+      "size": 9450696,
+      "type": "mp4"
+    },
+    {
+      "key": "paths/videos/shakti.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/paths/videos/shakti.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/paths/videos/shakti.mp4",
+      "size": 11856724,
+      "type": "mp4"
+    },
+    {
+      "key": "paths/videos/tantra.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/paths/videos/tantra.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/paths/videos/tantra.mp4",
+      "size": 9239952,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/body-scan-light.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/body-scan-light.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/body-scan-light.mp4",
+      "size": 19011501,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/box-breath-square.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/box-breath-square.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/box-breath-square.mp4",
+      "size": 17649964,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/coherent-breath-ocean.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/coherent-breath-ocean.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/coherent-breath-ocean.mp4",
+      "size": 25812014,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/death-contemplation-petal.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/death-contemplation-petal.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/death-contemplation-petal.mp4",
+      "size": 13615410,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/gratitude-pulse-heart.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/gratitude-pulse-heart.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/gratitude-pulse-heart.mp4",
+      "size": 17936004,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/kumbhaka-void.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/kumbhaka-void.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/kumbhaka-void.mp4",
+      "size": 20217108,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/loving-kindness-radiance.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/loving-kindness-radiance.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/loving-kindness-radiance.mp4",
+      "size": 21167760,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/self-inquiry-source.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/self-inquiry-source.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/self-inquiry-source.mp4",
+      "size": 17377557,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/so-hum-lotus.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/so-hum-lotus.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/so-hum-lotus.mp4",
+      "size": 18071779,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/the-sigh-sky.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/the-sigh-sky.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/the-sigh-sky.mp4",
+      "size": 16340619,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/three-brain-spheres.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/three-brain-spheres.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/three-brain-spheres.mp4",
+      "size": 18933242,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/trataka-flame.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/trataka-flame.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/trataka-flame.mp4",
+      "size": 12337841,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/walking-meditation-forest.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/walking-meditation-forest.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/walking-meditation-forest.mp4",
+      "size": 26057517,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/witness-lake.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/witness-lake.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/witness-lake.mp4",
+      "size": 21727039,
+      "type": "mp4"
+    },
+    {
+      "key": "practices/yoga-nidra-cosmos.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/practices/yoga-nidra-cosmos.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/practices/yoga-nidra-cosmos.mp4",
+      "size": 20402941,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/athlete-mind-in-motion.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/athlete-mind-in-motion.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/athlete-mind-in-motion.mp4",
+      "size": 7939495,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/burnout-reset-with-patanjali.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/burnout-reset-with-patanjali.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/burnout-reset-with-patanjali.mp4",
+      "size": 10209175,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/corporate-leadership-under-fire.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/corporate-leadership-under-fire.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/corporate-leadership-under-fire.mp4",
+      "size": 13055808,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/corporate-team-repair.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/corporate-team-repair.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/corporate-team-repair.mp4",
+      "size": 7848484,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/creator-flow-and-block.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/creator-flow-and-block.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/creator-flow-and-block.mp4",
+      "size": 6557445,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/decision-making-with-krishna.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/decision-making-with-krishna.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/decision-making-with-krishna.mp4",
+      "size": 9960617,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/duty-without-damage.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/duty-without-damage.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/duty-without-damage.mp4",
+      "size": 10668100,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/founder-decision-loneliness.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/founder-decision-loneliness.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/founder-decision-loneliness.mp4",
+      "size": 10803346,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/government-bureaucrat-integrity.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/government-bureaucrat-integrity.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/government-bureaucrat-integrity.mp4",
+      "size": 9823035,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/grief-and-loss.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/grief-and-loss.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/grief-and-loss.mp4",
+      "size": 7502637,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/healers-therapist-hygiene.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/healers-therapist-hygiene.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/healers-therapist-hygiene.mp4",
+      "size": 10191530,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/healthcare-compassion-fatigue.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/healthcare-compassion-fatigue.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/healthcare-compassion-fatigue.mp4",
+      "size": 7996823,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/heart-open-with-meera.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/heart-open-with-meera.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/heart-open-with-meera.mp4",
+      "size": 9093325,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/inner-witness-with-ramana.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/inner-witness-with-ramana.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/inner-witness-with-ramana.mp4",
+      "size": 7867046,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/letting-go-with-lao-tzu.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/letting-go-with-lao-tzu.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/letting-go-with-lao-tzu.mp4",
+      "size": 16722969,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/loops-trauma-and-the-nervous-system.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/loops-trauma-and-the-nervous-system.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/loops-trauma-and-the-nervous-system.mp4",
+      "size": 12344466,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/parent-patience-presence.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/parent-patience-presence.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/parent-patience-presence.mp4",
+      "size": 8152040,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/ritual-daily-devotional.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/ritual-daily-devotional.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/ritual-daily-devotional.mp4",
+      "size": 6792510,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/shakti-and-the-ethics-of-power.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/shakti-and-the-ethics-of-power.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/shakti-and-the-ethics-of-power.mp4",
+      "size": 7782484,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/stillness-with-dogen.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/stillness-with-dogen.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/stillness-with-dogen.mp4",
+      "size": 6096810,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/stop-the-reactor.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/stop-the-reactor.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/stop-the-reactor.mp4",
+      "size": 8896531,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/student-focus-under-pressure.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/student-focus-under-pressure.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/student-focus-under-pressure.mp4",
+      "size": 6482692,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/teacher-classroom-presence.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/teacher-classroom-presence.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/teacher-classroom-presence.mp4",
+      "size": 9074713,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/the-onion-who-am-i.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/the-onion-who-am-i.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/the-onion-who-am-i.mp4",
+      "size": 7199129,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/three-brains-protocol.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/three-brains-protocol.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/three-brains-protocol.mp4",
+      "size": 10147179,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/watch-your-thoughts.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/watch-your-thoughts.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/watch-your-thoughts.mp4",
+      "size": 9028263,
+      "type": "mp4"
+    },
+    {
+      "key": "programs/videos/willpower-reforged.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/programs/videos/willpower-reforged.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/willpower-reforged.mp4",
+      "size": 9276871,
+      "type": "mp4"
+    },
+    {
+      "key": "reel-001/clip-1-cosmic-open.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/reel-001/clip-1-cosmic-open.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/reel-001/clip-1-cosmic-open.mp4",
+      "size": 15297875,
+      "type": "mp4"
+    },
+    {
+      "key": "reel-001/clip-2-cultural-collapse.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/reel-001/clip-2-cultural-collapse.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/reel-001/clip-2-cultural-collapse.mp4",
+      "size": 13532849,
+      "type": "mp4"
+    },
+    {
+      "key": "reel-001/clip-3-pivot.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/reel-001/clip-3-pivot.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/reel-001/clip-3-pivot.mp4",
+      "size": 13398917,
+      "type": "mp4"
+    },
+    {
+      "key": "reel-001/clip-4-product-reveal.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/reel-001/clip-4-product-reveal.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/reel-001/clip-4-product-reveal.mp4",
+      "size": 19983774,
+      "type": "mp4"
+    },
+    {
+      "key": "reel-001/clip-5-transformation.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/reel-001/clip-5-transformation.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/reel-001/clip-5-transformation.mp4",
+      "size": 15563193,
+      "type": "mp4"
+    },
+    {
+      "key": "reel-001/clip-6-brand-signature.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/reel-001/clip-6-brand-signature.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/reel-001/clip-6-brand-signature.mp4",
+      "size": 21851854,
+      "type": "mp4"
+    },
+    {
+      "key": "sensorial/buddha/ambient-bodhi.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/sensorial/buddha/ambient-bodhi.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/sensorial/buddha/ambient-bodhi.mp4",
+      "size": 20226095,
+      "type": "mp4"
+    },
+    {
+      "key": "sensorial/krishnamurti/ambient-sky.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/sensorial/krishnamurti/ambient-sky.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/sensorial/krishnamurti/ambient-sky.mp4",
+      "size": 12136019,
+      "type": "mp4"
+    },
+    {
+      "key": "sensorial/osho/ambient-embers.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/sensorial/osho/ambient-embers.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/sensorial/osho/ambient-embers.mp4",
+      "size": 23344893,
+      "type": "mp4"
+    },
+    {
+      "key": "sensorial/ramana/ambient-flame.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/sensorial/ramana/ambient-flame.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/sensorial/ramana/ambient-flame.mp4",
+      "size": 10448893,
+      "type": "mp4"
+    },
+    {
+      "key": "sensorial/sadhguru/ambient-cosmic.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/sensorial/sadhguru/ambient-cosmic.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/sensorial/sadhguru/ambient-cosmic.mp4",
+      "size": 18969896,
+      "type": "mp4"
+    },
+    {
+      "key": "sensorial/yogananda/ambient-spiritual-eye.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/sensorial/yogananda/ambient-spiritual-eye.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/sensorial/yogananda/ambient-spiritual-eye.mp4",
+      "size": 20192991,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/essay-ninety-days.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/essay-ninety-days.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/essay-ninety-days.mp4",
+      "size": 2114118,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/essay-religion.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/essay-religion.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/essay-religion.mp4",
+      "size": 2812393,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/essay-witness.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/essay-witness.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/essay-witness.mp4",
+      "size": 3076077,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/games-cta.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/games-cta.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/games-cta.mp4",
+      "size": 5664548,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/practices-cta.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/practices-cta.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/practices-cta.mp4",
+      "size": 2080842,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/sam-idle.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/sam-idle.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/sam-idle.mp4",
+      "size": 14815140,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/sam-portrait.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/sam-portrait.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/sam-portrait.mp4",
+      "size": 15745738,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/sam-talking.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/sam-talking.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/sam-talking.mp4",
+      "size": 15341686,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/vision-hero.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/vision-hero.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/vision-hero.mp4",
+      "size": 38348850,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/wisdom-deck.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/wisdom-deck.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/wisdom-deck.mp4",
+      "size": 3345748,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/world-anxious.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/world-anxious.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/world-anxious.mp4",
+      "size": 6887942,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/world-corporate.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/world-corporate.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/world-corporate.mp4",
+      "size": 17755234,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/world-creator.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/world-creator.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/world-creator.mp4",
+      "size": 12713641,
+      "type": "mp4"
+    },
+    {
+      "key": "showroom/world-seeker.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/showroom/world-seeker.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/world-seeker.mp4",
+      "size": 10177370,
+      "type": "mp4"
+    },
+    {
+      "key": "v000/clip1.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/v000/clip1.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/v000/clip1.mp4",
+      "size": 9995336,
+      "type": "mp4"
+    },
+    {
+      "key": "v000/clip2.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/v000/clip2.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/v000/clip2.mp4",
+      "size": 19518898,
+      "type": "mp4"
+    },
+    {
+      "key": "v000/clip3.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/v000/clip3.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/v000/clip3.mp4",
+      "size": 11182368,
+      "type": "mp4"
+    },
+    {
+      "key": "v000/clip4.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/v000/clip4.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/v000/clip4.mp4",
+      "size": 12118840,
+      "type": "mp4"
+    },
+    {
+      "key": "v000/clip5.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/v000/clip5.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/v000/clip5.mp4",
+      "size": 8085339,
+      "type": "mp4"
+    },
+    {
+      "key": "v000/clip6.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/v000/clip6.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/v000/clip6.mp4",
+      "size": 11988320,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-ancient-modern.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-ancient-modern.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-ancient-modern.mp4",
+      "size": 28722310,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-awakening.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-awakening.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-awakening.mp4",
+      "size": 26505720,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-banyan-tree.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-banyan-tree.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-banyan-tree.mp4",
+      "size": 42943027,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-cliff-dawn.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-cliff-dawn.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-cliff-dawn.mp4",
+      "size": 14236392,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-cosmic.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-cosmic.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-cosmic.mp4",
+      "size": 26074043,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-creation-touch.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-creation-touch.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-creation-touch.mp4",
+      "size": 21347686,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-forest-awakening.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-forest-awakening.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-forest-awakening.mp4",
+      "size": 40860958,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-lotus-bloom.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-lotus-bloom.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-lotus-bloom.mp4",
+      "size": 20137514,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-mandala-weave.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-mandala-weave.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-mandala-weave.mp4",
+      "size": 29606486,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-child.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-child.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-child.mp4",
+      "size": 14977485,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-desert.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-desert.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-desert.mp4",
+      "size": 10858482,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-ganges.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-ganges.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-ganges.mp4",
+      "size": 20048344,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-himalaya.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-himalaya.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-himalaya.mp4",
+      "size": 23464034,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-monk.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-monk.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-monk.mp4",
+      "size": 12400790,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-rooftop.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-rooftop.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-rooftop.mp4",
+      "size": 17876199,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-sage.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-sage.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-sage.mp4",
+      "size": 14352550,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-tech.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-tech.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-tech.mp4",
+      "size": 14403706,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-teen.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-teen.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-teen.mp4",
+      "size": 17233999,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-woman-young.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-woman-young.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-woman-young.mp4",
+      "size": 18587843,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-meditate-zen.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-meditate-zen.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-meditate-zen.mp4",
+      "size": 16883855,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-mirror.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-mirror.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-mirror.mp4",
+      "size": 17742303,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-neural-light.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-neural-light.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-neural-light.mp4",
+      "size": 24501353,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-shadow-self.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-shadow-self.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-shadow-self.mp4",
+      "size": 14277807,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-temple-sunrise.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-temple-sunrise.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-temple-sunrise.mp4",
+      "size": 27703255,
+      "type": "mp4"
+    },
+    {
+      "key": "videos/hero-water-reflection.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/videos/hero-water-reflection.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/videos/hero-water-reflection.mp4",
+      "size": 15871779,
+      "type": "mp4"
+    },
+    {
+      "key": "wings/videos/bridges.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wings/videos/bridges.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wings/videos/bridges.mp4",
+      "size": 18072987,
+      "type": "mp4"
+    },
+    {
+      "key": "wings/videos/lineage-tree.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wings/videos/lineage-tree.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wings/videos/lineage-tree.mp4",
+      "size": 12163047,
+      "type": "mp4"
+    },
+    {
+      "key": "wings/videos/living-glossary.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wings/videos/living-glossary.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wings/videos/living-glossary.mp4",
+      "size": 10208054,
+      "type": "mp4"
+    },
+    {
+      "key": "wings/videos/loops-atlas.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wings/videos/loops-atlas.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wings/videos/loops-atlas.mp4",
+      "size": 10779434,
+      "type": "mp4"
+    },
+    {
+      "key": "wings/videos/prerequisites-map.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wings/videos/prerequisites-map.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wings/videos/prerequisites-map.mp4",
+      "size": 11659718,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/bands.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/bands.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/bands.mp4",
+      "size": 2052907,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/composer.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/composer.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/composer.mp4",
+      "size": 2645557,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/fourpaths.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/fourpaths.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/fourpaths.mp4",
+      "size": 4004146,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/games.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/games.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/games.mp4",
+      "size": 2767453,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/guides.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/guides.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/guides.mp4",
+      "size": 4294817,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/ladders.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/ladders.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/ladders.mp4",
+      "size": 2401815,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/loops.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/loops.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/loops.mp4",
+      "size": 3940858,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/memory.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/memory.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/memory.mp4",
+      "size": 2725446,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/programs.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/programs.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/programs.mp4",
+      "size": 4019967,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/sessionflow.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/sessionflow.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/sessionflow.mp4",
+      "size": 2080969,
+      "type": "mp4"
+    },
+    {
+      "key": "wwb/witness.mp4",
+      "source": "src/assets",
+      "remote": "src/assets/wwb/witness.mp4",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/wwb/witness.mp4",
+      "size": 1544938,
+      "type": "mp4"
+    }
+  ],
+  "bySource": {
+    "src/assets": [
+      "film/scene1-eye-opening.mp4",
+      "film/scene2-scrolling.mp4",
+      "film/scene2b-crowd.mp4",
+      "film/scene4-sage.mp4",
+      "film/scene5-instrument.mp4",
+      "film/scene7-meditation.mp4",
+      "film-disney/s1-alone.mp4",
+      "film-disney/s2-petals.mp4",
+      "film-disney/s3-emerge.mp4",
+      "film-disney/s4-council.mp4",
+      "film-disney/s5-tear.mp4",
+      "film-disney/s6-temple.mp4",
+      "film-fc/shot1-bindu.mp4",
+      "film-fc/shot2-iris-flame.mp4",
+      "film-fc/shot3-mandala-cosmos.mp4",
+      "film-fc/shot4-iphone-temple.mp4",
+      "film-fc/shot5-four-souls-v2.mp4",
+      "film-fc/shot5-four-souls.mp4",
+      "film-fc/shot6-cosmic-self.mp4",
+      "films/flow/shot-1.mp4",
+      "films/flow/shot-2.mp4",
+      "films/flow/shot-3.mp4",
+      "films/flow/shot-4.mp4",
+      "films/flow/shot-5.mp4",
+      "films/flow/shot-6.mp4",
+      "films/flow/shot-7.mp4",
+      "films/flow/shot-8.mp4",
+      "films/flow.mp4",
+      "films/loops/shot-1.mp4",
+      "films/loops/shot-2.mp4",
+      "films/loops/shot-3.mp4",
+      "films/loops/shot-4.mp4",
+      "films/loops/shot-5.mp4",
+      "films/loops/shot-6.mp4",
+      "films/loops/shot-7.mp4",
+      "films/loops/shot-8.mp4",
+      "films/loops.mp4",
+      "films/masters/shot-1.mp4",
+      "films/masters/shot-2.mp4",
+      "films/masters/shot-3.mp4",
+      "films/masters/shot-4.mp4",
+      "films/masters/shot-5.mp4",
+      "films/masters/shot-6.mp4",
+      "films/masters/shot-7.mp4",
+      "films/masters/shot-8.mp4",
+      "films/masters.mp4",
+      "films/overture/shot-1.mp4",
+      "films/overture/shot-2.mp4",
+      "films/overture/shot-3.mp4",
+      "films/overture/shot-4.mp4",
+      "films/overture/shot-5.mp4",
+      "films/overture/shot-6.mp4",
+      "films/overture/shot-7.mp4",
+      "films/overture/shot-8.mp4",
+      "films/overture.mp4",
+      "films/rare-birth/shot-1.mp4",
+      "films/rare-birth/shot-2.mp4",
+      "films/rare-birth/shot-3.mp4",
+      "films/rare-birth/shot-4.mp4",
+      "films/rare-birth/shot-5.mp4",
+      "films/rare-birth/shot-6.mp4",
+      "films/rare-birth/shot-7.mp4",
+      "films/rare-birth/shot-8.mp4",
+      "films/rare-birth.mp4",
+      "films/session/shot-1.mp4",
+      "films/session/shot-2.mp4",
+      "films/session/shot-3.mp4",
+      "films/session/shot-4.mp4",
+      "films/session/shot-5.mp4",
+      "films/session/shot-6.mp4",
+      "films/session/shot-7.mp4",
+      "films/session/shot-8.mp4",
+      "films/session.mp4",
+      "films/tenx/shot-1.mp4",
+      "films/tenx/shot-2.mp4",
+      "films/tenx/shot-3.mp4",
+      "films/tenx/shot-4.mp4",
+      "films/tenx/shot-5.mp4",
+      "films/tenx/shot-6.mp4",
+      "films/tenx/shot-7.mp4",
+      "films/tenx/shot-8.mp4",
+      "films/tenx.mp4",
+      "films/voice/flow.mp3",
+      "films/voice/loops.mp3",
+      "films/voice/masters.mp3",
+      "films/voice/overture.mp3",
+      "films/voice/rare-birth.mp3",
+      "films/voice/session.mp3",
+      "films/voice/tenx.mp3",
+      "founder/samir/portraits/samir-portrait-01.jpg",
+      "founder/samir/portraits/samir-portrait-02.jpg",
+      "founder/samir/portraits/samir-portrait-03.jpg",
+      "founder/samir/portraits/samir-portrait-04.jpg",
+      "founder/samir/portraits/samir-portrait-05.jpg",
+      "games/breath-temple.jpg",
+      "games/the-pause.jpg",
+      "games/videos/body-scanner.mp4",
+      "games/videos/breath-temple.mp4",
+      "games/videos/karma-coin.mp4",
+      "games/videos/last-breath.mp4",
+      "games/videos/mirror-realm.mp4",
+      "games/videos/name-the-storm.mp4",
+      "games/videos/neti-neti.mp4",
+      "games/videos/ninth-dharana.mp4",
+      "games/videos/silent-mountain.mp4",
+      "games/videos/the-pause.mp4",
+      "games/videos/the-sigh.mp4",
+      "games/videos/three-brains.mp4",
+      "games/videos/tonglen.mp4",
+      "games/videos/who-is-thinking.mp4",
+      "games/videos/witness.mp4",
+      "games/witness.jpg",
+      "handbooks/videos/science-meets-yoga.mp4",
+      "handbooks/videos/the-11-bands.mp4",
+      "handbooks/videos/the-four-paths-of-yoga.mp4",
+      "handbooks/videos/the-nervous-system.mp4",
+      "handbooks/videos/the-onion.mp4",
+      "handbooks/videos/the-thought-world.mp4",
+      "handbooks/videos/the-three-brains.mp4",
+      "hope-flame-void.mp4",
+      "inner-paths/videos/neti-neti.mp4",
+      "inner-paths/videos/observation.mp4",
+      "inner-paths/videos/pranayama.mp4",
+      "inner-paths/videos/self-inquiry.mp4",
+      "narration/body-scan/0.mp3",
+      "narration/body-scan/1.mp3",
+      "narration/body-scan/2.mp3",
+      "narration/body-scan/3.mp3",
+      "narration/body-scan/4.mp3",
+      "narration/body-scan/5.mp3",
+      "narration/body-scan/6.mp3",
+      "narration/body-scan/7.mp3",
+      "narration/box-breath/0.mp3",
+      "narration/box-breath/1.mp3",
+      "narration/box-breath/2.mp3",
+      "narration/box-breath/3.mp3",
+      "narration/box-breath/4.mp3",
+      "narration/box-breath/5.mp3",
+      "narration/box-breath/6.mp3",
+      "narration/box-breath/7.mp3",
+      "narration/coherent-breath/0.mp3",
+      "narration/coherent-breath/1.mp3",
+      "narration/coherent-breath/2.mp3",
+      "narration/coherent-breath/3.mp3",
+      "narration/coherent-breath/4.mp3",
+      "narration/coherent-breath/5.mp3",
+      "narration/coherent-breath/6.mp3",
+      "narration/coherent-breath/7.mp3",
+      "narration/death-contemplation/0.mp3",
+      "narration/death-contemplation/1.mp3",
+      "narration/death-contemplation/2.mp3",
+      "narration/death-contemplation/3.mp3",
+      "narration/death-contemplation/4.mp3",
+      "narration/death-contemplation/5.mp3",
+      "narration/death-contemplation/6.mp3",
+      "narration/death-contemplation/7.mp3",
+      "narration/gratitude-pulse/0.mp3",
+      "narration/gratitude-pulse/1.mp3",
+      "narration/gratitude-pulse/2.mp3",
+      "narration/gratitude-pulse/3.mp3",
+      "narration/gratitude-pulse/4.mp3",
+      "narration/gratitude-pulse/5.mp3",
+      "narration/gratitude-pulse/6.mp3",
+      "narration/gratitude-pulse/7.mp3",
+      "narration/kumbhaka/0.mp3",
+      "narration/kumbhaka/1.mp3",
+      "narration/kumbhaka/2.mp3",
+      "narration/kumbhaka/3.mp3",
+      "narration/kumbhaka/4.mp3",
+      "narration/kumbhaka/5.mp3",
+      "narration/kumbhaka/6.mp3",
+      "narration/kumbhaka/7.mp3",
+      "narration/loving-kindness/0.mp3",
+      "narration/loving-kindness/1.mp3",
+      "narration/loving-kindness/2.mp3",
+      "narration/loving-kindness/3.mp3",
+      "narration/loving-kindness/4.mp3",
+      "narration/loving-kindness/5.mp3",
+      "narration/loving-kindness/6.mp3",
+      "narration/loving-kindness/7.mp3",
+      "narration/self-inquiry/0.mp3",
+      "narration/self-inquiry/1.mp3",
+      "narration/self-inquiry/2.mp3",
+      "narration/self-inquiry/3.mp3",
+      "narration/self-inquiry/4.mp3",
+      "narration/self-inquiry/5.mp3",
+      "narration/self-inquiry/6.mp3",
+      "narration/self-inquiry/7.mp3",
+      "narration/so-hum/0.mp3",
+      "narration/so-hum/1.mp3",
+      "narration/so-hum/2.mp3",
+      "narration/so-hum/3.mp3",
+      "narration/so-hum/4.mp3",
+      "narration/so-hum/5.mp3",
+      "narration/so-hum/6.mp3",
+      "narration/so-hum/7.mp3",
+      "narration/the-sigh/0.mp3",
+      "narration/the-sigh/1.mp3",
+      "narration/the-sigh/2.mp3",
+      "narration/the-sigh/3.mp3",
+      "narration/the-sigh/4.mp3",
+      "narration/the-sigh/5.mp3",
+      "narration/the-sigh/6.mp3",
+      "narration/the-sigh/7.mp3",
+      "narration/three-brain-checkin/0.mp3",
+      "narration/three-brain-checkin/1.mp3",
+      "narration/three-brain-checkin/2.mp3",
+      "narration/three-brain-checkin/3.mp3",
+      "narration/three-brain-checkin/4.mp3",
+      "narration/three-brain-checkin/5.mp3",
+      "narration/three-brain-checkin/6.mp3",
+      "narration/trataka/0.mp3",
+      "narration/trataka/1.mp3",
+      "narration/trataka/2.mp3",
+      "narration/trataka/3.mp3",
+      "narration/trataka/4.mp3",
+      "narration/trataka/5.mp3",
+      "narration/trataka/6.mp3",
+      "narration/trataka/7.mp3",
+      "narration/walking-meditation/0.mp3",
+      "narration/walking-meditation/1.mp3",
+      "narration/walking-meditation/2.mp3",
+      "narration/walking-meditation/3.mp3",
+      "narration/walking-meditation/4.mp3",
+      "narration/walking-meditation/5.mp3",
+      "narration/walking-meditation/6.mp3",
+      "narration/walking-meditation/7.mp3",
+      "narration/witness/0.mp3",
+      "narration/witness/1.mp3",
+      "narration/witness/2.mp3",
+      "narration/witness/3.mp3",
+      "narration/witness/4.mp3",
+      "narration/witness/5.mp3",
+      "narration/witness/6.mp3",
+      "narration/witness/7.mp3",
+      "narration/yoga-nidra/0.mp3",
+      "narration/yoga-nidra/1.mp3",
+      "narration/yoga-nidra/2.mp3",
+      "narration/yoga-nidra/3.mp3",
+      "narration/yoga-nidra/4.mp3",
+      "narration/yoga-nidra/5.mp3",
+      "narration/yoga-nidra/6.mp3",
+      "narration/yoga-nidra/7.mp3",
+      "paths/videos/bhakti.mp4",
+      "paths/videos/jnana.mp4",
+      "paths/videos/karma.mp4",
+      "paths/videos/raja.mp4",
+      "paths/videos/shakti.mp4",
+      "paths/videos/tantra.mp4",
+      "practices/body-scan-light.mp4",
+      "practices/box-breath-square.mp4",
+      "practices/coherent-breath-ocean.mp4",
+      "practices/death-contemplation-petal.mp4",
+      "practices/gratitude-pulse-heart.mp4",
+      "practices/kumbhaka-void.mp4",
+      "practices/loving-kindness-radiance.mp4",
+      "practices/self-inquiry-source.mp4",
+      "practices/so-hum-lotus.mp4",
+      "practices/the-sigh-sky.mp4",
+      "practices/three-brain-spheres.mp4",
+      "practices/trataka-flame.mp4",
+      "practices/walking-meditation-forest.mp4",
+      "practices/witness-lake.mp4",
+      "practices/yoga-nidra-cosmos.mp4",
+      "programs/videos/athlete-mind-in-motion.mp4",
+      "programs/videos/burnout-reset-with-patanjali.mp4",
+      "programs/videos/corporate-leadership-under-fire.mp4",
+      "programs/videos/corporate-team-repair.mp4",
+      "programs/videos/creator-flow-and-block.mp4",
+      "programs/videos/decision-making-with-krishna.mp4",
+      "programs/videos/duty-without-damage.mp4",
+      "programs/videos/founder-decision-loneliness.mp4",
+      "programs/videos/government-bureaucrat-integrity.mp4",
+      "programs/videos/grief-and-loss.mp4",
+      "programs/videos/healers-therapist-hygiene.mp4",
+      "programs/videos/healthcare-compassion-fatigue.mp4",
+      "programs/videos/heart-open-with-meera.mp4",
+      "programs/videos/inner-witness-with-ramana.mp4",
+      "programs/videos/letting-go-with-lao-tzu.mp4",
+      "programs/videos/loops-trauma-and-the-nervous-system.mp4",
+      "programs/videos/parent-patience-presence.mp4",
+      "programs/videos/ritual-daily-devotional.mp4",
+      "programs/videos/shakti-and-the-ethics-of-power.mp4",
+      "programs/videos/stillness-with-dogen.mp4",
+      "programs/videos/stop-the-reactor.mp4",
+      "programs/videos/student-focus-under-pressure.mp4",
+      "programs/videos/teacher-classroom-presence.mp4",
+      "programs/videos/the-onion-who-am-i.mp4",
+      "programs/videos/three-brains-protocol.mp4",
+      "programs/videos/watch-your-thoughts.mp4",
+      "programs/videos/willpower-reforged.mp4",
+      "reel-001/clip-1-cosmic-open.mp4",
+      "reel-001/clip-2-cultural-collapse.mp4",
+      "reel-001/clip-3-pivot.mp4",
+      "reel-001/clip-4-product-reveal.mp4",
+      "reel-001/clip-5-transformation.mp4",
+      "reel-001/clip-6-brand-signature.mp4",
+      "sensorial/buddha/ambient-bodhi.mp4",
+      "sensorial/krishnamurti/ambient-sky.mp4",
+      "sensorial/osho/ambient-embers.mp4",
+      "sensorial/ramana/ambient-flame.mp4",
+      "sensorial/sadhguru/ambient-cosmic.mp4",
+      "sensorial/yogananda/ambient-spiritual-eye.mp4",
+      "showroom/essay-ninety-days.mp4",
+      "showroom/essay-religion.mp4",
+      "showroom/essay-witness.mp4",
+      "showroom/games-cta.mp4",
+      "showroom/practices-cta.mp4",
+      "showroom/sam-idle.mp4",
+      "showroom/sam-portrait.mp4",
+      "showroom/sam-talking.mp4",
+      "showroom/vision-hero.mp4",
+      "showroom/wisdom-deck.mp4",
+      "showroom/world-anxious.mp4",
+      "showroom/world-corporate.mp4",
+      "showroom/world-creator.mp4",
+      "showroom/world-seeker.mp4",
+      "v000/clip1.mp4",
+      "v000/clip2.mp4",
+      "v000/clip3.mp4",
+      "v000/clip4.mp4",
+      "v000/clip5.mp4",
+      "v000/clip6.mp4",
+      "videos/hero-ancient-modern.mp4",
+      "videos/hero-awakening.mp4",
+      "videos/hero-banyan-tree.mp4",
+      "videos/hero-cliff-dawn.mp4",
+      "videos/hero-cosmic.mp4",
+      "videos/hero-creation-touch.mp4",
+      "videos/hero-forest-awakening.mp4",
+      "videos/hero-lotus-bloom.mp4",
+      "videos/hero-mandala-weave.mp4",
+      "videos/hero-meditate-child.mp4",
+      "videos/hero-meditate-desert.mp4",
+      "videos/hero-meditate-ganges.mp4",
+      "videos/hero-meditate-himalaya.mp4",
+      "videos/hero-meditate-monk.mp4",
+      "videos/hero-meditate-rooftop.mp4",
+      "videos/hero-meditate-sage.mp4",
+      "videos/hero-meditate-tech.mp4",
+      "videos/hero-meditate-teen.mp4",
+      "videos/hero-meditate-woman-young.mp4",
+      "videos/hero-meditate-zen.mp4",
+      "videos/hero-mirror.mp4",
+      "videos/hero-neural-light.mp4",
+      "videos/hero-shadow-self.mp4",
+      "videos/hero-temple-sunrise.mp4",
+      "videos/hero-water-reflection.mp4",
+      "wings/videos/bridges.mp4",
+      "wings/videos/lineage-tree.mp4",
+      "wings/videos/living-glossary.mp4",
+      "wings/videos/loops-atlas.mp4",
+      "wings/videos/prerequisites-map.mp4",
+      "wwb/bands.mp4",
+      "wwb/composer.mp4",
+      "wwb/fourpaths.mp4",
+      "wwb/games.mp4",
+      "wwb/guides.mp4",
+      "wwb/ladders.mp4",
+      "wwb/loops.mp4",
+      "wwb/memory.mp4",
+      "wwb/programs.mp4",
+      "wwb/sessionflow.mp4",
+      "wwb/witness.mp4"
+    ],
+    "content": []
+  },
+  "byType": {
+    "image": [
+      "founder/samir/portraits/samir-portrait-01.jpg",
+      "founder/samir/portraits/samir-portrait-02.jpg",
+      "founder/samir/portraits/samir-portrait-03.jpg",
+      "founder/samir/portraits/samir-portrait-04.jpg",
+      "founder/samir/portraits/samir-portrait-05.jpg",
+      "games/breath-temple.jpg",
+      "games/the-pause.jpg",
+      "games/witness.jpg"
+    ],
+    "video": [
+      "film/scene1-eye-opening.mp4",
+      "film/scene2-scrolling.mp4",
+      "film/scene2b-crowd.mp4",
+      "film/scene4-sage.mp4",
+      "film/scene5-instrument.mp4",
+      "film/scene7-meditation.mp4",
+      "film-disney/s1-alone.mp4",
+      "film-disney/s2-petals.mp4",
+      "film-disney/s3-emerge.mp4",
+      "film-disney/s4-council.mp4",
+      "film-disney/s5-tear.mp4",
+      "film-disney/s6-temple.mp4",
+      "film-fc/shot1-bindu.mp4",
+      "film-fc/shot2-iris-flame.mp4",
+      "film-fc/shot3-mandala-cosmos.mp4",
+      "film-fc/shot4-iphone-temple.mp4",
+      "film-fc/shot5-four-souls-v2.mp4",
+      "film-fc/shot5-four-souls.mp4",
+      "film-fc/shot6-cosmic-self.mp4",
+      "films/flow/shot-1.mp4",
+      "films/flow/shot-2.mp4",
+      "films/flow/shot-3.mp4",
+      "films/flow/shot-4.mp4",
+      "films/flow/shot-5.mp4",
+      "films/flow/shot-6.mp4",
+      "films/flow/shot-7.mp4",
+      "films/flow/shot-8.mp4",
+      "films/flow.mp4",
+      "films/loops/shot-1.mp4",
+      "films/loops/shot-2.mp4",
+      "films/loops/shot-3.mp4",
+      "films/loops/shot-4.mp4",
+      "films/loops/shot-5.mp4",
+      "films/loops/shot-6.mp4",
+      "films/loops/shot-7.mp4",
+      "films/loops/shot-8.mp4",
+      "films/loops.mp4",
+      "films/masters/shot-1.mp4",
+      "films/masters/shot-2.mp4",
+      "films/masters/shot-3.mp4",
+      "films/masters/shot-4.mp4",
+      "films/masters/shot-5.mp4",
+      "films/masters/shot-6.mp4",
+      "films/masters/shot-7.mp4",
+      "films/masters/shot-8.mp4",
+      "films/masters.mp4",
+      "films/overture/shot-1.mp4",
+      "films/overture/shot-2.mp4",
+      "films/overture/shot-3.mp4",
+      "films/overture/shot-4.mp4",
+      "films/overture/shot-5.mp4",
+      "films/overture/shot-6.mp4",
+      "films/overture/shot-7.mp4",
+      "films/overture/shot-8.mp4",
+      "films/overture.mp4",
+      "films/rare-birth/shot-1.mp4",
+      "films/rare-birth/shot-2.mp4",
+      "films/rare-birth/shot-3.mp4",
+      "films/rare-birth/shot-4.mp4",
+      "films/rare-birth/shot-5.mp4",
+      "films/rare-birth/shot-6.mp4",
+      "films/rare-birth/shot-7.mp4",
+      "films/rare-birth/shot-8.mp4",
+      "films/rare-birth.mp4",
+      "films/session/shot-1.mp4",
+      "films/session/shot-2.mp4",
+      "films/session/shot-3.mp4",
+      "films/session/shot-4.mp4",
+      "films/session/shot-5.mp4",
+      "films/session/shot-6.mp4",
+      "films/session/shot-7.mp4",
+      "films/session/shot-8.mp4",
+      "films/session.mp4",
+      "films/tenx/shot-1.mp4",
+      "films/tenx/shot-2.mp4",
+      "films/tenx/shot-3.mp4",
+      "films/tenx/shot-4.mp4",
+      "films/tenx/shot-5.mp4",
+      "films/tenx/shot-6.mp4",
+      "films/tenx/shot-7.mp4",
+      "films/tenx/shot-8.mp4",
+      "films/tenx.mp4",
+      "games/videos/body-scanner.mp4",
+      "games/videos/breath-temple.mp4",
+      "games/videos/karma-coin.mp4",
+      "games/videos/last-breath.mp4",
+      "games/videos/mirror-realm.mp4",
+      "games/videos/name-the-storm.mp4",
+      "games/videos/neti-neti.mp4",
+      "games/videos/ninth-dharana.mp4",
+      "games/videos/silent-mountain.mp4",
+      "games/videos/the-pause.mp4",
+      "games/videos/the-sigh.mp4",
+      "games/videos/three-brains.mp4",
+      "games/videos/tonglen.mp4",
+      "games/videos/who-is-thinking.mp4",
+      "games/videos/witness.mp4",
+      "handbooks/videos/science-meets-yoga.mp4",
+      "handbooks/videos/the-11-bands.mp4",
+      "handbooks/videos/the-four-paths-of-yoga.mp4",
+      "handbooks/videos/the-nervous-system.mp4",
+      "handbooks/videos/the-onion.mp4",
+      "handbooks/videos/the-thought-world.mp4",
+      "handbooks/videos/the-three-brains.mp4",
+      "hope-flame-void.mp4",
+      "inner-paths/videos/neti-neti.mp4",
+      "inner-paths/videos/observation.mp4",
+      "inner-paths/videos/pranayama.mp4",
+      "inner-paths/videos/self-inquiry.mp4",
+      "paths/videos/bhakti.mp4",
+      "paths/videos/jnana.mp4",
+      "paths/videos/karma.mp4",
+      "paths/videos/raja.mp4",
+      "paths/videos/shakti.mp4",
+      "paths/videos/tantra.mp4",
+      "practices/body-scan-light.mp4",
+      "practices/box-breath-square.mp4",
+      "practices/coherent-breath-ocean.mp4",
+      "practices/death-contemplation-petal.mp4",
+      "practices/gratitude-pulse-heart.mp4",
+      "practices/kumbhaka-void.mp4",
+      "practices/loving-kindness-radiance.mp4",
+      "practices/self-inquiry-source.mp4",
+      "practices/so-hum-lotus.mp4",
+      "practices/the-sigh-sky.mp4",
+      "practices/three-brain-spheres.mp4",
+      "practices/trataka-flame.mp4",
+      "practices/walking-meditation-forest.mp4",
+      "practices/witness-lake.mp4",
+      "practices/yoga-nidra-cosmos.mp4",
+      "programs/videos/athlete-mind-in-motion.mp4",
+      "programs/videos/burnout-reset-with-patanjali.mp4",
+      "programs/videos/corporate-leadership-under-fire.mp4",
+      "programs/videos/corporate-team-repair.mp4",
+      "programs/videos/creator-flow-and-block.mp4",
+      "programs/videos/decision-making-with-krishna.mp4",
+      "programs/videos/duty-without-damage.mp4",
+      "programs/videos/founder-decision-loneliness.mp4",
+      "programs/videos/government-bureaucrat-integrity.mp4",
+      "programs/videos/grief-and-loss.mp4",
+      "programs/videos/healers-therapist-hygiene.mp4",
+      "programs/videos/healthcare-compassion-fatigue.mp4",
+      "programs/videos/heart-open-with-meera.mp4",
+      "programs/videos/inner-witness-with-ramana.mp4",
+      "programs/videos/letting-go-with-lao-tzu.mp4",
+      "programs/videos/loops-trauma-and-the-nervous-system.mp4",
+      "programs/videos/parent-patience-presence.mp4",
+      "programs/videos/ritual-daily-devotional.mp4",
+      "programs/videos/shakti-and-the-ethics-of-power.mp4",
+      "programs/videos/stillness-with-dogen.mp4",
+      "programs/videos/stop-the-reactor.mp4",
+      "programs/videos/student-focus-under-pressure.mp4",
+      "programs/videos/teacher-classroom-presence.mp4",
+      "programs/videos/the-onion-who-am-i.mp4",
+      "programs/videos/three-brains-protocol.mp4",
+      "programs/videos/watch-your-thoughts.mp4",
+      "programs/videos/willpower-reforged.mp4",
+      "reel-001/clip-1-cosmic-open.mp4",
+      "reel-001/clip-2-cultural-collapse.mp4",
+      "reel-001/clip-3-pivot.mp4",
+      "reel-001/clip-4-product-reveal.mp4",
+      "reel-001/clip-5-transformation.mp4",
+      "reel-001/clip-6-brand-signature.mp4",
+      "sensorial/buddha/ambient-bodhi.mp4",
+      "sensorial/krishnamurti/ambient-sky.mp4",
+      "sensorial/osho/ambient-embers.mp4",
+      "sensorial/ramana/ambient-flame.mp4",
+      "sensorial/sadhguru/ambient-cosmic.mp4",
+      "sensorial/yogananda/ambient-spiritual-eye.mp4",
+      "showroom/essay-ninety-days.mp4",
+      "showroom/essay-religion.mp4",
+      "showroom/essay-witness.mp4",
+      "showroom/games-cta.mp4",
+      "showroom/practices-cta.mp4",
+      "showroom/sam-idle.mp4",
+      "showroom/sam-portrait.mp4",
+      "showroom/sam-talking.mp4",
+      "showroom/vision-hero.mp4",
+      "showroom/wisdom-deck.mp4",
+      "showroom/world-anxious.mp4",
+      "showroom/world-corporate.mp4",
+      "showroom/world-creator.mp4",
+      "showroom/world-seeker.mp4",
+      "v000/clip1.mp4",
+      "v000/clip2.mp4",
+      "v000/clip3.mp4",
+      "v000/clip4.mp4",
+      "v000/clip5.mp4",
+      "v000/clip6.mp4",
+      "videos/hero-ancient-modern.mp4",
+      "videos/hero-awakening.mp4",
+      "videos/hero-banyan-tree.mp4",
+      "videos/hero-cliff-dawn.mp4",
+      "videos/hero-cosmic.mp4",
+      "videos/hero-creation-touch.mp4",
+      "videos/hero-forest-awakening.mp4",
+      "videos/hero-lotus-bloom.mp4",
+      "videos/hero-mandala-weave.mp4",
+      "videos/hero-meditate-child.mp4",
+      "videos/hero-meditate-desert.mp4",
+      "videos/hero-meditate-ganges.mp4",
+      "videos/hero-meditate-himalaya.mp4",
+      "videos/hero-meditate-monk.mp4",
+      "videos/hero-meditate-rooftop.mp4",
+      "videos/hero-meditate-sage.mp4",
+      "videos/hero-meditate-tech.mp4",
+      "videos/hero-meditate-teen.mp4",
+      "videos/hero-meditate-woman-young.mp4",
+      "videos/hero-meditate-zen.mp4",
+      "videos/hero-mirror.mp4",
+      "videos/hero-neural-light.mp4",
+      "videos/hero-shadow-self.mp4",
+      "videos/hero-temple-sunrise.mp4",
+      "videos/hero-water-reflection.mp4",
+      "wings/videos/bridges.mp4",
+      "wings/videos/lineage-tree.mp4",
+      "wings/videos/living-glossary.mp4",
+      "wings/videos/loops-atlas.mp4",
+      "wings/videos/prerequisites-map.mp4",
+      "wwb/bands.mp4",
+      "wwb/composer.mp4",
+      "wwb/fourpaths.mp4",
+      "wwb/games.mp4",
+      "wwb/guides.mp4",
+      "wwb/ladders.mp4",
+      "wwb/loops.mp4",
+      "wwb/memory.mp4",
+      "wwb/programs.mp4",
+      "wwb/sessionflow.mp4",
+      "wwb/witness.mp4"
+    ],
+    "audio": [
+      "films/voice/flow.mp3",
+      "films/voice/loops.mp3",
+      "films/voice/masters.mp3",
+      "films/voice/overture.mp3",
+      "films/voice/rare-birth.mp3",
+      "films/voice/session.mp3",
+      "films/voice/tenx.mp3",
+      "narration/body-scan/0.mp3",
+      "narration/body-scan/1.mp3",
+      "narration/body-scan/2.mp3",
+      "narration/body-scan/3.mp3",
+      "narration/body-scan/4.mp3",
+      "narration/body-scan/5.mp3",
+      "narration/body-scan/6.mp3",
+      "narration/body-scan/7.mp3",
+      "narration/box-breath/0.mp3",
+      "narration/box-breath/1.mp3",
+      "narration/box-breath/2.mp3",
+      "narration/box-breath/3.mp3",
+      "narration/box-breath/4.mp3",
+      "narration/box-breath/5.mp3",
+      "narration/box-breath/6.mp3",
+      "narration/box-breath/7.mp3",
+      "narration/coherent-breath/0.mp3",
+      "narration/coherent-breath/1.mp3",
+      "narration/coherent-breath/2.mp3",
+      "narration/coherent-breath/3.mp3",
+      "narration/coherent-breath/4.mp3",
+      "narration/coherent-breath/5.mp3",
+      "narration/coherent-breath/6.mp3",
+      "narration/coherent-breath/7.mp3",
+      "narration/death-contemplation/0.mp3",
+      "narration/death-contemplation/1.mp3",
+      "narration/death-contemplation/2.mp3",
+      "narration/death-contemplation/3.mp3",
+      "narration/death-contemplation/4.mp3",
+      "narration/death-contemplation/5.mp3",
+      "narration/death-contemplation/6.mp3",
+      "narration/death-contemplation/7.mp3",
+      "narration/gratitude-pulse/0.mp3",
+      "narration/gratitude-pulse/1.mp3",
+      "narration/gratitude-pulse/2.mp3",
+      "narration/gratitude-pulse/3.mp3",
+      "narration/gratitude-pulse/4.mp3",
+      "narration/gratitude-pulse/5.mp3",
+      "narration/gratitude-pulse/6.mp3",
+      "narration/gratitude-pulse/7.mp3",
+      "narration/kumbhaka/0.mp3",
+      "narration/kumbhaka/1.mp3",
+      "narration/kumbhaka/2.mp3",
+      "narration/kumbhaka/3.mp3",
+      "narration/kumbhaka/4.mp3",
+      "narration/kumbhaka/5.mp3",
+      "narration/kumbhaka/6.mp3",
+      "narration/kumbhaka/7.mp3",
+      "narration/loving-kindness/0.mp3",
+      "narration/loving-kindness/1.mp3",
+      "narration/loving-kindness/2.mp3",
+      "narration/loving-kindness/3.mp3",
+      "narration/loving-kindness/4.mp3",
+      "narration/loving-kindness/5.mp3",
+      "narration/loving-kindness/6.mp3",
+      "narration/loving-kindness/7.mp3",
+      "narration/self-inquiry/0.mp3",
+      "narration/self-inquiry/1.mp3",
+      "narration/self-inquiry/2.mp3",
+      "narration/self-inquiry/3.mp3",
+      "narration/self-inquiry/4.mp3",
+      "narration/self-inquiry/5.mp3",
+      "narration/self-inquiry/6.mp3",
+      "narration/self-inquiry/7.mp3",
+      "narration/so-hum/0.mp3",
+      "narration/so-hum/1.mp3",
+      "narration/so-hum/2.mp3",
+      "narration/so-hum/3.mp3",
+      "narration/so-hum/4.mp3",
+      "narration/so-hum/5.mp3",
+      "narration/so-hum/6.mp3",
+      "narration/so-hum/7.mp3",
+      "narration/the-sigh/0.mp3",
+      "narration/the-sigh/1.mp3",
+      "narration/the-sigh/2.mp3",
+      "narration/the-sigh/3.mp3",
+      "narration/the-sigh/4.mp3",
+      "narration/the-sigh/5.mp3",
+      "narration/the-sigh/6.mp3",
+      "narration/the-sigh/7.mp3",
+      "narration/three-brain-checkin/0.mp3",
+      "narration/three-brain-checkin/1.mp3",
+      "narration/three-brain-checkin/2.mp3",
+      "narration/three-brain-checkin/3.mp3",
+      "narration/three-brain-checkin/4.mp3",
+      "narration/three-brain-checkin/5.mp3",
+      "narration/three-brain-checkin/6.mp3",
+      "narration/trataka/0.mp3",
+      "narration/trataka/1.mp3",
+      "narration/trataka/2.mp3",
+      "narration/trataka/3.mp3",
+      "narration/trataka/4.mp3",
+      "narration/trataka/5.mp3",
+      "narration/trataka/6.mp3",
+      "narration/trataka/7.mp3",
+      "narration/walking-meditation/0.mp3",
+      "narration/walking-meditation/1.mp3",
+      "narration/walking-meditation/2.mp3",
+      "narration/walking-meditation/3.mp3",
+      "narration/walking-meditation/4.mp3",
+      "narration/walking-meditation/5.mp3",
+      "narration/walking-meditation/6.mp3",
+      "narration/walking-meditation/7.mp3",
+      "narration/witness/0.mp3",
+      "narration/witness/1.mp3",
+      "narration/witness/2.mp3",
+      "narration/witness/3.mp3",
+      "narration/witness/4.mp3",
+      "narration/witness/5.mp3",
+      "narration/witness/6.mp3",
+      "narration/witness/7.mp3",
+      "narration/yoga-nidra/0.mp3",
+      "narration/yoga-nidra/1.mp3",
+      "narration/yoga-nidra/2.mp3",
+      "narration/yoga-nidra/3.mp3",
+      "narration/yoga-nidra/4.mp3",
+      "narration/yoga-nidra/5.mp3",
+      "narration/yoga-nidra/6.mp3",
+      "narration/yoga-nidra/7.mp3"
+    ]
+  }
+}

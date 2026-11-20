@@ -1,0 +1,1532 @@
+/* Google Fonts are loaded from index.html via <link> instead of a CSS
+   @import. A CSS @import can only be discovered after this stylesheet has
+   downloaded and parsed, which puts the font request one full round trip
+   behind everything else. A <link> in the HTML is found during preload
+   scan, so the font CSS and this stylesheet download in parallel.
+
+   Keep this list in sync with the <link> in index.html. */
+
+@import './design-system/tokens/generated.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Additional tokens not in generated system — slot atmospheres, gradients, shadows */
+    
+    /* Slot atmospheres — each daily rhythm has its own sky */
+    --slot-morning-sky: radial-gradient(ellipse at 50% 110%, hsl(var(--primary) / 0.18) 0%, hsl(var(--secondary) / 0.08) 28%, hsl(var(--surface-main) / 0.9) 70%, hsl(var(--background)) 100%);
+    --slot-midday-sky: radial-gradient(ellipse at 50% -10%, hsl(var(--accent) / 0.12) 0%, hsl(200 40% 30% / 0.06) 40%, hsl(var(--surface-main)) 100%);
+    --slot-evening-sky: radial-gradient(ellipse at 50% 100%, hsl(280 30% 25% / 0.2) 0%, hsl(var(--secondary) / 0.1) 30%, hsl(var(--surface-main) / 0.95) 75%, hsl(var(--background)) 100%);
+    --slot-night-sky: radial-gradient(ellipse at 50% 50%, hsl(250 20% 8% / 0.5) 0%, hsl(var(--surface-main)) 60%, hsl(var(--background)) 100%);
+    
+    --slot-morning-accent: var(--primary);
+    --slot-midday-accent: var(--accent);
+    --slot-evening-accent: var(--secondary);
+    --slot-night-accent: var(--muted-foreground);
+    
+    --shadow-glow: 0 0 32px hsl(var(--primary) / 0.15);
+    --shadow-glow-strong: 0 0 64px hsl(var(--primary) / 0.25);
+    --shadow-golden: 0 0 36px hsl(var(--primary) / 0.18), 0 0 72px hsl(var(--primary) / 0.08);
+    --shadow-gilt: 0 1px 0 hsl(var(--gold-300) / 0.2) inset, 0 0 0 1px hsl(var(--primary) / 0.15), 0 8px 24px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 8px 24px hsl(0 0% 0% / 0.25), 0 2px 6px hsl(0 0% 0% / 0.15);
+    --shadow-elevated: 0 16px 40px hsl(0 0% 0% / 0.35), 0 4px 12px hsl(0 0% 0% / 0.2);
+
+    /* Premium elevation — layered ambient + contact shadow with a hairline
+       inner light so surfaces read as physical material, not flat fills. */
+    --elev-1:
+      0 1px 1px hsl(0 0% 0% / 0.14),
+      0 4px 12px hsl(0 0% 0% / 0.18),
+      inset 0 1px 0 hsl(0 0% 100% / 0.055);
+    --elev-2:
+      0 2px 4px hsl(0 0% 0% / 0.16),
+      0 10px 28px hsl(0 0% 0% / 0.24),
+      0 24px 56px hsl(var(--primary) / 0.055),
+      inset 0 1px 0 hsl(0 0% 100% / 0.07);
+    --elev-3:
+      0 4px 8px hsl(0 0% 0% / 0.18),
+      0 18px 44px hsl(0 0% 0% / 0.3),
+      0 40px 90px hsl(var(--primary) / 0.08),
+      inset 0 1px 0 hsl(0 0% 100% / 0.09);
+    --elev-4:
+      0 8px 16px hsl(0 0% 0% / 0.2),
+      0 32px 72px hsl(0 0% 0% / 0.38),
+      0 60px 120px hsl(var(--primary) / 0.1),
+      inset 0 1px 0 hsl(0 0% 100% / 0.11);
+
+    /* Hairline + premium ring */
+    --hairline: hsl(0 0% 100% / 0.07);
+    --hairline-strong: hsl(0 0% 100% / 0.12);
+    --ring-soft: 0 0 0 4px hsl(var(--ring) / 0.14);
+
+    /* Premium gold surface ramp */
+    --gold-surface: linear-gradient(135deg, hsl(var(--gold-300)) 0%, hsl(var(--primary)) 46%, hsl(var(--gold-600)) 100%);
+    --gold-surface-soft: linear-gradient(135deg, hsl(var(--primary) / 0.16), hsl(var(--gold-600) / 0.06));
+    --panel-sheen: linear-gradient(150deg, hsl(0 0% 100% / 0.055) 0%, hsl(0 0% 100% / 0.012) 34%, transparent 62%);
+    
+    /* Sacred gradients */
+    --gradient-gold-leaf: linear-gradient(135deg, hsl(var(--gold-300)) 0%, hsl(var(--primary)) 52%, hsl(var(--gold-600)) 100%);
+    --gradient-gilt: linear-gradient(180deg, hsl(var(--gold-300) / 0.35), hsl(var(--primary) / 0.12) 50%, hsl(var(--gold-600) / 0.28));
+    --gradient-altar: radial-gradient(ellipse 80% 60% at 50% 100%, hsl(var(--primary) / 0.18), transparent 65%);
+    
+    --gradient-sunrise: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-void: linear-gradient(180deg, hsl(var(--background)), hsl(var(--surface-main)));
+    --gradient-horizon: linear-gradient(0deg, hsl(var(--primary) / 0.08), transparent);
+    
+    /* Light mode surface overrides */
+    --surface-main-light: 40 25% 97%;
+    --surface-secondary-light: 40 24% 98%;
+    --surface-elevated-light: 0 0% 100%;
+    --surface-raised-light: 38 18% 94%;
+  }
+}
+
+html.dark { color-scheme: dark; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+html.light {
+  color-scheme: light;
+  --surface-main: var(--surface-main-light);
+  --surface-secondary: var(--surface-secondary-light);
+  --surface-elevated: var(--surface-elevated-light);
+  --surface-raised: var(--surface-raised-light);
+
+  /* Light mode needs softer, tinted shadows instead of pure black. */
+  --hairline: hsl(30 20% 20% / 0.06);
+  --hairline-strong: hsl(30 20% 20% / 0.1);
+  --elev-1:
+    0 1px 2px hsl(30 25% 30% / 0.06),
+    0 4px 12px hsl(30 25% 30% / 0.08);
+  --elev-2:
+    0 2px 5px hsl(30 25% 30% / 0.07),
+    0 12px 28px hsl(30 25% 30% / 0.1),
+    0 24px 52px hsl(var(--primary) / 0.06);
+  --elev-3:
+    0 4px 10px hsl(30 25% 30% / 0.08),
+    0 20px 44px hsl(30 25% 30% / 0.12),
+    0 40px 84px hsl(var(--primary) / 0.08);
+  --elev-4:
+    0 8px 18px hsl(30 25% 30% / 0.1),
+    0 34px 72px hsl(30 25% 30% / 0.16),
+    0 60px 120px hsl(var(--primary) / 0.1);
+  --panel-sheen: linear-gradient(150deg, hsl(0 0% 100% / 0.75) 0%, hsl(0 0% 100% / 0.28) 40%, transparent 70%);
+}
+
+/* ── Light-mode polish ───────────────────────────────────────────────────────
+   Deep-gold accents and warm hairlines so nothing washes out on cream. */
+html.light .btn-gold {
+  color: hsl(28 32% 10%);
+}
+
+html.light .text-gold-gradient {
+  background-image: linear-gradient(135deg, hsl(36 80% 40%), hsl(var(--primary)) 55%, hsl(28 65% 28%));
+}
+
+html.light .gilt-ring::after {
+  background: linear-gradient(
+    150deg,
+    hsl(var(--primary) / 0.42),
+    hsl(var(--primary) / 0.1) 40%,
+    transparent 65%,
+    hsl(var(--primary) / 0.22)
+  );
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: hsl(28 20% 35% / 0.25);
+  background-clip: padding-box;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.55);
+  background-clip: padding-box;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  *:focus-visible {
+    outline: 2px solid hsl(var(--ring) / 0.9);
+    outline-offset: 2px;
+    border-radius: 4px;
+    box-shadow: var(--ring-soft);
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.28);
+    color: hsl(var(--foreground));
+    text-shadow: none;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    font-feature-settings: 'cv11', 'ss01', 'ss03', 'kern', 'liga';
+    font-optical-sizing: auto;
+    font-variant-ligatures: common-ligatures contextual;
+    text-rendering: optimizeLegibility;
+    letter-spacing: -0.011em;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* Keep the native iOS bounce (premium feel) while still blocking scroll
+       chaining into the page from overlays. */
+    overscroll-behavior-y: contain;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    position: relative;
+    transition: background-color 240ms ease, color 240ms ease;
+  }
+
+  /* Allow text selection where it matters */
+  input, textarea, [contenteditable="true"], .selectable {
+    -webkit-touch-callout: default;
+    -webkit-user-select: text;
+    user-select: text;
+  }
+
+  /* Prevent selection on UI chrome only */
+  button, [role="button"], .no-select {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* iOS: prevent input zoom (font-size must be >= 16px) */
+  @supports (-webkit-touch-callout: none) {
+    input, select, textarea {
+      font-size: max(16px, 1rem);
+    }
+  }
+
+  /* Global safe-area helpers (notch / home indicator) */
+  .safe-top    { padding-top: env(safe-area-inset-top); }
+  .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+  .safe-x      { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+
+  /* Installed apps use the same selected palette as the browser app. */
+  @media (display-mode: standalone) {
+    html, body { background-color: hsl(var(--background)); }
+  }
+
+  /* Editorial display type (Fraunces) is reserved for headings; UI copy stays in Instrument Sans. */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-editorial);
+    font-optical-sizing: auto;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    color: hsl(var(--foreground));
+    text-wrap: balance;
+  }
+  h1 {
+    font-weight: 500;
+    letter-spacing: -0.022em;
+    line-height: 1.02;
+  }
+  h2 {
+    font-weight: 500;
+    letter-spacing: -0.018em;
+    line-height: 1.06;
+  }
+  h3 {
+    font-weight: 500;
+    letter-spacing: -0.014em;
+    line-height: 1.12;
+  }
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.008em;
+    line-height: 1.2;
+  }
+  h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    line-height: 1.3;
+  }
+  p { text-wrap: pretty; }
+
+  .font-editorial { font-family: var(--font-editorial); }
+
+  /* Opt-in sacred serif for temple/ritual moments */
+  .font-sacred { font-family: var(--font-sacred); letter-spacing: 0.02em; }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.18);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.45);
+    background-clip: padding-box;
+  }
+
+  /* Hide scrollbar for horizontal scroll areas */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* CONSCIOUSOS HOME — MULTI-LAYER BACKGROUND SYSTEM */
+@layer components {
+  /* Layer 1: Deep cosmic base */
+  .cosmic-bg-base {
+    background: hsl(var(--cosmos-950));
+  }
+
+  /* Layer 2: Subtle atmospheric gradients based on time of day */
+  .cosmic-bg-atmosphere {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .cosmic-bg-atmosphere::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--slot-morning-sky);
+    opacity: var(--atmosphere-opacity, 1);
+    transition: opacity 800ms ease;
+  }
+
+  .cosmic-bg-atmosphere.midday::before {
+    background: var(--slot-midday-sky);
+  }
+  .cosmic-bg-atmosphere.evening::before {
+    background: var(--slot-evening-sky);
+  }
+  .cosmic-bg-atmosphere.night::before {
+    background: var(--slot-night-sky);
+  }
+
+  /* Layer 3: Golden illumination behind the Orb */
+  .cosmic-bg-orb-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vmin;
+    height: 60vmin;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, hsl(var(--gold-primary) / 0.12) 0%, hsl(var(--gold-muted) / 0.06) 40%, transparent 75%);
+    pointer-events: none;
+    z-index: 1;
+    opacity: var(--orb-glow-opacity, 1);
+    transition: opacity 1000ms ease;
+  }
+
+  /* Layer 4: Fine grain/noise texture */
+  .cosmic-bg-grain {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+  }
+
+  /* Layer 5: Section-specific atmospheric accents */
+  .cosmic-bg-section-accent {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1200ms ease;
+  }
+
+  .cosmic-bg-section-accent.active {
+    opacity: 1;
+  }
+
+  /* Complete Home background composition */
+  .home-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .home-background > * {
+    position: absolute;
+    inset: 0;
+  }
+}
+
+@layer components {
+  .surface-card {
+    border: 1px solid hsl(var(--border) / 0.62);
+    border-radius: var(--radius-card);
+    background:
+      var(--panel-sheen),
+      linear-gradient(168deg, hsl(var(--surface-elevated)), hsl(var(--card)));
+    box-shadow: var(--elev-1);
+  }
+
+  .featured-card {
+    border: 1px solid hsl(var(--primary) / 0.28);
+    border-radius: var(--radius-card);
+    background:
+      var(--panel-sheen),
+      radial-gradient(ellipse at 100% 0%, hsl(var(--primary) / 0.1), transparent 44%),
+      linear-gradient(168deg, hsl(var(--surface-elevated)), hsl(var(--card)));
+    box-shadow: var(--elev-2);
+  }
+
+  .premium-card {
+    border: 1px solid hsl(var(--primary) / 0.42);
+    border-radius: var(--radius-featured);
+    background:
+      var(--panel-sheen),
+      linear-gradient(145deg, hsl(var(--primary) / 0.09), transparent 50%),
+      linear-gradient(168deg, hsl(var(--surface-elevated)), hsl(var(--card)));
+    box-shadow: var(--elev-3), 0 0 44px hsl(var(--primary) / 0.08);
+  }
+
+  .minimal-card {
+    border: 1px solid transparent;
+    background: transparent;
+  }
+
+  .immersive-card {
+    overflow: hidden;
+    border: 1px solid hsl(var(--primary) / 0.22);
+    border-radius: var(--radius-featured);
+    background:
+      var(--panel-sheen),
+      radial-gradient(ellipse at 88% 0%, hsl(var(--primary) / 0.13), transparent 46%),
+      linear-gradient(145deg, hsl(var(--surface-raised)), hsl(var(--surface-main)));
+    box-shadow: var(--elev-3);
+  }
+
+  .btn-gold {
+    background-image: var(--gold-surface);
+    box-shadow:
+      inset 0 1px 0 hsl(var(--gold-50) / 0.55),
+      inset 0 -1px 0 hsl(var(--gold-700) / 0.3),
+      0 1px 2px hsl(0 0% 0% / 0.2),
+      0 6px 18px hsl(var(--gold-700) / 0.28);
+    transition:
+      filter 180ms ease,
+      box-shadow 220ms ease,
+      transform 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .btn-gold:hover:not(:disabled) {
+    filter: brightness(1.05) saturate(1.04);
+    box-shadow:
+      inset 0 1px 0 hsl(var(--gold-50) / 0.65),
+      inset 0 -1px 0 hsl(var(--gold-700) / 0.32),
+      0 2px 4px hsl(0 0% 0% / 0.22),
+      0 10px 26px hsl(var(--gold-700) / 0.34);
+  }
+
+  .btn-gold:active:not(:disabled) {
+    transform: scale(0.985);
+  }
+
+  .app-theme-backdrop {
+    position: relative;
+    isolation: isolate;
+    background-color: hsl(var(--background));
+    background-image:
+      radial-gradient(ellipse at 4% 0%, hsl(var(--brand-gold) / 0.045), transparent 34%),
+      radial-gradient(ellipse at 100% 34%, hsl(var(--brand-blue) / 0.035), transparent 30%),
+      radial-gradient(ellipse at 52% 100%, hsl(var(--brand-orange) / 0.025), transparent 40%);
+  }
+
+  .app-theme-backdrop::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background:
+      radial-gradient(ellipse 70% 50% at 50% -10%, hsl(var(--primary) / 0.07), transparent 62%),
+      radial-gradient(ellipse 60% 40% at 110% 100%, hsl(var(--secondary) / 0.05), transparent 60%);
+    opacity: 0.9;
+  }
+
+  .dark .app-theme-backdrop {
+    background-image:
+      radial-gradient(ellipse at 4% 0%, hsl(var(--brand-gold) / 0.07), transparent 34%),
+      radial-gradient(ellipse at 100% 34%, hsl(var(--brand-blue) / 0.055), transparent 30%),
+      radial-gradient(ellipse at 52% 100%, hsl(var(--brand-orange) / 0.035), transparent 40%);
+  }
+
+  .dark .app-theme-backdrop::before {
+    background:
+      radial-gradient(ellipse 70% 50% at 50% -10%, hsl(var(--primary) / 0.1), transparent 62%),
+      radial-gradient(ellipse 60% 40% at 110% 100%, hsl(var(--secondary) / 0.06), transparent 60%);
+  }
+
+  .home-hero-surface {
+    background:
+      radial-gradient(ellipse at 85% 12%, hsl(var(--brand-orange) / 0.10), transparent 34%),
+      radial-gradient(ellipse at 12% 100%, hsl(var(--brand-blue) / 0.07), transparent 38%),
+      radial-gradient(ellipse at 75% 100%, hsl(var(--brand-ink) / 0.025), transparent 42%),
+      linear-gradient(145deg, hsl(var(--card)), hsl(var(--background)) 68%, hsl(var(--brand-gold) / 0.06));
+  }
+
+  .dark .home-hero-surface {
+    background:
+      radial-gradient(ellipse at 85% 12%, hsl(var(--brand-orange) / 0.13), transparent 34%),
+      radial-gradient(ellipse at 12% 100%, hsl(var(--brand-blue) / 0.08), transparent 38%),
+      radial-gradient(ellipse at 75% 100%, hsl(var(--brand-ink) / 0.25), transparent 42%),
+      linear-gradient(145deg, hsl(30 22% 9%), hsl(var(--background)) 68%, hsl(38 30% 8%));
+  }
+
+  .home-orb-glow {
+    background: radial-gradient(circle, hsl(var(--brand-gold) / 0.13), hsl(var(--brand-orange) / 0.06) 38%, transparent 70%);
+  }
+
+  /* Shared orb aura: the soft halo drifts through hue while the GPU orb does
+     the same inside its shader. One revolution per minute at speed 1. */
+  @keyframes orb-aura-hue {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(360deg); }
+  }
+
+  /* The orb writes its live hue here; UI chrome can follow it. */
+  :root {
+    --orb-hue: 38;
+  }
+  @keyframes orb-accent-breathe {
+    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--orb-hue) 92% 62% / 0); }
+    50% { box-shadow: 0 0 22px 0 hsl(var(--orb-hue) 92% 62% / 0.24); }
+  }
+  .orb-accent-breathe {
+    animation: orb-accent-breathe 5s ease-in-out infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .orb-accent-breathe { animation: none; }
+  }
+}
+
+@layer utilities {
+  /* Sacred gold-leaf text — shimmering 24k temple gold */
+  .text-gold-leaf {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--gold-300)) 0%, hsl(var(--gold-500)) 30%, hsl(var(--gold-600)) 55%, hsl(var(--gold-300)) 80%, hsl(var(--gold-500)) 100%);
+    background-size: 200% 200%;
+    animation: gold-shimmer 8s ease-in-out infinite;
+  }
+  @keyframes gold-shimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Static gold gradient text (no animation — use for small labels/prices). */
+  .text-gold-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--gold-100)), hsl(var(--primary)) 52%, hsl(var(--gold-600)));
+  }
+
+  /* Numerals that must not jitter while counting. */
+  .num {
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: 'tnum' 1, 'lnum' 1;
+  }
+
+  /* Fade the bottom edge of scroll containers. */
+  .fade-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 78%, transparent 100%);
+  }
+
+  /* Gilt border — thin gold-leaf edge, like temple inlay */
+  .gilt-border {
+    position: relative;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+  }
+  .gilt-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: var(--gradient-gilt);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* Divine glow — luminous bronze-gold halo */
+  .glow-divine {
+    box-shadow:
+      0 0 30px hsl(38 64% 56% / 0.45),
+      0 0 80px hsl(38 64% 56% / 0.22),
+      0 0 140px hsl(36 59% 48% / 0.12),
+      inset 0 1px 0 hsl(45 83% 75% / 0.25);
+  }
+  .glow-altar {
+    box-shadow: var(--shadow-golden), inset 0 0 60px hsl(38 64% 56% / 0.08);
+  }
+
+  .text-gradient-sunrise {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  }
+
+  .bg-gradient-sunrise {
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  }
+
+  .bg-gradient-void {
+    background-image: linear-gradient(180deg, hsl(28 22% 2%), hsl(28 18% 5%));
+  }
+
+  /* Vishnu divine gradient — from deep bronze shadow to radiant gold highlight */
+  .bg-divine-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(33 62% 33%) 0%,
+      hsl(36 59% 48%) 25%,
+      hsl(38 64% 56%) 50%,
+      hsl(41 73% 66%) 75%,
+      hsl(45 83% 75%) 100%
+    );
+  }
+
+  /* Prince-of-Persia atmospheric backdrop — warm divine bronze-gold on warm obsidian.
+     Use on full-screen scenes (onboarding, hero, Elder, finalize). */
+  .atmosphere-amber {
+    position: relative;
+    background:
+      radial-gradient(ellipse 60% 45% at 50% 38%, hsl(38 64% 56% / 0.22) 0%, hsl(36 59% 48% / 0.10) 35%, transparent 65%),
+      radial-gradient(ellipse 100% 80% at 50% 110%, hsl(36 59% 48% / 0.18) 0%, transparent 60%),
+      linear-gradient(180deg, hsl(30 25% 3%) 0%, hsl(30 20% 5%) 100%);
+  }
+  .atmosphere-amber-soft {
+    position: relative;
+    background:
+      radial-gradient(ellipse 70% 55% at 50% 30%, hsl(38 64% 56% / 0.18) 0%, hsl(36 59% 48% / 0.08) 40%, transparent 65%),
+      radial-gradient(ellipse 100% 80% at 50% 110%, hsl(36 59% 48% / 0.16) 0%, transparent 60%),
+      linear-gradient(180deg, hsl(30 22% 4%) 0%, hsl(30 18% 6%) 100%);
+  }
+
+  .glow-sunrise {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.25), 0 0 80px hsl(var(--primary) / 0.1);
+  }
+
+  .glow-golden {
+    box-shadow: 0 0 40px hsl(var(--secondary) / 0.25), 0 0 80px hsl(var(--secondary) / 0.1);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5), 0 0 40px hsl(var(--primary) / 0.2);
+  }
+
+  .text-glow-golden {
+    text-shadow: 0 0 20px hsl(var(--secondary) / 0.5), 0 0 40px hsl(var(--secondary) / 0.2);
+  }
+
+  /* Glass morphism — 3 levels only.
+     Premium glass = tinted gradient + hairline light edge + deep ambient shadow. */
+  .glass-1 {
+    background:
+      var(--panel-sheen),
+      linear-gradient(160deg, hsl(var(--glass-1-highlight)), transparent 58%),
+      hsl(var(--glass-1-bg));
+    backdrop-filter: blur(16px) saturate(135%);
+    -webkit-backdrop-filter: blur(16px) saturate(135%);
+    border: 1px solid hsl(var(--glass-1-border));
+    box-shadow:
+      inset 0 1px 0 hsl(var(--glass-1-highlight)),
+      inset 0 0 0 1px hsl(0 0% 100% / 0.015),
+      0 1px 2px hsl(0 0% 0% / 0.12),
+      0 10px 26px hsl(var(--shadow-card-color, 0 0% 0% / 0.15));
+  }
+
+  .glass-2 {
+    background:
+      var(--panel-sheen),
+      linear-gradient(160deg, hsl(var(--glass-2-highlight)), transparent 52%),
+      hsl(var(--glass-2-bg));
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    border: 1px solid hsl(var(--glass-2-border));
+    box-shadow:
+      inset 0 1px 0 hsl(var(--glass-2-highlight)),
+      inset 0 0 0 1px hsl(0 0% 100% / 0.02),
+      0 2px 4px hsl(0 0% 0% / 0.14),
+      0 16px 40px hsl(var(--shadow-card-color, 0 0% 0% / 0.2)),
+      0 32px 80px hsl(var(--primary) / 0.05);
+  }
+
+  .glass-3 {
+    background:
+      var(--panel-sheen),
+      linear-gradient(160deg, hsl(var(--glass-3-highlight)), transparent 46%),
+      hsl(var(--glass-3-bg));
+    backdrop-filter: blur(28px) saturate(145%);
+    -webkit-backdrop-filter: blur(28px) saturate(145%);
+    border: 1px solid hsl(var(--glass-3-border));
+    box-shadow:
+      inset 0 1px 0 hsl(var(--glass-3-highlight)),
+      inset 0 0 0 1px hsl(0 0% 100% / 0.03),
+      0 2px 6px hsl(0 0% 0% / 0.16),
+      0 22px 52px hsl(var(--shadow-card-color, 0 0% 0% / 0.26)),
+      0 44px 100px hsl(var(--primary) / 0.08);
+  }
+
+  /* Legacy aliases — map to new levels */
+  .glass { @apply glass-2; }
+  .glass-subtle { @apply glass-1; }
+  .glass-card { @apply glass-1; }
+  .glass-nav { @apply glass-2; }
+
+  .glass-card-hover {
+    transition:
+      transform 420ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 420ms cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 320ms ease,
+      background-color 320ms ease;
+  }
+
+  .glass-card-hover:hover {
+    border-color: hsl(var(--ring) / 0.26);
+    box-shadow:
+      inset 0 1px 0 hsl(var(--glass-1-highlight)),
+      0 3px 8px hsl(0 0% 0% / 0.16),
+      0 18px 44px hsl(var(--shadow-card-color, 0 0% 0% / 0.32)),
+      0 0 32px hsl(var(--ring) / 0.08);
+    transform: translateY(-3px);
+  }
+
+  .glass-card-hover:active {
+    transform: translateY(-1px) scale(0.995);
+  }
+
+  /* Premium panel — the canonical app surface. Layered gradient, hairline edge,
+     quiet ambient glow. Use for any primary content container. */
+  .premium-panel {
+    position: relative;
+    border: 1px solid hsl(var(--border) / 0.6);
+    border-radius: var(--radius-card);
+    background:
+      var(--panel-sheen),
+      radial-gradient(ellipse 120% 90% at 100% 0%, hsl(var(--primary) / 0.07), transparent 52%),
+      linear-gradient(168deg, hsl(var(--surface-elevated)), hsl(var(--card)) 52%, hsl(var(--surface-main)));
+    box-shadow: var(--elev-2);
+    transition:
+      border-color 320ms ease,
+      box-shadow 420ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .premium-panel-hover:hover,
+  a.premium-panel:hover,
+  button.premium-panel:hover {
+    border-color: hsl(var(--primary) / 0.3);
+    box-shadow:
+      var(--elev-3),
+      0 0 48px hsl(var(--primary) / 0.09);
+    transform: translateY(-2px);
+  }
+
+  /* Fine gold hairline ring — temple inlay edge, radius agnostic. */
+  .gilt-ring {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .gilt-ring::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      150deg,
+      hsl(var(--gold-300) / 0.55),
+      hsl(var(--primary) / 0.18) 38%,
+      transparent 60%,
+      hsl(var(--gold-600) / 0.32)
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Diagonal light sweep for hero / featured surfaces. */
+  .premium-sheen {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .premium-sheen::before {
+    content: "";
+    position: absolute;
+    inset: -60% -20%;
+    background: linear-gradient(
+      115deg,
+      transparent 38%,
+      hsl(0 0% 100% / 0.06) 47%,
+      hsl(var(--gold-300) / 0.07) 50%,
+      transparent 60%
+    );
+    transform: translateX(-35%);
+    pointer-events: none;
+    transition: transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 0;
+  }
+
+  .premium-sheen:hover::before {
+    transform: translateX(35%);
+  }
+
+  /* Gold divider */
+  .divider-gold {
+    height: 1px;
+    border: 0;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.45), transparent);
+  }
+
+  /* Micro-interaction helpers */
+  .hover-lift {
+    transition:
+      transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 320ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--elev-2);
+  }
+
+  .press:active {
+    transform: scale(0.975);
+  }
+
+  /* Ambient background */
+  .ambient-bg {
+    position: relative;
+  }
+
+  .ambient-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, hsl(var(--ring) / 0.03), transparent 50%),
+      radial-gradient(ellipse at 80% 20%, hsl(var(--secondary) / 0.02), transparent 50%),
+      radial-gradient(ellipse at 50% 80%, hsl(var(--muted) / 0.03), transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+    opacity: var(--ambient-opacity, 1);
+  }
+
+  /* Skeleton shimmer */
+  .skeleton-shimmer {
+    background: linear-gradient(90deg,
+        hsl(var(--skeleton-from, var(--muted)) / 1) 0%,
+        hsl(var(--skeleton-via, var(--muted-foreground)) / 0.3) 50%,
+        hsl(var(--skeleton-from, var(--muted)) / 1) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+  }
+
+  /* Breathing animation */
+  .animate-breathe {
+    animation: breathe 4s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s linear infinite;
+    background-size: 200% 100%;
+  }
+
+
+  /* Progress ring */
+  .progress-ring-track {
+    stroke: hsl(var(--muted));
+  }
+
+  .progress-ring-fill {
+    stroke: hsl(var(--primary));
+    transition: stroke-dashoffset 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Motion tokens — transition durations */
+  .duration-instant { transition-duration: var(--motion-duration-instant); }
+  .duration-fast { transition-duration: var(--motion-duration-fast); }
+  .duration-normal { transition-duration: var(--motion-duration-normal); }
+  .duration-slow { transition-duration: var(--motion-duration-slow); }
+  .duration-slower { transition-duration: var(--motion-duration-slower); }
+  .duration-breath { transition-duration: var(--motion-duration-breath); }
+
+  /* Motion tokens — easing functions */
+  .ease-standard { transition-timing-function: var(--motion-ease-standard); }
+  .ease-expressive { transition-timing-function: var(--motion-ease-expressive); }
+  .ease-spring { transition-timing-function: var(--motion-ease-spring); }
+  .ease-out { transition-timing-function: var(--motion-ease-out); }
+  .ease-in-out { transition-timing-function: var(--motion-ease-in-out); }
+
+  /* Motion presets — combine duration + easing */
+  .transition-standard { @apply duration-normal ease-standard; }
+  .transition-expressive { @apply duration-slow ease-expressive; }
+  .transition-spring { @apply duration-slower ease-spring; }
+  .transition-fast { @apply duration-fast ease-standard; }
+}
+
+@keyframes breathe {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  /* App-wide ambient breath (slow, gentle) */
+  .animate-app-breathe {
+    animation: app-breathe 7s ease-in-out infinite;
+  }
+  .animate-app-breathe-slow {
+    animation: app-breathe 11s ease-in-out infinite;
+    animation-delay: -3s;
+  }
+}
+
+/* Landing Page Containers */
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 28px);
+  }
+  @media (min-width: 1024px) {
+    .container { padding: 0 clamp(24px, 5vw, 40px); }
+  }
+
+  .container-narrow {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 28px);
+  }
+  @media (min-width: 1024px) {
+    .container-narrow { padding: 0 clamp(24px, 5vw, 40px); }
+  }
+
+  .container-extra-narrow {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 28px);
+  }
+  @media (min-width: 1024px) {
+    .container-extra-narrow { padding: 0 clamp(24px, 5vw, 40px); }
+  }
+
+  .container-ultra-narrow {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 28px);
+  }
+  @media (min-width: 1024px) {
+    .container-ultra-narrow { padding: 0 clamp(24px, 5vw, 40px); }
+  }
+}
+
+@keyframes app-breathe {
+  0%, 100% { transform: translate(-50%, -50%) scale(1);    opacity: 0.55; }
+  50%      { transform: translate(-50%, -50%) scale(1.18); opacity: 0.95; }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3), 0 0 40px hsl(var(--primary) / 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.5), 0 0 80px hsl(var(--primary) / 0.25);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes star-twinkle {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes celebration {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =====================================   TEMPLE - Sacred Styles
+   ============================================ */
+
+/* Temple Colors */
+:root {
+  --temple-gold: 38 64% 56%;
+  --temple-saffron: 36 59% 48%;
+  --temple-maroon: 0 55% 23%;
+  --temple-earth: 33 62% 33%;
+  --temple-bg-dark: 240 14% 3%;
+  --temple-card-bg: 240 12% 5%;
+  --temple-glow: 38 64% 56%;
+}
+
+/* Sacred Typography */
+.font-cinzel {
+  font-family: 'Cinzel', 'Space Grotesk', serif;
+}
+.font-playfair {
+  font-family: 'Playfair Display', 'Space Grotesk', serif;
+}
+
+.font-cormorant {
+  font-family: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-devanagari {
+  font-family: 'Noto Sans Devanagari', 'DM Sans', sans-serif;
+}
+
+/* The landing page runs entirely in gold. The global heading rule paints
+   every h1–h6 with the app's foreground token, so the page opts its
+   headings back into its own palette. */
+.landing-gold h1,
+.landing-gold h2,
+.landing-gold h3,
+.landing-gold h4,
+.landing-gold h5,
+.landing-gold h6 {
+  color: inherit;
+}
+
+/* Temple Glass Morphism */
+.temple-glass {
+  background: hsla(var(--temple-card-bg), 0.6);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid hsla(var(--temple-gold), 0.1);
+}
+
+.temple-glass-hover:hover {
+  border-color: hsla(var(--temple-gold), 0.2);
+  box-shadow: 0 0 30px hsla(var(--temple-gold), 0.1);
+}
+
+/* Sacred Gradients */
+.bg-temple-dark {
+  background: linear-gradient(180deg, hsl(0 0% 3%), hsl(20 30% 8%));
+}
+
+.bg-temple-gold {
+  background: linear-gradient(135deg, hsl(var(--temple-gold)), hsl(var(--temple-saffron)));
+}
+
+/* Temple Shadows */
+.shadow-temple-glow {
+  box-shadow: 0 0 40px hsla(var(--temple-gold), 0.15), 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-temple-card {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3), inset 0 1px 0 hsla(0, 0%, 100%, 0.06);
+}
+
+/* Temple Animations */
+@keyframes temple-breathe {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+}
+
+@keyframes incense-smoke {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateY(-50px) scale(1.2);
+    opacity: 0.15;
+  }
+
+  100% {
+    transform: translateY(-100px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes candle-flicker {
+
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+  25% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+
+  75% {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes golden-ring {
+  0% {
+    box-shadow: 0 0 0 0 hsla(var(--temple-gold), 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px hsla(var(--temple-gold), 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 hsla(var(--temple-gold), 0);
+  }
+}
+
+@keyframes lotus-bloom {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.1) rotate(180deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes message-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bell-swing {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(15deg);
+  }
+
+  30% {
+    transform: rotate(-12deg);
+  }
+
+  45% {
+    transform: rotate(8deg);
+  }
+
+  60% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(3deg);
+  }
+}
+
+/* Temple Animation Utilities */
+.animate-temple-breathe {
+  animation: temple-breathe 4s ease-in-out infinite;
+}
+
+.animate-incense-smoke {
+  animation: incense-smoke 4s ease-out infinite;
+}
+
+.animate-candle-flicker {
+  animation: candle-flicker 2s ease-in-out infinite;
+}
+
+.animate-golden-ring {
+  animation: golden-ring 1.5s ease-out infinite;
+}
+
+.animate-lotus-bloom {
+  animation: lotus-bloom 1.5s ease-out forwards;
+}
+
+.animate-message-slide-up {
+  animation: message-slide-up 0.4s ease-out forwards;
+}
+
+.animate-bell-swing {
+  animation: bell-swing 2s ease-in-out;
+}
+
+/* Temple Progress Ring */
+.temple-progress-ring {
+  transform: rotate(-90deg);
+}
+
+.temple-progress-ring-track {
+  stroke: hsla(var(--temple-gold), 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.temple-progress-ring-fill {
+  stroke: hsl(var(--temple-gold));
+  transition: stroke-dashoffset 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Temple Text Effects */
+.text-temple-glow {
+  text-shadow: 0 0 20px hsla(var(--temple-gold), 0.5), 0 0 40px hsla(var(--temple-gold), 0.2);
+}
+
+.text-temple-gradient {
+  background: linear-gradient(135deg, hsl(var(--temple-gold)), hsl(var(--temple-saffron)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Temple Button Styles */
+.btn-temple {
+  background: linear-gradient(135deg, hsla(var(--temple-gold), 0.2), hsla(var(--temple-saffron), 0.2));
+  border: 1px solid hsla(var(--temple-gold), 0.3);
+  color: hsl(var(--temple-gold));
+  transition: all 0.3s ease;
+}
+
+.btn-temple:hover {
+  background: linear-gradient(135deg, hsla(var(--temple-gold), 0.3), hsla(var(--temple-saffron), 0.3));
+  border-color: hsla(var(--temple-gold), 0.5);
+  box-shadow: 0 0 20px hsla(var(--temple-gold), 0.2);
+}
+
+.btn-temple:active {
+  transform: scale(0.98);
+}
+
+/* Scrollbar for Temple */
+.temple-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.temple-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.temple-scrollbar::-webkit-scrollbar-thumb {
+  background: hsla(var(--temple-gold), 0.2);
+  border-radius: 3px;
+}
+
+.temple-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsla(var(--temple-gold), 0.3);
+}
+
+/* Offline Indicator */
+.temple-offline {
+  position: relative;
+}
+
+.temple-offline::after {
+  content: '📴';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 12px;
+}
+
+/* Safe Area for Mobile */
+.temple-safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+/* =====================================   ConsciousOS — Brand keyframes
+   Used only inside the /hope-preview shell.
+   ============================================ */
+@keyframes hopePulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50%      { opacity: 1;    transform: scale(1.08); }
+}
+
+@keyframes hopeFall {
+  0%   { transform: translateY(-100%); opacity: 0; }
+  50%  { opacity: 1; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+
+.hope-shell {
+  font-family: 'Instrument Sans', system-ui, sans-serif;
+}
+
+.hope-shell .font-serif {
+  font-family: 'Fraunces', 'Cormorant Garamond', 'Times New Roman', serif;
+  font-feature-settings: 'liga' 1, 'kern' 1;
+}
+
+/* =====================================   Ken Burns slow zoom — for hero images
+   ============================================ */
+@keyframes ken-burns {
+  0%   { transform: scale(1) translate(0, 0); }
+  50%  { transform: scale(1.08) translate(-1%, -1%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+.animate-ken-burns {
+  animation: ken-burns 28s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes breathe-lotus {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50%      { transform: scale(1.05); opacity: 1; }
+}
+.animate-breathe-lotus {
+  animation: breathe-lotus 4s ease-in-out infinite;
+}
+
+/* Analytics tabs: visible slim horizontal scrollbar */
+.analytics-tabs-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.analytics-tabs-scroll::-webkit-scrollbar-track {
+  background: hsl(var(--muted) / 0.2);
+  border-radius: 999px;
+}
+.analytics-tabs-scroll::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.4);
+  border-radius: 999px;
+}
+.analytics-tabs-scroll::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.6);
+}
+.analytics-tabs-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary) / 0.4) hsl(var(--muted) / 0.2);
+}
+
+/* ConsciousnessTicker marquee animation */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker-scroll {
+  animation: ticker-scroll var(--ticker-duration, 120s) linear infinite;
+  will-change: transform;
+}
+
+/* analytics scrollbar */
+.analytics-tabs-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.analytics-tabs-scroll::-webkit-scrollbar-track {
+  background: hsl(var(--muted) / 0.2);
+  border-radius: 999px;
+}
+.analytics-tabs-scroll::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.4);
+  border-radius: 999px;
+}
+.analytics-tabs-scroll::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.6);
+}
+.analytics-tabs-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary) / 0.4) hsl(var(--muted) / 0.2);
+}
+
+/* ConsciousnessTicker marquee animation */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker-scroll {
+  animation: ticker-scroll var(--ticker-duration, 120s) linear infinite;
+  will-change: transform;
+}
+
+/* -- Readability floor (Claude-matched scale) --------------------------------
+   Claude's product UI never sets type below 12px: labels sit at 13px, secondary
+   UI copy at 14px, body copy at 16px. Large parts of this UI were authored with
+   hard-coded micro sizes (8-13px), which read as cramped next to that reference.
+   These unlayered overrides lift every micro label onto the same ramp while
+   keeping the original size hierarchy. Kept last on purpose: unlayered rules win
+   over Tailwind's utilities layer, so no component markup has to change. */
+[class~="text-[8px]"] { font-size: 12px; }
+[class~="text-[9px]"] { font-size: 12.5px; }
+[class~="text-[10px]"] { font-size: 13px; }
+[class~="text-[10.5px]"] { font-size: 13.5px; }
+[class~="text-[11px]"] { font-size: 14px; }
+[class~="text-[11.5px]"] { font-size: 14px; }
+[class~="text-[12px]"] { font-size: 14.5px; }
+[class~="text-[12.5px]"] { font-size: 15px; }
+[class~="text-[13px]"] { font-size: 15px; }
+[class~="text-[13.5px]"] { font-size: 15.5px; }
+[class~="text-[14px]"] { font-size: 15px; }
+
+[class~="text-[0.55rem]"] { font-size: 12px; }
+[class~="text-[0.6rem]"] { font-size: 12.5px; }
+[class~="text-[0.62rem]"] { font-size: 13px; }
+[class~="text-[0.65rem]"] { font-size: 13px; }
+[class~="text-[0.6875rem]"] { font-size: 14px; }
+[class~="text-[0.7rem]"] { font-size: 14px; }
+[class~="text-[0.72rem]"] { font-size: 14px; }
+[class~="text-[0.75rem]"] { font-size: 14px; }
+
+/* Line-height is intentionally left alone so existing leading utilities
+   keep working for chips, badges and chart labels. */
+
+
+/* Loading UX: skeletons reserve their layout immediately but only become
+   visible after a short hold. Fast route loads therefore finish before the
+   placeholder is ever seen, so navigation does not flash a skeleton. */
+.preloader-hold {
+  animation: preloader-hold 220ms ease-out 180ms both;
+}
+
+@keyframes preloader-hold {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader-hold {
+    animation: none;
+    opacity: 1;
+  }
+}

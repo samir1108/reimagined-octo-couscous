@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GUNA_RAJAS: SessionProgramV3 = {
+  id: "guna-rajas",
+  title: "Guna · Rajas",
+  subtitle: "Activity, passion, fire — harness the motion",
+  description:
+    "A 5-session arc through Rajas: the guna of activity, passion, and restlessness. Channel rajas into purposeful action, then refine into sattva.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["guna", "rajas", "activity", "passion"],
+  icon: "Flame",
+  coverGradient: "from-red-500 to-orange-700",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The fire of motion" },
+    { phase: "Practice", sessions: 1, focus: "Channel the energy" },
+    { phase: "Integration", sessions: 1, focus: "Refine rajas to sattva" },
+    { phase: "Mastery", sessions: 1, focus: "The refined fire" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The principle of dynamism",
+      required: ["ritual.opening-bow", "teach.guna.overview", "wisdom.guna.rajas"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the restlessness",
+      required: ["wisdom.guna.rajas", "witness.thought-counter", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Channel rajas into purpose",
+      required: ["wisdom.guna.rajas", "breath.kapalbhati", "asana.standing"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Refine rajas to sattva",
+      required: ["wisdom.guna.rajas", "teach.guna.cultivate", "journal.what-am-i-avoiding"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The refined fire",
+      required: ["ritual.opening-bow", "wisdom.guna.rajas", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

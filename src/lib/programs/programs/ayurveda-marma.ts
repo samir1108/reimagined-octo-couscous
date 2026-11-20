@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const AYURVEDA_MARMA: SessionProgramV3 = {
+  id: "ayurveda-marma",
+  title: "Ayurveda · Marma",
+  subtitle: "107 vital points — touch the junctions of consciousness and matter",
+  description:
+    "A 5-session arc through Marma: the 107 vital junctions where flesh, veins, arteries, tendons, bones, and joints meet — the seats of prana.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["ayurveda", "marma", "vital-points", "prana"],
+  icon: "Target",
+  coverGradient: "from-red-600 to-pink-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The vital junctions" },
+    { phase: "Practice", sessions: 1, focus: "Self-marma therapy" },
+    { phase: "Integration", sessions: 1, focus: "Marma in practice" },
+    { phase: "Mastery", sessions: 1, focus: "The prana map" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Where consciousness touches matter",
+      required: ["ritual.opening-bow", "teach.ayurveda.marma", "wisdom.ayurveda.marma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The 107 points and their regions",
+      required: ["wisdom.ayurveda.marma", "body.head-to-toe", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Self-marma: heart, third eye, palms, soles",
+      required: ["wisdom.ayurveda.marma", "meditation.body-as-anchor", "mudra.anjali", "breath.coherent-5-5"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Marma in asana and meditation",
+      required: ["wisdom.ayurveda.marma", "teach.ayurveda.marma", "asana.surya-namaskar-flow", "breath.coherent-5-5"],
+      targetMinutes: 22 },
+    { index: 5, phase: "Mastery",
+      intent: "The prana map",
+      required: ["ritual.opening-bow", "wisdom.ayurveda.marma", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

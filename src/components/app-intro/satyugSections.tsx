@@ -1,0 +1,75 @@
+import { Brain, Heart, Eye, Target, Flame, Leaf, Crown, Sparkles, Award, Zap, Moon, Sun, Compass, BookOpen, Users, Star, Activity, Waves, Layers, Infinity as InfinityIcon } from "lucide-react";
+import type { AppIntroSection } from "./AppScrollIntro";
+
+export const SATYUG_INTRO = {
+  sections: [
+    {
+      id: "temple",
+      icon: <Crown className="w-8 h-8" />,
+      title: "The Temple",
+      description: "Your personal sanctuary. The orb at the center breathes with you — responding to touch, voice, and tilt. Every session begins here, in the space between stimulus and response.",
+      highlights: ["Living orb", "Breath synchronization", "Voice reactive", "Tilt & shake"],
+      gradient: "from-amber-500 to-orange-600",
+    },
+    {
+      id: "mirror",
+      icon: <Eye className="w-8 h-8" />,
+      title: "The Mirror",
+      description: "Before each sitting, a brief check-in. The Mirror reflects your current state — energy, mood, what's alive. It's not tracking. It's witnessing. The practice begins before you sit.",
+      highlights: ["Pre-session check-in", "State reflection", "No judgment", "Adaptive routing"],
+      gradient: "from-blue-500 to-cyan-600",
+    },
+    {
+      id: "loops",
+      icon: <InfinityIcon className="w-8 h-8" />,
+      title: "The Loops",
+      description: "Your recurring patterns — overthinking, emotional reactivity, procrastination, ego stories. HOPE detects them from your sessions and designs themes that interrupt the loop at its weakest point.",
+      highlights: ["Pattern detection", "Loop interruption", "Personalized themes", "Progress tracking"],
+      gradient: "from-purple-500 to-violet-600",
+    },
+    {
+      id: "masters",
+      icon: <Users className="w-8 h-8" />,
+      title: "The Masters' Voices",
+      description: "Not one teacher — a lineage. Each day, a different master speaks through your theme: Advaita for non-duality, Bhakti for devotion, Karma for action, Jnana for inquiry. The voice matches your band and the day's teaching.",
+      highlights: ["Rotating lineages", "Band-matched vocabulary", "Daily master", "Progressive curriculum"],
+      gradient: "from-pink-500 to-rose-600",
+    },
+    {
+      id: "session",
+      icon: <Activity className="w-8 h-8" />,
+      title: "The Session",
+      description: "Not a timer. A composed journey. Teaching → Practice → Reflection → Integration. The AI guide adapts in real-time to your responses. When you're stuck, it softens. When you're clear, it deepens.",
+      highlights: ["Four-phase structure", "Real-time adaptation", "Generative guidance", "Natural completion"],
+      gradient: "from-green-500 to-teal-600",
+    },
+    {
+      id: "karma",
+      icon: <Waves className="w-8 h-8" />,
+      title: "The Karma Engine",
+      description: "Every session earns karma — not points. Karma unlocks deeper practices, new masters, advanced arcs. It's a measure of consistency, not performance. Streaks matter. Perfection doesn't.",
+      highlights: ["Consistency over intensity", "Unlockable depths", "No streaks lost", "Meaningful progression"],
+      gradient: "from-yellow-500 to-amber-600",
+    },
+    {
+      id: "arcs",
+      icon: <Layers className="w-8 h-8" />,
+      title: "The Arcs",
+      description: "Multi-day journeys that build like chapters. A 7-day shadow arc. A 21-day devotion arc. A 40-day witness arc. Each day's theme continues the thread. Harvest days integrate. Echo days return the teaching months later.",
+      highlights: ["Multi-day continuity", "Harvest integration", "Echo reminders", "Spiral curriculum"],
+      gradient: "from-indigo-500 to-purple-600",
+    },
+    {
+      id: "compass",
+      icon: <Compass className="w-8 h-8" />,
+      title: "The Compass",
+      description: "Your evolving map. Four dimensions — Thought, Emotion, Body, Awareness. The compass shows where you're growing and where you're stuck. Themes target your weakest dimension. Progress is visible, not gamified.",
+      highlights: ["Four dimensions", "Weakness targeting", "Visual progress", "No gamification"],
+      gradient: "from-teal-500 to-cyan-600",
+    },
+  ] as AppIntroSection[],
+  headerTitle: "How HOPE Works",
+  headerSubtitle: "A living practice space — not another meditation app",
+  enterLabel: "Begin your journey",
+  exploreLabel: "Look around first",
+};

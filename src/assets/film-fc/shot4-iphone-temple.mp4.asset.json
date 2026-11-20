@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "12fdc97f-62da-402c-b7e6-91ed7d7db36b",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot4-iphone-temple.mp4",
+  "original_filename": "shot4-iphone-temple.mp4",
+  "size": 15733341,
+  "created_at": "2026-05-10T16:08:21Z",
+  "bucket": "media",
+  "storage_path": "src/assets/film-fc/shot4-iphone-temple.mp4",
+  "migrated_at": "2026-10-20T11:00:56.828Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/12fdc97f-62da-402c-b7e6-91ed7d7db36b/shot4-iphone-temple.mp4"
+}

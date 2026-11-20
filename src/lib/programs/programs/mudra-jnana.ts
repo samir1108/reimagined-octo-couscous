@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MUDRA_JNANA: SessionProgramV3 = {
+  id: "mudra-jnana",
+  title: "Mudra · Jnana",
+  subtitle: "Knowledge seal — thumb and index",
+  description:
+    "A 5-session arc through Jnana Mudra: the seal of knowledge that sharpens the intellect and calms the mind.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["mudra", "jnana", "knowledge", "seal"],
+  icon: "Brain",
+  coverGradient: "from-amber-500 to-yellow-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seal & knowledge" },
+    { phase: "Practice", sessions: 1, focus: "The knowledge seal" },
+    { phase: "Integration", sessions: 1, focus: "Clarity in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The knowing mind" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seal of knowledge",
+      required: ["ritual.opening-bow", "teach.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The knower and the known",
+      required: ["wisdom.gheranda.1", "framework.witness-vs-thinker", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Jnana Mudra",
+      required: ["mudra.gyan", "breath.coherent-5-5", "concentration.counting-breaths-10"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Clarity in the day",
+      required: ["mudra.gyan", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The knowing mind",
+      required: ["ritual.opening-bow", "mudra.gyan", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

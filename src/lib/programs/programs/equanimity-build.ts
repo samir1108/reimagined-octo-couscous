@@ -1,0 +1,36 @@
+import type { SessionProgramV3 } from "../types";
+
+export const EQUANIMITY_BUILD: SessionProgramV3 = {
+  id: "equanimity-build",
+  title: "Equanimity Build",
+  subtitle: "Steady in pleasure, steady in pain",
+  description: "A 7-session arc through upekkha — the still middle that neither grasps nor pushes away.",
+  difficulty: "intermediate",
+  category: "wisdom",
+  tags: ["equanimity", "upekkha", "stability"],
+  icon: "Scale",
+  coverGradient: "from-stone-600 to-stone-900",
+  totalSessions: 7,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The middle frame" },
+    { phase: "Practice", sessions: 3, focus: "Sit with both" },
+    { phase: "Integration", sessions: 1, focus: "Steady in life" },
+    { phase: "Mastery", sessions: 1, focus: "Unshakeable" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation", intent: "The middle way",
+      required: ["ritual.opening-bow", "teach.parable.two-arrows", "framework.witness-vs-thinker"], targetMinutes: 18 },
+    { index: 2, phase: "Foundation", intent: "Find the still center",
+      required: ["body.head-to-toe", "breath.coherent-5-5", "meditation.anchor-breath"], targetMinutes: 18 },
+    { index: 3, phase: "Practice", intent: "Sit with pleasure",
+      required: ["observe.5-senses", "witness.who-is-watching", "contemplation.sit-with-question"], targetMinutes: 22 },
+    { index: 4, phase: "Practice", intent: "Sit with discomfort",
+      required: ["emotion.rain", "somatic.tense-release", "breath.box-4-4-4-4"], targetMinutes: 22 },
+    { index: 5, phase: "Practice", intent: "Neither push nor pull",
+      required: ["meditation.open-awareness", "witness.gap-between-thoughts", "mantra.so-hum"], targetMinutes: 25 },
+    { index: 6, phase: "Integration", intent: "Steady in life",
+      required: ["speech-vow.pause-before-reply", "micro-act.tidy-one-thing", "ritual.dedicate-merit"], targetMinutes: 18 },
+    { index: 7, phase: "Mastery", intent: "Unshakeable",
+      required: ["ritual.opening-bow", "meditation.open-awareness", "mantra.aham-brahmasmi", "ritual.dedicate-merit"], targetMinutes: 25 },
+  ],
+};

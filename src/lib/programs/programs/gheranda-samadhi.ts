@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GHERANDA_SAMADHI: SessionProgramV3 = {
+  id: "gheranda-samadhi",
+  title: "Gheranda · Samadhi",
+  subtitle: "Absorption — the final limb, the goal",
+  description:
+    "A 5-session arc through Gheranda's Samadhi: the final limb where the mind dissolves into the object, the seer rests in its own nature, and the yogi becomes the meditation itself.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["gheranda", "samadhi", "absorption", "final"],
+  icon: "Infinity",
+  coverGradient: "from-gold-500 to-amber-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The final goal" },
+    { phase: "Practice", sessions: 1, focus: "Dissolve into the object" },
+    { phase: "Integration", sessions: 1, focus: "Absorption in the day" },
+    { phase: "Mastery", sessions: 1, focus: "Become the meditation" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The culmination of the seven limbs",
+      required: ["ritual.opening-bow", "teach.gheranda.overview", "wisdom.gheranda.samadhi"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare for absorption",
+      required: ["wisdom.gheranda.samadhi", "meditation.choiceless-awareness", "witness.name-the-watcher"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Dissolve into the object",
+      required: ["wisdom.gheranda.samadhi", "meditation.open-awareness", "witness.thought-as-object"],
+      targetMinutes: 40 },
+    { index: 4, phase: "Integration",
+      intent: "Absorption in the day",
+      required: ["wisdom.gheranda.samadhi", "detox.single-tab", "contemplation.sit-with-question"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Mastery",
+      intent: "Become the meditation",
+      required: ["ritual.opening-bow", "wisdom.gheranda.samadhi", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 40 },
+  ],
+};

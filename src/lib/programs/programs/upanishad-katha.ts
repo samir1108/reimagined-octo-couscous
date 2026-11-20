@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const UPANISHAD_KATHA: SessionProgramV3 = {
+  id: "upanishad-katha",
+  title: "Katha Upanishad",
+  subtitle: "The deathless self — the subtle path",
+  description:
+    "A 5-session arc through the Katha Upanishad: Nachiketa confronts death, Yama teaches the razor's edge path to the self.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["katha", "upanishad", "deathless", "chariot"],
+  icon: "BookOpen",
+  coverGradient: "from-gray-700 to-slate-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The chariot" },
+    { phase: "Practice", sessions: 1, focus: "The subtle path" },
+    { phase: "Integration", sessions: 1, focus: "The deathless self" },
+    { phase: "Mastery", sessions: 1, focus: "The self beyond death" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The body as chariot",
+      required: ["ritual.opening-bow", "teach.katha", "wisdom.katha.1.2"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The self is beyond the senses",
+      required: ["wisdom.katha.1.3", "meditation.anchor-breath", "witness.thought-counter"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The razor's edge",
+      required: ["wisdom.katha.2.1", "concentration.counting-breaths-10", "observe.one-object"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "The deathless self",
+      required: ["wisdom.katha.2.23", "inquiry.who-am-i", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The self beyond death",
+      required: ["ritual.opening-bow", "wisdom.katha.2.23", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

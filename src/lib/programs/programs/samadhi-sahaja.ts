@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SAMADHI_SAHAJA: SessionProgramV3 = {
+  id: "samadhi-sahaja",
+  title: "Sahaja Samadhi",
+  subtitle: "Natural samadhi — the absorption that never ends",
+  description:
+    "A 5-session arc through Sahaja Samadhi: the spontaneous, continuous absorption that continues in walking, talking, eating — the integration of awakening into daily life.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["samadhi", "sahaja", "natural", "integration"],
+  icon: "Infinity",
+  coverGradient: "from-emerald-600 to-teal-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The natural state" },
+    { phase: "Practice", sessions: 1, focus: "Absorption in activity" },
+    { phase: "Integration", sessions: 1, focus: "Life as samadhi" },
+    { phase: "Mastery", sessions: 1, focus: "The effortless natural state" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The natural state",
+      required: ["ritual.opening-bow", "teach.samadhi.stages", "wisdom.samadhi.sahaja"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Samadhi with eyes open",
+      required: ["wisdom.samadhi.sahaja", "meditation.open-awareness", "observe.5-senses"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Absorption in activity",
+      required: ["wisdom.samadhi.sahaja", "micro-act.tidy-one-thing", "voice-journal.speak-it-out"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Life as samadhi",
+      required: ["wisdom.samadhi.sahaja", "detox.single-tab", "journal.day-in-one-sentence"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Mastery",
+      intent: "The effortless natural state",
+      required: ["ritual.opening-bow", "wisdom.samadhi.sahaja", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

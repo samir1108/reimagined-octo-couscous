@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const UPANISHAD_MUNDAKA: SessionProgramV3 = {
+  id: "upanishad-mundaka",
+  title: "Mundaka Upanishad",
+  subtitle: "The arrow of meditation — aim at the self",
+  description:
+    "A 5-session arc through the Mundaka Upanishad: two knowledges, the bow of the Upanishad, the arrow of meditation, the target of the self.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["mundaka", "upanishad", "arrow", "meditation"],
+  icon: "BookOpen",
+  coverGradient: "from-orange-700 to-red-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The two knowledges" },
+    { phase: "Practice", sessions: 1, focus: "The bow and arrow" },
+    { phase: "Integration", sessions: 1, focus: "The two birds" },
+    { phase: "Mastery", sessions: 1, focus: "The target hit" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The higher knowledge",
+      required: ["ritual.opening-bow", "teach.mundaka", "wisdom.mundaka.1.1"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the bow",
+      required: ["wisdom.mundaka.2.2", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The arrow released",
+      required: ["wisdom.mundaka.2.2", "concentration.candle-trataka", "witness.name-the-watcher"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "The two birds",
+      required: ["wisdom.mundaka.3.1", "witness.thought-as-object", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The target hit",
+      required: ["ritual.opening-bow", "wisdom.mundaka.3.1", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

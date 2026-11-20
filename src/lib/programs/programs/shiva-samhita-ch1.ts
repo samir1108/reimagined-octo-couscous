@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHIVA_SAMHITA_CH1: SessionProgramV3 = {
+  id: "shiva-samhita-ch1",
+  title: "Shiva Samhita · Chapter 1",
+  subtitle: "The dialogue — Hatha Yoga as the stairway to Raja Yoga",
+  description:
+    "A 5-session arc through Chapter 1: Shiva reveals Hatha Yoga to Parvati as the means to ascend to Raja Yoga and recognize the self as Shiva.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["shiva-samhita", "hatha", "shiva", "parvati"],
+  icon: "BookOpen",
+  coverGradient: "from-gray-700 to-gray-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The revelation" },
+    { phase: "Practice", sessions: 1, focus: "The body as temple" },
+    { phase: "Integration", sessions: 1, focus: "Hatha as worship" },
+    { phase: "Mastery", sessions: 1, focus: "The stairway to Shiva" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Shiva teaches Parvati",
+      required: ["ritual.opening-bow", "teach.shiva.overview", "wisdom.shiva.1"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Hatha Yoga is the stairway",
+      required: ["wisdom.shiva.1", "teach.shiva.overview", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The body as Shiva's temple",
+      required: ["wisdom.shiva.1", "asana.surya-namaskar-flow", "body.head-to-toe"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Every practice as worship",
+      required: ["wisdom.shiva.1", "micro-act.thank-someone", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "Ascend to Raja Yoga",
+      required: ["ritual.opening-bow", "wisdom.shiva.1", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

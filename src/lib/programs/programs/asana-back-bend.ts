@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const ASANA_BACK_BEND: SessionProgramV3 = {
+  id: "asana-back-bend",
+  title: "Asana · Back Bend",
+  subtitle: "Open the heart — bend into vulnerability",
+  description:
+    "A 5-session arc through backbends: bhujangasana, dhanurasana, ustrasana — opening the front body and the heart.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["asana", "back-bend", "heart", "vulnerability"],
+  icon: "Heart",
+  coverGradient: "from-rose-600 to-pink-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The heart & the bend" },
+    { phase: "Practice", sessions: 1, focus: "Deep backbends" },
+    { phase: "Integration", sessions: 1, focus: "Vulnerability in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The open heart" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The heart that bends open",
+      required: ["ritual.opening-bow", "teach.asana.back-bend", "asana.tadasana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the front body",
+      required: ["wisdom.hatha.asana-chapter", "body.head-to-toe", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Cobra, bow, camel",
+      required: ["asana.bhujangasana", "asana.dhanurasana", "asana.ustrasana"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Vulnerability in the day",
+      required: ["asana.bhujangasana", "micro-act.stretch-once", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The open heart",
+      required: ["ritual.opening-bow", "asana.ustrasana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

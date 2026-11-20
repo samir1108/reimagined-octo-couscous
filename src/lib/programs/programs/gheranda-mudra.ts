@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GHERANDA_MUDRA: SessionProgramV3 = {
+  id: "gheranda-mudra",
+  title: "Gheranda · Mudra",
+  subtitle: "The 25 seals — seal the energy, direct the current",
+  description:
+    "A 5-session arc through Gheranda's Mudra: the 25 seals (mahamudra, khecari, viparita, etc.) that seal the energy channels and direct prana upward.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["gheranda", "mudra", "seal", "energy"],
+  icon: "Hand",
+  coverGradient: "from-violet-600 to-purple-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seals" },
+    { phase: "Practice", sessions: 1, focus: "The great mudras" },
+    { phase: "Integration", sessions: 1, focus: "Mudra in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The sealed current" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Seal the energy",
+      required: ["ritual.opening-bow", "teach.gheranda.mudra", "wisdom.gheranda.mudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The 25 seals",
+      required: ["wisdom.gheranda.mudra", "mudra.mahamudra", "breath.coherent-5-5"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Practice the great mudras",
+      required: ["wisdom.gheranda.mudra", "mudra.maha", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "Mudra in the day",
+      required: ["wisdom.gheranda.mudra", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The sealed current",
+      required: ["ritual.opening-bow", "wisdom.gheranda.mudra", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

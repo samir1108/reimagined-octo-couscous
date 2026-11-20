@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GRANTHI_RUDRA: SessionProgramV3 = {
+  id: "granthi-rudra",
+  title: "Granthi · Rudra",
+  subtitle: "The knot of Rudra — untie the final 'I am the knower'",
+  description:
+    "A 5-session arc through Rudra Granthi: the knot at ajna/sahasrara that binds consciousness to the subtle sense of 'I am the knower', spiritual pride, and the final veil of individuality.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["granthi", "rudra", "ajna", "sahasrara", "spiritual-ego", "final-veil"],
+  icon: "Eye",
+  coverGradient: "from-indigo-700 to-purple-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The final knot" },
+    { phase: "Practice", sessions: 1, focus: "Feel the third eye and crown" },
+    { phase: "Integration", sessions: 1, focus: "Surrender the knower" },
+    { phase: "Mastery", sessions: 1, focus: "The knotless state" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The knot of the knower",
+      required: ["ritual.opening-bow", "teach.granthi.overview", "wisdom.granthi.rudra"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the upper chakras",
+      required: ["wisdom.granthi.rudra", "meditation.sky-mind", "concentration.candle-trataka"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Surrender the 'I am the knower'",
+      required: ["wisdom.granthi.rudra", "inquiry.who-is-watching", "witness.name-the-watcher"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "Dissolve the spiritual ego",
+      required: ["wisdom.granthi.rudra", "inquiry.what-is-aware", "contemplation.sit-with-question"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Mastery",
+      intent: "The knotless state",
+      required: ["ritual.opening-bow", "wisdom.granthi.rudra", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 35 },
+  ],
+};

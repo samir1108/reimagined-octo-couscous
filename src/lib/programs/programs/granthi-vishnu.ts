@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GRANTHI_VISHNU: SessionProgramV3 = {
+  id: "granthi-vishnu",
+  title: "Granthi · Vishnu",
+  subtitle: "The knot of Vishnu — untie emotional patterns and ego-identity",
+  description:
+    "A 5-session arc through Vishnu Granthi: the knot at anahata/vishuddha that binds consciousness to emotional patterns, ego, and mental stories.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["granthi", "vishnu", "anahata", "vishuddha", "ego", "emotions"],
+  icon: "Heart",
+  coverGradient: "from-green-600 to-teal-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The knot of identity" },
+    { phase: "Practice", sessions: 1, focus: "Feel the heart and throat" },
+    { phase: "Integration", sessions: 1, focus: "Dissolve the stories" },
+    { phase: "Mastery", sessions: 1, focus: "The open heart, the clear voice" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The knot that binds to identity",
+      required: ["ritual.opening-bow", "teach.granthi.overview", "wisdom.granthi.vishnu"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the heart and throat knots",
+      required: ["wisdom.granthi.vishnu", "meditation.body-as-anchor", "breath.nadi-shodhana"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Dissolve the emotional patterns",
+      required: ["wisdom.granthi.vishnu", "emotion.rain", "witness.thought-as-object"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Dissolve the mental stories",
+      required: ["wisdom.granthi.vishnu", "contemplation.sit-with-question", "journal.what-am-i-avoiding"],
+      targetMinutes: 22 },
+    { index: 5, phase: "Mastery",
+      intent: "The open heart, the clear voice",
+      required: ["ritual.opening-bow", "wisdom.granthi.vishnu", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

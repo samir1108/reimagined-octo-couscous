@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_KEVALA_KUMBHAKA: SessionProgramV3 = {
+  id: "pranayama-kevala-kumbhaka",
+  title: "Pranayama · Kevala Kumbhaka",
+  subtitle: "Spontaneous retention — the still point arises",
+  description:
+    "A 5-session arc through Kevala Kumbhaka: the spontaneous breath retention that arises from deep practice. Advanced.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["pranayama", "kevala", "kumbhaka", "retention", "advanced"],
+  icon: "CircleDot",
+  coverGradient: "from-slate-500 to-gray-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The still point" },
+    { phase: "Practice", sessions: 1, focus: "The spontaneous hold" },
+    { phase: "Integration", sessions: 1, focus: "Stillness in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The still prana" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The still point between breaths",
+      required: ["ritual.opening-bow", "teach.pranayama.kumbhaka", "breath.coherent-5-5"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare for retention",
+      required: ["wisdom.hatha.pranayama-chapter", "breath.box-4-4-4-4", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Kevala hold",
+      required: ["pranayama.kevala-kumbhaka", "breath.coherent-5-5", "witness.gap-between-thoughts"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Stillness in the day",
+      required: ["pranayama.kevala-kumbhaka", "micro-act.stretch-once", "contemplation.sit-with-question"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The still prana",
+      required: ["ritual.opening-bow", "pranayama.kevala-kumbhaka", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

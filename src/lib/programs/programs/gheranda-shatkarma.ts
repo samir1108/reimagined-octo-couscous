@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GHERANDA_SHATKARMA: SessionProgramV3 = {
+  id: "gheranda-shatkarma",
+  title: "Gheranda · Shatkarma",
+  subtitle: "The six cleansings — purify the vessel",
+  description:
+    "A 5-session arc through Shatkarma: the six purifications (neti, dhauti, nauli, basti, kapalbhati, trataka) that cleanse the body for the rising energy.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["gheranda", "shatkarma", "cleansing", "purification"],
+  icon: "Droplets",
+  coverGradient: "from-cyan-600 to-blue-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The six purifications" },
+    { phase: "Practice", sessions: 1, focus: "Practice the cleansings" },
+    { phase: "Integration", sessions: 1, focus: "The purified vessel" },
+    { phase: "Mastery", sessions: 1, focus: "The clean vessel" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Cleanse the vessel first",
+      required: ["ritual.opening-bow", "teach.gheranda.shata", "wisdom.gheranda.shatkarma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The six channels",
+      required: ["wisdom.gheranda.shatkarma", "shatkarma.neti", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Practice the shatkarmas",
+      required: ["wisdom.gheranda.shatkarma", "shatkarma.kapalbhati", "shatkarma.trataka"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "The purified vessel",
+      required: ["wisdom.gheranda.shatkarma", "detox.single-tab", "micro-act.tidy-one-thing"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The clean vessel",
+      required: ["ritual.opening-bow", "wisdom.gheranda.shatkarma", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

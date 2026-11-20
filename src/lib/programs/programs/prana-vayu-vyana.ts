@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANA_VAYU_VYANA: SessionProgramV3 = {
+  id: "prana-vayu-vyana",
+  title: "Prana Vayu · Vyana",
+  subtitle: "The all-pervading circulatory force — everywhere at once",
+  description:
+    "A 5-session arc through Vyana Vayu: the outward-moving energy that circulates through the whole body, connecting all.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["prana", "vyana", "circulation", "pervasion"],
+  icon: "Globe",
+  coverGradient: "from-cyan-500 to-teal-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The pervading wind" },
+    { phase: "Practice", sessions: 1, focus: "Feel the whole body" },
+    { phase: "Integration", sessions: 1, focus: "Circulate in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The unified field" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The wind that reaches everywhere",
+      required: ["ritual.opening-bow", "teach.prana.overview", "wisdom.prana.vyana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the whole body at once",
+      required: ["wisdom.prana.vyana", "body.full-scan-5min", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Circulate through the whole",
+      required: ["wisdom.prana.vyana", "meditation.body-as-anchor", "movement.sun-salute-1"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Circulate in the day",
+      required: ["wisdom.prana.vyana", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The unified field",
+      required: ["ritual.opening-bow", "wisdom.prana.vyana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

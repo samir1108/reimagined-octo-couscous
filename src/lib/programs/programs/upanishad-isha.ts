@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const UPANISHAD_ISHA: SessionProgramV3 = {
+  id: "upanishad-isha",
+  title: "Isha Upanishad",
+  subtitle: "All this is the self — renounce and enjoy",
+  description:
+    "A 5-session arc through the Isha Upanishad: the self in all, renunciation without renouncing the world.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["isha", "upanishad", "self", "renunciation"],
+  icon: "BookOpen",
+  coverGradient: "from-amber-700 to-yellow-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The self in all" },
+    { phase: "Practice", sessions: 1, focus: "Renounce attachment" },
+    { phase: "Integration", sessions: 1, focus: "Enjoy without coveting" },
+    { phase: "Mastery", sessions: 1, focus: "The self as all" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "All this is the self",
+      required: ["ritual.opening-bow", "teach.isha", "wisdom.isha.1"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The self beyond darkness",
+      required: ["wisdom.isha.3", "meditation.anchor-breath", "witness.thought-counter"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Renounce and enjoy",
+      required: ["wisdom.isha.1", "detox.single-tab", "micro-act.thank-someone"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Enjoy without coveting",
+      required: ["wisdom.isha.15", "micro-act.stretch-once", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The self as all",
+      required: ["ritual.opening-bow", "wisdom.isha.15", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

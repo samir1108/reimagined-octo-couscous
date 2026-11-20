@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const BANDHA_MAHA: SessionProgramV3 = {
+  id: "bandha-maha",
+  title: "Bandha · Maha",
+  subtitle: "The great lock — all three together",
+  description:
+    "A 5-session arc through Maha Bandha: the great lock that unites root, abdomen, and throat to force the prana up.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["bandha", "maha", "great-lock", "advanced"],
+  icon: "Zap",
+  coverGradient: "from-amber-600 to-purple-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The three locks" },
+    { phase: "Practice", sessions: 1, focus: "The great lock" },
+    { phase: "Integration", sessions: 1, focus: "The risen prana" },
+    { phase: "Mastery", sessions: 1, focus: "The channel open" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The three locks united",
+      required: ["ritual.opening-bow", "teach.bandha", "wisdom.gheranda.bandha"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Master each lock",
+      required: ["wisdom.gheranda.1", "bandha.mula", "bandha.jalandhara"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "The Maha Bandha",
+      required: ["bandha.maha", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "The risen prana",
+      required: ["bandha.maha", "micro-act.stretch-once", "voice-journal.speak-it-out"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The channel open",
+      required: ["ritual.opening-bow", "bandha.maha", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

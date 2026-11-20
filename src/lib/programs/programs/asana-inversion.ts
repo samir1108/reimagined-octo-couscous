@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const ASANA_INVERSION: SessionProgramV3 = {
+  id: "asana-inversion",
+  title: "Asana · Inversion",
+  subtitle: "Flip the world — gravity as teacher",
+  description:
+    "A 5-session arc through inversions: sirsasana, sarvangasana, halasana — reversing the pull and seeing from a new angle.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["asana", "inversion", "headstand", "advanced"],
+  icon: "FlipVertical",
+  coverGradient: "from-indigo-600 to-purple-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Upside down" },
+    { phase: "Practice", sessions: 1, focus: "The king and mother" },
+    { phase: "Integration", sessions: 1, focus: "Flip the perspective" },
+    { phase: "Mastery", sessions: 1, focus: "The inverted seer" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The world upside down",
+      required: ["ritual.opening-bow", "teach.asana.inversion", "asana.tadasana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Build the strength",
+      required: ["wisdom.hatha.asana-chapter", "asana.bakasana", "breath.coherent-5-5"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Headstand, shoulderstand, plough",
+      required: ["asana.sirsasana", "asana.sarvangasana", "asana.halasana"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Flip the perspective",
+      required: ["asana.sarvangasana", "micro-act.stretch-once", "contemplation.sit-with-question"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The inverted seer",
+      required: ["ritual.opening-bow", "asana.sirsasana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

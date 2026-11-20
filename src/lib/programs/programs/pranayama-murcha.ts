@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_MURCHA: SessionProgramV3 = {
+  id: "pranayama-murcha",
+  title: "Pranayama · Murcha",
+  subtitle: "Swooning breath — faint with retention, advanced",
+  description:
+    "A 5-session arc through Murcha: the swooning breath that induces a faint-like state. Advanced — only under guidance.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["pranayama", "murcha", "swooning", "advanced"],
+  icon: "Cloud",
+  coverGradient: "from-purple-500 to-indigo-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The faint-like state" },
+    { phase: "Practice", sessions: 1, focus: "The swoon" },
+    { phase: "Integration", sessions: 1, focus: "Surrender" },
+    { phase: "Mastery", sessions: 1, focus: "The void" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The breath that faints",
+      required: ["ritual.opening-bow", "teach.pranayama.kumbhaka", "breath.coherent-5-5"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Safety first",
+      required: ["wisdom.hatha.pranayama-chapter", "contemplation.sit-with-question", "journal.what-am-i-avoiding"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Murcha retention",
+      required: ["pranayama.murcha", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Surrender",
+      required: ["pranayama.murcha", "voice-journal.speak-it-out", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The void",
+      required: ["ritual.opening-bow", "pranayama.murcha", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

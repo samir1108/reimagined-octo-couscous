@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const AYURVEDA_PITTA: SessionProgramV3 = {
+  id: "ayurveda-pitta",
+  title: "Ayurveda · Pitta",
+  subtitle: "Fire + water — cool the fire, sharpen the mind",
+  description:
+    "A 5-session arc through Pitta dosha: understand the fire principle, recognize inflammation, and cultivate cooling clarity.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["ayurveda", "pitta", "dosha", "cooling"],
+  icon: "Flame",
+  coverGradient: "from-red-500 to-orange-700",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The fire principle" },
+    { phase: "Practice", sessions: 1, focus: "Cool the fire" },
+    { phase: "Integration", sessions: 1, focus: "Pitta in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The clear fire" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The fire that transforms",
+      required: ["ritual.opening-bow", "teach.ayurveda.constitution", "wisdom.ayurveda.pitta"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Recognize pitta in body and mind",
+      required: ["wisdom.ayurveda.pitta", "body.head-to-toe", "emotion.rain"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Cool the fire",
+      required: ["wisdom.ayurveda.pitta", "pranayama.sitali", "pranayama.chandra-bhedana", "breath.coherent-5-5"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Pitta in the day",
+      required: ["wisdom.ayurveda.pitta", "teach.ayurveda.dinacharya", "micro-act.drink-water"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The clear fire",
+      required: ["ritual.opening-bow", "wisdom.ayurveda.pitta", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

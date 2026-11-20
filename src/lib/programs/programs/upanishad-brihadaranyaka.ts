@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const UPANISHAD_BRIHADARANYAKA: SessionProgramV3 = {
+  id: "upanishad-brihadaranyaka",
+  title: "Brihadaranyaka Upanishad",
+  subtitle: "The great forest — the self is all",
+  description:
+    "A 5-session arc through the Brihadaranyaka Upanishad: the self is the eye of the eye, the ear of the ear, the immortal.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["brihadaranyaka", "upanishad", "great-forest", "immortal"],
+  icon: "BookOpen",
+  coverGradient: "from-green-800 to-emerald-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The great forest" },
+    { phase: "Practice", sessions: 1, focus: "The eye of the eye" },
+    { phase: "Integration", sessions: 1, focus: "The immortal self" },
+    { phase: "Mastery", sessions: 1, focus: "The self is all" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The great forest",
+      required: ["ritual.opening-bow", "teach.brihadaranyaka", "wisdom.brihad.1.4"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The self is the eye of the eye",
+      required: ["wisdom.brihad.3.4", "meditation.anchor-breath", "witness.thought-counter"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The self is all",
+      required: ["wisdom.brihad.1.4", "inquiry.who-am-i", "observe.faces-of-people"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "The immortal self",
+      required: ["wisdom.brihad.4.4", "witness.who-is-watching", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The self is all",
+      required: ["ritual.opening-bow", "wisdom.brihad.1.4", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "542bce10-99d0-4009-b949-a5c3f5c4fb61",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/loving-kindness/4.mp3",
+  "r2_key": "a/v1/b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5/542bce10-99d0-4009-b949-a5c3f5c4fb61/loving-kindness-4.mp3",
+  "original_filename": "loving-kindness-4.mp3",
+  "size": 93312,
+  "content_type": "audio/mpeg",
+  "created_at": "2026-07-12T01:40:52Z",
+  "bucket": "media",
+  "storage_path": "src/assets/narration/loving-kindness/4.mp3",
+  "migrated_at": "2026-10-20T11:28:01.302Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/542bce10-99d0-4009-b949-a5c3f5c4fb61/loving-kindness-4.mp3"
+}

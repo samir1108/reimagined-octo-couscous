@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const MANTRA_JAPA_DEEP: SessionProgramV3 = {
+  id: "mantra-japa-deep",
+  title: "Mantra Japa Deep",
+  subtitle: "Repetition → automatic → absorption — the arc of the mantra",
+  description:
+    "A 5-session arc through the four stages of mantra japa: spoken → whispered → mental → effortless (ajapa).",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["mantra", "japa", "ajapa", "repetition"],
+  icon: "Repeat",
+  coverGradient: "from-amber-600 to-orange-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The spoken mantra" },
+    { phase: "Practice", sessions: 1, focus: "Whispered and mental" },
+    { phase: "Integration", sessions: 1, focus: "The effortless mantra" },
+    { phase: "Mastery", sessions: 1, focus: "Ajapa — the self-repeating mantra" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The spoken mantra",
+      required: ["ritual.opening-bow", "teach.mantra.japa", "mantra.so-hum"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The four stages",
+      required: ["wisdom.hatha.nada", "mantra.om", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Whispered → mental → ajapa",
+      required: ["mantra.japa-deep", "breath.coherent-5-5", "witness.thought-counter"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "The mantra that repeats itself",
+      required: ["mantra.japa-deep", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "Ajapa — effortless repetition",
+      required: ["ritual.opening-bow", "mantra.japa-deep", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

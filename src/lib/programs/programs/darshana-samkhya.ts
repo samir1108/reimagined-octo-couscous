@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const DARSHANA_SAMKHYA: SessionProgramV3 = {
+  id: "darshana-samkhya",
+  title: "Samkhya Darshana",
+  subtitle: "Enumeration — the 25 principles of purusha and prakriti",
+  description:
+    "A 5-session arc through Samkhya: the dualistic metaphysics of purusha (consciousness) and prakriti (nature), the 25 tattvas, and discriminative liberation.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["darshana", "samkhya", "purusha", "prakriti", "tattvas"],
+  icon: "List",
+  coverGradient: "from-indigo-700 to-blue-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Purusha and prakriti" },
+    { phase: "Practice", sessions: 1, focus: "The 25 tattvas" },
+    { phase: "Integration", sessions: 1, focus: "Discriminative knowledge" },
+    { phase: "Mastery", sessions: 1, focus: "Kaivalya — isolation" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The two realities",
+      required: ["ritual.opening-bow", "teach.darshana.samkhya", "wisdom.darshana.samkhya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The evolutes of prakriti",
+      required: ["wisdom.darshana.samkhya", "framework.three-brains-diagram", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Count the 25 principles",
+      required: ["wisdom.darshana.samkhya", "contemplation.sit-with-question", "witness.thought-as-object"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Discriminate purusha from prakriti",
+      required: ["wisdom.darshana.samkhya", "inquiry.who-am-i", "witness.who-is-watching"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Mastery",
+      intent: "Kaivalya — the isolated seer",
+      required: ["ritual.opening-bow", "wisdom.darshana.samkhya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

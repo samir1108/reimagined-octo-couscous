@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "702313d6-b494-461a-96af-6be8771cf0a4",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/film-fc/shot5-four-souls-v2.mp4",
+  "original_filename": "shot5-four-souls-v2.mp4",
+  "size": 15769832,
+  "created_at": "2026-05-10T16:13:44Z",
+  "bucket": "media",
+  "storage_path": "src/assets/film-fc/shot5-four-souls-v2.mp4",
+  "migrated_at": "2026-10-20T11:01:08.521Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/702313d6-b494-461a-96af-6be8771cf0a4/shot5-four-souls-v2.mp4"
+}

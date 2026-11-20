@@ -1,0 +1,1 @@
+const e="48115e40-480d-4f30-a351-277d4b2c00de",s="b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",t="/__l5e/assets-v1/48115e40-480d-4f30-a351-277d4b2c00de/hero-temple-sunrise.mp4",i="hero-temple-sunrise.mp4";const o="2026-03-28T12:30:43Z",a={version:1,asset_id:e,project_id:s,url:t,original_filename:i,size:27703255,created_at:o};export{a as t};

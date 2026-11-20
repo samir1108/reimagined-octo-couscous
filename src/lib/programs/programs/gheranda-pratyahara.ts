@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GHERANDA_PRATYAHARA: SessionProgramV3 = {
+  id: "gheranda-pratyahara",
+  title: "Gheranda · Pratyahara",
+  subtitle: "Withdrawal — the senses turn inward",
+  description:
+    "A 5-session arc through Gheranda's Pratyahara: the withdrawal of the senses from their objects, turning them inward toward the self.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["gheranda", "pratyahara", "withdrawal", "senses"],
+  icon: "EyeOff",
+  coverGradient: "from-blue-700 to-indigo-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The withdrawal" },
+    { phase: "Practice", sessions: 1, focus: "Turn the senses inward" },
+    { phase: "Integration", sessions: 1, focus: "Withdrawal in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The inward senses" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The senses turn inward",
+      required: ["ritual.opening-bow", "teach.gheranda.overview", "wisdom.gheranda.pratyahara"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the outward pull",
+      required: ["wisdom.gheranda.pratyahara", "observe.5-senses", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Withdraw the senses",
+      required: ["wisdom.gheranda.pratyahara", "observe.three-sounds", "meditation.body-as-anchor"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Withdrawal in the day",
+      required: ["wisdom.gheranda.pratyahara", "detox.single-tab", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The inward senses",
+      required: ["ritual.opening-bow", "wisdom.gheranda.pratyahara", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

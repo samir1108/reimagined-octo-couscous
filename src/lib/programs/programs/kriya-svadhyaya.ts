@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KRIYA_SVADHYAYA: SessionProgramV3 = {
+  id: "kriya-svadhyaya",
+  title: "Kriya Yoga · Svadhyaya",
+  subtitle: "Self-study — the mirror that reveals the self",
+  description:
+    "A 5-session arc through Svadhyaya: the self-study through sacred texts, mantra, and introspection that reveals the knower.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["kriya-yoga", "svadhyaya", "self-study", "mantra"],
+  icon: "BookOpen",
+  coverGradient: "from-blue-600 to-indigo-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The mirror of study" },
+    { phase: "Practice", sessions: 1, focus: "Text, mantra, introspection" },
+    { phase: "Integration", sessions: 1, focus: "Study in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The self revealed" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The three faces of self-study",
+      required: ["ritual.opening-bow", "teach.kriya.svadhyaya", "wisdom.kriya.svadhyaya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Text, mantra, introspection",
+      required: ["wisdom.kriya.svadhyaya", "mantra.so-hum", "wisdom.upa.6.5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Read, repeat, reflect",
+      required: ["wisdom.kriya.svadhyaya", "mantra.japa-deep", "inquiry.who-am-i"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Self-study in the day",
+      required: ["wisdom.kriya.svadhyaya", "journal.day-in-one-sentence", "voice-journal.unsent-letter"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The self revealed",
+      required: ["ritual.opening-bow", "wisdom.kriya.svadhyaya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

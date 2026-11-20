@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "acbbb15d-1d48-4ed5-9834-70a416801d0f",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/practices-cta.mp4",
+  "original_filename": "practices-cta.mp4",
+  "size": 2080842,
+  "created_at": "2026-07-17T09:21:28Z",
+  "storage_path": "src/assets/showroom/practices-cta.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:39:19.170Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/acbbb15d-1d48-4ed5-9834-70a416801d0f/practices-cta.mp4"
+}

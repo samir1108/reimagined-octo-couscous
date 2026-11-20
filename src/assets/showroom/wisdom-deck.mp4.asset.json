@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "2c2e64f4-9f82-42b7-877b-d8a2002d1669",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/showroom/wisdom-deck.mp4",
+  "original_filename": "wisdom-deck.mp4",
+  "size": 3345748,
+  "created_at": "2026-07-17T09:21:40Z",
+  "storage_path": "src/assets/showroom/wisdom-deck.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:40:20.905Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/2c2e64f4-9f82-42b7-877b-d8a2002d1669/wisdom-deck.mp4"
+}

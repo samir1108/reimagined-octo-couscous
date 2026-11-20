@@ -1,0 +1,1 @@
+ALTER TABLE public.program_day_progress ADD CONSTRAINT program_day_progress_enrollment_day_unique UNIQUE (enrollment_id, day_number);

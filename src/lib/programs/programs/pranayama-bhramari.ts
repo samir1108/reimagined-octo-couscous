@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_BHRAMARI: SessionProgramV3 = {
+  id: "pranayama-bhramari",
+  title: "Pranayama · Bhramari",
+  subtitle: "Humming bee breath — the mind dissolves",
+  description:
+    "A 5-session arc through Bhramari: the humming bee breath that vibrates the skull and dissolves the thinking mind.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["pranayama", "bhramari", "humming", "calm"],
+  icon: "Bug",
+  coverGradient: "from-yellow-500 to-amber-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The vibration" },
+    { phase: "Practice", sessions: 1, focus: "The hum" },
+    { phase: "Integration", sessions: 1, focus: "Quiet in the storm" },
+    { phase: "Mastery", sessions: 1, focus: "The dissolved mind" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The vibration that dissolves thought",
+      required: ["ritual.opening-bow", "teach.pranayama.what-is", "breath.box-4-4-4-4"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the voice",
+      required: ["shatkarma.neti", "mantra.so-hum", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Bhramari rounds",
+      required: ["pranayama.bhramari", "breath.coherent-5-5", "witness.thought-counter"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Quiet in the storm",
+      required: ["pranayama.bhramari", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The dissolved mind",
+      required: ["ritual.opening-bow", "pranayama.bhramari", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

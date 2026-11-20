@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const BHUTA_APA: SessionProgramV3 = {
+  id: "bhuta-apa",
+  title: "Bhuta · Apa",
+  subtitle: "Water element — fluidity, flow, emotional intelligence",
+  description:
+    "A 5-session arc through Apa (Water): the liquid principle of flow, cohesion, taste, and emotional fluidity.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["bhuta", "apa", "water", "flow"],
+  icon: "Waves",
+  coverGradient: "from-blue-500 to-cyan-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The fluid principle" },
+    { phase: "Practice", sessions: 1, focus: "Flow with the water" },
+    { phase: "Integration", sessions: 1, focus: "Fluid in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The fluid witness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The principle of fluidity",
+      required: ["ritual.opening-bow", "teach.bhuta.overview", "wisdom.bhuta.apa"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the fluids of the body",
+      required: ["wisdom.bhuta.apa", "body.micro-scan-60s", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Flow like water",
+      required: ["wisdom.bhuta.apa", "meditation.body-as-anchor", "movement.spinal-twist"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Fluid in the day",
+      required: ["wisdom.bhuta.apa", "micro-act.drink-water", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The fluid witness",
+      required: ["ritual.opening-bow", "wisdom.bhuta.apa", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

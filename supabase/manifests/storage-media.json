@@ -1,0 +1,2194 @@
+{
+  "bucket": "media",
+  "public_required": true,
+  "object_count": 48,
+  "total_bytes": 346692780,
+  "objects": [
+    {
+      "path": "src/assets/games/videos/body-scanner.mp4",
+      "size": 6816864,
+      "mime": "video/mp4",
+      "etag": "\"cf26a9c30f5471b06ce14a11d4c32e45\""
+    },
+    {
+      "path": "src/assets/games/videos/breath-temple.mp4",
+      "size": 10442873,
+      "mime": "video/mp4",
+      "etag": "\"6210fbd09436d6acd45b5d41d33f5664\""
+    },
+    {
+      "path": "src/assets/games/videos/karma-coin.mp4",
+      "size": 9232202,
+      "mime": "video/mp4",
+      "etag": "\"6fb51665d054e6745edce4a41dd15e10\""
+    },
+    {
+      "path": "src/assets/games/videos/last-breath.mp4",
+      "size": 5247989,
+      "mime": "video/mp4",
+      "etag": "\"cb78e9339916caef48a5dc424056d47a\""
+    },
+    {
+      "path": "src/assets/games/videos/mirror-realm.mp4",
+      "size": 8135508,
+      "mime": "video/mp4",
+      "etag": "\"248507821ba9c496a7986ac0f1deab5d\""
+    },
+    {
+      "path": "src/assets/games/videos/name-the-storm.mp4",
+      "size": 9059362,
+      "mime": "video/mp4",
+      "etag": "\"08eab5b55167a799b1eb2604dc1594be\""
+    },
+    {
+      "path": "src/assets/games/videos/neti-neti.mp4",
+      "size": 9683905,
+      "mime": "video/mp4",
+      "etag": "\"67028d8bbc1db61c96829cb9254ff8c3\""
+    },
+    {
+      "path": "src/assets/games/videos/ninth-dharana.mp4",
+      "size": 6851571,
+      "mime": "video/mp4",
+      "etag": "\"7cf507e8351c36bd66b5b3a24a56f870\""
+    },
+    {
+      "path": "src/assets/games/videos/silent-mountain.mp4",
+      "size": 8912413,
+      "mime": "video/mp4",
+      "etag": "\"15f6db0959aec9dfbd58a15da543add8\""
+    },
+    {
+      "path": "src/assets/games/videos/the-pause.mp4",
+      "size": 5442916,
+      "mime": "video/mp4",
+      "etag": "\"e8ef8d86823f125728bf0d6e9a812ce3\""
+    },
+    {
+      "path": "src/assets/games/videos/the-sigh.mp4",
+      "size": 7821993,
+      "mime": "video/mp4",
+      "etag": "\"3311077741d6d3c366eb3d77264b2cb7\""
+    },
+    {
+      "path": "src/assets/games/videos/three-brains.mp4",
+      "size": 8130972,
+      "mime": "video/mp4",
+      "etag": "\"2cf6da6817a1f37d0b2039f2c3b68160\""
+    },
+    {
+      "path": "src/assets/games/videos/tonglen.mp4",
+      "size": 8829927,
+      "mime": "video/mp4",
+      "etag": "\"5dc1c2b4e33d88cc1caf363e99ce489b\""
+    },
+    {
+      "path": "src/assets/games/videos/who-is-thinking.mp4",
+      "size": 13284005,
+      "mime": "video/mp4",
+      "etag": "\"993ced123f58bd96fc5d76a56acf3ffc\""
+    },
+    {
+      "path": "src/assets/games/videos/witness.mp4",
+      "size": 10930472,
+      "mime": "video/mp4",
+      "etag": "\"7cb3d6c2d69006641318590779da6ed7\""
+    },
+    {
+      "path": "src/assets/handbooks/videos/science-meets-yoga.mp4",
+      "size": 9749681,
+      "mime": "video/mp4",
+      "etag": "\"7c1a9dc6c849a0d4d6a0894f6cf3a904\""
+    },
+    {
+      "path": "src/assets/handbooks/videos/the-11-bands.mp4",
+      "size": 10401000,
+      "mime": "video/mp4",
+      "etag": "\"41016a9d79bde51e34c8a0067dad2649\""
+    },
+    {
+      "path": "src/assets/handbooks/videos/the-four-paths-of-yoga.mp4",
+      "size": 6563494,
+      "mime": "video/mp4",
+      "etag": "\"fb67110d308286905603bea226290fef\""
+    },
+    {
+      "path": "src/assets/handbooks/videos/the-nervous-system.mp4",
+      "size": 10271174,
+      "mime": "video/mp4",
+      "etag": "\"f52ec501734b697e49fc8736a179c672\""
+    },
+    {
+      "path": "src/assets/handbooks/videos/the-onion.mp4",
+      "size": 10416483,
+      "mime": "video/mp4",
+      "etag": "\"68a9950ecba8dc56461129f6b55b0704\""
+    },
+    {
+      "path": "src/assets/handbooks/videos/the-thought-world.mp4",
+      "size": 8394632,
+      "mime": "video/mp4",
+      "etag": "\"aed9cea39e83d21754e16fc4e6efd028\""
+    },
+    {
+      "path": "src/assets/handbooks/videos/the-three-brains.mp4",
+      "size": 8247004,
+      "mime": "video/mp4",
+      "etag": "\"2549079b17b339e85a02414584d56ffb\""
+    },
+    {
+      "path": "src/assets/inner-paths/videos/neti-neti.mp4",
+      "size": 9113562,
+      "mime": "video/mp4",
+      "etag": "\"b446e394121317cff0cdea723c7adaa7\""
+    },
+    {
+      "path": "src/assets/inner-paths/videos/observation.mp4",
+      "size": 9207383,
+      "mime": "video/mp4",
+      "etag": "\"5446731a6c7c94fb69ea19e923a74cf7\""
+    },
+    {
+      "path": "src/assets/inner-paths/videos/pranayama.mp4",
+      "size": 8478253,
+      "mime": "video/mp4",
+      "etag": "\"db93b67fe0dc0ecd53279aa42626daa0\""
+    },
+    {
+      "path": "src/assets/inner-paths/videos/self-inquiry.mp4",
+      "size": 12571303,
+      "mime": "video/mp4",
+      "etag": "\"2af26a6a4fa4e739ee77e4e0df07f09c\""
+    },
+    {
+      "path": "src/assets/showroom/essay-ninety-days.mp4",
+      "size": 2114118,
+      "mime": "video/mp4",
+      "etag": "\"08c42e6bd053993d07fc59f6a8e99a8d\""
+    },
+    {
+      "path": "src/assets/showroom/essay-religion.mp4",
+      "size": 2812393,
+      "mime": "video/mp4",
+      "etag": "\"86b0357723360e72227bfacea9b52613\""
+    },
+    {
+      "path": "src/assets/showroom/essay-witness.mp4",
+      "size": 3076077,
+      "mime": "video/mp4",
+      "etag": "\"a92a3fcd90d7759d32781006d33cc9b0\""
+    },
+    {
+      "path": "src/assets/showroom/games-cta.mp4",
+      "size": 5664548,
+      "mime": "video/mp4",
+      "etag": "\"992c8438c5e2c250a0b0e3e921ef7c6e\""
+    },
+    {
+      "path": "src/assets/showroom/practices-cta.mp4",
+      "size": 2080842,
+      "mime": "video/mp4",
+      "etag": "\"ad5ccf3ba231dee808097a5d933bcae9\""
+    },
+    {
+      "path": "src/assets/showroom/wisdom-deck.mp4",
+      "size": 3345748,
+      "mime": "video/mp4",
+      "etag": "\"7b45282cc0ed7951ef69a9d0c81d0218\""
+    },
+    {
+      "path": "src/assets/wings/videos/bridges.mp4",
+      "size": 18072987,
+      "mime": "video/mp4",
+      "etag": "\"416335e470e0df8c88b5c7d358a73f70-2\""
+    },
+    {
+      "path": "src/assets/wings/videos/lineage-tree.mp4",
+      "size": 12163047,
+      "mime": "video/mp4",
+      "etag": "\"a87ca55b051cfcca0fc4975cf5ec2b8f\""
+    },
+    {
+      "path": "src/assets/wings/videos/living-glossary.mp4",
+      "size": 10208054,
+      "mime": "video/mp4",
+      "etag": "\"7cb7a71dfa51feff8079903239110a4c\""
+    },
+    {
+      "path": "src/assets/wings/videos/loops-atlas.mp4",
+      "size": 10779434,
+      "mime": "video/mp4",
+      "etag": "\"7850282a693290c417e60239f0dc8405\""
+    },
+    {
+      "path": "src/assets/wings/videos/prerequisites-map.mp4",
+      "size": 11659718,
+      "mime": "video/mp4",
+      "etag": "\"e99294507ccc0595890c897147686cd8\""
+    },
+    {
+      "path": "src/assets/wwb/bands.mp4",
+      "size": 2052907,
+      "mime": "video/mp4",
+      "etag": "\"b160ae8a734d512587abe88ff5500c04\""
+    },
+    {
+      "path": "src/assets/wwb/composer.mp4",
+      "size": 2645557,
+      "mime": "video/mp4",
+      "etag": "\"82bcd19a8941fc7f0a59ac05e8dacb79\""
+    },
+    {
+      "path": "src/assets/wwb/fourpaths.mp4",
+      "size": 4004146,
+      "mime": "video/mp4",
+      "etag": "\"545bb3bd2a62bb24db178fdf06fc1dfe\""
+    },
+    {
+      "path": "src/assets/wwb/games.mp4",
+      "size": 2767453,
+      "mime": "video/mp4",
+      "etag": "\"6b0e27327b850f6b247f2aa7cc4df9f6\""
+    },
+    {
+      "path": "src/assets/wwb/guides.mp4",
+      "size": 4294817,
+      "mime": "video/mp4",
+      "etag": "\"7ae5b375a131a342598e7112b0f89189\""
+    },
+    {
+      "path": "src/assets/wwb/ladders.mp4",
+      "size": 2401815,
+      "mime": "video/mp4",
+      "etag": "\"64e225e70884a30d7ac8bcdd6aa2a636\""
+    },
+    {
+      "path": "src/assets/wwb/loops.mp4",
+      "size": 3940858,
+      "mime": "video/mp4",
+      "etag": "\"37ce96606f1d6051eb13cd9b511e2ef6\""
+    },
+    {
+      "path": "src/assets/wwb/memory.mp4",
+      "size": 2725446,
+      "mime": "video/mp4",
+      "etag": "\"bcb2f0ac2a38bde81efcf6563f4431ed\""
+    },
+    {
+      "path": "src/assets/wwb/programs.mp4",
+      "size": 4019967,
+      "mime": "video/mp4",
+      "etag": "\"c996af93b936e5edbe7ba8bcde299ea5\""
+    },
+    {
+      "path": "src/assets/wwb/sessionflow.mp4",
+      "size": 2080969,
+      "mime": "video/mp4",
+      "etag": "\"ddd7b9ff88bd30852106e44a94db270a\""
+    },
+    {
+      "path": "src/assets/wwb/witness.mp4",
+      "size": 1544938,
+      "mime": "video/mp4",
+      "etag": "\"51ff5304c7ea3de5dffc66baab4fec5f\""
+    },
+    {
+      "path": "src/assets/videos/hero-ancient-modern.mp4",
+      "size": 28722310,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-awakening.mp4",
+      "size": 26505720,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-banyan-tree.mp4",
+      "size": 42943027,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-cliff-dawn.mp4",
+      "size": 14236392,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-cosmic.mp4",
+      "size": 26074043,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-creation-touch.mp4",
+      "size": 21347686,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-forest-awakening.mp4",
+      "size": 40860958,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-lotus-bloom.mp4",
+      "size": 20137514,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-mandala-weave.mp4",
+      "size": 29606486,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-child.mp4",
+      "size": 14977485,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-desert.mp4",
+      "size": 10858482,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-ganges.mp4",
+      "size": 20048344,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-himalaya.mp4",
+      "size": 23464034,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-monk.mp4",
+      "size": 12400790,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-rooftop.mp4",
+      "size": 17876199,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-sage.mp4",
+      "size": 14352550,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-tech.mp4",
+      "size": 14403706,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-teen.mp4",
+      "size": 17233999,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-woman-young.mp4",
+      "size": 18587843,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-meditate-zen.mp4",
+      "size": 16883855,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-mirror.mp4",
+      "size": 17742303,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-neural-light.mp4",
+      "size": 24501353,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-shadow-self.mp4",
+      "size": 14277807,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-temple-sunrise.mp4",
+      "size": 27703255,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/videos/hero-water-reflection.mp4",
+      "size": 15871779,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film/scene1-eye-opening.mp4",
+      "size": 8037662,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film/scene2-scrolling.mp4",
+      "size": 6776455,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film/scene2b-crowd.mp4",
+      "size": 16951584,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film/scene4-sage.mp4",
+      "size": 18846954,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film/scene5-instrument.mp4",
+      "size": 16172778,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film/scene7-meditation.mp4",
+      "size": 8478047,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-disney/s1-alone.mp4",
+      "size": 14921155,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-disney/s2-petals.mp4",
+      "size": 19381830,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-disney/s3-emerge.mp4",
+      "size": 20134370,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-disney/s4-council.mp4",
+      "size": 25761445,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-disney/s5-tear.mp4",
+      "size": 18013173,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-disney/s6-temple.mp4",
+      "size": 20646623,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-fc/shot1-bindu.mp4",
+      "size": 14228075,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-fc/shot2-iris-flame.mp4",
+      "size": 14475924,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-fc/shot3-mandala-cosmos.mp4",
+      "size": 25202111,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-fc/shot4-iphone-temple.mp4",
+      "size": 15733341,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-fc/shot5-four-souls-v2.mp4",
+      "size": 15769832,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-fc/shot5-four-souls.mp4",
+      "size": 15982508,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/film-fc/shot6-cosmic-self.mp4",
+      "size": 22095719,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/flow/shot-1.mp4",
+      "size": 17123228,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/flow/shot-2.mp4",
+      "size": 25754931,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/flow/shot-3.mp4",
+      "size": 12578657,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/flow/shot-4.mp4",
+      "size": 16161399,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/flow/shot-5.mp4",
+      "size": 26207541,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/flow/shot-6.mp4",
+      "size": 11869968,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/flow/shot-7.mp4",
+      "size": 21494458,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/flow/shot-8.mp4",
+      "size": 8331617,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/flow.mp4",
+      "size": 24631309,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/loops/shot-1.mp4",
+      "size": 8897320,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/loops/shot-2.mp4",
+      "size": 8502132,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/loops/shot-3.mp4",
+      "size": 14728105,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/loops/shot-4.mp4",
+      "size": 16728859,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/loops/shot-5.mp4",
+      "size": 12122578,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/loops/shot-6.mp4",
+      "size": 15671483,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/loops/shot-7.mp4",
+      "size": 11241523,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/loops/shot-8.mp4",
+      "size": 16975040,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/loops.mp4",
+      "size": 44980322,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/masters/shot-1.mp4",
+      "size": 11686099,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/masters/shot-2.mp4",
+      "size": 13494799,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/masters/shot-3.mp4",
+      "size": 14243822,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/masters/shot-4.mp4",
+      "size": 10478632,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/masters/shot-5.mp4",
+      "size": 23445108,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/masters/shot-6.mp4",
+      "size": 14914768,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/masters/shot-7.mp4",
+      "size": 22125466,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/masters/shot-8.mp4",
+      "size": 10911251,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/masters.mp4",
+      "size": 21353129,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/overture/shot-1.mp4",
+      "size": 9010859,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/overture/shot-2.mp4",
+      "size": 13172521,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/overture/shot-3.mp4",
+      "size": 16917190,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/overture/shot-4.mp4",
+      "size": 21102927,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/overture/shot-5.mp4",
+      "size": 16766612,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/overture/shot-6.mp4",
+      "size": 12569719,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/overture/shot-7.mp4",
+      "size": 10333244,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/overture/shot-8.mp4",
+      "size": 7780217,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/overture.mp4",
+      "size": 45708055,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/rare-birth/shot-1.mp4",
+      "size": 17958564,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/rare-birth/shot-2.mp4",
+      "size": 16180231,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/rare-birth/shot-3.mp4",
+      "size": 24124230,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/rare-birth/shot-4.mp4",
+      "size": 10775019,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/rare-birth/shot-5.mp4",
+      "size": 12027285,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/rare-birth/shot-6.mp4",
+      "size": 10207403,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/rare-birth/shot-7.mp4",
+      "size": 14772460,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/rare-birth/shot-8.mp4",
+      "size": 11234034,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/rare-birth.mp4",
+      "size": 20138070,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/session/shot-1.mp4",
+      "size": 12501888,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/session/shot-2.mp4",
+      "size": 11661951,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/session/shot-3.mp4",
+      "size": 8437381,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/session/shot-4.mp4",
+      "size": 9759254,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/session/shot-5.mp4",
+      "size": 10585686,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/session/shot-6.mp4",
+      "size": 14513112,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/session/shot-7.mp4",
+      "size": 12585210,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/session/shot-8.mp4",
+      "size": 2830649,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/session.mp4",
+      "size": 36821977,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/tenx/shot-1.mp4",
+      "size": 11634095,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/tenx/shot-2.mp4",
+      "size": 18723207,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/tenx/shot-3.mp4",
+      "size": 14815698,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/tenx/shot-4.mp4",
+      "size": 17492185,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/tenx/shot-5.mp4",
+      "size": 6891193,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/tenx/shot-6.mp4",
+      "size": 10538759,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/tenx/shot-7.mp4",
+      "size": 14168256,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/tenx/shot-8.mp4",
+      "size": 9043860,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/tenx.mp4",
+      "size": 42667466,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/voice/flow.mp3",
+      "size": 1035791,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/voice/loops.mp3",
+      "size": 1054223,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/voice/masters.mp3",
+      "size": 892175,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/voice/overture.mp3",
+      "size": 1033487,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/voice/rare-birth.mp3",
+      "size": 1041935,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/voice/session.mp3",
+      "size": 1021967,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/films/voice/tenx.mp3",
+      "size": 1096463,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/founder/samir/portraits/samir-portrait-01.jpg",
+      "size": 61025,
+      "mime": "image/jpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/founder/samir/portraits/samir-portrait-02.jpg",
+      "size": 70107,
+      "mime": "image/jpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/founder/samir/portraits/samir-portrait-03.jpg",
+      "size": 104469,
+      "mime": "image/jpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/founder/samir/portraits/samir-portrait-04.jpg",
+      "size": 112041,
+      "mime": "image/jpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/founder/samir/portraits/samir-portrait-05.jpg",
+      "size": 108611,
+      "mime": "image/jpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/games/breath-temple.jpg",
+      "size": 104128,
+      "mime": "image/jpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/games/the-pause.jpg",
+      "size": 105057,
+      "mime": "image/jpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/games/witness.jpg",
+      "size": 120226,
+      "mime": "image/jpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/hope-flame-void.mp4",
+      "size": 13672582,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/body-scan/0.mp3",
+      "size": 114432,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/body-scan/1.mp3",
+      "size": 86016,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/body-scan/2.mp3",
+      "size": 119424,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/body-scan/3.mp3",
+      "size": 223872,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/body-scan/4.mp3",
+      "size": 124800,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/body-scan/5.mp3",
+      "size": 139008,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/body-scan/6.mp3",
+      "size": 100224,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/body-scan/7.mp3",
+      "size": 128640,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/box-breath/0.mp3",
+      "size": 145536,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/box-breath/1.mp3",
+      "size": 74112,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/box-breath/2.mp3",
+      "size": 67584,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/box-breath/3.mp3",
+      "size": 85248,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/box-breath/4.mp3",
+      "size": 62976,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/box-breath/5.mp3",
+      "size": 60672,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/box-breath/6.mp3",
+      "size": 86016,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/box-breath/7.mp3",
+      "size": 127104,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/coherent-breath/0.mp3",
+      "size": 135552,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/coherent-breath/1.mp3",
+      "size": 67584,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/coherent-breath/2.mp3",
+      "size": 83328,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/coherent-breath/3.mp3",
+      "size": 81792,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/coherent-breath/4.mp3",
+      "size": 85248,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/coherent-breath/5.mp3",
+      "size": 100224,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/coherent-breath/6.mp3",
+      "size": 98688,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/coherent-breath/7.mp3",
+      "size": 128640,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/death-contemplation/0.mp3",
+      "size": 144768,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/death-contemplation/1.mp3",
+      "size": 52224,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/death-contemplation/2.mp3",
+      "size": 125568,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/death-contemplation/3.mp3",
+      "size": 96000,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/death-contemplation/4.mp3",
+      "size": 86016,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/death-contemplation/5.mp3",
+      "size": 85248,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/death-contemplation/6.mp3",
+      "size": 115968,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/death-contemplation/7.mp3",
+      "size": 117120,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/gratitude-pulse/0.mp3",
+      "size": 146304,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/gratitude-pulse/1.mp3",
+      "size": 46464,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/gratitude-pulse/2.mp3",
+      "size": 99456,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/gratitude-pulse/3.mp3",
+      "size": 137472,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/gratitude-pulse/4.mp3",
+      "size": 62976,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/gratitude-pulse/5.mp3",
+      "size": 62976,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/gratitude-pulse/6.mp3",
+      "size": 77568,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/gratitude-pulse/7.mp3",
+      "size": 130560,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/kumbhaka/0.mp3",
+      "size": 128640,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/kumbhaka/1.mp3",
+      "size": 77568,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/kumbhaka/2.mp3",
+      "size": 88320,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/kumbhaka/3.mp3",
+      "size": 144768,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/kumbhaka/4.mp3",
+      "size": 107136,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/kumbhaka/5.mp3",
+      "size": 112128,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/kumbhaka/6.mp3",
+      "size": 102912,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/kumbhaka/7.mp3",
+      "size": 132096,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/loving-kindness/0.mp3",
+      "size": 125568,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/loving-kindness/1.mp3",
+      "size": 57216,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/loving-kindness/2.mp3",
+      "size": 158208,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/loving-kindness/3.mp3",
+      "size": 98688,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/loving-kindness/4.mp3",
+      "size": 93312,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/loving-kindness/5.mp3",
+      "size": 145536,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/loving-kindness/6.mp3",
+      "size": 120192,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/loving-kindness/7.mp3",
+      "size": 106368,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/self-inquiry/0.mp3",
+      "size": 127872,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/self-inquiry/1.mp3",
+      "size": 65664,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/self-inquiry/2.mp3",
+      "size": 105216,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/self-inquiry/3.mp3",
+      "size": 96768,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/self-inquiry/4.mp3",
+      "size": 124800,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/self-inquiry/5.mp3",
+      "size": 89856,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/self-inquiry/6.mp3",
+      "size": 95232,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/self-inquiry/7.mp3",
+      "size": 124800,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/so-hum/0.mp3",
+      "size": 124800,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/so-hum/1.mp3",
+      "size": 67584,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/so-hum/2.mp3",
+      "size": 140928,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/so-hum/3.mp3",
+      "size": 100992,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/so-hum/4.mp3",
+      "size": 102912,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/so-hum/5.mp3",
+      "size": 83328,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/so-hum/6.mp3",
+      "size": 78336,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/so-hum/7.mp3",
+      "size": 136704,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/the-sigh/0.mp3",
+      "size": 127104,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/the-sigh/1.mp3",
+      "size": 73344,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/the-sigh/2.mp3",
+      "size": 83328,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/the-sigh/3.mp3",
+      "size": 96768,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/the-sigh/4.mp3",
+      "size": 112896,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/the-sigh/5.mp3",
+      "size": 61440,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/the-sigh/6.mp3",
+      "size": 105216,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/the-sigh/7.mp3",
+      "size": 122880,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/three-brain-checkin/0.mp3",
+      "size": 141696,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/three-brain-checkin/1.mp3",
+      "size": 103680,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/three-brain-checkin/2.mp3",
+      "size": 132096,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/three-brain-checkin/3.mp3",
+      "size": 112128,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/three-brain-checkin/4.mp3",
+      "size": 95232,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/three-brain-checkin/5.mp3",
+      "size": 68352,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/three-brain-checkin/6.mp3",
+      "size": 134784,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/trataka/0.mp3",
+      "size": 115200,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/trataka/1.mp3",
+      "size": 114432,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/trataka/2.mp3",
+      "size": 75648,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/trataka/3.mp3",
+      "size": 81792,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/trataka/4.mp3",
+      "size": 115968,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/trataka/5.mp3",
+      "size": 92544,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/trataka/6.mp3",
+      "size": 151680,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/trataka/7.mp3",
+      "size": 125568,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/walking-meditation/0.mp3",
+      "size": 135552,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/walking-meditation/1.mp3",
+      "size": 89088,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/walking-meditation/2.mp3",
+      "size": 93312,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/walking-meditation/3.mp3",
+      "size": 104448,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/walking-meditation/4.mp3",
+      "size": 88320,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/walking-meditation/5.mp3",
+      "size": 106368,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/walking-meditation/6.mp3",
+      "size": 123648,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/walking-meditation/7.mp3",
+      "size": 115968,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/witness/0.mp3",
+      "size": 115200,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/witness/1.mp3",
+      "size": 104448,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/witness/2.mp3",
+      "size": 79104,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/witness/3.mp3",
+      "size": 96768,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/witness/4.mp3",
+      "size": 107904,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/witness/5.mp3",
+      "size": 84096,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/witness/6.mp3",
+      "size": 134784,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/witness/7.mp3",
+      "size": 121344,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/yoga-nidra/0.mp3",
+      "size": 114432,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/yoga-nidra/1.mp3",
+      "size": 84096,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/yoga-nidra/2.mp3",
+      "size": 115200,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/yoga-nidra/3.mp3",
+      "size": 205440,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/yoga-nidra/4.mp3",
+      "size": 56448,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/yoga-nidra/5.mp3",
+      "size": 119424,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/yoga-nidra/6.mp3",
+      "size": 83328,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/narration/yoga-nidra/7.mp3",
+      "size": 114432,
+      "mime": "audio/mpeg",
+      "etag": null
+    },
+    {
+      "path": "src/assets/paths/videos/bhakti.mp4",
+      "size": 11565213,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/paths/videos/jnana.mp4",
+      "size": 10162877,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/paths/videos/karma.mp4",
+      "size": 7857118,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/paths/videos/raja.mp4",
+      "size": 9450696,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/paths/videos/shakti.mp4",
+      "size": 11856724,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/paths/videos/tantra.mp4",
+      "size": 9239952,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/body-scan-light.mp4",
+      "size": 19011501,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/box-breath-square.mp4",
+      "size": 17649964,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/coherent-breath-ocean.mp4",
+      "size": 25812014,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/death-contemplation-petal.mp4",
+      "size": 13615410,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/gratitude-pulse-heart.mp4",
+      "size": 17936004,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/kumbhaka-void.mp4",
+      "size": 20217108,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/loving-kindness-radiance.mp4",
+      "size": 21167760,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/self-inquiry-source.mp4",
+      "size": 17377557,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/so-hum-lotus.mp4",
+      "size": 18071779,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/the-sigh-sky.mp4",
+      "size": 16340619,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/three-brain-spheres.mp4",
+      "size": 18933242,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/trataka-flame.mp4",
+      "size": 12337841,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/walking-meditation-forest.mp4",
+      "size": 26057517,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/witness-lake.mp4",
+      "size": 21727039,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/practices/yoga-nidra-cosmos.mp4",
+      "size": 20402941,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/athlete-mind-in-motion.mp4",
+      "size": 7939495,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/burnout-reset-with-patanjali.mp4",
+      "size": 10209175,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/corporate-leadership-under-fire.mp4",
+      "size": 13055808,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/corporate-team-repair.mp4",
+      "size": 7848484,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/creator-flow-and-block.mp4",
+      "size": 6557445,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/decision-making-with-krishna.mp4",
+      "size": 9960617,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/duty-without-damage.mp4",
+      "size": 10668100,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/founder-decision-loneliness.mp4",
+      "size": 10803346,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/government-bureaucrat-integrity.mp4",
+      "size": 9823035,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/grief-and-loss.mp4",
+      "size": 7502637,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/healers-therapist-hygiene.mp4",
+      "size": 10191530,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/healthcare-compassion-fatigue.mp4",
+      "size": 7996823,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/heart-open-with-meera.mp4",
+      "size": 9093325,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/inner-witness-with-ramana.mp4",
+      "size": 7867046,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/letting-go-with-lao-tzu.mp4",
+      "size": 16722969,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/loops-trauma-and-the-nervous-system.mp4",
+      "size": 12344466,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/parent-patience-presence.mp4",
+      "size": 8152040,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/ritual-daily-devotional.mp4",
+      "size": 6792510,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/shakti-and-the-ethics-of-power.mp4",
+      "size": 7782484,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/stillness-with-dogen.mp4",
+      "size": 6096810,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/stop-the-reactor.mp4",
+      "size": 8896531,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/student-focus-under-pressure.mp4",
+      "size": 6482692,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/teacher-classroom-presence.mp4",
+      "size": 9074713,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/the-onion-who-am-i.mp4",
+      "size": 7199129,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/three-brains-protocol.mp4",
+      "size": 10147179,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/watch-your-thoughts.mp4",
+      "size": 9028263,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/programs/videos/willpower-reforged.mp4",
+      "size": 9276871,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/reel-001/clip-1-cosmic-open.mp4",
+      "size": 15297875,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/reel-001/clip-2-cultural-collapse.mp4",
+      "size": 13532849,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/reel-001/clip-3-pivot.mp4",
+      "size": 13398917,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/reel-001/clip-4-product-reveal.mp4",
+      "size": 19983774,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/reel-001/clip-5-transformation.mp4",
+      "size": 15563193,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/reel-001/clip-6-brand-signature.mp4",
+      "size": 21851854,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/sensorial/buddha/ambient-bodhi.mp4",
+      "size": 20226095,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/sensorial/krishnamurti/ambient-sky.mp4",
+      "size": 12136019,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/sensorial/osho/ambient-embers.mp4",
+      "size": 23344893,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/sensorial/ramana/ambient-flame.mp4",
+      "size": 10448893,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/sensorial/sadhguru/ambient-cosmic.mp4",
+      "size": 18969896,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/sensorial/yogananda/ambient-spiritual-eye.mp4",
+      "size": 20192991,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/showroom/sam-idle.mp4",
+      "size": 14815140,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/showroom/sam-portrait.mp4",
+      "size": 15745738,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/showroom/sam-talking.mp4",
+      "size": 15341686,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/showroom/vision-hero.mp4",
+      "size": 38348850,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/showroom/world-anxious.mp4",
+      "size": 6887942,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/showroom/world-corporate.mp4",
+      "size": 17755234,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/showroom/world-creator.mp4",
+      "size": 12713641,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/showroom/world-seeker.mp4",
+      "size": 10177370,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/v000/clip1.mp4",
+      "size": 9995336,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/v000/clip2.mp4",
+      "size": 19518898,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/v000/clip3.mp4",
+      "size": 11182368,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/v000/clip4.mp4",
+      "size": 12118840,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/v000/clip5.mp4",
+      "size": 8085339,
+      "mime": "video/mp4",
+      "etag": null
+    },
+    {
+      "path": "src/assets/v000/clip6.mp4",
+      "size": 11988320,
+      "mime": "video/mp4",
+      "etag": null
+    }
+  ],
+  "base_url": "https://vvnihmweqmbmytpggqcw.supabase.co",
+  "updated_at": "2026-10-20T11:42:52.651Z"
+}

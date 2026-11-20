@@ -1,0 +1,10 @@
+import { chromium } from "playwright";
+const browser = await chromium.launch({channel:"chrome",headless:true,args:["--use-gl=angle","--enable-unsafe-swiftshader"]});
+const page = await browser.newPage({viewport:{width:420,height:820},deviceScaleFactor:1});
+await page.goto("http://localhost:8081/auth",{waitUntil:"domcontentloaded",timeout:90000});
+await page.waitForTimeout(5000);
+console.log("url", page.url());
+const html = await page.content();
+console.log("has email input", html.includes('type="email"'));
+await page.screenshot({path:"C:/Users/SAMIR/AppData/Local/Temp/kilo/auth.png"});
+await browser.close();

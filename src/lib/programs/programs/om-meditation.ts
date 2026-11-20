@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const OM_MEDITATION: SessionProgramV3 = {
+  id: "om-meditation",
+  title: "Om Meditation",
+  subtitle: "A-U-M — the three states and the fourth",
+  description:
+    "A 5-session arc through Om meditation: the primordial sound that contains all sounds, all states, all realities.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["om", "pranava", "turiya", "primordial"],
+  icon: "Om",
+  coverGradient: "from-yellow-500 to-amber-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The three sounds" },
+    { phase: "Practice", sessions: 1, focus: "The full Om" },
+    { phase: "Integration", sessions: 1, focus: "Om in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The fourth state" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The seed of all sounds",
+      required: ["ritual.opening-bow", "teach.mantra.om", "mantra.om"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "A-U-M — waking, dream, deep sleep",
+      required: ["wisdom.nada.upanishad", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The full Om with the silence",
+      required: ["mantra.om", "breath.coherent-5-5", "witness.gap-between-thoughts"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Om in the day",
+      required: ["mantra.om", "micro-act.stretch-once", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "Turiya — the fourth state",
+      required: ["ritual.opening-bow", "mantra.om", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

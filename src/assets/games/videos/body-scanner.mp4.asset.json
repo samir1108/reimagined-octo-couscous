@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "4ee34083-bf99-4432-9e70-7406f5dd04e8",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/videos/body-scanner.mp4",
+  "original_filename": "body-scanner.mp4",
+  "size": 6816864,
+  "created_at": "2026-07-17T11:12:16Z",
+  "storage_path": "src/assets/games/videos/body-scanner.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:23:42.726Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/4ee34083-bf99-4432-9e70-7406f5dd04e8/body-scanner.mp4"
+}

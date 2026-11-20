@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANA_VAYU_APANA: SessionProgramV3 = {
+  id: "prana-vayu-apana",
+  title: "Prana Vayu · Apana",
+  subtitle: "The downward-moving eliminative force — root and release",
+  description:
+    "A 5-session arc through Apana Vayu: the downward-moving energy that governs exhalation, elimination, and grounding.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["prana", "apana", "downward", "grounding"],
+  icon: "ArrowDown",
+  coverGradient: "from-brown-600 to-red-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The downward breath" },
+    { phase: "Practice", sessions: 1, focus: "Ground and release" },
+    { phase: "Integration", sessions: 1, focus: "Release in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The grounded root" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The wind that grounds",
+      required: ["ritual.opening-bow", "teach.prana.overview", "wisdom.prana.apana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the pelvic floor",
+      required: ["wisdom.prana.apana", "bandha.mula", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Exhale, release, ground",
+      required: ["wisdom.prana.apana", "breath.physiological-sigh", "meditation.body-as-anchor"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Release in the day",
+      required: ["wisdom.prana.apana", "micro-act.tidy-one-thing", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The grounded root",
+      required: ["ritual.opening-bow", "wisdom.prana.apana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

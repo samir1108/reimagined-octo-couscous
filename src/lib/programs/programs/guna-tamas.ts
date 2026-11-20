@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GUNA_TAMAS: SessionProgramV3 = {
+  id: "guna-tamas",
+  title: "Guna · Tamas",
+  subtitle: "Inertia, darkness, heaviness — awaken from the sleep",
+  description:
+    "A 5-session arc through Tamas: the guna of inertia, darkness, and heaviness. Awaken tamas through movement, breath, and light.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["guna", "tamas", "inertia", "heaviness"],
+  icon: "Moon",
+  coverGradient: "from-slate-600 to-gray-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The weight of inertia" },
+    { phase: "Practice", sessions: 1, focus: "Awaken the body" },
+    { phase: "Integration", sessions: 1, focus: "Lighten the day" },
+    { phase: "Mastery", sessions: 1, focus: "The awakened witness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The principle of inertia",
+      required: ["ritual.opening-bow", "teach.guna.overview", "wisdom.guna.tamas"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the heaviness",
+      required: ["wisdom.guna.tamas", "body.head-to-toe", "breath.physiological-sigh"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Shake off the inertia",
+      required: ["wisdom.guna.tamas", "kriya.shaking-meditation", "breath.physiological-sigh"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Lighten the day",
+      required: ["wisdom.guna.tamas", "teach.guna.cultivate", "micro-act.stretch-once"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The awakened witness",
+      required: ["ritual.opening-bow", "wisdom.guna.tamas", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const ASANA_SURYA_NAMASKAR: SessionProgramV3 = {
+  id: "asana-surya-namaskar",
+  title: "Asana · Surya Namaskar",
+  subtitle: "Sun salutation — the complete practice in motion",
+  description:
+    "A 5-session arc through Surya Namaskar: the 12-pose flow that stretches, strengthens, balances, and prepares the body for the still sits.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["asana", "surya-namaskar", "flow", "morning"],
+  icon: "Sun",
+  coverGradient: "from-orange-500 to-amber-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The flow" },
+    { phase: "Practice", sessions: 1, focus: "Deepen the rounds" },
+    { phase: "Integration", sessions: 1, focus: "Morning ritual" },
+    { phase: "Mastery", sessions: 1, focus: "The flowing still" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Salutation to the sun",
+      required: ["ritual.opening-bow", "teach.asana.surya-namaskar", "asana.tadasana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The 12 poses",
+      required: ["wisdom.hatha.asana-chapter", "movement.sun-salute-1", "breath.coherent-5-5"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Five rounds, one breath",
+      required: ["asana.surya-namaskar-flow", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Morning ritual",
+      required: ["asana.surya-namaskar-flow", "micro-act.stretch-once", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The flowing still",
+      required: ["ritual.opening-bow", "asana.surya-namaskar-flow", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

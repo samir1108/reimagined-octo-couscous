@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const BANDHA_MULA: SessionProgramV3 = {
+  id: "bandha-mula",
+  title: "Bandha · Mula",
+  subtitle: "Root lock — hold the energy at the base",
+  description:
+    "A 5-session arc through Mula Bandha: the root lock that grounds and holds prana at the base of the spine.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["bandha", "mula", "root", "energy"],
+  icon: "Anchor",
+  coverGradient: "from-red-700 to-orange-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The root & the lock" },
+    { phase: "Practice", sessions: 1, focus: "The contraction" },
+    { phase: "Integration", sessions: 1, focus: "Grounded in life" },
+    { phase: "Mastery", sessions: 1, focus: "The sealed root" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The locks that hold the light",
+      required: ["ritual.opening-bow", "teach.bandha", "wisdom.gheranda.bandha"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the root",
+      required: ["wisdom.gheranda.1", "body.micro-scan-60s", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Mula contraction",
+      required: ["bandha.mula", "breath.coherent-5-5", "body.head-to-toe"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Grounded in life",
+      required: ["bandha.mula", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The sealed root",
+      required: ["ritual.opening-bow", "bandha.mula", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

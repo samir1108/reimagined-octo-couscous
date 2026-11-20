@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const UPANISHAD_CHANDOGYA: SessionProgramV3 = {
+  id: "upanishad-chandogya",
+  title: "Chandogya Upanishad",
+  subtitle: "Tat tvam asi — you are that",
+  description:
+    "A 5-session arc through the Chandogya Upanishad: the self as the subtle essence of all, 'you are that' — the ultimate teaching.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["chandogya", "upanishad", "tat-tvam-asi", "essence"],
+  icon: "BookOpen",
+  coverGradient: "from-teal-700 to-green-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The essence" },
+    { phase: "Practice", sessions: 1, focus: "You are that" },
+    { phase: "Integration", sessions: 1, focus: "The light within" },
+    { phase: "Mastery", sessions: 1, focus: "The self as all" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The subtle essence",
+      required: ["ritual.opening-bow", "teach.chandogya", "wisdom.chandogya.6.2"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Tat tvam asi — you are that",
+      required: ["wisdom.chandogya.3.14", "meditation.anchor-breath", "witness.thought-counter"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The self in all",
+      required: ["wisdom.chandogya.6.2", "inquiry.who-am-i", "observe.faces-of-people"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "The light within",
+      required: ["wisdom.chandogya.7.26", "meditation.body-as-anchor", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The self as all",
+      required: ["ritual.opening-bow", "wisdom.chandogya.3.14", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

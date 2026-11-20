@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANA_VAYU_UDANA: SessionProgramV3 = {
+  id: "prana-vayu-udana",
+  title: "Prana Vayu · Udana",
+  subtitle: "The upward-expressing force — speech and growth",
+  description:
+    "A 5-session arc through Udana Vayu: the upward energy at the throat that governs speech, expression, and spiritual growth.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["prana", "udana", "throat", "expression"],
+  icon: "MessageSquare",
+  coverGradient: "from-blue-500 to-indigo-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The expressive wind" },
+    { phase: "Practice", sessions: 1, focus: "Open the throat" },
+    { phase: "Integration", sessions: 1, focus: "Express in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The clear voice" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The wind that speaks",
+      required: ["ritual.opening-bow", "teach.prana.overview", "wisdom.prana.udana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the throat center",
+      required: ["wisdom.prana.udana", "somatic.jaw-release", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Open the throat, free the voice",
+      required: ["wisdom.prana.udana", "bandha.jalandhara", "voice-journal.speak-it-out"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Express in the day",
+      required: ["wisdom.prana.udana", "speech-vow.one-honest-thing", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The clear voice",
+      required: ["ritual.opening-bow", "wisdom.prana.udana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

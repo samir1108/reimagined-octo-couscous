@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KRIYA_ISHTA_PRANADHAMA: SessionProgramV3 = {
+  id: "kriya-ishvara-pranidhana",
+  title: "Kriya Yoga · Ishvara Pranidhana",
+  subtitle: "Surrender — the offering that liberates",
+  description:
+    "A 5-session arc through Ishvara Pranidhana: the surrender of all actions, fruits, and the false doer to the supreme source.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["kriya-yoga", "ishvara-pranidhana", "surrender", "devotion"],
+  icon: "Hands",
+  coverGradient: "from-violet-600 to-purple-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The offering" },
+    { phase: "Practice", sessions: 1, focus: "Surrender the fruit" },
+    { phase: "Integration", sessions: 1, focus: "Surrender in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The doerless doing" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The master key — surrender",
+      required: ["ritual.opening-bow", "teach.kriya.ishvara", "wisdom.kriya.ishvara"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Recognize the false doer",
+      required: ["wisdom.kriya.ishvara", "inquiry.who-am-i", "witness.who-is-watching"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Offer action, release fruit",
+      required: ["wisdom.kriya.ishvara", "mantra.so-hum", "meditation.loving-kindness"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Surrender in the day",
+      required: ["wisdom.kriya.ishvara", "micro-act.thank-someone", "voice-journal.gratitude-3"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The doerless doing",
+      required: ["ritual.opening-bow", "wisdom.kriya.ishvara", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

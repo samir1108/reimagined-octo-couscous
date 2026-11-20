@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sentinel — Setup</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 520px; margin: 40px auto; padding: 20px; background: #0b0b0d; color: #f4f4f5; }
+      label { display: block; font-size: 12px; color: #a1a1aa; margin: 12px 0 4px; }
+      input { width: 100%; padding: 8px; background: #18181b; border: 1px solid #27272a; color: #f4f4f5; border-radius: 6px; font-family: monospace; font-size: 12px; }
+      button { margin-top: 16px; margin-right: 8px; padding: 10px 16px; background: #f59e0b; color: #0b0b0d; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; }
+      button.secondary { background: #27272a; color: #f4f4f5; }
+      p { font-size: 12px; color: #a1a1aa; }
+      .ok { color: #22c55e; }
+      .err { color: #ef4444; }
+    </style>
+  </head>
+  <body>
+    <h1>🪔 Lovable Sentinel</h1>
+    <p>One-tap setup: in the Lovable app go to <b>Sentient Companion</b> → <b>Authorize extension</b>, then click <b>Import from clipboard</b> below.</p>
+    <button id="importClip">Import from clipboard</button>
+    <p id="importMsg"></p>
+    <hr style="border-color:#27272a;margin:24px 0" />
+    <p>Or paste manually:</p>
+    <label>Endpoint URL</label>
+    <input id="endpoint" placeholder="https://YOUR-PROJECT.functions.supabase.co/ingest-signal" />
+    <label>Bearer token (your Supabase access_token)</label>
+    <input id="token" placeholder="eyJ..." />
+    <label>anon key</label>
+    <input id="anon" />
+    <button id="save">Save</button>
+    <button id="test" class="secondary">Send test ping</button>
+    <p id="msg"></p>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "f3deb0e2-6b76-4848-84c2-e5cdfca0bd29",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/tenx/shot-4.mp4",
+  "original_filename": "shot-4.mp4",
+  "size": 17492185,
+  "created_at": "2026-07-12T02:26:54Z",
+  "bucket": "media",
+  "storage_path": "src/assets/films/tenx/shot-4.mp4",
+  "migrated_at": "2026-10-20T11:22:03.066Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/f3deb0e2-6b76-4848-84c2-e5cdfca0bd29/shot-4.mp4"
+}

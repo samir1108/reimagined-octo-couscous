@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const ASANA_FORWARD_BEND: SessionProgramV3 = {
+  id: "asana-forward-bend",
+  title: "Asana · Forward Bend",
+  subtitle: "Fold into the self — surrender the spine",
+  description:
+    "A 5-session arc through forward bends: paschimottanasana, janu sirsasana — surrendering the spine into the back body.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["asana", "forward-bend", "surrender", "hamstring"],
+  icon: "ArrowDown",
+  coverGradient: "from-teal-600 to-green-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The fold" },
+    { phase: "Practice", sessions: 1, focus: "Deep forward bends" },
+    { phase: "Integration", sessions: 1, focus: "Surrender in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The released spine" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The art of folding",
+      required: ["ritual.opening-bow", "teach.asana.forward-bend", "asana.tadasana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Lengthen before folding",
+      required: ["wisdom.hatha.asana-chapter", "body.head-to-toe", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Deep forward bends",
+      required: ["asana.paschimottanasana", "asana.janu-sirsasana", "breath.coherent-5-5"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Surrender in the day",
+      required: ["asana.paschimottanasana", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The released spine",
+      required: ["ritual.opening-bow", "asana.paschimottanasana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

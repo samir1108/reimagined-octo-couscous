@@ -1,0 +1,1 @@
+function a(e){return e.toLowerCase().trim().replace(/[^\w\s-]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"")}function t(e){return`${a(e.name)}-${e.id.toLowerCase()}`}function o(e){const r=e.match(/-([a-z]+\d+)$/i);return r?r[1].toUpperCase():null}export{o as a,t as l};

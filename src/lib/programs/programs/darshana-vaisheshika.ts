@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const DARSHANA_VAISHESHIKA: SessionProgramV3 = {
+  id: "darshana-vaisheshika",
+  title: "Vaisheshika Darshana",
+  subtitle: "Atomism and categories — the 7 padarthas of reality",
+  description:
+    "A 5-session arc through Vaisheshika: the atomic theory of reality, the 7 categories (padarthas), and liberation through understanding the true nature of existence.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["darshana", "vaisheshika", "atomism", "categories"],
+  icon: "Atom",
+  coverGradient: "from-violet-600 to-purple-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The atomic world" },
+    { phase: "Practice", sessions: 1, focus: "The 7 padarthas" },
+    { phase: "Integration", sessions: 1, focus: "Compounds and atoms" },
+    { phase: "Mastery", sessions: 1, focus: "Transcend the compound" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The world of atoms",
+      required: ["ritual.opening-bow", "teach.darshana.vaisheshika", "wisdom.darshana.vaisheshika"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The 7 categories",
+      required: ["wisdom.darshana.vaisheshika", "framework.three-brains-diagram", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Map the padarthas",
+      required: ["wisdom.darshana.vaisheshika", "contemplation.sit-with-question", "observe.one-object"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "See compounds as transient",
+      required: ["wisdom.darshana.vaisheshika", "inquiry.before-this-thought", "witness.thought-as-object"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "Transcend the compound, know the eternal",
+      required: ["ritual.opening-bow", "wisdom.darshana.vaisheshika", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

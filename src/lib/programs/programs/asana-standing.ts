@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const ASANA_STANDING: SessionProgramV3 = {
+  id: "asana-standing",
+  title: "Asana · Standing",
+  subtitle: "Root to rise — grounded strength",
+  description:
+    "A 5-session arc through standing asanas: tadasana, vrksasana, trikonasana — the foundation of all standing practice.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["asana", "standing", "balance", "strength"],
+  icon: "Mountain",
+  coverGradient: "from-green-600 to-emerald-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The root & the rise" },
+    { phase: "Practice", sessions: 1, focus: "The standing family" },
+    { phase: "Integration", sessions: 1, focus: "Grounded in life" },
+    { phase: "Mastery", sessions: 1, focus: "The steady mountain" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Stand tall, stand steady",
+      required: ["ritual.opening-bow", "teach.asana.standing", "asana.tadasana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the earth",
+      required: ["wisdom.hatha.asana-chapter", "body.head-to-toe", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Tree and triangle",
+      required: ["asana.vrksasana", "asana.trikonasana", "breath.coherent-5-5"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Grounded in life",
+      required: ["asana.tadasana", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The steady mountain",
+      required: ["ritual.opening-bow", "asana.vrksasana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHIVA_SAMHITA_CH3: SessionProgramV3 = {
+  id: "shiva-samhita-ch3",
+  title: "Shiva Samhita · Chapter 3",
+  subtitle: "Mudras, bandhas, and the awakening of kundalini",
+  description:
+    "A 5-session arc through Chapter 3: the 10 mudras, 3 bandhas, the 3 granthis, and the awakening of kundalini through the sushumna.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["shiva-samhita", "mudra", "bandha", "kundalini", "granthis"],
+  icon: "Zap",
+  coverGradient: "from-purple-600 to-pink-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The seals and locks" },
+    { phase: "Practice", sessions: 1, focus: "Pierce the knots" },
+    { phase: "Integration", sessions: 1, focus: "Kundalini rising" },
+    { phase: "Mastery", sessions: 1, focus: "Union in sahasrara" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The 10 mudras and 3 bandhas",
+      required: ["ritual.opening-bow", "teach.shiva.overview", "wisdom.shiva.3"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The three knots",
+      required: ["wisdom.shiva.3", "teach.granthi.overview", "bandha.mula"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Pierce the knots with kundalini",
+      required: ["wisdom.shiva.3", "bandha.maha", "granthi.brahma", "breath.coherent-5-5"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "Kundalini rising through sushumna",
+      required: ["wisdom.shiva.3", "granthi.vishnu", "granthi.rudra", "meditation.body-as-anchor"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Mastery",
+      intent: "Union in sahasrara",
+      required: ["ritual.opening-bow", "wisdom.shiva.3", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 35 },
+  ],
+};

@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SPANDA_KARIKA_DEEP: SessionProgramV3 = {
+  id: "spanda-karika-deep",
+  title: "Spanda Karika · The Divine Pulsation Deep Dive",
+  subtitle: "The subtle creative vibration that manifests, sustains, dissolves",
+  description:
+    "A 5-session arc through the Spanda Karika: the philosophical text on spanda (divine vibration) as the essence of Kashmir Shaivism. Spanda is the heartbeat of consciousness.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["spanda", "kashmir-shaivism", "karika", "vibration", "philosophy"],
+  icon: "Activity",
+  coverGradient: "from-indigo-600 to-purple-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The philosophy of spanda" },
+    { phase: "Practice", sessions: 1, focus: "The vibration of consciousness" },
+    { phase: "Integration", sessions: 1, focus: "Spanda in all states" },
+    { phase: "Mastery", sessions: 1, focus: "The heart of spanda" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Spanda — the heartbeat of consciousness",
+      required: ["ritual.opening-bow", "teach.spanda", "wisdom.spanda.1"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The vibration between breaths",
+      required: ["wisdom.spanda.1", "wisdom.shivasutra.3", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Rest in the subtle pulsation",
+      required: ["wisdom.spanda.1", "meditation.choiceless-awareness", "witness.gap-between-thoughts"],
+      targetMinutes: 35 },
+    { index: 4, phase: "Integration",
+      intent: "Spanda in waking, dream, deep sleep",
+      required: ["wisdom.spanda.1", "teach.spanda", "contemplation.sit-with-question"],
+      targetMinutes: 25 },
+    { index: 5, phase: "Mastery",
+      intent: "The heart of spanda — Shiva's creative power",
+      required: ["ritual.opening-bow", "wisdom.spanda.1", "wisdom.shivasutra.4", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 40 },
+  ],
+};

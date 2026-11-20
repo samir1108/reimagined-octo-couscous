@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const BHUTA_PRITHVI: SessionProgramV3 = {
+  id: "bhuta-prithvi",
+  title: "Bhuta · Prithvi",
+  subtitle: "Earth element — stability, form, groundedness",
+  description:
+    "A 5-session arc through Prithvi (Earth): the solid principle of stability, structure, and the sense of smell.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["bhuta", "prithvi", "earth", "grounding"],
+  icon: "Mountain",
+  coverGradient: "from-amber-700 to-brown-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The solid principle" },
+    { phase: "Practice", sessions: 1, focus: "Feel the earth" },
+    { phase: "Integration", sessions: 1, focus: "Grounded in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The stable witness" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The principle of solidity",
+      required: ["ritual.opening-bow", "teach.bhuta.overview", "wisdom.bhuta.prithvi"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the structure of the body",
+      required: ["wisdom.bhuta.prithvi", "body.head-to-toe", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Ground into the earth",
+      required: ["wisdom.bhuta.prithvi", "observe.5-senses", "mudra.prithvi"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Grounded in the day",
+      required: ["wisdom.bhuta.prithvi", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The stable witness",
+      required: ["ritual.opening-bow", "wisdom.bhuta.prithvi", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

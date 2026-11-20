@@ -1,0 +1,123 @@
+-- ============================================================
+-- DEEP TIER — batch 3
+-- ------------------------------------------------------------
+-- The bank had 8 deep ingredients against 130 total. These open at day 21-45
+-- and give advanced users something other than beginner content. No breath
+-- retention is used: only long sits, inquiry, contemplation and silence.
+-- ============================================================
+
+INSERT INTO public.content_ingredients
+  (id, kind, label, summary, body, practice, depth, step_kind, params,
+   paths, dimensions, loop_families, min_journey_day, status, safety_class)
+VALUES
+('deep:p1', 'practice', 'Long Witness',
+ 'Twenty minutes of watching without managing. The length is the teacher here.',
+ 'Twenty minutes of watching without managing. The length is the teacher here: what you cannot sit through is the practice.',
+ 'witness', 'deep', 'witness', '{"durationSeconds":1200,"object":"whatever arises"}',
+ ARRAY['raja','jnana'], ARRAY['awareness','thought'], ARRAY['MEN','NAR','EGO'], 21, 'draft', 'B'),
+('deep:p2', 'practice', 'Unbroken Noticing',
+ 'Fifteen minutes of noticing, returning without commentary each time attention leaves.',
+ 'Fifteen minutes of noticing, returning without commentary each time attention leaves. The returning is the whole practice.',
+ 'witness', 'deep', 'witness', '{"durationSeconds":900,"object":"attention itself"}',
+ ARRAY['raja'], ARRAY['awareness'], ARRAY['COG','MEN','ATT'], 21, 'draft', 'B'),
+('deep:p3', 'practice', 'Who Am I, Again',
+ 'Sit with the question and refuse the first three answers. They are memory, not seeing.',
+ 'Sit with the question and refuse the first three answers. They are memory, not seeing; stay with the not-knowing.',
+ 'inquiry', 'deep', 'practice', '{"family":"self_inquiry","level":3,"exercise":"who am i, without an answer","durationSeconds":600}',
+ ARRAY['jnana'], ARRAY['thought','awareness'], ARRAY['IDN','EGO','SPR'], 30, 'draft', 'B'),
+('deep:p4', 'practice', 'Neti Neti Sit',
+ 'Not this, not this. Remove one label at a time and watch what does not leave.',
+ 'Not this, not this. Remove one label at a time, patiently, and watch what does not leave when they are gone.',
+ 'inquiry', 'deep', 'practice', '{"family":"self_inquiry","level":3,"exercise":"neti neti","durationSeconds":600}',
+ ARRAY['jnana'], ARRAY['thought','awareness'], ARRAY['IDN','BLF','EGO'], 30, 'draft', 'B'),
+('deep:p5', 'practice', 'Body as Space',
+ 'Ten minutes feeling the body as space rather than as an object with edges.',
+ 'Ten minutes feeling the body as space rather than as an object with edges. Do not visualise it; feel what is already true.',
+ 'body', 'deep', 'practice', '{"family":"body_awareness","level":3,"exercise":"body as space","durationSeconds":600}',
+ ARRAY['raja'], ARRAY['body','awareness'], ARRAY['BOD','ENR','IDN'], 21, 'draft', 'B'),
+('deep:p6', 'practice', 'Silence Sit',
+ 'Fifteen minutes with no technique, no counting, no object. Only what is already here.',
+ 'Fifteen minutes with no technique, no counting and no object. Only what is already here, allowed to be here.',
+ 'witness', 'deep', 'witness', '{"durationSeconds":900,"object":"nothing in particular"}',
+ ARRAY['jnana','raja'], ARRAY['awareness'], ARRAY['SPR','MEN','CTL'], 30, 'draft', 'B'),
+('deep:p7', 'practice', 'Contemplation on Change',
+ 'Take one thing you call permanent and watch it change for ten minutes.',
+ 'Take one thing you call permanent and watch it change for ten minutes. Do not conclude anything; just keep watching.',
+ 'contemplation', 'deep', 'practice', '{"family":"jnana","level":3,"exercise":"watch one thing change","durationSeconds":600}',
+ ARRAY['jnana'], ARRAY['thought','awareness'], ARRAY['ATT','CTL','BLF'], 30, 'draft', 'B'),
+('deep:p8', 'practice', 'Empty Hands Sit',
+ 'Sit with nothing to gain from it. If a goal appears, set it down and continue.',
+ 'Sit with nothing to gain from it. If a goal appears, set it down and continue. This is the practice that has no result.',
+ 'witness', 'deep', 'witness', '{"durationSeconds":720,"object":"nothing to attain"}',
+ ARRAY['jnana'], ARRAY['awareness'], ARRAY['SPR','MOT','EGO'], 45, 'draft', 'B'),
+
+('deep:k1', 'knowledge', 'The Seeker Is the Sought',
+ 'The one looking for peace is the only thing standing between you and it.',
+ 'The one looking for peace is the only thing standing between you and it. Stop the search for one honest minute and see what is already present.',
+ NULL, 'deep', 'wisdom-read', '{"passage":"The one looking for peace is the only thing standing between you and it. Stop the search for one honest minute and see what is already present.","source":"original"}',
+ ARRAY['jnana'], ARRAY['awareness'], ARRAY['SPR','MOT','PUR'], 30, 'draft', 'B'),
+('deep:k2', 'knowledge', 'Nothing to Attain',
+ 'Any state you can attain, you can lose. What is left when attainment stops being the point?',
+ 'Any state you can attain, you can lose. What is left when attainment stops being the point is not another state.',
+ NULL, 'deep', 'wisdom-read', '{"passage":"Any state you can attain, you can lose. What is left when attainment stops being the point is not another state.","source":"original"}',
+ ARRAY['jnana'], ARRAY['awareness'], ARRAY['SPR','EGO','PRD'], 21, 'draft', 'B'),
+('deep:k3', 'knowledge', 'The Cost of Certainty',
+ 'Certainty is comfortable and expensive. It closes the question before it has been lived.',
+ 'Certainty is comfortable and expensive. It closes the question before it has been lived, and the closed question stops teaching you.',
+ NULL, 'deep', 'wisdom-read', '{"passage":"Certainty is comfortable and expensive. It closes the question before it has been lived, and the closed question stops teaching you.","source":"original"}',
+ ARRAY['jnana'], ARRAY['thought'], ARRAY['BLF','EGO','LRN'], 30, 'draft', 'B'),
+('deep:k4', 'knowledge', 'Effort and Grace',
+ 'Effort gets you to the door. It does not open it, and it cannot be proud of that.',
+ 'Effort gets you to the door. It does not open it, and it cannot be proud of that. Something you did not arrange does the rest.',
+ NULL, 'deep', 'wisdom-read', '{"passage":"Effort gets you to the door. It does not open it, and it cannot be proud of that. Something you did not arrange does the rest.","source":"original"}',
+ ARRAY['karma','jnana'], ARRAY['action','awareness'], ARRAY['PRD','MOT','SPR'], 45, 'draft', 'B'),
+('deep:k5', 'knowledge', 'The Ordinary Is It',
+ 'Washing a cup with full attention is not a metaphor for practice. It is practice.',
+ 'Washing a cup with full attention is not a metaphor for practice. It is practice, and the search for something more special is the delay.',
+ NULL, 'deep', 'wisdom-read', '{"passage":"Washing a cup with full attention is not a metaphor for practice. It is practice, and the search for something more special is the delay.","source":"original"}',
+ ARRAY['karma','raja'], ARRAY['action','awareness'], ARRAY['BHV','HAB','SPR'], 30, 'draft', 'B'),
+('deep:k6', 'knowledge', 'Death as Adviser',
+ 'Remembering that this ends rearranges what matters without making anything urgent.',
+ 'Remembering that this ends rearranges what matters without making anything urgent. It removes the trivial, not the gentle.',
+ NULL, 'deep', 'wisdom-read', '{"passage":"Remembering that this ends rearranges what matters without making anything urgent. It removes the trivial, not the gentle.","source":"original"}',
+ ARRAY['jnana'], ARRAY['awareness','emotion'], ARRAY['PUR','ATT','DEC'], 45, 'draft', 'B'),
+
+('deep:r1', 'reflection', 'When You Stop Improving',
+ 'What remains when you stop trying to improve yourself?',
+ 'What remains when you stop trying to improve yourself, even for a moment?',
+ NULL, 'deep', 'journal', '{"questions":["What remains when you stop trying to improve yourself, even for a moment?"],"minChars":40}',
+ ARRAY['jnana'], ARRAY['awareness'], ARRAY['SPR','EGO'], 21, 'draft', 'B'),
+('deep:r2', 'reflection', 'What You Pretend Not to Know',
+ 'What are you still pretending not to know?',
+ 'What are you still pretending not to know, and what would change if you said it plainly?',
+ NULL, 'deep', 'journal', '{"questions":["What are you still pretending not to know, and what would change if you said it plainly?"],"minChars":40}',
+ ARRAY['jnana'], ARRAY['awareness','thought'], ARRAY['AVD','BLF'], 21, 'draft', 'B'),
+('deep:r3', 'reflection', 'If No One Ever Knew',
+ 'What would you do if no one would ever know you had done it?',
+ 'What would you do if no one would ever know you had done it, and what would you stop doing?',
+ NULL, 'deep', 'journal', '{"questions":["What would you do if no one would ever know you had done it, and what would you stop doing?"],"minChars":40}',
+ ARRAY['karma','jnana'], ARRAY['action','emotion'], ARRAY['EGO','VAL','SRV'], 21, 'draft', 'B'),
+('deep:r4', 'reflection', 'Which Certainty Cost You',
+ 'Which certainty has cost you the most?',
+ 'Which certainty has cost you the most, and what did it make impossible to see?',
+ NULL, 'deep', 'journal', '{"questions":["Which certainty has cost you the most, and what did it make impossible to see?"],"minChars":40}',
+ ARRAY['jnana'], ARRAY['thought'], ARRAY['BLF','EGO'], 30, 'draft', 'B'),
+('deep:r5', 'reflection', 'What Asks to Be Left Alone',
+ 'What in you is asking to be left alone?',
+ 'What in you is asking to be left alone, and what happens when you stop interfering with it?',
+ NULL, 'deep', 'journal', '{"questions":["What in you is asking to be left alone, and what happens when you stop interfering with it?"],"minChars":40}',
+ ARRAY['jnana'], ARRAY['awareness','emotion'], ARRAY['CTL','ATT','EMO'], 21, 'draft', 'B'),
+('deep:r6', 'reflection', 'Where You Wait for Permission',
+ 'Where are you still waiting for permission to live as you are?',
+ 'Where are you still waiting for permission to live as you are, and from whom?',
+ NULL, 'deep', 'journal', '{"questions":["Where are you still waiting for permission to live as you are, and from whom?"],"minChars":40}',
+ ARRAY['jnana'], ARRAY['emotion','awareness'], ARRAY['VAL','IDN','EGO'], 30, 'draft', 'B')
+ON CONFLICT (id) DO NOTHING;
+
+UPDATE public.content_ingredients
+SET status = 'published', updated_at = now()
+WHERE id LIKE 'deep:%'
+  AND status = 'draft'
+  AND NOT EXISTS (
+    SELECT 1 FROM public.validate_content_ingredient(content_ingredients.id)
+  );

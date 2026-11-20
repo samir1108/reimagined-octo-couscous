@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "2a5784a3-5bac-4bd1-be97-1730492de867",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/walking-meditation/4.mp3",
+  "r2_key": "a/v1/b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5/2a5784a3-5bac-4bd1-be97-1730492de867/walking-meditation-4.mp3",
+  "original_filename": "walking-meditation-4.mp3",
+  "size": 88320,
+  "content_type": "audio/mpeg",
+  "created_at": "2026-07-12T01:45:51Z",
+  "bucket": "media",
+  "storage_path": "src/assets/narration/walking-meditation/4.mp3",
+  "migrated_at": "2026-10-20T11:29:10.138Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/2a5784a3-5bac-4bd1-be97-1730492de867/walking-meditation-4.mp3"
+}

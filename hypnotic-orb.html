@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hypnotic ORB - 100+ Themes</title>
+<style>
+:root { --bg:#000; --fg:#fff; --gold:#d9a84a; }
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--fg);font-family:system-ui,sans-serif;overflow:hidden}
+canvas{display:block;width:100%;height:100%}
+#ui{position:fixed;inset:0;pointer-events:none;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:24px}
+#ui>*{pointer-events:auto}
+.title{font-size:clamp(1.2rem,3vw,2rem);font-weight:300;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);text-shadow:0 0 30px rgba(217,168,74,.5);animation:breathe 4s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.02)}}
+.controls{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{padding:10px 20px;border:1px solid rgba(217,168,74,.4);background:rgba(217,168,74,.1);color:var(--gold);border-radius:99px;font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:.2s}
+.btn:hover{background:rgba(217,168,74,.2);box-shadow:0 0 20px rgba(217,168,74,.3);transform:translateY(-2px)}
+.btn.active{background:var(--gold);color:#000;box-shadow:0 0 20px rgba(217,168,74,.5)}
+.slider-wrap{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}
+input[type=range]{width:160px;accent-color:var(--gold)}
+.theme-name{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(217,168,74,.6);text-align:center;max-width:300px}
+.stats{font-size:.65rem;letter-spacing:.1em;color:rgba(217,168,74,.4);font-family:monospace}
+    .session-overlay{position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s ease}
+    .session-overlay.active{opacity:1;pointer-events:auto}
+    .session-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;max-width:1400px;width:90%;max-height:70vh;overflow:auto;padding:20px}
+    .session-card{background:linear-gradient(145deg,rgba(217,168,74,.1),rgba(217,168,74,.02));border:1px solid rgba(217,168,74,.2);border-radius:16px;padding:20px;transition:transform .2s,box-shadow .2s,border-color .2s;cursor:pointer;position:relative;overflow:hidden}
+    .session-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(217,168,74,.15),transparent);opacity:0;transition:opacity .3s}
+    .session-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(217,168,74,.2);border-color:rgba(217,168,74,.5)}
+    .session-card:hover::before{opacity:1}
+    .session-card h3{font-size:.9rem;font-weight:600;color:var(--gold);margin-bottom:8px;letter-spacing:.05em;text-transform:uppercase}
+    .session-card p{font-size:.75rem;color:rgba(255,255,255,.6);line-height:1.5;margin-bottom:12px}
+    .session-card .tags{display:flex;gap:6px;flex-wrap:wrap}
+    .session-card .tag{font-size:.55rem;padding:3px 8px;background:rgba(217,168,74,.15);border:1px solid rgba(217,168,74,.3);border-radius:99px;color:var(--gold);text-transform:uppercase;letter-spacing:.05em}
+    .session-card .orb-mini{width:48px;height:48px;border-radius:50%;background:conic-gradient(from 0deg,var(--gold),#fff,var(--gold));position:absolute;top:16px;right:16px;opacity:.3;animation:spin 8s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .close-hint{position:absolute;bottom:30px;color:rgba(217,168,74,.4);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;animation:breathe 2s ease-in-out infinite}
+    @media(prefers-reduced-motion:reduce){.title{animation:none}.session-card .orb-mini{animation:none}}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="ui">
+  <div class="title">Hypnotic ORB</div>
+  <div class="controls">
+    <button class="btn" id="btnHypnotic">Hypnotic</button>
+    <button class="btn" id="btnCycle">Cycle Themes</button>
+    <button class="btn" id="btnPause">Pause</button>
+    <button class="btn" id="btnSound">Sound</button>
+  </div>
+  <div class="theme-name" id="themeName">Generating 100+ themes...</div>
+  <div class="stats" id="stats">FPS: -- | Particles: -- | Theme: --</div>
+</div>
+
+<div class="session-overlay" id="sessionOverlay">
+  <div class="session-grid" id="sessionGrid"></div>
+  <div class="close-hint">Release to close · Click card to select</div>
+</div>
+
+<script>
+// ============================================================
+// 100+ HYPNOTIC COLOR THEMES GENERATOR
+// ============================================================
+
+function hslToRgb(h, s, l) {
+  h /= 360; s /= 100; l /= 100;
+  const k = n => (n + h * 12) % 12;
+  const a = s * Math.min(l, 1 - l);
+  const f = n => l - a * Math.max(-1, Math.min(k(n) - 3, Math.min(9 - k(n), 1)));
+  return [f(0), f(8), f(4)];
+}
+
+function rgbToHex(r, g, b) {
+  return '#' + [r, g, b].map(x => Math.round(x * 255).toString(16).padStart(2, '0')).join('');
+}
+
+function generateThemes(count = 128) {
+  const themes = [];
+  const baseHues = [0, 30, 60, 120, 180, 210, 240, 270, 300, 330];
+  
+  for (let i = 0; i < count; i++) {
+    const type = i % 8;
+    let colors = [];
+    let name = '';
+    
+    switch (type) {
+      case 0: // Monochromatic deep
+        const h0 = baseHues[i % baseHues.length] + (Math.random() - 0.5) * 20;
+        colors = [
+          hslToRgb(h0, 85, 15),
+          hslToRgb(h0, 75, 35),
+          hslToRgb(h0, 65, 55),
+          hslToRgb(h0, 55, 75)
+        ];
+        name = 'Mono ' + ['Crimson','Amber','Gold','Emerald','Cyan','Azure','Violet','Magenta'][i % 8];
+        break;
+        
+      case 1: // Complementary vibration
+        const h1 = Math.random() * 360;
+        colors = [
+          hslToRgb(h1, 90, 25),
+          hslToRgb((h1 + 180) % 360, 90, 30),
+          hslToRgb(h1, 70, 50),
+          hslToRgb((h1 + 180) % 360, 70, 65)
+        ];
+        name = 'Vibe ' + Math.floor(i/8 + 1);
+        break;
+        
+      case 2: // Triadic hypnosis
+        const h2 = Math.random() * 360;
+        colors = [
+          hslToRgb(h2, 80, 20),
+          hslToRgb((h2 + 120) % 360, 80, 35),
+          hslToRgb((h2 + 240) % 360, 80, 50),
+          hslToRgb(h2, 60, 70)
+        ];
+        name = 'Triad ' + Math.floor(i/8 + 1);
+        break;
+        
+      case 3: // Golden ratio spiral
+        const h3 = (i * 137.508) % 360;
+        colors = [
+          hslToRgb(h3, 85, 18),
+          hslToRgb((h3 + 137.5) % 360, 80, 38),
+          hslToRgb((h3 + 275) % 360, 75, 55),
+          hslToRgb((h3 + 412.5) % 360, 70, 72)
+        ];
+        name = 'Phi ' + Math.floor(i/8 + 1);
+        break;
+        
+      case 4: // Neon dreams
+        const h4 = Math.random() * 360;
+        colors = [
+          hslToRgb(h4, 100, 10),
+          hslToRgb((h4 + 60) % 360, 100, 25),
+          hslToRgb((h4 + 150) % 360, 100, 45),
+          hslToRgb((h4 + 280) % 360, 100, 60)
+        ];
+        name = 'Neon ' + Math.floor(i/8 + 1);
+        break;
+        
+      case 5: // Pastel trance
+        const h5 = Math.random() * 360;
+        colors = [
+          hslToRgb(h5, 40, 30),
+          hslToRgb((h5 + 90) % 360, 45, 45),
+          hslToRgb((h5 + 180) % 360, 50, 60),
+          hslToRgb((h5 + 270) % 360, 55, 75)
+        ];
+        name = 'Trance ' + Math.floor(i/8 + 1);
+        break;
+        
+      case 6: // Fire & Ice
+        const h6 = i % 2 === 0 ? 15 + Math.random() * 30 : 195 + Math.random() * 30;
+        colors = [
+          hslToRgb(h6, 95, 12),
+          hslToRgb(h6, 90, 28),
+          hslToRgb((h6 + 180) % 360, 85, 45),
+          hslToRgb((h6 + 180) % 360, 80, 65)
+        ];
+        name = (i % 2 === 0 ? 'Fire' : 'Ice') + ' ' + Math.floor(i/8 + 1);
+        break;
+        
+      case 7: // Cosmic noise
+        colors = Array.from({length: 4}, (_, k) => {
+          const h = (i * 51.3 + k * 89.7) % 360;
+          return hslToRgb(h, 60 + Math.random() * 30, 20 + k * 15 + Math.random() * 10);
+        });
+        name = 'Cosmic ' + Math.floor(i/8 + 1);
+        break;
+    }
+    
+    themes.push({
+      name,
+      colors: colors.map(c => ({r:c[0],g:c[1],b:c[2]})),
+      speed: 0.5 + Math.random() * 1.5,
+      breath: [3 + Math.random() * 3, Math.random() * 2, 3 + Math.random() * 4, Math.random() * 2],
+      hypnotic: type < 4
+    });
+  }
+  return themes;
+}
+
+const THEMES = generateThemes(128);
+
+// ============================================================
+// WEBGL ORB RENDERER
+// ============================================================
+
+const VS = `precision highp float;
+attribute vec4 aSeed;
+uniform float uT,uAsp,uPulse,uPx,uS,uB,uPS,uWT,uWA,uIn,uCh,uScan,uHue,uSpec,uGold,uSq,uGal,uFw,uMT;
+uniform vec2 uM,uPtr,uG,uT1,uT2;uniform vec3 uHit,uC0,uC1,uC2,uC3;
+varying vec3 vC;
+float h(vec3 p){p=fract(p*.3183099+.1);p*=17.;return fract(p.x*p.y*p.z*(p.x+p.y+p.z));}
+float n3(vec3 x){vec3 i=floor(x),f=fract(x);f=f*f*(3.-2.*f);return mix(mix(mix(h(i),h(i+vec3(1,0,0)),f.x),mix(h(i+vec3(0,1,0)),h(i+vec3(1,1,0)),f.x),f.y),mix(mix(h(i+vec3(0,0,1)),h(i+vec3(1,0,1)),f.x),mix(h(i+vec3(0,1,1)),h(i+vec3(1,1,1)),f.x),f.y),f.z);}
+float fbm(vec3 p){float a=.5,s=0.;for(int i=0;i<3;i++){s+=a*n3(p);p=p*2.03+vec3(1.7,9.2,3.1);a*=.5;}return s;}
+float rg(vec3 x){return pow(1.-abs(2.*n3(x)-1.),8.);}
+vec3 hue(vec3 c,float a){vec3 k=vec3(.57735);float ca=cos(a),sa=sin(a);return c*ca+cross(k,c)*sa+k*dot(k,c)*(1.-ca);}
+mat3 ry(float a){float c=cos(a),s=sin(a);return mat3(c,0.,-s,0.,1.,0.,s,0.,c);}
+mat3 rx(float a){float c=cos(a),s=sin(a);return mat3(1.,0.,0.,0.,c,s,0.,-s,c);}
+vec3 grad(float x){x=abs(fract(x)*2.-1.)*3.;return x<1.?mix(uC0,uC1,x):(x<2.?mix(uC1,uC2,x-1.):mix(uC2,uC3,x-2.));}
+void main(){
+ vec3 d=aSeed.xyz;float k=aSeed.w;float r2=fract(k*17.13),r3=fract(k*91.7),t=uT;
+ float R=(.52+.105*uB+uPulse*.04)*uIn*(1.-uCh*.12);
+ vec3 q=d*1.5+vec3(0.,0.,t*.12);float n=fbm(q+fbm(q*1.3-t*.1));
+ mat3 M=rx(uM.y)*ry(uM.x);vec3 p,col;float I,sz=1.+1.6*r3,br=.8+.5*uB;
+ if(k<.34){float rad=R*.66*pow(r2,.4)*(.55+.9*n);float rd=rg(d*3.+t*.2);p=ry(t*1.1/(.3+rad*3.)+n*1.2)*(d*rad);col=grad(fbm(d*2.+t*.1+n)*1.5+t*.03);col+=pow(max(1.-rad/(R*.66),0.),3.)*.08;I=.17*br*(1.+rd*4.);}
+ else if(k<.88){float tend=step(.93,r3);float rd=rg(d*2.8+vec3(0.,0.,t*.15)+n*.8);float rad=R*(1.+.03*(n-.5))+tend*(.02+.12*n*r2)+rd*.025+uPulse*.02*sin(d.y*6.-t*5.);p=d*rad;float rim=pow(1.-abs((M*d).z),2.5);col=mix(grad(n*1.4+d.y*.3+t*.04),uC3,rim);col=mix(col,grad(n*3.+t*.08),tend*.8);col=mix(col,mix(vec3(.8,.95,1.),vec3(1.,.92,.66),uGold),rd*.5);col=mix(col,.5+.5*cos(6.2832*(rim*1.1+n*.6+t*.03+vec3(0.,.33,.67))),.35*rim*min(1.,uSpec*3.));I=.22*(.45+rim*1.6)*(1.-tend*.4)*br*(1.+rd*5.);}
+ else if(k<.95){float life=fract(t*.12*(1.+uPulse)+r2);vec3 dn=normalize(d+(vec3(n,fbm(q+3.),fbm(q+7.))-.5)*.8);p=dn*R*(.25+life*1.6);p.xy+=uG*life*life*.18;col=grad(life*.8+t*.04);I=.5*(1.-life)*(1.-life)*br;sz=.7+r3*.8;}
+ else{float id=floor(r2*6.);float a=t*(.5+id*.13)*(1.+uPulse)+id*1.047-r3*.9;float orb=R*(1.15+.12*sin(t*.7+id));vec3 o=rx(id*.55+.3*sin(t*.2+id))*(ry(id*1.3)*vec3(cos(a)*orb,0.,sin(a)*orb));p=o+(vec3(n,fbm(q+3.),fbm(q+7.))-.5)*.04*r3;col=mix(grad(id*.17+t*.05),vec3(1.),pow(1.-r3,6.)*.6);I=.9*pow(1.-r3,2.5)*br;sz=.8+(1.-r3)*2.2;}
+ if(uGal>0.){float rr=pow(fract(k*7.31),.55);float an=rr*4.2+mod(floor(k*23.7),3.)*2.094+n*.4+t*.05;vec3 gp=vec3(cos(an)*rr,sin(an)*rr*.35,(fract(k*3.7)-.5)*.3)*R*1.9;p=mix(p,gp,uGal);}
+ if(uMT>.5){vec2 mid=(uT1+uT2)*.5;vec2 ax2=normalize(uT2-uT1+vec2(1e-4));float al=dot(p.xy,ax2),pe=dot(p.xy,vec2(-ax2.y,ax2.x));p.xy=mix(p.xy,mid+ax2*al*1.25+vec2(-ax2.y,ax2.x)*pe*.75,uMT);}
+ p*=(1.-uSq*.22);if(uFw>0.){p*=1.+uFw*1.5;I*=1.+uFw;col=mix(col,vec3(1.,.9,.6),uFw*.7);}
+ vec3 pv=M*p;vec3 nv=normalize(pv+vec3(1e-4));vec3 dv=pv-vec3(uPtr,.45);float dl=length(dv);float f=exp(-dl*dl*7.)*uPS;pv+=dv/(dl+.001)*f*.12+vec3(-dv.y,dv.x,0.)*f*.5;
+ float w=0.;if(uWT<6.){float ang=acos(clamp(dot(nv,uHit),-1.,1.));w=exp(-pow((ang-uWT*2.2)*4.5,2.))*exp(-uWT*.7)*uWA;}
+ pv*=1.+w*.16;col=mix(col,vec3(1.),w*.35);I*=1.+w*2.5;I*=1.+pow(.5+.5*sin(t*2.5+k*631.),24.)*3.;I*=.65+.55*smoothstep(-.6,.6,pv.z);
+ float sw=exp(-pow((pv.y/max(R,.05)-uScan)*7.,2.));I*=1.+sw*2.5+uCh*.45;col=mix(col,mix(vec3(.75,.95,1.),vec3(1.,.9,.6),uGold),sw*.55);
+ col=hue(col,uHue+uSpec*(n*4.+d.y*1.5)+uSpec*k*.6);vC=col*I*uIn*(1.+uPulse*1.5);gl_Position=vec4(pv.x*uS/uAsp,pv.y*uS,pv.z*.3,1.-pv.z*.12);gl_PointSize=uPx*sz*(1.+pv.z*.25);
+}`;
+
+const FS = `precision mediump float;varying vec3 vC;void main(){float d=length(gl_PointCoord-.5);float a=smoothstep(.5,.02,d)*.82+smoothstep(.13,0.,d)*.55;vec3 c=vC*a;gl_FragColor=vec4(c,max(c.r,max(c.g,c.b)));}`;
+
+const HVS = `attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+const HFS = `precision highp float;uniform vec2 uRes;uniform float uS,uB,uPulse,uT,uR,uCh,uHue,uSpec,uRing;uniform vec3 uC0,uC1,uC2,uC3;${'float h(vec3 p){p=fract(p*.3183099+.1);p*=17.;return fract(p.x*p.y*p.z*(p.x+p.y+p.z));}float n3(vec3 x){vec3 i=floor(x),f=fract(x);f=f*f*(3.-2.*f);return mix(mix(mix(h(i),h(i+vec3(1,0,0)),f.x),mix(h(i+vec3(0,1,0)),h(i+vec3(1,1,0)),f.x),f.y),mix(mix(h(i+vec3(0,0,1)),h(i+vec3(1,0,1)),f.x),mix(h(i+vec3(0,1,1)),h(i+vec3(1,1,1)),f.x),f.y),f.z);}float fbm(vec3 p){float a=.5,s=0.;for(int i=0;i<3;i++){s+=a*n3(p);p=p*2.03+vec3(1.7,9.2,3.1);a*=.5;}return s;}vec3 hue(vec3 c,float a){vec3 k=vec3(.57735);float ca=cos(a),sa=sin(a);return c*ca+cross(k,c)*sa+k*dot(k,c)*(1.-ca);}mat3 ry(float a){float c=cos(a),s=sin(a);return mat3(c,0.,-s,0.,1.,0.,s,0.,c);}mat3 rx(float a){float c=cos(a),s=sin(a);return mat3(1.,0.,0.,0.,c,s,0.,-s,c);}'}
+void main(){vec2 uv=(gl_FragCoord.xy*2.-uRes)/uRes.y/uS;float r=length(uv);float g=exp(-max(r-.4,0.)*2.4);vec3 c=hue(mix(uC2,uC3,.45),uHue)*g*g*.22*(.8+.5*uB+uPulse);float ring=smoothstep(.014,0.,abs(r-uRing*1.45))*(1.-uRing);c+=(uC3*.9+uC1*.35)*ring*(.55+.45*uB+uPulse*.5);float ang=fract(atan(uv.x,uv.y)/6.2831853),on=smoothstep(0.,.1,uCh);c+=uC3*smoothstep(.006,0.,abs(r-.84))*on*(.12+1.1*step(ang,uCh)+exp(-pow((ang-uCh)*40.,2.)))*.55;c+=uC2*smoothstep(.005,0.,abs(r-.9))*on*step(.5,fract(ang*72.))*.18;if(r<uR){float z=sqrt(uR*uR-r*r)/uR;vec3 s=vec3(uv/uR,z);vec3 p=s*1.8,q=vec3(fbm(p+uT*.1),fbm(p+vec3(5.2,1.3,2.8)-uT*.08),fbm(p+vec3(2.1,7.7,4.4)));float f=fbm(p+2.2*q);float fr=pow(1.-z,2.2);vec3 body=hue(mix(uC0,uC1,f*1.5+uT*.03)*(.014+.1*f*f)+uC3*fr*.14+uC1*pow(z,4.)*.03,uHue+uSpec*(f*4.+s.y*1.5));c+=body*smoothstep(uR,uR-.02,r)*(.8+.6*uB);}gl_FragColor=vec4(c,max(c.r,max(c.g,c.b)));}`;
+
+const QVS = `attribute vec2 p;varying vec2 vUv;void main(){vUv=p*.5+.5;gl_Position=vec4(p,0.,1.);}`;
+const BFS = `precision mediump float;uniform sampler2D uTex;uniform vec2 uDir;varying vec2 vUv;void main(){vec4 s=texture2D(uTex,vUv)*.227027;s+=(texture2D(uTex,vUv+uDir*1.3846)+texture2D(uTex,vUv-uDir*1.3846))*.316216;s+=(texture2D(uTex,vUv+uDir*3.2308)+texture2D(uTex,vUv-uDir*3.2308))*.070270;gl_FragColor=s;}`;
+const CFS = `precision highp float;uniform sampler2D uS,uBl;uniform float uT,uBloomK;varying vec2 vUv;float hh(vec2 p){return fract(sin(dot(p,vec2(12.9898,78.233)))*43758.5453);}void main(){vec2 c0=vUv-.5;float ab=.005*dot(c0,c0);vec4 a=vec4(texture2D(uS,vUv+c0*ab).r,texture2D(uS,vUv).g,texture2D(uS,vUv-c0*ab).b,texture2D(uS,vUv).a);vec4 b=texture2D(uBl,vUv);vec3 c=1.-(1.-a.rgb)*(1.-b.rgb*uBloomK);c+=(a.rgb-b.rgb)*.35*step(.01,a.a);float l=dot(c,vec3(.3,.59,.11));c=mix(vec3(l),c,1.3);c+=(hh(gl_FragCoord.xy+uT)-.5)*.02*step(.02,c.r+c.g+c.b);c=clamp(c,0.,1.);gl_FragColor=vec4(c,max(max(c.r,max(c.g,c.b)),max(a.a,b.a*uBloomK)));}`;
+
+// ============================================================
+// ORB ENGINE
+// ============================================================
+
+class HypnoticOrb {
+  constructor(canvas) {
+    this.canvas = canvas;
+    this.gl = canvas.getContext('webgl', {antialias:false, alpha:true, premultipliedAlpha:true});
+    if (!this.gl) throw new Error('WebGL not supported');
+    
+    this.programs = {};
+    this.uniforms = {};
+    this.buffers = {};
+    this.targets = {};
+    this.particleCount = 180000;
+    
+    this.state = {
+      time: 0, clock: 0, pulse: 0, B: 0, charge: 0, wt: 99, wa: 1,
+      hit: [0,0,1], asp: 1, sc: 0.9, intro: 0, gal: 0, galT: -1,
+      ringT: 9, scan: 9, scanClock: 0, hueClock: 0, specClock: 0.03,
+      goldClock: 1, mtS: 0, sqS: 0, fw: 0, glitch: 0,
+      hover: [0,0], ptr: [0,0], inside: 0, ps: 0,
+      down: false, hold: 0, vx: 0, vy: 0, ax: 0, ay: 0,
+      ay: 0, ax: 0, lx: 0, ly: 0
+    };
+    
+    this.pal = [[0,0,0],[0,0,0],[0,0,0],[0,0,0]];
+    this.themeIndex = 0;
+    this.hypnoticMode = true;
+    this.cycleMode = false;
+    this.paused = false;
+    this.soundOn = false;
+    this.audioCtx = null;
+    this.lastTime = performance.now();
+    this.frameCount = 0;
+    this.fps = 60;
+    this.sessionOverlay = document.getElementById('sessionOverlay');
+    this.sessionGrid = document.getElementById('sessionGrid');
+    this.holdThreshold = 0.65;
+    this.overlayShown = false;
+    this.sessions = this.generateSessions(100);
+    
+    this.init();
+  }
+  
+  init() {
+    this.compileShaders();
+    this.createGeometry();
+    this.resize();
+    this.setupInteraction();
+    this.setupResize();
+    requestAnimationFrame(this.frame.bind(this));
+  }
+  
+  compileShaders() {
+    const gl = this.gl;
+    const create = (vs, fs) => {
+      const p = gl.createProgram();
+      [gl.VERTEX_SHADER, gl.FRAGMENT_SHADER].forEach((type, i) => {
+        const s = gl.createShader(type);
+        gl.shaderSource(s, i === 0 ? vs : fs);
+        gl.compileShader(s);
+        if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(s));
+        gl.attachShader(p, s);
+      });
+      gl.linkProgram(p);
+      if (!gl.getProgramParameter(p, gl.LINK_STATUS)) console.error(gl.getProgramInfoLog(p));
+      return p;
+    };
+    
+    this.programs.particle = create(VS, FS);
+    this.programs.halo = create(HVS, HFS);
+    this.programs.blur = create(QVS, BFS);
+    this.programs.composite = create(QVS, CFS);
+    
+    const getUni = (prog, names) => {
+      const u = {};
+      names.forEach(n => u[n] = gl.getUniformLocation(prog, n));
+      return u;
+    };
+    
+    this.uniforms.particle = getUni(this.programs.particle, [
+      'uT','uAsp','uPulse','uPx','uS','uB','uPS','uWT','uWA','uIn','uCh','uScan',
+      'uG','uHue','uSpec','uGold','uSq','uGal','uFw','uMT','uM','uPtr','uT1','uT2',
+      'uHit','uC0','uC1','uC2','uC3'
+    ]);
+    this.uniforms.halo = getUni(this.programs.halo, [
+      'uRes','uS','uB','uPulse','uT','uR','uCh','uHue','uSpec','uRing',
+      'uC0','uC1','uC2','uC3'
+    ]);
+    this.uniforms.blur = getUni(this.programs.blur, ['uTex','uDir']);
+    this.uniforms.composite = getUni(this.programs.composite, ['uS','uBl','uT','uBloomK']);
+  }
+  
+  createGeometry() {
+    const gl = this.gl;
+    const N = this.particleCount;
+    const seed = new Float32Array(N * 4);
+    for (let i = 0; i < N; i++) {
+      const z = Math.random() * 2 - 1;
+      const ph = Math.random() * 6.2831853;
+      const s = Math.sqrt(1 - z * z);
+      seed.set([s * Math.cos(ph), z, s * Math.sin(ph), Math.random()], i * 4);
+    }
+    this.buffers.particle = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.buffers.particle);
+    gl.bufferData(gl.ARRAY_BUFFER, seed, gl.STATIC_DRAW);
+    
+    this.buffers.quad = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.buffers.quad);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
+  }
+  
+  resize() {
+    const gl = this.gl;
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    const w = Math.floor(this.canvas.clientWidth * dpr);
+    const h = Math.floor(this.canvas.clientHeight * dpr);
+    
+    if (this.canvas.width !== w || this.canvas.height !== h) {
+      this.canvas.width = w; this.canvas.height = h;
+      gl.viewport(0, 0, w, h);
+      
+      const bw = Math.max(2, w >> 2), bh = Math.max(2, h >> 2);
+      this.createTarget('main', w, h);
+      this.createTarget('blurA', bw, bh);
+      this.createTarget('blurB', bw, bh);
+    }
+  }
+  
+  createTarget(name, w, h) {
+    const gl = this.gl;
+    const tex = gl.createTexture();
+    const fb = gl.createFramebuffer();
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, w, h, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, fb);
+    gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, tex, 0);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    this.targets[name] = {texture: tex, framebuffer: fb, w, h};
+  }
+  
+  setupResize() {
+    new ResizeObserver(() => this.resize()).observe(this.canvas);
+    window.addEventListener('resize', () => this.resize());
+  }
+  
+  setupInteraction() {
+    const toNdc = (x, y) => {
+      const r = this.canvas.getBoundingClientRect();
+      return [(x - r.left) / r.width * 2 - 1, -((y - r.top) / r.height * 2 - 1)];
+    };
+    
+    const impact = (x, y, amp) => {
+      const Rv = 0.58;
+      const hx = (x * this.state.asp) / this.state.sc / Rv;
+      const hy = y / this.state.sc / Rv;
+      const l = hx * hx + hy * hy;
+      this.state.hit = l > 1
+        ? [hx / Math.sqrt(l), hy / Math.sqrt(l), 0]
+        : [hx, hy, Math.sqrt(1 - l)];
+      this.state.wt = 0; this.state.wa = amp;
+      if (amp > 0.9) this.state.pulse = 1;
+    };
+    
+    const down = (e) => {
+      if (this.paused) return;
+      this.state.down = true;
+      this.state.hold = 0;
+      const p = toNdc(e.clientX, e.clientY);
+      this.ensureAudio();
+      impact(p[0], p[1], 0.8);
+      this.state.lx = e.clientX; this.state.ly = e.clientY;
+    };
+    
+    const up = () => {
+      if (this.state.hold > this.holdThreshold) {
+        this.state.pulse = 1;
+        this.showSessionOverlay();
+      }
+      this.state.down = false;
+    };
+    
+    const move = (e) => {
+      const p = toNdc(e.clientX, e.clientY);
+      this.state.hover = p;
+      this.state.inside = (Math.abs(p[0]) < 1.05 && Math.abs(p[1]) < 1.05) ? 1 : 0;
+      if (this.state.down) {
+        this.state.vy = Math.max(-7, Math.min(7, this.state.vy + (e.clientX - this.state.lx) * 0.012));
+        this.state.vx = Math.max(-7, Math.min(7, this.state.vx + (e.clientY - this.state.ly) * 0.012));
+      }
+      this.state.lx = e.clientX; this.state.ly = e.clientY;
+    };
+    
+    this.canvas.addEventListener('mousedown', down);
+    this.canvas.addEventListener('touchstart', e => down(e.touches[0]), {passive:true});
+    window.addEventListener('mouseup', up);
+    window.addEventListener('touchend', up);
+    window.addEventListener('mousemove', move);
+    window.addEventListener('touchmove', e => move(e.touches[0]), {passive:true});
+  }
+  
+  ensureAudio() {
+    if (this.audioCtx) return;
+    const C = window.AudioContext || window.webkitAudioContext;
+    if (!C) return;
+    this.audioCtx = new C();
+    this.master = this.audioCtx.createGain();
+    this.master.gain.value = 0.3;
+    this.master.connect(this.audioCtx.destination);
+  }
+  
+  playTone(freq, dur, type='sine') {
+    if (!this.audioCtx || !this.soundOn) return;
+    const o = this.audioCtx.createOscillator();
+    const g = this.audioCtx.createGain();
+    o.type = type; o.frequency.value = freq;
+    g.gain.setValueAtTime(0, this.audioCtx.currentTime);
+    g.gain.linearRampToValueAtTime(0.1, this.audioCtx.currentTime + 0.01);
+    g.gain.exponentialRampToValueAtTime(0.001, this.audioCtx.currentTime + dur);
+    o.connect(g); g.connect(this.master); o.start();
+    o.stop(this.audioCtx.currentTime + dur + 0.1);
+  }
+  
+  getCurrentTheme() {
+    return THEMES[this.themeIndex % THEMES.length];
+  }
+  
+  cycleTheme() {
+    this.themeIndex = (this.themeIndex + 1) % THEMES.length;
+    this.playTone(220 * Math.pow(2, (this.themeIndex % 12) / 12), 0.3);
+  }
+
+  generateSessions(count) {
+    const topics = ['Consciousness', 'Meditation', 'Neural Sync', 'Biofeedback', 'Quantum Mind', 'Lucid Dreaming', 'Focus States', 'Deep Work', 'Creative Flow', 'Transcendence'];
+    const modes = ['Guided', 'Unguided', 'Binaural', 'Isochronic', 'Breathwork', 'Visualization', 'Mantra', 'Movement', 'Sound Bath', 'Silence'];
+    const durations = ['5 min', '10 min', '15 min', '20 min', '30 min', '45 min', '60 min', '90 min'];
+    const teachers = ['Aria', 'Kai', 'Maya', 'Jonah', 'Luna', 'Sage', 'Nova', 'Zen', 'Echo', 'Pulse'];
+    
+    const sessions = [];
+    for (let i = 0; i < count; i++) {
+      const topic = topics[i % topics.length];
+      const mode = modes[i % modes.length];
+      const duration = durations[i % durations.length];
+      const teacher = teachers[i % teachers.length];
+      const level = ['Beginner', 'Intermediate', 'Advanced'][i % 3];
+      
+      sessions.push({
+        id: i + 1,
+        title: `${topic} ${mode}`,
+        description: `A ${duration.toLowerCase()} ${mode.toLowerCase()} journey into ${topic.toLowerCase()} with ${teacher}.`,
+        tags: [topic, mode, level, duration],
+        teacher,
+        duration,
+        level
+      });
+    }
+    return sessions;
+  }
+
+  renderSessionCards() {
+    this.sessionGrid.innerHTML = this.sessions.map(s => `
+      <div class="session-card" data-id="${s.id}">
+        <div class="orb-mini"></div>
+        <h3>${s.title}</h3>
+        <p>${s.description}</p>
+        <div class="tags">
+          ${s.tags.map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
+      </div>
+    `).join('');
+    
+    this.sessionGrid.querySelectorAll('.session-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const id = parseInt(card.dataset.id);
+        this.selectSession(id);
+      });
+    });
+  }
+
+  selectSession(id) {
+    const session = this.sessions.find(s => s.id === id);
+    if (session) {
+      this.playTone(440 * Math.pow(2, (id % 12) / 12), 0.2);
+      console.log('Selected session:', session);
+      this.hideSessionOverlay();
+    }
+  }
+
+  showSessionOverlay() {
+    if (this.overlayShown) return;
+    this.renderSessionCards();
+    this.sessionOverlay.classList.add('active');
+    this.overlayShown = true;
+    this.paused = true;
+    document.getElementById('btnPause').classList.add('active');
+    document.getElementById('btnPause').textContent = 'Paused';
+  }
+
+  hideSessionOverlay() {
+    if (!this.overlayShown) return;
+    this.sessionOverlay.classList.remove('active');
+    this.overlayShown = false;
+    this.paused = false;
+    document.getElementById('btnPause').classList.remove('active');
+    document.getElementById('btnPause').textContent = 'Pause';
+  }
+  
+  lerpPal(target, k) {
+    for (let i = 0; i < 4; i++) {
+      for (let c = 0; c < 3; c++) {
+        this.pal[i][c] += (target[i][c] - this.pal[i][c]) * k;
+      }
+    }
+  }
+  
+  frame(now) {
+    if (this.destroyed) return;
+    const dt = Math.min(0.05, (now - this.lastTime) / 1000);
+    this.lastTime = now;
+    requestAnimationFrame(this.frame.bind(this));
+    
+    if (this.paused) { this.render(); return; }
+    
+    this.frameCount++;
+    if (this.frameCount % 60 === 0) {
+      this.fps = Math.round(1 / dt);
+      document.getElementById('stats').textContent = 
+        `FPS: ${this.fps} | Particles: ${this.particleCount.toLocaleString()} | Theme: ${this.themeIndex + 1}/${THEMES.length}`;
+    }
+    
+    const theme = this.getCurrentTheme();
+    this.state.time += dt * theme.speed;
+    this.state.clock += dt;
+    this.state.wt += dt;
+    
+    // Hypnotic rapid color shifting
+    if (this.hypnoticMode) {
+      this.state.hueClock += dt * 0.8 * theme.speed;
+      this.state.specClock += dt * 0.4;
+      this.state.goldClock += dt * 0.6;
+    }
+    
+    // Auto cycle themes
+    if (this.cycleMode) {
+      this.state.scanClock += dt;
+      if (this.state.scanClock > 8 + Math.random() * 4) {
+        this.cycleTheme();
+        this.state.scanClock = 0;
+      }
+    }
+    
+    // Mouse follow smoothing
+    this.state.ptr[0] += (this.state.hover[0] * this.state.asp / this.state.sc - this.state.ptr[0]) * Math.min(dt * 10, 1);
+    this.state.ptr[1] += (this.state.hover[1] / this.state.sc - this.state.ptr[1]) * Math.min(dt * 10, 1);
+    
+    // Physics
+    this.state.vy *= Math.exp(-dt * 1.1);
+    this.state.ay += (this.state.vy + 0.1) * dt;
+    this.state.vx += ((this.state.hover[1] * 0.35 * this.state.inside - this.state.ax) * 6 - this.state.vx * 2.5) * dt;
+    this.state.ax += this.state.vx * dt;
+    this.state.ps += (this.state.inside - this.state.ps) * Math.min(dt * 4, 1);
+    this.state.asp = this.canvas.width / this.canvas.height;
+    this.state.sc = Math.min(0.95, this.state.asp * 0.8);
+    
+    // Hold / charge
+    if (this.state.down) {
+      this.state.hold += dt;
+      this.state.charge = Math.min(1, Math.max(0, (this.state.hold - 0.25) / 2));
+    } else {
+      this.state.charge = Math.max(0, this.state.charge - dt * 1.6);
+    }
+    this.state.pulse = Math.max(0, this.state.pulse - dt * 0.7);
+    this.state.glitch = Math.max(0, this.state.glitch - dt * 3);
+    
+    // Breath cycle
+    const cyc = theme.breath.reduce((a,b)=>a+b,0);
+    const tc = this.state.clock % cyc;
+    let acc = 0, ph = 0;
+    while (ph < 3 && tc >= acc + theme.breath[ph]) { acc += theme.breath[ph]; ph++; }
+    const pd = theme.breath[ph] || 1;
+    const pt = Math.min(tc - acc, pd);
+    const p = pd ? pt / pd : 0;
+    const bt = ph === 0 ? p*p*p*(p*(p*6-15)+10) : ph === 1 ? 1 : ph === 2 ? 1 - p*p*p*(p*(p*6-15)+10) : 0;
+    this.state.B += (bt - this.state.B) * (1 - Math.exp(-dt * 3.2));
+    
+    // Scan line
+    this.state.scanClock += dt;
+    const sp = (this.state.scanClock % 9) / 2.4;
+    this.state.scan = sp < 1 ? -1.2 + 2.4 * sp : 9;
+    
+    // Intro
+    this.state.intro = Math.min(1, this.state.intro + dt / 2.4);
+    
+    // Palette interpolation
+    const kc = Math.min(dt * (this.hypnoticMode ? 3 : 2), 1);
+    this.lerpPal(theme.colors, kc);
+    
+    // Update UI
+    document.getElementById('themeName').textContent = theme.name;
+    
+    this.render();
+  }
+  
+  render() {
+    const gl = this.gl;
+    if (!this.targets.main) return;
+    
+    const S = this.targets.main;
+    const A = this.targets.blurA;
+    const B = this.targets.blurB;
+    const inn = 1 - Math.pow(1 - this.state.intro, 3);
+    const pl = this.state.pulse * this.state.pulse;
+    const Rr = (0.52 + 0.105 * this.state.B + pl * 0.04) * inn * (1 - this.state.charge * 0.12);
+    
+    gl.bindFramebuffer(gl.FRAMEBUFFER, S.framebuffer);
+    gl.viewport(0, 0, S.w, S.h);
+    gl.clearColor(0,0,0,0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+    gl.enable(gl.BLEND);
+    gl.blendFuncSeparate(gl.ONE, gl.ONE_MINUS_SRC_COLOR, gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+    
+    // Halo
+    gl.useProgram(this.programs.halo);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.buffers.quad);
+    const hl = gl.getAttribLocation(this.programs.halo, 'p');
+    gl.enableVertexAttribArray(hl);
+    gl.vertexAttribPointer(hl, 2, gl.FLOAT, false, 0, 0);
+    const hu = this.uniforms.halo;
+    gl.uniform2f(hu.uRes, S.w, S.h);
+    gl.uniform1f(hu.uS, this.state.sc);
+    gl.uniform1f(hu.uB, this.state.B);
+    gl.uniform1f(hu.uPulse, pl);
+    gl.uniform1f(hu.uT, this.state.time);
+    gl.uniform1f(hu.uR, Rr);
+    gl.uniform1f(hu.uCh, this.state.charge);
+    gl.uniform1f(hu.uHue, this.state.hueClock);
+    gl.uniform1f(hu.uSpec, this.state.specClock);
+    gl.uniform1f(hu.uRing, Math.min(1, this.state.ringT / 2.5));
+    gl.uniform3fv(hu.uC0, this.pal[0]);
+    gl.uniform3fv(hu.uC1, this.pal[1]);
+    gl.uniform3fv(hu.uC2, this.pal[2]);
+    gl.uniform3fv(hu.uC3, this.pal[3]);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    gl.disableVertexAttribArray(hl);
+    
+    // Particles
+    gl.useProgram(this.programs.particle);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.buffers.particle);
+    const pa = gl.getAttribLocation(this.programs.particle, 'aSeed');
+    gl.enableVertexAttribArray(pa);
+    gl.vertexAttribPointer(pa, 4, gl.FLOAT, false, 0, 0);
+    const pu = this.uniforms.particle;
+    gl.uniform1f(pu.uIn, inn);
+    gl.uniform1f(pu.uGold, this.state.goldClock);
+    gl.uniform1f(pu.uHue, this.state.hueClock);
+    gl.uniform1f(pu.uSpec, this.state.specClock);
+    gl.uniform1f(pu.uCh, this.state.charge);
+    gl.uniform1f(pu.uScan, this.state.scan);
+    gl.uniform1f(pu.uSq, this.state.sqS);
+    gl.uniform1f(pu.uGal, this.state.gal);
+    gl.uniform1f(pu.uFw, this.state.fw);
+    gl.uniform1f(pu.uMT, this.state.mtS);
+    gl.uniform2f(pu.uT1, 0, 0);
+    gl.uniform2f(pu.uT2, 0, 0);
+    gl.uniform2f(pu.uG, 0, -1);
+    gl.uniform1f(pu.uT, this.state.time);
+    gl.uniform1f(pu.uAsp, this.state.asp);
+    gl.uniform1f(pu.uPulse, pl);
+    gl.uniform1f(pu.uS, this.state.sc);
+    gl.uniform1f(pu.uB, this.state.B);
+    gl.uniform1f(pu.uPS, this.state.ps);
+    gl.uniform1f(pu.uWT, this.state.wt);
+    gl.uniform1f(pu.uWA, this.state.wa);
+    gl.uniform2f(pu.uM, this.state.ay, this.state.ax);
+    gl.uniform2f(pu.uPtr, this.state.ptr[0], this.state.ptr[1]);
+    gl.uniform3fv(pu.uHit, this.state.hit);
+    gl.uniform3fv(pu.uC0, this.pal[0]);
+    gl.uniform3fv(pu.uC1, this.pal[1]);
+    gl.uniform3fv(pu.uC2, this.pal[2]);
+    gl.uniform3fv(pu.uC3, this.pal[3]);
+    const px = (1.2 * this.canvas.height / 1080) * Math.max(0.8, 1);
+    gl.uniform1f(pu.uPx, px);
+    gl.uniform1f(pu.uBloom, 0);
+    gl.drawArrays(gl.POINTS, 0, this.particleCount);
+    gl.disableVertexAttribArray(pa);
+    
+    // Post-process blur
+    gl.disable(gl.BLEND);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.buffers.quad);
+    const ql = gl.getAttribLocation(this.programs.blur, 'p');
+    gl.enableVertexAttribArray(ql);
+    gl.vertexAttribPointer(ql, 2, gl.FLOAT, false, 0, 0);
+    
+    const blur = (src, dst, dx, dy) => {
+      const bu = this.uniforms.blur;
+      gl.useProgram(this.programs.blur);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, dst.framebuffer);
+      gl.viewport(0, 0, dst.w, dst.h);
+      gl.activeTexture(gl.TEXTURE0);
+      gl.bindTexture(gl.TEXTURE_2D, src.texture);
+      gl.uniform1i(bu.uTex, 0);
+      gl.uniform2f(bu.uDir, (dx * 1.6) / dst.w, (dy * 1.6) / dst.h);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+    };
+    
+    blur(S, A, 1, 0);
+    blur(A, B, 0, 1);
+    blur(B, A, 1.8, 0);
+    blur(A, B, 0, 1.8);
+    
+    gl.disableVertexAttribArray(ql);
+    
+    // Composite
+    gl.activeTexture(gl.TEXTURE1);
+    gl.bindTexture(gl.TEXTURE_2D, B.texture);
+    gl.activeTexture(gl.TEXTURE0);
+    
+    gl.useProgram(this.programs.composite);
+    gl.bindBuffer(gl.ARRAY_BUFFER, this.buffers.quad);
+    const cl = gl.getAttribLocation(this.programs.composite, 'p');
+    gl.enableVertexAttribArray(cl);
+    gl.vertexAttribPointer(cl, 2, gl.FLOAT, false, 0, 0);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    gl.viewport(0, 0, this.canvas.width, this.canvas.height);
+    const cu = this.uniforms.composite;
+    gl.uniform1i(cu.uS, 0);
+    gl.uniform1i(cu.uBl, 1);
+    gl.uniform1f(cu.uT, this.state.time);
+    gl.uniform1f(cu.uBloomK, 0.62);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    gl.disableVertexAttribArray(cl);
+  }
+}
+
+// ============================================================
+// INIT
+// ============================================================
+
+const canvas = document.getElementById('c');
+const orb = new HypnoticOrb(canvas);
+
+// UI Controls
+document.getElementById('btnHypnotic').addEventListener('click', e => {
+  orb.hypnoticMode = !orb.hypnoticMode;
+  e.target.classList.toggle('active', orb.hypnoticMode);
+  e.target.textContent = orb.hypnoticMode ? 'Hypnotic' : 'Normal';
+});
+
+document.getElementById('btnCycle').addEventListener('click', e => {
+  orb.cycleMode = !orb.cycleMode;
+  e.target.classList.toggle('active', orb.cycleMode);
+  e.target.textContent = orb.cycleMode ? 'Cycling...' : 'Cycle Themes';
+});
+
+document.getElementById('btnPause').addEventListener('click', e => {
+  orb.paused = !orb.paused;
+  e.target.classList.toggle('active', orb.paused);
+  e.target.textContent = orb.paused ? 'Paused' : 'Pause';
+});
+
+document.getElementById('btnSound').addEventListener('click', e => {
+  orb.soundOn = !orb.soundOn;
+  e.target.classList.toggle('active', orb.soundOn);
+  e.target.textContent = orb.soundOn ? 'Sound On' : 'Sound Off';
+  if (orb.soundOn) orb.ensureAudio();
+});
+
+// Keyboard shortcuts
+  window.addEventListener('keydown', e => {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.key === 'Escape' && orb.overlayShown) {
+      orb.hideSessionOverlay();
+      return;
+    }
+    switch(e.key) {
+      case 'h': case 'H': document.getElementById('btnHypnotic').click(); break;
+      case 'c': case 'C': document.getElementById('btnCycle').click(); break;
+      case ' ': e.preventDefault(); document.getElementById('btnPause').click(); break;
+      case 's': case 'S': document.getElementById('btnSound').click(); break;
+      case 'ArrowRight': orb.cycleTheme(); break;
+      case 'ArrowLeft': orb.themeIndex = (orb.themeIndex - 1 + THEMES.length) % THEMES.length; break;
+    }
+  });
+
+  // Click overlay background to close
+  document.getElementById('sessionOverlay').addEventListener('click', e => {
+    if (e.target === e.currentTarget) orb.hideSessionOverlay();
+  });
+
+// Prevent context menu on canvas
+canvas.addEventListener('contextmenu', e => e.preventDefault());
+
+console.log('Hypnotic ORB initialized with', THEMES.length, 'themes');
+console.log('Keys: H=Hypnotic, C=Cycle, Space=Pause, S=Sound, Arrows=Change Theme');
+</script>
+</body>
+</html>

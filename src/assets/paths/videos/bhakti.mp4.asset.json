@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "6d9b193a-34b1-4a33-9ba3-5826d710647c",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/paths/videos/bhakti.mp4",
+  "original_filename": "bhakti.mp4",
+  "size": 11565213,
+  "created_at": "2026-07-16T18:33:57Z",
+  "bucket": "media",
+  "storage_path": "src/assets/paths/videos/bhakti.mp4",
+  "migrated_at": "2026-10-20T11:29:58.594Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/6d9b193a-34b1-4a33-9ba3-5826d710647c/bhakti.mp4"
+}

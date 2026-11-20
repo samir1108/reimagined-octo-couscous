@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "1e072f9d-6cbe-4476-b55c-d3797447a9bb",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/so-hum/6.mp3",
+  "r2_key": "a/v1/b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5/1e072f9d-6cbe-4476-b55c-d3797447a9bb/so-hum-6.mp3",
+  "original_filename": "so-hum-6.mp3",
+  "size": 78336,
+  "content_type": "audio/mpeg",
+  "created_at": "2026-07-12T01:43:16Z",
+  "bucket": "media",
+  "storage_path": "src/assets/narration/so-hum/6.mp3",
+  "migrated_at": "2026-10-20T11:28:24.543Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/1e072f9d-6cbe-4476-b55c-d3797447a9bb/so-hum-6.mp3"
+}

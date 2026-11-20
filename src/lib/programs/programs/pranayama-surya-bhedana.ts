@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_SURYA_BHEDANA: SessionProgramV3 = {
+  id: "pranayama-surya-bhedana",
+  title: "Pranayama · Surya Bhedana",
+  subtitle: "Right-nostril solar breath — heat and awaken",
+  description:
+    "A 5-session arc through Surya Bhedana: the right-nostril breath that awakens prana and ignites the inner fire.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["pranayama", "surya-bhedana", "solar", "heat"],
+  icon: "Sun",
+  coverGradient: "from-orange-500 to-red-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The solar channel" },
+    { phase: "Practice", sessions: 1, focus: "The right-nostril inhale" },
+    { phase: "Integration", sessions: 1, focus: "Heat in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The awakened fire" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The solar channel",
+      required: ["ritual.opening-bow", "teach.pranayama.nadis", "breath.box-4-4-4-4"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the right nostril",
+      required: ["shatkarma.neti", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Surya Bhedana rounds",
+      required: ["pranayama.surya-bhedana", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Heat in the day",
+      required: ["pranayama.surya-bhedana", "micro-act.stretch-once", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The awakened fire",
+      required: ["ritual.opening-bow", "pranayama.surya-bhedana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

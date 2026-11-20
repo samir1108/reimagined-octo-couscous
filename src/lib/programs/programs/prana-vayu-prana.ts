@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANA_VAYU_PRANA: SessionProgramV3 = {
+  id: "prana-vayu-prana",
+  title: "Prana Vayu · Prana",
+  subtitle: "The upward-moving life-force — breath of the heart",
+  description:
+    "A 5-session arc through Prana Vayu: the upward-moving energy that governs inhalation, the heart, and the chest.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["prana", "vayu", "upward", "heart"],
+  icon: "Heart",
+  coverGradient: "from-red-500 to-pink-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The upward breath" },
+    { phase: "Practice", sessions: 1, focus: "Expand the chest" },
+    { phase: "Integration", sessions: 1, focus: "Upward in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The upward current" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The wind that rises",
+      required: ["ritual.opening-bow", "teach.prana.overview", "wisdom.prana.prana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the heart space",
+      required: ["wisdom.prana.prana", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Expand the chest on inhale",
+      required: ["wisdom.prana.prana", "breath.box-4-4-4-4", "meditation.body-as-anchor"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Upward in the day",
+      required: ["wisdom.prana.prana", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The upward current",
+      required: ["ritual.opening-bow", "wisdom.prana.prana", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

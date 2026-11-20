@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRATYABHIJNA_RECOGNITION: SessionProgramV3 = {
+  id: "pratyabhijna-recognition",
+  title: "Pratyabhijna · Philosophy of Recognition",
+  subtitle: "You are already that which you seek — remember",
+  description:
+    "A 5-session arc through Pratyabhijna: the philosophy that you are already Shiva, already free. The problem is not bondage but forgetfulness. The path is recognition, not becoming.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["pratyabhijna", "kashmir-shaivism", "recognition", "philosophy"],
+  icon: "Brain",
+  coverGradient: "from-pink-600 to-rose-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "You are already free" },
+    { phase: "Practice", sessions: 1, focus: "The three upayas" },
+    { phase: "Integration", sessions: 1, focus: "Grace as catalyst" },
+    { phase: "Mastery", sessions: 1, focus: "The recognized self" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The problem is forgetfulness, not bondage",
+      required: ["ritual.opening-bow", "teach.kashmir.recognition", "wisdom.shivasutra.1"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The three paths of recognition",
+      required: ["wisdom.shivasutra.1", "teach.shivasutra.overview", "teach.kashmir.recognition"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "Shambhava, Shakta, Anava — three upayas",
+      required: ["wisdom.shivasutra.1", "teach.kashmir.recognition", "meditation.open-awareness"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Grace (shaktipata) as the catalyst",
+      required: ["wisdom.shivasutra.3", "teach.kashmir.recognition", "voice-journal.gratitude-3"],
+      targetMinutes: 22 },
+    { index: 5, phase: "Mastery",
+      intent: "The recognized self",
+      required: ["ritual.opening-bow", "wisdom.shivasutra.1", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

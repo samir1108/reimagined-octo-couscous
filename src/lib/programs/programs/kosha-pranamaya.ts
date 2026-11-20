@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KOSHA_PRANAMAYA: SessionProgramV3 = {
+  id: "kosha-pranamaya",
+  title: "Kosha · Pranamaya",
+  subtitle: "The energy sheath — the vital breath",
+  description:
+    "A 5-session arc through the Pranamaya Kosha: the vital energy body that animates the physical form.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["kosha", "pranamaya", "energy", "prana"],
+  icon: "Wind",
+  coverGradient: "from-teal-500 to-cyan-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The vital energy" },
+    { phase: "Practice", sessions: 1, focus: "Feel the prana" },
+    { phase: "Integration", sessions: 1, focus: "Energy in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The witness of energy" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The energy that animates",
+      required: ["ritual.opening-bow", "teach.kosha.overview", "wisdom.kosha.pranamaya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Breath as the bridge",
+      required: ["wisdom.kosha.pranamaya", "breath.nadi-shodhana", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Feel the energy body",
+      required: ["wisdom.kosha.pranamaya", "meditation.body-as-anchor", "observe.three-sounds"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Energy in the day",
+      required: ["wisdom.kosha.pranamaya", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The witness of energy",
+      required: ["ritual.opening-bow", "wisdom.kosha.pranamaya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

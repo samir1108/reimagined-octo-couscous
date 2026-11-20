@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const YANTRA_YOGA: SessionProgramV3 = {
+  id: "yantra-yoga",
+  title: "Yantra Yoga",
+  subtitle: "Sacred geometry — form as the doorway to formless",
+  description:
+    "A 5-session arc through Yantra Yoga: gazing at the yantra (Sri Yantra, etc.) to internalize the form and find the formless center.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["yantra", "geometry", "sri-yantra", "trataka"],
+  icon: "Hexagon",
+  coverGradient: "from-red-600 to-pink-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The geometry" },
+    { phase: "Practice", sessions: 1, focus: "Gaze at the bindu" },
+    { phase: "Integration", sessions: 1, focus: "Internalize the form" },
+    { phase: "Mastery", sessions: 1, focus: "The formless center" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The map and the territory",
+      required: ["ritual.opening-bow", "teach.mantra.yantra", "observe.one-object"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the gaze",
+      required: ["wisdom.hatha.nada", "concentration.candle-trataka", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The yantra gaze",
+      required: ["mantra.yantra", "breath.coherent-5-5", "meditation.body-as-anchor"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Internalize the form",
+      required: ["mantra.yantra", "micro-act.stretch-once", "contemplation.sit-with-question"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The formless center",
+      required: ["ritual.opening-bow", "mantra.yantra", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.gitignore
+README.md
+*.md
+!index.html
+.env
+.env.*
+!.env.example
+bun.lockb
+bun.lock
+package-lock.json
+/*.mp4

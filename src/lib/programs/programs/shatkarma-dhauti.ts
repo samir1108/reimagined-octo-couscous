@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHATKARMA_DHAUTI: SessionProgramV3 = {
+  id: "shatkarma-dhauti",
+  title: "Shatkarma · Dhauti",
+  subtitle: "Digestive cleansing — advanced, guided only",
+  description:
+    "A 5-session arc through Dhauti: the deep digestive cleansing. Advanced — always under a teacher's guidance.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["shatkarma", "dhauti", "cleansing", "advanced"],
+  icon: "Flame",
+  coverGradient: "from-orange-600 to-red-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Preparation & safety" },
+    { phase: "Practice", sessions: 1, focus: "The cleansing" },
+    { phase: "Integration", sessions: 1, focus: "Digestive fire" },
+    { phase: "Mastery", sessions: 1, focus: "The purified gut" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The deep cleansings",
+      required: ["ritual.opening-bow", "teach.shatkarma", "wisdom.gheranda.shatkarma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Safety first — find a teacher",
+      required: ["wisdom.gheranda.1", "contemplation.sit-with-question", "journal.what-am-i-avoiding"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Dhauti (guided)",
+      required: ["shatkarma.dhauti", "breath.coherent-5-5", "somatic.jaw-release"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Kindle the digestive fire",
+      required: ["shatkarma.dhauti", "micro-act.no-phone-meal", "voice-journal.speak-it-out"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The purified vessel",
+      required: ["ritual.opening-bow", "shatkarma.dhauti", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

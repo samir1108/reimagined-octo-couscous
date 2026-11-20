@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_PRATILOMA: SessionProgramV3 = {
+  id: "pranayama-pratiloma",
+  title: "Pranayama · Pratiloma",
+  subtitle: "Reversed breath — opposite nostril, balanced hemispheres",
+  description:
+    "A 5-session arc through Pratiloma: the reversed breath that balances the hemispheres and deepens the nadis.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["pranayama", "pratiloma", "reversed", "balance"],
+  icon: "Shuffle",
+  coverGradient: "from-violet-500 to-purple-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The reversed breath" },
+    { phase: "Practice", sessions: 1, focus: "Opposite nostril" },
+    { phase: "Integration", sessions: 1, focus: "Balanced mind" },
+    { phase: "Mastery", sessions: 1, focus: "The balanced hemispheres" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The breath that reverses",
+      required: ["ritual.opening-bow", "teach.pranayama.nadis", "breath.nadi-shodhana"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Balance the hemispheres",
+      required: ["shatkarma.neti", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Pratiloma rounds",
+      required: ["pranayama.pratiloma", "breath.nadi-shodhana", "body.micro-scan-60s"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Balanced mind",
+      required: ["pranayama.pratiloma", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The balanced hemispheres",
+      required: ["ritual.opening-bow", "pranayama.pratiloma", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

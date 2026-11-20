@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHIVA_SAMHITA_CH2: SessionProgramV3 = {
+  id: "shiva-samhita-ch2",
+  title: "Shiva Samhita · Chapter 2",
+  subtitle: "The nadis and the 10 kumbhakas — master the breath, master the mind",
+  description:
+    "A 5-session arc through Chapter 2: the 72,000 nadis, the three main channels, and the 10 breath retentions that awaken kundalini.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["shiva-samhita", "nadis", "kumbhaka", "pranayama"],
+  icon: "Wind",
+  coverGradient: "from-blue-600 to-indigo-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The subtle anatomy" },
+    { phase: "Practice", sessions: 1, focus: "The 10 kumbhakas" },
+    { phase: "Integration", sessions: 1, focus: "Breath as bridge" },
+    { phase: "Mastery", sessions: 1, focus: "The awakened current" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The river of nadis",
+      required: ["ritual.opening-bow", "teach.shiva.overview", "wisdom.shiva.2"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The three main channels",
+      required: ["wisdom.shiva.2", "breath.nadi-shodhana", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The 10 kumbhakas",
+      required: ["wisdom.shiva.2", "pranayama.surya-bhedana", "pranayama.bhramari", "pranayama.viloma"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "Breath as the bridge to Shiva",
+      required: ["wisdom.shiva.2", "teach.shiva.overview", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The awakened current",
+      required: ["ritual.opening-bow", "wisdom.shiva.2", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

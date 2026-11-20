@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    
+    <title>ConsciousOS — Yogic Companion</title>
+    <meta name="description" content="ConsciousOS — Yogic Companion. Your intelligent companion for consciousness, designed to support daily practice, self-inquiry, and spiritual evolution." />
+    <meta name="author" content="ConsciousOS" />
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#d9a84a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ConsciousOS" />
+    <link rel="apple-touch-icon" href="/pwa-icon-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f2e8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    
+    
+    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/579cd8ca-499a-41f8-a8d7-ec18929aff56">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@consciousos" />
+    
+    
+    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/579cd8ca-499a-41f8-a8d7-ec18929aff56">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="ConsciousOS — Yogic Companion">
+  <meta name="twitter:title" content="ConsciousOS — Yogic Companion">
+  <meta property="og:description" content="ConsciousOS — Yogic Companion. Your intelligent companion for consciousness, designed to support daily practice, self-inquiry, and spiritual evolution.">
+  <meta name="twitter:description" content="ConsciousOS — Yogic Companion. Your intelligent companion for consciousness, designed to support daily practice, self-inquiry, and spiritual evolution.">
+
+    <!-- Fonts: loaded here rather than via a CSS @import so the request is
+         discovered during preload scan and runs in parallel with the app
+         CSS instead of one round trip behind it. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+    />
+
+    <!-- Supabase is called on boot (session restore + realtime), so warm
+         the connection before the app JS has even parsed. -->
+    <link rel="preconnect" href="https://vvnihmweqmbmytpggqcw.supabase.co" crossorigin />
+    <link rel="dns-prefetch" href="https://vvnihmweqmbmytpggqcw.supabase.co" />
+
+    <!-- Boot splash: painted before any JS, removed on first React paint.
+         Keeps time-to-first-paint off the JS parse path and avoids the white
+         flash that used to show until the bundle executed. -->
+    <link rel="preload" as="image" href="/brand-logo.png" fetchpriority="high" />
+    <script>
+      (function () {
+        var mode = "dark";
+        try {
+          mode = localStorage.getItem("hope-app-mode") === "light" ? "light" : "dark";
+        } catch (e) {}
+        document.documentElement.setAttribute("data-boot-mode", mode);
+      })();
+    </script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: hsl(240 14% 3%);
+      }
+      html[data-boot-mode="light"] body {
+        background: hsl(40 42% 96%);
+      }
+      #boot-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 2147483647;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        background: hsl(240 14% 3%);
+        color: hsl(40 30% 93%);
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+        transition: opacity 340ms ease;
+        will-change: opacity;
+      }
+      html[data-boot-mode="light"] #boot-splash {
+        background: hsl(40 42% 96%);
+        color: hsl(28 32% 10%);
+      }
+      #boot-splash[data-leaving="true"] {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #boot-splash .boot-logo {
+        width: 84px;
+        height: 84px;
+        object-fit: contain;
+        animation: boot-logo-in 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+      #boot-splash .boot-wordmark {
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 20px;
+        letter-spacing: 0.08em;
+      }
+      #boot-splash .boot-tagline {
+        font-size: 11px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        opacity: 0.55;
+      }
+      @keyframes boot-logo-in {
+        from {
+          opacity: 0;
+          transform: scale(0.94);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #boot-splash .boot-logo {
+          animation: none;
+        }
+      }
+    </style>
+</head>
+  <body>
+    <div id="boot-splash" role="status" aria-live="polite" aria-label="Starting ConsciousOS">
+      <img class="boot-logo" src="/brand-logo.png" alt="" aria-hidden="true" width="84" height="84" />
+      <div class="boot-wordmark">ConsciousOS</div>
+      <div class="boot-tagline">Yogic Companion</div>
+    </div>
+    <script>
+      (function () {
+        var failsafe = function () {
+          var el = document.getElementById("boot-splash");
+          if (!el || el.getAttribute("data-leaving") === "true") return;
+          el.setAttribute("data-leaving", "true");
+          window.setTimeout(function () {
+            el.remove();
+          }, 400);
+        };
+        window.__dismissBootSplash = failsafe;
+        window.setTimeout(failsafe, 12000);
+      })();
+    </script>
+    <div id="root"></div>
+    <!-- Earliest possible error visibility: catches failures that happen before
+         the app bundle (and its observability module) has loaded. These handlers
+         are handed off and removed once initObservability() takes over. -->
+    <script>
+      (function () {
+        var relayError = function (event) {
+          if (event.target && event.target !== window && event.target.tagName) {
+            console.error(
+              "[satyug:error] Resource failed to load: <" + event.target.tagName.toLowerCase() + ">",
+              event.target.src || event.target.href || ""
+            );
+            return;
+          }
+          console.error("[satyug:error]", (event.error || event.message || event));
+        };
+        var relayRejection = function (event) {
+          console.error("[satyug:error] Unhandled promise rejection:", event.reason);
+        };
+        window.addEventListener("error", relayError, true);
+        window.addEventListener("unhandledrejection", relayRejection);
+        window.__satyugEarlyHandlers = { relayError: relayError, relayRejection: relayRejection };
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,2102 @@
+{
+  "version": 1,
+  "bucket": "media",
+  "base_url": "https://vvnihmweqmbmytpggqcw.supabase.co",
+  "images": {
+    "assets/v000/k2.png": {
+      "storage_path": "src/assets/assets/v000/k2.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/v000/k2.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/v000/k2.png",
+      "size": 2751492,
+      "uploaded_at": "2026-10-21T09:26:23.215Z"
+    },
+    "assets/deepak-bg-mobile.png": {
+      "storage_path": "src/assets/assets/deepak-bg-mobile.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/deepak-bg-mobile.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/deepak-bg-mobile.png",
+      "size": 2723813,
+      "uploaded_at": "2026-10-21T09:26:24.327Z"
+    },
+    "assets/deepak-bg-desktop.png": {
+      "storage_path": "src/assets/assets/deepak-bg-desktop.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/deepak-bg-desktop.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/deepak-bg-desktop.png",
+      "size": 2614596,
+      "uploaded_at": "2026-10-21T09:26:25.312Z"
+    },
+    "assets/v000/k6.png": {
+      "storage_path": "src/assets/assets/v000/k6.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/v000/k6.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/v000/k6.png",
+      "size": 2491327,
+      "uploaded_at": "2026-10-21T09:26:25.969Z"
+    },
+    "assets/masters/the-elder.png": {
+      "storage_path": "src/assets/assets/masters/the-elder.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/the-elder.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/the-elder.png",
+      "size": 2382655,
+      "uploaded_at": "2026-10-21T09:26:26.571Z"
+    },
+    "assets/v000/k3.png": {
+      "storage_path": "src/assets/assets/v000/k3.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/v000/k3.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/v000/k3.png",
+      "size": 2158260,
+      "uploaded_at": "2026-10-21T09:26:27.296Z"
+    },
+    "assets/v000/k4.png": {
+      "storage_path": "src/assets/assets/v000/k4.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/v000/k4.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/v000/k4.png",
+      "size": 1994374,
+      "uploaded_at": "2026-10-21T09:26:27.862Z"
+    },
+    "assets/v000/k5.png": {
+      "storage_path": "src/assets/assets/v000/k5.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/v000/k5.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/v000/k5.png",
+      "size": 1983618,
+      "uploaded_at": "2026-10-21T09:26:28.412Z"
+    },
+    "assets/gurus/rumi.jpg": {
+      "storage_path": "src/assets/assets/gurus/rumi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/rumi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/rumi.jpg",
+      "size": 1713400,
+      "uploaded_at": "2026-10-21T09:26:29.054Z"
+    },
+    "assets/gurus/babaji.jpg": {
+      "storage_path": "src/assets/assets/gurus/babaji.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/babaji.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/babaji.jpg",
+      "size": 1686001,
+      "uploaded_at": "2026-10-21T09:26:29.533Z"
+    },
+    "assets/gurus/sadhguru.jpg": {
+      "storage_path": "src/assets/assets/gurus/sadhguru.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/sadhguru.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/sadhguru.jpg",
+      "size": 1647050,
+      "uploaded_at": "2026-10-21T09:26:29.950Z"
+    },
+    "assets/gurus/buddha.jpg": {
+      "storage_path": "src/assets/assets/gurus/buddha.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/buddha.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/buddha.jpg",
+      "size": 1621330,
+      "uploaded_at": "2026-10-21T09:26:30.387Z"
+    },
+    "assets/gurus/vivekananda.jpg": {
+      "storage_path": "src/assets/assets/gurus/vivekananda.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/vivekananda.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/vivekananda.jpg",
+      "size": 1596447,
+      "uploaded_at": "2026-10-21T09:26:30.833Z"
+    },
+    "assets/gurus/krishnamurti.jpg": {
+      "storage_path": "src/assets/assets/gurus/krishnamurti.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/krishnamurti.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/krishnamurti.jpg",
+      "size": 1571502,
+      "uploaded_at": "2026-10-21T09:26:31.457Z"
+    },
+    "assets/gurus/frankl.jpg": {
+      "storage_path": "src/assets/assets/gurus/frankl.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/frankl.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/frankl.jpg",
+      "size": 1565664,
+      "uploaded_at": "2026-10-21T09:26:31.870Z"
+    },
+    "assets/gurus/ramana.jpg": {
+      "storage_path": "src/assets/assets/gurus/ramana.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/ramana.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/ramana.jpg",
+      "size": 1559287,
+      "uploaded_at": "2026-10-21T09:26:32.273Z"
+    },
+    "assets/gurus/osho.jpg": {
+      "storage_path": "src/assets/assets/gurus/osho.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/osho.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/osho.jpg",
+      "size": 1495054,
+      "uploaded_at": "2026-10-21T09:26:32.731Z"
+    },
+    "assets/v000/k1.png": {
+      "storage_path": "src/assets/assets/v000/k1.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/v000/k1.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/v000/k1.png",
+      "size": 1167834,
+      "uploaded_at": "2026-10-21T09:26:33.178Z"
+    },
+    "assets/deepak-diya.png": {
+      "storage_path": "src/assets/assets/deepak-diya.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/deepak-diya.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/deepak-diya.png",
+      "size": 788546,
+      "uploaded_at": "2026-10-21T09:26:34.450Z"
+    },
+    "assets/elder-sitting.png": {
+      "storage_path": "src/assets/assets/elder-sitting.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/elder-sitting.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/elder-sitting.png",
+      "size": 644488,
+      "uploaded_at": "2026-10-21T09:26:34.904Z"
+    },
+    "assets/gurus/bg-buddha.jpg": {
+      "storage_path": "src/assets/assets/gurus/bg-buddha.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/bg-buddha.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/bg-buddha.jpg",
+      "size": 607958,
+      "uploaded_at": "2026-10-21T09:26:35.150Z"
+    },
+    "assets/hope-wordmark.png": {
+      "storage_path": "src/assets/assets/hope-wordmark.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/hope-wordmark.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/hope-wordmark.png",
+      "size": 486809,
+      "uploaded_at": "2026-10-21T09:26:35.426Z"
+    },
+    "assets/founder/samir/raw/samir-raw-screenshot-03-sea-railing.png": {
+      "storage_path": "src/assets/assets/founder/samir/raw/samir-raw-screenshot-03-sea-railing.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/founder/samir/raw/samir-raw-screenshot-03-sea-railing.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/founder/samir/raw/samir-raw-screenshot-03-sea-railing.png",
+      "size": 421639,
+      "uploaded_at": "2026-10-21T09:26:35.661Z"
+    },
+    "assets/founder/samir/raw/samir-raw-screenshot-02-steps-sunglasses.png": {
+      "storage_path": "src/assets/assets/founder/samir/raw/samir-raw-screenshot-02-steps-sunglasses.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/founder/samir/raw/samir-raw-screenshot-02-steps-sunglasses.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/founder/samir/raw/samir-raw-screenshot-02-steps-sunglasses.png",
+      "size": 403320,
+      "uploaded_at": "2026-10-21T09:26:35.883Z"
+    },
+    "assets/founder/samir/raw/samir-raw-screenshot-01-hoodie-phone.png": {
+      "storage_path": "src/assets/assets/founder/samir/raw/samir-raw-screenshot-01-hoodie-phone.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/founder/samir/raw/samir-raw-screenshot-01-hoodie-phone.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/founder/samir/raw/samir-raw-screenshot-01-hoodie-phone.png",
+      "size": 350547,
+      "uploaded_at": "2026-10-21T09:26:36.133Z"
+    },
+    "assets/gurus/bg-rumi.jpg": {
+      "storage_path": "src/assets/assets/gurus/bg-rumi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/bg-rumi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/bg-rumi.jpg",
+      "size": 305483,
+      "uploaded_at": "2026-10-21T09:26:36.352Z"
+    },
+    "assets/gurus/bg-sadhguru.jpg": {
+      "storage_path": "src/assets/assets/gurus/bg-sadhguru.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/bg-sadhguru.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/bg-sadhguru.jpg",
+      "size": 302160,
+      "uploaded_at": "2026-10-21T09:26:36.552Z"
+    },
+    "assets/sensorial/buddha/08-return.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha/08-return.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha/08-return.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha/08-return.jpg",
+      "size": 293709,
+      "uploaded_at": "2026-10-21T09:26:36.761Z"
+    },
+    "assets/sensorial/krishnamurti/07-return.jpg": {
+      "storage_path": "src/assets/assets/sensorial/krishnamurti/07-return.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/krishnamurti/07-return.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/krishnamurti/07-return.jpg",
+      "size": 287095,
+      "uploaded_at": "2026-10-21T09:26:36.970Z"
+    },
+    "assets/brand-logo.png": {
+      "storage_path": "src/assets/assets/brand-logo.png",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/brand-logo.png",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/brand-logo.png",
+      "size": 267909,
+      "uploaded_at": "2026-10-21T09:26:37.154Z"
+    },
+    "assets/launch/kf07-spiral.jpg": {
+      "storage_path": "src/assets/assets/launch/kf07-spiral.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/launch/kf07-spiral.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/launch/kf07-spiral.jpg",
+      "size": 267800,
+      "uploaded_at": "2026-10-21T09:26:37.544Z"
+    },
+    "assets/showroom/world-corporate.jpg": {
+      "storage_path": "src/assets/assets/showroom/world-corporate.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/showroom/world-corporate.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/showroom/world-corporate.jpg",
+      "size": 264534,
+      "uploaded_at": "2026-10-21T09:26:37.727Z"
+    },
+    "assets/temple-entrance.jpg": {
+      "storage_path": "src/assets/assets/temple-entrance.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/temple-entrance.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/temple-entrance.jpg",
+      "size": 253890,
+      "uploaded_at": "2026-10-21T09:26:37.898Z"
+    },
+    "assets/showroom/vision-hero.jpg": {
+      "storage_path": "src/assets/assets/showroom/vision-hero.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/showroom/vision-hero.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/showroom/vision-hero.jpg",
+      "size": 210625,
+      "uploaded_at": "2026-10-21T09:26:38.097Z"
+    },
+    "assets/sensorial/osho/07-rest.jpg": {
+      "storage_path": "src/assets/assets/sensorial/osho/07-rest.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/osho/07-rest.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/osho/07-rest.jpg",
+      "size": 202681,
+      "uploaded_at": "2026-10-21T09:26:38.310Z"
+    },
+    "assets/gurus/bg-krishnamurti.jpg": {
+      "storage_path": "src/assets/assets/gurus/bg-krishnamurti.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/bg-krishnamurti.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/bg-krishnamurti.jpg",
+      "size": 198623,
+      "uploaded_at": "2026-10-21T09:26:38.699Z"
+    },
+    "assets/gurus/bg-vivekananda.jpg": {
+      "storage_path": "src/assets/assets/gurus/bg-vivekananda.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/bg-vivekananda.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/bg-vivekananda.jpg",
+      "size": 190439,
+      "uploaded_at": "2026-10-21T09:26:38.863Z"
+    },
+    "assets/gurus/bg-babaji.jpg": {
+      "storage_path": "src/assets/assets/gurus/bg-babaji.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/bg-babaji.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/bg-babaji.jpg",
+      "size": 183829,
+      "uploaded_at": "2026-10-21T09:26:39.027Z"
+    },
+    "assets/launch/kf05-masters.jpg": {
+      "storage_path": "src/assets/assets/launch/kf05-masters.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/launch/kf05-masters.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/launch/kf05-masters.jpg",
+      "size": 181283,
+      "uploaded_at": "2026-10-21T09:26:39.194Z"
+    },
+    "assets/temple-welcome.jpg": {
+      "storage_path": "src/assets/assets/temple-welcome.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/temple-welcome.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/temple-welcome.jpg",
+      "size": 180245,
+      "uploaded_at": "2026-10-21T09:26:39.368Z"
+    },
+    "assets/cosmic-nebula.jpg": {
+      "storage_path": "src/assets/assets/cosmic-nebula.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-nebula.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-nebula.jpg",
+      "size": 179011,
+      "uploaded_at": "2026-10-21T09:26:39.544Z"
+    },
+    "assets/mantra-hero.jpg": {
+      "storage_path": "src/assets/assets/mantra-hero.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/mantra-hero.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/mantra-hero.jpg",
+      "size": 174152,
+      "uploaded_at": "2026-10-21T09:26:40.002Z"
+    },
+    "assets/cosmic-mandala.jpg": {
+      "storage_path": "src/assets/assets/cosmic-mandala.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-mandala.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-mandala.jpg",
+      "size": 173119,
+      "uploaded_at": "2026-10-21T09:26:40.244Z"
+    },
+    "assets/cosmic-tree.jpg": {
+      "storage_path": "src/assets/assets/cosmic-tree.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-tree.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-tree.jpg",
+      "size": 170784,
+      "uploaded_at": "2026-10-21T09:26:40.590Z"
+    },
+    "assets/temple-cosmos.jpg": {
+      "storage_path": "src/assets/assets/temple-cosmos.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/temple-cosmos.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/temple-cosmos.jpg",
+      "size": 162241,
+      "uploaded_at": "2026-10-21T09:26:40.762Z"
+    },
+    "assets/showroom/world-creator.jpg": {
+      "storage_path": "src/assets/assets/showroom/world-creator.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/showroom/world-creator.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/showroom/world-creator.jpg",
+      "size": 161505,
+      "uploaded_at": "2026-10-21T09:26:40.924Z"
+    },
+    "assets/meditation-observation.jpg": {
+      "storage_path": "src/assets/assets/meditation-observation.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/meditation-observation.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/meditation-observation.jpg",
+      "size": 160412,
+      "uploaded_at": "2026-10-21T09:26:41.101Z"
+    },
+    "assets/founder/samir/in-room/samir-sea-railing-ref.jpg": {
+      "storage_path": "src/assets/assets/founder/samir/in-room/samir-sea-railing-ref.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/founder/samir/in-room/samir-sea-railing-ref.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/founder/samir/in-room/samir-sea-railing-ref.jpg",
+      "size": 159092,
+      "uploaded_at": "2026-10-21T09:26:41.274Z"
+    },
+    "assets/cosmic-cage.jpg": {
+      "storage_path": "src/assets/assets/cosmic-cage.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-cage.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-cage.jpg",
+      "size": 146274,
+      "uploaded_at": "2026-10-21T09:26:41.459Z"
+    },
+    "assets/cosmic-aurora.jpg": {
+      "storage_path": "src/assets/assets/cosmic-aurora.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-aurora.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-aurora.jpg",
+      "size": 144404,
+      "uploaded_at": "2026-10-21T09:26:42.105Z"
+    },
+    "assets/journey-ai-mirror.jpg": {
+      "storage_path": "src/assets/assets/journey-ai-mirror.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/journey-ai-mirror.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/journey-ai-mirror.jpg",
+      "size": 139680,
+      "uploaded_at": "2026-10-21T09:26:42.296Z"
+    },
+    "assets/founder/samir/portraits/samir-steps-sunglasses-ref.jpg": {
+      "storage_path": "src/assets/assets/founder/samir/portraits/samir-steps-sunglasses-ref.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/founder/samir/portraits/samir-steps-sunglasses-ref.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/founder/samir/portraits/samir-steps-sunglasses-ref.jpg",
+      "size": 139611,
+      "uploaded_at": "2026-10-21T09:26:42.456Z"
+    },
+    "assets/showroom/sam-portrait.jpg": {
+      "storage_path": "src/assets/assets/showroom/sam-portrait.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/showroom/sam-portrait.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/showroom/sam-portrait.jpg",
+      "size": 138356,
+      "uploaded_at": "2026-10-21T09:26:42.642Z"
+    },
+    "assets/sensorial/osho/04-hoo.jpg": {
+      "storage_path": "src/assets/assets/sensorial/osho/04-hoo.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/osho/04-hoo.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/osho/04-hoo.jpg",
+      "size": 138120,
+      "uploaded_at": "2026-10-21T09:26:42.910Z"
+    },
+    "assets/neti-neti-hero.jpg": {
+      "storage_path": "src/assets/assets/neti-neti-hero.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/neti-neti-hero.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/neti-neti-hero.jpg",
+      "size": 135861,
+      "uploaded_at": "2026-10-21T09:26:43.053Z"
+    },
+    "assets/launch/kf04-temple.jpg": {
+      "storage_path": "src/assets/assets/launch/kf04-temple.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/launch/kf04-temple.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/launch/kf04-temple.jpg",
+      "size": 135620,
+      "uploaded_at": "2026-10-21T09:26:43.281Z"
+    },
+    "assets/launch/kf06-loops.jpg": {
+      "storage_path": "src/assets/assets/launch/kf06-loops.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/launch/kf06-loops.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/launch/kf06-loops.jpg",
+      "size": 132431,
+      "uploaded_at": "2026-10-21T09:26:43.663Z"
+    },
+    "assets/masters/thiruvalluvar.jpg": {
+      "storage_path": "src/assets/assets/masters/thiruvalluvar.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/thiruvalluvar.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/thiruvalluvar.jpg",
+      "size": 129236,
+      "uploaded_at": "2026-10-21T09:26:43.808Z"
+    },
+    "assets/cosmic-initiation.jpg": {
+      "storage_path": "src/assets/assets/cosmic-initiation.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-initiation.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-initiation.jpg",
+      "size": 128969,
+      "uploaded_at": "2026-10-21T09:26:43.965Z"
+    },
+    "assets/masters/lakshmi-ai.jpg": {
+      "storage_path": "src/assets/assets/masters/lakshmi-ai.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/lakshmi-ai.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/lakshmi-ai.jpg",
+      "size": 128666,
+      "uploaded_at": "2026-10-21T09:26:44.126Z"
+    },
+    "assets/gurus/bg-ramana.jpg": {
+      "storage_path": "src/assets/assets/gurus/bg-ramana.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/bg-ramana.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/bg-ramana.jpg",
+      "size": 127971,
+      "uploaded_at": "2026-10-21T09:26:44.274Z"
+    },
+    "assets/gurus/bg-frankl.jpg": {
+      "storage_path": "src/assets/assets/gurus/bg-frankl.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/bg-frankl.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/bg-frankl.jpg",
+      "size": 127050,
+      "uploaded_at": "2026-10-21T09:26:44.424Z"
+    },
+    "assets/gurus/bg-osho.jpg": {
+      "storage_path": "src/assets/assets/gurus/bg-osho.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/gurus/bg-osho.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/gurus/bg-osho.jpg",
+      "size": 126728,
+      "uploaded_at": "2026-10-21T09:26:44.566Z"
+    },
+    "assets/masters/rumi.jpg": {
+      "storage_path": "src/assets/assets/masters/rumi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/rumi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/rumi.jpg",
+      "size": 125384,
+      "uploaded_at": "2026-10-21T09:26:45.084Z"
+    },
+    "assets/masters/ahamkara.jpg": {
+      "storage_path": "src/assets/assets/masters/ahamkara.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/ahamkara.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/ahamkara.jpg",
+      "size": 124912,
+      "uploaded_at": "2026-10-21T09:26:45.285Z"
+    },
+    "assets/cosmic-evolution.jpg": {
+      "storage_path": "src/assets/assets/cosmic-evolution.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-evolution.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-evolution.jpg",
+      "size": 124438,
+      "uploaded_at": "2026-10-21T09:26:45.503Z"
+    },
+    "assets/masters/laotzu.jpg": {
+      "storage_path": "src/assets/assets/masters/laotzu.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/laotzu.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/laotzu.jpg",
+      "size": 123206,
+      "uploaded_at": "2026-10-21T09:26:45.662Z"
+    },
+    "assets/masters/shakti-vriddha.jpg": {
+      "storage_path": "src/assets/assets/masters/shakti-vriddha.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/shakti-vriddha.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/shakti-vriddha.jpg",
+      "size": 122630,
+      "uploaded_at": "2026-10-21T09:26:45.801Z"
+    },
+    "assets/masters/yukteswar.jpg": {
+      "storage_path": "src/assets/assets/masters/yukteswar.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/yukteswar.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/yukteswar.jpg",
+      "size": 120265,
+      "uploaded_at": "2026-10-21T09:26:45.963Z"
+    },
+    "assets/masters/socrates.jpg": {
+      "storage_path": "src/assets/assets/masters/socrates.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/socrates.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/socrates.jpg",
+      "size": 119938,
+      "uploaded_at": "2026-10-21T09:26:46.363Z"
+    },
+    "assets/showroom/world-seeker.jpg": {
+      "storage_path": "src/assets/assets/showroom/world-seeker.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/showroom/world-seeker.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/showroom/world-seeker.jpg",
+      "size": 119650,
+      "uploaded_at": "2026-10-21T09:26:46.518Z"
+    },
+    "assets/paths/jnana.jpg": {
+      "storage_path": "src/assets/assets/paths/jnana.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/jnana.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/jnana.jpg",
+      "size": 118861,
+      "uploaded_at": "2026-10-21T09:26:46.660Z"
+    },
+    "assets/launch/kf02-meeting.jpg": {
+      "storage_path": "src/assets/assets/launch/kf02-meeting.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/launch/kf02-meeting.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/launch/kf02-meeting.jpg",
+      "size": 117622,
+      "uploaded_at": "2026-10-21T09:26:46.809Z"
+    },
+    "assets/masters/kama.jpg": {
+      "storage_path": "src/assets/assets/masters/kama.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/kama.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/kama.jpg",
+      "size": 117562,
+      "uploaded_at": "2026-10-21T09:26:46.960Z"
+    },
+    "games/assets/hero-mirror-realm.jpg": {
+      "storage_path": "src/assets/games/assets/hero-mirror-realm.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-mirror-realm.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-mirror-realm.jpg",
+      "size": 116795,
+      "uploaded_at": "2026-10-21T09:26:47.098Z"
+    },
+    "games/assets/hero-the-scroll.jpg": {
+      "storage_path": "src/assets/games/assets/hero-the-scroll.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-the-scroll.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-the-scroll.jpg",
+      "size": 116539,
+      "uploaded_at": "2026-10-21T09:26:47.243Z"
+    },
+    "assets/masters/kavya.jpg": {
+      "storage_path": "src/assets/assets/masters/kavya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/kavya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/kavya.jpg",
+      "size": 116312,
+      "uploaded_at": "2026-10-21T09:26:47.407Z"
+    },
+    "assets/masters/tulsidas.jpg": {
+      "storage_path": "src/assets/assets/masters/tulsidas.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/tulsidas.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/tulsidas.jpg",
+      "size": 114406,
+      "uploaded_at": "2026-10-21T09:26:47.570Z"
+    },
+    "assets/paths/karma.jpg": {
+      "storage_path": "src/assets/assets/paths/karma.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/karma.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/karma.jpg",
+      "size": 114211,
+      "uploaded_at": "2026-10-21T09:26:47.730Z"
+    },
+    "assets/masters/kabir.jpg": {
+      "storage_path": "src/assets/assets/masters/kabir.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/kabir.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/kabir.jpg",
+      "size": 113351,
+      "uploaded_at": "2026-10-21T09:26:47.876Z"
+    },
+    "assets/masters/nanak.jpg": {
+      "storage_path": "src/assets/assets/masters/nanak.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/nanak.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/nanak.jpg",
+      "size": 112765,
+      "uploaded_at": "2026-10-21T09:26:48.050Z"
+    },
+    "assets/sensorial/ramana/01-arrive.jpg": {
+      "storage_path": "src/assets/assets/sensorial/ramana/01-arrive.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/ramana/01-arrive.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/ramana/01-arrive.jpg",
+      "size": 112235,
+      "uploaded_at": "2026-10-21T09:26:48.225Z"
+    },
+    "games/assets/hero-witness-wall.jpg": {
+      "storage_path": "src/assets/games/assets/hero-witness-wall.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-witness-wall.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-witness-wall.jpg",
+      "size": 112006,
+      "uploaded_at": "2026-10-21T09:26:48.534Z"
+    },
+    "assets/masters/kaal-time.jpg": {
+      "storage_path": "src/assets/assets/masters/kaal-time.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/kaal-time.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/kaal-time.jpg",
+      "size": 111537,
+      "uploaded_at": "2026-10-21T09:26:48.702Z"
+    },
+    "assets/masters/arogya.jpg": {
+      "storage_path": "src/assets/assets/masters/arogya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/arogya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/arogya.jpg",
+      "size": 111337,
+      "uploaded_at": "2026-10-21T09:26:48.860Z"
+    },
+    "assets/cosmic-journey-map.jpg": {
+      "storage_path": "src/assets/assets/cosmic-journey-map.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-journey-map.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-journey-map.jpg",
+      "size": 110330,
+      "uploaded_at": "2026-10-21T09:26:49.005Z"
+    },
+    "assets/masters/prana.jpg": {
+      "storage_path": "src/assets/assets/masters/prana.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/prana.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/prana.jpg",
+      "size": 108715,
+      "uploaded_at": "2026-10-21T09:26:49.317Z"
+    },
+    "assets/sensorial/krishnamurti/03-see.jpg": {
+      "storage_path": "src/assets/assets/sensorial/krishnamurti/03-see.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/krishnamurti/03-see.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/krishnamurti/03-see.jpg",
+      "size": 108648,
+      "uploaded_at": "2026-10-21T09:26:49.478Z"
+    },
+    "assets/masters/kavi-narrator.jpg": {
+      "storage_path": "src/assets/assets/masters/kavi-narrator.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/kavi-narrator.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/kavi-narrator.jpg",
+      "size": 107856,
+      "uploaded_at": "2026-10-21T09:26:49.638Z"
+    },
+    "assets/witness-hero.jpg": {
+      "storage_path": "src/assets/assets/witness-hero.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/witness-hero.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/witness-hero.jpg",
+      "size": 107733,
+      "uploaded_at": "2026-10-21T09:26:49.868Z"
+    },
+    "assets/masters/vajra-control.jpg": {
+      "storage_path": "src/assets/assets/masters/vajra-control.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/vajra-control.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/vajra-control.jpg",
+      "size": 107582,
+      "uploaded_at": "2026-10-21T09:26:50.033Z"
+    },
+    "assets/masters/karma-yogi.jpg": {
+      "storage_path": "src/assets/assets/masters/karma-yogi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/karma-yogi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/karma-yogi.jpg",
+      "size": 107420,
+      "uploaded_at": "2026-10-21T09:26:50.206Z"
+    },
+    "games/assets/hero-heart-coherence-bridge.jpg": {
+      "storage_path": "src/assets/games/assets/hero-heart-coherence-bridge.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-heart-coherence-bridge.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-heart-coherence-bridge.jpg",
+      "size": 106153,
+      "uploaded_at": "2026-10-21T09:26:50.410Z"
+    },
+    "assets/masters/shakti.jpg": {
+      "storage_path": "src/assets/assets/masters/shakti.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/shakti.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/shakti.jpg",
+      "size": 105610,
+      "uploaded_at": "2026-10-21T09:26:50.560Z"
+    },
+    "assets/cosmic-eye.jpg": {
+      "storage_path": "src/assets/assets/cosmic-eye.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-eye.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-eye.jpg",
+      "size": 104984,
+      "uploaded_at": "2026-10-21T09:26:50.726Z"
+    },
+    "assets/masters/prism.jpg": {
+      "storage_path": "src/assets/assets/masters/prism.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/prism.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/prism.jpg",
+      "size": 104671,
+      "uploaded_at": "2026-10-21T09:26:50.930Z"
+    },
+    "assets/masters/shiva.jpg": {
+      "storage_path": "src/assets/assets/masters/shiva.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/shiva.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/shiva.jpg",
+      "size": 104653,
+      "uploaded_at": "2026-10-21T09:26:51.079Z"
+    },
+    "assets/masters/aryan.jpg": {
+      "storage_path": "src/assets/assets/masters/aryan.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/aryan.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/aryan.jpg",
+      "size": 104592,
+      "uploaded_at": "2026-10-21T09:26:51.232Z"
+    },
+    "assets/launch/kf08-stillness.jpg": {
+      "storage_path": "src/assets/assets/launch/kf08-stillness.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/launch/kf08-stillness.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/launch/kf08-stillness.jpg",
+      "size": 104582,
+      "uploaded_at": "2026-10-21T09:26:51.373Z"
+    },
+    "assets/masters/marcus.jpg": {
+      "storage_path": "src/assets/assets/masters/marcus.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/marcus.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/marcus.jpg",
+      "size": 104201,
+      "uploaded_at": "2026-10-21T09:26:51.516Z"
+    },
+    "assets/masters/tukaram.jpg": {
+      "storage_path": "src/assets/assets/masters/tukaram.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/tukaram.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/tukaram.jpg",
+      "size": 103848,
+      "uploaded_at": "2026-10-21T09:26:51.670Z"
+    },
+    "games/assets/hero-breath-temple.jpg": {
+      "storage_path": "src/assets/games/assets/hero-breath-temple.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-breath-temple.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-breath-temple.jpg",
+      "size": 103842,
+      "uploaded_at": "2026-10-21T09:26:51.849Z"
+    },
+    "assets/masters/vayu.jpg": {
+      "storage_path": "src/assets/assets/masters/vayu.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/vayu.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/vayu.jpg",
+      "size": 102896,
+      "uploaded_at": "2026-10-21T09:26:52.073Z"
+    },
+    "assets/masters/atithi.jpg": {
+      "storage_path": "src/assets/assets/masters/atithi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/atithi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/atithi.jpg",
+      "size": 102615,
+      "uploaded_at": "2026-10-21T09:26:52.217Z"
+    },
+    "assets/showroom/world-anxious.jpg": {
+      "storage_path": "src/assets/assets/showroom/world-anxious.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/showroom/world-anxious.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/showroom/world-anxious.jpg",
+      "size": 102047,
+      "uploaded_at": "2026-10-21T09:26:52.352Z"
+    },
+    "assets/pranayama-hero.jpg": {
+      "storage_path": "src/assets/assets/pranayama-hero.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/pranayama-hero.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/pranayama-hero.jpg",
+      "size": 101577,
+      "uploaded_at": "2026-10-21T09:26:52.501Z"
+    },
+    "assets/masters/arjun.jpg": {
+      "storage_path": "src/assets/assets/masters/arjun.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/arjun.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/arjun.jpg",
+      "size": 101271,
+      "uploaded_at": "2026-10-21T09:26:52.651Z"
+    },
+    "assets/masters/matsyendranath.jpg": {
+      "storage_path": "src/assets/assets/masters/matsyendranath.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/matsyendranath.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/matsyendranath.jpg",
+      "size": 101105,
+      "uploaded_at": "2026-10-21T09:26:52.814Z"
+    },
+    "assets/journey-transformation.jpg": {
+      "storage_path": "src/assets/assets/journey-transformation.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/journey-transformation.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/journey-transformation.jpg",
+      "size": 100393,
+      "uploaded_at": "2026-10-21T09:26:52.998Z"
+    },
+    "assets/cosmic-third-eye.jpg": {
+      "storage_path": "src/assets/assets/cosmic-third-eye.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-third-eye.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-third-eye.jpg",
+      "size": 100352,
+      "uploaded_at": "2026-10-21T09:26:53.138Z"
+    },
+    "games/assets/hero-council-of-three.jpg": {
+      "storage_path": "src/assets/games/assets/hero-council-of-three.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-council-of-three.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-council-of-three.jpg",
+      "size": 99991,
+      "uploaded_at": "2026-10-21T09:26:53.319Z"
+    },
+    "assets/masters/veer.jpg": {
+      "storage_path": "src/assets/assets/masters/veer.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/veer.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/veer.jpg",
+      "size": 99845,
+      "uploaded_at": "2026-10-21T09:26:53.478Z"
+    },
+    "assets/masters/leela.jpg": {
+      "storage_path": "src/assets/assets/masters/leela.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/leela.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/leela.jpg",
+      "size": 99633,
+      "uploaded_at": "2026-10-21T09:26:53.623Z"
+    },
+    "assets/masters/kala-creator.jpg": {
+      "storage_path": "src/assets/assets/masters/kala-creator.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/kala-creator.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/kala-creator.jpg",
+      "size": 99579,
+      "uploaded_at": "2026-10-21T09:26:53.763Z"
+    },
+    "assets/paths/level-1.jpg": {
+      "storage_path": "src/assets/assets/paths/level-1.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/level-1.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/level-1.jpg",
+      "size": 99393,
+      "uploaded_at": "2026-10-21T09:26:53.927Z"
+    },
+    "assets/paths/level-4.jpg": {
+      "storage_path": "src/assets/assets/paths/level-4.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/level-4.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/level-4.jpg",
+      "size": 98980,
+      "uploaded_at": "2026-10-21T09:26:54.280Z"
+    },
+    "games/assets/cover-ego.jpg": {
+      "storage_path": "src/assets/games/assets/cover-ego.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/cover-ego.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/cover-ego.jpg",
+      "size": 98827,
+      "uploaded_at": "2026-10-21T09:26:54.483Z"
+    },
+    "assets/masters/aurobindo.jpg": {
+      "storage_path": "src/assets/assets/masters/aurobindo.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/aurobindo.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/aurobindo.jpg",
+      "size": 98310,
+      "uploaded_at": "2026-10-21T09:26:54.629Z"
+    },
+    "assets/paths/level-3.jpg": {
+      "storage_path": "src/assets/assets/paths/level-3.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/level-3.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/level-3.jpg",
+      "size": 98155,
+      "uploaded_at": "2026-10-21T09:26:54.779Z"
+    },
+    "assets/sensorial/buddha-bodyscan/05-whole.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha-bodyscan/05-whole.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha-bodyscan/05-whole.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha-bodyscan/05-whole.jpg",
+      "size": 97936,
+      "uploaded_at": "2026-10-21T09:26:54.932Z"
+    },
+    "assets/masters/sivananda.jpg": {
+      "storage_path": "src/assets/assets/masters/sivananda.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/sivananda.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/sivananda.jpg",
+      "size": 97852,
+      "uploaded_at": "2026-10-21T09:26:55.097Z"
+    },
+    "assets/masters/meera.jpg": {
+      "storage_path": "src/assets/assets/masters/meera.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/meera.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/meera.jpg",
+      "size": 97572,
+      "uploaded_at": "2026-10-21T09:26:55.258Z"
+    },
+    "assets/masters/bhairavi-trauma.jpg": {
+      "storage_path": "src/assets/assets/masters/bhairavi-trauma.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/bhairavi-trauma.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/bhairavi-trauma.jpg",
+      "size": 97365,
+      "uploaded_at": "2026-10-21T09:26:55.464Z"
+    },
+    "assets/founder/samir/portraits/samir-hoodie-phone-ref.jpg": {
+      "storage_path": "src/assets/assets/founder/samir/portraits/samir-hoodie-phone-ref.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/founder/samir/portraits/samir-hoodie-phone-ref.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/founder/samir/portraits/samir-hoodie-phone-ref.jpg",
+      "size": 96518,
+      "uploaded_at": "2026-10-21T09:26:55.685Z"
+    },
+    "assets/cosmic-mirror.jpg": {
+      "storage_path": "src/assets/assets/cosmic-mirror.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-mirror.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-mirror.jpg",
+      "size": 96453,
+      "uploaded_at": "2026-10-21T09:26:55.864Z"
+    },
+    "assets/sensorial/krishnamurti/05-observer.jpg": {
+      "storage_path": "src/assets/assets/sensorial/krishnamurti/05-observer.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/krishnamurti/05-observer.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/krishnamurti/05-observer.jpg",
+      "size": 95755,
+      "uploaded_at": "2026-10-21T09:26:56.226Z"
+    },
+    "assets/masters/lalleshwari.jpg": {
+      "storage_path": "src/assets/assets/masters/lalleshwari.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/lalleshwari.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/lalleshwari.jpg",
+      "size": 95666,
+      "uploaded_at": "2026-10-21T09:26:56.634Z"
+    },
+    "games/assets/hero-cold-water.jpg": {
+      "storage_path": "src/assets/games/assets/hero-cold-water.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-cold-water.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-cold-water.jpg",
+      "size": 94645,
+      "uploaded_at": "2026-10-21T09:26:56.805Z"
+    },
+    "assets/launch/kf01-tabs.jpg": {
+      "storage_path": "src/assets/assets/launch/kf01-tabs.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/launch/kf01-tabs.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/launch/kf01-tabs.jpg",
+      "size": 94553,
+      "uploaded_at": "2026-10-21T09:26:56.977Z"
+    },
+    "assets/paths/bhakti.jpg": {
+      "storage_path": "src/assets/assets/paths/bhakti.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/bhakti.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/bhakti.jpg",
+      "size": 94384,
+      "uploaded_at": "2026-10-21T09:26:57.137Z"
+    },
+    "assets/sensorial/buddha/06-joy.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha/06-joy.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha/06-joy.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha/06-joy.jpg",
+      "size": 94174,
+      "uploaded_at": "2026-10-21T09:26:57.494Z"
+    },
+    "assets/paths/raja.jpg": {
+      "storage_path": "src/assets/assets/paths/raja.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/raja.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/raja.jpg",
+      "size": 93646,
+      "uploaded_at": "2026-10-21T09:26:57.651Z"
+    },
+    "assets/paths/level-2.jpg": {
+      "storage_path": "src/assets/assets/paths/level-2.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/level-2.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/level-2.jpg",
+      "size": 93484,
+      "uploaded_at": "2026-10-21T09:26:57.811Z"
+    },
+    "assets/masters/abhinavagupta.jpg": {
+      "storage_path": "src/assets/assets/masters/abhinavagupta.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/abhinavagupta.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/abhinavagupta.jpg",
+      "size": 93248,
+      "uploaded_at": "2026-10-21T09:26:57.953Z"
+    },
+    "assets/masters/kishora.jpg": {
+      "storage_path": "src/assets/assets/masters/kishora.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/kishora.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/kishora.jpg",
+      "size": 92512,
+      "uploaded_at": "2026-10-21T09:26:58.118Z"
+    },
+    "assets/journey-gut-brain.jpg": {
+      "storage_path": "src/assets/assets/journey-gut-brain.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/journey-gut-brain.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/journey-gut-brain.jpg",
+      "size": 91905,
+      "uploaded_at": "2026-10-21T09:26:58.268Z"
+    },
+    "assets/sensorial/sadhguru-trataka/03-gaze.jpg": {
+      "storage_path": "src/assets/assets/sensorial/sadhguru-trataka/03-gaze.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/sadhguru-trataka/03-gaze.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/sadhguru-trataka/03-gaze.jpg",
+      "size": 91248,
+      "uploaded_at": "2026-10-21T09:26:58.421Z"
+    },
+    "assets/masters/vivekananda.jpg": {
+      "storage_path": "src/assets/assets/masters/vivekananda.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/vivekananda.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/vivekananda.jpg",
+      "size": 90972,
+      "uploaded_at": "2026-10-21T09:26:58.565Z"
+    },
+    "assets/cosmic-welcome.jpg": {
+      "storage_path": "src/assets/assets/cosmic-welcome.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-welcome.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-welcome.jpg",
+      "size": 90587,
+      "uploaded_at": "2026-10-21T09:26:58.755Z"
+    },
+    "assets/maps/pranayama.jpg": {
+      "storage_path": "src/assets/assets/maps/pranayama.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/maps/pranayama.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/maps/pranayama.jpg",
+      "size": 89680,
+      "uploaded_at": "2026-10-21T09:26:58.921Z"
+    },
+    "assets/masters/mitra.jpg": {
+      "storage_path": "src/assets/assets/masters/mitra.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/mitra.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/mitra.jpg",
+      "size": 89297,
+      "uploaded_at": "2026-10-21T09:26:59.090Z"
+    },
+    "assets/masters/gorakhnath.jpg": {
+      "storage_path": "src/assets/assets/masters/gorakhnath.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/gorakhnath.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/gorakhnath.jpg",
+      "size": 89113,
+      "uploaded_at": "2026-10-21T09:26:59.223Z"
+    },
+    "assets/masters/buddha.jpg": {
+      "storage_path": "src/assets/assets/masters/buddha.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/buddha.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/buddha.jpg",
+      "size": 89052,
+      "uploaded_at": "2026-10-21T09:26:59.367Z"
+    },
+    "assets/masters/dharma.jpg": {
+      "storage_path": "src/assets/assets/masters/dharma.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/dharma.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/dharma.jpg",
+      "size": 88929,
+      "uploaded_at": "2026-10-21T09:26:59.520Z"
+    },
+    "assets/masters/adiyogi.jpg": {
+      "storage_path": "src/assets/assets/masters/adiyogi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/adiyogi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/adiyogi.jpg",
+      "size": 88663,
+      "uploaded_at": "2026-10-21T09:26:59.859Z"
+    },
+    "assets/masters/mitra-ai.jpg": {
+      "storage_path": "src/assets/assets/masters/mitra-ai.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/mitra-ai.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/mitra-ai.jpg",
+      "size": 88578,
+      "uploaded_at": "2026-10-21T09:27:00.045Z"
+    },
+    "assets/self-inquiry-hero.jpg": {
+      "storage_path": "src/assets/assets/self-inquiry-hero.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/self-inquiry-hero.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/self-inquiry-hero.jpg",
+      "size": 88458,
+      "uploaded_at": "2026-10-21T09:27:00.223Z"
+    },
+    "assets/masters/padmasambhava.jpg": {
+      "storage_path": "src/assets/assets/masters/padmasambhava.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/padmasambhava.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/padmasambhava.jpg",
+      "size": 88431,
+      "uploaded_at": "2026-10-21T09:27:00.369Z"
+    },
+    "assets/masters/krishna.jpg": {
+      "storage_path": "src/assets/assets/masters/krishna.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/krishna.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/krishna.jpg",
+      "size": 88393,
+      "uploaded_at": "2026-10-21T09:27:00.590Z"
+    },
+    "assets/sensorial/ramana/02-aham.jpg": {
+      "storage_path": "src/assets/assets/sensorial/ramana/02-aham.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/ramana/02-aham.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/ramana/02-aham.jpg",
+      "size": 87260,
+      "uploaded_at": "2026-10-21T09:27:00.750Z"
+    },
+    "assets/masters/aasakti.jpg": {
+      "storage_path": "src/assets/assets/masters/aasakti.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/aasakti.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/aasakti.jpg",
+      "size": 86988,
+      "uploaded_at": "2026-10-21T09:27:00.954Z"
+    },
+    "assets/masters/patanjali.jpg": {
+      "storage_path": "src/assets/assets/masters/patanjali.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/patanjali.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/patanjali.jpg",
+      "size": 86745,
+      "uploaded_at": "2026-10-21T09:27:01.124Z"
+    },
+    "assets/masters/maatru.jpg": {
+      "storage_path": "src/assets/assets/masters/maatru.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/maatru.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/maatru.jpg",
+      "size": 85911,
+      "uploaded_at": "2026-10-21T09:27:01.265Z"
+    },
+    "assets/sensorial/sadhguru/05-stillness.jpg": {
+      "storage_path": "src/assets/assets/sensorial/sadhguru/05-stillness.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/sadhguru/05-stillness.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/sadhguru/05-stillness.jpg",
+      "size": 85526,
+      "uploaded_at": "2026-10-21T09:27:01.450Z"
+    },
+    "assets/masters/sarada.jpg": {
+      "storage_path": "src/assets/assets/masters/sarada.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/sarada.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/sarada.jpg",
+      "size": 85386,
+      "uploaded_at": "2026-10-21T09:27:01.614Z"
+    },
+    "assets/masters/milarepa.jpg": {
+      "storage_path": "src/assets/assets/masters/milarepa.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/milarepa.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/milarepa.jpg",
+      "size": 85226,
+      "uploaded_at": "2026-10-21T09:27:01.774Z"
+    },
+    "assets/paths/shakti.jpg": {
+      "storage_path": "src/assets/assets/paths/shakti.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/shakti.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/shakti.jpg",
+      "size": 85182,
+      "uploaded_at": "2026-10-21T09:27:01.929Z"
+    },
+    "games/assets/hero-witness-room.jpg": {
+      "storage_path": "src/assets/games/assets/hero-witness-room.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-witness-room.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-witness-room.jpg",
+      "size": 85162,
+      "uploaded_at": "2026-10-21T09:27:02.092Z"
+    },
+    "assets/sensorial/osho/02-chaotic-breath.jpg": {
+      "storage_path": "src/assets/assets/sensorial/osho/02-chaotic-breath.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/osho/02-chaotic-breath.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/osho/02-chaotic-breath.jpg",
+      "size": 84262,
+      "uploaded_at": "2026-10-21T09:27:02.269Z"
+    },
+    "assets/masters/aashraya.jpg": {
+      "storage_path": "src/assets/assets/masters/aashraya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/aashraya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/aashraya.jpg",
+      "size": 84188,
+      "uploaded_at": "2026-10-21T09:27:02.447Z"
+    },
+    "assets/masters/bodhidharma.jpg": {
+      "storage_path": "src/assets/assets/masters/bodhidharma.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/bodhidharma.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/bodhidharma.jpg",
+      "size": 84051,
+      "uploaded_at": "2026-10-21T09:27:02.591Z"
+    },
+    "assets/masters/adhyayan.jpg": {
+      "storage_path": "src/assets/assets/masters/adhyayan.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/adhyayan.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/adhyayan.jpg",
+      "size": 83875,
+      "uploaded_at": "2026-10-21T09:27:02.811Z"
+    },
+    "assets/masters/shanti.jpg": {
+      "storage_path": "src/assets/assets/masters/shanti.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/shanti.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/shanti.jpg",
+      "size": 83805,
+      "uploaded_at": "2026-10-21T09:27:03.043Z"
+    },
+    "assets/games/mirror-realm.jpg": {
+      "storage_path": "src/assets/assets/games/mirror-realm.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/games/mirror-realm.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/games/mirror-realm.jpg",
+      "size": 83621,
+      "uploaded_at": "2026-10-21T09:27:03.207Z"
+    },
+    "games/assets/hero-dream-letter.jpg": {
+      "storage_path": "src/assets/games/assets/hero-dream-letter.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-dream-letter.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-dream-letter.jpg",
+      "size": 82987,
+      "uploaded_at": "2026-10-21T09:27:03.377Z"
+    },
+    "assets/masters/yogananda.jpg": {
+      "storage_path": "src/assets/assets/masters/yogananda.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/yogananda.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/yogananda.jpg",
+      "size": 82943,
+      "uploaded_at": "2026-10-21T09:27:03.522Z"
+    },
+    "games/assets/cover-inquiry.jpg": {
+      "storage_path": "src/assets/games/assets/cover-inquiry.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/cover-inquiry.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/cover-inquiry.jpg",
+      "size": 82855,
+      "uploaded_at": "2026-10-21T09:27:03.687Z"
+    },
+    "assets/cosmic-sunrise.jpg": {
+      "storage_path": "src/assets/assets/cosmic-sunrise.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-sunrise.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-sunrise.jpg",
+      "size": 82645,
+      "uploaded_at": "2026-10-21T09:27:03.845Z"
+    },
+    "assets/masters/rishi.jpg": {
+      "storage_path": "src/assets/assets/masters/rishi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/rishi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/rishi.jpg",
+      "size": 82416,
+      "uploaded_at": "2026-10-21T09:27:04.002Z"
+    },
+    "assets/sensorial/buddha/03-long-breath.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha/03-long-breath.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha/03-long-breath.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha/03-long-breath.jpg",
+      "size": 82363,
+      "uploaded_at": "2026-10-21T09:27:04.156Z"
+    },
+    "assets/masters/chaitanya.jpg": {
+      "storage_path": "src/assets/assets/masters/chaitanya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/chaitanya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/chaitanya.jpg",
+      "size": 81826,
+      "uploaded_at": "2026-10-21T09:27:04.316Z"
+    },
+    "assets/masters/nagarjuna.jpg": {
+      "storage_path": "src/assets/assets/masters/nagarjuna.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/nagarjuna.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/nagarjuna.jpg",
+      "size": 81786,
+      "uploaded_at": "2026-10-21T09:27:04.488Z"
+    },
+    "assets/masters/mirabai.jpg": {
+      "storage_path": "src/assets/assets/masters/mirabai.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/mirabai.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/mirabai.jpg",
+      "size": 81387,
+      "uploaded_at": "2026-10-21T09:27:04.642Z"
+    },
+    "assets/masters/vyasana.jpg": {
+      "storage_path": "src/assets/assets/masters/vyasana.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/vyasana.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/vyasana.jpg",
+      "size": 81237,
+      "uploaded_at": "2026-10-21T09:27:04.828Z"
+    },
+    "assets/masters/seva-warrior.jpg": {
+      "storage_path": "src/assets/assets/masters/seva-warrior.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/seva-warrior.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/seva-warrior.jpg",
+      "size": 81147,
+      "uploaded_at": "2026-10-21T09:27:04.977Z"
+    },
+    "assets/masters/pitri.jpg": {
+      "storage_path": "src/assets/assets/masters/pitri.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/pitri.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/pitri.jpg",
+      "size": 80954,
+      "uploaded_at": "2026-10-21T09:27:05.139Z"
+    },
+    "assets/masters/bandhu.jpg": {
+      "storage_path": "src/assets/assets/masters/bandhu.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/bandhu.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/bandhu.jpg",
+      "size": 80584,
+      "uploaded_at": "2026-10-21T09:27:05.312Z"
+    },
+    "assets/sensorial/ramana/05-arunachala-dawn.jpg": {
+      "storage_path": "src/assets/assets/sensorial/ramana/05-arunachala-dawn.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/ramana/05-arunachala-dawn.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/ramana/05-arunachala-dawn.jpg",
+      "size": 80384,
+      "uploaded_at": "2026-10-21T09:27:05.487Z"
+    },
+    "assets/sensorial/buddha/01-arrive.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha/01-arrive.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha/01-arrive.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha/01-arrive.jpg",
+      "size": 80070,
+      "uploaded_at": "2026-10-21T09:27:05.658Z"
+    },
+    "assets/masters/vivaha.jpg": {
+      "storage_path": "src/assets/assets/masters/vivaha.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/vivaha.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/vivaha.jpg",
+      "size": 79751,
+      "uploaded_at": "2026-10-21T09:27:05.851Z"
+    },
+    "assets/practices/loving-kindness.jpg": {
+      "storage_path": "src/assets/assets/practices/loving-kindness.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/loving-kindness.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/loving-kindness.jpg",
+      "size": 79129,
+      "uploaded_at": "2026-10-21T09:27:06.021Z"
+    },
+    "games/assets/cover-featured.jpg": {
+      "storage_path": "src/assets/games/assets/cover-featured.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/cover-featured.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/cover-featured.jpg",
+      "size": 79113,
+      "uploaded_at": "2026-10-21T09:27:06.275Z"
+    },
+    "assets/masters/the-elder.jpg": {
+      "storage_path": "src/assets/assets/masters/the-elder.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/the-elder.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/the-elder.jpg",
+      "size": 78719,
+      "uploaded_at": "2026-10-21T09:27:06.468Z"
+    },
+    "assets/masters/lahiri.jpg": {
+      "storage_path": "src/assets/assets/masters/lahiri.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/lahiri.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/lahiri.jpg",
+      "size": 78275,
+      "uploaded_at": "2026-10-21T09:27:06.679Z"
+    },
+    "assets/masters/tula.jpg": {
+      "storage_path": "src/assets/assets/masters/tula.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/tula.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/tula.jpg",
+      "size": 78157,
+      "uploaded_at": "2026-10-21T09:27:06.875Z"
+    },
+    "assets/masters/vira.jpg": {
+      "storage_path": "src/assets/assets/masters/vira.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/vira.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/vira.jpg",
+      "size": 78140,
+      "uploaded_at": "2026-10-21T09:27:07.035Z"
+    },
+    "assets/masters/anaya.jpg": {
+      "storage_path": "src/assets/assets/masters/anaya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/anaya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/anaya.jpg",
+      "size": 76828,
+      "uploaded_at": "2026-10-21T09:27:07.199Z"
+    },
+    "assets/journey-witness-doer.jpg": {
+      "storage_path": "src/assets/assets/journey-witness-doer.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/journey-witness-doer.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/journey-witness-doer.jpg",
+      "size": 76774,
+      "uploaded_at": "2026-10-21T09:27:07.372Z"
+    },
+    "assets/masters/shankaracharya.jpg": {
+      "storage_path": "src/assets/assets/masters/shankaracharya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/shankaracharya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/shankaracharya.jpg",
+      "size": 76418,
+      "uploaded_at": "2026-10-21T09:27:07.524Z"
+    },
+    "assets/games/three-brains.jpg": {
+      "storage_path": "src/assets/assets/games/three-brains.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/games/three-brains.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/games/three-brains.jpg",
+      "size": 76226,
+      "uploaded_at": "2026-10-21T09:27:07.719Z"
+    },
+    "assets/masters/jnaneshwar.jpg": {
+      "storage_path": "src/assets/assets/masters/jnaneshwar.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/jnaneshwar.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/jnaneshwar.jpg",
+      "size": 75629,
+      "uploaded_at": "2026-10-21T09:27:07.889Z"
+    },
+    "assets/sensorial/yogananda/06-pure-awareness.jpg": {
+      "storage_path": "src/assets/assets/sensorial/yogananda/06-pure-awareness.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/yogananda/06-pure-awareness.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/yogananda/06-pure-awareness.jpg",
+      "size": 74679,
+      "uploaded_at": "2026-10-21T09:27:08.041Z"
+    },
+    "assets/launch/kf09-logo.jpg": {
+      "storage_path": "src/assets/assets/launch/kf09-logo.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/launch/kf09-logo.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/launch/kf09-logo.jpg",
+      "size": 74584,
+      "uploaded_at": "2026-10-21T09:27:08.184Z"
+    },
+    "assets/masters/mira.jpg": {
+      "storage_path": "src/assets/assets/masters/mira.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/mira.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/mira.jpg",
+      "size": 74311,
+      "uploaded_at": "2026-10-21T09:27:08.325Z"
+    },
+    "assets/masters/gaia.jpg": {
+      "storage_path": "src/assets/assets/masters/gaia.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/gaia.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/gaia.jpg",
+      "size": 74174,
+      "uploaded_at": "2026-10-21T09:27:08.481Z"
+    },
+    "assets/paths/level-5.jpg": {
+      "storage_path": "src/assets/assets/paths/level-5.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/level-5.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/level-5.jpg",
+      "size": 74028,
+      "uploaded_at": "2026-10-21T09:27:08.755Z"
+    },
+    "assets/practices/so-hum.jpg": {
+      "storage_path": "src/assets/assets/practices/so-hum.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/so-hum.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/so-hum.jpg",
+      "size": 73935,
+      "uploaded_at": "2026-10-21T09:27:08.897Z"
+    },
+    "assets/practices/walking-meditation.jpg": {
+      "storage_path": "src/assets/assets/practices/walking-meditation.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/walking-meditation.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/walking-meditation.jpg",
+      "size": 73809,
+      "uploaded_at": "2026-10-21T09:27:09.039Z"
+    },
+    "assets/practices/coherent-breath.jpg": {
+      "storage_path": "src/assets/assets/practices/coherent-breath.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/coherent-breath.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/coherent-breath.jpg",
+      "size": 73808,
+      "uploaded_at": "2026-10-21T09:27:10.075Z"
+    },
+    "assets/masters/anandamayi.jpg": {
+      "storage_path": "src/assets/assets/masters/anandamayi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/anandamayi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/anandamayi.jpg",
+      "size": 73435,
+      "uploaded_at": "2026-10-21T09:27:10.238Z"
+    },
+    "assets/masters/drishti-focus.jpg": {
+      "storage_path": "src/assets/assets/masters/drishti-focus.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/drishti-focus.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/drishti-focus.jpg",
+      "size": 73362,
+      "uploaded_at": "2026-10-21T09:27:10.414Z"
+    },
+    "assets/masters/krishna-ai.jpg": {
+      "storage_path": "src/assets/assets/masters/krishna-ai.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/krishna-ai.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/krishna-ai.jpg",
+      "size": 72945,
+      "uploaded_at": "2026-10-21T09:27:10.597Z"
+    },
+    "games/assets/hero-three-brains.jpg": {
+      "storage_path": "src/assets/games/assets/hero-three-brains.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-three-brains.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-three-brains.jpg",
+      "size": 72897,
+      "uploaded_at": "2026-10-21T09:27:10.781Z"
+    },
+    "assets/masters/smriti.jpg": {
+      "storage_path": "src/assets/assets/masters/smriti.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/smriti.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/smriti.jpg",
+      "size": 72563,
+      "uploaded_at": "2026-10-21T09:27:10.948Z"
+    },
+    "assets/masters/ojas.jpg": {
+      "storage_path": "src/assets/assets/masters/ojas.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/ojas.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/ojas.jpg",
+      "size": 72347,
+      "uploaded_at": "2026-10-21T09:27:11.102Z"
+    },
+    "assets/journey-four-lenses.jpg": {
+      "storage_path": "src/assets/assets/journey-four-lenses.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/journey-four-lenses.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/journey-four-lenses.jpg",
+      "size": 72336,
+      "uploaded_at": "2026-10-21T09:27:11.252Z"
+    },
+    "assets/masters/dhruv.jpg": {
+      "storage_path": "src/assets/assets/masters/dhruv.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/dhruv.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/dhruv.jpg",
+      "size": 71848,
+      "uploaded_at": "2026-10-21T09:27:11.409Z"
+    },
+    "assets/masters/ramakrishna.jpg": {
+      "storage_path": "src/assets/assets/masters/ramakrishna.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/ramakrishna.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/ramakrishna.jpg",
+      "size": 71510,
+      "uploaded_at": "2026-10-21T09:27:11.563Z"
+    },
+    "assets/cosmic-void.jpg": {
+      "storage_path": "src/assets/assets/cosmic-void.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/cosmic-void.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/cosmic-void.jpg",
+      "size": 70967,
+      "uploaded_at": "2026-10-21T09:27:11.715Z"
+    },
+    "assets/masters/daakini.jpg": {
+      "storage_path": "src/assets/assets/masters/daakini.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/daakini.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/daakini.jpg",
+      "size": 70533,
+      "uploaded_at": "2026-10-21T09:27:11.867Z"
+    },
+    "assets/masters/nisargadatta.jpg": {
+      "storage_path": "src/assets/assets/masters/nisargadatta.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/nisargadatta.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/nisargadatta.jpg",
+      "size": 70372,
+      "uploaded_at": "2026-10-21T09:27:12.008Z"
+    },
+    "assets/masters/akkamahadevi.jpg": {
+      "storage_path": "src/assets/assets/masters/akkamahadevi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/akkamahadevi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/akkamahadevi.jpg",
+      "size": 69930,
+      "uploaded_at": "2026-10-21T09:27:12.151Z"
+    },
+    "games/assets/hero-last-breath.jpg": {
+      "storage_path": "src/assets/games/assets/hero-last-breath.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-last-breath.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-last-breath.jpg",
+      "size": 69746,
+      "uploaded_at": "2026-10-21T09:27:12.298Z"
+    },
+    "assets/masters/babaji.jpg": {
+      "storage_path": "src/assets/assets/masters/babaji.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/babaji.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/babaji.jpg",
+      "size": 69730,
+      "uploaded_at": "2026-10-21T09:27:12.447Z"
+    },
+    "assets/masters/chandra-cycles.jpg": {
+      "storage_path": "src/assets/assets/masters/chandra-cycles.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/chandra-cycles.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/chandra-cycles.jpg",
+      "size": 68962,
+      "uploaded_at": "2026-10-21T09:27:12.623Z"
+    },
+    "assets/sensorial/sadhguru/02-mudra.jpg": {
+      "storage_path": "src/assets/assets/sensorial/sadhguru/02-mudra.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/sadhguru/02-mudra.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/sadhguru/02-mudra.jpg",
+      "size": 68916,
+      "uploaded_at": "2026-10-21T09:27:12.770Z"
+    },
+    "assets/masters/advaita.jpg": {
+      "storage_path": "src/assets/assets/masters/advaita.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/advaita.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/advaita.jpg",
+      "size": 68610,
+      "uploaded_at": "2026-10-21T09:27:12.987Z"
+    },
+    "assets/masters/citta-untangler.jpg": {
+      "storage_path": "src/assets/assets/masters/citta-untangler.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/citta-untangler.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/citta-untangler.jpg",
+      "size": 68520,
+      "uploaded_at": "2026-10-21T09:27:13.198Z"
+    },
+    "assets/sensorial/krishnamurti/01-arrive.jpg": {
+      "storage_path": "src/assets/assets/sensorial/krishnamurti/01-arrive.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/krishnamurti/01-arrive.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/krishnamurti/01-arrive.jpg",
+      "size": 68505,
+      "uploaded_at": "2026-10-21T09:27:13.399Z"
+    },
+    "assets/masters/allama.jpg": {
+      "storage_path": "src/assets/assets/masters/allama.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/allama.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/allama.jpg",
+      "size": 67643,
+      "uploaded_at": "2026-10-21T09:27:13.590Z"
+    },
+    "assets/masters/rasa.jpg": {
+      "storage_path": "src/assets/assets/masters/rasa.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/rasa.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/rasa.jpg",
+      "size": 67307,
+      "uploaded_at": "2026-10-21T09:27:13.736Z"
+    },
+    "assets/masters/jyoti.jpg": {
+      "storage_path": "src/assets/assets/masters/jyoti.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/jyoti.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/jyoti.jpg",
+      "size": 67232,
+      "uploaded_at": "2026-10-21T09:27:13.882Z"
+    },
+    "assets/masters/ramana.jpg": {
+      "storage_path": "src/assets/assets/masters/ramana.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/ramana.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/ramana.jpg",
+      "size": 66624,
+      "uploaded_at": "2026-10-21T09:27:14.038Z"
+    },
+    "assets/paths/level-6.jpg": {
+      "storage_path": "src/assets/assets/paths/level-6.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/paths/level-6.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/paths/level-6.jpg",
+      "size": 66188,
+      "uploaded_at": "2026-10-21T09:27:14.186Z"
+    },
+    "assets/masters/prana-rakshak.jpg": {
+      "storage_path": "src/assets/assets/masters/prana-rakshak.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/prana-rakshak.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/prana-rakshak.jpg",
+      "size": 66035,
+      "uploaded_at": "2026-10-21T09:27:14.335Z"
+    },
+    "assets/masters/karuna.jpg": {
+      "storage_path": "src/assets/assets/masters/karuna.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/karuna.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/karuna.jpg",
+      "size": 65632,
+      "uploaded_at": "2026-10-21T09:27:14.475Z"
+    },
+    "assets/masters/nidra.jpg": {
+      "storage_path": "src/assets/assets/masters/nidra.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/nidra.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/nidra.jpg",
+      "size": 64790,
+      "uploaded_at": "2026-10-21T09:27:14.616Z"
+    },
+    "assets/sensorial/ramana/03-trace-i.jpg": {
+      "storage_path": "src/assets/assets/sensorial/ramana/03-trace-i.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/ramana/03-trace-i.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/ramana/03-trace-i.jpg",
+      "size": 64728,
+      "uploaded_at": "2026-10-21T09:27:14.783Z"
+    },
+    "assets/sensorial/buddha/05-calm.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha/05-calm.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha/05-calm.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha/05-calm.jpg",
+      "size": 64587,
+      "uploaded_at": "2026-10-21T09:27:15.051Z"
+    },
+    "assets/masters/tara.jpg": {
+      "storage_path": "src/assets/assets/masters/tara.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/tara.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/tara.jpg",
+      "size": 64402,
+      "uploaded_at": "2026-10-21T09:27:15.175Z"
+    },
+    "assets/masters/hakuin.jpg": {
+      "storage_path": "src/assets/assets/masters/hakuin.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/hakuin.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/hakuin.jpg",
+      "size": 63944,
+      "uploaded_at": "2026-10-21T09:27:15.313Z"
+    },
+    "assets/practices/body-scan.jpg": {
+      "storage_path": "src/assets/assets/practices/body-scan.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/body-scan.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/body-scan.jpg",
+      "size": 63865,
+      "uploaded_at": "2026-10-21T09:27:15.472Z"
+    },
+    "assets/practices/yoga-nidra.jpg": {
+      "storage_path": "src/assets/assets/practices/yoga-nidra.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/yoga-nidra.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/yoga-nidra.jpg",
+      "size": 63755,
+      "uploaded_at": "2026-10-21T09:27:15.606Z"
+    },
+    "assets/sensorial/yogananda/07-return.jpg": {
+      "storage_path": "src/assets/assets/sensorial/yogananda/07-return.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/yogananda/07-return.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/yogananda/07-return.jpg",
+      "size": 63606,
+      "uploaded_at": "2026-10-21T09:27:15.747Z"
+    },
+    "assets/masters/mahavira.jpg": {
+      "storage_path": "src/assets/assets/masters/mahavira.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/mahavira.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/mahavira.jpg",
+      "size": 63349,
+      "uploaded_at": "2026-10-21T09:27:15.880Z"
+    },
+    "assets/games/body-scanner.jpg": {
+      "storage_path": "src/assets/assets/games/body-scanner.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/games/body-scanner.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/games/body-scanner.jpg",
+      "size": 62928,
+      "uploaded_at": "2026-10-21T09:27:16.012Z"
+    },
+    "assets/sensorial/osho/06-celebrate.jpg": {
+      "storage_path": "src/assets/assets/sensorial/osho/06-celebrate.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/osho/06-celebrate.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/osho/06-celebrate.jpg",
+      "size": 62218,
+      "uploaded_at": "2026-10-21T09:27:16.133Z"
+    },
+    "assets/masters/plotinus.jpg": {
+      "storage_path": "src/assets/assets/masters/plotinus.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/plotinus.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/plotinus.jpg",
+      "size": 61827,
+      "uploaded_at": "2026-10-21T09:27:16.256Z"
+    },
+    "assets/games/karma-coin.jpg": {
+      "storage_path": "src/assets/assets/games/karma-coin.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/games/karma-coin.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/games/karma-coin.jpg",
+      "size": 61135,
+      "uploaded_at": "2026-10-21T09:27:16.406Z"
+    },
+    "assets/masters/jyotisha.jpg": {
+      "storage_path": "src/assets/assets/masters/jyotisha.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/jyotisha.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/jyotisha.jpg",
+      "size": 60366,
+      "uploaded_at": "2026-10-21T09:27:16.541Z"
+    },
+    "assets/masters/maya.jpg": {
+      "storage_path": "src/assets/assets/masters/maya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/maya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/maya.jpg",
+      "size": 60278,
+      "uploaded_at": "2026-10-21T09:27:16.674Z"
+    },
+    "assets/masters/lao-ai.jpg": {
+      "storage_path": "src/assets/assets/masters/lao-ai.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/lao-ai.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/lao-ai.jpg",
+      "size": 60160,
+      "uploaded_at": "2026-10-21T09:27:16.835Z"
+    },
+    "assets/journey-ancient-yogi.jpg": {
+      "storage_path": "src/assets/assets/journey-ancient-yogi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/journey-ancient-yogi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/journey-ancient-yogi.jpg",
+      "size": 59962,
+      "uploaded_at": "2026-10-21T09:27:16.979Z"
+    },
+    "assets/sensorial/sadhguru/01-arrive.jpg": {
+      "storage_path": "src/assets/assets/sensorial/sadhguru/01-arrive.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/sadhguru/01-arrive.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/sadhguru/01-arrive.jpg",
+      "size": 59673,
+      "uploaded_at": "2026-10-21T09:27:17.118Z"
+    },
+    "assets/maps/observation.jpg": {
+      "storage_path": "src/assets/assets/maps/observation.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/maps/observation.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/maps/observation.jpg",
+      "size": 59635,
+      "uploaded_at": "2026-10-21T09:27:17.255Z"
+    },
+    "assets/masters/mirror-maya.jpg": {
+      "storage_path": "src/assets/assets/masters/mirror-maya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/mirror-maya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/mirror-maya.jpg",
+      "size": 59561,
+      "uploaded_at": "2026-10-21T09:27:17.380Z"
+    },
+    "games/assets/hero-will-forge.jpg": {
+      "storage_path": "src/assets/games/assets/hero-will-forge.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-will-forge.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-will-forge.jpg",
+      "size": 59370,
+      "uploaded_at": "2026-10-21T09:27:17.510Z"
+    },
+    "assets/masters/soka.jpg": {
+      "storage_path": "src/assets/assets/masters/soka.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/soka.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/soka.jpg",
+      "size": 59140,
+      "uploaded_at": "2026-10-21T09:27:17.661Z"
+    },
+    "assets/masters/om.jpg": {
+      "storage_path": "src/assets/assets/masters/om.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/om.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/om.jpg",
+      "size": 59076,
+      "uploaded_at": "2026-10-21T09:27:17.827Z"
+    },
+    "assets/launch/kf03-bell.jpg": {
+      "storage_path": "src/assets/assets/launch/kf03-bell.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/launch/kf03-bell.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/launch/kf03-bell.jpg",
+      "size": 58768,
+      "uploaded_at": "2026-10-21T09:27:17.990Z"
+    },
+    "assets/masters/rumi-ai.jpg": {
+      "storage_path": "src/assets/assets/masters/rumi-ai.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/rumi-ai.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/rumi-ai.jpg",
+      "size": 58417,
+      "uploaded_at": "2026-10-21T09:27:18.151Z"
+    },
+    "assets/sensorial/krishnamurti/02-listen.jpg": {
+      "storage_path": "src/assets/assets/sensorial/krishnamurti/02-listen.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/krishnamurti/02-listen.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/krishnamurti/02-listen.jpg",
+      "size": 57644,
+      "uploaded_at": "2026-10-21T09:27:18.327Z"
+    },
+    "assets/games/tonglen.jpg": {
+      "storage_path": "src/assets/assets/games/tonglen.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/games/tonglen.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/games/tonglen.jpg",
+      "size": 56652,
+      "uploaded_at": "2026-10-21T09:27:18.480Z"
+    },
+    "games/assets/hero-breath-ladder.jpg": {
+      "storage_path": "src/assets/games/assets/hero-breath-ladder.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-breath-ladder.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-breath-ladder.jpg",
+      "size": 55912,
+      "uploaded_at": "2026-10-21T09:27:18.665Z"
+    },
+    "assets/masters/ramana-ai.jpg": {
+      "storage_path": "src/assets/assets/masters/ramana-ai.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/ramana-ai.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/ramana-ai.jpg",
+      "size": 55386,
+      "uploaded_at": "2026-10-21T09:27:18.827Z"
+    },
+    "assets/masters/aarav.jpg": {
+      "storage_path": "src/assets/assets/masters/aarav.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/aarav.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/aarav.jpg",
+      "size": 54832,
+      "uploaded_at": "2026-10-21T09:27:18.984Z"
+    },
+    "assets/practices/kumbhaka.jpg": {
+      "storage_path": "src/assets/assets/practices/kumbhaka.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/kumbhaka.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/kumbhaka.jpg",
+      "size": 54789,
+      "uploaded_at": "2026-10-21T09:27:19.132Z"
+    },
+    "assets/sensorial/buddha-bodyscan/02-crown.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha-bodyscan/02-crown.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha-bodyscan/02-crown.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha-bodyscan/02-crown.jpg",
+      "size": 54192,
+      "uploaded_at": "2026-10-21T09:27:19.249Z"
+    },
+    "assets/sensorial/osho/01-arrive.jpg": {
+      "storage_path": "src/assets/assets/sensorial/osho/01-arrive.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/osho/01-arrive.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/osho/01-arrive.jpg",
+      "size": 54054,
+      "uploaded_at": "2026-10-21T09:27:19.404Z"
+    },
+    "assets/games/who-is-thinking.jpg": {
+      "storage_path": "src/assets/assets/games/who-is-thinking.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/games/who-is-thinking.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/games/who-is-thinking.jpg",
+      "size": 53622,
+      "uploaded_at": "2026-10-21T09:27:19.558Z"
+    },
+    "assets/sensorial/sadhguru-trataka/04-afterimage.jpg": {
+      "storage_path": "src/assets/assets/sensorial/sadhguru-trataka/04-afterimage.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/sadhguru-trataka/04-afterimage.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/sadhguru-trataka/04-afterimage.jpg",
+      "size": 53455,
+      "uploaded_at": "2026-10-21T09:27:19.727Z"
+    },
+    "assets/masters/sureshvara.jpg": {
+      "storage_path": "src/assets/assets/masters/sureshvara.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/sureshvara.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/sureshvara.jpg",
+      "size": 52592,
+      "uploaded_at": "2026-10-21T09:27:19.896Z"
+    },
+    "assets/practices/gratitude-pulse.jpg": {
+      "storage_path": "src/assets/assets/practices/gratitude-pulse.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/gratitude-pulse.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/gratitude-pulse.jpg",
+      "size": 52366,
+      "uploaded_at": "2026-10-21T09:27:20.067Z"
+    },
+    "assets/masters/vana.jpg": {
+      "storage_path": "src/assets/assets/masters/vana.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/vana.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/vana.jpg",
+      "size": 52303,
+      "uploaded_at": "2026-10-21T09:27:20.193Z"
+    },
+    "assets/sensorial/yogananda/01-arrive.jpg": {
+      "storage_path": "src/assets/assets/sensorial/yogananda/01-arrive.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/yogananda/01-arrive.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/yogananda/01-arrive.jpg",
+      "size": 52006,
+      "uploaded_at": "2026-10-21T09:27:20.357Z"
+    },
+    "assets/masters/silicon-sage.jpg": {
+      "storage_path": "src/assets/assets/masters/silicon-sage.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/silicon-sage.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/silicon-sage.jpg",
+      "size": 51920,
+      "uploaded_at": "2026-10-21T09:27:20.491Z"
+    },
+    "assets/masters/naada.jpg": {
+      "storage_path": "src/assets/assets/masters/naada.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/naada.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/naada.jpg",
+      "size": 51510,
+      "uploaded_at": "2026-10-21T09:27:20.624Z"
+    },
+    "assets/sensorial/buddha/07-impermanence.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha/07-impermanence.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha/07-impermanence.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha/07-impermanence.jpg",
+      "size": 51179,
+      "uploaded_at": "2026-10-21T09:27:20.744Z"
+    },
+    "assets/sensorial/yogananda/05-pause.jpg": {
+      "storage_path": "src/assets/assets/sensorial/yogananda/05-pause.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/yogananda/05-pause.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/yogananda/05-pause.jpg",
+      "size": 50681,
+      "uploaded_at": "2026-10-21T09:27:20.884Z"
+    },
+    "assets/sensorial/buddha-bodyscan/03-torso.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha-bodyscan/03-torso.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha-bodyscan/03-torso.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha-bodyscan/03-torso.jpg",
+      "size": 50555,
+      "uploaded_at": "2026-10-21T09:27:21.022Z"
+    },
+    "assets/practices/witness.jpg": {
+      "storage_path": "src/assets/assets/practices/witness.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/witness.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/witness.jpg",
+      "size": 50478,
+      "uploaded_at": "2026-10-21T09:27:21.608Z"
+    },
+    "games/assets/hero-two-mirrors.jpg": {
+      "storage_path": "src/assets/games/assets/hero-two-mirrors.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/hero-two-mirrors.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/hero-two-mirrors.jpg",
+      "size": 50466,
+      "uploaded_at": "2026-10-21T09:27:23.003Z"
+    },
+    "assets/practices/the-sigh.jpg": {
+      "storage_path": "src/assets/assets/practices/the-sigh.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/the-sigh.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/the-sigh.jpg",
+      "size": 49961,
+      "uploaded_at": "2026-10-21T09:27:23.132Z"
+    },
+    "assets/sensorial/yogananda/02-settle.jpg": {
+      "storage_path": "src/assets/assets/sensorial/yogananda/02-settle.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/yogananda/02-settle.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/yogananda/02-settle.jpg",
+      "size": 49920,
+      "uploaded_at": "2026-10-21T09:27:23.278Z"
+    },
+    "assets/masters/spanda.jpg": {
+      "storage_path": "src/assets/assets/masters/spanda.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/spanda.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/spanda.jpg",
+      "size": 49911,
+      "uploaded_at": "2026-10-21T09:27:23.404Z"
+    },
+    "assets/masters/antya.jpg": {
+      "storage_path": "src/assets/assets/masters/antya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/antya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/antya.jpg",
+      "size": 49564,
+      "uploaded_at": "2026-10-21T09:27:23.539Z"
+    },
+    "assets/masters/siddh.jpg": {
+      "storage_path": "src/assets/assets/masters/siddh.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/siddh.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/siddh.jpg",
+      "size": 49460,
+      "uploaded_at": "2026-10-21T09:27:23.673Z"
+    },
+    "assets/sensorial/sadhguru/04-not-body-not-mind.jpg": {
+      "storage_path": "src/assets/assets/sensorial/sadhguru/04-not-body-not-mind.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/sadhguru/04-not-body-not-mind.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/sadhguru/04-not-body-not-mind.jpg",
+      "size": 49419,
+      "uploaded_at": "2026-10-21T09:27:23.810Z"
+    },
+    "assets/masters/sakshi.jpg": {
+      "storage_path": "src/assets/assets/masters/sakshi.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/sakshi.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/sakshi.jpg",
+      "size": 49195,
+      "uploaded_at": "2026-10-21T09:27:24.340Z"
+    },
+    "assets/masters/buddha-ai.jpg": {
+      "storage_path": "src/assets/assets/masters/buddha-ai.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/buddha-ai.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/buddha-ai.jpg",
+      "size": 48569,
+      "uploaded_at": "2026-10-21T09:27:24.974Z"
+    },
+    "assets/masters/atman.jpg": {
+      "storage_path": "src/assets/assets/masters/atman.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/atman.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/atman.jpg",
+      "size": 47611,
+      "uploaded_at": "2026-10-21T09:27:25.574Z"
+    },
+    "assets/sensorial/sadhguru/06-return.jpg": {
+      "storage_path": "src/assets/assets/sensorial/sadhguru/06-return.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/sadhguru/06-return.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/sadhguru/06-return.jpg",
+      "size": 47591,
+      "uploaded_at": "2026-10-21T09:27:26.233Z"
+    },
+    "assets/games/the-sigh.jpg": {
+      "storage_path": "src/assets/assets/games/the-sigh.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/games/the-sigh.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/games/the-sigh.jpg",
+      "size": 47392,
+      "uploaded_at": "2026-10-21T09:27:27.118Z"
+    },
+    "assets/sensorial/sadhguru-trataka/05-palming.jpg": {
+      "storage_path": "src/assets/assets/sensorial/sadhguru-trataka/05-palming.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/sadhguru-trataka/05-palming.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/sadhguru-trataka/05-palming.jpg",
+      "size": 47076,
+      "uploaded_at": "2026-10-21T09:27:27.249Z"
+    },
+    "assets/maps/self-inquiry.jpg": {
+      "storage_path": "src/assets/assets/maps/self-inquiry.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/maps/self-inquiry.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/maps/self-inquiry.jpg",
+      "size": 46065,
+      "uploaded_at": "2026-10-21T09:27:27.399Z"
+    },
+    "assets/practices/three-brain-checkin.jpg": {
+      "storage_path": "src/assets/assets/practices/three-brain-checkin.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/three-brain-checkin.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/three-brain-checkin.jpg",
+      "size": 45139,
+      "uploaded_at": "2026-10-21T09:27:27.539Z"
+    },
+    "assets/masters/hridaya.jpg": {
+      "storage_path": "src/assets/assets/masters/hridaya.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/masters/hridaya.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/masters/hridaya.jpg",
+      "size": 45044,
+      "uploaded_at": "2026-10-21T09:27:28.089Z"
+    },
+    "assets/sensorial/yogananda/04-mantra.jpg": {
+      "storage_path": "src/assets/assets/sensorial/yogananda/04-mantra.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/yogananda/04-mantra.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/yogananda/04-mantra.jpg",
+      "size": 44701,
+      "uploaded_at": "2026-10-21T09:27:28.387Z"
+    },
+    "assets/sensorial/buddha/02-notice-breath.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha/02-notice-breath.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha/02-notice-breath.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha/02-notice-breath.jpg",
+      "size": 44481,
+      "uploaded_at": "2026-10-21T09:27:28.512Z"
+    },
+    "assets/sensorial/osho/03-catharsis.jpg": {
+      "storage_path": "src/assets/assets/sensorial/osho/03-catharsis.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/osho/03-catharsis.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/osho/03-catharsis.jpg",
+      "size": 44309,
+      "uploaded_at": "2026-10-21T09:27:28.645Z"
+    },
+    "assets/practices/self-inquiry.jpg": {
+      "storage_path": "src/assets/assets/practices/self-inquiry.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/self-inquiry.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/self-inquiry.jpg",
+      "size": 43067,
+      "uploaded_at": "2026-10-21T09:27:29.111Z"
+    },
+    "assets/sensorial/buddha/04-whole-body.jpg": {
+      "storage_path": "src/assets/assets/sensorial/buddha/04-whole-body.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/buddha/04-whole-body.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/buddha/04-whole-body.jpg",
+      "size": 42902,
+      "uploaded_at": "2026-10-21T09:27:29.598Z"
+    },
+    "assets/games/name-the-storm.jpg": {
+      "storage_path": "src/assets/assets/games/name-the-storm.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/games/name-the-storm.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/games/name-the-storm.jpg",
+      "size": 42572,
+      "uploaded_at": "2026-10-21T09:27:29.846Z"
+    },
+    "assets/games/ninth-dharana.jpg": {
+      "storage_path": "src/assets/assets/games/ninth-dharana.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/games/ninth-dharana.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/games/ninth-dharana.jpg",
+      "size": 42290,
+      "uploaded_at": "2026-10-21T09:27:30.008Z"
+    },
+    "assets/sensorial/yogananda/03-watch.jpg": {
+      "storage_path": "src/assets/assets/sensorial/yogananda/03-watch.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/yogananda/03-watch.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/yogananda/03-watch.jpg",
+      "size": 41191,
+      "uploaded_at": "2026-10-21T09:27:30.279Z"
+    },
+    "games/assets/cover-liminal.jpg": {
+      "storage_path": "src/assets/games/assets/cover-liminal.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/games/assets/cover-liminal.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/games/assets/cover-liminal.jpg",
+      "size": 40504,
+      "uploaded_at": "2026-10-21T09:27:30.408Z"
+    },
+    "assets/sensorial/sadhguru/03-aaa-sound.jpg": {
+      "storage_path": "src/assets/assets/sensorial/sadhguru/03-aaa-sound.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/sadhguru/03-aaa-sound.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/sadhguru/03-aaa-sound.jpg",
+      "size": 40500,
+      "uploaded_at": "2026-10-21T09:27:30.627Z"
+    },
+    "assets/practices/death-contemplation.jpg": {
+      "storage_path": "src/assets/assets/practices/death-contemplation.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/practices/death-contemplation.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/practices/death-contemplation.jpg",
+      "size": 40173,
+      "uploaded_at": "2026-10-21T09:27:30.766Z"
+    },
+    "assets/sensorial/ramana/04-rest.jpg": {
+      "storage_path": "src/assets/assets/sensorial/ramana/04-rest.jpg",
+      "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/assets/sensorial/ramana/04-rest.jpg",
+      "render_url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/render/image/public/media/src/assets/assets/sensorial/ramana/04-rest.jpg",
+      "size": 40169,
+      "uploaded_at": "2026-10-21T09:27:30.908Z"
+    }
+  },
+  "updated_at": "2026-10-21T09:27:30.908Z",
+  "total": 299
+}

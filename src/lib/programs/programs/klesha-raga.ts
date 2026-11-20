@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KLESHA_RAGA: SessionProgramV3 = {
+  id: "klesha-raga",
+  title: "Klesha · Raga",
+  subtitle: "Attachment — the pull toward pleasure and the past",
+  description:
+    "A 5-session arc through Raga: the magnetic pull toward objects, experiences, and states that have given pleasure. The memory of pleasure creates compulsive reaching.",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["klesha", "raga", "attachment", "desire"],
+  icon: "Heart",
+  coverGradient: "from-rose-500 to-pink-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The pull of memory" },
+    { phase: "Practice", sessions: 1, focus: "See the reaching" },
+    { phase: "Integration", sessions: 1, focus: "Release the grasp" },
+    { phase: "Mastery", sessions: 1, focus: "The open hand" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The magnet of memory",
+      required: ["ritual.opening-bow", "teach.klesha.overview", "wisdom.klesha.raga"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Map your attachments",
+      required: ["wisdom.klesha.raga", "journal.what-am-i-avoiding", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "See the compulsive reaching",
+      required: ["wisdom.klesha.raga", "witness.thought-as-object", "observe.thought-count"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "Practice non-grasping",
+      required: ["wisdom.klesha.raga", "teach.klesha.dissolve", "micro-act.tidy-one-thing"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The open hand",
+      required: ["ritual.opening-bow", "wisdom.klesha.raga", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

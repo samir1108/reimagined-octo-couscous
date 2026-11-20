@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "670bf8f9-d8c1-40db-84fa-f0e963ba3b0b",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/programs/videos/decision-making-with-krishna.mp4",
+  "original_filename": "decision-making-with-krishna.mp4",
+  "size": 9960617,
+  "created_at": "2026-07-16T18:40:27Z",
+  "bucket": "media",
+  "storage_path": "src/assets/programs/videos/decision-making-with-krishna.mp4",
+  "migrated_at": "2026-10-20T11:34:43.808Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/670bf8f9-d8c1-40db-84fa-f0e963ba3b0b/decision-making-with-krishna.mp4"
+}

@@ -1,0 +1,27 @@
+{
+  "reel": "R005",
+  "protagonist": "ANJALI",
+  "loop_id": "VAL004",
+  "loop_human_name": "the 2 AM refresh",
+  "duration_s": 39.92,
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "model": "eleven_turbo_v2_5",
+  "keyframes": [
+    "k1.png",
+    "k2.png",
+    "k3.png",
+    "k4.png",
+    "k5.png",
+    "k6.png"
+  ],
+  "clips": [
+    "clip1.mp4",
+    "clip2.mp4",
+    "clip3.mp4",
+    "clip4.mp4",
+    "clip5.mp4"
+  ],
+  "caption_style": "Anton 140pt, gold word-highlight, MarginV=345 (Y\u224882%)",
+  "music_bed": "ElevenLabs sound-gen \u2014 lo-fi piano + monsoon rain, looped, -18dB ducked",
+  "playbook_version": "08-REEL-EXECUTION-PLAYBOOK v1"
+}

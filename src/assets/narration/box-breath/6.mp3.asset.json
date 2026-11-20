@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "asset_id": "2f7c1325-3356-4cf2-922b-210a5d701475",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/narration/box-breath/6.mp3",
+  "r2_key": "a/v1/b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5/2f7c1325-3356-4cf2-922b-210a5d701475/box-breath-6.mp3",
+  "original_filename": "box-breath-6.mp3",
+  "size": 86016,
+  "content_type": "audio/mpeg",
+  "created_at": "2026-07-12T01:44:16Z",
+  "bucket": "media",
+  "storage_path": "src/assets/narration/box-breath/6.mp3",
+  "migrated_at": "2026-10-20T11:27:03.645Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/2f7c1325-3356-4cf2-922b-210a5d701475/box-breath-6.mp3"
+}

@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const AYURVEDA_AGNI: SessionProgramV3 = {
+  id: "ayurveda-agni",
+  title: "Ayurveda · Agni",
+  subtitle: "The digestive fire — tend the transformer",
+  description:
+    "A 5-session arc through Agni: the 13 fires of transformation, how to strengthen digestion, and how to prevent ama (toxins).",
+  difficulty: "intermediate",
+  category: "ancient-yoga",
+  tags: ["ayurveda", "agni", "digestion", "fire"],
+  icon: "Flame",
+  coverGradient: "from-orange-600 to-red-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The 13 fires" },
+    { phase: "Practice", sessions: 1, focus: "Strengthen jatharagni" },
+    { phase: "Integration", sessions: 1, focus: "Eating with awareness" },
+    { phase: "Mastery", sessions: 1, focus: "The clear fire" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The transformer of food into consciousness",
+      required: ["ritual.opening-bow", "teach.ayurveda.agni", "wisdom.ayurveda.agni"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The 13 types of agni",
+      required: ["wisdom.ayurveda.agni", "wisdom.ayurveda.ama", "teach.ayurveda.agni"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Strengthen the digestive fire",
+      required: ["wisdom.ayurveda.agni", "bandha.uddiyana", "breath.kapalbhati", "breath.coherent-5-5"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Eating with awareness",
+      required: ["wisdom.ayurveda.agni", "teach.ayurveda.agni", "micro-act.no-phone-meal", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The clear fire",
+      required: ["ritual.opening-bow", "wisdom.ayurveda.agni", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

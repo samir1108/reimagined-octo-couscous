@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Sentinel",
+  "version": "0.1.0",
+  "description": "Privacy-first work-context watcher for the Sentient Companion. Tracks active site categories and posts aggregated focus/restlessness signals.",
+  "permissions": ["tabs", "storage", "alarms", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": { "default_popup": "popup.html", "default_icon": "icon.png" },
+  "background": { "service_worker": "background.js" },
+  "options_page": "options.html",
+  "icons": { "48": "icon.png", "128": "icon.png" }
+}

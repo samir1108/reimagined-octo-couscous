@@ -1,0 +1,58 @@
+/**
+ * PROGRAM: Relationship Mirror — others reflect you.
+ */
+import type { SessionProgramV3 } from "../types";
+
+export const RELATIONSHIP_MIRROR: SessionProgramV3 = {
+  id: "relationship-mirror",
+  title: "Relationship Mirror",
+  subtitle: "Every person you meet is showing you yourself",
+  description:
+    "An 8-session arc using triggers, projections, and dialogue to turn relationships into the most direct path of awakening.",
+  difficulty: "intermediate",
+  category: "shadow",
+  tags: ["relationship", "mirror", "projection"],
+  icon: "Users",
+  coverGradient: "from-fuchsia-600 to-indigo-700",
+  totalSessions: 8,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The mirror principle" },
+    { phase: "Practice", sessions: 4, focus: "Trigger as teacher" },
+    { phase: "Integration", sessions: 1, focus: "Speak true" },
+    { phase: "Mastery", sessions: 1, focus: "Meet everyone clean" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Others are your mirror",
+      required: ["ritual.opening-bow", "teach.parable.two-arrows", "framework.loop-anatomy"],
+      targetMinutes: 18 },
+    { index: 2, phase: "Foundation",
+      intent: "Map your triggers",
+      required: ["shadow.who-triggers-me", "journal.head-heart-gut-check", "body.tension-map"],
+      targetMinutes: 22 },
+    { index: 3, phase: "Practice",
+      intent: "What you reject in them",
+      required: ["shadow.gold-projection", "ifs.meet-a-part", "voice-journal.speak-it-out"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Practice",
+      intent: "Pause before reacting",
+      required: ["loop-confront.interrupt-now", "breath.box-4-4-4-4", "neuro.amygdala-hijack"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Practice",
+      intent: "Three perspectives",
+      required: ["council.three-perspectives", "contemplation.sit-with-question", "journal.unsent-letter"],
+      targetMinutes: 25 },
+    { index: 6, phase: "Practice",
+      intent: "Soften the protector",
+      required: ["ifs.unburden-protector", "emotion.rain", "mudra.anjali"],
+      targetMinutes: 22 },
+    { index: 7, phase: "Integration",
+      intent: "Speak one true thing",
+      required: ["speech-vow.one-honest-thing", "micro-act.thank-someone", "ritual.dedicate-merit"],
+      targetMinutes: 18 },
+    { index: 8, phase: "Mastery",
+      intent: "Meet everyone clean",
+      required: ["ritual.opening-bow", "meditation.open-awareness", "inquiry.who-am-i", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

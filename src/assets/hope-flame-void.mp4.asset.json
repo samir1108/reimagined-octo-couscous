@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "6cb950f7-dc02-49fa-a515-7f77fb996ef8",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/hope-flame-void.mp4",
+  "original_filename": "hope-flame-void.mp4",
+  "size": 13672582,
+  "created_at": "2026-05-01T11:30:01Z",
+  "bucket": "media",
+  "storage_path": "src/assets/hope-flame-void.mp4",
+  "migrated_at": "2026-10-20T11:26:15.964Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/6cb950f7-dc02-49fa-a515-7f77fb996ef8/hope-flame-void.mp4"
+}

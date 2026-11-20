@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const AYURVEDA_DINACHARYA: SessionProgramV3 = {
+  id: "ayurveda-dinacharya",
+  title: "Ayurveda · Dinacharya",
+  subtitle: "Daily routine — align with the sun, honor the body",
+  description:
+    "A 5-session arc through Dinacharya: the daily routine aligned with nature's rhythms — from brahma muhurta to restful sleep.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["ayurveda", "dinacharya", "routine", "daily"],
+  icon: "Sunrise",
+  coverGradient: "from-orange-500 to-amber-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The ideal day" },
+    { phase: "Practice", sessions: 1, focus: "Morning rituals" },
+    { phase: "Integration", sessions: 1, focus: "Day and evening" },
+    { phase: "Mastery", sessions: 1, focus: "The rhythmic life" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Align with the sun",
+      required: ["ritual.opening-bow", "teach.ayurveda.dinacharya", "wisdom.ayurveda.dinacharya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The rhythm of doshas through the day",
+      required: ["wisdom.ayurveda.dinacharya", "teach.ayurveda.seasons", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Morning: cleanse, move, meditate",
+      required: ["wisdom.ayurveda.dinacharya", "asana.surya-namaskar-flow", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Midday, afternoon, evening",
+      required: ["wisdom.ayurveda.dinacharya", "teach.ayurveda.agni", "micro-act.no-phone-meal", "journal.day-in-one-sentence"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The rhythmic life",
+      required: ["ritual.opening-bow", "wisdom.ayurveda.dinacharya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

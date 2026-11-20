@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "726107e4-221d-42b2-ad86-b3b6e82bd630",
+  "project_id": "b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/v000/clip2.mp4",
+  "original_filename": "clip2.mp4",
+  "size": 19518898,
+  "created_at": "2026-05-10T12:17:27Z",
+  "bucket": "media",
+  "storage_path": "src/assets/v000/clip2.mp4",
+  "migrated_at": "2026-10-20T11:41:07.995Z",
+  "migrated_from": "https://id-preview--b8e7e9c2-f84b-41a3-a96d-7dad4057fa2f.lovable.app/__l5e/assets-v1/726107e4-221d-42b2-ad86-b3b6e82bd630/clip2.mp4"
+}

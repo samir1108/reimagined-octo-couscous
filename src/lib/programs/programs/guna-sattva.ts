@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const GUNA_SATTVA: SessionProgramV3 = {
+  id: "guna-sattva",
+  title: "Guna · Sattva",
+  subtitle: "Purity, clarity, harmony — cultivate the light",
+  description:
+    "A 5-session arc through Sattva: the guna of purity, clarity, and harmony. Cultivate sattva through diet, practice, and lifestyle.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["guna", "sattva", "purity", "clarity"],
+  icon: "Sun",
+  coverGradient: "from-yellow-400 to-amber-600",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The quality of light" },
+    { phase: "Practice", sessions: 1, focus: "Cultivate clarity" },
+    { phase: "Integration", sessions: 1, focus: "Sattva in the day" },
+    { phase: "Mastery", sessions: 1, focus: "Transcend even sattva" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The quality of illumination",
+      required: ["ritual.opening-bow", "teach.guna.overview", "wisdom.guna.sattva"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Recognize the three threads",
+      required: ["wisdom.guna.sattva", "teach.guna.cultivate", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Cultivate sattva in body and mind",
+      required: ["wisdom.guna.sattva", "meditation.sky-mind", "observe.5-senses"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Sattva in the day",
+      required: ["wisdom.guna.sattva", "micro-act.thank-someone", "journal.three-wins"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "Transcend even sattva",
+      required: ["ritual.opening-bow", "wisdom.guna.sattva", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

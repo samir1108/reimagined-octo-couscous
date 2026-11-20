@@ -1,0 +1,1 @@
+ALTER TABLE public.sessions ADD COLUMN IF NOT EXISTS theme_id uuid REFERENCES public.daily_themes(id) ON DELETE SET NULL;

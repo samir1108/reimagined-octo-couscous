@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const KOSHA_ANNAMAYA: SessionProgramV3 = {
+  id: "kosha-annamaya",
+  title: "Kosha · Annamaya",
+  subtitle: "The food sheath — know the body as food",
+  description:
+    "A 5-session arc through the Annamaya Kosha: the physical body as food, its birth, sustenance, and return.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["kosha", "annamaya", "body", "food"],
+  icon: "Apple",
+  coverGradient: "from-amber-600 to-orange-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The body as food" },
+    { phase: "Practice", sessions: 1, focus: "Sensory awareness" },
+    { phase: "Integration", sessions: 1, focus: "Food as offering" },
+    { phase: "Mastery", sessions: 1, focus: "The witness of the body" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "Born of food, sustained by food",
+      required: ["ritual.opening-bow", "teach.kosha.overview", "wisdom.kosha.annamaya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the physical sheath",
+      required: ["wisdom.kosha.annamaya", "body.head-to-toe", "breath.coherent-5-5"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Sensory awareness — the body sensing",
+      required: ["wisdom.kosha.annamaya", "observe.5-senses", "meditation.anchor-breath"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Food as offering",
+      required: ["wisdom.kosha.annamaya", "micro-act.no-phone-meal", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The witness of the body",
+      required: ["ritual.opening-bow", "wisdom.kosha.annamaya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

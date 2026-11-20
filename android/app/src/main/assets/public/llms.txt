@@ -1,0 +1,54 @@
+# ConsciousOS
+
+> The Operating System for Consciousness — an AI-guided consciousness instrument with mental-loop detection, witness practice, journaling, and a 500-day journey inward.
+
+ConsciousOS is a consciousness-tech platform that blends ancient yogic frameworks (Patanjali's 8 limbs, Advaita self-inquiry, Vipassana witness practice, the 11-band spiral) with modern AI. It detects mental loops in real time, runs guided sessions with 118 master personalities (Krishna, Buddha, Ramana, Rumi, Patanjali, Lao Tzu, etc.), tracks an 11-band V-Level consciousness map across 6 dimensions, and adapts a daily 4-gate practice flow to each user's spiritual DNA.
+
+Built by an independent founder. Hosted on Lovable Cloud. Pricing is credit-based via Razorpay — no streaks, no leaderboards, no guilt loops.
+
+## Pages
+
+- [Home](/): What ConsciousOS is, who it's for, how the consciousness instrument works.
+- [Inner LLMs](/inner-llms): The Head / Heart / Gut three-LLM architecture mapped to V-Levels.
+- [Journey](/journey): The 500-day Foundation → Practice → Mastery spiral progression.
+- [Dictionary](/dictionary): Definitions of every term used in the system (V-Level, loops, witness, kriya, dimensions).
+- [Hope Preview](/hope-preview): A condensed walk-through of the product vision.
+
+## Blog
+
+Long-form essays bridging ancient consciousness frameworks with modern neuroscience, AI architecture, and product design.
+
+- [Blog index](/blog): All essays.
+- [What Adiyogi knew about the brain](/blog/what-adiyogi-knew-about-the-brain)
+- [Patanjali Yoga Sutras × modern psychology](/blog/patanjali-yoga-sutras-modern-psychology)
+- [Vipassana and the default mode network](/blog/vipassana-default-mode-network)
+- [Ramana self-inquiry vs therapy](/blog/ramana-self-inquiry-vs-therapy)
+- [Kundalini and vagus-nerve science](/blog/kundalini-vagus-nerve-science)
+- [Bhagavad Gita as a decision framework](/blog/bhagavad-gita-decision-framework)
+- [Buddhist anatta vs the modern self](/blog/buddhist-anatta-vs-modern-self)
+- [The three-LLM architecture: Head, Heart, Gut](/blog/three-llm-architecture-head-heart-gut)
+- [The 400-loop library of mental patterns](/blog/400-loop-library-mental-patterns)
+- [The 11-band spiral consciousness map](/blog/11-band-spiral-consciousness-map)
+- [Council of Yogis: meta-routing for AI gurus](/blog/council-of-yogis-meta-routing)
+- [The Witness practice and thought counter](/blog/witness-practice-thought-counter)
+- [Consciousness Score: a 1000-point algorithm](/blog/consciousness-score-1000-point-algorithm)
+- [Why I built ConsciousOS](/blog/why-i-built-consciousos)
+- [Why no streaks, no leaderboards](/blog/why-no-streaks-no-leaderboards)
+- [Anti-app positioning strategy](/blog/anti-app-positioning-strategy)
+- [Monetization without guilt: credit economy](/blog/monetization-without-guilt-credits)
+
+## Loops
+
+The Loop Library — 400+ recurring mental/behavioral patterns, each with anatomy, triggers, and dissolution practice.
+
+- [Loop index](/loops): All loops.
+- [Reactivity loop (VAL003)](/loops/reactivity-loop-val003-anatomy)
+- [Productivity identity loop (EGO007)](/loops/productivity-identity-loop-ego007)
+- [Doom-scrolling loop](/blog/doom-scrolling-loop-mechanism)
+- [Imposter syndrome loop](/blog/imposter-syndrome-loop-decoded)
+- [Comparison loop](/blog/comparison-loop-instagram-brain)
+- [Rumination loop](/blog/rumination-loop-broken)
+
+## Optional
+
+- [Sitemap](/sitemap.xml): Full machine-readable list of every indexable URL.

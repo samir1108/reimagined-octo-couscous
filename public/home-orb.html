@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home orb · capture surface</title>
+<style>
+  :root{ --hue:38; --orb:0.52; }
+  html,body{height:100%;margin:0;background:#050403;}
+  body{overflow:hidden}
+  body.transparent{background:transparent}
+  body.transparent .field{display:none}
+  .stage{position:fixed;inset:0;display:grid;place-items:center}
+  .field{position:absolute;inset:0;pointer-events:none;
+    filter:hue-rotate(calc(var(--hue) * 1deg - 38deg)) saturate(1);}
+  .field::before,.field::after{content:"";position:absolute;inset:0}
+  .field::before{background:radial-gradient(circle at 50% 42%, hsl(38 88% 58% / .16) 0%, hsl(24 80% 44% / .07) 38%, transparent 70%)}
+  .field::after{background:radial-gradient(circle at 18% 82%, hsl(348 70% 52% / .1) 0%, transparent 58%), radial-gradient(circle at 84% 16%, hsl(258 70% 56% / .1) 0%, transparent 55%)}
+  .halo{position:absolute;width:78vmin;height:78vmin;border-radius:50%;
+    background:radial-gradient(circle, hsl(var(--hue) 92% 66% / .16) 0%, hsl(var(--hue) 88% 52% / .05) 46%, transparent 70%);
+    animation:breath 10s ease-in-out infinite}
+  .orb{position:relative;width:calc(var(--orb) * 100vmin);height:calc(var(--orb) * 100vmin);border-radius:50%;
+    background:radial-gradient(circle at 34% 28%, hsl(var(--hue) 96% 82%) 0%, hsl(var(--hue) 92% 62%) 26%, hsl(calc(var(--hue) + 28) 82% 44%) 62%, hsl(calc(var(--hue) + 52) 70% 22%) 100%);
+    box-shadow:0 0 60px hsl(var(--hue) 90% 58% / .35), 0 0 140px hsl(var(--hue) 90% 50% / .18), inset 0 -14px 40px hsl(calc(var(--hue) + 40) 70% 18% / .7)}
+  .orb::before{content:"";position:absolute;inset:0;border-radius:50%;opacity:.7;
+    background:radial-gradient(circle at 62% 74%, hsl(0 0% 100% / .3) 0%, transparent 42%)}
+  .sheen{position:absolute;inset:6%;border-radius:50%;border:1px solid hsl(0 0% 100% / .1);
+    background:conic-gradient(from 0deg, transparent 0%, hsl(0 0% 100% / .07) 22%, transparent 46%, hsl(0 0% 100% / .05) 68%, transparent 92%);
+    animation:spin 20s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes breath{0%,100%{transform:scale(1);opacity:.65}50%{transform:scale(1.1);opacity:1}}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="field"></div>
+  <div class="halo"></div>
+  <div class="orb"><div class="sheen"></div></div>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const hue = Number(q.get("hue") || 38);
+  document.documentElement.style.setProperty("--hue", String(hue));
+  if (q.get("transparent") === "1") document.body.classList.add("transparent");
+  if (q.get("field") === "0") document.querySelector(".field").style.display = "none";
+  if (q.get("static") === "1") {
+    document.querySelectorAll(".halo,.sheen").forEach((el) => (el.style.animation = "none"));
+  }
+  window.HomeOrb = {
+    setHue(h) { document.documentElement.style.setProperty("--hue", String(h)); },
+    setSize(f) { document.documentElement.style.setProperty("--orb", String(f)); },
+    /** Freeze both loops at `t` seconds so frames are deterministic and loopable. */
+    freezeAt(t) {
+      document.querySelectorAll(".halo,.sheen").forEach((el) => {
+        const dur = parseFloat(getComputedStyle(el).animationDuration) || 10;
+        el.style.animationDelay = `-${(t % dur).toFixed(3)}s`;
+        el.style.animationPlayState = "paused";
+      });
+    },
+    resume() {
+      document.querySelectorAll(".halo,.sheen").forEach((el) => {
+        el.style.animationDelay = "";
+        el.style.animationPlayState = "";
+        el.style.animation = "";
+      });
+    },
+  };
+</script>
+</body>
+</html>

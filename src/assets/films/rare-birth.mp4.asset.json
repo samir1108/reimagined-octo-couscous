@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "asset_id": "746964b6-c774-4352-beee-c9e88abce571",
+  "project_id": "b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/films/rare-birth.mp4",
+  "r2_key": "a/v1/b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5/746964b6-c774-4352-beee-c9e88abce571/rare-birth.mp4",
+  "original_filename": "rare-birth.mp4",
+  "size": 20138070,
+  "content_type": "video/mp4",
+  "created_at": "2026-07-12T02:42:57Z",
+  "bucket": "media",
+  "storage_path": "src/assets/films/rare-birth.mp4",
+  "migrated_at": "2026-10-20T11:19:48.031Z",
+  "migrated_from": "https://id-preview--b0ddf8c2-d4c9-40c2-aa1f-9f74663931a5.lovable.app/__l5e/assets-v1/746964b6-c774-4352-beee-c9e88abce571/rare-birth.mp4",
+  "transcoded": true
+}

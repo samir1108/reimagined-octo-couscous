@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHIVA_SAMHITA_CH5: SessionProgramV3 = {
+  id: "shiva-samhita-ch5",
+  title: "Shiva Samhita · Chapter 5",
+  subtitle: "The self is Shiva — jivanmukti, liberation while living",
+  description:
+    "A 5-session arc through Chapter 5: the nature of the self as Shiva, liberation while living, and the play of consciousness as the world.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["shiva-samhita", "jivanmukti", "liberation", "shiva"],
+  icon: "Infinity",
+  coverGradient: "from-gold-500 to-amber-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The self is Shiva" },
+    { phase: "Practice", sessions: 1, focus: "Live as Shiva" },
+    { phase: "Integration", sessions: 1, focus: "The world as play" },
+    { phase: "Mastery", sessions: 1, focus: "Shiva living" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "You are Shiva",
+      required: ["ritual.opening-bow", "teach.shiva.overview", "wisdom.shiva.5"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Liberation while living",
+      required: ["wisdom.shiva.5", "wisdom.shivasutra.1", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Live as Shiva in the world",
+      required: ["wisdom.shiva.5", "wisdom.shivasutra.3", "meditation.loving-kindness"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "The world as Shiva's play",
+      required: ["wisdom.shiva.5", "wisdom.shivasutra.3", "contemplation.sit-with-question"],
+      targetMinutes: 22 },
+    { index: 5, phase: "Mastery",
+      intent: "Shiva living",
+      required: ["ritual.opening-bow", "wisdom.shiva.5", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 30 },
+  ],
+};

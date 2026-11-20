@@ -1,0 +1,1 @@
+function n(e){var a;return{id:e.id,number:e.number,name:e.name,category:e.tradition.split(/[—\-+()/]/)[0].trim(),oneLine:e.oneLine,signal:e.signal,size:"S",unlockLevel:1,available:e.available,needs:{mic:!!e.needsMic,camera:!!e.needsCamera},tone:(a=e.faculties)==null?void 0:a[0]}}export{n as l};

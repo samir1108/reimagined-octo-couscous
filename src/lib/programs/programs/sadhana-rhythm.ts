@@ -1,0 +1,38 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SADHANA_RHYTHM: SessionProgramV3 = {
+  id: "sadhana-rhythm",
+  title: "Sadhana Rhythm",
+  subtitle: "Build the daily practice that holds your life",
+  description: "An 8-session arc to construct a sustainable, joyful daily sadhana woven through your real days.",
+  difficulty: "beginner",
+  category: "ethics",
+  tags: ["sadhana", "habit", "rhythm"],
+  icon: "Repeat",
+  coverGradient: "from-emerald-700 to-amber-700",
+  totalSessions: 8,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Why & what" },
+    { phase: "Practice", sessions: 4, focus: "Stitch the morning, mid, eve, sleep" },
+    { phase: "Integration", sessions: 1, focus: "Hold it across weeks" },
+    { phase: "Mastery", sessions: 1, focus: "Practice = life" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation", intent: "Why are you practicing?",
+      required: ["ritual.opening-bow", "inquiry.what-do-i-want", "voice-journal.future-self"], targetMinutes: 18 },
+    { index: 2, phase: "Foundation", intent: "Map your real day",
+      required: ["journal.morning-pages-3", "framework.loop-anatomy", "contemplation.sit-with-question"], targetMinutes: 20 },
+    { index: 3, phase: "Practice", intent: "Build morning gate",
+      required: ["ritual.opening-bow", "breath.coherent-5-5", "micro-act.drink-water"], targetMinutes: 15 },
+    { index: 4, phase: "Practice", intent: "Build midday pause",
+      required: ["breath.physiological-sigh", "body.micro-scan-60s", "guide-chat.pulse-check"], targetMinutes: 14 },
+    { index: 5, phase: "Practice", intent: "Build evening close",
+      required: ["journal.head-heart-gut-check", "ai-mirror.pattern-reflect", "meditation.loving-kindness"], targetMinutes: 20 },
+    { index: 6, phase: "Practice", intent: "Build sleep transition",
+      required: ["body.head-to-toe", "mantra.om", "ritual.closing-thanks"], targetMinutes: 18 },
+    { index: 7, phase: "Integration", intent: "Hold it across weeks",
+      required: ["ai-mirror.weekly-summary", "contemplation.sit-with-question", "ritual.dedicate-merit"], targetMinutes: 20 },
+    { index: 8, phase: "Mastery", intent: "Practice = life",
+      required: ["ritual.opening-bow", "meditation.open-awareness", "mantra.aham-brahmasmi", "ritual.dedicate-merit"], targetMinutes: 25 },
+  ],
+};

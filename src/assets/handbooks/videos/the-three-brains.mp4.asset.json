@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "asset_id": "487f9003-d84b-4fc8-acd3-f688e10ec42c",
+  "project_id": "139e61c3-6713-4de9-bab4-fce7308593aa",
+  "url": "https://vvnihmweqmbmytpggqcw.supabase.co/storage/v1/object/public/media/src/assets/handbooks/videos/the-three-brains.mp4",
+  "original_filename": "the-three-brains.mp4",
+  "size": 8247004,
+  "created_at": "2026-07-18T09:56:26Z",
+  "storage_path": "src/assets/handbooks/videos/the-three-brains.mp4",
+  "bucket": "media",
+  "migrated_at": "2026-10-20T11:26:06.787Z",
+  "migrated_from": "https://id-preview--139e61c3-6713-4de9-bab4-fce7308593aa.lovable.app/__l5e/assets-v1/487f9003-d84b-4fc8-acd3-f688e10ec42c/the-three-brains.mp4"
+}

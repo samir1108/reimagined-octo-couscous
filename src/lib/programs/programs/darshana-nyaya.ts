@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const DARSHANA_NYAYA: SessionProgramV3 = {
+  id: "darshana-nyaya",
+  title: "Nyaya Darshana",
+  subtitle: "Logic and epistemology — the path of correct reasoning",
+  description:
+    "A 5-session arc through Nyaya: the four means of valid knowledge, the five-step syllogism, and liberation through correct knowledge.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["darshana", "nyaya", "logic", "epistemology"],
+  icon: "Brain",
+  coverGradient: "from-cyan-600 to-blue-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Valid knowledge" },
+    { phase: "Practice", sessions: 1, focus: "The five-step syllogism" },
+    { phase: "Integration", sessions: 1, focus: "Debate and refutation" },
+    { phase: "Mastery", sessions: 1, focus: "Liberation through correct knowledge" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The four pramanas",
+      required: ["ritual.opening-bow", "teach.darshana.nyaya", "wisdom.darshana.nyaya"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Perception, inference, comparison, testimony",
+      required: ["wisdom.darshana.nyaya", "observe.5-senses", "framework.loop-anatomy"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The five-step syllogism",
+      required: ["wisdom.darshana.nyaya", "framework.loop-anatomy", "contemplation.sit-with-question"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Debate the false view",
+      required: ["wisdom.darshana.nyaya", "contemplation.sit-with-question", "journal.what-am-i-avoiding"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "Liberation through correct knowledge",
+      required: ["ritual.opening-bow", "wisdom.darshana.nyaya", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

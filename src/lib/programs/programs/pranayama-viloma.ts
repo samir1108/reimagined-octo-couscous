@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const PRANAYAMA_VILOMA: SessionProgramV3 = {
+  id: "pranayama-viloma",
+  title: "Pranayama · Viloma",
+  subtitle: "Interrupted breath — lift and drop, steady the mind",
+  description:
+    "A 5-session arc through Viloma: the interrupted breath that trains smooth, even inhalations and exhalations.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["pranayama", "viloma", "interrupted", "steady"],
+  icon: "Layers",
+  coverGradient: "from-emerald-500 to-green-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The interrupted breath" },
+    { phase: "Practice", sessions: 1, focus: "Lift and drop" },
+    { phase: "Integration", sessions: 1, focus: "Steady in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The smooth breath" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The breath that teaches smoothness",
+      required: ["ritual.opening-bow", "teach.pranayama.what-is", "breath.box-4-4-4-4"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Feel the pause",
+      required: ["breath.coherent-5-5", "witness.thought-counter", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The Viloma interrupted breath",
+      required: ["pranayama.viloma", "breath.coherent-5-5", "body.micro-scan-60s"],
+      targetMinutes: 20 },
+    { index: 4, phase: "Integration",
+      intent: "Steady in the day",
+      required: ["pranayama.viloma", "micro-act.stretch-once", "journal.day-in-one-sentence"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The smooth breath",
+      required: ["ritual.opening-bow", "pranayama.viloma", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 22 },
+  ],
+};

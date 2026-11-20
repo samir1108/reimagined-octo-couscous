@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHATKARMA_BASTI: SessionProgramV3 = {
+  id: "shatkarma-basti",
+  title: "Shatkarma · Basti",
+  subtitle: "Colon cleansing — advanced, guided only",
+  description:
+    "A 5-session arc through Basti: the colon cleansing. Advanced — always under a teacher's guidance.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["shatkarma", "basti", "cleansing", "advanced"],
+  icon: "Waves",
+  coverGradient: "from-blue-600 to-indigo-900",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "Preparation & safety" },
+    { phase: "Practice", sessions: 1, focus: "The cleansing" },
+    { phase: "Integration", sessions: 1, focus: "Release & let go" },
+    { phase: "Mastery", sessions: 1, focus: "The light colon" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The deep cleansings",
+      required: ["ritual.opening-bow", "teach.shatkarma", "wisdom.gheranda.shatkarma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Safety first — find a teacher",
+      required: ["wisdom.gheranda.1", "contemplation.sit-with-question", "journal.what-am-i-avoiding"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "Basti (guided)",
+      required: ["shatkarma.basti", "breath.coherent-5-5", "somatic.tense-release"],
+      targetMinutes: 25 },
+    { index: 4, phase: "Integration",
+      intent: "Release and let go",
+      required: ["shatkarma.basti", "micro-act.tidy-one-thing", "voice-journal.speak-it-out"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The light colon",
+      required: ["ritual.opening-bow", "shatkarma.basti", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

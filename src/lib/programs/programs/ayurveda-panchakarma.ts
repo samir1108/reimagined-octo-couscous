@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const AYURVEDA_PANCHAKARMA: SessionProgramV3 = {
+  id: "ayurveda-panchakarma",
+  title: "Ayurveda · Panchakarma",
+  subtitle: "The five cleansing actions — deep purification, not a spa",
+  description:
+    "A 5-session arc through Panchakarma: the five medical cleansing actions (vamana, virechana, basti, nasya, raktamokshana) with preparation and rejuvenation.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["ayurveda", "panchakarma", "cleansing", "deep-purification"],
+  icon: "Droplets",
+  coverGradient: "from-purple-600 to-violet-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The five karmas" },
+    { phase: "Practice", sessions: 1, focus: "Preparation (snehana, swedana)" },
+    { phase: "Integration", sessions: 1, focus: "The five actions" },
+    { phase: "Mastery", sessions: 1, focus: "Rejuvenation (rasayana)" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The five cleansing actions",
+      required: ["ritual.opening-bow", "teach.ayurveda.panchakarma", "wisdom.ayurveda.panchakarma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Oleation and sweating — the preparation",
+      required: ["wisdom.ayurveda.panchakarma", "teach.ayurveda.panchakarma", "asana.surya-namaskar-flow"],
+      targetMinutes: 20 },
+    { index: 3, phase: "Practice",
+      intent: "The five karmas: vamana, virechana, basti, nasya, raktamokshana",
+      required: ["wisdom.ayurveda.panchakarma", "shatkarma.neti", "shatkarma.basti", "shatkarma.kapalbhati"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "Post-cleanse rejuvenation",
+      required: ["wisdom.ayurveda.panchakarma", "teach.ayurveda.panchakarma", "micro-act.thank-someone"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The renewed vessel",
+      required: ["ritual.opening-bow", "wisdom.ayurveda.panchakarma", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 35 },
+  ],
+};

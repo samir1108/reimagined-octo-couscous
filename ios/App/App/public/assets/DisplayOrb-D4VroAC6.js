@@ -1,0 +1,1 @@
+import{j as e}from"./index-BaK7kk1c.js";import{C as o}from"./CosmicOrb-Do5qTUG7.js";function m({size:t=240,breathing:r=!0,audioLevel:n=0,className:i}){return e.jsx("div",{className:`pointer-events-none select-none ${i??""}`,style:{width:t,height:t},"aria-hidden":!0,children:e.jsx(o,{onActivate:()=>{},breathing:r,audioLevel:n,size:t})})}export{m as D};

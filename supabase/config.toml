@@ -1,0 +1,328 @@
+project_id = "vvnihmweqmbmytpggqcw"
+
+[functions.activate-specialty]
+verify_jwt = false
+
+[functions.adapt-next-block]
+verify_jwt = false
+
+[functions.admin-ai-insights]
+verify_jwt = false
+
+[functions.admin-broadcast]
+verify_jwt = false
+
+[functions.admin-copilot]
+verify_jwt = false
+
+[functions.aggregate-daily-dimensions]
+verify_jwt = false
+
+[functions.always-open-prompts]
+verify_jwt = false
+
+[functions.analyze-assessment]
+verify_jwt = false
+
+[functions.assess-starting-levels]
+verify_jwt = false
+
+[functions.assign-curriculum-arc]
+verify_jwt = false
+
+[functions.calendar-meeting-watcher]
+verify_jwt = false
+
+[functions.companion-engine]
+verify_jwt = false
+
+[functions.complete-task]
+verify_jwt = false
+
+[functions.compose-session]
+verify_jwt = false
+
+[functions.compose-session-v3]
+verify_jwt = false
+
+[functions.compose-today-practice]
+verify_jwt = false
+
+[functions.compute-companion-state]
+verify_jwt = false
+
+[functions.compute-constellation]
+verify_jwt = false
+
+[functions.compute-kundli]
+verify_jwt = false
+
+[functions.consciousness-engine]
+verify_jwt = false
+
+[functions.council-consensus]
+verify_jwt = false
+
+[functions.curiosity-engine]
+verify_jwt = false
+
+[functions.decode-dream]
+verify_jwt = false
+
+[functions.detect]
+verify_jwt = false
+
+[functions.dharma-retrieval]
+verify_jwt = false
+
+[functions.discovery-session]
+verify_jwt = false
+
+[functions.elder-dialogue]
+verify_jwt = false
+
+[functions.embed-memory]
+verify_jwt = false
+
+[functions.enterprise-insights]
+verify_jwt = false
+
+[functions.enterprise-people-intelligence]
+verify_jwt = false
+
+[functions.evaluate-practice-level]
+verify_jwt = false
+
+[functions.evolve-theme]
+verify_jwt = false
+
+[functions.extract-commitment]
+verify_jwt = false
+
+[functions.extract-sacred-moments]
+verify_jwt = false
+
+[functions.for-you-practices]
+verify_jwt = false
+
+[functions.generate-daily-ritual]
+verify_jwt = false
+
+[functions.generate-journey-nudge]
+verify_jwt = false
+
+[functions.generate-master-next-step]
+verify_jwt = false
+
+[functions.generate-master-theme-teaching]
+verify_jwt = false
+
+[functions.generate-path-level-session]
+verify_jwt = false
+
+[functions.generate-personal-program]
+verify_jwt = false
+
+[functions.generate-personal-rhythm]
+verify_jwt = false
+
+[functions.generate-practice-session]
+verify_jwt = false
+
+[functions.generate-program-session]
+verify_jwt = false
+
+[functions.generate-session-agenda]
+verify_jwt = false
+
+[functions.generate-showroom-day-session]
+verify_jwt = false
+
+[functions.generate-theme]
+verify_jwt = false
+
+[functions.generate-wisdom]
+verify_jwt = false
+
+[functions.get-next-practice]
+verify_jwt = false
+
+[functions.github-late-night-watcher]
+verify_jwt = false
+
+[functions.graduation-deep-analysis]
+verify_jwt = false
+
+[functions.guide-chat]
+verify_jwt = false
+
+[functions.guide-insight]
+verify_jwt = false
+
+[functions.guru-practice-session]
+verify_jwt = false
+
+[functions.infer-three-brain]
+verify_jwt = false
+
+[functions.ingest-signal]
+verify_jwt = false
+
+[functions.instant-pulse-detector]
+verify_jwt = false
+
+[functions.integrate-human-map]
+verify_jwt = false
+
+[functions.journal-reflect]
+verify_jwt = false
+
+[functions.kosha-scanner]
+verify_jwt = false
+
+[functions.linear-workload-watcher]
+verify_jwt = false
+
+[functions.live-detect]
+verify_jwt = false
+
+[functions.manager-coaching]
+verify_jwt = false
+
+[functions.master-journey-review]
+verify_jwt = false
+
+[functions.memory-consolidate]
+verify_jwt = false
+
+[functions.memory-extract]
+verify_jwt = false
+
+[functions.mirror-session]
+verify_jwt = false
+
+[functions.next-session-preview]
+verify_jwt = false
+
+[functions.org-program-designer]
+verify_jwt = false
+
+[functions.org-weekly-briefing]
+verify_jwt = false
+
+[functions.pattern-window-detector]
+verify_jwt = false
+
+[functions.post-event-reflection]
+verify_jwt = false
+
+[functions.pre-event-nudge]
+verify_jwt = false
+
+[functions.pre-journey-chat]
+verify_jwt = false
+
+[functions.predict-churn]
+verify_jwt = false
+
+[functions.predictive-insights]
+verify_jwt = false
+
+[functions.razorpay-order]
+verify_jwt = false
+
+[functions.razorpay-verify]
+verify_jwt = false
+
+[functions.recalibrate-constellation]
+verify_jwt = false
+
+[functions.recalibration-intelligence]
+verify_jwt = false
+
+[functions.recall-memory]
+verify_jwt = false
+
+[functions.reflect-game]
+verify_jwt = false
+
+[functions.score-session-spine]
+verify_jwt = false
+
+[functions.seed-demo-org]
+verify_jwt = false
+
+[functions.session-adapter]
+verify_jwt = false
+
+[functions.session-complete]
+verify_jwt = false
+
+[functions.signal-fusion]
+verify_jwt = false
+
+[functions.stt-listen]
+verify_jwt = false
+
+[functions.suggest-next-program]
+verify_jwt = false
+
+[functions.synthesize-daily-memory]
+verify_jwt = false
+
+[functions.temple-chat]
+verify_jwt = false
+
+[functions.three-lens-analyzer]
+verify_jwt = false
+
+[functions.tone-watcher]
+verify_jwt = false
+
+[functions.translate-ui]
+verify_jwt = false
+
+[functions.tts-speak]
+verify_jwt = false
+
+[functions.user-state-snapshot]
+verify_jwt = false
+
+[functions.verify-breakthrough]
+verify_jwt = false
+
+[functions.wearable]
+verify_jwt = false
+
+
+
+[functions.build-long-term-memory]
+verify_jwt = false
+
+[functions.compute-consciousness-fingerprint]
+verify_jwt = false
+
+[functions.compute-vlevel]
+verify_jwt = true
+
+[functions.correlate-session-outcome]
+verify_jwt = false
+
+[functions.get-user-context]
+verify_jwt = false
+
+[functions.ingest-bio-signals]
+verify_jwt = false
+
+[functions.ingest-environment-scan]
+verify_jwt = false
+
+[functions.ingest-micro-expressions]
+verify_jwt = false
+
+[functions.ingest-voice-patterns]
+verify_jwt = false
+
+[functions.orchestrator-health]
+verify_jwt = false
+

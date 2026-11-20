@@ -1,0 +1,144 @@
+[
+  {
+    "route": "01-experience",
+    "status": "ok",
+    "mode": "desktop"
+  },
+  {
+    "route": "10-home",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "11-temple",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "12-practice",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "13-guide",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "14-journal",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "15-analytics",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "16-programs",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "17-games",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "18-library",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "19-mirror",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "21-constellation",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "desktop"
+  },
+  {
+    "route": "01-experience",
+    "status": "ok",
+    "mode": "mobile"
+  },
+  {
+    "route": "10-home",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "11-temple",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "12-practice",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "13-guide",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "14-journal",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "15-analytics",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "16-programs",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "17-games",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "18-library",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "19-mirror",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  },
+  {
+    "route": "21-constellation",
+    "status": "skipped",
+    "reason": "not logged in",
+    "mode": "mobile"
+  }
+]

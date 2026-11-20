@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const LAYA_YOGA: SessionProgramV3 = {
+  id: "laya-yoga",
+  title: "Laya Yoga",
+  subtitle: "Absorption — dissolve the mind in the sound",
+  description:
+    "A 5-session arc through Laya Yoga: the yoga of absorption where the mind dissolves in the medium (sound, light, breath) and only the seer remains.",
+  difficulty: "advanced",
+  category: "ancient-yoga",
+  tags: ["laya", "absorption", "dissolution", "advanced"],
+  icon: "FadeIn",
+  coverGradient: "from-violet-600 to-purple-950",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The medium of absorption" },
+    { phase: "Practice", sessions: 1, focus: "Dissolve in sound" },
+    { phase: "Integration", sessions: 1, focus: "Absorption in the day" },
+    { phase: "Mastery", sessions: 1, focus: "The dissolved mind" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The medium that absorbs",
+      required: ["ritual.opening-bow", "teach.laya", "wisdom.hatha.nada"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "Prepare the vessel",
+      required: ["wisdom.laya", "breath.coherent-5-5", "meditation.anchor-breath"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The mind dissolves in the sound",
+      required: ["mantra.laya", "breath.coherent-5-5", "witness.name-the-watcher"],
+      targetMinutes: 30 },
+    { index: 4, phase: "Integration",
+      intent: "Absorption in the day",
+      required: ["mantra.laya", "micro-act.stretch-once", "contemplation.sit-with-question"],
+      targetMinutes: 20 },
+    { index: 5, phase: "Mastery",
+      intent: "The dissolved mind",
+      required: ["ritual.opening-bow", "mantra.laya", "meditation.choiceless-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};

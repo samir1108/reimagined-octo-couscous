@@ -1,0 +1,43 @@
+import type { SessionProgramV3 } from "../types";
+
+export const SHATKARMA_TRATAKA: SessionProgramV3 = {
+  id: "shatkarma-trataka",
+  title: "Shatkarma · Trataka",
+  subtitle: "Steady gaze — cleanse the eyes, still the mind",
+  description:
+    "A 5-session arc through Trataka: the candle gazing that cleanses the eyes and trains single-pointed attention.",
+  difficulty: "beginner",
+  category: "ancient-yoga",
+  tags: ["shatkarma", "trataka", "cleansing", "concentration"],
+  icon: "Flame",
+  coverGradient: "from-amber-600 to-red-800",
+  totalSessions: 5,
+  phases: [
+    { phase: "Foundation", sessions: 2, focus: "The gaze & the mind" },
+    { phase: "Practice", sessions: 1, focus: "The steady flame" },
+    { phase: "Integration", sessions: 1, focus: "One-pointed life" },
+    { phase: "Mastery", sessions: 1, focus: "The inner flame" },
+  ],
+  sessions: [
+    { index: 1, phase: "Foundation",
+      intent: "The gaze that cleanses",
+      required: ["ritual.opening-bow", "teach.shatkarma", "wisdom.gheranda.shatkarma"],
+      targetMinutes: 15 },
+    { index: 2, phase: "Foundation",
+      intent: "The power of one point",
+      required: ["wisdom.gheranda.1", "concentration.counting-breaths-10", "observe.one-object"],
+      targetMinutes: 18 },
+    { index: 3, phase: "Practice",
+      intent: "The steady flame",
+      required: ["shatkarma.trataka", "concentration.candle-trataka", "meditation.anchor-breath"],
+      targetMinutes: 22 },
+    { index: 4, phase: "Integration",
+      intent: "One-pointed life",
+      required: ["shatkarma.trataka", "detox.single-tab", "micro-act.tidy-one-thing"],
+      targetMinutes: 18 },
+    { index: 5, phase: "Mastery",
+      intent: "The inner flame",
+      required: ["ritual.opening-bow", "shatkarma.trataka", "meditation.open-awareness", "ritual.dedicate-merit"],
+      targetMinutes: 25 },
+  ],
+};
